@@ -60,6 +60,11 @@
     "knowsAbout": ["Wills & Estates", "Family Law", "Commercial Law", "Probate", "Divorce", "Estate disputes"]
   }
   </script>
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.spenceralexander.com.au/" },
+    { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.spenceralexander.com.au/contact.html" } ] }
+  </script>
 </head>
 <body>
 
@@ -173,6 +178,7 @@
               <div class="field">
                 <label for="matter">What's your matter about?</label>
                 <select id="matter" name="matter">
+                  <option value="" selected disabled>Please choose…</option>
                   <option value="Commercial Law">Commercial Law</option>
                   <option value="Family Law">Family Law</option>
                   <option value="Wills &amp; Estates">Wills &amp; Estates</option>

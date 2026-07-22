@@ -53,7 +53,7 @@ img { max-width: 100%; display: block; }
 
 /* ---- Top utility bar ----------------------------------------------------- */
 .topbar { background: var(--wine-950); color: var(--wine-200); }
-.topbar__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 40px; font-size: var(--text-2xs); letter-spacing: 0.03em; }
+.topbar__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-width: 0; min-height: 40px; font-size: var(--text-2xs); letter-spacing: 0.03em; }
 .topbar__loc { display: inline-flex; align-items: center; gap: 8px; }
 .topbar__loc svg { color: var(--brass-400); flex: none; }
 .topbar__contact { display: inline-flex; align-items: center; gap: 22px; }
@@ -63,7 +63,7 @@ img { max-width: 100%; display: block; }
 .topbar__tel { font-weight: var(--weight-semibold); }
 .topbar__loc, .topbar__hours, .topbar__contact a { white-space: nowrap; }
 @media (max-width: 960px) { .topbar__hours { display: none; } }
-@media (max-width: 768px) { .topbar { display: none; } }
+@media (max-width: 900px) { .topbar { display: none; } }
 
 /* ---- Header -------------------------------------------------------------- */
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(251,249,245,0.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-hairline); }
