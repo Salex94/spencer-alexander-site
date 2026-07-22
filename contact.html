@@ -16,6 +16,8 @@
   <meta property="og:image" content="https://www.spenceralexander.com.au/assets/og-card.png">
   <meta property="og:image:alt" content="Spencer Alexander Lawyers — Melbourne">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Spencer Alexander Lawyers, Melbourne">
+  <meta name="twitter:description" content="Speak directly with a lawyer about your matter. Call (03) 9001 4400 or send an enquiry.">
   <meta name="twitter:image" content="https://www.spenceralexander.com.au/assets/og-card.png">
   <meta name="theme-color" content="#6E1F2E">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -23,6 +25,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/site.css">
+  <!-- Site-wide firm entity. TODO(owner): add streetAddress, postalCode, geo, and sameAs (LinkedIn/Google Business Profile) to strengthen local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "@id": "https://www.spenceralexander.com.au/#firm",
+    "name": "Spencer Alexander Lawyers",
+    "description": "Melbourne law firm specialising in Wills & Estates, Family Law and Commercial Law, across both advice and disputes.",
+    "url": "https://www.spenceralexander.com.au/",
+    "telephone": "+61390014400",
+    "email": "contact@spenceralexander.com.au",
+    "image": "https://www.spenceralexander.com.au/assets/og-card.png",
+    "logo": "https://www.spenceralexander.com.au/assets/logo-wordmark-inverse.svg",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Melbourne",
+      "addressRegion": "VIC",
+      "addressCountry": "AU"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Melbourne" },
+      { "@type": "State", "name": "Victoria" }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "knowsAbout": ["Wills & Estates", "Family Law", "Commercial Law", "Probate", "Divorce", "Estate disputes"]
+  }
+  </script>
 </head>
 <body>
 
