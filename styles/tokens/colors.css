@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Spencer Alexander — Colour tokens
+   Deep counsel burgundy · antique brass · warm paper neutrals
+   ========================================================================== */
+
+:root {
+  /* ---- Brand: Burgundy (primary / "Counsel") -------------------------------- */
+  --wine-950: #1A070C;
+  --wine-900: #260A11;
+  --wine-800: #3A0F18;
+  --wine-700: #6E1F2E; /* primary brand burgundy (oxblood) */
+  --wine-600: #842A3A;
+  --wine-500: #9E3A4B;
+  --wine-400: #BC6471;
+  --wine-300: #D49AA4;
+  --wine-200: #E9C8CE;
+  --wine-100: #F5E4E7;
+  --wine-50:  #FCF2F4;
+
+  /* ---- Brand: Brass (accent / seal) ------------------------------------- */
+  --brass-900: #5E461E;
+  --brass-800: #7A5C27;
+  --brass-700: #8F6E30;
+  --brass-600: #A8843E; /* primary accent */
+  --brass-500: #BE9C56;
+  --brass-400: #D0B679;
+  --brass-300: #E0CDA1;
+  --brass-200: #EEE2C8;
+  --brass-100: #F6EFDF;
+
+  /* ---- Warm paper neutrals ---------------------------------------------- */
+  --paper-50:  #FBF9F5; /* page background */
+  --paper-100: #F5F1E9;
+  --paper-200: #ECE6DA;
+  --stone-300: #DAD2C4;
+  --stone-400: #BCB2A1;
+  --stone-500: #908676;
+  --stone-600: #6B6253;
+  --ink-700:   #45403A;
+  --ink-800:   #2C2A26;
+  --ink-900:   #1A1916;
+  --white:     #FFFFFF;
+
+  /* ---- Semantic status -------------------------------------------------- */
+  --success-700: #2F6B4F;
+  --success-600: #3B845F;
+  --success-100: #E2F0E8;
+  --warning-700: #946017;
+  --warning-600: #B97D24;
+  --warning-100: #F8ECD6;
+  --danger-700:  #9B2C2C;
+  --danger-600:  #B5413E;
+  --danger-100:  #F6E2DF;
+  --info-700:    #6E1F2E;
+  --info-100:    #F5E4E7;
+
+  /* ====================================================================== */
+  /* Semantic aliases — reference these in product code, not raw scales      */
+  /* ====================================================================== */
+
+  /* Surfaces */
+  --surface-page:      var(--paper-50);
+  --surface-card:      var(--white);
+  --surface-raised:    var(--white);
+  --surface-sunken:    var(--paper-100);
+  --surface-inverse:   var(--wine-900);
+  --surface-accent:    var(--wine-700);
+  --surface-seal:      var(--brass-100);
+
+  /* Text */
+  --text-strong:   var(--ink-900);
+  --text-body:     var(--ink-800);
+  --text-muted:    var(--stone-600);
+  --text-subtle:   var(--stone-500);
+  --text-inverse:  var(--paper-50);
+  --text-on-accent: var(--paper-50);
+  --text-link:     var(--wine-700);
+  --text-brand:    var(--wine-700);
+  --text-seal:     var(--brass-700);
+
+  /* Borders / lines */
+  --border-hairline: var(--paper-200);
+  --border-default:  var(--stone-300);
+  --border-strong:   var(--stone-400);
+  --border-inverse:  rgba(255, 255, 255, 0.16);
+  --rule-seal:       var(--brass-600);
+
+  /* Interactive */
+  --action-primary:        var(--wine-700);
+  --action-primary-hover:  var(--wine-800);
+  --action-primary-press:  var(--wine-900);
+  --action-accent:         var(--brass-600);
+  --action-accent-hover:   var(--brass-700);
+  --focus-ring:            var(--brass-600);
+
+  /* Status aliases */
+  --text-success: var(--success-700);
+  --text-warning: var(--warning-700);
+  --text-danger:  var(--danger-700);
+  --bg-success:   var(--success-100);
+  --bg-warning:   var(--warning-100);
+  --bg-danger:    var(--danger-100);
+  --bg-info:      var(--info-100);
+}

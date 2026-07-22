@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Spencer Alexander — Elevation & motion tokens
+   Shadows are soft and low-contrast — paper resting on paper, never glassy.
+   ========================================================================== */
+
+:root {
+  /* Shadows (tinted with wine, not pure black) */
+  --shadow-xs: 0 1px 1px rgba(16, 32, 53, 0.05);
+  --shadow-sm: 0 1px 3px rgba(16, 32, 53, 0.07), 0 1px 2px rgba(16, 32, 53, 0.04);
+  --shadow-md: 0 6px 18px rgba(16, 32, 53, 0.08), 0 2px 6px rgba(16, 32, 53, 0.05);
+  --shadow-lg: 0 18px 44px rgba(16, 32, 53, 0.12), 0 6px 14px rgba(16, 32, 53, 0.06);
+  --shadow-xl: 0 32px 70px rgba(12, 24, 38, 0.18);
+
+  /* Focus ring */
+  --ring-width: 3px;
+  --ring-color: rgba(168, 132, 62, 0.45);
+  --ring: 0 0 0 var(--ring-width) var(--ring-color);
+
+  /* Motion — measured and composed; no bounce */
+  --ease-standard: cubic-bezier(0.32, 0.08, 0.24, 1); /* @kind other */
+  --ease-entrance: cubic-bezier(0.16, 0.84, 0.44, 1); /* @kind other */
+  --ease-exit:     cubic-bezier(0.4, 0, 0.7, 0.2); /* @kind other */
+
+  --dur-fast:   120ms; /* @kind other */
+  --dur-base:   220ms; /* @kind other */
+  --dur-slow:   400ms; /* @kind other */
+  --dur-slower: 700ms; /* @kind other */
+}

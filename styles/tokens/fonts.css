@@ -1,0 +1,13 @@
+/* ==========================================================================
+   Spencer Alexander — Webfonts
+   --------------------------------------------------------------------------
+   SUBSTITUTION NOTE: No brand font files were supplied. These are the closest
+   open-source matches served from Google Fonts:
+     • Spectral       — editorial serif (display + headings)
+     • Libre Franklin — institutional grotesque sans (body, UI, labels)
+     • IBM Plex Mono  — reference / legal-citation mono
+   If the firm licenses specific typefaces, drop the .woff2 files into
+   assets/fonts/ and replace this @import with local @font-face rules.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Libre+Franklin:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');

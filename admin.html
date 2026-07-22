@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publish an insight | Spencer Alexander Lawyers</title>
+  <meta name="description" content="Internal publishing page for Spencer Alexander Lawyers insights.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#6E1F2E">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="sa-logo" href="index.html" aria-label="Spencer Alexander Lawyers home">
+        <span class="sa-logo__name">SPENCER ALEXANDER</span>
+        <span class="sa-logo__sub"><span>LAWYERS</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="field-dark">
+      <div class="container pagehero" style="padding-block:clamp(36px,5vw,56px);">
+        <span class="eyebrow-light">Firm use only</span>
+        <h1 class="pagehero__title" style="font-size:clamp(2rem,4vw,3rem);">Publish an insight.</h1>
+        <p class="pagehero__lead">Write your article below and publish it straight to the live site — no redeploy, no uploads. New posts appear on the Insights page within seconds.</p>
+      </div>
+    </section>
+
+    <section class="section section--page">
+      <div class="container">
+        <div class="admin-grid">
+          <div class="form-card">
+            <h2 class="detail-card__title" style="margin-bottom:6px;">New article</h2>
+            <p class="detail-card__intro" style="margin-top:0;">Fields marked * are required. Formatting: <code>## Heading</code>, <code>**bold**</code>, <code>*italic*</code>, <code>- list item</code>, <code>[link text](url)</code>. Blank line = new paragraph.</p>
+            <form class="form" id="publish-form">
+              <div class="field">
+                <label for="pub-title">Title *</label>
+                <input type="text" id="pub-title" required>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="pub-category">Category</label>
+                  <select id="pub-category">
+                    <option value="Wills &amp; Estates">Wills &amp; Estates</option>
+                    <option value="Family Law">Family Law</option>
+                    <option value="Commercial Law">Commercial Law</option>
+                    <option value="Firm news">Firm news</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="pub-date">Date</label>
+                  <input type="date" id="pub-date">
+                </div>
+              </div>
+              <div class="field">
+                <label for="pub-slug">Web address (slug)</label>
+                <input type="text" id="pub-slug" placeholder="filled in automatically from the title">
+              </div>
+              <div class="field">
+                <label for="pub-excerpt">Excerpt — one or two sentences shown on the Insights page *</label>
+                <textarea id="pub-excerpt" rows="2" required></textarea>
+              </div>
+              <div class="field">
+                <label for="pub-body">Article body *</label>
+                <textarea id="pub-body" rows="14" required></textarea>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="pub-hook">Publishing address (web app URL)</label>
+                  <input type="url" id="pub-hook" placeholder="https://script.google.com/macros/s/…/exec">
+                </div>
+                <div class="field">
+                  <label for="pub-key">Publishing key</label>
+                  <input type="password" id="pub-key" autocomplete="off">
+                </div>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:12px;">
+                <button class="btn btn--ghost btn--md" type="button" id="preview-btn" style="color:var(--wine-700);border-color:var(--wine-200);">Preview</button>
+                <button class="btn btn--primary btn--md" type="submit" style="flex:1;">Publish to the live site</button>
+              </div>
+              <p class="form__note" id="pub-status">The publishing address and key are remembered on this device.</p>
+            </form>
+          </div>
+
+          <div>
+            <div class="section-head" style="margin-bottom:24px;">
+              <hr class="sa-rule">
+              <span class="sa-eyebrow">How it works</span>
+              <h2 class="h2" style="font-size:clamp(1.5rem,2.5vw,2rem);">Your posts live in a Google Sheet.</h2>
+            </div>
+            <div class="steps process" style="gap:18px;">
+              <div class="step"><span class="step__n">1</span><div><div class="step__t">You write here, or straight in the sheet</div><div class="step__d">Publishing from this page adds a row to your sheet. You can also open the sheet and add or edit rows directly — same result.</div></div></div>
+              <div class="step"><span class="step__n">2</span><div><div class="step__t">The site reads the sheet</div><div class="step__d">The Insights page loads your published rows every time a visitor arrives. New posts appear within seconds; no redeploy.</div></div></div>
+              <div class="step"><span class="step__n">3</span><div><div class="step__t">Unpublish any time</div><div class="step__d">Set a row's "published" cell to FALSE (or delete the row) and the post disappears from the site.</div></div></div>
+            </div>
+
+            <div class="section-head" style="margin:36px 0 16px;">
+              <hr class="sa-rule">
+              <span class="sa-eyebrow">One-time setup</span>
+              <h2 class="h2" style="font-size:clamp(1.4rem,2.2vw,1.75rem);">Set up in about ten minutes.</h2>
+            </div>
+            <details class="faq-item">
+              <summary class="faq-q">Step 1 — Create the Google Sheet<span class="faq-q__ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></summary>
+              <div class="faq-a"><p>Create a new Google Sheet, rename its tab to <strong>Posts</strong>, and put these headers in row 1, one per column:</p>
+              <pre class="codeblock">slug   title   category   date   excerpt   body   published</pre></div>
+            </details>
+            <details class="faq-item" style="margin-top:10px;">
+              <summary class="faq-q">Step 2 — Add the publishing script<span class="faq-q__ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></summary>
+              <div class="faq-a"><p>In the sheet: Extensions &rarr; Apps Script. Delete any sample code and paste this, choosing your own secret key on the second line:</p>
+<pre class="codeblock">var SHEET_NAME = 'Posts';
+var PUBLISH_KEY = 'choose-a-strong-secret-key';
+
+function doPost(e) {
+  try {
+    var data = JSON.parse(e.postData.contents);
+    if (data.key !== PUBLISH_KEY) return json({ ok: false, error: 'Wrong publishing key' });
+    var p = data.post || {};
+    if (!p.title || !p.body) return json({ ok: false, error: 'Missing title or body' });
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var sh = ss.getSheetByName(SHEET_NAME) || ss.insertSheet(SHEET_NAME);
+    if (sh.getLastRow() === 0) {
+      sh.appendRow(['slug','title','category','date','excerpt','body','published']);
+    }
+    sh.appendRow([p.slug, p.title, p.category, p.date, p.excerpt, p.body, 'TRUE']);
+    return json({ ok: true });
+  } catch (err) {
+    return json({ ok: false, error: String(err) });
+  }
+}
+
+function json(o) {
+  return ContentService.createTextOutput(JSON.stringify(o))
+    .setMimeType(ContentService.MimeType.JSON);
+}</pre>
+              <p>Then: Deploy &rarr; New deployment &rarr; type <strong>Web app</strong> &rarr; execute as <strong>Me</strong>, who has access: <strong>Anyone</strong> &rarr; Deploy. Copy the web app URL into the "Publishing address" field on this page (it is remembered on this device), and use your secret key as the publishing key.</p></div>
+            </details>
+            <details class="faq-item" style="margin-top:10px;">
+              <summary class="faq-q">Step 3 — Connect the site to the sheet (once)<span class="faq-q__ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></summary>
+              <div class="faq-a"><p>In the sheet: File &rarr; Share &rarr; Publish to web &rarr; choose the <strong>Posts</strong> tab and <strong>Comma-separated values (.csv)</strong> &rarr; Publish, and copy the link. Paste it between the quotes at the top of <code>scripts/insights-feed.js</code>:</p>
+              <pre class="codeblock">window.SA_INSIGHTS_FEED_URL = "PASTE-THE-CSV-LINK-HERE";</pre>
+              <p>Upload that one file (or redeploy once). This is the only redeploy you will ever need — every post after this goes live instantly.</p></div>
+            </details>
+            <div class="reach" style="margin-top:24px;">
+              <span class="reach__mark" aria-hidden="true">!</span>
+              <span class="reach__text">Keep this page private. It is hidden from search engines and the site's menus, but anyone who knows the address can see it — publishing still requires your secret key.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin:48px 0 16px;">
+          <hr class="sa-rule">
+          <span class="sa-eyebrow">Preview</span>
+          <h2 class="h2" style="font-size:clamp(1.4rem,2.2vw,1.75rem);" id="preview-title">Article preview</h2>
+        </div>
+        <article class="article"><div class="article__body" id="preview-body"><p style="color:var(--text-muted);">Write your article above and select Preview to see it as readers will.</p></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:0;padding-top:0;">
+        <span>© <span data-year>2026</span> Spencer Alexander Lawyers — internal publishing page.</span>
+        <a href="insights.html" style="color:var(--wine-200);">View the live Insights page &rarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/site.js"></script>
+  <script src="scripts/insights-feed.js"></script>
+  <script>
+  (function () {
+    "use strict";
+    var $ = function (id) { return document.getElementById(id); };
+    var form = $("publish-form"), status = $("pub-status");
+
+    // Defaults
+    $("pub-date").value = new Date().toISOString().slice(0, 10);
+    $("pub-hook").value = localStorage.getItem("sa-publish-hook") || "";
+    $("pub-key").value = localStorage.getItem("sa-publish-key") || "";
+
+    $("pub-title").addEventListener("input", function () {
+      $("pub-slug").placeholder = window.SAInsights.slugify(this.value) || "filled in automatically from the title";
+    });
+
+    function currentPost() {
+      return {
+        slug: window.SAInsights.slugify($("pub-slug").value || $("pub-title").value),
+        title: $("pub-title").value.trim(),
+        category: $("pub-category").value,
+        date: $("pub-date").value,
+        excerpt: $("pub-excerpt").value.trim(),
+        body: $("pub-body").value
+      };
+    }
+
+    $("preview-btn").addEventListener("click", function () {
+      var p = currentPost();
+      $("preview-title").textContent = p.title || "Article preview";
+      $("preview-body").innerHTML = p.body
+        ? window.SAInsights.renderMarkdown(p.body)
+        : '<p style="color:var(--text-muted);">Nothing to preview yet.</p>';
+    });
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var hook = $("pub-hook").value.trim();
+      var key = $("pub-key").value;
+      var p = currentPost();
+      if (!hook) { status.textContent = "Add your publishing address first — see One-time setup, Step 2."; return; }
+      if (!key) { status.textContent = "Enter your publishing key."; return; }
+      localStorage.setItem("sa-publish-hook", hook);
+      localStorage.setItem("sa-publish-key", key);
+      status.textContent = "Publishing…";
+      fetch(hook, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ key: key, post: p })
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (res) {
+          if (res && res.ok) {
+            status.textContent = "Published. It is live on the Insights page now.";
+            form.reset();
+            $("pub-date").value = new Date().toISOString().slice(0, 10);
+            $("pub-hook").value = hook; $("pub-key").value = key;
+          } else {
+            status.textContent = "Not published: " + ((res && res.error) || "unknown error") + ".";
+          }
+        })
+        .catch(function () {
+          status.textContent = "Sent, but no confirmation came back. Open your sheet to check whether the row was added, and confirm the web app is deployed with access for Anyone.";
+        });
+    });
+  })();
+  </script>
+</body>
+</html>
