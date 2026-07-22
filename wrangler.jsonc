@@ -1,0 +1,9 @@
+{
+  "name": "spencer-alexander-site",
+  "compatibility_date": "2025-07-01",
+  "assets": {
+    "directory": "./",
+    "html_handling": "none",
+    "not_found_handling": "404-page"
+  }
+}
