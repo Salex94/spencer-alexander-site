@@ -255,7 +255,7 @@ window.SA_INSIGHTS_FEED_URL = "";
       "datePublished": post.date || undefined,
       "articleSection": post.category,
       "author": { "@type": "Person", "name": "Spencer Alexander" },
-      "publisher": { "@type": "LegalService", "name": "Spencer Alexander Lawyers", "telephone": "+61-3-9001-4400" },
+      "publisher": { "@type": "LegalService", "name": "Spencer Alexander Lawyers", "telephone": "+61-3-9125-8355" },
       "description": post.excerpt || post.title,
       "mainEntityOfPage": "https://www.spenceralexander.com.au/post.html?post=" + encodeURIComponent(post.slug)
     };
