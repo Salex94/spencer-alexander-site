@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/site.css">
-  <!-- TODO(owner): add admission year, Law Institute of Victoria membership, practising certificate, LinkedIn (sameAs) for E-E-A-T -->
+  <!-- TODO(owner): still pending — admission year, Law Institute of Victoria membership, LinkedIn (sameAs). Degrees now added. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,7 +37,17 @@
     "image": "https://www.spenceralexander.com.au/assets/principal-portrait.jpg",
     "worksFor": { "@id": "https://www.spenceralexander.com.au/#firm" },
     "description": "Melbourne lawyer with more than a decade of experience across Wills & Estates, Family Law and Commercial Law, internationally and domestically and throughout the private sector.",
-    "knowsAbout": ["Wills & Estates", "Family Law", "Commercial Law"]
+    "knowsAbout": ["Wills & Estates", "Family Law", "Commercial Law"],
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Monash University" },
+      { "@type": "CollegeOrUniversity", "name": "University of Sydney" },
+      { "@type": "EducationalOrganization", "name": "The College of Law" }
+    ],
+    "hasCredential": [
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "educationalLevel": "Bachelor of Laws (Honours)", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Monash University" } },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "educationalLevel": "Master of Laws (LLM)", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "University of Sydney" } },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "educationalLevel": "Graduate Diploma of Legal Practice", "recognizedBy": { "@type": "EducationalOrganization", "name": "The College of Law" } }
+    ]
   }
   </script>
   <script type="application/json+disabled" data-hidden-for-now>
@@ -183,6 +193,10 @@
           <div class="cred">
             <div class="cred__k">Direct, senior lawyer</div>
             <div class="cred__t">You deal with an experienced principal from the first call through to the last.</div>
+          </div>
+          <div class="cred">
+            <div class="cred__k">Qualifications</div>
+            <div class="cred__t">Bachelor of Laws (Hons), Monash University; Master of Laws, University of Sydney; Graduate Diploma of Legal Practice, College of Law.</div>
           </div>
         </div>
         <div class="section-head svc-head section-head--right" data-hidden-for-now style="display:none">
