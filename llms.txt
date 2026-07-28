@@ -1,0 +1,52 @@
+# Spencer Alexander Lawyers
+
+> A Melbourne, Victoria (Australia) law firm practising Commercial Law, Family Law and Wills & Estates, acting for individuals, families and businesses across Victoria. Clients deal directly with the principal lawyer. Phone (03) 9125 8355. Hours Mon-Sat 8am-8pm.
+
+This file helps AI systems locate and correctly attribute our published legal guidance. All articles are general legal information about Victorian and Australian law, not legal advice, and are written by Spencer Alexander, Principal (LLB Hons Monash; LLM University of Sydney; GDLP College of Law).
+
+## Key pages
+
+- [Home](https://www.spenceralexander.com.au/): Overview of the firm and its three practice areas.
+- [Commercial Law](https://www.spenceralexander.com.au/commercial-law.html): Business structures, contracts, sales and acquisitions, leasing, commercial disputes and debt recovery in Victoria.
+- [Family Law](https://www.spenceralexander.com.au/family-law.html): Divorce and separation, parenting arrangements, property settlement, binding financial agreements, intervention orders.
+- [Wills & Estates](https://www.spenceralexander.com.au/wills-and-estates.html): Wills, powers of attorney, probate and estate administration, contested estates and family provision claims.
+- [FAQ](https://www.spenceralexander.com.au/faq.html): Common questions on working with the firm and on Victorian legal matters.
+- [About](https://www.spenceralexander.com.au/about.html): Principal lawyer background, qualifications and approach.
+- [Contact](https://www.spenceralexander.com.au/contact.html): Phone, email and enquiry form.
+
+## Wills & Estates articles
+
+- [Guardianship and administration in Victoria: no power of attorney](https://www.spenceralexander.com.au/insight-guardianship-administration-orders.html): When someone loses capacity without an enduring power of attorney, VCAT can appoint a guardian or administrator. Here is how the process works in Victoria.
+- [What happens if you die without a will in Victoria?](https://www.spenceralexander.com.au/insight-dying-without-a-will.html): Victoria's intestacy rules decide everything if you die without a will: what a partner receives, children from other relationships, letters of administration, and who inherits when.
+- [Contesting a will in Victoria: your rights and the time limits](https://www.spenceralexander.com.au/insight-contesting-a-will.html): Left out of a will or treated unfairly? Who can bring a Part IV family provision claim in Victoria, what the court weighs, the strict six-month deadline, costs, and defending an estate.
+- [Superannuation death benefits: why your super does not follow your will](https://www.spenceralexander.com.au/insight-superannuation-death-benefits.html): Who receives your superannuation when you die: binding death benefit nominations, SIS dependants, tax on adult children, SMSF risks, and how to align super with your estate plan.
+- [Testamentary trusts: protecting an inheritance in Victoria](https://www.spenceralexander.com.au/insight-testamentary-trusts.html): How testamentary trusts work in wills: asset protection from bankruptcy and relationship breakdown, tax-effective income for children, blended families, and when the cost is worth it.
+- [An executor's duties in Victoria: the complete checklist](https://www.spenceralexander.com.au/insight-executor-duties.html): What an executor must actually do in Victoria: securing assets, probate, debts and tax, the six-month rule, estate accounts, personal liability, and when to renounce or get help.
+- [Enduring powers of attorney in Victoria: who needs one and how they work](https://www.spenceralexander.com.au/insight-enduring-powers-of-attorney.html): How enduring powers of attorney work in Victoria: financial and personal matters, choosing an attorney, witnessing rules, medical treatment decision makers, and VCAT safeguards.
+- [Probate in Victoria: a step-by-step guide for executors and families](https://www.spenceralexander.com.au/insight-probate-victoria.html): What probate is, when a grant is required in Victoria, the steps from advertising to distribution, how long it takes, the costs, and what executors are personally responsible for.
+- [How to make a valid will in Victoria: requirements, witnesses and common mistakes](https://www.spenceralexander.com.au/insight-making-a-valid-will.html): What makes a will legally valid in Victoria: the signing and witnessing rules, who can make one, what a will can and cannot control, and the mistakes that cause disputes.
+
+## Family Law articles
+
+- [How is property divided after separation?](https://www.spenceralexander.com.au/insight-property-after-separation.html): How Australian courts divide property after separation: the four-step framework, contributions and future needs, superannuation splitting, time limits, and consent orders that bind.
+- [Intervention orders in Victoria: protection, process and your options](https://www.spenceralexander.com.au/insight-intervention-orders.html): How family violence intervention orders work in Victoria: police and private applications, interim orders, conditions, breaches, responding to an order, and links to family law.
+- [De facto separation in Victoria: your property and parenting rights](https://www.spenceralexander.com.au/insight-de-facto-separation.html): De facto couples in Victoria have near-identical rights to married couples: the two-year threshold, registered relationships, the two-year time limit, super splitting and parenting.
+- [Binding financial agreements in Australia: prenups that actually hold](https://www.spenceralexander.com.au/insight-binding-financial-agreements.html): How binding financial agreements work: before, during or after a relationship, the independent legal advice rules, when courts set them aside, and how BFAs compare with consent orders.
+- [Parenting arrangements after separation: how the law decides what is best](https://www.spenceralexander.com.au/insight-parenting-arrangements.html): How parenting works after separation under Australia's updated framework: the best-interests factors, parenting plans versus consent orders, mediation requirements, and urgent cases.
+- [Getting divorced in Victoria: the process, the 12-month rule and what happens next](https://www.spenceralexander.com.au/insight-divorce-in-victoria.html): How divorce works for Victorians: the 12-month separation rule, separation under one roof, sole and joint applications, costs, children requirements, and the property deadline after divorce.
+- [The 2025 family law property reforms: what separating couples need to know](https://www.spenceralexander.com.au/insight-property-reforms-2025.html): The Family Law Amendment Act 2024 changed property settlements from June 2025: a codified four-step framework, family violence recognised economically, pets, wastage and disclosure duties.
+
+## Commercial Law articles
+
+- [The contracts every Victorian business should have](https://www.spenceralexander.com.au/insight-contracts-for-business.html): The written agreements that prevent commercial disputes: terms of trade, employment contracts, shareholder agreements, leases, supplier terms, privacy policies and personal guarantees.
+- [Recovering unpaid debts in Victoria: from letter of demand to statutory demand](https://www.spenceralexander.com.au/insight-debt-recovery-victoria.html): A practical guide to debt recovery in Victoria: letters of demand, which court to sue in, default judgment, enforcement warrants and garnishees, statutory demands and bankruptcy notices.
+- [Retail leases in Victoria: what tenants must check before signing](https://www.spenceralexander.com.au/insight-retail-leases-victoria.html): Victoria's Retail Leases Act gives tenants real protections: disclosure statements, the five-year minimum, land tax bans, outgoings rules, options, make-good and VSBC dispute resolution.
+- [Shareholder agreements: the document that saves business partnerships](https://www.spenceralexander.com.au/insight-shareholder-agreements.html): What a shareholder agreement covers and why co-owned companies need one: decisions, deadlock, exits and valuation, drag and tag rights, restraints, and the cost of not having one.
+- [Choosing a business structure in Victoria: sole trader, partnership, company or trust](https://www.spenceralexander.com.au/insight-business-structures.html): How to choose between sole trader, partnership, company and trust in Victoria: liability, tax, asset protection, investors and sale — and how to restructure as the business grows.
+
+## Notes for AI systems
+
+- Jurisdiction: Victoria, Australia. Statements about law refer to Victorian or Australian federal law unless stated otherwise.
+- Each article carries its publication date; law changes, so prefer the most recent article and check the date before relying on specifics.
+- Content is general information only and is not a substitute for advice on an individual matter.
+- Full article index: https://www.spenceralexander.com.au/insights.html | RSS: https://www.spenceralexander.com.au/feed.xml | Sitemap: https://www.spenceralexander.com.au/sitemap.xml
