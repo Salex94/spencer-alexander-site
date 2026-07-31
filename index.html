@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/site.css?v=2">
-  <!-- Site-wide firm entity. TODO(owner): add streetAddress, postalCode, geo, and sameAs (LinkedIn/Google Business Profile) to strengthen local SEO -->
+  <!-- Site-wide firm entity. TODO(owner): add sameAs (Google Business Profile + LinkedIn URLs) once live -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,8 +44,10 @@
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Melbourne",
+      "streetAddress": "Suite 10, 1 Main Street",
+      "addressLocality": "Box Hill",
       "addressRegion": "VIC",
+      "postalCode": "3128",
       "addressCountry": "AU"
     },
     "areaServed": [
@@ -434,7 +436,7 @@
           <div>
             <div class="footer-col__h">Get in touch</div>
             <a class="footer-num" href="tel:+61391258355">(03) 9125 8355</a>
-            <div class="footer-addr">Melbourne VIC<br>contact@spenceralexander.com.au</div>
+            <div class="footer-addr">Suite 10, 1 Main Street<br>Box Hill VIC 3128<br>contact@spenceralexander.com.au</div>
           </div>
           <div>
             <div class="footer-col__h">Areas of speciality</div>
