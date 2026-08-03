@@ -28,6 +28,7 @@ This file helps AI systems locate and correctly attribute our published legal gu
 
 ## Family Law articles
 
+- [How is child support calculated in Australia?](https://www.spenceralexander.com.au/insight-child-support-australia.html): How Services Australia calculates child support: the formula, care percentages, changing an unfair assessment, objections, agreements and the 2026 reforms.
 - [How is property divided after separation?](https://www.spenceralexander.com.au/insight-property-after-separation.html): How Australian courts divide property after separation: the four-step framework, contributions and future needs, superannuation splitting, time limits, and consent orders that bind.
 - [Intervention orders in Victoria: protection, process and your options](https://www.spenceralexander.com.au/insight-intervention-orders.html): How family violence intervention orders work in Victoria: police and private applications, interim orders, conditions, breaches, responding to an order, and links to family law.
 - [De facto separation in Victoria: your property and parenting rights](https://www.spenceralexander.com.au/insight-de-facto-separation.html): De facto couples in Victoria have near-identical rights to married couples: the two-year threshold, registered relationships, the two-year time limit, super splitting and parenting.
