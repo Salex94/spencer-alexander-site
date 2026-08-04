@@ -32,9 +32,18 @@ each run starts with no memory of previous chats. Only three things persist:
 3. **`scripts/`** — anything mechanically checkable belongs here, because a
    failing check does not depend on anyone remembering the rule.
 
-So when a new instruction arrives: write it into this file, and if it can be
-checked by machine, add it to a script in the same change. A rule that lives
-only in a conversation will be lost.
+So when a new instruction arrives: write it into this file, record it in
+`DECISIONS.md` with the date and the reasoning, and if it can be checked by
+machine, add it to a script — all in the same change. A rule that lives only in
+a conversation will be lost.
+
+**Read `DECISIONS.md` at the start of every run.** It is the running record of
+instructions, corrections and open items, newest first, and it carries context
+that this file's rules alone do not explain.
+
+The routine is bound to a persistent chat session, so a run may appear to have
+conversational history. Do not rely on it: long conversations are summarised
+(lossy) and sessions can be lost. The repo is the source of truth.
 
 If this file and the routine prompt ever conflict, the scripts are the
 tie-breaker in practice — they block the publish either way. Flag the conflict
