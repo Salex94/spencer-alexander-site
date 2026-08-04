@@ -117,6 +117,28 @@ individuals as though they were clients, and avoid recognisable logos.
   at `assets/photos/`. `og:image` may use the source CDN URL, matching the
   convention in recent articles.
 
+## Article priorities (owner-confirmed, 4 Aug 2026)
+
+When choosing and writing each article, the priority order is:
+
+1. **Accuracy above everything — paramount.** A claim only survives if it is
+   certainly correct; anything uncertain is generalised or dropped, even when
+   the specific version would rank or convert better. Never trade accuracy
+   for any priority below.
+2. **No repeats** — genuinely new ground against every existing article.
+3. **Practice-area rotation** — cycle Family Law, Wills & Estates, Commercial
+   Law; rotate away from the most recent articles' areas.
+4. **Search demand** — within the due practice area, pick the subtopic with
+   the strongest real search intent and a clear primary keyword.
+5. **AI/answer-engine optimisation** — structure articles so AI assistants
+   and AI search surfaces can accurately extract, quote and cite them
+   (question-style headings, direct answers) — never by overstating certainty.
+6. **Persuasiveness and client acquisition** — every article should read as a
+   reason to call the firm: confident plain-English authority, practical value
+   that demonstrates competence, and a natural call to action to
+   (03) 9125 8355. Persuasive framing must stay within what is accurate;
+   accuracy wins every trade-off.
+
 ## Other publishing conventions
 
 - **Publishing is fully automatic** (owner instruction, 4 Aug 2026): each run

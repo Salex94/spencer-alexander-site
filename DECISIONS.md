@@ -13,6 +13,20 @@ Newest entries first.
 
 ---
 
+## 2026-08-04 (evening) — Article priority order confirmed by owner
+
+**Owner instruction (live chat, 4 Aug):** "don't forget about AI optimisation
+and persuasiveness / client acquisition as well. But yes, Accuracy above
+everything is of paramount importance."
+
+Recorded as the ordered list in CLAUDE.md, "Article priorities": accuracy
+(paramount) → no repeats → practice-area rotation → search demand → AI/answer-
+engine optimisation → persuasiveness/client acquisition. Persuasion is an
+explicit goal of every article — plain-English authority and a natural call to
+action — but always within what is accurate; accuracy wins every trade-off.
+
+---
+
 ## 2026-08-04 (later) — Twice-weekly cadence; autonomous photo sourcing; photo pool stocked
 
 **Owner instructions (live chat, 4 Aug, after the blocked morning run):**
