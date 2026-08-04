@@ -13,6 +13,38 @@ Newest entries first.
 
 ---
 
+## 2026-08-04 — Fully automatic publishing; weekly trigger replaced
+
+**Owner instruction (live chat, 4 Aug):** "publish fully automatically with no
+action from me." This supersedes the PR-review flow in the original routine
+prompt and re-confirms the 28 Jul auto-publish authorisation.
+
+**Implementation:** the original trigger was created via the claude.ai UI
+(`http_api`), and agents cannot edit prompts of triggers they did not create.
+So a replacement was created and the original disabled (a trigger's own fired
+session may disable it):
+
+- **Active:** `trig_01MQmCMVChumXYRSauyoiVma` — same schedule (`0 21 * * 0`
+  UTC = Mon 07:00 Melbourne), fresh session per fire, rewritten prompt:
+  direct commit to `main` + push, claims register in the commit message,
+  gate scripts mandatory, stop-don't-degrade on any blocker, owner notified
+  at the end of every run. Built-in push+email completion notifications ON.
+  Agent-created, so future runs CAN update this one via `update_trigger`.
+- **Disabled, not deleted:** `trig_01BnmA2SypQV6wtF2Nvtxmzf` (PR flow). Do not
+  re-enable without owner instruction.
+
+**Note for the owner — model not pinned:** the old trigger pinned
+`claude-sonnet-5`; the new one has no model pin (agents may not set a
+routine's model without an explicit owner request), so runs use the account
+default. Say the word in any session to pin one.
+
+**Photo handover status:** owner pasted 5 photos into chat — they arrive
+view-only, not as files, so they could not be committed. GitHub web upload
+also failed for the owner (cause TBC — likely mobile browser; the uploader
+needs a desktop browser). Photos are still the only blocker for the next run.
+
+---
+
 ## 2026-08-04 — Weekly run blocked: no spare photograph (no article written)
 
 This run re-checked `scripts/check-article-images.py`: still 22 photographs for

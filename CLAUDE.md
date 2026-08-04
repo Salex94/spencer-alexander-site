@@ -111,6 +111,13 @@ than reusing one.
 
 ## Other publishing conventions
 
+- **Publishing is fully automatic** (owner instruction, 4 Aug 2026): the weekly
+  run commits the article directly to `main` and pushes — no PR, no approval
+  step. The claims register goes in the commit message, and the owner must be
+  notified at the end of every run, success or failure. The active trigger is
+  `trig_01MQmCMVChumXYRSauyoiVma` (agent-created, so future runs can update it);
+  the original PR-flow trigger `trig_01BnmA2SypQV6wtF2Nvtxmzf` is disabled, not
+  deleted — do not re-enable it without owner instruction.
 - **No topic rehashes.** A new article must not substantially overlap an
   existing one in substance, even under a different title. The exception is a
   genuine change in the law, which must be framed as an update, substantiated,
@@ -134,8 +141,9 @@ than reusing one.
 
 ## Environment note
 
-The GitHub API is not available to automated sessions in this repo
-("GitHub access is not enabled for this session. An org admin must connect the
-Claude GitHub App for this organization"), so `gh pr create` and API-based
-merges fail. `git push` over the git proxy works. Connecting the Claude GitHub
-App would restore the normal pull-request flow.
+As of 4 Aug 2026 the GitHub API **is** available to automated sessions via the
+GitHub MCP tools (earlier notes saying it was disabled are stale). `git push`
+over the git proxy also works. Publishing is nonetheless direct-push to `main`
+by owner instruction — see "Other publishing conventions" and DECISIONS.md.
+Photos pasted into the chat UI arrive view-only, not as files: new images must
+reach the repo via GitHub (web upload or a local clone), not via chat.
