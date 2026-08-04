@@ -93,7 +93,11 @@ session may disable it):
   at the end of every run. Built-in push+email completion notifications ON.
   Agent-created, so future runs CAN update this one via `update_trigger`.
 - **Disabled, not deleted:** `trig_01BnmA2SypQV6wtF2Nvtxmzf` (PR flow). Do not
-  re-enable without owner instruction.
+  re-enable without owner instruction. **Update 4 Aug (evening): the owner
+  approved deleting it** and will remove it via the claude.ai UI (agents
+  cannot delete UI-created routines). If it still appears in a later
+  `list_triggers`, that is just the owner not having deleted it yet — it stays
+  disabled and harmless either way.
 
 **Note for the owner — model not pinned:** the old trigger pinned
 `claude-sonnet-5`; the new one has no model pin (agents may not set a
