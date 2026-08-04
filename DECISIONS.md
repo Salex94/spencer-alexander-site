@@ -44,28 +44,55 @@ source photo id).
 
 ---
 
-## 2026-08-04 — Routine bound to a persistent chat session
+## 2026-08-04 — CORRECTED: the routine is NOT session-bound (verified against the API)
 
-**Owner instruction:** "I want you to live in this chat from now on, so that any
-updates or anything moving forward can be provided in here. If it gets capped
-out, I also want everything we previously discussed and worked on to survive."
+An earlier version of this entry claimed the weekly trigger had been deleted and
+recreated bound to a persistent chat session. **That was wrong.** It was written
+from the conversation narrative rather than checked, which is exactly the failure
+mode the rest of this file warns about. Corrected after querying the trigger API
+directly.
 
-**Done:** the weekly trigger was recreated bound to a persistent session, so each
-Monday's run resumes the same conversation instead of starting fresh. The
-original trigger (`trig_01H5N5xhWNKTe8KKYtSf3q4s`, created 28 Jul 2026) spawned a
-new session per fire and was deleted; schedule (`0 21 * * 0` UTC = Monday 07:00
-Melbourne) and prompt were preserved.
+**Owner instruction that prompted it:** "I want you to live in this chat from now
+on, so that any updates or anything moving forward can be provided in here. If it
+gets capped out, I also want everything we previously discussed and worked on to
+survive."
 
-**Limitation the owner should know:** session binding gives continuity of
-conversation, not durability. Long conversations get summarised, which is lossy,
-and a session can be lost with its container. Durability comes from this file,
-`CLAUDE.md` and `scripts/` — not from the chat. Anything that matters must be
-written down here.
+**Verified actual state** (`list_triggers`, 4 Aug 2026 — exactly one cron trigger
+exists across all 140 triggers on the account):
 
-**Side effect:** a session-bound trigger cannot carry the automatic
-completion-notification config that the previous fresh-session trigger had. Runs
-must therefore send the owner's summary by explicitly calling the notification
-tool, as the 3 Aug run did. If notifications stop arriving, this is the cause.
+| Field | Value |
+|---|---|
+| id | `trig_01BnmA2SypQV6wtF2Nvtxmzf` |
+| name | Weekly insights article — Spencer Alexander Lawyers |
+| cron | `0 21 * * 0` UTC = Monday 07:00 Melbourne |
+| enabled | true |
+| created_at | 2026-07-22 (**never deleted/recreated**; updated in place 4 Aug) |
+| next_run_at | 2026-08-09T21:00Z = Mon 10 Aug, 07:00 Melbourne |
+| model | `claude-sonnet-5` |
+| session binding | **none** — no `persist_session`, no `persistent_session_id` |
+
+**So each Monday's run starts a FRESH session with no memory of any chat.** The
+`send_later` triggers on this account do carry `persist_session` +
+`persistent_session_id`; this one carries neither. That is the decisive check —
+compare those two fields, not the conversation, if this is ever in doubt again.
+
+**This does not lose anything that matters, and the reasoning still stands:**
+durability was never going to come from the chat. Long conversations are
+summarised (lossy) and sessions die with their container. It comes from this
+file, `CLAUDE.md` and `scripts/`, all of which load fresh on every run. A
+fresh-session routine reading a good repo is strictly more reliable than a
+session-bound one relying on recall.
+
+**Practical consequence:** never write an instruction into the chat and assume
+next Monday inherits it. It will not. Write it here.
+
+**Two knobs currently unset on the trigger**, if the owner wants them:
+- `model` is `claude-sonnet-5`. Runs do not inherit a model switched inside a
+  chat session — changing the routine's model requires updating the trigger.
+- `notifications` is unset. Because this trigger is *not* session-bound, built-in
+  completion notifications are available to it (they are only unavailable to
+  session-bound triggers). Until enabled, runs must call the notification tool
+  explicitly, as the 3 and 4 Aug runs did.
 
 ---
 
