@@ -3,6 +3,43 @@
 This repository **is** the live website (static HTML/CSS/JS, no build step,
 deployed by GitHub Pages from `main`). Anything merged to `main` is published.
 
+## Before publishing anything, run the gate
+
+```
+python3 scripts/check-publish.py
+```
+
+35 mechanical checks covering the publishing specification: JSON-LD validity and
+required fields, date consistency across all six surfaces, listing-page
+ordering, link and asset resolution, house style, word count, and photograph
+uniqueness. **Exit 0 is required to publish.** Fix failures; do not work around
+them.
+
+It deliberately does **not** check the three things that matter most and cannot
+be automated: whether every legal claim is true, whether the topic genuinely
+avoids rehashing an existing article, and whether the writing is good. Those
+still need the multi-pass read described in the routine brief.
+
+## Why these files exist (read this before adding a rule)
+
+Instructions given in conversation do not survive to the next scheduled run —
+each run starts with no memory of previous chats. Only three things persist:
+
+1. **The routine prompt** — the standing task brief, owned and edited by the
+   owner outside this repo. Structural changes to the job belong there.
+2. **This file** — auto-loaded from the repo on every run. Conventions,
+   corrections and hard-won lessons belong here.
+3. **`scripts/`** — anything mechanically checkable belongs here, because a
+   failing check does not depend on anyone remembering the rule.
+
+So when a new instruction arrives: write it into this file, and if it can be
+checked by machine, add it to a script in the same change. A rule that lives
+only in a conversation will be lost.
+
+If this file and the routine prompt ever conflict, the scripts are the
+tie-breaker in practice — they block the publish either way. Flag the conflict
+to the owner so the routine prompt can be corrected.
+
 ## Article images — every article gets its own photograph
 
 **Rule: no photograph may appear on more than one insight article.** Each new
