@@ -13,6 +13,54 @@ Newest entries first.
 
 ---
 
+## 2026-08-04 (later) — Twice-weekly cadence; autonomous photo sourcing; photo pool stocked
+
+**Owner instructions (live chat, 4 Aug, after the blocked morning run):**
+
+1. "I need you to find photos yourself and publish them yourself."
+2. "I need you to be fully automated. You create the article, in accordance
+   with all of the instructions, find the relevant photo and push it and
+   publish it to the website, at the same time, every Monday. Make it 10AM AEST
+   (melbourne time). I also want an article published at 10AM on Thursdays
+   (twice weekly). You find the legitimate photo, from anywhere on the
+   internet."
+
+**Environment change that makes this possible:** `images.unsplash.com` (and
+Wikimedia/Flickr CDN) became reachable on 4 Aug — the morning run's 403s are
+stale. `pixabay.com`, `pexels.com`, `openverse.org` still blocked. Unsplash
+photos can be fetched by direct URL (wrong ids 404, so existence is checkable)
+and were visually inspected before committing.
+
+**Photos added (9, Unsplash licence, 800×500 card crops, named by source id):**
+`1479142506502` antique law books · `1505664194779` heritage library with
+busts · `1511632765486` family arm in arm at sunset · `1521737852567` team
+working at laptops · `1528716321680` "difficult roads" letterboard ·
+`1554469384` glass office buildings · `1560518883` house keys with model
+house · `1568605114967` house at dusk · `1589829545856` Lady Justice statue.
+og:image URLs follow the existing CDN convention
+(`https://images.unsplash.com/photo-<full-id>?q=80&w=1200&h=630&auto=format&fit=crop`).
+Full ids are recorded in this entry's commit.
+
+**Child support photo swapped** (open item from the 3 Aug regression): article
+now uses `1511632765486` (family at sunset) on all surfaces; the handshake
+`1521791136064` returns to the spare pool (it still appears on
+commercial-law.html, which the uniqueness rule does not cover). Spare count
+after this change: **9** (the swap consumed one new photo and freed the
+handshake), confirmed by `check-article-images.py`.
+
+**Cadence/trigger:** `trig_01MQmCMVChumXYRSauyoiVma` updated — cron
+`0 0 * * 1,4` UTC = Monday and Thursday 10:00 AEST; prompt rewritten for
+twice-weekly, article date = run date, autonomous photo sourcing per
+CLAUDE.md. **DST caveat flagged to owner:** cron is fixed UTC, so from the
+first Sunday of October (AEDT) it fires at 11:00 Melbourne. Owner asked for
+"10AM AEST" — left as-is; say the word to shift it during daylight saving.
+
+**Date rule change:** with two slots a week, "last article + 7 days" is dead.
+Article date = the run's own date (Melbourne). Duplicate guard unchanged: an
+existing article with the same `datePublished` stops the run.
+
+---
+
 ## 2026-08-04 — Fully automatic publishing; weekly trigger replaced
 
 **Owner instruction (live chat, 4 Aug):** "publish fully automatically with no
@@ -218,12 +266,14 @@ commencement dates were omitted rather than risk being wrong.
 
 ## Open items for the owner
 
-- [ ] **Add photos to `assets/photos/`.** Still 22 photographs for 22 articles —
-      zero spare as of the 2026-08-04 run. Every weekly run will keep stopping
-      without publishing until this is done. 800×500 for cards, 1200×630 for
-      `og:image`.
-- [ ] **Swap the child support article's handshake photo** for something
-      family-appropriate once images are available.
+- [x] ~~Add photos to `assets/photos/`~~ — 9 added autonomously 4 Aug (owner
+      instruction); 10 spares now available. Future runs source their own from
+      Unsplash when the pool runs dry (see CLAUDE.md, "Article images").
+- [x] ~~Swap the child support article's handshake photo~~ — done 4 Aug, now
+      `1511632765486` (family at sunset).
+- [ ] **DST decision:** the twice-weekly trigger fires at 10:00 AEST; during
+      daylight saving (Oct–Apr) that becomes 11:00 AEDT. Tell any run if you
+      want it shifted.
 - [x] ~~Connect the Claude GitHub App~~ — GitHub API access confirmed working
       2026-08-04; no further owner action needed unless it regresses.
 - [ ] Decide whether photograph uniqueness should extend to the practice-area

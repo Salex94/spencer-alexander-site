@@ -82,21 +82,29 @@ which is what the check script does. Comparing by checksum is how the child
 support article (3 Aug 2026) shipped with the same photo as the parenting
 arrangements article.
 
-### When no photograph is free
+### When no photograph is free — source one yourself (owner instruction, 4 Aug 2026)
 
-As at August 2026 the photo library is at capacity — roughly one photograph per
-article, with no spare. **A new article therefore needs a new image added to
-`assets/photos/` before it can publish.** Adding one requires either:
+The owner has instructed runs to **source photographs autonomously** ("you find
+the legitimate photo, from anywhere on the internet"). Preference order:
 
-- the owner dropping a licensed image into `assets/photos/`, or
-- network access to an image host.
+1. **Use a spare from `assets/photos/`** if `check-article-images.py` reports
+   one free (a pool of spares was committed 4 Aug 2026).
+2. **Download a new photo from Unsplash** (`images.unsplash.com` became
+   reachable on 4 Aug 2026 — earlier notes saying all image hosts are blocked
+   are stale; `pixabay.com`, `pexels.com` and `openverse.org` were still
+   blocked when last tested). Unsplash's licence permits free commercial use
+   and is the site's existing photo source. Process that works without an API
+   key: construct `https://images.unsplash.com/photo-<id>?q=80&w=800&h=500&fit=crop&fm=jpg`,
+   confirm HTTP 200 (a wrong id 404s), download, and **visually inspect the
+   image before use** — confirm the subject genuinely suits the article and is
+   professional in tone. Never commit an image you have not looked at.
+3. If neither works (hosts blocked again, nothing suitable), **stop without
+   publishing and notify the owner** — never reuse an existing article's
+   photograph.
 
-Note that in the automated publishing environment **all image hosts are blocked**
-by the egress policy (`images.unsplash.com`, `unsplash.com`, `cdn.pixabay.com`,
-`live.staticflickr.com`, Wikimedia and the live site itself all fail the proxy
-CONNECT with 403). An automated run cannot download a new photo. If the check
-script reports no spare photographs, stop and ask the owner for an image rather
-than reusing one.
+Only use photos under a licence that clearly permits commercial use without
+attribution (Unsplash licence, CC0). Never use images of identifiable private
+individuals as though they were clients, and avoid recognisable logos.
 
 ### Adding a new image
 
@@ -111,13 +119,21 @@ than reusing one.
 
 ## Other publishing conventions
 
-- **Publishing is fully automatic** (owner instruction, 4 Aug 2026): the weekly
-  run commits the article directly to `main` and pushes — no PR, no approval
+- **Publishing is fully automatic** (owner instruction, 4 Aug 2026): each run
+  commits the article directly to `main` and pushes — no PR, no approval
   step. The claims register goes in the commit message, and the owner must be
   notified at the end of every run, success or failure. The active trigger is
   `trig_01MQmCMVChumXYRSauyoiVma` (agent-created, so future runs can update it);
   the original PR-flow trigger `trig_01BnmA2SypQV6wtF2Nvtxmzf` is disabled, not
   deleted — do not re-enable it without owner instruction.
+- **Cadence is twice weekly** (owner instruction, 4 Aug 2026): Monday AND
+  Thursday at 10:00 Melbourne time. Trigger cron is `0 0 * * 1,4` UTC, which is
+  10:00 AEST; during daylight saving (first Sunday of October to first Sunday
+  of April) it fires at 11:00 AEDT — flagged to the owner, adjust only on
+  owner instruction. **Article date = the run's date in Melbourne** (no longer
+  "last article + 7 days"). Duplicate guard: if an `insight-*.html` with
+  `datePublished` equal to the target date already exists on `main`, stop
+  without publishing.
 - **No topic rehashes.** A new article must not substantially overlap an
   existing one in substance, even under a different title. The exception is a
   genuine change in the law, which must be framed as an update, substantiated,
@@ -147,3 +163,9 @@ over the git proxy also works. Publishing is nonetheless direct-push to `main`
 by owner instruction — see "Other publishing conventions" and DECISIONS.md.
 Photos pasted into the chat UI arrive view-only, not as files: new images must
 reach the repo via GitHub (web upload or a local clone), not via chat.
+
+Egress (last verified 4 Aug 2026): `images.unsplash.com`, `unsplash.com`,
+Wikimedia and `live.staticflickr.com` are reachable; `pixabay.com`,
+`pexels.com` and `openverse.org` still 403. Australian legislation and
+court/government sites remain blocked — verify legal specifics via search
+restricted to official domains and stay conservative.
