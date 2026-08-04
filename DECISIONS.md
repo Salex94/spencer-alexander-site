@@ -13,6 +13,37 @@ Newest entries first.
 
 ---
 
+## 2026-08-04 — Weekly run blocked: no spare photograph (no article written)
+
+This run re-checked `scripts/check-article-images.py`: still 22 photographs for
+22 articles, zero spare. Also re-tested the image-host egress block directly
+(`curl` to `images.unsplash.com`, `cdn.pixabay.com`, `commons.wikimedia.org`) —
+all three still fail the proxy CONNECT with 403. Both constraints from the
+"Open items for the owner" section below are unchanged, so per CLAUDE.md
+("Article images... When no photograph is free") this run **stopped without
+writing an article**: no new `insight-*.html`, no branch, no PR. Writing one
+would have forced a duplicate photo, which is the exact regression this file
+already documents from 3 Aug.
+
+`gh pr list`-equivalent check (`list_pull_requests`, state=open) showed no PR
+targeting an insight article — only an unrelated Cloudflare Workers config PR
+(#2) — so a missing photo, not a duplicate in-flight PR, is the only blocker.
+
+**Correction to "Standing environment constraints" below:** the GitHub API is
+no longer disabled for this session. `mcp__github__get_me` and
+`mcp__github__list_pull_requests` both succeeded this run (previously they
+failed with "GitHub access is not enabled for this session"). The PR flow in
+CLAUDE.md/the routine prompt should work once there is an article to publish —
+worth re-verifying with an actual `create_pull_request` call the next time a
+photo is available.
+
+**Owner action needed before next Monday's run can publish anything:** add at
+least one new licensed photograph to `assets/photos/` (see CLAUDE.md, "Adding
+a new image" — 800×500 crop for cards, 1200×630 for `og:image`, filename =
+source photo id).
+
+---
+
 ## 2026-08-04 — Routine bound to a persistent chat session
 
 **Owner instruction:** "I want you to live in this chat from now on, so that any
@@ -122,19 +153,20 @@ commencement dates were omitted rather than risk being wrong.
 
 | Constraint | Effect |
 |---|---|
-| GitHub API disabled for automated sessions | No PRs, no API merges. `git push` works. |
+| GitHub API — **as of 2026-08-04 this is now available** (`get_me`, `list_pull_requests` succeeded). Previously disabled; leave the PR flow live but re-verify `create_pull_request` actually works the next time there's an article to open one for. | PRs should work again; confirm on next successful article. |
 | All image hosts blocked (Unsplash, Pixabay, Flickr, Wikimedia, own site) | Cannot download new photos. New images must be added by the owner. |
 | Australian legislation/court/government sites blocked | PASS B verification via search only; be conservative with specifics. |
 
 ## Open items for the owner
 
-- [ ] **Add photos to `assets/photos/`.** The library is at 22 photographs for 22
-      articles — zero spare. The next article cannot publish without a new image,
-      and an automated run cannot download one. 800×500 for cards, 1200×630 for
+- [ ] **Add photos to `assets/photos/`.** Still 22 photographs for 22 articles —
+      zero spare as of the 2026-08-04 run. Every weekly run will keep stopping
+      without publishing until this is done. 800×500 for cards, 1200×630 for
       `og:image`.
 - [ ] **Swap the child support article's handshake photo** for something
       family-appropriate once images are available.
-- [ ] **Connect the Claude GitHub App** to restore the pull-request flow.
+- [x] ~~Connect the Claude GitHub App~~ — GitHub API access confirmed working
+      2026-08-04; no further owner action needed unless it regresses.
 - [ ] Decide whether photograph uniqueness should extend to the practice-area
       pages. Currently `1514395462725` (guardianship article) also appears on
       commercial-law.html, and `1517048676732` (shareholder agreements) on
