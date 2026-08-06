@@ -177,6 +177,23 @@ When choosing and writing each article, the priority order is:
   (3 newest teaser cards), `sitemap.xml`, `feed.xml` (new first item +
   `lastBuildDate`) and `llms.txt`.
 
+## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
+
+The owner has asked that runs never require their input. Two facts every run
+must know:
+
+- A run **cannot** write `.claude/settings.json` or otherwise grant itself
+  permissions — the Auto Mode classifier hard-blocks it. Do not retry or work
+  around it. The prepared allowlist lives at
+  `scripts/preapproved-claude-settings.json`; only the owner can activate it
+  (rename to `.claude/settings.json` on GitHub, or add the repo as a source in
+  the environment settings). If `.claude/settings.json` exists, the owner has
+  activated it — never edit or weaken it without owner instruction.
+- If a run is blocked waiting on a permission the owner has not granted,
+  proceed with whatever else is possible; if publishing itself is blocked,
+  stop without degrading and tell the owner exactly which approval was missing
+  (per the standing notify-on-every-run rule).
+
 ## Environment note
 
 As of 4 Aug 2026 the GitHub API **is** available to automated sessions via the
