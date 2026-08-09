@@ -167,6 +167,15 @@ def main():
     placeholders = [p for p in ("TODO", "Lorem", "{{", "PLACEHOLDER", "XXX") if p in art]
     check("no template placeholders", not placeholders, ", ".join(placeholders))
 
+    # Owner instruction 6 Aug 2026: no dashes in the writing. Em dashes, en
+    # dashes and spaced hyphens are banned everywhere in the article (title,
+    # description, body, JSON-LD). Hyphenated compound words are still fine.
+    # Articles published on or before 2026-08-06 predate the rule.
+    if iso > "2026-08-06":
+        dashes = [d for d in ("—", "–", " - ") if d in art]
+        check("no dashes in writing (em/en/spaced hyphen)", not dashes,
+              ", ".join(repr(d) for d in dashes))
+
     title = re.search(r"<title>(.*?)</title>", art)
     desc = re.search(r'<meta name="description" content="(.*?)">', art)
     check("title ends with firm suffix", title and title.group(1).endswith("| Spencer Alexander Lawyers"))

@@ -156,6 +156,17 @@ When choosing and writing each article, the priority order is:
   "last article + 7 days"). Duplicate guard: if an `insight-*.html` with
   `datePublished` equal to the target date already exists on `main`, stop
   without publishing.
+- **No dashes in the writing** (owner instruction, 6 Aug 2026). The owner
+  finds dash punctuation informal and does not want it. No em dashes, no en
+  dashes, no hyphens used as sentence punctuation (a hyphen with spaces
+  around it) anywhere in a new article: title, meta description, visible
+  body, image alt text and JSON-LD. Restructure the sentence with a comma,
+  colon, full stop or parentheses instead. Hyphenated compound words such as
+  "12-month rule" or "court-appointed" are normal formal English and remain
+  allowed. Apply the same style to owner-facing notification text. Enforced
+  by check-publish.py for articles dated after 2026-08-06 (earlier articles
+  predate the rule and are exempt; do not rewrite them without owner
+  instruction).
 - **No topic rehashes.** A new article must not substantially overlap an
   existing one in substance, even under a different title. The exception is a
   genuine change in the law, which must be framed as an update, substantiated,

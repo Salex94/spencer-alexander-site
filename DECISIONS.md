@@ -13,6 +13,34 @@ Newest entries first.
 
 ---
 
+## 2026-08-06: No dashes in the writing (owner instruction)
+
+**Owner instruction (live chat, 6 Aug):** "With each article, can you also
+remember not to include '-'. I hate how you include dashes in the writing.
+It's not very formal."
+
+**Interpretation applied:** the ban covers dash punctuation, meaning em
+dashes, en dashes and spaced hyphens, everywhere in an article and in
+owner-facing notification text. Hyphenated compound words ("12-month rule",
+"court-appointed") are standard formal English and stay allowed; banning them
+would break normal spelling. If the owner wants compounds gone too, say the
+word in any session and this entry plus the check will be updated.
+
+**Enforcement:** check-publish.py now fails if an article dated after
+2026-08-06 contains an em dash, en dash or spaced hyphen. Verified by fault
+injection (date-bumped a dashed article to 2026-08-10: FAIL; restored: all 35
+checks pass).
+
+**Scope note:** all 23 existing articles, including the 6 Aug one, use em
+dashes heavily (roughly 350 across the site). They predate the rule and were
+NOT rewritten; silently editing live legal content was judged a scope
+decision for the owner. If the owner wants the back catalogue swept clean,
+any run can do it: replace each dash with a comma, colon, full stop or
+parentheses, re-run the gate, and keep dateModified unchanged (punctuation
+only, no substantive change).
+
+---
+
 ## 2026-08-06 — Owner wants zero permission prompts; pre-approval staged, activation is owner-side
 
 **Owner instruction (live chat, 6 Aug, after the Thursday article published):**
