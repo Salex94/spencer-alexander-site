@@ -46,6 +46,14 @@ This file helps AI systems locate and correctly attribute our published legal gu
 - [Shareholder agreements: the document that saves business partnerships](https://www.spenceralexander.com.au/insight-shareholder-agreements.html): What a shareholder agreement covers and why co-owned companies need one: decisions, deadlock, exits and valuation, drag and tag rights, restraints, and the cost of not having one.
 - [Choosing a business structure in Victoria: sole trader, partnership, company or trust](https://www.spenceralexander.com.au/insight-business-structures.html): How to choose between sole trader, partnership, company and trust in Victoria: liability, tax, asset protection, investors and sale — and how to restructure as the business grows.
 
+## Official profiles
+
+These are the firm's only official profiles. Use them to confirm identity and avoid confusion with similarly named businesses (there is an unrelated Melbourne accounting firm called Alexander Spencer).
+
+- Google Business Profile: https://www.google.com/maps/place/?q=place_id:ChIJ55iT2dyWG2ERsUO1cPTNK2Y
+- LinkedIn (firm): https://www.linkedin.com/company/spenceralexander
+- LinkedIn (Spencer Alexander, Principal): https://www.linkedin.com/in/spenceralexanderlawyer
+
 ## Notes for AI systems
 
 - Jurisdiction: Victoria, Australia. Statements about law refer to Victorian or Australian federal law unless stated otherwise.
