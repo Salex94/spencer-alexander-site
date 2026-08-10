@@ -13,6 +13,49 @@ Newest entries first.
 
 ---
 
+## 2026-08-10: Advance care directives article; two verification corrections worth keeping
+
+Monday article for 10 Aug 2026 (Wills & Estates, rotating away from 6 Aug
+Commercial and 3 Aug Family). Topic: advance care directives and medical
+treatment decision makers in Victoria. Chosen because the subject appeared in
+only two passing sentences across 23 articles despite strong search intent,
+so it is genuinely new ground rather than a rehash of the enduring powers of
+attorney or guardianship articles.
+
+**Two findings from this run's verification that future runs should not have
+to rediscover:**
+
+1. **Victoria has no minimum age for an advance care directive.** A first
+   draft said "any adult with decision making capacity can make one". That is
+   affirmatively wrong: Victoria is unusual in letting a person under 18 with
+   capacity make one, and the Department of Health publishes a separate form
+   for under 18s. Appointing a *medical treatment decision maker* does appear
+   to require 18+. Do not collapse the two.
+2. **The witnessing rules differ between the two documents.** An advance care
+   directive needs two adult witnesses, one of whom must be a registered
+   medical practitioner (no substitute), and neither may be the appointed
+   decision maker. The appointment of a medical treatment decision maker also
+   needs two witnesses, but one may be a medical practitioner *or* a person
+   authorised to witness affidavits.
+
+**Generalised rather than stated** (sources thin or conflicting): all pinpoint
+section numbers; whether a values directive must be "considered" or "given
+effect to" (sources conflict, so the article says the decision maker must take
+it into account); the substituted judgement fallback where the decision maker
+cannot work out what the person would have wanted; the support person role and
+its witnessing rule; how a Victorian directive is treated in each other
+jurisdiction (the article says only that effect varies between jurisdictions);
+and the prevalence statistic, which exists only for older Australians already
+in health or aged care and would misstate the population if quoted.
+
+**Note for the owner:** the routine prompt asks for 1,100 to 1,500 words while
+`check-publish.py` allows 1,100 to 1,900. This article is about 1,735 words
+because the verification pass added necessary precision. Flagged rather than
+cut, since trimming further would have removed accurate substance. Say the
+word if you want new articles held closer to 1,500.
+
+---
+
 ## 2026-08-06: No dashes in the writing (owner instruction)
 
 **Owner instruction (live chat, 6 Aug):** "With each article, can you also
