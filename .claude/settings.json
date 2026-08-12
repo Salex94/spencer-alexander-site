@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Read", "Glob", "Grep", "Write", "Edit", "NotebookEdit",
+      "WebSearch", "WebFetch", "PushNotification", "Skill",
+      "Agent", "ToolSearch", "TodoWrite",
+      "TaskCreate", "TaskUpdate", "TaskList", "TaskGet", "TaskOutput", "TaskStop",
+      "Monitor", "SendUserFile",
+      "Bash",
+      "mcp__Gmail", "mcp__Claude_Code_Remote", "mcp__Google_Drive", "mcp__Google_Calendar"
+    ]
+  }
+}
