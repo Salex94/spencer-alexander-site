@@ -13,6 +13,30 @@ Newest entries first.
 
 ---
 
+## 2026-08-13 (later): Second fire same day, duplicate guard stopped it
+
+A second run fired today. This run's own prompt states the owner changed
+cadence to weekly on 13 Aug 2026, but `main` already carried a same day
+article: commit `8fe84e9`, "Publish: Spousal maintenance in Victoria (Family
+Law, 13 Aug 2026)", pushed earlier today (00:16 UTC, that commit's own message
+still calls it "twice weekly auto publish", so it ran under the old Monday and
+Thursday trigger before or without the cadence change taking effect on the
+trigger itself).
+
+Per STEP 3's duplicate guard (an `insight-*.html` with today's `datePublished`
+already exists on main), this run stopped without writing or publishing a
+second article. No files changed by this run other than this entry.
+
+**Open item for the owner:** if weekly cadence was set by editing the routine
+prompt only, the underlying trigger's cron schedule may still be the old
+`0 0 * * 1,4` UTC (Monday and Thursday). That would explain today's (Thursday)
+fire under the old twice weekly wording and would mean the next unwanted fire
+is the coming Monday, unless the cron itself is also updated to a Monday only
+schedule. Worth confirming trigger state directly rather than assuming the
+prompt edit alone changed the schedule.
+
+---
+
 ## 2026-08-13: Owner activated .claude/settings.json; permission prompts should now be resolved
 
 This run's `git fetch` showed a new commit on `main` since the last recorded
