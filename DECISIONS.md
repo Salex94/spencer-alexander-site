@@ -13,6 +13,34 @@ Newest entries first.
 
 ---
 
+## 2026-08-13: Owner activated .claude/settings.json; permission prompts should now be resolved
+
+This run's `git fetch` showed a new commit on `main` since the last recorded
+state: `97473bc "Create settings.json"`, authored by the owner on 12 Aug 2026,
+adding `.claude/settings.json` with `defaultMode: "acceptEdits"` and an allow
+list covering `Read, Glob, Grep, Write, Edit, NotebookEdit, WebSearch,
+WebFetch, PushNotification, Skill, Agent, ToolSearch, TodoWrite, TaskCreate,
+TaskUpdate, TaskList, TaskGet, TaskOutput, TaskStop, Monitor, SendUserFile,
+Bash, mcp__Gmail, mcp__Claude_Code_Remote, mcp__Google_Drive,
+mcp__Google_Calendar`.
+
+This is option 1 from the 6 Aug entry below (owner edits
+`scripts/preapproved-claude-settings.json` on GitHub and commits it as
+`.claude/settings.json`), done directly rather than by renaming the staged
+file, and with a shorter allow list than the staged version (notably no
+per-repo `add_repo`/`register_repo_root` entry, though `mcp__Claude_Code_Remote`
+covers the MCP server broadly). Per CLAUDE.md, "If `.claude/settings.json`
+exists, the owner has activated it. Never edit or weaken it without owner
+instruction," so this run left it untouched and only records the change here.
+
+**Not independently verified this run** whether prompts are actually gone in
+practice (this run did not hit a permission prompt, but a fresh-session run
+with no prior denial history may not be a fair test either way). If a future
+run still gets prompted, that is worth a follow-up entry; if not, the 6 and 10
+Aug open items asking the owner to activate this can be marked done.
+
+---
+
 ## 2026-08-10: Promptless runs still blocked on owner activation; allowlist widened
 
 Owner asked again how to make the routine run on schedule with no permission
@@ -433,6 +461,10 @@ commencement dates were omitted rather than risk being wrong.
 
 ## Open items for the owner
 
+- [x] ~~Activate `.claude/settings.json`~~ — done by the owner 12 Aug 2026
+      (commit `97473bc`). Not yet independently confirmed that permission
+      prompts have actually stopped; flag in this file if a future run still
+      gets prompted.
 - [x] ~~Add photos to `assets/photos/`~~ — 9 added autonomously 4 Aug (owner
       instruction); 10 spares now available. Future runs source their own from
       Unsplash when the pool runs dry (see CLAUDE.md, "Article images").
