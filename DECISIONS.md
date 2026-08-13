@@ -13,6 +13,15 @@ Newest entries first.
 
 ---
 
+## 2026-08-13: Validation run of the rebuilt owner-created routine
+
+Machinery only check, no article written. `python3 scripts/check-publish.py`
+passed 36/36 and `python3 scripts/check-article-images.py` passed (PASS,
+6 spare photographs free), confirming the repo clone, gate scripts and image
+pool are all in working order as of this run.
+
+---
+
 ## 2026-08-13 (later): Second fire same day, duplicate guard stopped it
 
 A second run fired today. This run's own prompt states the owner changed
