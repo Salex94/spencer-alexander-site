@@ -181,6 +181,14 @@ def main():
     check("canonical + og:url keep .html", ('rel="canonical" href="%s"' % url) in art
           and ('content="%s"' % url) in art, url)
 
+    # The article template ships with a noindex robots meta (the template page
+    # itself must not be indexed). A published article must have flipped it,
+    # or the article silently never appears in search.
+    rmeta = re.search(r'<meta name="robots" content="([^"]+)"', art)
+    check("article robots meta allows indexing",
+          bool(rmeta) and "index" in rmeta.group(1) and "noindex" not in rmeta.group(1),
+          rmeta.group(1) if rmeta else "missing")
+
     # ---- house style ----------------------------------------------------
     check("byline present", 'Spencer Alexander</a>, Principal' in art)
     check("phone + email match site", PHONE_TEL in art and PHONE_TEXT in art and EMAIL in art)

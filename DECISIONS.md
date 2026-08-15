@@ -76,6 +76,59 @@ in the repo (was: article, insights.html, index.html), so a new page with a
 
 ---
 
+## 2026-08-15 (later): Full SEO/GEO audit after the clean-URL change; three fixes published
+
+**Owner request (live chat, 15 Aug):** audit the whole site, confirm strong
+SEO/GEO, confirm the clean-URL change had zero impact, and provide an off-site
+directory and backlink plan (plan delivered in chat).
+
+**Audit verdict: the clean-URL change touched nothing search engines use.**
+Re-verified mechanically across all 38 HTML files: every indexable page (33)
+has its exact `.html` canonical and og:url; sitemap.xml lists exactly those 33
+pages, no more and no fewer; feed.xml carries all 25 articles; llms.txt covers
+every page; utility pages (404, thank-you, admin, post, template) are all
+noindex; zero broken links, zero missing assets, zero JSON-LD parse errors,
+no duplicate titles or descriptions, one h1 per page, alt text everywhere.
+Live checks: apex 301s to www, http 301s to https, unknown paths return real
+404 status, robots.txt and sitemap.xml serve 200, no x-robots-tag headers,
+both clean and .html URL forms serve 200.
+
+**Fixes published this run:**
+
+1. `about.html`: the Principal section now carries `id="spencer-alexander"`.
+   Every article's JSON-LD author `@id` pointed at that fragment but the
+   anchor did not exist on the page.
+2. robots meta on all 33 indexable pages is now
+   `index, follow, max-image-preview:large` (permits full-size image previews
+   in Google surfaces; standard, zero risk).
+3. New gate check "article robots meta allows indexing": the template
+   correctly ships `noindex`, so a run that cloned it without flipping the
+   tag would publish an article that never appears in search. Verified by
+   fault injection.
+
+**Deliberately left alone (do not change without owner instruction):**
+
+- Long titles (up to 113 chars) and meta descriptions of 171 to 190 chars on
+  24 pre-existing pages. Both are display-truncation cosmetics, not ranking
+  factors; rewriting the indexed titles of live legal pages is churn risk for
+  no gain. The gate already holds new articles to 120 to 170 characters.
+- The two disabled staff Person schema blocks on about.html
+  (`data-hidden-for-now`): owner's call to enable.
+- The owner TODO comment on about.html (admission year and Law Institute of
+  Victoria membership still to add): owner to supply the facts.
+
+**Flag for the owner, needs their confirmation:** the schema's `sameAs`
+profiles (LinkedIn company `/company/spenceralexander`, personal
+`/in/spenceralexanderlawyer`, and a Google Maps place_id) could not be
+verified from this environment, and web search finds no trace of the LinkedIn
+pages. If these profiles do not exist yet they should be created or claimed
+under exactly those handles (preferred), or removed from the schema until
+real. Related: web search finds zero existing citations or backlinks for the
+firm or domain anywhere, so the off-site plan in chat is the growth lever;
+on-page work is already strong.
+
+---
+
 ## 2026-08-13: Validation run of the rebuilt owner-created routine
 
 Machinery only check, no article written. `python3 scripts/check-publish.py`

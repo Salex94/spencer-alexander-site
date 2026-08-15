@@ -9,7 +9,8 @@ deployed by GitHub Pages from `main`). Anything merged to `main` is published.
 python3 scripts/check-publish.py
 ```
 
-38 mechanical checks covering the publishing specification: JSON-LD validity and
+About 40 mechanical checks (the exact count varies with conditional checks)
+covering the publishing specification: JSON-LD validity and
 required fields, date consistency across all six surfaces, listing-page
 ordering, link and asset resolution, clean-URL link style, house style, word
 count, and photograph uniqueness. **Exit 0 is required to publish.** Fix failures; do not work around
