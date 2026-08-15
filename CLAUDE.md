@@ -9,7 +9,7 @@ deployed by GitHub Pages from `main`). Anything merged to `main` is published.
 python3 scripts/check-publish.py
 ```
 
-40 mechanical checks covering the publishing specification: JSON-LD validity and
+38 mechanical checks covering the publishing specification: JSON-LD validity and
 required fields, date consistency across all six surfaces, listing-page
 ordering, link and asset resolution, clean-URL link style, house style, word
 count, and photograph uniqueness. **Exit 0 is required to publish.** Fix failures; do not work around
@@ -171,10 +171,14 @@ instruction.** That would change every indexed URL and, since GitHub Pages
 cannot issue redirects, would rely on canonical hints alone: real ranking
 risk for zero visible gain.
 
-Enforced by check-publish.py ("clickable links extension-free" on the article,
-insights.html and index.html; "canonical + og:url keep .html"; the link
-resolver understands clean links). check-article-images.py finds listing cards
-by the clean href form and still accepts the old `.html` form.
+**This applies to every future edit and every new page** (owner confirmation,
+15 Aug 2026), not just insight articles: any page added to the site gets clean
+clickable links and a `.html` canonical, with the same split as above.
+
+Enforced by check-publish.py ("clickable links extension-free (site-wide)"
+scans every `*.html` file in the repo; "canonical + og:url keep .html"; the
+link resolver understands clean links). check-article-images.py finds listing
+cards by the clean href form and still accepts the old `.html` form.
 
 ## Other publishing conventions
 

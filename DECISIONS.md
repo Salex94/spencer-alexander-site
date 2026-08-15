@@ -65,6 +65,15 @@ before the change).
 template and links come out clean automatically. If a check ever reports a
 `.html` clickable link, fix the link, do not weaken the check.
 
+**Update (same day, owner confirmation):** the owner reviewed the change and
+said "please publish it" and "make sure that any edits / additional pages in
+the future do not include .html at the end". Published by merging the branch
+to `main`. The rule is standing and site-wide: every future edit and every
+new page, of any kind, uses clean clickable links. Enforcement widened
+accordingly: "clickable links extension-free" now scans every `*.html` file
+in the repo (was: article, insights.html, index.html), so a new page with a
+`.html` link fails the gate even if no article touched it.
+
 ---
 
 ## 2026-08-13: Validation run of the rebuilt owner-created routine

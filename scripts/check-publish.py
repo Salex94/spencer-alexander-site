@@ -167,14 +167,17 @@ def main():
     check("local assets exist", not missing_img, ", ".join(missing_img))
     check("no external in-page <img>", not re.search(r'<img[^>]+src="https?:', art))
 
-    # Owner instruction 15 Aug 2026: clickable links show clean URLs with no
+    # Owner instruction 15 Aug 2026 (confirmed same day: applies to every
+    # future edit and new page): clickable links show clean URLs with no
     # .html ("/contact", "/insight-<slug>"), while canonical, og:url, JSON-LD,
     # sitemap, feed and llms.txt keep the indexed .html addresses. GitHub
     # Pages serves both forms, so the indexed URLs never move.
-    for label, doc in (("article", art), ("insights.html", ins), ("index.html", idx)):
-        leaky = re.findall(r'<a\s[^>]*href="(?!https?:)[^"]*\.html', doc)
-        check("clickable links extension-free (%s)" % label, not leaky,
-              "%d link(s) still show .html" % len(leaky))
+    leaky = []
+    for f in sorted(glob.glob("*.html")):
+        n = len(re.findall(r'<a\s[^>]*href="(?!https?:)[^"]*\.html', read(f)))
+        if n:
+            leaky.append("%s: %d" % (f, n))
+    check("clickable links extension-free (site-wide)", not leaky, "; ".join(leaky))
     check("canonical + og:url keep .html", ('rel="canonical" href="%s"' % url) in art
           and ('content="%s"' % url) in art, url)
 
