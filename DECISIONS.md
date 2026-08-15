@@ -13,6 +13,60 @@ Newest entries first.
 
 ---
 
+## 2026-08-15: Clean URLs in clickable links; canonical .html addresses unchanged (owner instruction)
+
+**Owner instruction (live chat, 15 Aug):** no clickable navigation link may
+show `.html` in the URL. Links should read `/commercial-law`, `/insights`,
+`/contact` and so on, and the change must not affect SEO, GEO, indexing or
+anything else on the site.
+
+**What was done:** all 1,050 internal `<a href>` links across every HTML page
+(38 files: navigation, mobile menu, footer, breadcrumbs, area cards, insight
+cards, in-article cross links, CTAs, 404 page, admin/post/thank-you pages and
+`_article-template.html`) rewritten from `name.html` to the clean
+root-relative form `/name`. Home links were already `/`. The contact form's
+post-submit redirect now returns to `/thank-you`.
+
+**Why this cannot move rankings, checked rather than assumed:**
+
+1. Verified live BEFORE changing anything: GitHub Pages already serves both
+   forms on this domain. `/about`, `/about.html` and
+   `/insight-spousal-maintenance-victoria` all returned HTTP 200 (server:
+   GitHub.com). Clean URLs need no redirects and no configuration; every old
+   `.html` URL, bookmark and backlink keeps working unchanged.
+2. Every indexed address is untouched: `rel="canonical"`, `og:url`, all
+   JSON-LD URLs, `sitemap.xml`, `feed.xml`, `llms.txt` and `robots.txt` still
+   carry the exact `.html` URLs that Google and AI answer engines have on
+   record (confirmed by diff: zero changes to those files and zero changes to
+   any canonical/og/JSON-LD line). A crawler following a clean link sees a
+   canonical pointing at the `.html` address it already indexed, so nothing
+   is re-indexed, migrated or redirected.
+3. Search Console may begin listing clean URLs under "Alternate page with
+   proper canonical tag". That is the expected, harmless classification for
+   this setup, not a problem to fix.
+
+**Deliberately NOT done: canonical migration to extensionless URLs.** That
+would change every indexed URL, and GitHub Pages cannot issue 301 redirects,
+so consolidation would rest on canonical hints alone. Real ranking risk, zero
+visible gain. Requires an explicit owner instruction if ever wanted.
+
+**Enforcement (same change):** check-publish.py gained "clickable links
+extension-free" (article, insights.html, index.html) and "canonical + og:url
+keep .html"; its link resolver now resolves `/name` to `name.html` instead of
+skipping root-relative links, and the hero/homepage-card checks match the
+clean form. check-article-images.py finds listing cards by clean hrefs while
+still accepting the old form. Verified by fault injection: a reintroduced
+`.html` link, an extensionless canonical, a broken clean link, an old-form
+hero and a duplicate photograph were each caught; both gates then passed
+clean (40/40 and PASS with the same 25 cards and 6 spare photographs as
+before the change).
+
+**Note for future runs:** copy nav/footer/links from any current page or the
+template and links come out clean automatically. If a check ever reports a
+`.html` clickable link, fix the link, do not weaken the check.
+
+---
+
 ## 2026-08-13: Validation run of the rebuilt owner-created routine
 
 Machinery only check, no article written. `python3 scripts/check-publish.py`

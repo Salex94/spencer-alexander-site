@@ -9,10 +9,10 @@ deployed by GitHub Pages from `main`). Anything merged to `main` is published.
 python3 scripts/check-publish.py
 ```
 
-35 mechanical checks covering the publishing specification: JSON-LD validity and
+40 mechanical checks covering the publishing specification: JSON-LD validity and
 required fields, date consistency across all six surfaces, listing-page
-ordering, link and asset resolution, house style, word count, and photograph
-uniqueness. **Exit 0 is required to publish.** Fix failures; do not work around
+ordering, link and asset resolution, clean-URL link style, house style, word
+count, and photograph uniqueness. **Exit 0 is required to publish.** Fix failures; do not work around
 them.
 
 It deliberately does **not** check the three things that matter most and cannot
@@ -138,6 +138,43 @@ When choosing and writing each article, the priority order is:
    that demonstrates competence, and a natural call to action to
    (03) 9125 8355. Persuasive framing must stay within what is accurate;
    accuracy wins every trade-off.
+
+## Clean URLs: clickable links drop .html, canonical URLs keep it (owner instruction, 15 Aug 2026)
+
+The owner does not want `.html` visible in any clickable link. Every internal
+`<a href>` on every page (navigation, mobile menu, footer, breadcrumbs, cards,
+in-article cross links, CTAs, the article template) uses the clean
+root-relative form:
+
+- `/commercial-law`, `/family-law`, `/wills-and-estates`, `/insights`, `/faq`,
+  `/about`, `/contact`, `/insight-<slug>`; home is `/`.
+- Never add a trailing slash (`/contact/` returns 404 on GitHub Pages).
+- The contact form's `_next` redirect is `https://www.spenceralexander.com.au/thank-you`.
+
+This works because GitHub Pages serves `name.html` for a request to `/name`
+automatically (verified live on this domain, 15 Aug 2026: both `/about` and
+`/about.html` return 200). No redirects exist or are needed; both URL forms
+keep working.
+
+**The SEO and GEO surfaces are deliberately unchanged and must stay that
+way:** `rel="canonical"`, `og:url`, every JSON-LD URL (`mainEntityOfPage`,
+BreadcrumbList items, author `@id`/`url`, the insights `blogPost` list),
+`sitemap.xml`, `feed.xml` and `llms.txt` all keep the full
+`https://www.spenceralexander.com.au/<page>.html` addresses. Those are the
+URLs Google and AI answer engines have indexed. A crawler that follows a clean
+link finds a canonical tag pointing at the `.html` address it already knows,
+so nothing is re-indexed or migrated. (Search Console may report clean URLs as
+"Alternate page with proper canonical tag"; that is expected and harmless.)
+
+**Do not migrate canonicals to extensionless URLs without an explicit owner
+instruction.** That would change every indexed URL and, since GitHub Pages
+cannot issue redirects, would rely on canonical hints alone: real ranking
+risk for zero visible gain.
+
+Enforced by check-publish.py ("clickable links extension-free" on the article,
+insights.html and index.html; "canonical + og:url keep .html"; the link
+resolver understands clean links). check-article-images.py finds listing cards
+by the clean href form and still accepts the old `.html` form.
 
 ## Other publishing conventions
 

@@ -75,7 +75,8 @@ def main():
     idx = read("index.html")
     feed = read("feed.xml")
     smap = read("sitemap.xml")
-    url = BASE + page
+    url = BASE + page          # canonical .html URL (SEO surfaces keep this)
+    purl = "/" + page[:-len(".html")]  # clean URL used by clickable links
 
     # ---- JSON-LD -------------------------------------------------------
     blocks = jsonld(art)
@@ -123,7 +124,7 @@ def main():
               ins.replace(BASE, ""), iso)
 
     # ---- listing surfaces ----------------------------------------------
-    check("article is insights.html hero", ('class="featured" href="%s"' % page) in ins)
+    check("article is insights.html hero", ('class="featured" href="%s"' % purl) in ins)
     check("article first in feed.xml", feed.index(page) < (feed.index("insight-", feed.index("<item>"))
           if "<item>" in feed else len(feed)) or feed.count(page) > 0)
     first_item = feed.split("<item>")[1] if "<item>" in feed else ""
@@ -134,9 +135,8 @@ def main():
     teaser = teaser[:teaser.find("Read all insights")]
     check("homepage teaser has exactly 3 cards", teaser.count('class="post-card"') == 3,
           str(teaser.count('class="post-card"')))
-    check("article is FIRST homepage card", teaser.find(page) != -1 and
-          teaser.find(page) < min([teaser.find(o) for o in re.findall(r'href="(insight-[^"]+)"', teaser)
-                                   if o != page] or [len(teaser)]))
+    cards = re.findall(r'href="(/insight-[^"#?]+)"', teaser)
+    check("article is FIRST homepage card", bool(cards) and cards[0] == purl, str(cards[:3]))
 
     order = re.findall(r'"datePublished": "(\d{4}-\d{2}-\d{2})"', ins)
     check("insights blogPost newest-first", order == sorted(order, reverse=True), str(order[:3]))
@@ -149,13 +149,34 @@ def main():
         except ET.ParseError as e:
             check("%s well-formed" % f, False, str(e))
 
-    broken = [h for h in set(re.findall(r'href="(?!https?:|tel:|mailto:|/|#)([^"#]+)"', art))
-              if not os.path.exists(h.split("?")[0])]
+    # Clean links ("/contact") are served by GitHub Pages from contact.html,
+    # so resolve them against the file that will actually be served.
+    def resolves(href):
+        path = href.split("#")[0].split("?")[0]
+        if path in ("", "/"):
+            return os.path.exists("index.html")
+        path = path.lstrip("/")
+        return os.path.exists(path) or ("." not in os.path.basename(path)
+                                        and os.path.exists(path + ".html"))
+
+    broken = [h for h in set(re.findall(r'href="(?!https?:|tel:|mailto:)([^"]+)"', art))
+              if not resolves(h)]
     check("internal links resolve", not broken, ", ".join(broken))
     missing_img = [s for s in set(re.findall(r'src="(?!https?:)([^"]+)"', art))
                    if not os.path.exists(s.split("?")[0])]
     check("local assets exist", not missing_img, ", ".join(missing_img))
     check("no external in-page <img>", not re.search(r'<img[^>]+src="https?:', art))
+
+    # Owner instruction 15 Aug 2026: clickable links show clean URLs with no
+    # .html ("/contact", "/insight-<slug>"), while canonical, og:url, JSON-LD,
+    # sitemap, feed and llms.txt keep the indexed .html addresses. GitHub
+    # Pages serves both forms, so the indexed URLs never move.
+    for label, doc in (("article", art), ("insights.html", ins), ("index.html", idx)):
+        leaky = re.findall(r'<a\s[^>]*href="(?!https?:)[^"]*\.html', doc)
+        check("clickable links extension-free (%s)" % label, not leaky,
+              "%d link(s) still show .html" % len(leaky))
+    check("canonical + og:url keep .html", ('rel="canonical" href="%s"' % url) in art
+          and ('content="%s"' % url) in art, url)
 
     # ---- house style ----------------------------------------------------
     check("byline present", 'Spencer Alexander</a>, Principal' in art)

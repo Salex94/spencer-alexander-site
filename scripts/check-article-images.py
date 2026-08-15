@@ -38,11 +38,14 @@ def article_photos():
         if not os.path.exists(page):
             continue
         html = open(page, encoding="utf-8").read()
-        # Each card/hero is an <a href="insight-*.html"> shortly followed by its <img>.
+        # Each card/hero is an <a href="/insight-*"> (clean URL, no .html since
+        # 15 Aug 2026; the old .html form is still accepted) shortly followed
+        # by its <img>.
         for m in re.finditer(
-            r'href="(insight-[^"]+\.html)"[\s\S]{0,400}?src="assets/photos/([^"]+)"', html
+            r'href="/?(insight-[^"#?]+?)(?:\.html)?"[\s\S]{0,400}?src="assets/photos/([^"]+)"',
+            html,
         ):
-            used[stem(m.group(2))].add(m.group(1))
+            used[stem(m.group(2))].add(m.group(1) + ".html")
     return used
 
 
