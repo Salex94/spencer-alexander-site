@@ -13,6 +13,50 @@ Newest entries first.
 
 ---
 
+## 2026-08-17: Director's duties article published; cadence conflict between CLAUDE.md and the routine prompt
+
+Monday article for 17 Aug 2026 (Commercial Law, rotating after Family Law
+13 Aug, Wills & Estates 10 Aug, Commercial Law 6 Aug). Topic: a director's
+statutory duties under Australian law (care and diligence, good faith,
+proper use of position and information, and the separate duty to prevent
+insolvent trading). Chosen because no existing article covered it: three
+Commercial Law articles mention a director's personal guarantee in
+passing and one mentions insolvent trading inside a structures
+comparison, but none explain the duties themselves, despite strong,
+evergreen search intent from small business owners and new directors.
+Full claims register is in the publish commit (`2d8db2f`).
+
+**Conflict found and flagged, not resolved by this run:** this run's own
+prompt states cadence is now weekly (Mondays only, changed by the owner
+13 Aug 2026), but CLAUDE.md's "Other publishing conventions" section
+still documents the older twice weekly Monday and Thursday cadence dated
+4 Aug 2026, cron `0 0 * * 1,4` UTC. Nobody has updated CLAUDE.md to match
+the 13 Aug change. Per CLAUDE.md's own tie breaker rule this does not
+block publishing (the duplicate guard is what actually gates each run),
+but CLAUDE.md should be corrected to state the current cadence clearly,
+and the trigger's cron should be confirmed as Monday only rather than
+Monday and Thursday. This is the same open item the 13 Aug "second fire"
+entry below already raised; still open three runs later.
+
+**Timing note:** this run fired at 06:04 Melbourne time (AEST) on Monday
+17 Aug, not the 10:00 slot the routine brief describes. Not a duplicate
+fire (checked: no other 17 Aug article existed on `main` before this
+run), so it was treated as this week's normal run rather than stopped.
+Worth checking whether the trigger's cron time has drifted if a future
+run also fires well before 10:00.
+
+**Photo:** `1554469384.jpg` (glass fronted corporate office building), an
+existing Unsplash spare from the 4 Aug pool, re verified live before use.
+Five spares now remain: `1479142506502`, `1521737852567`, `1528716321680`,
+`1560518883`, `1568605114967`.
+
+**Published by direct push to `main`** from this session's working
+branch (fast forward, `cb8201a..2d8db2f`), consistent with the standing
+fully automatic publishing authorisation (4 Aug 2026 entry below). Gate:
+`check-publish.py` 39/39, `check-article-images.py` PASS.
+
+---
+
 ## 2026-08-15: Clean URLs in clickable links; canonical .html addresses unchanged (owner instruction)
 
 **Owner instruction (live chat, 15 Aug):** no clickable navigation link may
