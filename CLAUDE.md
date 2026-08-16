@@ -186,15 +186,19 @@ cards by the clean href form and still accepts the old `.html` form.
 - **Publishing is fully automatic** (owner instruction, 4 Aug 2026): each run
   commits the article directly to `main` and pushes — no PR, no approval
   step. The claims register goes in the commit message, and the owner must be
-  notified at the end of every run, success or failure. The active trigger is
-  `trig_01MQmCMVChumXYRSauyoiVma` (agent-created, so future runs can update it);
-  the original PR-flow trigger `trig_01BnmA2SypQV6wtF2Nvtxmzf` is disabled, not
-  deleted — do not re-enable it without owner instruction.
-- **Cadence is twice weekly** (owner instruction, 4 Aug 2026): Monday AND
-  Thursday at 10:00 Melbourne time. Trigger cron is `0 0 * * 1,4` UTC, which is
-  10:00 AEST; during daylight saving (first Sunday of October to first Sunday
-  of April) it fires at 11:00 AEDT — flagged to the owner, adjust only on
-  owner instruction. **Article date = the run's date in Melbourne** (no longer
+  notified at the end of every run, success or failure. The active routine is
+  `trig_011EeJwAxwjysuSDRYyzCCUb` ("Weekly website insights article"), an
+  owner-created routine built in the claude.ai Routines UI on 13 Aug 2026.
+  Agents cannot edit or fire it; flag any needed schedule or prompt change to
+  the owner. The old agent-created triggers, including
+  `trig_01MQmCMVChumXYRSauyoiVma`, were deleted in the 13 Aug rebuild.
+- **Cadence is weekly** (owner decision, 13 Aug 2026): every Monday at 6:00am
+  Melbourne time, replacing the earlier twice weekly Monday and Thursday
+  10:00 cadence. The routine's cron is `0 20 * * 0` UTC, which is Monday
+  6:00 AEST; during daylight saving (first Sunday of October to first Sunday
+  of April) it fires at 7:00 AEDT. The schedule lives in the owner-created
+  routine, which agents cannot edit; flag timing drift to the owner instead
+  of adjusting anything. **Article date = the run's date in Melbourne** (no longer
   "last article + 7 days"). Duplicate guard: if an `insight-*.html` with
   `datePublished` equal to the target date already exists on `main`, stop
   without publishing.

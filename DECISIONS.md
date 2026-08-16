@@ -13,6 +13,36 @@ Newest entries first.
 
 ---
 
+## 2026-08-17: Weekly cadence, rebuilt owner-created routines and demand scanner recorded (owner decisions of 13 Aug 2026)
+
+Documentation reconciliation closing the conflict the 17 Aug run entry below
+flagged. Three owner decisions, made 13 Aug 2026 in an owner directed session,
+are now recorded in CLAUDE.md:
+
+1. **Cadence is weekly**: one insights article every Monday at 6:00am
+   Melbourne time, replacing the twice weekly Monday and Thursday 10:00
+   cadence of 4 Aug 2026. This explains the 17 Aug run firing at 06:04 AEST;
+   that timing was correct, not drift.
+2. **Routines rebuilt as owner-created**: all routines were rebuilt in the
+   claude.ai Routines UI as owner-created routines, and the old agent-created
+   triggers (including `trig_01MQmCMVChumXYRSauyoiVma`) were deleted. The
+   active article routine is `trig_011EeJwAxwjysuSDRYyzCCUb` ("Weekly website
+   insights article", cron `0 20 * * 0` UTC, Monday 6:00 AEST). Agents cannot
+   edit or fire owner-created routines and their prompts are not visible to
+   agents; schedule or prompt changes must go through the owner. Rebuild
+   verified 13 Aug and again 17 Aug 2026 (this run confirmed the routine
+   exists with the stated cron and that the old triggers are gone).
+3. **Demand scanner feeds the article routine**: a Friday demand scanner
+   routine (`trig_0111gVYffNkMj161FR2Uj71W`, cron `0 20 * * 4` UTC, Friday
+   6:00 AEST) maintains `scripts/content-backlog.md`. The article routine
+   reads that backlog when choosing topics, alongside the standing priority
+   order in CLAUDE.md.
+
+Scope of this change: CLAUDE.md cadence and trigger bullets plus this entry
+only. No articles, pages, scripts or settings touched.
+
+---
+
 ## 2026-08-17: Director's duties article published; cadence conflict between CLAUDE.md and the routine prompt
 
 Monday article for 17 Aug 2026 (Commercial Law, rotating after Family Law
