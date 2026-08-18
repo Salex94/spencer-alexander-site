@@ -13,6 +13,36 @@ Newest entries first.
 
 ---
 
+## 2026-08-18: Weekly SEO and GEO audit; nine internal cross-links added, no defects found
+
+First run of the weekly SEO and GEO audit routine. Full mechanical sweep of all
+39 HTML pages: zero broken links, zero missing assets, no duplicate titles or
+descriptions, canonicals and og:url all correct, all JSON-LD parses, sitemap
+lists all 34 indexable pages with no dead entries, feed.xml carries all 26
+articles and a current lastBuildDate, llms.txt covers every page, robots.txt
+remains permissive to AI crawlers, alt text present everywhere, one h1 per
+page, no orphan pages. The 17 Aug director's duties article is fully wired
+into all six surfaces (check-publish 39/39).
+
+Fix applied (tier 1 internal linking): the four newest articles (advance care
+directives, child support, director's duties, spousal maintenance) had zero
+in-body inbound links from other articles. Added nine neutral "Read our guide
+to ..." cross-links across eight related articles: business structures and
+shareholder agreements now link the director's duties guide; divorce links the
+child support and spousal maintenance guides; de facto separation and property
+after separation link spousal maintenance; enduring powers of attorney, making
+a valid will and guardianship link advance care directives. No surrounding
+sentence was rewritten; dateModified values were deliberately left unchanged
+(navigation-only edits, same reasoning as the 6 Aug dash-sweep note).
+
+Noted, deliberately not changed: long titles and meta descriptions on the 24
+pre-existing pages stay as they are per the 15 Aug decision; the two staff
+photos on about.html (jordyn.png, katalin.png, about 700 KB each) sit inside
+hidden display:none blocks with lazy loading so they do not load for visitors;
+og-card.png is 619 KB, served only to link-preview crawlers, acceptable.
+
+---
+
 ## 2026-08-17: Weekly cadence, rebuilt owner-created routines and demand scanner recorded (owner decisions of 13 Aug 2026)
 
 Documentation reconciliation closing the conflict the 17 Aug run entry below
