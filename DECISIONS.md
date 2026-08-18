@@ -13,6 +13,64 @@ Newest entries first.
 
 ---
 
+## 2026-08-18: First fortnightly resource published, Separation in Victoria: your first 30 days
+
+First run of the new fortnightly resource routine. No resource pages existed
+yet, so the fortnight gate's first run exception applied and this run built
+one.
+
+Chose a checklist, "Separation in Victoria: your first 30 days"
+(`resource-separation-first-30-days.html`, Family Law), a step by step guide
+covering safety, practical first steps, children, money, getting legal advice
+and putting arrangements in writing. Two of the routine brief's own example
+topics were rejected as duplicates before writing anything: "The Victorian
+Executor's Checklist" substantially overlaps the existing
+`insight-executor-duties.html` ("An executor's duties in Victoria: the
+complete checklist"), and "Before you sign: 12 questions when buying a
+business" overlaps `insight-buying-a-business-victoria.html`. The separation
+checklist does not overlap any existing article: it is a practical action
+list across the first month, distinct from the many Family Law explainer
+articles it links out to (divorce, de facto separation, parenting
+arrangements, property after separation, spousal maintenance, intervention
+orders), none of which take this checklist form.
+
+Built `resources.html` as a new hub page (none existed before), linked from
+`insights.html` via a "reach" banner in the same visual language as the
+existing "call us about anything else" banner used on other pages, and from
+the homepage practice area grid pattern (`area-card`) reused for the resource
+card. No photo was used (optional per the brief); JSON-LD uses HowTo for the
+resource page and CollectionPage and ItemList for the hub, both alongside
+BreadcrumbList and FAQPage. og:image uses the site's existing generic
+`assets/og-card.png`, matching the convention non-article pages already use,
+so no new photograph was needed and the article photo uniqueness rule does
+not apply.
+
+Wired into the site: linked from 4 existing Family Law articles (divorce in
+Victoria, de facto separation, parenting arrangements, property after
+separation) with one neutral sentence each, no surrounding copy changed;
+added to `sitemap.xml` (lastmod 2026-08-18) and `llms.txt` under a new
+Resources section; not added to `feed.xml` per the brief (that is the article
+feed).
+
+Gate note: `scripts/check-publish.py` globs `insight-*.html` only, so it does
+not recognise resource pages; it was run and still passes 39/39 against the
+newest insight article, confirming the resource work did not regress
+anything it checks. The surfaces it does cover were satisfied by hand for the
+new pages: JSON-LD parses, no dashes, byline, phone and disclaimer present,
+title suffix, meta description length, clean clickable links site-wide with
+canonical and og:url kept as full `.html` addresses, and all internal links
+and local assets resolve, all verified with one-off scripts mirroring the
+gate's own checks. `check-article-images.py` still passes (26 articles, no
+duplicate photographs; the new pages carry no article photo so are outside
+its scope). Claims register: every legal statement is a generalisation
+already published and vetted on an existing article (twelve month property
+and maintenance deadline from divorce, two year deadline from separation for
+de facto couples, separation under one roof, call 000 in immediate danger),
+with links to the fuller explainer rather than restating detail. Nothing new
+or specific was asserted.
+
+---
+
 ## 2026-08-18: Weekly SEO and GEO audit; nine internal cross-links added, no defects found
 
 First run of the weekly SEO and GEO audit routine. Full mechanical sweep of all

@@ -13,6 +13,11 @@ This file helps AI systems locate and correctly attribute our published legal gu
 - [FAQ](https://www.spenceralexander.com.au/faq.html): Common questions on working with the firm and on Victorian legal matters.
 - [About](https://www.spenceralexander.com.au/about.html): Principal lawyer background, qualifications and approach.
 - [Contact](https://www.spenceralexander.com.au/contact.html): Phone, email and enquiry form.
+- [Resources](https://www.spenceralexander.com.au/resources.html): Free, practical checklists and guides.
+
+## Resources
+
+- [Separation in Victoria: your first 30 days](https://www.spenceralexander.com.au/resource-separation-first-30-days.html): A free checklist for the first 30 days after separating in Victoria: safety, practical steps, children, money, legal advice and putting arrangements in writing.
 
 ## Wills & Estates articles
 
