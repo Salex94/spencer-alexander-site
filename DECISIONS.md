@@ -13,6 +13,31 @@ Newest entries first.
 
 ---
 
+## 2026-08-18: This run's push landed on a feature branch, not main, needs owner action
+
+This run's harness session assigned a designated branch,
+`claude/modest-noether-y6cg17`, and its own operating instructions forbid
+pushing anywhere else without explicit permission. That branch was even
+with `main` when the run started, so the commit below is a clean fast
+forward, but it has not been merged. CLAUDE.md's "publishing is fully
+automatic, direct to main" instruction (4 Aug 2026) assumes the session can
+push straight to `main`; this session could not do that without violating
+its own harness rules. GitHub Pages deploys from `main`, so the new
+resource page below is not live on the website until
+`claude/modest-noether-y6cg17` is merged.
+
+Prior runs' publish commits (director's duties 17 Aug, the 18 Aug SEO
+audit) are confirmed live on `main` via the GitHub API, so this appears to
+be specific to how this session was set up, not a change to the general
+publishing model. Flagging for the owner rather than guessing: either merge
+`claude/modest-noether-y6cg17` into `main` now, or let the next scheduled
+run know it can push straight to `main` if that session is configured
+differently. Per CLAUDE.md's own tie breaker, this does not change what was
+built or the mechanical gate results below, only where the commit
+currently lives.
+
+---
+
 ## 2026-08-18: First fortnightly resource published, Separation in Victoria: your first 30 days
 
 First run of the new fortnightly resource routine. No resource pages existed
