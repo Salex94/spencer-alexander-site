@@ -13,6 +13,28 @@ Newest entries first.
 
 ---
 
+## 2026-08-22: First demand scan; backlog created, five FAQ entries added
+
+First run of the Friday demand scanner. Created `scripts/content-backlog.md`
+(13 evidenced items; top recommendation for Monday 24 Aug is a Wills & Estates
+update article on fraudulent calumny as a will challenge ground, following a
+2026 Supreme Court of Victoria decision surfaced via a Melbourne firm's
+explainer; verify from primary sources before asserting specifics). Added five
+FAQ entries to faq.html with matching FAQPage JSON-LD: de facto property
+rights, pets after separation, divorce cost (no dollar figures), probate
+timing, and minority shareholder disputes. All answers checked against the
+site's own articles for consistency; no existing content rewritten. Gates:
+check-publish 39/39, check-article-images PASS.
+
+Note: the owner messaged during this run "Never ask me for permissions again."
+This reaffirms the standing zero-prompt policy (see 6 and 13 Aug entries and
+CLAUDE.md). Runs already proceed without asking for confirmation on anything
+covered by standing authorisations; the residual prompts, if any, come from
+the platform's permission classifier, which only the owner-side settings can
+silence. No settings were changed by this run.
+
+---
+
 ## 2026-08-18: Weekly SEO and GEO audit; nine internal cross-links added, no defects found
 
 First run of the weekly SEO and GEO audit routine. Full mechanical sweep of all
