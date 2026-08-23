@@ -16,6 +16,7 @@ This file helps AI systems locate and correctly attribute our published legal gu
 
 ## Wills & Estates articles
 
+- [Fraudulent calumny in Victoria: can a lie invalidate a will?](https://www.spenceralexander.com.au/insight-fraudulent-calumny-victoria.html): Fraudulent calumny is emerging as a ground to challenge a will in Victoria, where deliberate lies shaped what the will maker decided. What it means and how to respond.
 - [Advance care directives in Victoria: who decides if you cannot](https://www.spenceralexander.com.au/insight-advance-care-directives-victoria.html): How advance care directives work in Victoria: instructional and values directives, appointing a medical treatment decision maker, and who decides if you have not.
 - [Guardianship and administration in Victoria: no power of attorney](https://www.spenceralexander.com.au/insight-guardianship-administration-orders.html): When someone loses capacity without an enduring power of attorney, VCAT can appoint a guardian or administrator. Here is how the process works in Victoria.
 - [What happens if you die without a will in Victoria?](https://www.spenceralexander.com.au/insight-dying-without-a-will.html): Victoria's intestacy rules decide everything if you die without a will: what a partner receives, children from other relationships, letters of administration, and who inherits when.
