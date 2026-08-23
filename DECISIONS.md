@@ -13,6 +13,40 @@ Newest entries first.
 
 ---
 
+## 2026-08-24: Fraudulent calumny article published, demand backlog followed for the first time
+
+Monday article for 24 Aug 2026 (Wills and Estates, rotating away from
+Commercial Law 17 Aug and Family Law 13 Aug). This is the first Monday run
+to follow the demand scanner's `scripts/content-backlog.md` (created 22
+Aug 2026), which ranked fraudulent calumny as item 1 for this slot. Topic:
+fraudulent calumny as an emerging ground to challenge a will in Victoria,
+framed as a genuine update tied to a 2026 Victorian Supreme Court decision,
+`Re the Estate of Iovenitti` [2026] VSC 106. Not a rehash: the existing
+`insight-contesting-a-will.html` mentions undue influence only in passing
+among several validity grounds and does not discuss calumny.
+
+Verification note worth keeping for future runs: `legislation.gov.au` and
+the Supreme Court of Victoria's own site remain blocked from this
+environment, so the case citation and its procedural posture rest on a law
+firm secondary source (Moores), corroborated by a second, independent
+search returning the same case name and description. The article is
+deliberately precise that this was a strike out and summary dismissal
+application the Court refused, not a final finding that the will was
+actually the product of fraudulent calumny. Full claims register is in the
+publish commit (`517ac62`).
+
+Photo: `1479142506502.jpg` (antique law books behind glass), an existing
+Unsplash spare from the 4 Aug pool, re verified live before use. Four
+spares now remain: `1521737852567`, `1528716321680`, `1560518883`,
+`1568605114967`.
+
+Published by direct push to `main` from this session's working branch
+(fast forward, `b84f50d..517ac62`), consistent with the standing fully
+automatic publishing authorisation (4 Aug 2026 entry below). Gates:
+`check-publish.py` 39/39, `check-article-images.py` PASS.
+
+---
+
 ## 2026-08-22: First demand scan; backlog created, five FAQ entries added
 
 First run of the Friday demand scanner. Created `scripts/content-backlog.md`
