@@ -13,6 +13,33 @@ Newest entries first.
 
 ---
 
+## 2026-08-24 (later): Weekly SEO and GEO audit; two cross-links added, no defects found
+
+Full mechanical sweep of all 40 HTML pages after the fraudulent calumny
+publish and the 22 Aug FAQ additions: zero broken links, zero missing
+assets, no duplicate titles or descriptions, canonicals and og:url correct
+everywhere, all JSON-LD parses (the 29 visible FAQ questions match the 29
+FAQPage entries), sitemap lists all 35 indexable pages with nothing dead,
+feed.xml well formed and current (28 items, lastBuildDate 24 Aug
+Melbourne), llms.txt covers every page including the new article,
+robots.txt still permissive to AI crawlers, alt text present everywhere,
+one h1 per page and no heading jumps, no orphan pages. Both gates pass
+(check-publish 39/39, check-article-images PASS, 4 spares).
+
+Fix applied (tier 1 internal linking): the fraudulent calumny article had
+zero in-body inbound links. Added two neutral "Read our guide to" links
+from its closest relatives: the validity challenge paragraph of
+insight-contesting-a-will.html and the caveat bullet of
+insight-probate-victoria.html. No surrounding sentence rewritten;
+dateModified deliberately unchanged (navigation-only edits, same reasoning
+as 18 Aug).
+
+Unchanged by standing decisions: long titles and descriptions on the 24
+pre-existing pages (15 Aug decision), the hidden staff photos and
+og-card.png sizes (18 Aug note).
+
+---
+
 ## 2026-08-24: Fraudulent calumny article published, demand backlog followed for the first time
 
 Monday article for 24 Aug 2026 (Wills and Estates, rotating away from
