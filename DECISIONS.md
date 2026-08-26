@@ -13,6 +13,62 @@ Newest entries first.
 
 ---
 
+## 2026-08-25: First lead magnet built, but blocked from reaching main (owner action needed)
+
+First run of the new fortnightly lead magnet factory routine. No
+`resource-*.html` existed, so the STEP 0 gate said build.
+
+**Built:** `resource-separation-first-30-days.html`, an 8 step printable
+checklist ("Separation in Victoria: your first 30 days", HowTo + BreadcrumbList
+JSON-LD, Family Law) chosen from the "Separation readiness checklist" lead
+magnet candidate in `scripts/content-backlog.md` (2026-08-22 scan). Also built
+`resources.html` as the new resources hub, using the site's existing but
+previously unused `post-card__media--paper` / `post-card__glyph` non-photo
+card variant so nothing new was added to `styles/`. Linked from `insights.html`
+(a second "reach" bar, same component as the existing disclaimer bar), and
+from three existing Family Law articles (`insight-divorce-in-victoria.html`,
+`insight-property-after-separation.html`, `insight-de-facto-separation.html`)
+with one added sentence each, existing copy untouched. Added to `sitemap.xml`
+and `llms.txt`. No photo used (og:image is the shared `assets/og-card.png`,
+same as `faq.html`), so the article-image-uniqueness rule does not apply.
+Full claims register is in the commit message.
+
+**Both check scripts pass, but neither actually inspects the new pages.**
+`scripts/check-publish.py` picks its target via `glob.glob("insight-*.html")`
+and `scripts/check-article-images.py` only scans cards whose href matches
+`insight-`, so both scripts silently re-checked the newest *article*
+(`insight-fraudulent-calumny-victoria.html`) instead of the new resource
+pages. Every surface the scripts would cover was checked by hand instead
+(JSON-LD parses, links resolve, no external in-page `<img>`, no `.html` in
+clickable links, no dashes, no placeholders). Per the routine brief this gap
+is noted, not worked around; the scripts were not modified. If resource
+pages become a recurring surface, `check-publish.py` and
+`check-article-images.py` should be extended to recognise `resource-*.html`
+explicitly, rather than relying on this note each fortnight.
+
+**Blocker found: this run cannot actually publish to `main`.** CLAUDE.md and
+the routine brief both say every run "commits the article directly to main
+and pushes." But this session's own harness instructions (the "Git
+Development Branch Requirements" in the system prompt) mandate developing on
+a fixed branch, `claude/modest-noether-ka9v4h` this run, and explicitly say
+"NEVER push to a different branch without explicit permission." That is a
+runtime/environment constraint, not something in this repository, and it
+directly contradicts the direct-to-main convention recorded here and in
+CLAUDE.md. Per CLAUDE.md's own instruction to flag a conflict to the owner
+rather than force it, this run pushed the finished, gate-passing work to
+`claude/modest-noether-ka9v4h` and stopped there. **The resource is not live
+on the public site as of this run.**
+
+**Owner action needed:** either merge/open a PR from `claude/modest-noether-ka9v4h`
+into `main` to actually publish this resource, or reconfigure whatever
+launched this run so future fortnightly runs are not branch-locked (matching
+how the weekly article routine's session is configured, per the 4 Aug 2026
+GitHub API entry below). Until resolved, treat every future lead magnet run
+as at risk of the same block, and check for it early rather than discovering
+it at STEP 7 again.
+
+---
+
 ## 2026-08-24 (later): Weekly SEO and GEO audit; two cross-links added, no defects found
 
 Full mechanical sweep of all 40 HTML pages after the fraudulent calumny

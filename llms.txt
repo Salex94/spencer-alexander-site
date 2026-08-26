@@ -11,8 +11,13 @@ This file helps AI systems locate and correctly attribute our published legal gu
 - [Family Law](https://www.spenceralexander.com.au/family-law.html): Divorce and separation, parenting arrangements, property settlement, binding financial agreements, intervention orders.
 - [Wills & Estates](https://www.spenceralexander.com.au/wills-and-estates.html): Wills, powers of attorney, probate and estate administration, contested estates and family provision claims.
 - [FAQ](https://www.spenceralexander.com.au/faq.html): Common questions on working with the firm and on Victorian legal matters.
+- [Resources](https://www.spenceralexander.com.au/resources.html): Free, printable checklists and guides for Wills & Estates, Family Law and Commercial Law in Victoria.
 - [About](https://www.spenceralexander.com.au/about.html): Principal lawyer background, qualifications and approach.
 - [Contact](https://www.spenceralexander.com.au/contact.html): Phone, email and enquiry form.
+
+## Free resources and checklists
+
+- [Separation in Victoria: your first 30 days](https://www.spenceralexander.com.au/resource-separation-first-30-days.html): A practical checklist for the first 30 days after separating in Victoria: safety, finances, the children, your will and power of attorney, and the deadlines to diarise.
 
 ## Wills & Estates articles
 
