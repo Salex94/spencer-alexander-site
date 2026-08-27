@@ -13,6 +13,21 @@ Newest entries first.
 
 ---
 
+## 2026-08-27: Melbourne dates rule (UTC day-behind bug found and fixed)
+
+The owner noticed the meeting follow-up and meeting brief routines in the bd
+repo dating everything a day early on 27 Aug. Root cause: scheduled runs fire
+while UTC is still the previous day (Monday 6:00am AEST is Sunday 8:00pm UTC)
+and some runs took "today" from the UTC session clock. In THIS repo the same
+bug gave the first lead magnet resource `datePublished` 2026-08-25 for a
+Wednesday 26 Aug Melbourne publication (the resource keeps its date, already
+indexed, one day of drift not worth a metadata rewrite; the entry below is
+similarly stamped a day early), and the 25 Aug SEO audit commit was stamped
+2026-08-24. Articles were unaffected because the article prompt already
+insists on TODAY in Melbourne. New standing rule in CLAUDE.md ("Melbourne
+dates, always"): every run establishes today's date in Australia/Melbourne
+first and never takes the date from the session clock.
+
 ## 2026-08-25: First lead magnet built, but blocked from reaching main (owner action needed)
 
 First run of the new fortnightly lead magnet factory routine. No
