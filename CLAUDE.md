@@ -42,6 +42,25 @@ a conversation will be lost.
 instructions, corrections and open items, newest first, and it carries context
 that this file's rules alone do not explain.
 
+## Melbourne dates, always (owner rule, 27 Aug 2026)
+
+Every scheduled run fires while UTC is still the previous day (Monday 6:00am
+AEST is Sunday 8:00pm UTC), and the session clock shows UTC, so a run that
+takes "today" from it operates a day behind Melbourne. This is how the first
+lead magnet (`resource-separation-first-30-days.html`, actually published
+Wednesday 26 Aug 2026 Melbourne) came to carry `datePublished` 2026-08-25,
+and how the 25 Aug SEO audit stamped its commit 2026-08-24; the article
+routine escaped only because its prompt already insists the article date is
+TODAY in Melbourne. Standing rule: at the start of every run, establish
+today's date in Australia/Melbourne (for example `TZ=Australia/Melbourne
+date`) and use Melbourne dates for everything: article and resource dates,
+feed pubDates, sitemap lastmod, commit messages, DECISIONS entries, subject
+lines and summaries. Never take the date from the session clock. The
+misdated resource keeps its published date (it is already indexed and one
+day of drift is not worth a metadata rewrite); this rule prevents the next
+one. The `spencer-alexander-bd` repo carries the same rule as its CLAUDE.md
+section 7.
+
 The routine is bound to a persistent chat session, so a run may appear to have
 conversational history. Do not rely on it: long conversations are summarised
 (lossy) and sessions can be lost. The repo is the source of truth.
