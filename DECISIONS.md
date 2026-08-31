@@ -72,6 +72,57 @@ the 25 Aug entry already advised.
 
 ---
 
+## 2026-08-28: Demand scan; five FAQ entries added but blocked from reaching main, workflow subagent tooling fault
+
+Friday demand scan. `scripts/content-backlog.md` refreshed: six items from the
+22 Aug scan removed as completed or expired, fresh evidenced items added
+(director safe harbour, shareholder and founder disputes, public trustee vs
+lawyer, attorney misuse as article candidates), and the 11 Aug 2026 Victorian
+coercive control Bill logged but deliberately not turned into an article or
+FAQ yet, since it is not law until it passes and commences (reporting says
+not before 2028). Five FAQ entries added to `faq.html` with matching FAQPage
+JSON-LD (34 questions total, validated: parses, question count matches
+`<details>` count, no dashes in new text): director safe harbour (Commercial
+Law), debt and negative equity in a property settlement (Family Law), adult
+child family provision claims, executor distribution delay, and enduring
+power of attorney misuse (Wills & Estates, all three). No existing content
+rewritten. Gates: `check-publish.py` 39/39, `check-article-images.py` PASS (4
+spares); note `check-publish.py` does not check `faq.html` (same gap the 22
+Aug scan noted), so the FAQ JSON-LD and HTML were validated by hand.
+
+**Tooling fault, not yet root caused:** the parallel research Workflow's five
+subagents (seed phrases, People Also Ask, forums, news, AI answer engine
+gaps) all failed identically: `ToolSearch` would not load `WebSearch` inside
+a workflow subagent this run, erroring on a missing `query` parameter despite
+valid input. `WebSearch` worked normally when called directly in the main
+session immediately afterward, and all research for this scan was completed
+that way instead. Cost roughly forty minutes of wall clock waiting on the
+stuck workflow before falling back. Worth a follow up if a future run hits
+the same fault: it looks like a session/tool-scoping bug specific to
+workflow-spawned subagents, not a WebSearch outage.
+
+**Same publish blocker as 25 Aug, recurring:** this run's own harness
+instructions again mandate developing on a fixed branch
+(`claude/pensive-fermat-qazubn`) and forbid pushing elsewhere without
+explicit permission, directly contradicting CLAUDE.md's and the routine
+brief's "commits directly to main" instruction. Per CLAUDE.md's own tie
+breaker rule (flag conflicts to the owner rather than force them), this run
+pushed the finished, gate-passing work to `claude/pensive-fermat-qazubn` and
+stopped there. **The backlog refresh and the five FAQ entries are not live on
+the public site as of this run.** This is now the second time this exact
+conflict has blocked a run (first: 25 Aug, lead magnet routine, branch
+`claude/modest-noether-ka9v4h`). Recommend the owner treat this as a
+recurring environment configuration issue rather than a one off: either the
+sessions launching these routines need to not be branch locked (matching
+whatever configuration lets the Monday article routine push straight to
+main), or CLAUDE.md's direct to main instruction needs to change to a PR
+flow that works within a branch lock. Until resolved, every future run of
+this routine (and the lead magnet routine) should check for this early,
+per the 25 Aug entry's own recommendation, which this run is repeating
+because the underlying cause has not yet been fixed.
+
+---
+
 ## 2026-08-27: Melbourne dates rule (UTC day-behind bug found and fixed)
 
 The owner noticed the meeting follow-up and meeting brief routines in the bd
