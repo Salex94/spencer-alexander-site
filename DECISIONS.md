@@ -13,6 +13,79 @@ Newest entries first.
 
 ---
 
+## 2026-09-01: Weekly SEO and GEO audit; four small defects fixed, site otherwise clean
+
+Full sweep of all 43 HTML pages (38 indexable) after the 31 Aug grandparents
+article and the 28 Aug FAQ additions went live. Clean across the board: zero
+broken links, zero extensionful clickable links, zero missing assets, no
+missing or duplicate titles or meta descriptions, canonical and og:url correct
+and matching on every indexable page, robots meta `index, follow,
+max-image-preview:large` everywhere indexable and noindex on all five utility
+pages, every JSON-LD block parses (Article, BreadcrumbList, FAQPage, Service,
+LegalService, WebSite, Blog, HowTo, CollectionPage, Person), the 34 visible FAQ
+questions match the 34 FAQPage entries, sitemap lists exactly the 38 indexable
+pages with nothing dead, feed.xml well formed with all 28 articles and a
+current lastBuildDate, llms.txt covers every page including the newest article
+and the resources hub, robots.txt still permissive to AI crawlers, alt text
+present and honest on every image, no orphan pages. Both gates pass
+(check-publish 39/39, check-article-images PASS, 4 spares).
+
+**Four tier 1 fixes applied:**
+
+1. **Internal linking, the real gap.** The 31 Aug grandparents article had only
+   the two listing-page links (index and insights) and zero in-body inbound
+   links, the same cold start the 18 and 24 Aug audits fixed for earlier
+   articles. Added two neutral "Read our guide to" links from its closest
+   relatives: the grandparents sentence in the "Relocation, new partners and
+   grandparents" section of `insight-parenting-arrangements.html` (the single
+   most relevant sentence on the site) and the "Children of de facto
+   relationships" paragraph of `insight-de-facto-separation.html`. No
+   surrounding sentence rewritten; `dateModified` deliberately unchanged on
+   both (navigation-only edits, same reasoning as 18 and 24 Aug), so their
+   sitemap lastmod values stay correct.
+2. **Sitemap drift.** `insight-guardianship-administration-orders.html` carried
+   lastmod 2026-07-27 against a schema `dateModified` of 2026-07-28. Corrected
+   to match. Every other article now agrees between sitemap and schema.
+3. **Heading hierarchy.** `resources.html` jumped h1 straight to h3: unlike
+   `insights.html` and `index.html`, it has no h2 section heading above its
+   card grid, so the single `post-card__title` sat orphaned two levels down.
+   Promoted that one card title to h2. Verified visually identical:
+   `.post-card__title` is styled purely by class in `styles/site.css` and the
+   only bare h3 rules are scoped to `.article__body`, so nothing in `styles/`
+   was touched. Also verified `resources.html` is static: `data-resources-grid`
+   is referenced nowhere in `scripts/`, and `insights-feed.js` (which does
+   inject h3 cards) loads only on insights, admin and post.
+4. **Template JSON-LD completeness.** `_article-template.html` was missing
+   `inLanguage` from its Article block, which all 28 published articles carry.
+   Since every new article is cloned from the template, this was a live risk of
+   shipping an incomplete Article schema. Added `"inLanguage": "en-AU"`. The
+   template's `worksFor` `@id` of `#firm` was checked and does resolve to the
+   LegalService block on `index.html`, so it is not a dangling reference.
+
+**Tier 2 recommendation for the owner (not applied, would change practice-area
+page content):** the three practice-area pages link only to the original
+article set. `family-law.html` links 6 articles, `commercial-law.html` 5, and
+`wills-and-estates.html` 8, so 9 of the 28 articles get no link from their
+practice hub at all: grandparents rights, spousal maintenance, child support,
+property reforms, fraudulent calumny, advance care directives, guardianship and
+administration orders, buying a business, and directors' duties. These hubs are
+strong internal-authority pages, so wiring the newer articles into them is
+likely the single highest-value remaining SEO gain on the site. It needs owner
+approval because it means editing practice-area page content, which this
+routine treats as tier 2.
+
+**Noted, deliberately unchanged:** long titles and meta descriptions on the
+pre-existing pages stay per the 15 Aug decision. `assets/og-card.png` (619 KB)
+plus the two hidden staff photos (`jordyn.png` 720 KB, `katalin.png` 651 KB)
+remain as the 18 Aug note recorded: the staff photos sit in `display:none`
+blocks with lazy loading so visitors never fetch them, and og-card is served
+only to link-preview crawlers. No image optimiser (optipng, pngcrush,
+zopflipng, ImageMagick) is installed in this environment and Pillow is absent,
+so recompressing og-card losslessly was not possible this run; flagged rather
+than attempted, since the brief forbids visible degradation.
+
+---
+
 ## 2026-08-31 (afternoon): Stranded work published; permission paragraph added to every pushing prompt
 
 Owner-directed recovery session. The 31 Aug article (grandparents rights) and
