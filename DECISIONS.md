@@ -13,6 +13,22 @@ Newest entries first.
 
 ---
 
+## 2026-08-31 (afternoon): Stranded work published; permission paragraph added to every pushing prompt
+
+Owner-directed recovery session. The 31 Aug article (grandparents rights) and
+the 28 Aug demand scan (backlog refresh, five FAQ entries) were merged to
+main and are live; both had passed every gate and were stranded only by the
+branch lock. Root fix: the OWNER PERMISSION FOR MAIN paragraph (the pattern
+that already lets the lead magnet, backlink, follow-ups and master list
+routines push) is now in every routine prompt that pushes to main, including
+this repo's article, SEO audit and demand scanner prompts; the owner is
+re-pasting the updated prompts in the Routines UI. Future runs should push
+straight to main again; if a run still finds itself blocked, park the work on
+the run branch and record it here exactly as the 25, 28 and 31 Aug entries
+did. Also, per the bd repo's CLAUDE.md: Workflow subagents are off fleet-wide
+until the 28 Aug tool loading fault is confirmed fixed; the demand scanner
+prompt now researches directly.
+
 ## 2026-08-31: Grandparents rights article built, but the 25 Aug branch lock recurred
 
 Monday article for 31 Aug 2026 Melbourne (confirmed via `TZ=Australia/Melbourne
