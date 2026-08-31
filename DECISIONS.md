@@ -13,6 +13,65 @@ Newest entries first.
 
 ---
 
+## 2026-08-31: Grandparents rights article built, but the 25 Aug branch lock recurred
+
+Monday article for 31 Aug 2026 Melbourne (confirmed via `TZ=Australia/Melbourne
+date`: Monday, matching the weekly cadence). Rotation: the three most recent
+articles by `datePublished` were Wills & Estates (24 Aug, fraudulent calumny),
+Commercial Law (17 Aug, director's duties) and Family Law (13 Aug, spousal
+maintenance), so Family Law was due. `scripts/content-backlog.md` (2026-08-22
+scan, 9 days old, not stale) had no unclaimed Family Law *article* intent item
+left: items 4, 7, 9 and 12 are all FAQ intent and already actioned as FAQ
+entries. Chose a topic myself per STEP 2: grandparents rights to see
+grandchildren in Victoria, real search demand (multiple independent Australian
+family law firms publish explainers on it), and only mentioned in passing (one
+paragraph, one FAQ line) in `insight-parenting-arrangements.html`, so this is
+new ground, not a rehash.
+
+**Verification:** `legislation.gov.au` remains blocked, so every claim was
+checked against at least two independent, unaffiliated Australian family law
+firm sources before inclusion (searches on grandparents rights, the Family Law
+Act right to apply for a parenting order, the best interests test, and the
+family dispute resolution and section 60I certificate requirement before
+filing, all independently corroborated). Deliberately generalised rather than
+pinned to a section number in the visible text (the reasoning always
+recognises grandparents as able to apply, and the mediation requirement
+generally applies, rather than quoting "section 65C" or "section 60I"
+verbatim) since the visible article does not need the pinpoint citation to be
+useful and Victorian and Commonwealth legislation sites cannot be checked
+directly from this environment. No case names, no dollar figures, no fixed
+timeframes invented.
+
+**Photo:** none of the four spare photographs in `assets/photos/` suited a
+grandparents and grandchildren topic (a laptops team photo, a motivational
+letterboard, and two real estate photos). Per CLAUDE.md, "When no photograph
+is free, source one yourself," a new photograph was sourced from Unsplash:
+`1771841986682` (a grandmother laughing while holding her young grandchild
+outdoors), confirmed HTTP 200 before download and visually inspected. The
+four existing spares remain free for a future article.
+
+**Both gates pass:** `check-publish.py` 39/39, `check-article-images.py` PASS
+(32 photographs, 28 articles with a card, 4 spares).
+
+**Recurrence of the 25 Aug 2026 branch lock, not yet resolved:** exactly as
+recorded below, this session's own harness instructions mandate developing on
+a fixed branch (`claude/modest-dijkstra-nlee8d` this run) and explicitly
+forbid pushing to any other branch without explicit permission, which
+contradicts CLAUDE.md's and the routine brief's direct push to `main`. This
+run's branch was confirmed, before committing, to be an exact fast forward of
+`main` (`git rev-parse origin/main` and `HEAD` were identical before this
+run's commit), so the finished, gate passing work was pushed to
+`claude/modest-dijkstra-nlee8d` and stopped there rather than forced onto
+`main`. **The article is not live on the public site as of this run.** Owner
+action needed: merge `claude/modest-dijkstra-nlee8d` into `main` (a clean
+fast forward), or reconfigure the environment so the weekly article routine's
+session is not branch locked, matching whatever setting lets other routines
+in this repo push straight to `main`. Until this is fixed, treat every future
+Monday run as at risk of the same block and check for it early, exactly as
+the 25 Aug entry already advised.
+
+---
+
 ## 2026-08-27: Melbourne dates rule (UTC day-behind bug found and fixed)
 
 The owner noticed the meeting follow-up and meeting brief routines in the bd

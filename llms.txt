@@ -35,6 +35,7 @@ This file helps AI systems locate and correctly attribute our published legal gu
 
 ## Family Law articles
 
+- [Grandparents' rights in Victoria: can you apply to see your grandchildren?](https://www.spenceralexander.com.au/insight-grandparents-rights-victoria.html): Grandparents have no automatic right to see their grandchildren, but Victorian family law lets them apply. How grandparents rights actually work, and what to do first.
 - [Spousal maintenance in Victoria: when you can claim support from a former partner](https://www.spenceralexander.com.au/insight-spousal-maintenance-victoria.html): Who can claim spousal maintenance in Victoria, the needs and capacity test, time limits after divorce or separation, and how it differs from property settlement.
 - [How is child support calculated in Australia?](https://www.spenceralexander.com.au/insight-child-support-australia.html): How Services Australia calculates child support: the formula, care percentages, changing an unfair assessment, objections, agreements and the 2026 reforms.
 - [How is property divided after separation?](https://www.spenceralexander.com.au/insight-property-after-separation.html): How Australian courts divide property after separation: the four-step framework, contributions and future needs, superannuation splitting, time limits, and consent orders that bind.
