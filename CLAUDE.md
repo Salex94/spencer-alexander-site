@@ -255,9 +255,14 @@ cards by the clean href form and still accepts the old `.html` form.
   have no other freshness signal; two SEO audits missed months of staleness
   before this rule.
 - **Privacy page and email capture** (1 Sep 2026): `privacy.html` is linked
-  from every footer and describes the contact form's third party delivery
-  (formsubmit.co) and the no-analytics reality; keep it true when either
-  changes. Resource pages carry the "Email me this checklist" subscribe block
+  from every footer's Firm column and NOWHERE else: never the navigation menu
+  or the mobile menu (owner correction, 1 Sep 2026, after a careless sweep
+  put it in both; enforced by check-publish.py "privacy link never in
+  navigation"). The page itself mirrors faq.html's structure exactly (same
+  header, pagehero and article body classes); never build a new page from
+  invented class names, clone an existing page. It describes the contact
+  form's third party delivery (formsubmit.co) and the no-analytics reality;
+  keep it true when either changes. Resource pages carry the "Email me this checklist" subscribe block
   (formsubmit, `_subject` "New insights subscriber"); the monthly newsletter
   routine reads those submissions, and every new resource copies the block.
 - **No specialist claims** (1 Sep 2026): the firm holds no accredited

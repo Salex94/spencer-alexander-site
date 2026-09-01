@@ -13,6 +13,28 @@ Newest entries first.
 
 ---
 
+## 2026-09-01 (late night): Privacy page corrections (owner caught two defects, live chat)
+
+The owner reviewed the live site after the audit merge and caught two real
+mistakes in the privacy work, both now fixed and both worth remembering:
+
+1. The footer sweep that added the Privacy link had matched the FAQ anchor
+   string everywhere it appears, so Privacy landed in the top navigation and
+   the mobile menu on every page as well as the footer. All 121 stray links
+   removed; the link now lives ONLY in each footer's Firm column, and
+   check-publish.py gained "privacy link never in navigation" plus "privacy
+   link exactly once per footer" so it cannot regress.
+2. privacy.html had been built from invented class names (page-hero,
+   breadcrumbs, section lead) that do not exist in the stylesheets, and a
+   legacy header variant, so the hero rendered unstyled and the header did
+   not match the rest of the site. Rebuilt as a faithful clone of faq.html's
+   structure (same head pattern, header with the call button, pagehero,
+   article body prose classes, footer, mobile call bar) and verified by
+   headless Chromium screenshots against the served site before pushing,
+   desktop and mobile, alongside an article page for comparison. Lesson
+   recorded in CLAUDE.md: never build a new page from guessed markup, clone
+   an existing page.
+
 ## 2026-09-01 (night): Fleet audit implementation, site side (owner request, live chat)
 
 The owner had the full 1 Sep fleet audit implemented in one change, staged on

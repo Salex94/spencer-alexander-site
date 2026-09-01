@@ -294,6 +294,23 @@ def main():
     check("internal links resolve (site-wide)", not wide_broken, "; ".join(wide_broken[:4]))
     check("local assets exist (site-wide)", not wide_missing, "; ".join(wide_missing[:4]))
 
+    # Privacy link placement (owner correction 1 Sep 2026: footer Firm column
+    # only, exactly once, never the navigation or mobile menu).
+    nav_priv, foot_priv = [], []
+    for f in sorted(glob.glob("*.html")):
+        body = read(f)
+        for pat in (r'<nav class="site-nav".*?</nav>', r'<nav class="mobile-menu".*?</nav>'):
+            for b in re.findall(pat, body, re.S):
+                if "/privacy" in b:
+                    nav_priv.append(f)
+        if 'footer-col__h">Firm' in body:
+            foot = re.search(r'<footer class="site-footer".*?</footer>', body, re.S)
+            n = foot.group(0).count('<a href="/privacy">') if foot else 0
+            if n != 1:
+                foot_priv.append("%s: %d" % (f, n))
+    check("privacy link never in navigation", not nav_priv, ", ".join(nav_priv[:4]))
+    check("privacy link exactly once per footer", not foot_priv, ", ".join(foot_priv[:4]))
+
     # ---- report ----------------------------------------------------------
     width = max(len(n) for n, _, _ in results)
     failed = 0
