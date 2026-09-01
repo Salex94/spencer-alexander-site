@@ -251,7 +251,13 @@ cards by the clean href form and still accepts the old `.html` form.
 - **Surfaces to update with every new article:** the article page,
   `insights.html` (hero + first grid card + `blogPost` JSON-LD), `index.html`
   (3 newest teaser cards), `sitemap.xml`, `feed.xml` (new first item +
-  `lastBuildDate`) and `llms.txt`.
+  `lastBuildDate`), `llms.txt`, and the Related reading list of the article's
+  practice-area page (owner approval, 1 Sep 2026: every article is linked from
+  its hub, `family-law.html`, `commercial-law.html` or
+  `wills-and-estates.html`, matching its `articleSection`; add one
+  `related__link` entry before the "All insights" line, label drawn from the
+  article's own headline, no dashes). Enforced by check-publish.py ("article
+  linked from its practice page").
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 

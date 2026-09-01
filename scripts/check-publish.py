@@ -131,6 +131,14 @@ def main():
     check("article is FIRST feed item", page in first_item)
     check("article in llms.txt", page in read("llms.txt") if os.path.exists("llms.txt") else True)
 
+    # Owner approval 1 Sep 2026: every article is linked from the Related
+    # reading list of its practice-area page (its internal-authority hub).
+    hub = {"Family Law": "family-law.html",
+           "Wills & Estates": "wills-and-estates.html",
+           "Commercial Law": "commercial-law.html"}.get(article_ld.get("articleSection"))
+    check("article linked from its practice page",
+          bool(hub) and ('href="%s"' % purl) in read(hub), hub or "unknown section")
+
     teaser = idx[idx.find("Guidance you can use."):]
     teaser = teaser[:teaser.find("Read all insights")]
     check("homepage teaser has exactly 3 cards", teaser.count('class="post-card"') == 3,

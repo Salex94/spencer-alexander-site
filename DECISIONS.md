@@ -13,6 +13,43 @@ Newest entries first.
 
 ---
 
+## 2026-09-01 (later): Practice hubs now link every article (owner approval, live chat)
+
+The owner approved this morning's tier 2 recommendation ("Can you please do
+what is required to effectuate it. Remember, accuracy is always priority
+number 1"), so the nine unlinked articles were wired into the Related reading
+list of their practice-area hubs, the pure navigation block each hub already
+has, with no body copy or legal statement touched:
+
+- `family-law.html` (+4): child support, spousal maintenance, grandparents
+  rights, the 2025 property reforms.
+- `commercial-law.html` (+2): director's duties, buying a business.
+- `wills-and-estates.html` (+3): fraudulent calumny, advance care directives,
+  guardianship and administration orders. Also added the "All insights from
+  our lawyers" tail link this hub alone was missing, matching the other two.
+
+Accuracy handling: each article's hub was taken from its own
+`articleSection`, and every label is the article's own headline or a subset
+of it, so no label asserts anything the article does not (the grandparents
+label keeps the question form, "can you apply to see your grandchildren?",
+rather than implying an automatic right). All 28 articles are now linked
+from their hub, verified mechanically.
+
+Made standing, not one-off: CLAUDE.md's "Surfaces to update with every new
+article" now includes the practice hub's Related reading list, and
+check-publish.py gained "article linked from its practice page" (the
+article's clean href must appear in the hub matching its articleSection).
+Verified by fault injection: breaking the grandparents link failed the gate
+(40 checks, 1 failed), restoring passed clean (40 checks, 0 failed). The
+Monday article routine will be held to this automatically even though its
+prompt does not mention hubs, because the gate blocks publishing without it.
+
+Deliberately unchanged: hub page `sitemap.xml` lastmod values (navigation
+only edits, same reasoning as the 18 and 24 Aug cross-link entries) and all
+existing hub copy.
+
+---
+
 ## 2026-09-01: Weekly SEO and GEO audit; four small defects fixed, site otherwise clean
 
 Full sweep of all 43 HTML pages (38 indexable) after the 31 Aug grandparents
