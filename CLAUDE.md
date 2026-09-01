@@ -283,7 +283,16 @@ GitHub MCP tools (earlier notes saying it was disabled are stale). `git push`
 over the git proxy also works. Publishing is nonetheless direct-push to `main`
 by owner instruction — see "Other publishing conventions" and DECISIONS.md.
 Photos pasted into the chat UI arrive view-only, not as files: new images must
-reach the repo via GitHub (web upload or a local clone), not via chat.
+reach the repo via GitHub (web upload or a local clone) or the owner's Google
+Drive, never via chat. The Drive path (proven 1 Sep 2026 with the new
+principal portrait): the owner uploads the photo to Drive; a session holding
+the Drive connector can download files under 10 MB with
+`download_file_content`. For larger files, ask the owner to set the file to
+"Anyone with the link", then fetch
+`https://drive.google.com/uc?export=download&id=<fileId>` directly
+(drive.google.com egress works). Remind the owner to set the file back to
+Restricted afterwards. Gmail attachments are not downloadable; do not promise
+that route.
 
 Egress (last verified 4 Aug 2026): `images.unsplash.com`, `unsplash.com`,
 Wikimedia and `live.staticflickr.com` are reachable; `pixabay.com`,

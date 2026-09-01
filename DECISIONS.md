@@ -13,6 +13,38 @@ Newest entries first.
 
 ---
 
+## 2026-09-01 (evening): About page portrait replaced; Drive photo handover proven (owner request, live chat)
+
+The owner supplied a new studio portrait and asked which photo the site
+should carry. Assessment favoured the new one clearly: real studio lighting
+with catchlights, natural skin texture, direct eye contact and tight head
+and shoulders framing, against the old `principal-portrait.jpg` which was
+heavily retouched and posed side on. The owner then asked for it to go live,
+so the about page portrait was replaced. Old version remains in git history.
+
+Mechanics, for the next time a photo must travel from owner to repo:
+
+- Chat stays view-only for images (reverified: nothing lands on disk). The
+  owner's Drive held no images before this, and Gmail attachments cannot be
+  downloaded through the connector.
+- Working path: owner uploads to Google Drive. The Drive connector downloads
+  files under 10 MB directly. This file was a 15.95 MB PNG, over that limit,
+  so the owner set it to "Anyone with the link" and a direct fetch of the
+  `uc?export=download` URL returned the bytes. CLAUDE.md's environment note
+  now records the full recipe.
+- The 2746x4096 source was cropped to 4:5 and saved at 1536x1920 (double the
+  slot's 768x960 for sharp retina rendering), a 319 KB progressive JPEG
+  replacing `assets/principal-portrait.jpg` in place, so `about.html` and
+  its Person JSON-LD needed no markup changes. Sitemap `lastmod` for the
+  about page bumped to 2026-09-01. Visually inspected before commit per the
+  image rule.
+- Owner was told to flip the Drive file back to Restricted (harmless if
+  forgotten, the same image is public on the site).
+
+Published direct to `main` per the standing auto-publish instruction.
+
+---
+
 ## 2026-09-01 (later): Practice hubs now link every article (owner approval, live chat)
 
 The owner approved this morning's tier 2 recommendation ("Can you please do
