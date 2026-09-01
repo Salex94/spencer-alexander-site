@@ -13,6 +13,54 @@ Newest entries first.
 
 ---
 
+## 2026-09-01 (night): Fleet audit implementation, site side (owner request, live chat)
+
+The owner had the full 1 Sep fleet audit implemented in one change, staged on
+branch claude/routines-audit-spencer-alexander-1twhs3 for owner merge (the
+matching bd repo branch carries the tracker, tool and prompt changes). Site
+side, all owner approved:
+
+- check-publish.py extended (never weakened): resource-*.html pages now get
+  their own checks (JSON-LD, canonical split, robots, title suffix,
+  disclaimer, sitemap, llms.txt, hub listing, dash rule), faq.html gets
+  schema checks (parses, JSON-LD question count equals visible details
+  entries, every question answered, no duplicate questions), and link and
+  asset resolution now runs site-wide, not just on the newest article.
+  Fault injection verified: a deliberately bad resource page produced 9
+  FAILs; the clean tree passes 56 checks.
+- Dormant client-side publishing subsystem DELETED with owner approval:
+  admin.html, post.html, scripts/insights-feed.js and the script tag in
+  insights.html. It was inert (empty feed URL) but would have bypassed every
+  gate if ever connected. netlify.toml also deleted (GitHub Pages never
+  served its headers). robots.txt now disallows only the article template,
+  in both .html and clean forms.
+- privacy.html published: the contact form ships personal data through
+  formsubmit.co and the site had no privacy policy. Linked from every
+  footer. THE OWNER SHOULD READ THIS PAGE PERSONALLY: it is the firm's
+  privacy policy and was drafted conservatively (Australian Privacy
+  Principles framing, no cookies or analytics claims match the site's
+  reality), but its wording is his to own.
+- Email capture begins: a subscribe block ("Email me this checklist",
+  formsubmit, _subject "New insights subscriber") on the resource page,
+  feeding the staged monthly newsletter routine. Future resources copy the
+  block (lead magnet prompt updated accordingly).
+- Footer wording "Areas of speciality" became "Practice areas" site-wide,
+  and the home page's "our specialist areas" became "our practice areas"
+  (safer against the accredited specialisation advertising rules; no other
+  specialist wording on the site is a claim about the firm).
+- 404.html asset links made root-relative (styling used to break on nested
+  404 paths). Stale sitemap lastmod values bumped (faq, home, insights,
+  resources, hubs) and the convention recorded in CLAUDE.md: whoever changes
+  a page's visible content bumps its lastmod in the same commit.
+- scripts/content-backlog.md: title de-dashed, rotation note corrected and
+  made mechanical (Commercial Law is due Monday 7 Sep: newest per area are
+  Family 31 Aug, W&E 24 Aug, Commercial 17 Aug).
+
+Routine prompt files in the bd repo were all updated in the matching branch;
+per the standing rule the owner must re-paste changed prompts into the
+Routines UI for any of it to reach live runs. The audit report artifact
+carries the owner checklist.
+
 ## 2026-09-01 (evening): About page portrait replaced; Drive photo handover proven (owner request, live chat)
 
 The owner supplied a new studio portrait and asked which photo the site

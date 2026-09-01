@@ -232,6 +232,68 @@ def main():
     check("every article has its own photograph", rc == 0,
           "run scripts/check-article-images.py for detail")
 
+    # ---- resource pages (added 1 Sep 2026: the gate was blind to them) ---
+    for rf in sorted(glob.glob("resource-*.html")):
+        res = read(rf)
+        rurl = BASE + rf
+        rblocks = jsonld(res)
+        rbad = [b for b in rblocks if isinstance(b, json.JSONDecodeError)]
+        rtypes = [b.get("@type") for b in rblocks if isinstance(b, dict)]
+        check("%s JSON-LD parses" % rf, not rbad, str(rbad[0]) if rbad else "%d blocks" % len(rblocks))
+        check("%s has BreadcrumbList + a main type" % rf,
+              "BreadcrumbList" in rtypes and any(t in rtypes for t in ("HowTo", "FAQPage", "Article")),
+              str(rtypes))
+        check("%s canonical + og:url keep .html" % rf,
+              ('rel="canonical" href="%s"' % rurl) in res and ('content="%s"' % rurl) in res, rurl)
+        rmeta2 = re.search(r'<meta name="robots" content="([^"]+)"', res)
+        check("%s robots meta allows indexing" % rf,
+              bool(rmeta2) and "noindex" not in rmeta2.group(1), rmeta2.group(1) if rmeta2 else "missing")
+        rtitle = re.search(r"<title>(.*?)</title>", res)
+        check("%s title ends with firm suffix" % rf,
+              rtitle and rtitle.group(1).endswith("| Spencer Alexander Lawyers"))
+        check("%s disclaimer present" % rf, "general information only, not legal advice" in res)
+        check("%s in sitemap" % rf, ("<loc>%s</loc>" % rurl) in smap)
+        check("%s in llms.txt" % rf, rf in read("llms.txt") if os.path.exists("llms.txt") else True)
+        check("%s listed on resources hub" % rf,
+              os.path.exists("resources.html") and rf[:-len(".html")] in read("resources.html"))
+        rdate = re.search(r'"datePublished":\s*"(\d{4}-\d{2}-\d{2})"', res)
+        if rdate and rdate.group(1) > "2026-08-06":
+            rdashes = [d for d in ("—", "–", " - ") if d in res]
+            check("%s no dashes in writing" % rf, not rdashes, ", ".join(repr(d) for d in rdashes))
+
+    # ---- faq.html schema (added 1 Sep 2026: edited weekly, was ungated) --
+    if os.path.exists("faq.html"):
+        fq = read("faq.html")
+        fblocks = jsonld(fq)
+        fbad = [b for b in fblocks if isinstance(b, json.JSONDecodeError)]
+        check("faq.html JSON-LD parses", not fbad, str(fbad[0]) if fbad else "")
+        fpage = next((b for b in fblocks if isinstance(b, dict) and b.get("@type") == "FAQPage"), {})
+        qs = fpage.get("mainEntity", [])
+        visible = len(re.findall(r"<details", fq))
+        check("faq.html question count matches visible entries", len(qs) == visible,
+              "%d in JSON-LD, %d visible" % (len(qs), visible))
+        unanswered = [q.get("name", "?")[:40] for q in qs
+                      if not q.get("acceptedAnswer", {}).get("text", "").strip()]
+        check("faq.html every question answered", not unanswered, "; ".join(unanswered[:2]))
+        names = [q.get("name", "").strip().lower() for q in qs]
+        dups = sorted({n for n in names if names.count(n) > 1})
+        check("faq.html no duplicate questions", not dups, "; ".join(dups[:2]))
+
+    # ---- site-wide link and asset resolution (added 1 Sep 2026) ----------
+    wide_broken, wide_missing = [], []
+    for f in sorted(glob.glob("*.html")):
+        if f == "_article-template.html":
+            continue
+        body = read(f)
+        for h in set(re.findall(r'href="(?!https?:|tel:|mailto:|#)([^"]+)"', body)):
+            if not resolves(h):
+                wide_broken.append("%s -> %s" % (f, h))
+        for s in set(re.findall(r'src="(?!https?:|data:)([^"]+)"', body)):
+            if not os.path.exists(s.split("?")[0].lstrip("/")):
+                wide_missing.append("%s -> %s" % (f, s))
+    check("internal links resolve (site-wide)", not wide_broken, "; ".join(wide_broken[:4]))
+    check("local assets exist (site-wide)", not wide_missing, "; ".join(wide_missing[:4]))
+
     # ---- report ----------------------------------------------------------
     width = max(len(n) for n, _, _ in results)
     failed = 0

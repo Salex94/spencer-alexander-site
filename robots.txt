@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /admin.html
 Disallow: /_article-template.html
+Disallow: /_article-template
 
 Sitemap: https://www.spenceralexander.com.au/sitemap.xml

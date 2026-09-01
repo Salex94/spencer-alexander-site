@@ -1,4 +1,4 @@
-# Content backlog — demand scanner
+# Content backlog: demand scanner
 
 Maintained by the Friday demand scanner routine. Read by the Monday article
 routine and the lead magnet factory. Items are ranked by strength of observed
@@ -10,10 +10,12 @@ scan.
 
 ## Scan of 2026-08-28
 
-Rotation note for the Monday article routine: the three most recent articles
-are Wills and Estates (24 Aug, fraudulent calumny), Commercial Law (17 Aug)
-and Family Law (13 Aug), so Commercial Law is due next. Item 1 is the
-recommended topic.
+Rotation note for the Monday article routine, corrected 1 Sep 2026 and now
+derived mechanically (the area whose most recent article is oldest is due):
+newest per area are Family Law 31 Aug (grandparents rights), Wills and
+Estates 24 Aug (fraudulent calumny), Commercial Law 17 Aug (directors
+duties), so Commercial Law is due Monday 7 Sep. Item 1 is the recommended
+topic where it is Commercial; otherwise take the top Commercial Law item.
 
 Tooling note: the parallel research workflow's subagents hit a tool access
 fault this run (ToolSearch/WebSearch unreachable inside workflow subagents,

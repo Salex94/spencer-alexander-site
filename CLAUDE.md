@@ -9,11 +9,13 @@ deployed by GitHub Pages from `main`). Anything merged to `main` is published.
 python3 scripts/check-publish.py
 ```
 
-About 40 mechanical checks (the exact count varies with conditional checks)
-covering the publishing specification: JSON-LD validity and
-required fields, date consistency across all six surfaces, listing-page
-ordering, link and asset resolution, clean-URL link style, house style, word
-count, and photograph uniqueness. **Exit 0 is required to publish.** Fix failures; do not work around
+About 55 mechanical checks (the exact count varies with conditional checks
+and page counts) covering the publishing specification: JSON-LD validity and
+required fields, date consistency across all seven surfaces, listing-page
+ordering, site-wide link and asset resolution, clean-URL link style, house
+style, word count, photograph uniqueness, resource page validity and the
+faq.html FAQ schema (extended 1 Sep 2026; strengthening the gate is always
+allowed, weakening never). **Exit 0 is required to publish.** Fix failures; do not work around
 them.
 
 It deliberately does **not** check the three things that matter most and cannot
@@ -61,9 +63,10 @@ day of drift is not worth a metadata rewrite); this rule prevents the next
 one. The `spencer-alexander-bd` repo carries the same rule as its CLAUDE.md
 section 7.
 
-The routine is bound to a persistent chat session, so a run may appear to have
-conversational history. Do not rely on it: long conversations are summarised
-(lossy) and sessions can be lost. The repo is the source of truth.
+Each scheduled run starts a fresh session with no memory of previous chats
+(corrected 1 Sep 2026: an earlier note wrongly said the routine was bound to
+a persistent session). Never rely on conversational history existing. The
+repo is the source of truth.
 
 If this file and the routine prompt ever conflict, the scripts are the
 tie-breaker in practice — they block the publish either way. Flag the conflict
@@ -245,6 +248,23 @@ cards by the clean href form and still accepts the old `.html` form.
   `fcfcoa.gov.au`, `art.gov.au`, `vcat.vic.gov.au`) are also blocked by the
   egress policy in the automated environment. Verify via search restricted to
   those domains and be correspondingly conservative with specifics.
+- **Sitemap lastmod moves with the page** (1 Sep 2026): any run that changes
+  a page's visible content bumps that page's `<lastmod>` to the Melbourne
+  date of the change in the same commit. Pages without article schema
+  (faq.html, index.html, insights.html, the practice hubs, resources.html)
+  have no other freshness signal; two SEO audits missed months of staleness
+  before this rule.
+- **Privacy page and email capture** (1 Sep 2026): `privacy.html` is linked
+  from every footer and describes the contact form's third party delivery
+  (formsubmit.co) and the no-analytics reality; keep it true when either
+  changes. Resource pages carry the "Email me this checklist" subscribe block
+  (formsubmit, `_subject` "New insights subscriber"); the monthly newsletter
+  routine reads those submissions, and every new resource copies the block.
+- **No specialist claims** (1 Sep 2026): the firm holds no accredited
+  specialisation, so site copy says "practice areas", never "specialist
+  areas" or "areas of speciality" (footers and the home page were reworded).
+  Factual uses of the word inside article content (a medical specialist, a
+  specialist court list) are fine.
 - **`robots.txt` must stay permissive.** Never add rules blocking AI crawlers
   (GPTBot, ClaudeBot, PerplexityBot, Google-Extended) — being crawlable by AI
   systems is deliberate.
