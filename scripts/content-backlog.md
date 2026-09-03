@@ -8,83 +8,65 @@ Only evidenced demand appears here; nothing in this file is invented. Items
 covered by the site, older than 60 days, or out of scope are removed on each
 scan.
 
-## Scan of 2026-08-28
+## Scan of 2026-09-04
 
-Rotation note for the Monday article routine, corrected 1 Sep 2026 and now
-derived mechanically (the area whose most recent article is oldest is due):
-newest per area are Family Law 31 Aug (grandparents rights), Wills and
-Estates 24 Aug (fraudulent calumny), Commercial Law 17 Aug (directors
-duties), so Commercial Law is due Monday 7 Sep. Item 1 is the recommended
-topic where it is Commercial; otherwise take the top Commercial Law item.
-
-Tooling note: the parallel research workflow's subagents hit a tool access
-fault this run (ToolSearch/WebSearch unreachable inside workflow subagents,
-confirmed across all five). Research was instead run directly with WebSearch
-in the main session, which worked normally. Worth flagging if a future run
-hits the same subagent tooling fault, since it cost this run about forty
-minutes waiting on a workflow that could not produce anything.
+Rotation note for the Monday article routine, derived mechanically (the area
+whose most recent article is oldest is due): newest per area are Family Law
+31 Aug (grandparents rights), Wills and Estates 24 Aug (fraudulent calumny),
+Commercial Law 17 Aug (directors duties), so Commercial Law is due Monday
+7 Sep. Item 1 is the recommended topic.
 
 | # | Topic (searcher's words) | Demand evidence (source, one line) | Intent | Practice area | Suggested angle | Added |
 |---|---|---|---|---|---|---|
-| 1 | small business insolvency safe harbour | Multiple current 2026 firm and industry guides (AICD, restructuring advisers) actively explaining safe harbour and Small Business Restructuring as director insolvency options | article | Commercial Law | Standalone explainer: what safe harbour actually requires (early action, proper advice, a genuine restructuring plan), how it differs from simply hoping trading improves, and when Small Business Restructuring is the alternative path. The existing director's duties article only mentions safe harbour in two sentences. Omit specific dollar thresholds, which are safest generalised | 2026-08-28 |
-| 2 | shareholder dispute, what to do (deadlock and founder fallout) | Search results describe "inactive equity" and founder fallout as a live 2026 dispute pattern in Australian small and growing companies, on top of the Supreme Court's oppression proceedings program noted 22 Aug | article | Commercial Law | Carried over from the 22 Aug scan, still not covered. Dispute-side companion to /insight-shareholder-agreements: deadlock, a co-founder who stops contributing but keeps their stake, the oppression remedy, buyout orders, mediation | 2026-08-22 |
-| 3 | public trustee or lawyer for my will | Carried over from 22 Aug (Whirlpool thread, archive 2625131); still not covered by any article | article | Wills & Estates | The choices for drafting a will and appointing an executor (trustee company, lawyer, family member), fee models generalised, even handed and no disparagement | 2026-08-22 |
-| 4 | attorney misusing power of attorney, what can I do | Carried over from 22 Aug; article angle still open even though a short FAQ was added this scan (see below). VCAT review of attorney conduct is a recurring theme in Seniors Rights Victoria and firm content | article | Wills & Estates | A fuller explainer on elder financial abuse remedies: VCAT review and revocation, the record keeping duties an attorney breaches, and how a family member starts the process. Keep strictly to the misuse and remedies angle since /insight-enduring-powers-of-attorney already covers appointment and safeguards in general terms | 2026-08-22 |
-| 5 | can an adult child contest a will | This scan's search results consistently center adult child family provision claims on the statutory need and moral duty threshold, a narrower question than the general contesting a will content already on site | faq | Wills & Estates | Done: FAQ added to faq.html 28 Aug 2026, linking /insight-contesting-a-will | 2026-08-28 |
-| 6 | executor won't distribute the estate, what can I do | Carried over from 22 Aug (Whirlpool thread, archive 2671194) | faq | Wills & Estates | Done: FAQ added to faq.html 28 Aug 2026, linking /insight-executor-duties | 2026-08-28 |
-| 7 | is debt included in a property settlement, negative equity house | Carried over from 22 Aug (Whirlpool thread, archive 2670831) | faq | Family Law | Done: FAQ added to faq.html 28 Aug 2026, linking /insight-property-after-separation | 2026-08-28 |
-| 8 | what is the safe harbour defence for directors | This scan's search results | faq | Commercial Law | Done: FAQ added to faq.html 28 Aug 2026, linking /insight-directors-duties-victoria. Item 1 remains the fuller article candidate | 2026-08-28 |
-| 9 | attorney misusing power of attorney (short version) | Carried over from 22 Aug | faq | Wills & Estates | Done: FAQ added to faq.html 28 Aug 2026, linking /insight-enduring-powers-of-attorney | 2026-08-28 |
-| 10 | coercive control now a crime in Victoria | A Bill was introduced to Victorian Parliament on 11 August 2026 to make coercive control a standalone criminal offence, with reporting suggesting commencement not before 2028, alongside a proposed default two year family violence intervention order | article or FAQ, later | Family Law | Not actioned this scan: the reform is a Bill, not yet law, so no FAQ or article claim can safely be written as current law yet. Worth a genuine update article once the Bill passes and a commencement date is confirmed, similar in shape to the fraudulent calumny update. Track and re-check status each scan rather than publish early | 2026-08-28 |
-| 11 | can I move away with the children (relocation) | Already answered on faq.html ("Can I move away with the children after separation?") and not surfaced as a live gap in this scan's research | none | Family Law | No action, already covered | n/a |
+| 1 | small business insolvency safe harbour and small business restructuring | Sustained current demand reconfirmed this scan: 2026 dated guides from AICD, Gadens (Insolvency and Restructuring Review 2026-27), Restructuring Works and press coverage all actively explaining safe harbour and SBR to directors | article | Commercial Law | Standalone explainer: what safe harbour actually requires (early action, proper advice, a genuine plan reasonably likely to beat an immediate winding up) and when Small Business Restructuring is the alternative path. The directors duties article mentions safe harbour in only two sentences, and this scan added two short FAQ entries (safe harbour 28 Aug, SBR 4 Sep) that an article can go well beyond. Generalise dollar thresholds where uncertain | 2026-08-28 |
+| 2 | payday super, do employers now pay super every payday | Treasury Laws Amendment (Payday Superannuation) Act 2025 passed November 2025, commenced 1 July 2026; ATO, Fair Work Ombudsman, APRA and many firm and payroll guides all publishing employer explainers through mid 2026 | article | Commercial Law | New ground for the site: what the payday super change means for a small employer in practice (contributions must reach the fund within seven business days of payday, quarterly cycle gone, consequences of paying late), framed as a compliance update. An FAQ entry was added 4 Sep 2026; the article can cover transition traps in more depth. Verify current specifics at writing time | 2026-09-04 |
+| 3 | shareholder dispute, business partner stopped working but keeps shares | Reconfirmed this scan: 2026 guides (Sprintlaw and others) name founder fallout and "inactive equity" as the live dispute pattern in Australian small companies | article | Commercial Law | Dispute-side companion to /insight-shareholder-agreements: deadlock, the co-founder who stops contributing but keeps their stake, the oppression remedy, buyout orders, mediation. An FAQ entry on the inactive partner question was added 4 Sep 2026; the article remains the fuller treatment | 2026-08-22 |
+| 4 | public trustee or lawyer for my will | Carried over from 22 Aug (Whirlpool thread, archive 2625131); still not covered by any article. Not independently re-evidenced this scan; drops off next scan unless re-evidenced (60 day window ends late October) | article | Wills & Estates | The choices for drafting a will and appointing an executor (trustee company, lawyer, family member), fee models generalised, even handed and no disparagement | 2026-08-22 |
+| 5 | attorney misusing power of attorney, what can I do | Carried over from 22 Aug; VCAT review of attorney conduct remains a recurring theme in Seniors Rights Victoria and firm content | article | Wills & Estates | Fuller explainer on elder financial abuse remedies: VCAT review and revocation, the record keeping duties an attorney breaches, how a family member starts the process. Keep strictly to misuse and remedies since /insight-enduring-powers-of-attorney covers appointment and safeguards | 2026-08-22 |
+| 6 | probate delays Victoria, why is probate taking so long | Multiple current Victorian firm posts (Spectrum Law and others) describe rising volumes and administrative backlog at the Probate Office in recent months | article or FAQ, later | Wills & Estates | Possible short update angle for /insight-probate-victoria if delays persist: what executors can do while waiting and why the wait has grown. Held back this scan because the site's existing probate timing FAQ and article remain accurate as written; act only if timeframes clearly worsen | 2026-09-04 |
+| 7 | coercive control now a crime in Victoria | Still not law as of this scan: opposition bills before both houses and a government commitment to introduce a standalone offence, but nothing passed or commenced. Reporting earlier suggested commencement not before 2028 | article or FAQ, later | Family Law | Track each scan; write only as a genuine update once an Act passes and a commencement date is confirmed, in the shape of the fraudulent calumny update. Nothing can accurately be written as current law yet | 2026-08-28 |
+| 8 | does family violence affect a property settlement | Multiple 2026 family law guides (Chambers practice guide, firm summaries of the June 2025 reforms) single out economic recognition of family violence as the headline change | faq | Family Law | Done: FAQ added to faq.html 4 Sep 2026, linking /insight-property-reforms-2025 | 2026-09-04 |
+| 9 | can the executor sell the house before probate | Consistent People Also Ask pattern with many current Australian firm explainers answering exactly this question | faq | Wills & Estates | Done: FAQ added to faq.html 4 Sep 2026, linking /insight-probate-victoria | 2026-09-04 |
+| 10 | unfair contract terms small business | ASIC continues to flag unfair contract terms enforcement as a small business priority (SmartCompany coverage of ASIC corporate plan; firm guides current in 2026) | lead magnet | Commercial Law | Fold into the contract health check lead magnet candidate below rather than a standalone article; penalty figures are safest generalised | 2026-08-22 |
 
 ### Lead magnet candidates
 
-1. Small business contract health check checklist (carried from 22 Aug, item
-   3 of that scan, now out of the ranked table as more than 60 days would
-   apply to the original article idea but the checklist idea itself remains
-   live): a one page review list for standard form contracts and unfair
-   terms exposure.
-2. Director insolvency early warning checklist (new this scan, follows from
-   item 1 above): signs a company may be heading toward insolvency and the
-   steps that preserve a safe harbour defence, aimed at small business
-   directors.
+1. Small business contract health check checklist (carried from 22 Aug): a one
+   page review list for standard form contracts and unfair terms exposure.
+   ASIC's continuing enforcement focus keeps this current.
+2. Director insolvency early warning checklist (carried from 28 Aug, follows
+   item 1): signs a company may be heading toward insolvency and the steps
+   that preserve a safe harbour defence, aimed at small business directors.
+3. New employer payroll compliance checklist (new this scan, follows item 2):
+   the obligations a small employer must now meet each payday, including
+   payday super from 1 July 2026. Verify every listed obligation at build
+   time.
 
 ### Removed this scan
 
-Removed as completed and past their one scan retention: items 4, 9, 10, 11,
-12, 13 from the 22 Aug scan (four FAQ additions already live on faq.html
-since 22 Aug, one FAQ note about pets already live, one item that had become
-a short existing section rather than a standalone need). Item 2 (unfair
-contract terms small business) from 22 Aug is folded into the lead magnet
-candidate above; the standalone article idea is now over 60 days from first
-being useful context and was not independently re-evidenced this scan, so it
-is dropped from the ranked table. It can be re-added if it resurfaces with
-fresh evidence.
+Items 5 to 9 and 11 of the 28 Aug scan (five FAQ entries live on faq.html
+since 28 Aug and one already-covered relocation note) removed as completed.
+The 28 Aug tooling note about workflow subagents is retired from this file:
+the standing instruction to research directly now lives in the routine prompt
+itself and in DECISIONS.md (31 Aug entry).
 
-### Scan notes, 2026-08-28
+### Scan notes, 2026-09-04
 
-Research method: the scan attempted a parallel research workflow (five
-subagents covering seed phrases, People Also Ask patterns, Reddit and
-Whirlpool forum threads, recent news, and AI answer engine gaps). All five
-subagents failed identically with a tool access fault (ToolSearch would not
-load WebSearch inside a workflow subagent in this session, despite valid
-input). WebSearch worked normally when called directly in the main session,
-so all research below was run there instead, costing extra time but
-producing real results.
-
-Confirmed evidenced findings: director safe harbour and small business
-restructuring as a live 2026 topic (multiple firm and industry sources);
-shareholder and founder disputes, specifically "inactive equity" as a named
-2026 pattern; family provision claims by adult children and the moral duty
-and need threshold (multiple firm explainers, consistent across sources);
-the 11 August 2026 Victorian coercive control and family violence Bill
-(state parliament and multiple news sources, commencement not before 2028
-per reporting); executor distribution delay and negative equity property
-settlement as continuing Whirlpool-evidenced demand from the prior scan.
-
-Site restricted searches for reddit.com/r/AusLegal and forums.whirlpool.net.au
-returned no directly indexable threads this scan (a limitation of the search
-tooling, not evidence of no discussion); the two Whirlpool threads carried
-over from 22 Aug remain the most recent directly evidenced forum demand and
-are still within the 60 day window.
+Research run directly with WebSearch in the main session per the standing
+rule (no workflow subagents). Confirmed evidenced findings this scan: payday
+super now in force from 1 July 2026 (legislation passed November 2025,
+corroborated across ATO, Fair Work Ombudsman, APRA and payroll industry
+sources); safe harbour and Small Business Restructuring still the dominant
+current Commercial Law explainer topic; "inactive equity" founder disputes
+still a named 2026 pattern; economic recognition of family violence widely
+identified as the headline effect of the June 2025 family law reforms;
+executor pre-probate sales a consistent People Also Ask pattern; Victorian
+probate delays reported by practitioners in recent months; the Victorian
+coercive control offence still a Bill, not law. Site restricted searches for
+reddit.com/r/AusLegal and forums.whirlpool.net.au again returned no directly
+indexable threads (a search tooling limitation, not evidence of absent
+discussion); the two Whirlpool threads from 22 Aug remain the most recent
+directly evidenced forum demand and pass out of the 60 day window in late
+October. Victorian legislation and court sites remain blocked from this
+environment, so all legal specifics above rest on multiple independent
+secondary sources and stay deliberately general.

@@ -13,6 +13,21 @@ Newest entries first.
 
 ---
 
+## 2026-09-04: Demand scan; backlog refreshed, five FAQ entries added
+
+Friday demand scan. `scripts/content-backlog.md` refreshed (payday super in
+force from 1 July 2026 logged as a new evidenced Commercial Law candidate;
+safe harbour remains item 1 for Monday 7 Sep; coercive control still a Bill,
+tracked not actioned). Five FAQ entries added to faq.html with matching
+FAQPage JSON-LD (39 questions total): payday super, small business
+restructuring, the inactive business partner (Commercial Law), family
+violence in a property settlement (Family Law), and executor sales before
+probate (Wills and Estates). faq.html sitemap lastmod bumped to 2026-09-04.
+Gates pass; published direct to main per the routine's owner permission
+paragraph.
+
+---
+
 ## 2026-09-01 (late night): Privacy page corrections (owner caught two defects, live chat)
 
 The owner reviewed the live site after the audit merge and caught two real
