@@ -158,6 +158,16 @@ should tell each run to copy the v3 template, keep the site wide no dash
 rule, refresh the Google rating with `scripts/refresh-google-rating.py` and
 respect the title and description limits.
 
+### Owner correction after publication, same day
+
+The owner liked the live result but does not want the number of Google
+reviews stated anywhere on the site, only the star rating. Every "from 7
+client reviews" and "7 reviews on Google" line was replaced with "5.0 stars
+on Google", the `data-google-reviews` markup was removed, the refresh script
+now writes the rating only, and check-publish.py gained "review count never
+stated on the site". Published straight to main as a correction to the live
+site.
+
 ### Merge note
 
 The branch touched every page so that the header, footer and stylesheet

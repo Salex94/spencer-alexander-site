@@ -339,12 +339,15 @@ future edit, every new page and every new article.
   new hub content inside that pattern rather than adding sections.
 - **Google rating and client reviews (owner instruction, 5 Sep 2026).** The
   firm's Google Business Profile is place id `ChIJ55iT2dyWG2ERsUO1cPTNK2Y`
-  (Maps `cid=7362204465613849521`). Its rating and review count appear as
-  `<span data-google-rating>` and `<span data-google-reviews>` in the hero
-  on index.html and contact.html, the reviews section on index.html and the
-  rail card on every hub and article. Run
+  (Maps `cid=7362204465613849521`). Its star rating appears as
+  `<span data-google-rating>` in the hero on index.html and contact.html, the
+  reviews section on index.html and the rail card on every hub and article,
+  always as "5.0 stars on Google". **Never state the number of reviews
+  anywhere on the site** (owner instruction, 5 Sep 2026, after the first
+  version said "from 7 client reviews"); the gate check "review count never
+  stated on the site" enforces it. Run
   `python3 scripts/refresh-google-rating.py` before publishing: it reads the
-  numbers from Google's public Maps embed and rewrites every marked span, and
+  rating from Google's public Maps embed and rewrites every marked span, and
   the gate check "Google rating markup consistent" fails if any page drifts.
   The reviews section quotes Google reviews exactly as written, using the
   opening sentences of longer reviews and first name plus initial. Source
