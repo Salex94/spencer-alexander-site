@@ -213,8 +213,13 @@ cannot be lifted out of the master, so the video was re-encoded with the
 frame cropped to 1848 by 924, a 2 to 1 shape that ends just above the
 highest caption line, and the crop window pans down over the dissolve into
 the end card so the card, QR code included, stays whole. The poster and
-both end card images were regenerated at the same shape. The transcript
-stays under the player as text and in the VideoObject block.
+both end card images were regenerated at the same shape. The owner then also removed the visible "Read the transcript"
+disclosure as clutter; the transcript now lives only in the VideoObject
+block, which keeps the search and AI answer engine value without anything
+under the player. The copy column was tightened for conversion: heading
+"Meet the lawyer who will run your matter.", one lead sentence, the Google
+stars line from the hero, and the accent call button paired with a Send an
+enquiry button, mirroring the hero.
 
 ### Merge note
 

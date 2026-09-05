@@ -396,7 +396,11 @@ future edit, every new page and every new article.
   `preload="none"`
   means no video bytes load until play; the script picks the 720p file on
   handheld or slow connections. A VideoObject JSON-LD block on index.html
-  carries the transcript, which is also visible under the player. To replace
+  carries the transcript for search and AI answer engines; nothing textual
+  sits under the player (the owner removed the visible transcript
+  disclosure and the meta line as clutter that does not convert). The copy
+  column carries the heading, one lead sentence, the Google stars line and
+  the call and enquiry buttons, nothing more. To replace
   the video, run `python3 scripts/prepare-home-video.py <master.mp4> [cut
   seconds]`, then update the duration and
   uploadDate in the schema and the "58 seconds" copy. The spoken line "if you need that expert advice" was flagged to the
