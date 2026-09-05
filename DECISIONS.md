@@ -80,9 +80,8 @@ for the owner to review and merge. Nothing was pushed to main.
 
 ### Owner to confirm, left unchanged pending an answer
 
-1. **Professional Standards scheme statement** in every footer. Keep only if
-   the principal is a current participant in the Law Institute of Victoria
-   scheme; a non participant must not display it.
+1. **Professional Standards scheme statement** in every footer. Confirmed
+   the same day: the principal participates, the statement stays.
 2. **Experience claims**: the owner confirmed the same day that the ten
    years belong to the practitioner, not the firm, and the home page was
    reworded. "Internationally and in the Australian private sector" on
@@ -90,15 +89,12 @@ for the owner to review and merge. Nothing was pushed to main.
    membership are still marked as owner to supply in an HTML comment.
 3. **Entity name.** Answered the same day: "Spencer Alexander Lawyers", and
    privacy.html was corrected. See the owner answers below.
-4. **Service promises on contact.html and thank-you.html**: "After hours
-   available for urgent matters" and "reply within one business day". Keep
-   only if they hold in every case, including leave and court days.
+4. **Service promises on contact.html and thank-you.html**: confirmed the
+   same day; both lines stay.
 5. **Free first call.** Confirmed the same day and placed site wide. See
    the owner answers below.
-6. **Five older articles are under the 1100 word gate minimum**: business
-   structures, debt recovery, parenting arrangements, property reforms 2025
-   and shareholder agreements. The gate only enforces the count on the newest
-   article, so nothing blocks, but the owner may want them expanded.
+6. **Five older articles were under the 1100 word gate minimum**: expanded
+   the same day at the owner's request. See the final confirmations below.
 7. **Article routine prompt.** The owner created routine should be told about
    the v3 template, the site-wide no dash rule, the currency line rule, the
    title and description limits and chrome propagation. Agents cannot edit it.
@@ -145,11 +141,29 @@ was updated accordingly:
   are genuine and not misleading, so the section shows the true aggregate
   and links to the full set on Google.
 
+### Final confirmations and merge, same day
+
+The owner then confirmed everything else and asked for the branch to be
+merged: the Professional Standards scheme statement stays in every footer,
+the about page's "internationally and in the Australian private sector" is
+true, the contact and thank you pages keep the one business day reply and
+the after hours line, and the five short articles were to be expanded. Each
+of those five gained one practical paragraph of general guidance in its
+closing section, no new statutory specifics, taking every article past the
+1100 word gate minimum. The admission year and Law Institute membership were
+not supplied and remain an HTML comment on about.html for whenever they are.
+The branch was merged to main and published. The only item still with the
+owner is the weekly article routine's prompt, which agents cannot edit: it
+should tell each run to copy the v3 template, keep the site wide no dash
+rule, refresh the Google rating with `scripts/refresh-google-rating.py` and
+respect the title and description limits.
+
 ### Merge note
 
-The branch touches every page so that the header, footer and stylesheet
-versions match everywhere. Merge it as one change; the "footer identical on
-every page" check will fail if only some pages are taken.
+The branch touched every page so that the header, footer and stylesheet
+versions match everywhere. It was merged to main as one change on the
+owner's instruction; the "footer identical on every page" check fails if
+only some pages are taken.
 
 ---
 

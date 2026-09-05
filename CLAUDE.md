@@ -370,10 +370,13 @@ future edit, every new page and every new article.
   practised for more than ten years".
 - **Entity name.** The firm is "Spencer Alexander Lawyers" everywhere,
   including privacy.html; never "Pty Ltd".
-- **Claims that stay generic until the owner confirms them.** See the
-  DECISIONS.md entry for 2026-09-05. Do not add a response time promise, a
-  scheme membership statement or a specialist claim beyond what is already on
-  the site.
+- **Confirmed firm facts (owner, 5 Sep 2026).** The principal participates
+  in the Professional Standards scheme, so the footer statement stays; the
+  first call is free; enquiries are answered within one business day and
+  after hours contact is available for urgent matters. Do not add any further
+  service promise, and never a specialist claim. The admission year and Law
+  Institute membership are still to be supplied; an HTML comment on
+  about.html marks where they go.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 
