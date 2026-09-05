@@ -83,19 +83,18 @@ for the owner to review and merge. Nothing was pushed to main.
 1. **Professional Standards scheme statement** in every footer. Keep only if
    the principal is a current participant in the Law Institute of Victoria
    scheme; a non participant must not display it.
-2. **Experience claims on about.html**: "more than a decade", "over ten years"
-   and "internationally and in the Australian private sector" must be
-   literally true. The admission year and Law Institute membership are still
-   marked as owner to supply in an HTML comment.
-3. **Entity name.** privacy.html says "Spencer Alexander Lawyers Pty Ltd";
-   every footer and all schema use the name without Pty Ltd. Confirm which is
-   correct so both can match.
+2. **Experience claims**: the owner confirmed the same day that the ten
+   years belong to the practitioner, not the firm, and the home page was
+   reworded. "Internationally and in the Australian private sector" on
+   about.html still needs a yes, and the admission year and Law Institute
+   membership are still marked as owner to supply in an HTML comment.
+3. **Entity name.** Answered the same day: "Spencer Alexander Lawyers", and
+   privacy.html was corrected. See the owner answers below.
 4. **Service promises on contact.html and thank-you.html**: "After hours
    available for urgent matters" and "reply within one business day". Keep
    only if they hold in every case, including leave and court days.
-5. **Free first call.** faq.html keeps the owner's sentence "Your first call
-   costs nothing but a few minutes". It is a price representation; confirm it
-   is right and whether it should appear beside the call buttons.
+5. **Free first call.** Confirmed the same day and placed site wide. See
+   the owner answers below.
 6. **Five older articles are under the 1100 word gate minimum**: business
    structures, debt recovery, parenting arrangements, property reforms 2025
    and shareholder agreements. The gate only enforces the count on the newest
@@ -103,8 +102,48 @@ for the owner to review and merge. Nothing was pushed to main.
 7. **Article routine prompt.** The owner created routine should be told about
    the v3 template, the site-wide no dash rule, the currency line rule, the
    title and description limits and chrome propagation. Agents cannot edit it.
-8. **Profiles.** No sameAs links were added to the firm schema because no
-   LinkedIn or Google Business Profile URL was confirmed.
+8. **Profiles.** Supplied the same day and added. See the owner answers
+   below.
+
+### Owner answers, same day
+
+The owner answered four of the eight points in the live chat and the branch
+was updated accordingly:
+
+- **Entity name** is "Spencer Alexander Lawyers", no Pty Ltd. privacy.html
+  corrected.
+- **Experience.** The firm is not ten years old; the practitioner is. Home
+  page wording now reads "Spencer brings more than ten years..." and "Spencer
+  has practised for more than ten years". about.html already spoke of him.
+- **Free first call confirmed.** Placement left to judgement: it now sits in
+  the home and contact heroes, the hub hero meta, the process steps and every
+  rail card as "Your first call is free, and you speak with a lawyer".
+  faq.html keeps the owner's original sentence.
+- **Profiles supplied.** LinkedIn company page
+  https://www.linkedin.com/company/spenceralexander, personal page
+  https://www.linkedin.com/in/spenceralexanderlawyer and the Google Business
+  Profile share link https://share.google/g5K0IPeevaRwb2Myj, which resolves
+  to Knowledge Graph id /g/11nthy166d, place id ChIJ55iT2dyWG2ERsUO1cPTNK2Y
+  and Maps cid 7362204465613849521. Added as sameAs on the firm and Person
+  nodes, as footer links on every page, and as a LinkedIn link on about.html.
+- **Google reviews on the site.** The owner asked for the Google reviews to be
+  shown in a visually strong, converting way. Google blocks every server
+  route to the review text from this environment (search 429, Maps RPC 403,
+  headless Chromium dropped by the egress gateway), so the text was taken
+  from the Business Profile notification emails in the owner's connected
+  mailbox, which carry each review's name, stars and opening text. Google's
+  public Maps embed does return the rating and count without a key, so
+  `scripts/refresh-google-rating.py` keeps those current and the gate checks
+  every page shows the same numbers. Eight review emails exist but Google
+  shows seven; six are quoted on index.html (Paul B., Pan Z., Mark S.,
+  Kristen H., Pingen, Leche R.), each as its opening sentences exactly as
+  written, with a note saying so. Kathy S.'s "Really good lawyers!" was left
+  out because the firm has one lawyer, and Quinni T.'s "Great service!" for
+  space. No Review or AggregateRating schema was added: Google's structured
+  data policy treats a business's own reviews on its own site as self
+  serving. Testimonials are permitted for Victorian solicitors provided they
+  are genuine and not misleading, so the section shows the true aggregate
+  and links to the full set on Google.
 
 ### Merge note
 

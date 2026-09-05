@@ -338,6 +338,21 @@ def main():
     check("no specialist wording on core pages", not specialist, ", ".join(specialist[:4]))
     check("no dashes on core pages", not dashed, ", ".join(dashed[:4]))
 
+    # Google rating markup: every page that shows the rating must show the same
+    # numbers, in the shape scripts/refresh-google-rating.py rewrites.
+    ratings, counts, pages = set(), set(), 0
+    for f in sorted(glob.glob("*.html")):
+        h = read(f)
+        r = re.findall(r'data-google-rating[^>]*>([^<]*)<', h)
+        c = re.findall(r'data-google-reviews[^>]*>([^<]*)<', h)
+        if r or c:
+            pages += 1
+        ratings.update(r); counts.update(c)
+    ok = (pages > 0 and len(ratings) == 1 and len(counts) == 1
+          and re.fullmatch(r"\d\.\d", next(iter(ratings))) and re.fullmatch(r"\d+", next(iter(counts))))
+    check("Google rating markup consistent (site-wide)", ok, "%d pages, ratings %s, counts %s" % (pages, sorted(ratings), sorted(counts)))
+    check("index.html reviews section links to Google reviews", "search.google.com/local/reviews?placeid=" in read("index.html") and 'class="review-card"' in read("index.html"))
+
     # Privacy link placement (owner correction 1 Sep 2026: footer Firm column
     # only, exactly once, never the navigation or mobile menu).
     nav_priv, foot_priv = [], []

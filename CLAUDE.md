@@ -337,10 +337,43 @@ future edit, every new page and every new article.
   article and end in a call prompt, pills for the remaining matters, a sticky
   rail with the call card, six FAQs, and a compact related reading list. Keep
   new hub content inside that pattern rather than adding sections.
+- **Google rating and client reviews (owner instruction, 5 Sep 2026).** The
+  firm's Google Business Profile is place id `ChIJ55iT2dyWG2ERsUO1cPTNK2Y`
+  (Maps `cid=7362204465613849521`). Its rating and review count appear as
+  `<span data-google-rating>` and `<span data-google-reviews>` in the hero
+  on index.html and contact.html, the reviews section on index.html and the
+  rail card on every hub and article. Run
+  `python3 scripts/refresh-google-rating.py` before publishing: it reads the
+  numbers from Google's public Maps embed and rewrites every marked span, and
+  the gate check "Google rating markup consistent" fails if any page drifts.
+  The reviews section quotes Google reviews exactly as written, using the
+  opening sentences of longer reviews and first name plus initial. Source
+  for the text is the Google Business Profile notification emails to
+  spencer@spenceralexander.com.au; never invent, edit or paraphrase a review,
+  never quote client circumstances, and never add Review or AggregateRating
+  schema for the firm's own reviews, which Google treats as self serving.
+  Read all reviews link: `https://search.google.com/local/reviews?placeid=ChIJ55iT2dyWG2ERsUO1cPTNK2Y`.
+- **Profiles.** LinkedIn company page
+  `https://www.linkedin.com/company/spenceralexander` and the Maps listing are
+  the firm's `sameAs`; the principal's Person node carries
+  `https://www.linkedin.com/in/spenceralexanderlawyer`. The footer links
+  LinkedIn and the Google reviews page on every page, so any change goes
+  through index.html and chrome propagation.
+- **Free first call (owner confirmed, 5 Sep 2026).** The first call is free.
+  The site says so in the home and contact heroes, the hub hero meta, the
+  process steps and every rail card, in the form "Your first call is free,
+  and you speak with a lawyer". Keep that wording; do not extend it to a free
+  consultation or free advice.
+- **Experience wording (owner correction, 5 Sep 2026).** The firm is not ten
+  years old; the principal has more than ten years of experience. Every
+  experience claim names Spencer, never the firm, for example "Spencer has
+  practised for more than ten years".
+- **Entity name.** The firm is "Spencer Alexander Lawyers" everywhere,
+  including privacy.html; never "Pty Ltd".
 - **Claims that stay generic until the owner confirms them.** See the
-  DECISIONS.md entry for 2026-09-05. Do not add a free first call promise, a
-  response time promise, a years of experience figure, a scheme membership
-  statement or a specialist claim beyond what is already on the site.
+  DECISIONS.md entry for 2026-09-05. Do not add a response time promise, a
+  scheme membership statement or a specialist claim beyond what is already on
+  the site.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 
