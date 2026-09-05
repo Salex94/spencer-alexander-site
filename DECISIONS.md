@@ -205,6 +205,17 @@ separators are hidden from screen readers; the transcript disclosure matches
 the FAQ styling; the hero and film share one dark field; "Fifty-eight" takes
 its hyphen; and llms.txt names the video. Four claims were refuted and left.
 
+The owner then asked for the "58 seconds, Captioned, Sound on" line to go
+and for every caption to go, both the track added in the review round and
+the captions burned into the picture, which read as jumbled and did not fit
+the design. The line and the track were removed. The burned in captions
+cannot be lifted out of the master, so the video was re-encoded with the
+frame cropped to 1848 by 924, a 2 to 1 shape that ends just above the
+highest caption line, and the crop window pans down over the dissolve into
+the end card so the card, QR code included, stays whole. The poster and
+both end card images were regenerated at the same shape. The transcript
+stays under the player as text and in the VideoObject block.
+
 ### Merge note
 
 The branch touched every page so that the header, footer and stylesheet

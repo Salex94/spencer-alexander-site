@@ -387,13 +387,18 @@ future edit, every new page and every new article.
   script removes them and uses the play overlay, then the play event alone
   sets the playing state so a restart from fullscreen, picture in picture
   or a media key never leaves the card over a running film.
-  `spencer-alexander-intro.en.vtt` is an optional caption track, cues quoted
-  as spoken, so the burned in captions can be enlarged. `preload="none"`
+  The master carries burned in captions and the owner wants no captions on
+  the site at all, so every output is cropped to a 2 to 1 frame, 1848 by
+  924, that ends above the highest caption line, with the crop window
+  panning down over the dissolve so the whole end card stays in shot; never
+  add a caption track or a meta line under the heading (the "58 seconds,
+  Captioned, Sound on" line was removed on owner instruction).
+  `preload="none"`
   means no video bytes load until play; the script picks the 720p file on
   handheld or slow connections. A VideoObject JSON-LD block on index.html
   carries the transcript, which is also visible under the player. To replace
   the video, run `python3 scripts/prepare-home-video.py <master.mp4> [cut
-  seconds]`, re-time the caption track, then update the duration and
+  seconds]`, then update the duration and
   uploadDate in the schema and the "58 seconds" copy. The spoken line "if you need that expert advice" was flagged to the
   owner as close to a specialist claim and the owner chose to keep it; do not
   reopen it without a new instruction. Never add a second video, an autoplay
