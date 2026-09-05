@@ -21,8 +21,10 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/site.css?v=2">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="styles/styles.css?v=3">
+  <link rel="stylesheet" href="styles/site.css?v=3">
   <script type="application/ld+json">
   { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.spenceralexander.com.au/" },
@@ -31,9 +33,12 @@
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
   <div class="topbar">
     <div class="container topbar__inner">
-      <span class="topbar__loc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg> Melbourne &middot; Acting for clients across Victoria</span>
+      <span class="topbar__loc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg> Box Hill, Melbourne &middot; Acting for clients across Victoria</span>
       <span class="topbar__contact">
         <span class="topbar__hours">Mon to Fri, 8am to 6pm</span>
         <a href="mailto:contact@spenceralexander.com.au">contact@spenceralexander.com.au</a>
@@ -59,27 +64,31 @@
       </nav>
       <div class="header-right">
         <a class="btn btn--primary" href="tel:+61391258355">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
           Call (03) 9125 8355
         </a>
         <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
         </button>
       </div>
     </div>
     <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
-      <a href="/">Home</a>
-      <a href="/commercial-law">Commercial Law</a>
+      <div class="mobile-menu__h">Practice areas</div>
       <a href="/family-law">Family Law</a>
       <a href="/wills-and-estates">Wills &amp; Estates</a>
+      <a href="/commercial-law">Commercial Law</a>
+      <div class="mobile-menu__h">The firm</div>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
       <a href="/insights">Insights</a>
       <a href="/faq">FAQ</a>
-      <a href="/about">About</a>
       <a href="/contact">Contact</a>
+      <a class="btn btn--primary btn--block mobile-menu__call" href="tel:+61391258355">Call (03) 9125 8355</a>
+      <div class="mobile-menu__meta">Monday to Friday, 8am to 6pm &middot; Suite 10, 1 Main Street, Box Hill</div>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <!-- Page hero -->
     <section class="field-dark">
       <div class="container pagehero">
@@ -104,10 +113,10 @@
             <p>We collect personal information that you give us directly. That includes: your name, contact details and the content of your message when you use the enquiry form on this website or email or call us; your email address if you ask to receive a resource or updates from us; and the information you provide if you engage us to act for you, which can include sensitive information relevant to your matter. We only collect what we reasonably need.</p>
 
             <h2>The website enquiry form</h2>
-            <p>The enquiry form on our contact page is delivered by a third party form service (FormSubmit), which transmits what you submit to our email. The form's contents pass through that provider's systems in order to reach us. Please do not include sensitive detail about your matter in a website enquiry: a name, contact details and a general description are all we need to arrange a conversation, and anything you tell us once we speak is protected by our professional obligations.</p>
+            <p>The enquiry form on our contact page and the subscribe form on our resource pages are delivered by a third party form service, FormSubmit, which transmits what you submit to our email. The form's contents pass through that provider's systems in order to reach us. Please do not include sensitive detail about your matter in a website enquiry: a name, contact details and a general description are all we need to arrange a conversation, and anything you tell us once we speak is protected by our professional obligations.</p>
 
             <h2>Cookies and analytics</h2>
-            <p>This website does not set advertising cookies and does not run third party analytics or tracking scripts. Our hosting provider (GitHub Pages) may keep standard technical logs, such as IP addresses and pages requested, to operate and secure the service.</p>
+            <p>This website does not set advertising cookies and does not run third party analytics or tracking scripts. Our hosting provider, GitHub Pages, may keep standard technical logs, such as IP addresses and pages requested, to operate and secure the service. The site's typefaces are delivered by Google Fonts, so your browser requests those font files from Google's servers, which receive your IP address and standard browser information in the ordinary course of serving them. We do not receive any of that data, and Google's handling of it is described in Google's own privacy policy.</p>
 
             <h2>How we use personal information</h2>
             <p>We use personal information to respond to enquiries, to provide legal services, to manage our relationship with you, to send you information you have asked for, and to meet our legal and professional obligations. If you have subscribed to receive updates or resources, every email we send includes a simple way to opt out, and we stop immediately when you do.</p>
@@ -119,10 +128,10 @@
             <p>We store information in our email, document and practice systems, some of which are reputable cloud services that may store data outside Australia. We take reasonable steps to protect personal information from misuse, interference, loss and unauthorised access, and to destroy or de-identify it when it is no longer needed, subject to our record keeping obligations as a law practice.</p>
 
             <h2>Access, correction and complaints</h2>
-            <p>You can ask us what personal information we hold about you, ask us to correct it, or raise a privacy concern by emailing <a href="mailto:contact@spenceralexander.com.au">contact@spenceralexander.com.au</a> or calling <a href="tel:+61391258355">(03) 9125 8355</a>. We will respond within a reasonable time. If you are not satisfied with our response, you can complain to the Office of the Australian Information Commissioner (oaic.gov.au).</p>
+            <p>You can ask us what personal information we hold about you, ask us to correct it, or raise a privacy concern by emailing <a href="mailto:contact@spenceralexander.com.au">contact@spenceralexander.com.au</a> or calling <a href="tel:+61391258355">(03) 9125 8355</a>. We will respond within a reasonable time. If you are not satisfied with our response, you can raise your concern with the Office of the Australian Information Commissioner at oaic.gov.au or, for matters concerning our conduct as a law practice, with the Victorian Legal Services Board and Commissioner at lsbc.vic.gov.au.</p>
 
             <h2>Changes to this policy</h2>
-            <p>We may update this policy from time to time; the current version is always the one on this page.</p>
+            <p>We may update this policy from time to time. The current version is always the one on this page, and this version is dated 5 September 2026.</p>
 
             <p style="margin-top:28px;font-size:var(--text-sm);color:var(--text-subtle);">This policy was last reviewed in September 2026. It is general information about our practices, not legal advice about your situation.</p>
           </div>
@@ -139,45 +148,47 @@
             <span class="sa-logo__name">SPENCER ALEXANDER</span>
             <span class="sa-logo__sub"><span>LAWYERS</span></span>
           </span>
-          <p>We assist individuals, families and businesses across Melbourne and Victoria.</p>
+          <p>A Melbourne law firm for Family Law, Wills and Estates and Commercial Law, acting for individuals, families and businesses across Victoria.</p>
         </div>
         <div class="footer-cols">
           <div>
             <div class="footer-col__h">Get in touch</div>
             <a class="footer-num" href="tel:+61391258355">(03) 9125 8355</a>
-            <div class="footer-addr">Suite 10, 1 Main Street<br>Box Hill VIC 3128<br>contact@spenceralexander.com.au</div>
+            <div class="footer-addr"><a href="https://www.google.com/maps/search/?api=1&amp;query=Suite+10%2C+1+Main+Street%2C+Box+Hill+VIC+3128" rel="noopener" target="_blank">Suite 10, 1 Main Street<br>Box Hill VIC 3128</a><br><a href="mailto:contact@spenceralexander.com.au">contact@spenceralexander.com.au</a><br>Monday to Friday, 8am to 6pm</div>
           </div>
           <div>
             <div class="footer-col__h">Practice areas</div>
             <div class="footer-links">
-              <a href="/commercial-law">Commercial Law</a>
               <a href="/family-law">Family Law</a>
               <a href="/wills-and-estates">Wills &amp; Estates</a>
+              <a href="/commercial-law">Commercial Law</a>
             </div>
           </div>
           <div>
             <div class="footer-col__h">Firm</div>
             <div class="footer-links">
-              <a href="/about">About us</a>
+              <a href="/about">About the principal</a>
               <a href="/insights">Insights</a>
+              <a href="/resources">Free resources</a>
               <a href="/faq">FAQ</a>
+              <a href="/contact">Contact</a>
               <a href="/privacy">Privacy</a>
             </div>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span data-year>2026</span> Spencer Alexander Lawyers. Liability limited by a scheme approved under Professional Standards Legislation.</span>
+        <span>&copy; <span data-year>2026</span> Spencer Alexander Lawyers. Liability limited by a scheme approved under Professional Standards Legislation.</span>
         <span>This website is general information, not legal advice.</span>
       </div>
     </div>
   </footer>
 
   <a class="mobile-call" href="tel:+61391258355">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
-    Call now · (03) 9125 8355
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+    Call now &middot; (03) 9125 8355
   </a>
 
-  <script src="scripts/site.js"></script>
+  <script src="scripts/site.js?v=3"></script>
 </body>
 </html>

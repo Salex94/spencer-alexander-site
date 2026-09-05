@@ -13,6 +13,107 @@ Newest entries first.
 
 ---
 
+## 2026-09-05: Full site review and redesign, owner request in live chat
+
+The owner asked for a complete review of the site: legal accuracy, compliance
+with what a Victorian legal practitioner may say in marketing, a much stronger
+visual design, less content weight, stronger client conversion, and SEO and
+GEO kept paramount, with authority to make any change that improves the site.
+The work is staged on branch `claude/legal-website-review-redesign-1hqh3d`
+for the owner to review and merge. Nothing was pushed to main.
+
+### What was done
+
+- **Legal accuracy.** A review fleet raised 154 findings across every page.
+  Each file's findings were then verified by an independent agent that had to
+  uphold, refute or refer each one. Result: 83 upheld and applied, 32 moot
+  once the page was rebuilt, 21 refuted and left alone, 18 referred to the
+  owner, listed below. The 75 article corrections were applied by one editor
+  per article and checked again afterwards. Examples of corrections: the
+  section 52 statement threshold and its three month avoidance remedy in the
+  buying a business article; letters of administration with the will annexed
+  in the probate article; family violence kept as a contributions factor and
+  wastage moved to the future needs step in the property article; the adult
+  child tax sentence in the superannuation article; the pets provisions,
+  probate or letters of administration wording, statutory demand service and
+  safe harbour preconditions in faq.html.
+- **Advertising compliance.** Every specialist or specialising claim removed,
+  following the Legal Profession Uniform Law, ASCR rule 36 and the
+  accredited specialisation scheme. Plural wording such as "our lawyers" and
+  "our team" removed because the firm is a sole principal, following VLSC v
+  Stewart. Outcome promises softened to what the firm controls. The client
+  story in the contracts article reframed as an illustration rather than a
+  claimed matter. The free first call sentence in faq.html was left as the
+  owner wrote it and was not repeated anywhere else.
+- **Design.** New v3 stylesheet: home hero with the principal's portrait, an
+  editorial proof bar, photographic practice cards, a statement band, process
+  and time limit sections, a hub layout with a sticky call rail, an article
+  layout with an aside rail, author card and figure, the insights page with a
+  category filter and load more, a grouped mobile menu and a mobile call bar.
+  Navigation shows from 960px. Every page was screenshotted at desktop and
+  mobile widths before this entry was written.
+- **Content weight.** Hub prose cut to one paragraph, service detail cards
+  turned into pills, process steps to one line, duplicate strips removed,
+  excerpts to one sentence, the FAQ page given a jump menu and back to top
+  links, the about page cut to a lead, one experience paragraph and a direct
+  access paragraph, and the hidden staff biographies deleted.
+- **Conversion.** Urgent time limit strips sit first on each hub, every high
+  intent service block ends in a call prompt, the contact hero leads with the
+  call button and an anchor to the form, the form comes first on mobile, and
+  a reassurance note sits under the form.
+- **SEO and GEO.** Titles at most about 70 characters and descriptions at most
+  160, h1 on every page names the location, styles.css flattened so there is
+  no @import chain, fonts load without blocking, images carry dimensions,
+  `assets/logo.png` added as the schema logo, the firm `#firm` node and the
+  principal's Person node referenced from every article and the resource
+  page, In brief entity sentences on every hub, FAQPage author, publisher and
+  dateModified on faq.html, llms.txt given published dates and a last updated
+  line, sitemap lastmod set to 2026-09-05 on every changed page, every
+  article's dateModified and currency line set to September 2026, and feed.xml
+  cleared of dashes.
+- **Gate strengthened, never weakened.** check-publish.py now checks sitemap
+  lastmod against each article's dateModified, that the footer is identical
+  on every page, that each page has exactly one skip link and one main
+  landmark, that core pages carry no specialist wording and no dashes, and
+  that the currency line month matches dateModified. 63 checks pass on the
+  newest article; check-article-images.py passes.
+
+### Owner to confirm, left unchanged pending an answer
+
+1. **Professional Standards scheme statement** in every footer. Keep only if
+   the principal is a current participant in the Law Institute of Victoria
+   scheme; a non participant must not display it.
+2. **Experience claims on about.html**: "more than a decade", "over ten years"
+   and "internationally and in the Australian private sector" must be
+   literally true. The admission year and Law Institute membership are still
+   marked as owner to supply in an HTML comment.
+3. **Entity name.** privacy.html says "Spencer Alexander Lawyers Pty Ltd";
+   every footer and all schema use the name without Pty Ltd. Confirm which is
+   correct so both can match.
+4. **Service promises on contact.html and thank-you.html**: "After hours
+   available for urgent matters" and "reply within one business day". Keep
+   only if they hold in every case, including leave and court days.
+5. **Free first call.** faq.html keeps the owner's sentence "Your first call
+   costs nothing but a few minutes". It is a price representation; confirm it
+   is right and whether it should appear beside the call buttons.
+6. **Five older articles are under the 1100 word gate minimum**: business
+   structures, debt recovery, parenting arrangements, property reforms 2025
+   and shareholder agreements. The gate only enforces the count on the newest
+   article, so nothing blocks, but the owner may want them expanded.
+7. **Article routine prompt.** The owner created routine should be told about
+   the v3 template, the site-wide no dash rule, the currency line rule, the
+   title and description limits and chrome propagation. Agents cannot edit it.
+8. **Profiles.** No sameAs links were added to the firm schema because no
+   LinkedIn or Google Business Profile URL was confirmed.
+
+### Merge note
+
+The branch touches every page so that the header, footer and stylesheet
+versions match everywhere. Merge it as one change; the "footer identical on
+every page" check will fail if only some pages are taken.
+
+---
+
 ## 2026-09-04: Demand scan; backlog refreshed, five FAQ entries added
 
 Friday demand scan. `scripts/content-backlog.md` refreshed (payday super in

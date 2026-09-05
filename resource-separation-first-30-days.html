@@ -21,10 +21,12 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/site.css?v=2">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="styles/styles.css?v=3">
+  <link rel="stylesheet" href="styles/site.css?v=3">
   <script type="application/ld+json">
-  { "@context": "https://schema.org", "@type": "HowTo", "name": "Separation in Victoria: your first 30 days", "description": "A practical checklist for the first 30 days after separating in Victoria: safety, finances, the children, your will and power of attorney, and the deadlines to diarise.", "datePublished": "2026-08-25", "dateModified": "2026-08-25", "totalTime": "P30D", "inLanguage": "en-AU", "image": "https://www.spenceralexander.com.au/assets/og-card.png", "author": { "@type": "Person", "@id": "https://www.spenceralexander.com.au/about.html#spencer-alexander", "name": "Spencer Alexander", "url": "https://www.spenceralexander.com.au/about.html" }, "publisher": { "@type": "LegalService", "name": "Spencer Alexander Lawyers", "telephone": "+61-3-9125-8355", "logo": "https://www.spenceralexander.com.au/assets/logo-wordmark-inverse.svg" }, "mainEntityOfPage": "https://www.spenceralexander.com.au/resource-separation-first-30-days.html", "step": [
+  { "@context": "https://schema.org", "@type": "HowTo", "name": "Separation in Victoria: your first 30 days", "description": "A practical checklist for the first 30 days after separating in Victoria: safety, finances, the children, your will and power of attorney, and the deadlines to diarise.", "datePublished": "2026-08-25", "dateModified": "2026-08-25", "totalTime": "P30D", "inLanguage": "en-AU", "image": "https://www.spenceralexander.com.au/assets/og-card.png", "author": { "@type": "Person", "@id": "https://www.spenceralexander.com.au/about.html#spencer-alexander", "name": "Spencer Alexander", "url": "https://www.spenceralexander.com.au/about.html" }, "publisher": { "@type": "LegalService", "@id": "https://www.spenceralexander.com.au/#firm", "name": "Spencer Alexander Lawyers", "telephone": "+61391258355", "logo": "https://www.spenceralexander.com.au/assets/logo.png" }, "mainEntityOfPage": "https://www.spenceralexander.com.au/resource-separation-first-30-days.html", "step": [
     { "@type": "HowToStep", "position": 1, "name": "Deal with safety first", "text": "If you or your children are not safe, act on that before anything else on this list. Family violence support and intervention orders take priority over every other step." },
     { "@type": "HowToStep", "position": 2, "name": "Separate your immediate finances practically", "text": "Note the balance of joint accounts, keep essential bills paid, and open an account in your own name if you do not already have one, without emptying shared accounts unilaterally." },
     { "@type": "HowToStep", "position": 3, "name": "Gather and copy your key documents", "text": "Collect identity documents, recent financial statements, superannuation statements, property and insurance papers while they are easy to access." },
@@ -53,9 +55,12 @@
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
   <div class="topbar">
     <div class="container topbar__inner">
-      <span class="topbar__loc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg> Melbourne &middot; Acting for clients across Victoria</span>
+      <span class="topbar__loc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg> Box Hill, Melbourne &middot; Acting for clients across Victoria</span>
       <span class="topbar__contact">
         <span class="topbar__hours">Mon to Fri, 8am to 6pm</span>
         <a href="mailto:contact@spenceralexander.com.au">contact@spenceralexander.com.au</a>
@@ -74,34 +79,38 @@
         <a href="/commercial-law">Commercial Law</a>
         <a href="/family-law">Family Law</a>
         <a href="/wills-and-estates">Wills &amp; Estates</a>
-        <a href="/insights">Insights</a>
+        <a href="/insights" class="is-active">Insights</a>
         <a href="/faq">FAQ</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
       </nav>
       <div class="header-right">
         <a class="btn btn--primary" href="tel:+61391258355">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
           Call (03) 9125 8355
         </a>
         <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
         </button>
       </div>
     </div>
     <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
-      <a href="/">Home</a>
-      <a href="/commercial-law">Commercial Law</a>
+      <div class="mobile-menu__h">Practice areas</div>
       <a href="/family-law">Family Law</a>
       <a href="/wills-and-estates">Wills &amp; Estates</a>
-      <a href="/insights">Insights</a>
-      <a href="/faq">FAQ</a>
+      <a href="/commercial-law">Commercial Law</a>
+      <div class="mobile-menu__h">The firm</div>
+      <a href="/">Home</a>
       <a href="/about">About</a>
+      <a href="/insights" class="is-active">Insights</a>
+      <a href="/faq">FAQ</a>
       <a href="/contact">Contact</a>
+      <a class="btn btn--primary btn--block mobile-menu__call" href="tel:+61391258355">Call (03) 9125 8355</a>
+      <div class="mobile-menu__meta">Monday to Friday, 8am to 6pm &middot; Suite 10, 1 Main Street, Box Hill</div>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section class="field-dark">
       <div class="container pagehero">
         <nav class="crumbs" aria-label="Breadcrumb">
@@ -121,7 +130,7 @@
     </section>
 
     <section class="section section--page">
-      <div class="container">
+      <div class="container article-layout">
         <article class="article">
           <div class="article__body">
         <p class="article__lead">Separation rarely arrives with a to-do list. In the first days and weeks, most people are dealing with an emotional upheaval while somehow also expected to make practical decisions about money, the children and the future, often with no idea what actually needs attention now versus later. This checklist sets out the practical steps worth working through in the first thirty days after separating in Victoria: not everything you will ever need to do, but the things that genuinely matter early, in a sensible order, with nothing that requires you to have decided anything final yet.</p>
@@ -176,8 +185,8 @@
             </div>
 
             <div class="resource-subscribe" style="margin-top:32px;padding:20px 22px;border:1px solid #e3ddd3;border-radius:8px;">
-              <p style="margin:0 0 8px;font-weight:600;">Email me this checklist</p>
-              <p style="margin:0 0 14px;font-size:var(--text-sm);color:var(--text-subtle);">Leave your email and we will send you the link to this checklist, plus occasional plain English updates on Victorian law. One reply unsubscribes you any time. Details are handled per our <a href="/privacy">privacy policy</a>.</p>
+              <p style="margin:0 0 8px;font-weight:600;">Keep a copy of this checklist</p>
+              <p style="margin:0 0 14px;font-size:var(--text-sm);color:var(--text-subtle);">Leave your email and we will send you a copy of this checklist, plus occasional plain English updates on Victorian law. One reply unsubscribes you any time. Details are handled per our <a href="/privacy">privacy policy</a>.</p>
               <form class="form" name="subscribe" method="POST" action="https://formsubmit.co/contact@spenceralexander.com.au">
                 <input type="hidden" name="_subject" value="New insights subscriber">
                 <input type="hidden" name="_template" value="table">
@@ -189,25 +198,53 @@
                   <label for="sub-email">Email</label>
                   <input type="email" id="sub-email" name="email" autocomplete="email" required>
                 </div>
-                <button class="btn btn--primary" type="submit" style="margin-top:10px;">Send me the checklist</button>
+                <button class="btn btn--primary" type="submit" style="margin-top:10px;">Email me a copy</button>
+                <button class="btn btn--outline" type="button" style="margin-top:10px;" onclick="window.print()">Print this checklist</button>
               </form>
             </div>
 
             <p style="margin-top:28px;font-size:var(--text-sm);color:var(--text-subtle);">This checklist reflects the law applying in Victoria as at August 2026. It is general information only, not legal advice, and does not take your circumstances into account.</p>
           </div>
-          <div style="margin-top:40px;padding-top:24px;border-top:1px solid var(--border-hairline);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;">
+          <div class="author-card">
+            <img src="assets/principal-portrait-240.jpg" alt="Spencer Alexander" width="72" height="72" loading="lazy">
+            <div>
+              <span class="author-card__k">About the author</span>
+              <div class="author-card__n">Spencer Alexander, Principal</div>
+              <p class="author-card__d">Melbourne lawyer with more than a decade of experience across Family Law, Wills and Estates and Commercial Law. Bachelor of Laws with Honours, Monash University, and Master of Laws, University of Sydney. <a href="/about">More about Spencer</a>.</p>
+            </div>
+          </div>
+          <div class="article-foot">
             <a class="card-link" href="/resources"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg> All resources</a>
             <a class="btn btn--primary" href="tel:+61391258355"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg> Call (03) 9125 8355</a>
           </div>
         </article>
+        <aside class="rail article-rail" aria-label="Talk to a lawyer">
+          <div class="rail-card">
+            <div class="rail-card__t">Talk it through with a lawyer.</div>
+            <p class="rail-card__d">This page is general information. For advice on your own situation, one call tells you where you stand and what to do next.</p>
+            <a class="btn btn--primary btn--block" href="tel:+61391258355"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg> Call (03) 9125 8355</a>
+            <a class="btn btn--outline btn--block" href="/contact">Send an enquiry</a>
+            <ul class="rail-list">
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> You speak with a lawyer on your first call</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> A written fee estimate before work begins</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Direct access to the principal throughout</li>
+            </ul>
+            <p class="rail-card__meta">Monday to Friday, 8am to 6pm. After hours for urgent matters.</p>
+          </div>
+          <div class="rail-card rail-card--quiet">
+            <div class="rail-card__t">Family Law at Spencer Alexander Lawyers</div>
+            <p class="rail-card__d">Separation, parenting and property, settled sensibly where we can and argued firmly where we must.</p>
+            <a class="card-link" href="/family-law">Explore Family Law <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </div>
+        </aside>
       </div>
     </section>
 
     <section class="field-wine cta">
       <div class="container container--lg">
-        <span class="eyebrow-light">General information, not advice</span>
+        <span class="eyebrow-light">Your next step</span>
         <h2 class="cta__title">Talk it through with a lawyer.</h2>
-        <p class="cta__lead">This checklist is general information only. For guidance on your own situation, one call tells you exactly where you stand and what to do next.</p>
+        <p class="cta__lead">This checklist is general information only. For guidance on your own situation, one call tells you where you stand and what to do next.</p>
         <div class="cta__actions">
           <a class="btn btn--accent btn--lg" href="tel:+61391258355"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg> Call (03) 9125 8355</a>
           <a class="btn btn--ghost btn--lg" href="/contact">Send an enquiry</a>
@@ -224,45 +261,47 @@
             <span class="sa-logo__name">SPENCER ALEXANDER</span>
             <span class="sa-logo__sub"><span>LAWYERS</span></span>
           </span>
-          <p>We assist individuals, families and businesses across Melbourne and Victoria.</p>
+          <p>A Melbourne law firm for Family Law, Wills and Estates and Commercial Law, acting for individuals, families and businesses across Victoria.</p>
         </div>
         <div class="footer-cols">
           <div>
             <div class="footer-col__h">Get in touch</div>
             <a class="footer-num" href="tel:+61391258355">(03) 9125 8355</a>
-            <div class="footer-addr">Suite 10, 1 Main Street<br>Box Hill VIC 3128<br>contact@spenceralexander.com.au</div>
+            <div class="footer-addr"><a href="https://www.google.com/maps/search/?api=1&amp;query=Suite+10%2C+1+Main+Street%2C+Box+Hill+VIC+3128" rel="noopener" target="_blank">Suite 10, 1 Main Street<br>Box Hill VIC 3128</a><br><a href="mailto:contact@spenceralexander.com.au">contact@spenceralexander.com.au</a><br>Monday to Friday, 8am to 6pm</div>
           </div>
           <div>
             <div class="footer-col__h">Practice areas</div>
             <div class="footer-links">
-              <a href="/commercial-law">Commercial Law</a>
               <a href="/family-law">Family Law</a>
               <a href="/wills-and-estates">Wills &amp; Estates</a>
+              <a href="/commercial-law">Commercial Law</a>
             </div>
           </div>
           <div>
             <div class="footer-col__h">Firm</div>
             <div class="footer-links">
-              <a href="/about">About us</a>
+              <a href="/about">About the principal</a>
               <a href="/insights">Insights</a>
+              <a href="/resources">Free resources</a>
               <a href="/faq">FAQ</a>
+              <a href="/contact">Contact</a>
               <a href="/privacy">Privacy</a>
             </div>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span data-year>2026</span> Spencer Alexander Lawyers. Liability limited by a scheme approved under Professional Standards Legislation.</span>
+        <span>&copy; <span data-year>2026</span> Spencer Alexander Lawyers. Liability limited by a scheme approved under Professional Standards Legislation.</span>
         <span>This website is general information, not legal advice.</span>
       </div>
     </div>
   </footer>
 
   <a class="mobile-call" href="tel:+61391258355">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
-    Call now · (03) 9125 8355
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+    Call now &middot; (03) 9125 8355
   </a>
 
-  <script src="scripts/site.js"></script>
+  <script src="scripts/site.js?v=3"></script>
 </body>
 </html>

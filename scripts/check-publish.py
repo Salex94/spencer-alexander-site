@@ -117,7 +117,13 @@ def main():
             ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"][utc.weekday()],
             utc.day, MONTHS[utc.month - 1], utc.year, utc.hour)
         check("visible date in article meta", visible in art, visible)
-        check("sitemap lastmod", "<loc>%s</loc>" % url in smap and "<lastmod>%s</lastmod>" % iso in smap, iso)
+        # The sitemap entry for THIS article must carry a lastmod equal to
+        # the article's dateModified (strengthened 5 Sep 2026: the old check
+        # only looked for the published date anywhere in the file).
+        entry = re.search(r"<url>\s*<loc>%s</loc>\s*<lastmod>([^<]+)</lastmod>" % re.escape(url), smap)
+        want = article_ld.get("dateModified", iso)
+        check("sitemap lastmod matches dateModified", bool(entry) and entry.group(1) == want,
+              "%s vs %s" % (entry.group(1) if entry else "missing", want))
         check("feed pubDate (09:00 +1000 as UTC)", rfc in feed, rfc)
         check("feed lastBuildDate matches", "<lastBuildDate>%s</lastBuildDate>" % rfc in feed, rfc)
         check("insights blogPost datePublished", '"%s", "datePublished": "%s"' % (page, iso) in
@@ -222,6 +228,16 @@ def main():
     check("meta description 120-170 chars", desc and 120 <= len(desc.group(1)) <= 170,
           str(len(desc.group(1)) if desc else 0))
 
+    # Currency line: "as at <Month YYYY>" must be the month of dateModified
+    # (added 5 Sep 2026: the template literal had propagated "July 2026" onto
+    # articles published in March and onto ones modified in September).
+    cm = re.search(r"reflects the law applying in Victoria as at ([A-Z][a-z]+ \d{4})", art)
+    dm = article_ld.get("dateModified", iso)
+    want_month = "%s %s" % (["January", "February", "March", "April", "May", "June", "July",
+                              "August", "September", "October", "November", "December"][int(dm[5:7]) - 1], dm[:4]) if dm else ""
+    check("currency line month matches dateModified", bool(cm) and cm.group(1) == want_month,
+          "%s vs %s" % (cm.group(1) if cm else "missing", want_month))
+
     m = re.search(r'<div class="article__body">(.*?)<p style="margin-top:28px', art, re.S)
     if m:
         words = len(re.sub(r"<[^>]+>", " ", m.group(1)).split())
@@ -293,6 +309,34 @@ def main():
                 wide_missing.append("%s -> %s" % (f, s))
     check("internal links resolve (site-wide)", not wide_broken, "; ".join(wide_broken[:4]))
     check("local assets exist (site-wide)", not wide_missing, "; ".join(wide_missing[:4]))
+
+    # Site chrome and house style on the core pages (added 5 Sep 2026 with the
+    # v3 redesign): every page shares one footer and mobile call bar, carries a
+    # skip link and a main landmark, no page describes the firm as a
+    # specialist (the firm holds no accredited specialisation), and the core
+    # pages carry no dash punctuation (owner instruction 6 Aug 2026, applied
+    # site-wide in the 5 Sep 2026 review).
+    core = ["index.html", "family-law.html", "wills-and-estates.html", "commercial-law.html",
+            "about.html", "contact.html", "faq.html", "insights.html", "resources.html",
+            "privacy.html", "thank-you.html", "404.html", "_article-template.html"]
+    ref_foot = re.search(r'<footer class="site-footer">.*?</footer>', idx, re.S)
+    odd_foot, no_skip, specialist, dashed = [], [], [], []
+    for f in sorted(glob.glob("*.html")):
+        body = read(f)
+        foot = re.search(r'<footer class="site-footer">.*?</footer>', body, re.S)
+        if ref_foot and (not foot or foot.group(0) != ref_foot.group(0)):
+            odd_foot.append(f)
+        if body.count('class="skip-link"') != 1 or body.count('<main id="main">') != 1:
+            no_skip.append(f)
+        if f in core:
+            if re.search(r"specialis", body, re.I):
+                specialist.append(f)
+            if "\u2014" in body or "\u2013" in body:
+                dashed.append(f)
+    check("footer identical on every page", not odd_foot, ", ".join(odd_foot[:4]))
+    check("exactly one skip link + main landmark on every page", not no_skip, ", ".join(no_skip[:4]))
+    check("no specialist wording on core pages", not specialist, ", ".join(specialist[:4]))
+    check("no dashes on core pages", not dashed, ", ".join(dashed[:4]))
 
     # Privacy link placement (owner correction 1 Sep 2026: footer Firm column
     # only, exactly once, never the navigation or mobile menu).

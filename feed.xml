@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Spencer Alexander Lawyers — Insights</title>
+    <title>Spencer Alexander Lawyers Insights</title>
     <link>https://www.spenceralexander.com.au/insights.html</link>
     <atom:link href="https://www.spenceralexander.com.au/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical, plain-language articles on Wills &amp; Estates, Family Law and Commercial Law in Victoria, from Spencer Alexander Lawyers, Melbourne.</description>
@@ -13,7 +13,7 @@
       <guid isPermaLink="true">https://www.spenceralexander.com.au/insight-grandparents-rights-victoria.html</guid>
       <pubDate>Sun, 30 Aug 2026 23:00:00 +0000</pubDate>
       <category>Family Law</category>
-      <description>Grandparents have no automatic right to see their grandchildren, but Victorian family law lets them apply. How grandparents rights actually work, and what to do first.</description>
+      <description>Grandparents have no automatic right to see their grandchildren, but the Family Law Act lets them apply. How grandparents rights actually work, and what to do first.</description>
     </item>
     <item>
       <title>Fraudulent calumny in Victoria: can a lie invalidate a will?</title>
@@ -197,7 +197,7 @@
       <guid isPermaLink="true">https://www.spenceralexander.com.au/insight-business-structures.html</guid>
       <pubDate>Sun, 05 Apr 2026 23:00:00 +0000</pubDate>
       <category>Commercial Law</category>
-      <description>How to choose between sole trader, partnership, company and trust in Victoria: liability, tax, asset protection, investors and sale — and how to restructure as the business grows.</description>
+      <description>How to choose between sole trader, partnership, company and trust in Victoria: liability, tax, asset protection, investors, sale and restructuring as you grow.</description>
     </item>
     <item>
       <title>Probate in Victoria: a step-by-step guide for executors and families</title>

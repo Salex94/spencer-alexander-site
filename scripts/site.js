@@ -1,4 +1,4 @@
-/* Spencer Alexander Lawyers — small site behaviours */
+/* Spencer Alexander Lawyers, small site behaviours (v3) */
 (function () {
   "use strict";
   // Mobile menu toggle
@@ -22,7 +22,7 @@
 
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // View transitions: some contexts skip the transition and fire an unhandled rejection — silence it
+  // View transitions: some contexts skip the transition and fire an unhandled rejection, so silence it
   window.addEventListener("unhandledrejection", function (e) {
     var msg = e.reason && (e.reason.message || e.reason);
     if (msg && String(msg).indexOf("Transition was skipped") !== -1) { e.preventDefault(); }
@@ -38,11 +38,11 @@
     } catch (err) { /* no-op */ }
   }
 
-  // Scroll reveal — progressive enhancement; content is never hidden without JS + IO
+  // Scroll reveal, a progressive enhancement; content is never hidden without JS + IO
   if ("IntersectionObserver" in window && !reduceMotion) {
     var revealSel = [
       ".section-head", ".area-card", ".detail-card", ".svc", ".process .step",
-      ".faq-item", ".value", ".cred", ".post-card", ".fee-note", ".related__link",
+      ".faq-item", ".value", ".cred", ".post-card", ".fee-note", ".related__link", ".practice-card", ".urgent", ".process-row .step", ".brief", ".statement", ".author-card",
       ".reach", ".intro-grid .prose", ".intro-grid .page-photo", ".process-grid .page-photo",
       ".bio__media", ".bio__body", ".info-block", ".form-card", ".faq-group__h"
     ].join(",");
@@ -68,7 +68,7 @@
         var r = el.getBoundingClientRect();
         if (r.top < vh * 0.96 && r.bottom > 0) { onScreen.push(el); }
       });
-      // Reveal anything already in view on the next frame — no dependence on IO for first paint
+      // Reveal anything already in view on the next frame, no dependence on IO for first paint
       requestAnimationFrame(function () { requestAnimationFrame(function () { onScreen.forEach(finish); }); });
       var ioFired = false;
       var io = new IntersectionObserver(function (entries) {
@@ -94,7 +94,7 @@
     }
   }
 
-  // Same-page anchor scrolling — explicit, so it works even in embedded previews
+  // Same-page anchor scrolling, explicit so it works even in embedded previews
   // that block native hash-jump scrolling. Never uses scrollIntoView.
   document.addEventListener("click", function (e) {
     var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
@@ -109,6 +109,33 @@
     try { history.pushState(null, "", "#" + id); } catch (err) { /* no-op */ }
     window.scrollTo({ top: top, behavior: reduceMotion ? "auto" : "smooth" });
   });
+
+
+  // Insights category filter (progressive enhancement; the grid is complete without it)
+  var filters = document.querySelector("[data-filters]");
+  var grid = document.querySelector("[data-insights-grid]");
+  var more = document.querySelector("[data-load-more]");
+  if (more && grid) {
+    more.addEventListener("click", function () { grid.classList.add("is-expanded"); more.parentNode.hidden = true; });
+  }
+  if (filters && grid) {
+    var cards = Array.prototype.slice.call(grid.querySelectorAll(".post-card"));
+    filters.addEventListener("click", function (e) {
+      var b = e.target.closest ? e.target.closest("button[data-cat]") : null;
+      if (!b) return;
+      var cat = b.getAttribute("data-cat");
+      grid.classList.add("is-expanded");
+      if (more) { more.parentNode.hidden = true; }
+      Array.prototype.forEach.call(filters.querySelectorAll("button[data-cat]"), function (x) {
+        x.setAttribute("aria-pressed", x === b ? "true" : "false");
+      });
+      cards.forEach(function (c) {
+        var el = c.querySelector(".post-cat");
+        var own = el ? el.textContent.replace(/\s+/g, " ").trim() : "";
+        c.classList.toggle("is-hidden", cat !== "all" && own !== cat);
+      });
+    });
+  }
 
   // FAQ answer entrance on open
   document.addEventListener("toggle", function (e) {

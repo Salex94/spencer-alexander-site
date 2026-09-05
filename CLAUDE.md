@@ -284,6 +284,64 @@ cards by the clean href form and still accepts the old `.html` form.
   article's own headline, no dashes). Enforced by check-publish.py ("article
   linked from its practice page").
 
+## Site design v3 and site-wide house style, owner review 5 Sep 2026
+
+The owner had the whole site reviewed and redesigned on 5 Sep 2026: legal
+accuracy, advertising compliance, visual design, content weight, conversion,
+SEO and GEO. The conventions below came out of that work and apply to every
+future edit, every new page and every new article.
+
+- **Chrome is propagated from index.html.** The top bar, header, navigation,
+  mobile menu, footer and mobile call bar on every page are copies of the
+  index.html versions. To change any of them, edit index.html first and then
+  copy the same markup to every other page. check-publish.py enforces "footer
+  identical on every page" and "exactly one skip link + main landmark on every
+  page". Never hand edit one page's header or footer in isolation.
+- **Stylesheets.** `styles/styles.css` is one flattened file of tokens and
+  base styles with no @import chain, and `styles/site.css` carries every
+  component. Both are linked with `?v=3`; bump the version on both links on
+  every page when either file changes materially. Google Fonts load through a
+  preload link with a noscript fallback. Keep both arrangements.
+- **No dashes anywhere on the site.** The 6 Aug 2026 article rule now applies
+  to every page, every JSON-LD block, feed.xml and llms.txt: no em dash, no en
+  dash, no spaced hyphen. check-publish.py enforces "no dashes on core pages"
+  and the article check for anything dated after 2026-08-06. New prose also
+  avoids parentheses, apart from statute citations such as the Vic and Cth
+  suffixes and the phone number.
+- **Titles and descriptions.** Title tag at most about 70 characters including
+  the " | Spencer Alexander Lawyers" suffix. Meta description between 120 and
+  160 characters, identical in the meta tag, og:description and the JSON-LD
+  description.
+- **Article layout.** Every article uses the `.article-layout` grid: the body,
+  an aside rail holding the practice-area card, the author card and the call
+  prompt, and an `.article-foot` block with related reading. New articles copy
+  `_article-template.html`, which carries that layout, the article figure,
+  the author and publisher `@id` links and the currency line.
+- **Currency line.** Every article body ends with "This guide reflects the law
+  applying in Victoria as at Month YYYY." The month must match the article's
+  `dateModified`; check-publish.py enforces "currency line month matches
+  dateModified". Any change to an article's substance updates the currency
+  line, `dateModified` and the sitemap `lastmod` in the same commit.
+- **Schema.** The firm node is `https://www.spenceralexander.com.au/#firm`, a
+  LegalService on index.html with an embedded founder Person, `assets/logo.png`,
+  an E.164 telephone and hasMap. Every Article and HowTo publisher references
+  that `@id`, and every author references the principal's Person node at
+  `about.html#spencer-alexander`. Hubs carry Service, OfferCatalog, FAQPage and
+  BreadcrumbList; faq.html's FAQPage carries author, publisher and
+  dateModified.
+- **Portraits and logo.** `assets/logo.png` is the schema logo.
+  `assets/principal-portrait-880.jpg` is the home hero portrait and
+  `assets/principal-portrait-240.jpg` the author card portrait.
+- **Hub pattern.** Urgent time limit strip first, then an "In brief" entity
+  sentence, one paragraph of prose, six service blocks that each link an
+  article and end in a call prompt, pills for the remaining matters, a sticky
+  rail with the call card, six FAQs, and a compact related reading list. Keep
+  new hub content inside that pattern rather than adding sections.
+- **Claims that stay generic until the owner confirms them.** See the
+  DECISIONS.md entry for 2026-09-05. Do not add a free first call promise, a
+  response time promise, a years of experience figure, a scheme membership
+  statement or a specialist claim beyond what is already on the site.
+
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 
 The owner has asked that runs never require their input. Two facts every run
