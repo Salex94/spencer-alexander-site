@@ -159,6 +159,9 @@
     var after = film.querySelector("[data-film-after]");
     var replay = film.querySelector("[data-film-replay]");
     var chosen = false;
+    var quiet = function (p) { if (p && p.catch) p.catch(function () {}); };
+    // With script running, the overlay is the one control until play; without it the native controls stay
+    video.removeAttribute("controls");
     var pickSource = function () {
       if (chosen) return;
       chosen = true;
@@ -166,26 +169,48 @@
       var large = video.getAttribute("data-src-1080");
       var conn = navigator.connection || {};
       var slow = !!conn.saveData || /(^|-)(2g|3g)$/.test(conn.effectiveType || "");
-      var narrow = window.matchMedia("(max-width: 760px)").matches;
-      var pick = small && (slow || narrow) ? small : large;
+      var handheld = window.matchMedia("(max-width: 760px), (pointer: coarse) and (max-width: 1024px)").matches;
+      var pick = small && (slow || handheld) ? small : large;
       if (pick) video.src = pick;
+    };
+    var loadCard = function () {
+      if (!card || card.getAttribute("src")) return;
+      var small = card.getAttribute("data-src-small");
+      card.src = small && card.clientWidth < 700 ? small : card.getAttribute("data-src");
+    };
+    var leaveNativeSurfaces = function () {
+      var fs = document.fullscreenElement || document.webkitFullscreenElement;
+      if (fs === video) {
+        quiet(document.exitFullscreen ? document.exitFullscreen() : (document.webkitExitFullscreen && document.webkitExitFullscreen()));
+      } else if (video.webkitDisplayingFullscreen && video.webkitExitFullscreen) {
+        video.webkitExitFullscreen();
+      }
+      if (document.pictureInPictureElement === video && document.exitPictureInPicture) quiet(document.exitPictureInPicture());
     };
     var start = function () {
       pickSource();
+      quiet(video.play());
+      video.focus({ preventScroll: true });
+    };
+    if (playBtn) playBtn.addEventListener("click", start);
+    // The play event is the one place that sets the playing state, however playback was resumed
+    video.addEventListener("play", function () {
       film.classList.add("is-playing");
       film.classList.remove("is-ended");
       video.setAttribute("controls", "");
+      if (card) card.setAttribute("aria-hidden", "true");
       if (after) after.hidden = true;
-      var p = video.play();
-      if (p && p.catch) p.catch(function () {});
-    };
-    if (playBtn) playBtn.addEventListener("click", start);
-    video.addEventListener("play", function () { film.classList.add("is-playing"); });
+    });
+    video.addEventListener("playing", loadCard);
     video.addEventListener("ended", function () {
+      var hadFocus = film.contains(document.activeElement);
+      leaveNativeSurfaces();
+      loadCard();
       film.classList.add("is-ended");
       video.removeAttribute("controls");
-      if (card && !card.getAttribute("src")) card.src = card.getAttribute("data-src");
+      if (card) card.removeAttribute("aria-hidden");
       if (after) after.hidden = false;
+      if (hadFocus && replay) replay.focus({ preventScroll: true });
     });
     if (replay) replay.addEventListener("click", function () {
       video.currentTime = 0;

@@ -378,16 +378,23 @@ future edit, every new page and every new article.
   click to play, never autoplay, self hosted in `assets/video/` because the
   owner does not want YouTube. `spencer-alexander-intro-1080.mp4` and the 720p
   version are graded to match the hero portrait up to the end card cut, and
-  the end card keeps its true colours. `poster-1280.jpg` is the graded still
-  and `end-card.jpg` the contact card with the QR code, which the script
-  fades over the player when playback ends so the code stays on screen; a
-  "Watch again" and call bar appears beneath. `preload="none"` means no video
-  bytes load until play; the script picks the 720p file on narrow or slow
-  connections. A VideoObject JSON-LD block on index.html carries the
-  transcript, which is also visible under the player. To replace the video,
-  run `python3 scripts/prepare-home-video.py <master.mp4> [cut seconds]`,
-  then update the duration and uploadDate in the schema and the "58 seconds"
-  copy. The spoken line "if you need that expert advice" was flagged to the
+  the end card keeps its true colours. `poster-1600.jpg` is the graded
+  clean first frame, `end-card.jpg` the contact card with the QR code and
+  `end-card-small.jpg` a phone sized recomposition of it; the script fades
+  the right one over the player when playback ends so the code stays on
+  screen, and a "Watch again" and call bar appears beneath. The video
+  carries native controls in the markup for visitors without script; the
+  script removes them and uses the play overlay, then the play event alone
+  sets the playing state so a restart from fullscreen, picture in picture
+  or a media key never leaves the card over a running film.
+  `spencer-alexander-intro.en.vtt` is an optional caption track, cues quoted
+  as spoken, so the burned in captions can be enlarged. `preload="none"`
+  means no video bytes load until play; the script picks the 720p file on
+  handheld or slow connections. A VideoObject JSON-LD block on index.html
+  carries the transcript, which is also visible under the player. To replace
+  the video, run `python3 scripts/prepare-home-video.py <master.mp4> [cut
+  seconds]`, re-time the caption track, then update the duration and
+  uploadDate in the schema and the "58 seconds" copy. The spoken line "if you need that expert advice" was flagged to the
   owner as close to a specialist claim and the owner chose to keep it; do not
   reopen it without a new instruction. Never add a second video, an autoplay
   loop, or a review count to this section.

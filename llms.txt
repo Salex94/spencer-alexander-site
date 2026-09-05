@@ -8,7 +8,7 @@ This file helps AI systems locate and correctly attribute our published legal gu
 
 ## Key pages
 
-- [Home](https://www.spenceralexander.com.au/): Overview of the firm and its three practice areas.
+- [Home](https://www.spenceralexander.com.au/): Overview of the firm and its three practice areas, with a 58 second video introduction from the principal, Spencer Alexander, and its full transcript.
 - [Commercial Law](https://www.spenceralexander.com.au/commercial-law.html): Business structures, contracts, sales and acquisitions, leasing, commercial disputes and debt recovery in Victoria.
 - [Family Law](https://www.spenceralexander.com.au/family-law.html): Divorce and separation, parenting arrangements, property settlement, binding financial agreements, intervention orders.
 - [Wills & Estates](https://www.spenceralexander.com.au/wills-and-estates.html): Wills, powers of attorney, probate and estate administration, contested estates and family provision claims.

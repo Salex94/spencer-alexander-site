@@ -6,8 +6,13 @@ Usage:  python3 scripts/prepare-home-video.py <master.mp4> [end_card_start_secon
 Produces, in assets/video/:
   spencer-alexander-intro-1080.mp4   graded talking head, clean end card, 30 fps
   spencer-alexander-intro-720.mp4    the same at 1280x720 for narrow or slow devices
-  poster-1280.jpg                    graded still from one second in, used as the poster
+  poster-1600.jpg                    graded still from the clean first frame, used as the poster
   end-card.jpg                       the ungraded end card frame, shown when playback ends
+
+Not produced here: end-card-small.jpg, the phone sized card rendered from
+scripts/end-card-small.html with Playwright (see that file), and the caption
+track spencer-alexander-intro.en.vtt, which is written by hand from the
+spoken words with cue times from the audio.
 
 The grade is the home page portrait grade translated to video: 22 percent sepia,
 a multiply gradient from the wine tint at the top to the deep wine at the bottom,
@@ -54,11 +59,11 @@ def main():
     subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-i", src, "-loop", "1", "-framerate", "30", "-i", grad, "-filter_complex", graph,
         "-map", "[full]", "-map", "0:a", *common, "-crf", "22", "-level", "4.1", "-b:a", "128k", os.path.join(out, "spencer-alexander-intro-1080.mp4"),
         "-map", "[v720]", "-map", "0:a", *common, "-crf", "23", "-level", "4.0", "-b:a", "112k", os.path.join(out, "spencer-alexander-intro-720.mp4")])
-    subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-ss", "1.0", "-i", src, "-loop", "1", "-framerate", "30", "-i", grad, "-filter_complex",
-        "[0:v]" + graded + ",scale=1280:-2[out]", "-map", "[out]", "-frames:v", "1", "-q:v", "3", os.path.join(out, "poster-1280.jpg")])
+    subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-ss", "0", "-i", src, "-loop", "1", "-framerate", "30", "-i", grad, "-filter_complex",
+        "[0:v]" + graded + ",scale=1600:-2[out]", "-map", "[out]", "-frames:v", "1", "-q:v", "4", os.path.join(out, "poster-1600.jpg")])
     subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-ss", str(cut + 3.0), "-i", src, "-frames:v", "1", "-q:v", "2", os.path.join(out, "end-card.jpg")])
     shutil.rmtree(tmp, ignore_errors=True)
-    for f in ("spencer-alexander-intro-1080.mp4", "spencer-alexander-intro-720.mp4", "poster-1280.jpg", "end-card.jpg"):
+    for f in ("spencer-alexander-intro-1080.mp4", "spencer-alexander-intro-720.mp4", "poster-1600.jpg", "end-card.jpg"):
         print("%-36s %8.1f KB" % (f, os.path.getsize(os.path.join(out, f)) / 1024))
     print("update the VideoObject duration and uploadDate in index.html if the edit changed, then run scripts/check-publish.py")
     return 0

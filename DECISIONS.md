@@ -189,6 +189,22 @@ applied to bring the picture into the brand rather than reshooting. No
 Review or VideoObject rating markup; the VideoObject block carries the
 transcript for search and AI answer engines.
 
+A five lens review fleet with two refuters per finding then confirmed 22
+points, all applied: the play event now owns the playing state so native
+restarts from fullscreen, picture in picture or media keys cannot leave the
+end card over a running film, and playback leaves those surfaces when it
+ends so the card is seen; native controls stay in the markup for visitors
+without script; the end card is hidden from assistive technology until it
+shows and keyboard focus lands on Watch again; the card downloads during
+playback rather than at the end; the after bar reserves its space so nothing
+shifts; 720p goes to handheld devices in either orientation; a WebVTT
+caption track lets the burned in captions be enlarged; the poster is the
+clean first frame at 1600 wide; phones get a recomposed end card and a
+phone worded after line; focus rings on dark fields use brass; the meta
+separators are hidden from screen readers; the transcript disclosure matches
+the FAQ styling; the hero and film share one dark field; "Fifty-eight" takes
+its hyphen; and llms.txt names the video. Four claims were refuted and left.
+
 ### Merge note
 
 The branch touched every page so that the header, footer and stylesheet
