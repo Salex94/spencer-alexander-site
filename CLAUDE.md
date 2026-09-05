@@ -387,12 +387,13 @@ future edit, every new page and every new article.
   script removes them and uses the play overlay, then the play event alone
   sets the playing state so a restart from fullscreen, picture in picture
   or a media key never leaves the card over a running film.
-  The master carries burned in captions and the owner wants no captions on
-  the site at all, so every output is cropped to a 2 to 1 frame, 1848 by
-  924, that ends above the highest caption line, with the crop window
-  panning down over the dissolve so the whole end card stays in shot; never
-  add a caption track or a meta line under the heading (the "58 seconds,
-  Captioned, Sound on" line was removed on owner instruction).
+  The master carries burned in captions and the owner wants the full 16 by 9
+  picture without them, so `scripts/clean-captions.py` runs between the
+  decode and the encode: it masks the white text and its shadow frame by
+  frame and fills each masked pixel from the picture above and below it.
+  Never add a caption track or a meta line under the heading (the "58
+  seconds, Captioned, Sound on" line and the transcript disclosure were
+  removed on owner instruction).
   `preload="none"`
   means no video bytes load until play; the script picks the 720p file on
   handheld or slow connections. A VideoObject JSON-LD block on index.html

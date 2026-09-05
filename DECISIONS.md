@@ -221,6 +221,18 @@ under the player. The copy column was tightened for conversion: heading
 stars line from the hero, and the accent call button paired with a Send an
 enquiry button, mirroring the hero.
 
+The owner preferred the full 16 by 9 picture to the cropped frame, with more
+of him and his hands in shot, and asked whether the captions could come out
+of the picture itself. They could: scripts/clean-captions.py masks the white
+caption text and its soft drop shadow in every frame before the end card
+and fills each masked pixel by interpolating between the clean pixels above
+and below it in the same column, which keeps the wall gradient and the
+shirt stripes intact where generic inpainting smears them. The film was
+re-encoded from the master through that step at the full frame, the poster
+and both end cards went back to 16 by 9, and the pan into the end card was
+no longer needed. A faint softness remains on the jacket buttons for the
+seconds a caption sat over them, invisible at display size.
+
 ### Merge note
 
 The branch touched every page so that the header, footer and stylesheet

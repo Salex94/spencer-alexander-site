@@ -577,7 +577,7 @@ img.page-photo, .bio__frame img { filter: sepia(0.12) saturate(1.05) contrast(1.
 .film__lead { font-family: var(--font-serif); font-size: var(--text-md); line-height: 1.6; color: var(--wine-200); margin-top: 16px; max-width: 40ch; }
 .film__rating { margin-top: 22px; }
 .film__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
-.film__frame { position: relative; aspect-ratio: 2 / 1; border-radius: var(--radius-xl); overflow: hidden; background: var(--wine-900); box-shadow: 0 30px 70px rgba(0,0,0,0.42); border: 1px solid rgba(255,255,255,0.12); }
+.film__frame { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-xl); overflow: hidden; background: var(--wine-900); box-shadow: 0 30px 70px rgba(0,0,0,0.42); border: 1px solid rgba(255,255,255,0.12); }
 .film__video { display: block; width: 100%; height: 100%; object-fit: cover; background: #1a070c; }
 .film__play { position: absolute; inset: 0; z-index: 2; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; width: 100%; margin: 0; padding: 0; border: 0; cursor: pointer; color: var(--paper-50); background: linear-gradient(to top, rgba(26,7,12,0.62) 0%, rgba(26,7,12,0) 48%); font: inherit; }
 .js .film__play { display: flex; }

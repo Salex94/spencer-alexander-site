@@ -4,16 +4,16 @@
 Usage:  python3 scripts/prepare-home-video.py <master.mp4> [end_card_start_seconds]
 
 Produces, in assets/video/:
-  spencer-alexander-intro-1080.mp4   graded talking head, clean end card, 30 fps, 1848x924
-  spencer-alexander-intro-720.mp4    the same at 1280x640 for handheld or slow devices
+  spencer-alexander-intro-1080.mp4   graded talking head, captions removed, clean end card, 30 fps
+  spencer-alexander-intro-720.mp4    the same at 1280x720 for handheld or slow devices
   poster-1600.jpg                    graded still from the clean first frame, used as the poster
   end-card.jpg                       the ungraded end card frame, shown when playback ends
 
 The master carries burned in captions along the bottom of the frame and the
-owner does not want captions on the site, so every output is cropped to
-1848x924, a 2 to 1 frame that ends above the highest caption line, and the
-crop window pans down over the dissolve into the end card so the whole card
-stays in shot. Not produced here: end-card-small.jpg, the phone sized
+owner wants the full 16 by 9 picture without them, so the decoded frames are
+piped through scripts/clean-captions.py, which masks the text and its shadow
+and fills each masked pixel from the picture above and below it, before the
+grade is applied. Not produced here: end-card-small.jpg, the phone sized
 recomposition of the end card, made with the ffmpeg overlay recipe recorded
 in DECISIONS.md for 5 September 2026.
 
@@ -39,7 +39,7 @@ def ffmpeg():
     import imageio_ffmpeg
     return imageio_ffmpeg.get_ffmpeg_exe()
 
-def gradient(path, w=1848, h=924):
+def gradient(path, w=1920, h=1080):
     rows = []
     for y in range(h):
         f = y / (h - 1)
@@ -56,16 +56,24 @@ def main():
     os.makedirs(out, exist_ok=True)
     tmp = tempfile.mkdtemp(); grad = os.path.join(tmp, "grad.ppm"); gradient(grad)
     graded = "format=rgb24,%s,format=gbrp[base];[1:v]format=gbrp[g];[base][g]blend=all_mode=multiply:shortest=1,format=yuv420p,eq=saturation=1.05:contrast=1.04" % MIXER
-    crop = "crop=1848:924:36:'if(lt(t\\,%s)\\,0\\,min(140\\,(t-%s)*140/0.6))'" % (cut, cut)
-    graph = ("[0:v]%s,split=2[va][vb];[va]trim=0:%s,setpts=PTS-STARTPTS,%s[graded];[vb]trim=start=%s,setpts=PTS-STARTPTS,format=yuv420p[card];"
-             "[graded][card]concat=n=2:v=1:a=0,fps=30,split=2[full][half];[half]scale=1280:-2[v720]") % (crop, cut, graded, cut)
+    graph = ("[0:v]split=2[va][vb];[va]trim=0:%s,setpts=PTS-STARTPTS,%s[graded];[vb]trim=start=%s,setpts=PTS-STARTPTS,format=yuv420p[card];"
+             "[graded][card]concat=n=2:v=1:a=0,fps=30,split=2[full][half];[half]scale=1280:-2[v720]") % (cut, graded, cut)
     common = ["-c:v", "libx264", "-preset", "slow", "-profile:v", "high", "-pix_fmt", "yuv420p", "-r", "30", "-movflags", "+faststart", "-c:a", "aac", "-ar", "48000"]
-    subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-i", src, "-loop", "1", "-framerate", "30", "-i", grad, "-filter_complex", graph,
-        "-map", "[full]", "-map", "0:a", *common, "-crf", "22", "-level", "4.1", "-b:a", "128k", os.path.join(out, "spencer-alexander-intro-1080.mp4"),
-        "-map", "[v720]", "-map", "0:a", *common, "-crf", "23", "-level", "4.0", "-b:a", "112k", os.path.join(out, "spencer-alexander-intro-720.mp4")])
+    cleaner = os.path.join(os.path.dirname(os.path.abspath(__file__)), "clean-captions.py")
+    cut_frame = str(int(round(cut * 30)) + 1)
+    decode = subprocess.Popen([ff, "-hide_banner", "-loglevel", "error", "-i", src, "-f", "rawvideo", "-pix_fmt", "bgr24", "-"], stdout=subprocess.PIPE)
+    clean = subprocess.Popen([sys.executable, cleaner, cut_frame], stdin=decode.stdout, stdout=subprocess.PIPE)
+    decode.stdout.close()
+    encode = subprocess.Popen([ff, "-hide_banner", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "bgr24", "-s", "1920x1080", "-r", "30", "-i", "-",
+        "-loop", "1", "-framerate", "30", "-i", grad, "-i", src, "-filter_complex", graph,
+        "-map", "[full]", "-map", "2:a", *common, "-crf", "22", "-level", "4.1", "-b:a", "128k", os.path.join(out, "spencer-alexander-intro-1080.mp4"),
+        "-map", "[v720]", "-map", "2:a", *common, "-crf", "23", "-level", "4.0", "-b:a", "112k", os.path.join(out, "spencer-alexander-intro-720.mp4")], stdin=clean.stdout)
+    clean.stdout.close()
+    if encode.wait() or clean.wait() or decode.wait():
+        raise SystemExit("encode pipeline failed")
     subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-ss", "0", "-i", src, "-loop", "1", "-framerate", "30", "-i", grad, "-filter_complex",
-        "[0:v]crop=1848:924:36:0," + graded + ",scale=1600:-2[out]", "-map", "[out]", "-frames:v", "1", "-q:v", "4", os.path.join(out, "poster-1600.jpg")])
-    subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-ss", str(cut + 3.0), "-i", src, "-frames:v", "1", "-vf", "crop=1848:924:36:140", "-q:v", "2", os.path.join(out, "end-card.jpg")])
+        "[0:v]" + graded + ",scale=1600:-2[out]", "-map", "[out]", "-frames:v", "1", "-q:v", "4", os.path.join(out, "poster-1600.jpg")])
+    subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-ss", str(cut + 3.0), "-i", src, "-frames:v", "1", "-q:v", "2", os.path.join(out, "end-card.jpg")])
     shutil.rmtree(tmp, ignore_errors=True)
     for f in ("spencer-alexander-intro-1080.mp4", "spencer-alexander-intro-720.mp4", "poster-1600.jpg", "end-card.jpg"):
         print("%-36s %8.1f KB" % (f, os.path.getsize(os.path.join(out, f)) / 1024))
