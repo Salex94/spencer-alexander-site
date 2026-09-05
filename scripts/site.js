@@ -1,6 +1,7 @@
 /* Spencer Alexander Lawyers, small site behaviours (v3) */
 (function () {
   "use strict";
+  document.documentElement.classList.add("js");
   // Mobile menu toggle
   var toggle = document.querySelector("[data-nav-toggle]");
   var menu = document.getElementById("mobile-menu");
@@ -149,4 +150,46 @@
       );
     }
   }, true);
+  // Home page film: click to play, source chosen for the device, end card stays up when it ends
+  var film = document.querySelector("[data-film]");
+  if (film) {
+    var video = film.querySelector("video");
+    var playBtn = film.querySelector("[data-film-play]");
+    var card = film.querySelector("[data-film-card]");
+    var after = film.querySelector("[data-film-after]");
+    var replay = film.querySelector("[data-film-replay]");
+    var chosen = false;
+    var pickSource = function () {
+      if (chosen) return;
+      chosen = true;
+      var small = video.getAttribute("data-src-720");
+      var large = video.getAttribute("data-src-1080");
+      var conn = navigator.connection || {};
+      var slow = !!conn.saveData || /(^|-)(2g|3g)$/.test(conn.effectiveType || "");
+      var narrow = window.matchMedia("(max-width: 760px)").matches;
+      var pick = small && (slow || narrow) ? small : large;
+      if (pick) video.src = pick;
+    };
+    var start = function () {
+      pickSource();
+      film.classList.add("is-playing");
+      film.classList.remove("is-ended");
+      video.setAttribute("controls", "");
+      if (after) after.hidden = true;
+      var p = video.play();
+      if (p && p.catch) p.catch(function () {});
+    };
+    if (playBtn) playBtn.addEventListener("click", start);
+    video.addEventListener("play", function () { film.classList.add("is-playing"); });
+    video.addEventListener("ended", function () {
+      film.classList.add("is-ended");
+      video.removeAttribute("controls");
+      if (card && !card.getAttribute("src")) card.src = card.getAttribute("data-src");
+      if (after) after.hidden = false;
+    });
+    if (replay) replay.addEventListener("click", function () {
+      video.currentTime = 0;
+      start();
+    });
+  }
 })();

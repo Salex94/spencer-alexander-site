@@ -373,6 +373,24 @@ future edit, every new page and every new article.
   practised for more than ten years".
 - **Entity name.** The firm is "Spencer Alexander Lawyers" everywhere,
   including privacy.html; never "Pty Ltd".
+- **Home page film (owner instruction, 5 Sep 2026).** The owner's 58 second
+  introduction sits directly under the home hero as the `.film` section:
+  click to play, never autoplay, self hosted in `assets/video/` because the
+  owner does not want YouTube. `spencer-alexander-intro-1080.mp4` and the 720p
+  version are graded to match the hero portrait up to the end card cut, and
+  the end card keeps its true colours. `poster-1280.jpg` is the graded still
+  and `end-card.jpg` the contact card with the QR code, which the script
+  fades over the player when playback ends so the code stays on screen; a
+  "Watch again" and call bar appears beneath. `preload="none"` means no video
+  bytes load until play; the script picks the 720p file on narrow or slow
+  connections. A VideoObject JSON-LD block on index.html carries the
+  transcript, which is also visible under the player. To replace the video,
+  run `python3 scripts/prepare-home-video.py <master.mp4> [cut seconds]`,
+  then update the duration and uploadDate in the schema and the "58 seconds"
+  copy. The spoken line "if you need that expert advice" was flagged to the
+  owner as close to a specialist claim and the owner chose to keep it; do not
+  reopen it without a new instruction. Never add a second video, an autoplay
+  loop, or a review count to this section.
 - **Confirmed firm facts (owner, 5 Sep 2026).** The principal participates
   in the Professional Standards scheme, so the footer statement stays; the
   first call is free; enquiries are answered within one business day and

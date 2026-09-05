@@ -168,6 +168,27 @@ now writes the rating only, and check-publish.py gained "review count never
 stated on the site". Published straight to main as a correction to the live
 site.
 
+### Home page film, same evening
+
+The owner recorded and edited a 58 second introduction and asked for it to sit
+directly under the home hero, self hosted rather than on YouTube, click to
+play, ending on its QR code contact card, graded to match the portrait and
+integrated to the same standard as the rest of the page. The master
+(50 MB, 1080p, 30 fps, 6.9 Mb/s) came from the owner's Google Drive after
+the owner set it to anyone with the link. It was re-encoded with the
+portrait grade baked in up to the end card cut at 51.55 seconds, at 1080p
+(13 MB) and 720p (5.5 MB), both with faststart so GitHub Pages can serve
+range requests. The end card is overlaid as a crisp still when playback
+ends so the QR code stays scannable, with a Watch again and call bar
+beneath. The page loads no video bytes until the visitor presses play.
+Review notes given to the owner before this: the line "if you need that
+expert advice" sits close to a specialist claim, the flat lighting and
+green shirt do not match the portrait, and the piece runs long. The owner
+weighed those and chose to publish the edit as it is, so the grade was
+applied to bring the picture into the brand rather than reshooting. No
+Review or VideoObject rating markup; the VideoObject block carries the
+transcript for search and AI answer engines.
+
 ### Merge note
 
 The branch touched every page so that the header, footer and stylesheet
