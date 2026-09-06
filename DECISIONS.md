@@ -233,6 +233,15 @@ and both end cards went back to 16 by 9, and the pan into the end card was
 no longer needed. A faint softness remains on the jacket buttons for the
 seconds a caption sat over them, invisible at display size.
 
+That did not hold up on the live site: where the mask missed a frame, for
+example during a caption's fade, the text flashed white for a moment, and
+the owner found it worse than the captions. On 6 September 2026 the owner
+decided the captions in the edit stay as they are and only the caption track
+that had been layered over them goes, which it already had. The graded full
+frame encode with the original captions was restored, scripts/clean-captions.py
+was removed, and the prepare script no longer crops or cleans. Standing rule:
+leave the master's captions alone.
+
 ### Merge note
 
 The branch touched every page so that the header, footer and stylesheet
