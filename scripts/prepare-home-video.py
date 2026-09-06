@@ -6,8 +6,16 @@ Usage:  python3 scripts/prepare-home-video.py <master.mp4> [end_card_start_secon
 Produces, in assets/video/:
   spencer-alexander-intro-1080.mp4   graded talking head, clean end card, 30 fps
   spencer-alexander-intro-720.mp4    the same at 1280x720 for handheld or slow devices
-  poster-1600.jpg                    graded still from the clean first frame, used as the poster
+  poster-1600.jpg                    graded still used as the poster, see the note below
   end-card.jpg                       the ungraded end card frame, shown when playback ends
+
+The poster is not the first frame, which shows the presenter standing still
+before he speaks: it is a graded still from an engaged moment of the film
+(30.6 seconds on the 5 September 2026 master) with that one frame's caption
+filled out by column interpolation, which is acceptable for a single
+hand checked still though it was rejected for the moving picture. This
+script still writes the plain first frame poster as a fallback; replace it
+by hand from a chosen frame when the master changes.
 
 The master's own burned in captions stay exactly as the owner edited them:
 do not crop them away or try to fill them out of the picture, both were
@@ -55,12 +63,16 @@ def main():
     os.makedirs(out, exist_ok=True)
     tmp = tempfile.mkdtemp(); grad = os.path.join(tmp, "grad.ppm"); gradient(grad)
     graded = "format=rgb24,%s,format=gbrp[base];[1:v]format=gbrp[g];[base][g]blend=all_mode=multiply:shortest=1,format=yuv420p,eq=saturation=1.05:contrast=1.04" % MIXER
-    graph = ("[0:v]split=2[va][vb];[va]trim=0:%s,setpts=PTS-STARTPTS,%s[graded];[vb]trim=start=%s,setpts=PTS-STARTPTS,format=yuv420p[card];"
-             "[graded][card]concat=n=2:v=1:a=0,fps=30,split=2[full][half];[half]scale=1280:-2[v720]") % (cut, graded, cut)
+    # the first quarter second of the master is the presenter standing still, so it is trimmed and
+    # the picture fades in from the site's wine over 0.6 seconds; the cut time is measured after the trim
+    trim = 0.25
+    cut = cut - trim
+    graph = ("[0:v]split=2[va][vb];[va]trim=0:%s,setpts=PTS-STARTPTS,%s,fade=t=in:st=0:d=0.6:color=0x1A070C[graded];[vb]trim=start=%s,setpts=PTS-STARTPTS,format=yuv420p[card];"
+             "[graded][card]concat=n=2:v=1:a=0,fps=30,split=2[full][half];[half]scale=1280:-2[v720];[0:a]afade=t=in:st=0:d=0.2,asplit=2[aud1][aud2]") % (cut, graded, cut)
     common = ["-c:v", "libx264", "-preset", "slow", "-profile:v", "high", "-pix_fmt", "yuv420p", "-r", "30", "-movflags", "+faststart", "-c:a", "aac", "-ar", "48000"]
-    subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-i", src, "-loop", "1", "-framerate", "30", "-i", grad, "-filter_complex", graph,
-        "-map", "[full]", "-map", "0:a", *common, "-crf", "22", "-level", "4.1", "-b:a", "128k", os.path.join(out, "spencer-alexander-intro-1080.mp4"),
-        "-map", "[v720]", "-map", "0:a", *common, "-crf", "23", "-level", "4.0", "-b:a", "112k", os.path.join(out, "spencer-alexander-intro-720.mp4")])
+    subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-ss", str(trim), "-i", src, "-loop", "1", "-framerate", "30", "-i", grad, "-filter_complex", graph,
+        "-map", "[full]", "-map", "[aud1]", *common, "-crf", "22", "-level", "4.1", "-b:a", "128k", os.path.join(out, "spencer-alexander-intro-1080.mp4"),
+        "-map", "[v720]", "-map", "[aud2]", *common, "-crf", "23", "-level", "4.0", "-b:a", "112k", os.path.join(out, "spencer-alexander-intro-720.mp4")])
     subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-ss", "0", "-i", src, "-loop", "1", "-framerate", "30", "-i", grad, "-filter_complex",
         "[0:v]" + graded + ",scale=1600:-2[out]", "-map", "[out]", "-frames:v", "1", "-q:v", "4", os.path.join(out, "poster-1600.jpg")])
     subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-ss", str(cut + 3.0), "-i", src, "-frames:v", "1", "-q:v", "2", os.path.join(out, "end-card.jpg")])

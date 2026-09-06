@@ -276,6 +276,15 @@ The owner then had the brass line above each of the four proof bar items
 removed: it read as a stray rule hanging off the hero rather than a
 deliberate accent. The items now sit on the paper with no rule.
 
+The owner also found the film's opening awkward: the poster was the first
+frame, where he stands still before speaking, and playback opened on the
+same frame. The poster is now a graded still from 30.6 seconds, where he is
+mid sentence and gesturing, with that one frame's caption filled out by the
+column method (fine for a hand checked still). The film is trimmed by a
+quarter second and fades in from the wine colour over 0.6 seconds with a
+short audio fade, so pressing play opens on him speaking. The prepare
+script carries the trim and fade.
+
 ### Merge note
 
 The branch touched every page so that the header, footer and stylesheet

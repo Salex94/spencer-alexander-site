@@ -385,8 +385,11 @@ future edit, every new page and every new article.
   click to play, never autoplay, self hosted in `assets/video/` because the
   owner does not want YouTube. `spencer-alexander-intro-1080.mp4` and the 720p
   version are graded to match the hero portrait up to the end card cut, and
-  the end card keeps its true colours. `poster-1600.jpg` is the graded
-  clean first frame, `end-card.jpg` the contact card with the QR code and
+  the end card keeps its true colours. `poster-1600.jpg` is a graded still
+  from an engaged moment of the film, never the first frame (the owner found
+  the standing start awkward, 6 Sep 2026); the film itself is trimmed by a
+  quarter second and fades in from the wine colour so play opens on him
+  speaking. `end-card.jpg` the contact card with the QR code and
   `end-card-small.jpg` a phone sized recomposition of it; the script fades
   the right one over the player when playback ends so the code stays on
   screen, and a "Watch again" and call bar appears beneath. The video
