@@ -25,15 +25,26 @@ address visible on the site. Do not add repetitive locality keywords or create
 suburb pages without useful, distinct content. The article template follows
 the visible-copy rule; metadata is not subject to a blanket Box Hill ban.
 
-The homepage uses an arched portrait frame, three numbered practice links,
-editorial practice rows, a firm-wide approach statement and an asymmetric
-closing invitation. Preserve its text-first mobile order and reduced-motion
-support. The personal introduction video remains an authentic firm introduction.
+The current homepage uses an ivory editorial masthead, large serif typography,
+a licensed photograph of Melbourne architecture, and a separate rectangular
+principal portrait in the firm introduction. The photograph is city imagery,
+not a representation of the firm's office. Keep its source/licence in
+DESIGN-REVIEW.md. The rejected arched portrait and offset outline are retired.
+Do not restore them. Use one image frame and an aligned caption, with no
+independently sized decorative border. Homepage styling lives in styles/home.css;
+shared header, footer and interior-page styling remains in styles/site.css.
+
+Keep clear links to all three practice areas, the first-call promise, genuine
+client quotations, the original film, and the paired mobile contact actions.
+The homepage's native details elements let readers expand existing deadline
+information. Content must remain accessible without animation or JavaScript.
+The owner has expressly requested desktop and mobile browser testing for this
+redesign. Use the existing preview and preserve its private audience.
 
 ## September 2026 design and enquiry conventions
 
 The design enhancement is staged for owner review. Preserve the
-text-first mobile hero, wine and warm-paper palette, unobscured principal
+text-first mobile hero, ivory/charcoal/wine palette, unobscured principal
 portrait, article summaries and contents links, and paired mobile contact
 actions. Desktop navigation starts at 1200px; the menu must work below that
 width. Keep important content visible immediately without scroll-reveal delays.

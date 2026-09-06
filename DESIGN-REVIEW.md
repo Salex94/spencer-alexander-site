@@ -6,27 +6,20 @@ merge to main. The Sites project is an owner-private design preview.
 
 ## What changed
 
-- A firm-centred opening, an arched portrait frame, three immediate practice
-  links, warm typography and clear call and enquiry actions.
-- Editorial practice-area rows, larger client quotations, a firm-wide approach
-  statement and an asymmetric closing invitation. Shared reading pages retain
-  clear typography and restrained styling.
-- Melbourne positioning across all public pages and search/AI metadata. Accurate Box
-  Hill office information remains in structured data, the contact search
-  description and AI-readable location information, as clarified by the owner.
-- Firm-centred we/our copy across the home, About, service and contact pages,
-  article enquiry rails, FAQ, shared footer and future article template. Genuine
-  personal biography, author identity, video transcript and client quotes remain.
-- A contact form alongside the introduction on desktop, persistent call and
-  enquiry actions on phones, and a reply preference with optional phone entry
-  for visitors who prefer email. Service links preselect the relevant matter.
-- Original article introductions presented as summaries, accessible static
-  section navigation, and relevant official references across all 28 guides.
-- First-party article images in social and Article metadata. Existing canonical
-  URLs, legal copy, author identity, published dates and entity identifiers are
-  preserved. Modification dates reflect this edit.
-- Immediate content display, keyboard Escape support for the mobile menu,
-  consistent focus states, reduced-motion support and updated article templates.
+- An ivory editorial homepage with oversized serif typography, restrained wine
+  accents and a licensed photograph of Melbourne architecture. The former
+  arched portrait and offset border are removed.
+- A dedicated firm introduction pairs the principal's real portrait with
+  firm-centred copy. Image and caption share the same width and left edge.
+- Three clear practice routes, preserved client quotations and video, native
+  expandable deadline guidance and a prominent closing enquiry invitation.
+- Shared navigation, footer and inner-page mastheads follow the new identity.
+- Visible copy uses Melbourne positioning. Accurate Box Hill office details
+  remain in full addresses and useful search/AI information.
+- The branch retains the improved contact form, mobile call/enquiry actions,
+  contextual enquiry links, article summaries, contents links and source lists.
+- Canonical URLs, legal author identity and original article publication dates
+  remain intact. Metadata and templates follow the current owner instructions.
 
 The existing first-call promise, client quotations, rating without a review
 count, fee wording, video and verified firm details remain in place. The added
@@ -55,11 +48,14 @@ dummy enquiries. For the owner-private hosted design review, run
 Only the generated `dist` copy has indexing disabled and enquiry submission
 disconnected. Do not copy these preview-only settings into production HTML.
 
-No browser automation or form delivery test was performed during this design
-pass. Review the homepage, a practice page, an article and the contact page on
-desktop and a phone before merging. Actual conversion improvement needs traffic
-and enquiry data; search rankings and AI citations cannot be established from
-source changes alone.
+The owner authorised desktop and mobile browser testing for this revision.
+The current review includes desktop, tablet and phone layout checks, portrait
+alignment and overflow measurements, menu/Escape behaviour, enquiry navigation,
+reply-preference validation and native deadline expansion. Real enquiries are
+not submitted as part of design testing.
+
+Actual conversion improvement needs traffic and enquiry data; search rankings
+and AI citations cannot be established from source changes alone.
 
 ## Measurement handoff
 
@@ -73,3 +69,12 @@ measured through the delivery provider or an approved server-side integration.
 Search Console, Business Profile, analytics access, verified legal credentials,
 and any new testimonials remain separate inputs. Do not invent them or add
 tracking identifiers without the owner's account details.
+
+
+## Melbourne architecture photograph
+
+The homepage photograph shows Melbourne city architecture, not the firm's office.
+It is by Arun Clarke: https://unsplash.com/photos/brown-concrete-building-during-daytime-ErfNar7ScsI
+Downloaded from the photographer's official Unsplash image URL on 6 September 2026.
+Reuse: Unsplash License, https://unsplash.com/license . Source dimensions: 2000 x 1334.
+The image is self-hosted at assets/melbourne-architecture.jpg and uses CSS cropping.

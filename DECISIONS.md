@@ -1581,3 +1581,20 @@ is unchanged. Search data must agree with the visible office address; do not
 add repetitive keywords or unsupported locality claims. The design regression
 check now applies the visible-copy restriction to page bodies rather than SEO
 metadata or llms.txt, implementing the owner's revised instruction.
+
+
+## 6 September 2026: replace the rejected portrait-led review direction
+
+The owner reported that the portrait floated outside its outline and rejected
+the overall design quality. The arched portrait and offset outline are retired.
+The replacement uses an ivory editorial masthead, charcoal typography, restrained
+burgundy accents, a licensed Melbourne architecture image and a separate, aligned
+rectangular principal portrait within the firm introduction. Visible Melbourne
+positioning and firm-centred copy remain. The architecture photo is identified
+as Melbourne imagery and does not depict or imply the firm's office.
+
+The homepage practice index uses three clear text-led routes. The original
+introduction video and exact client quotations remain, with calmer section
+spacing and native expandable deadline information. Shared headers, footers
+and interior mastheads adopt the same identity. The owner expressly authorised
+desktop and mobile browser testing, which is part of this review.
