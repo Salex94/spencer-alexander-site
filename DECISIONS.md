@@ -272,6 +272,10 @@ grounds; the ended state's enquiry link underlined; smooth scrolling
 disabled under reduced motion; and the end card alt text now reads out the
 contact details. Five claims were refuted and left.
 
+The owner then had the brass line above each of the four proof bar items
+removed: it read as a stray rule hanging off the hero rather than a
+deliberate accent. The items now sit on the paper with no rule.
+
 ### Merge note
 
 The branch touched every page so that the header, footer and stylesheet

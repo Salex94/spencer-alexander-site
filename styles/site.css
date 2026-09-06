@@ -141,7 +141,7 @@ img { max-width: 100%; display: block; }
 .assurance { background: var(--surface-page); border-bottom: 1px solid var(--border-hairline); }
 .assurance__inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; padding-block: 0; }
 .assurance__inner { gap: 0 28px; padding-block: 0 4px; }
-.assure { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 18px 0 20px; border-top: 2px solid var(--brass-600); }
+.assure { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 18px 0 20px; }
 .assure__ic { display: none; }
 .assure__t strong { display: block; text-wrap: balance; font-family: var(--font-display); font-weight: var(--weight-medium); font-size: var(--text-md); color: var(--text-strong); line-height: 1.2; }
 .assure__t span { display: block; font-size: var(--text-sm); color: var(--text-muted); margin-top: 4px; line-height: 1.4; }
