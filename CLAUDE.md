@@ -373,8 +373,15 @@ future edit, every new page and every new article.
   practised for more than ten years".
 - **Entity name.** The firm is "Spencer Alexander Lawyers" everywhere,
   including privacy.html; never "Pty Ltd".
-- **Home page film (owner instruction, 5 Sep 2026).** The owner's 58 second
-  introduction sits directly under the home hero as the `.film` section:
+- **Home page film (owner instruction, 5 Sep 2026, placement 6 Sep 2026).**
+  The owner's 58 second introduction is the `.film` section, a dark band
+  after the practice areas titled "A minute with Spencer Alexander" and
+  nothing else: no lead, no rating line, no buttons (the hero above already
+  carries them), no meta line, no transcript disclosure. The home page runs
+  dark, light, dark, light: hero, proof bar and practice areas, film,
+  reviews, how we work on the sunken tone, the principal statement band,
+  time limits, insights on the sunken tone, then the call to action. Keep
+  that rhythm when adding sections. The film is
   click to play, never autoplay, self hosted in `assets/video/` because the
   owner does not want YouTube. `spencer-alexander-intro-1080.mp4` and the 720p
   version are graded to match the hero portrait up to the end card cut, and
@@ -398,8 +405,7 @@ future edit, every new page and every new article.
   carries the transcript for search and AI answer engines; nothing textual
   sits under the player (the owner removed the visible transcript
   disclosure and the meta line as clutter that does not convert). The copy
-  column carries the heading, one lead sentence, the Google stars line and
-  the call and enquiry buttons, nothing more. To replace
+  band carries the heading and the player, nothing more. To replace
   the video, run `python3 scripts/prepare-home-video.py <master.mp4> [cut
   seconds]`, then update the duration and
   uploadDate in the schema and the "58 seconds" copy. The spoken line "if you need that expert advice" was flagged to the

@@ -242,6 +242,16 @@ frame encode with the original captions was restored, scripts/clean-captions.py
 was removed, and the prepare script no longer crops or cleans. Standing rule:
 leave the master's captions alone.
 
+Later on 6 September 2026 the owner asked for the film band to carry only
+the title "A minute with Spencer Alexander", with the rating line, the call
+and enquiry buttons and the lead sentence removed because the hero already
+carries them, and for the video to sit in the upper middle of the page so
+the dark and light bands alternate. The film moved to its own dark band
+after the practice areas, centred at 1040 pixels wide with the title above
+it, and the sections were reordered to hero, proof bar, practice areas,
+film, reviews, how we work (sunken tone), principal statement, time limits,
+insights (sunken tone) and the call to action.
+
 ### Merge note
 
 The branch touched every page so that the header, footer and stylesheet
