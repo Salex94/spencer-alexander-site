@@ -252,6 +252,26 @@ it, and the sections were reordered to hero, proof bar, practice areas,
 film, reviews, how we work (sunken tone), principal statement, time limits,
 insights (sunken tone) and the call to action.
 
+A second five lens review fleet with two refuters per finding then confirmed
+25 points on the restructured page, all applied: the phone hero crop and
+caption placement; the film play control moved off the presenter's face to
+the bottom left; the mobile footer in two columns; balanced heading wraps;
+the free first call stated in the hero lead; the proof bar's fourth slot
+now the one business day reply and after hours contact instead of a third
+mention of Box Hill; the duplicate sameAs key removed from the firm node on
+index.html and contact.html with a gate check added; the home page lastmod
+and llms.txt brought to 6 September; the meta, Open Graph and Twitter
+descriptions made identical at 159 characters; practice card labels made
+h3s; a space restored in the h1 for text extractors; the reply promise made
+visible in the call to action; a 4 by 3 phone crop of the portrait served
+through a picture element; the practice photographs swapped to the 800 by
+500 crops, saving about 150 KB on every first visit; the video poster
+deferred until the band approaches; the skip link now moves focus; focus
+rings replaced with outlines that no component can hide, brass on dark
+grounds; the ended state's enquiry link underlined; smooth scrolling
+disabled under reduced motion; and the end card alt text now reads out the
+contact details. Five claims were refuted and left.
+
 ### Merge note
 
 The branch touched every page so that the header, footer and stylesheet

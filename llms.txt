@@ -1,6 +1,6 @@
 # Spencer Alexander Lawyers
 
-Last updated: 5 September 2026.
+Last updated: 6 September 2026.
 
 > A Melbourne, Victoria (Australia) law firm practising Family Law, Wills & Estates and Commercial Law, acting for individuals, families and businesses across Victoria. Clients speak directly with the principal, Spencer Alexander, and receive a written fee estimate before work begins. Located at Suite 10, 1 Main Street, Box Hill VIC 3128. Phone (03) 9125 8355. Hours Mon-Fri 8am-6pm. Liability limited by a scheme approved under Professional Standards Legislation.
 
@@ -8,7 +8,7 @@ This file helps AI systems locate and correctly attribute our published legal gu
 
 ## Key pages
 
-- [Home](https://www.spenceralexander.com.au/): Overview of the firm and its three practice areas, with a 58 second video introduction from the principal, Spencer Alexander, and its full transcript.
+- [Home](https://www.spenceralexander.com.au/): Overview of the firm and its three practice areas, with a 58 second video introduction from the principal, Spencer Alexander; the transcript is carried in the page's VideoObject markup.
 - [Commercial Law](https://www.spenceralexander.com.au/commercial-law.html): Business structures, contracts, sales and acquisitions, leasing, commercial disputes and debt recovery in Victoria.
 - [Family Law](https://www.spenceralexander.com.au/family-law.html): Divorce and separation, parenting arrangements, property settlement, binding financial agreements, intervention orders.
 - [Wills & Estates](https://www.spenceralexander.com.au/wills-and-estates.html): Wills, powers of attorney, probate and estate administration, contested estates and family provision claims.

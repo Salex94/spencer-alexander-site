@@ -109,6 +109,8 @@
     if (top < 0) top = 0;
     try { history.pushState(null, "", "#" + id); } catch (err) { /* no-op */ }
     window.scrollTo({ top: top, behavior: reduceMotion ? "auto" : "smooth" });
+    if (!el.hasAttribute("tabindex")) el.setAttribute("tabindex", "-1");
+    try { el.focus({ preventScroll: true }); } catch (err) { el.focus(); }
   });
 
 
@@ -154,6 +156,18 @@
   var film = document.querySelector("[data-film]");
   if (film) {
     var video = film.querySelector("video");
+    // The poster is fetched only as the band approaches, so it never competes with the first paint
+    var posterSrc = video.getAttribute("data-poster");
+    if (posterSrc) {
+      if ("IntersectionObserver" in window) {
+        var posterIo = new IntersectionObserver(function (entries) {
+          if (entries.some(function (e) { return e.isIntersecting; })) { video.poster = posterSrc; posterIo.disconnect(); }
+        }, { rootMargin: "1200px 0px" });
+        posterIo.observe(film);
+      } else {
+        video.poster = posterSrc;
+      }
+    }
     var playBtn = film.querySelector("[data-film-play]");
     var card = film.querySelector("[data-film-card]");
     var after = film.querySelector("[data-film-after]");

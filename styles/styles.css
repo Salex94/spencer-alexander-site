@@ -276,9 +276,8 @@ a:hover { color: var(--action-accent-hover); text-decoration: underline; }
 ::selection { background: var(--brass-200); color: var(--ink-900); }
 
 :focus-visible {
-  outline: none;
-  box-shadow: var(--ring);
-  border-radius: var(--radius-sm);
+  outline: 3px solid var(--wine-700);
+  outline-offset: 2px;
 }
 
 /* ---- Brand utility classes ---------------------------------------------- */

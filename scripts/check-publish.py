@@ -353,6 +353,23 @@ def main():
     ok = pages > 0 and len(ratings) == 1 and re.fullmatch(r"\d\.\d", next(iter(ratings)))
     check("Google rating markup consistent (site-wide)", ok, "%d pages, ratings %s" % (pages, sorted(ratings)))
     check("review count never stated on the site", not counted, ", ".join(counted[:4]))
+
+    # JSON-LD objects must not repeat a key: parsers keep only the last value silently
+    def _no_dup(pairs):
+        seen = set()
+        for k, _ in pairs:
+            if k in seen:
+                raise ValueError("duplicate JSON-LD key: " + k)
+            seen.add(k)
+        return dict(pairs)
+    dups = []
+    for f in sorted(glob.glob("*.html")):
+        for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', read(f), re.S):
+            try:
+                json.loads(block, object_pairs_hook=_no_dup)
+            except ValueError as e:
+                dups.append("%s: %s" % (f, e))
+    check("JSON-LD has no duplicate keys (site-wide)", not dups, "; ".join(dups[:3]))
     check("index.html reviews section links to Google reviews", "search.google.com/local/reviews?placeid=" in read("index.html") and 'class="review-card"' in read("index.html"))
 
     # Privacy link placement (owner correction 1 Sep 2026: footer Firm column

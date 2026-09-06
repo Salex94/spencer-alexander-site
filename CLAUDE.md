@@ -412,6 +412,21 @@ future edit, every new page and every new article.
   owner as close to a specialist claim and the owner chose to keep it; do not
   reopen it without a new instruction. Never add a second video, an autoplay
   loop, or a review count to this section.
+- **Home page details fixed by the 6 Sep 2026 review fleet, keep them.** The
+  hero portrait uses a `<picture>` with a 4 by 3 phone crop
+  (`assets/principal-portrait-880x660.jpg`) and the caption sits below the
+  image on phones, never over the face. The film's play control sits bottom
+  left on the dark gradient so it never covers the presenter, and the poster
+  is set from `data-poster` by an IntersectionObserver as the band nears, so
+  it does not compete with the first paint. Practice card labels are h3s.
+  The proof bar's fourth slot states the one business day reply and after
+  hours contact rather than repeating the location. Focus rings are a
+  3 pixel wine outline on light grounds and brass on every dark ground
+  (field-dark, field-wine, topbar, footer), never a box shadow that a
+  component can override. Smooth scrolling is wrapped in
+  prefers-reduced-motion: no-preference. Home page photographs on the
+  practice cards use the 800 by 500 crops. The gate checks JSON-LD blocks
+  for duplicate keys.
 - **Confirmed firm facts (owner, 5 Sep 2026).** The principal participates
   in the Professional Standards scheme, so the footer statement stays; the
   first call is free; enquiries are answered within one business day and
