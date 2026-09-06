@@ -11,8 +11,9 @@ merge to main. The Sites project is an owner-private design preview.
 - Editorial practice-area rows, larger client quotations, a firm-wide approach
   statement and an asymmetric closing invitation. Shared reading pages retain
   clear typography and restrained styling.
-- Melbourne positioning across all public pages and search/AI metadata. Box
-  Hill remains only in full physical address contexts and PostalAddress data.
+- Melbourne positioning across all public pages and search/AI metadata. Accurate Box
+  Hill office information remains in structured data, the contact search
+  description and AI-readable location information, as clarified by the owner.
 - Firm-centred we/our copy across the home, About, service and contact pages,
   article enquiry rails, FAQ, shared footer and future article template. Genuine
   personal biography, author identity, video transcript and client quotes remain.
@@ -44,7 +45,7 @@ python3 scripts/check-design.py
 
 The additional checks cover article and sitemap dates, social images, section
 anchors, unique page metadata, labelled enquiry fields, service context and
-preview isolation, firm positioning and full-address-only locality references.
+preview isolation, firm positioning and full-address-only visible locality references.
 They complement the existing publishing gate.
 
 For a local production-behaviour preview, run `python3 scripts/serve.py` and

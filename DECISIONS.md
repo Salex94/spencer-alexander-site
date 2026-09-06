@@ -1565,3 +1565,19 @@ author identity. Client quotations and the actual video transcript are preserved
 
 The existing review branch and owner-private preview are updated. A merge to
 main remains the separate step that publishes on the firm's live domain.
+
+
+## 6 September 2026: location clarification for SEO and GEO
+
+The owner clarified that Box Hill references are permitted where they are useful
+for SEO and GEO. Melbourne lawyers / Melbourne law firm remains the preferred
+visible website positioning. This supersedes the preceding blanket restriction
+on metadata and llms.txt. Full addresses remain accurate and visible where useful.
+
+Retain the actual Box Hill PostalAddress data. The contact search description
+now leads with Melbourne law firm and identifies the real Box Hill office. The
+AI-readable contact entry also identifies that office. Visible marketing copy
+is unchanged. Search data must agree with the visible office address; do not
+add repetitive keywords or unsupported locality claims. The design regression
+check now applies the visible-copy restriction to page bodies rather than SEO
+metadata or llms.txt, implementing the owner's revised instruction.

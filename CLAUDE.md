@@ -13,12 +13,17 @@ Do not restore those promises or comparisons with junior staff. Retain genuine
 biography, author bylines, portrait captions, video transcript and verbatim
 client reviews. Do not invent staff numbers, new people or qualifications.
 
-Use **Melbourne law firm** or **Melbourne based lawyers** for service-location
-positioning. Box Hill may appear only within the complete physical address,
-its map link, or the locality field of a complete PostalAddress. This applies
-to visible copy, metadata, schema, FAQ answers, llms.txt and new articles.
-Keep the registered address accurate; do not replace its locality with Melbourne.
-The article template follows these conventions too.
+Use **Melbourne lawyers**, **Melbourne law firm** or **Melbourne based lawyers**
+for visible service-location positioning. Visible copy should use Box Hill only
+where the full office address is useful. Keep the registered address accurate.
+
+Owner clarification: accurate Box Hill references are permitted in SEO/GEO
+information when useful, including structured office/address data, relevant
+search descriptions and AI-readable location information. Melbourne remains
+the primary positioning. Such information must agree with the actual office
+address visible on the site. Do not add repetitive locality keywords or create
+suburb pages without useful, distinct content. The article template follows
+the visible-copy rule; metadata is not subject to a blanket Box Hill ban.
 
 The homepage uses an arched portrait frame, three numbered practice links,
 editorial practice rows, a firm-wide approach statement and an asymmetric
