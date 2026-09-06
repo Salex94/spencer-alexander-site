@@ -1,0 +1,12 @@
+# Files that stay in the repository for the routines but are never published to the website.
+exclude:
+- CLAUDE.md
+- AGENTS.md
+- DECISIONS.md
+- scripts/__pycache__
+- scripts/check-article-images.py
+- scripts/check-publish.py
+- scripts/content-backlog.md
+- scripts/preapproved-claude-settings.json
+- scripts/prepare-home-video.py
+- scripts/refresh-google-rating.py
