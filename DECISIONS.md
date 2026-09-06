@@ -13,6 +13,39 @@ Newest entries first.
 
 ---
 
+## 2026-09-06: Visual design, enquiry flow and article discoverability
+
+The owner supplied `Salex94/spencer-alexander-site` after requesting substantial
+visual improvements, a strong client-conversion focus, and site-side SEO and
+GEO improvements. Changes are staged on
+`codex/design-conversion-enhancement` for review, with an owner-private Sites
+preview. The live domain remains on GitHub Pages. No merge to main is part of
+this design-review step.
+
+The design uses a compact wine-coloured hero, warm paper surfaces, refined
+typography, an unobscured principal portrait and clear phone and enquiry actions.
+Mobile visitors see the message before the portrait and have two persistent
+contact options. Desktop contact details and form sit beside each other.
+Service links preserve matter context and visitors can request an email or
+phone reply. Native form delivery and existing privacy wording are retained.
+
+All 28 articles gain a summary using their existing introduction, static
+contents links and relevant official references. Article sharing images now
+use the same first-party asset as the visible page. This is a design and
+discoverability edit, not a fresh certification of every legal statement.
+Published dates and canonical URLs remain intact; modification dates and
+sitemap dates record the edit. The article template and CLAUDE.md carry the new
+conventions, backed by `scripts/check-design.py`.
+
+The private preview is built separately with noindex and no live form delivery.
+No analytics provider is added. Optional local conversion events include no
+form values and distinguish attempted submission from confirmed delivery.
+The first-call wording, no-review-count rule, exact quotations, known credentials
+and approved video treatment continue to apply. See `DESIGN-REVIEW.md` for the
+review process and remaining measurement inputs.
+
+---
+
 ## 2026-09-05: Full site review and redesign, owner request in live chat
 
 The owner asked for a complete review of the site: legal accuracy, compliance

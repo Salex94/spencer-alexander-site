@@ -9,14 +9,70 @@
     toggle.addEventListener("click", function () {
       var open = menu.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
     });
     menu.addEventListener("click", function (e) {
       if (e.target.closest("a")) {
         menu.classList.remove("is-open");
         toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Open navigation menu");
       }
     });
   }
+  if (toggle && menu) {
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && menu.classList.contains("is-open")) {
+        menu.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Open navigation menu");
+        toggle.focus();
+      }
+    });
+  }
+
+  // Preserve the visitor's service context without storing enquiry details.
+  var enquiry = document.querySelector("[data-enquiry-form]");
+  if (enquiry) {
+    var matter = enquiry.querySelector("[name=matter]");
+    var matterValues = {
+      "family-law": "Family Law",
+      "wills-and-estates": "Wills & Estates",
+      "commercial-law": "Commercial Law"
+    };
+    var requestedMatter = new URLSearchParams(window.location.search).get("matter");
+    if (matter && Object.prototype.hasOwnProperty.call(matterValues, requestedMatter)) {
+      matter.value = matterValues[requestedMatter];
+    }
+    var preference = enquiry.querySelector("[name=contact_preference]");
+    var phone = enquiry.querySelector("[name=phone]");
+    var optionalPhone = enquiry.querySelector('label[for="phone"] .field-optional');
+    if (preference && phone) {
+      var syncPreference = function () {
+        phone.required = preference.value === "Phone";
+        if (optionalPhone) optionalPhone.textContent = phone.required ? "Required for a phone reply" : "Optional";
+      };
+      preference.addEventListener("change", syncPreference);
+      syncPreference();
+    }
+  }
+
+  // Optional first-party event hooks for a future analytics integration.
+  // No network request, cookie, storage, form values or query strings are used.
+  // A submission attempt is not evidence that the provider delivered an enquiry.
+  var signal = function (action) {
+    window.dispatchEvent(new CustomEvent("sa:conversion", {
+      detail: { action: action, page: window.location.pathname }
+    }));
+  };
+  document.addEventListener("click", function (e) {
+    var link = e.target.closest ? e.target.closest("a[href]") : null;
+    if (!link) return;
+    var href = link.getAttribute("href");
+    if (href.indexOf("tel:") === 0) signal("call_click");
+    else if (/^\/contact(?:[?#]|$)/.test(href)) signal("enquiry_click");
+  });
+  if (enquiry) enquiry.addEventListener("submit", function () { signal("enquiry_submit_attempt"); });
+
   // Current year in footer
   var y = document.querySelector("[data-year]");
   if (y) { y.textContent = new Date().getFullYear(); }
@@ -39,61 +95,7 @@
     } catch (err) { /* no-op */ }
   }
 
-  // Scroll reveal, a progressive enhancement; content is never hidden without JS + IO
-  if ("IntersectionObserver" in window && !reduceMotion) {
-    var revealSel = [
-      ".section-head", ".area-card", ".detail-card", ".svc", ".process .step",
-      ".faq-item", ".value", ".cred", ".post-card", ".fee-note", ".related__link", ".practice-card", ".urgent", ".process-row .step", ".brief", ".statement", ".author-card",
-      ".reach", ".intro-grid .prose", ".intro-grid .page-photo", ".process-grid .page-photo",
-      ".bio__media", ".bio__body", ".info-block", ".form-card", ".faq-group__h"
-    ].join(",");
-    var revealEls = Array.prototype.slice.call(document.querySelectorAll(revealSel));
-    if (revealEls.length) {
-      document.documentElement.classList.add("js-reveal");
-      var finish = function (el) {
-        if (el.classList.contains("is-inview")) { return; }
-        el.classList.add("is-inview");
-        // Hand transitions back to the original styles once the entrance is done
-        setTimeout(function () {
-          el.classList.remove("reveal", "is-inview");
-          el.style.transitionDelay = "";
-        }, 980);
-      };
-      var vh = window.innerHeight || document.documentElement.clientHeight;
-      var onScreen = [];
-      revealEls.forEach(function (el) {
-        el.classList.add("reveal");
-        var i = 0, sib = el;
-        while ((sib = sib.previousElementSibling)) { if (sib.classList.contains("reveal")) i++; }
-        el.style.transitionDelay = Math.min(i, 5) * 70 + "ms";
-        var r = el.getBoundingClientRect();
-        if (r.top < vh * 0.96 && r.bottom > 0) { onScreen.push(el); }
-      });
-      // Reveal anything already in view on the next frame, no dependence on IO for first paint
-      requestAnimationFrame(function () { requestAnimationFrame(function () { onScreen.forEach(finish); }); });
-      var ioFired = false;
-      var io = new IntersectionObserver(function (entries) {
-        ioFired = true;
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) return;
-          io.unobserve(entry.target);
-          finish(entry.target);
-        });
-      }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
-      revealEls.forEach(function (el) { io.observe(el); });
-      // Canary: if IO never fires (hidden or throttled contexts), drop the effect entirely
-      setTimeout(function () {
-        if (!ioFired) {
-          io.disconnect();
-          document.documentElement.classList.remove("js-reveal");
-          revealEls.forEach(function (el) {
-            el.classList.remove("reveal", "is-inview");
-            el.style.transitionDelay = "";
-          });
-        }
-      }, 1200);
-    }
-  }
+  // Text and calls to action are available immediately, without scroll-reveal delays.
 
   // Same-page anchor scrolling, explicit so it works even in embedded previews
   // that block native hash-jump scrolling. Never uses scrollIntoView.

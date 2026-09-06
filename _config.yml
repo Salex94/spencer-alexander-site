@@ -10,3 +10,9 @@ exclude:
 - scripts/preapproved-claude-settings.json
 - scripts/prepare-home-video.py
 - scripts/refresh-google-rating.py
+- .openai
+- dist
+- scripts/serve.py
+- scripts/build-preview.py
+- scripts/check-design.py
+- DESIGN-REVIEW.md

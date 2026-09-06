@@ -3,6 +3,38 @@
 This repository **is** the live website (static HTML/CSS/JS, no build step,
 deployed by GitHub Pages from `main`). Anything merged to `main` is published.
 
+## September 2026 design and enquiry conventions
+
+The design enhancement is staged for owner review. Preserve the compact,
+text-first mobile hero, wine and warm-paper palette, unobscured principal
+portrait, article summaries and contents links, and paired mobile contact
+actions. Desktop navigation starts at 1200px; the menu must work below that
+width. Keep important content visible immediately without scroll-reveal delays.
+
+Article introductions remain legally reviewed prose. New articles must include
+a concise `article-answer`, static `article-toc` links to unique heading IDs,
+and `article-sources` with verified relevant official references. Use the same
+first-party photograph in the Article, Open Graph and Twitter metadata. Fill
+the updated template's SUMMARY, TOC_ITEMS, SOURCE_ITEMS and CURRENCY_MONTH_YEAR
+placeholders. Summaries are part of the legal accuracy review.
+
+Service-specific enquiry links use `/contact?matter=family-law#enquiry`,
+`/contact?matter=wills-and-estates#enquiry` or
+`/contact?matter=commercial-law#enquiry`. Shared navigation remains generic.
+Retain native POST delivery, the honeypot, privacy notice and confirmation URL.
+Phone entry is optional for an email reply and required when a phone reply is
+selected with JavaScript. Never collect more detail than the first enquiry needs.
+
+Run `python3 scripts/check-design.py` alongside the existing publishing and
+photograph gates. The optional `sa:conversion` hook sends no data itself; a
+submission attempt must never be counted as confirmed delivery.
+
+`.openai/hosting.json` belongs to the owner-private design preview. GitHub Pages
+continues to publish from the repository root. `scripts/build-preview.py`
+generates an isolated `dist` with indexing disabled and no live form delivery.
+Never copy the preview's robots settings or form action into production files.
+See `DESIGN-REVIEW.md` for the review and measurement handoff.
+
 ## Before publishing anything, run the gate
 
 ```
