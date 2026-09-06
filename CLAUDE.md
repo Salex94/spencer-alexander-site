@@ -3,9 +3,31 @@
 This repository **is** the live website (static HTML/CSS/JS, no build step,
 deployed by GitHub Pages from `main`). Anything merged to `main` is published.
 
+## Firm voice and Melbourne positioning (owner, 6 September 2026)
+
+Position the practice as **our Melbourne law firm**. Use we, our firm, our
+advice and speak with a lawyer. The owner wants the website to read as a law
+firm, with Spencer as its public face. This supersedes older decisions that
+promoted personal access to Spencer or the principal handling every matter.
+Do not restore those promises or comparisons with junior staff. Retain genuine
+biography, author bylines, portrait captions, video transcript and verbatim
+client reviews. Do not invent staff numbers, new people or qualifications.
+
+Use **Melbourne law firm** or **Melbourne based lawyers** for service-location
+positioning. Box Hill may appear only within the complete physical address,
+its map link, or the locality field of a complete PostalAddress. This applies
+to visible copy, metadata, schema, FAQ answers, llms.txt and new articles.
+Keep the registered address accurate; do not replace its locality with Melbourne.
+The article template follows these conventions too.
+
+The homepage uses an arched portrait frame, three numbered practice links,
+editorial practice rows, a firm-wide approach statement and an asymmetric
+closing invitation. Preserve its text-first mobile order and reduced-motion
+support. The personal introduction video remains an authentic firm introduction.
+
 ## September 2026 design and enquiry conventions
 
-The design enhancement is staged for owner review. Preserve the compact,
+The design enhancement is staged for owner review. Preserve the
 text-first mobile hero, wine and warm-paper palette, unobscured principal
 portrait, article summaries and contents links, and paired mobile contact
 actions. Desktop navigation starts at 1200px; the menu must work below that

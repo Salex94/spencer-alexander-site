@@ -6,10 +6,16 @@ merge to main. The Sites project is an owner-private design preview.
 
 ## What changed
 
-- A compact wine-coloured homepage hero, warmer typography, an unfiltered
-  principal portrait, and direct call and enquiry actions.
-- Editorial practice-area layouts, simpler testimonial presentation, stronger
-  section spacing and clearer reading typography across the whole site.
+- A firm-centred opening, an arched portrait frame, three immediate practice
+  links, warm typography and clear call and enquiry actions.
+- Editorial practice-area rows, larger client quotations, a firm-wide approach
+  statement and an asymmetric closing invitation. Shared reading pages retain
+  clear typography and restrained styling.
+- Melbourne positioning across all public pages and search/AI metadata. Box
+  Hill remains only in full physical address contexts and PostalAddress data.
+- Firm-centred we/our copy across the home, About, service and contact pages,
+  article enquiry rails, FAQ, shared footer and future article template. Genuine
+  personal biography, author identity, video transcript and client quotes remain.
 - A contact form alongside the introduction on desktop, persistent call and
   enquiry actions on phones, and a reply preference with optional phone entry
   for visitors who prefer email. Service links preselect the relevant matter.
@@ -38,7 +44,8 @@ python3 scripts/check-design.py
 
 The additional checks cover article and sitemap dates, social images, section
 anchors, unique page metadata, labelled enquiry fields, service context and
-preview isolation. They complement the existing publishing gate.
+preview isolation, firm positioning and full-address-only locality references.
+They complement the existing publishing gate.
 
 For a local production-behaviour preview, run `python3 scripts/serve.py` and
 visit `http://127.0.0.1:4173/`. This serves the production form, so do not send

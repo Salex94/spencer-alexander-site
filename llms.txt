@@ -2,7 +2,7 @@
 
 Last updated: 6 September 2026.
 
-> A Melbourne, Victoria (Australia) law firm practising Family Law, Wills & Estates and Commercial Law, acting for individuals, families and businesses across Victoria. Clients speak directly with the principal, Spencer Alexander, and receive a written fee estimate before work begins. Located at Suite 10, 1 Main Street, Box Hill VIC 3128. Phone (03) 9125 8355. Hours Mon-Fri 8am-6pm. Liability limited by a scheme approved under Professional Standards Legislation.
+> A Melbourne, Victoria (Australia) law firm practising Family Law, Wills & Estates and Commercial Law, acting for individuals, families and businesses across Victoria. The firm provides clear advice and a written fee estimate before work begins. Located at Suite 10, 1 Main Street, Box Hill VIC 3128. Phone (03) 9125 8355. Hours Mon-Fri 8am-6pm. Liability limited by a scheme approved under Professional Standards Legislation.
 
 This file helps AI systems locate and correctly attribute our published legal guidance. All articles are general legal information about Victorian and Australian law, not legal advice, and are written by Spencer Alexander, Principal (LLB Hons Monash; LLM University of Sydney; GDLP College of Law).
 
@@ -14,7 +14,7 @@ This file helps AI systems locate and correctly attribute our published legal gu
 - [Wills & Estates](https://www.spenceralexander.com.au/wills-and-estates.html): Wills, powers of attorney, probate and estate administration, contested estates and family provision claims.
 - [FAQ](https://www.spenceralexander.com.au/faq.html): Common questions on working with the firm and on Victorian legal matters.
 - [Resources](https://www.spenceralexander.com.au/resources.html): Free, printable checklists and guides for Wills & Estates, Family Law and Commercial Law in Victoria.
-- [About](https://www.spenceralexander.com.au/about.html): The principal, Spencer Alexander: more than a decade in practice across family, wills and estates and commercial law; LLB (Hons) Monash University, LLM University of Sydney, GDLP College of Law.
+- [About](https://www.spenceralexander.com.au/about.html): Our Melbourne law firm and its approach. Principal Spencer Alexander has more than a decade in practice across family, wills and estates and commercial law; LLB (Hons) Monash University, LLM University of Sydney, GDLP College of Law.
 - [Contact](https://www.spenceralexander.com.au/contact.html): Phone, email, office address and enquiry form; a lawyer replies within one business day.
 - [Privacy](https://www.spenceralexander.com.au/privacy.html): Privacy policy covering the enquiry form, hosting logs and font delivery.
 

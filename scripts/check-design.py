@@ -4,8 +4,9 @@
 Run alongside check-publish.py. No third-party packages are required.
 """
 from html.parser import HTMLParser
+from html import unescape
 from pathlib import Path
-from urllib.parse import urlsplit, unquote
+from urllib.parse import urlsplit, unquote, unquote_plus
 import json
 import re
 import sys
@@ -93,6 +94,34 @@ for filename, (text, page) in pages.items():
         description = page.matching('meta', name='description')[0]['content']
         titles.append(title)
         descriptions.append(description)
+
+# Owner's site-wide location policy: keep the full address, never suburb-led marketing.
+def check_address_nodes(node, filename):
+    if isinstance(node, dict):
+        if node.get('addressLocality') == 'Box Hill':
+            check(node.get('@type') == 'PostalAddress' and
+                  all(node.get(key) for key in ['streetAddress', 'addressRegion', 'postalCode', 'addressCountry']),
+                  filename + ': locality must belong to a complete PostalAddress')
+        for value in node.values():
+            check_address_nodes(value, filename)
+    elif isinstance(node, list):
+        for value in node:
+            check_address_nodes(value, filename)
+
+for path in list(ROOT.glob('*.html')) + [ROOT / 'llms.txt']:
+    source = path.read_text()
+    for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', source, re.S):
+        check_address_nodes(json.loads(block), path.name)
+    # Normalize HTML breaks and encoded map addresses, keeping attribute text.
+    normalized = unquote_plus(unescape(source))
+    normalized = re.sub(r'<br\s*/?>', ' ', normalized, flags=re.I)
+    normalized = re.sub(r'Suite\s+10\s*,?\s*1\s+Main\s+Street\s*,?\s*Box\s+Hill\s+VIC\s+3128', '', normalized, flags=re.I)
+    normalized = re.sub(r'"addressLocality"\s*:\s*"Box Hill"', '', normalized)
+    check(not re.search(r'box[\s+]+hill', normalized, re.I), path.name + ': Box Hill outside a full address')
+    for phrase in ['Personal advice from Spencer Alexander', 'Direct access to the principal throughout',
+                   'with the principal handling every matter', 'You deal with the principal',
+                   'Clients speak directly with the principal', "published under the principal's name"]:
+        check(phrase not in source, path.name + ': retired personal-practice promise: ' + phrase)
 
 check(len(titles) == len(set(titles)), 'Indexable pages must have unique titles')
 check(len(descriptions) == len(set(descriptions)), 'Indexable pages must have unique descriptions')

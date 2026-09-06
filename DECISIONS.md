@@ -1541,3 +1541,27 @@ commencement dates were omitted rather than risk being wrong.
       commercial-law.html, and `1517048676732` (shareholder agreements) on
       family-law.html. These are article-to-section-page repeats, which the check
       does not flag.
+
+
+## 6 September 2026: owner refinement of design, firm voice and location
+
+The owner approved the direction of the first visual review and requested a
+more distinctive, sleek and elegant design with a stronger client-conversion
+focus. The next review uses a more expressive opening, arched portrait frame,
+three immediate practice links, editorial service rows, a firm-wide approach
+statement and an asymmetric closing invitation.
+
+The owner expressly requested Melbourne law firm / Melbourne based lawyers
+positioning. Box Hill is retained only within full address contexts and the
+locality of complete PostalAddress data. Marketing location text, page
+metadata, FAQ answers, shared navigation and llms.txt now follow this direction.
+
+The owner also requested firm-centred copy rather than direct personal advice
+from Spencer. This supersedes older copy decisions emphasising the principal
+handling every matter or personal access throughout. Use we / our firm and
+speak with a lawyer without inventing headcount, people or credentials. Spencer
+remains the face of the firm through his biography, portrait, video and genuine
+author identity. Client quotations and the actual video transcript are preserved.
+
+The existing review branch and owner-private preview are updated. A merge to
+main remains the separate step that publishes on the firm's live domain.
