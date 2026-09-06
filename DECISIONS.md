@@ -13,6 +13,37 @@ Newest entries first.
 
 ---
 
+## 2026-09-07: Safe harbour and small business restructuring article published
+
+Monday article for 7 Sep 2026 Melbourne (confirmed via `TZ=Australia/Melbourne
+date`). Rotation: Commercial Law was due (Family 31 Aug, W&E 24 Aug,
+Commercial 17 Aug), and the 4 Sep backlog's item 1 recommended exactly this
+topic, so the backlog was followed. Not a rehash: the directors duties
+article gives safe harbour one paragraph and faq.html two short entries; the
+article goes well beyond both and links the directors duties and debt
+recovery articles plus the Commercial Law hub.
+
+Verification: legislation.gov.au remains blocked; s 588G/588GA and Part 5.3B
+claims were checked against AustLII search extracts and multiple independent
+firm sources. Kept general: all visible section and Part numbers apart from
+the Act name, the SBR day counts and approval threshold, the seven year
+repeat use restriction, and what counts toward the $1 million cap (the
+figure itself matches the live faq.html and multiple 2026 sources; it is
+under review but unchanged). Full claims register in the publish commit
+(`4d5a540`).
+
+Photo: spare `1521737852567` (small business team at laptops), visually
+inspected, full Unsplash id `1521737852567-6949f3f9f2b5` verified live for
+og:image. Three spares remain. Word count 1732 (gate count including FAQ
+text), above the brief's 1500 but under the gate's 1900, same reasoning as
+the 10 Aug entry: trimming further would have cut accurate substance.
+
+Published direct to main (fast forward `06ca6fa..4d5a540`) per the routine's
+OWNER PERMISSION FOR MAIN paragraph; this run's branch lock did not strand
+the work. Gates: check-publish 67/67, check-article-images PASS.
+
+---
+
 ## 2026-09-05: Full site review and redesign, owner request in live chat
 
 The owner asked for a complete review of the site: legal accuracy, compliance
