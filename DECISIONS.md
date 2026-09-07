@@ -13,6 +13,43 @@ Newest entries first.
 
 ---
 
+## 2026-09-08: Weekly SEO and GEO audit; ten small fixes, site otherwise clean
+
+Full sweep of all 44 HTML pages the day after the safe harbour article went
+live. Clean across the board: zero broken links, no orphan pages, one h1 per
+page with no heading jumps, every JSON-LD block parses, sitemap complete and
+matching the indexable set, feed.xml well formed and current (29 items),
+llms.txt covers the newest article, robots.txt still permissive to AI
+crawlers, the new article fully wired into all seven surfaces, Google rating
+markup current (refresh script reports the site already matches). Both gates
+pass (check-publish 67/67, check-article-images PASS, 3 spares).
+
+Tier 1 fixes applied: (1) the safe harbour article had zero in body inbound
+links, the usual cold start, so two neutral "Read our guide to" links were
+added from its closest relatives, the safe harbour paragraph of
+insight-directors-duties-victoria.html and the statutory demand section of
+insight-debt-recovery-victoria.html; dateModified deliberately unchanged on
+both (navigation only edits, same reasoning as the 18 and 24 Aug and 1 Sep
+audits). (2) Eight pages carried meta descriptions over the 160 character
+house limit (165 to 180 chars: the three hubs, faq, insights, privacy,
+resources and the separation resource); each was trimmed to 130 to 160
+characters by removing a list item or clause, never adding or strengthening a
+claim. The resource page's og:description and HowTo description were kept
+identical to its meta description as before; the hubs' shorter editorial
+og:description lines were left as designed. Sitemap lastmod deliberately
+unchanged (head metadata only, no visible content changed).
+
+Noted, unchanged: two 71 character titles sit within "about 70"; the
+unreferenced legacy images (jordyn.png, katalin.png, principal-portrait.jpg,
+og-card.png on some pages) remain per earlier notes. Tier 2 flag for the
+owner: the three hub meta descriptions open with plural wording ("Melbourne
+commercial lawyers", "Melbourne family lawyers", "Melbourne wills and estates
+lawyers"); the 5 Sep compliance sweep removed plural claims from visible copy
+for a sole principal firm, and the owner may want the same judgement applied
+to these head descriptions.
+
+---
+
 ## 2026-09-07: Safe harbour and small business restructuring article published
 
 Monday article for 7 Sep 2026 Melbourne (confirmed via `TZ=Australia/Melbourne
