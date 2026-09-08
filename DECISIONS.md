@@ -52,8 +52,17 @@ Everything below was published directly to main by that instruction.
   Spencer, 03 9125 8355, Your first call is free, spenceralexander.com.au".
   The phone number is written without brackets, matching the owner's no
   brackets rule. The film fades in from wine, dissolves half a second into
-  the owner's end card, and runs 57 seconds. The poster is the 30.6 second
-  frame without captions, so the earlier column filled caption is gone.
+  the owner's end card, and runs 57 seconds. The poster is the 29.6 second
+  frame (eyes to camera, hands open), chosen inside one of the master's caption gaps because the
+  matting network carries a faint ghost of any caption crossing the jacket into its foreground
+  estimate, so the earlier column filled caption is gone and nothing is filled.
+- **Caption fades.** The master's captions fade in and out over about nine
+  frames. During a fade the faint text is carried on the presenter (it sits in
+  the foreground estimate) and not on the backdrop (it is below the caption
+  threshold), so a caption seems to arrive over him a third of a second before
+  it arrives over the wall. At 30 frames a second it is not visible at speed and
+  was accepted rather than lowering the threshold, which would have caught the
+  shirt's white stripes in the caption rows.
 - **Audio** was left alone: the master is already at minus 16 LUFS
   integrated with a true peak of minus 1.5 dBFS and a noise floor below minus
   55 dB in the pauses, so noise reduction would have cost more than it gave.
@@ -99,8 +108,14 @@ Everything below was published directly to main by that instruction.
 - **Article leads answer first.** All 28 leads were rewritten by one agent
   per article and verified by an independent skeptic against the body: at
   most 70 words, first sentence answers the H1 question, deadline named,
-  no fact that is not already in the body, no dashes or parentheses. Each
-  changed article carries dateModified 2026-09-08 and its sitemap lastmod.
+  no fact that is not already in the body, no dashes or parentheses. Outcome:
+  18 leads passed verification as written and 10 were tightened by the
+  skeptic, every one for an overstatement the body did not support (a trust
+  became a discretionary trust, "a lie can invalidate a will" became "can be
+  grounds to set aside", "takes everything" became "takes the whole estate").
+  None had to be reverted. Each changed article carries dateModified
+  2026-09-08 and its sitemap lastmod, kept in step by the new
+  `scripts/sync-sitemap-dates.py`.
   New gate check "article lead at most 70 words (site-wide)".
 - **Descriptions.** Eight pages had descriptions of 165 to 180 characters
   (the hubs, faq, insights, privacy, resources, the separation checklist).
@@ -114,6 +129,48 @@ Everything below was published directly to main by that instruction.
 - **Resources page** now shows three cards (the separation checklist, the
   FAQ, the Insights library) instead of one, so it no longer looks
   unfinished. llms.txt and the sitemap updated.
+
+### Final critique round and what it changed
+
+A three critic fleet (film, pages, copy) with adversarial refuters ran on the
+finished work. The usage limit cut the copy critic and every refuter off, so
+the refutation was done by hand against the same screenshots and frames.
+Upheld and fixed: the master's caption fades were being dropped over the
+backdrop and kept over the presenter, so a caption seemed to arrive over him
+before the wall (captions are now carried as alpha relative to the wall
+reference, inside masks taken from each caption's full opacity frames, with a
+soft shadow under the strokes as the master has); the half second cross
+dissolve put his face over the QR code (replaced by a dip to wine and a
+concat, so the picture leaves as the master's own hard cut does; the card
+is taken from after the master's own quarter second dissolve into it, which
+otherwise left a ghost of the beige wall and the old serif lower third); the
+synthetic backdrop banded and landed warm brown after the grade (now
+designed by its post grade look, inverse graded, widened, with fine grain
+over the whole frame and a gentle key from camera left on the presenter);
+the call card wrote the number without brackets while every page uses
+"(03) 9125 8355" (matched); the lower thirds were too small on a phone
+sized player (scaled up about a quarter, still clear of his head); the
+contact form's long labels misaligned its paired fields and the Office
+icon chip collapsed (labels shortened, rows bottom aligned, chip fixed with
+flex none); the reply preference select duplicated the phone field and
+lengthened the phone form (dropped; "Best time for a call back" now sits
+beside the email field); the home lead was a run on (split into two
+sentences) and the headline broke between "first" and "call" (non breaking
+spaces); the About archive was headed only by an eyebrow and claimed dates
+it did not show (display h2 added, copy corrected); the resources page
+promised a library and held one checklist (lead and card meta lines made
+honest, the section sign glyph replaced); the wills hub title had dropped
+Melbourne (now "Wills & Estates Lawyers Box Hill, Melbourne", 71 characters,
+accepted as within "about 70"); the hub meta row orphaned its third item
+(middle item shortened). Refuted or left: hiding the mobile call bar while
+the hero button is in view (the bar is owner approved chrome on every
+page); tracking the backdrop pool to the head and rebuilding it from the
+portrait plate (the widened pool makes his position immaterial, and the
+portrait backdrop is too small to extend without visible repetition);
+moving the About archive below the call to action (a light section after
+the wine band would break the page rhythm); a second checklist (a content
+job for a later run). The station and parking facts in the Office block
+rest on the web search recorded above; the owner should confirm them.
 
 ### Open items for the owner, unchanged in substance
 

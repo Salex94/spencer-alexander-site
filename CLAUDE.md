@@ -462,8 +462,10 @@ conventions came out of that round.
   "Family Lawyers in Box Hill, Melbourne"); the locality sentence on each hub
   names the office, the station and the eastern suburbs; the firm's
   `areaServed` lists Box Hill, Blackburn, Doncaster, Burwood, Balwyn, Surrey
-  Hills, Mont Albert and Ringwood alongside Melbourne and Victoria. Do not
-  build suburb doorway pages. Office facts in use: Suite 10, 1 Main Street is
+  Hills, Mont Albert and Ringwood alongside Melbourne and Victoria. The wills
+  hub title is "Wills & Estates Lawyers Box Hill, Melbourne | Spencer
+  Alexander Lawyers" at 71 characters, accepted as within "about 70" so all
+  three hubs share one pattern. Do not build suburb doorway pages. Office facts in use: Suite 10, 1 Main Street is
   a short walk from Box Hill station, with parking at Box Hill Central.
 - **Article leads answer first.** The `article__lead` is at most 70 words,
   its first sentence answers the H1 question directly, it names any deadline
@@ -473,18 +475,26 @@ conventions came out of that round.
 - **Page descriptions 120 to 160 characters on every indexable page**, not
   only articles. Enforced by check-publish.py ("page descriptions 120-160
   chars (site-wide)"); noindex pages are exempt.
-- **Contact form** carries "Best time to call" and "How would you like us to
-  reply?" selects after the email field; both post to the same formsubmit
-  address. `assets/spencer-alexander-lawyers.vcf` is the firm's contact card,
-  linked from the film's after bar on phones.
+- **Contact form** carries one extra field, "Best time for a call back",
+  beside the email field; it posts to the same formsubmit address. Labels
+  stay to one line at the paired field width, and `.form-row` bottom aligns
+  its fields so a wrapped label cannot misalign the inputs.
+  `assets/spencer-alexander-lawyers.vcf` is the firm's contact card, linked
+  from the film's after bar on phones and from the contact page.
 - **Home page film, rebuilt 8 Sep 2026 without a reshoot.** The presenter is
   matted out of the master with Robust Video Matting and composited on a
   studio backdrop drawn to match the portrait, graded with the portrait
   grade, with the master's captions carried across in white and new lower
   thirds in Spectral and Libre Franklin (name card at the start; call card
   from 44.7 seconds with the phone number, "Your first call is free" and the
-  web address), a fade from wine, and a half second dissolve into the
-  owner's end card. The poster is the 30.6 second frame without captions.
+  web address), a fade from wine, and a dip to wine into the owner's end
+  card (never a cross dissolve: it put his face over the QR code). The
+  captions are carried as alpha against a reference of the bare wall, so the
+  master's own caption fades survive, with a soft shadow under the strokes;
+  the backdrop is designed by its post grade look and inverse graded so it
+  lands on the portrait's warm grey, with fine grain and a gentle key from
+  camera left. The poster is the 29.6 second frame, chosen inside a caption
+  gap so it carries no caption.
   `scripts/prepare-home-video.py` is the whole pipeline (torch CPU, the RVM
   source and weights and the fonts are fetched into `scripts/.cache/`, git
   ignored); it takes about half an hour. The captions rule stands: carried,

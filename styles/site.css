@@ -376,7 +376,7 @@ img { max-width: 100%; display: block; }
 .form-card__t { font-family: var(--font-display); font-weight: var(--weight-medium); font-size: var(--text-xl); color: var(--text-strong); line-height: 1.2; }
 .form-card__d { font-size: var(--text-sm); line-height: 1.6; color: var(--text-muted); margin: 8px 0 22px; }
 .form { display: grid; gap: 18px; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: end; }
 .field { display: flex; flex-direction: column; gap: 7px; }
 .field label { font-size: var(--text-sm); font-weight: var(--weight-semibold); color: var(--text-strong); }
 .field input, .field select, .field textarea { font-family: var(--font-sans); font-size: var(--text-base); color: var(--text-body); background: var(--surface-page); border: 1px solid var(--border-default); border-radius: var(--radius-sm); padding: 12px 14px; width: 100%; transition: border-color var(--dur-base) var(--ease-standard), box-shadow var(--dur-base) var(--ease-standard); }
@@ -602,3 +602,5 @@ img.page-photo, .bio__frame img { filter: sepia(0.12) saturate(1.05) contrast(1.
 .about-archive__lead { margin: 0 0 8px; font-size: var(--text-base); color: var(--text-muted); max-width: 64ch; }
 .about-archive__h { font-family: var(--font-display); font-weight: var(--weight-medium); font-size: var(--text-lg); color: var(--wine-800); margin: 26px 0 10px; }
 .about-archive .related__links + .about-archive__h { margin-top: 30px; }
+.info-block .icon-chip { flex: none; }
+.about-archive__title { margin: 6px 0 12px; }
