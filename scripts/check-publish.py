@@ -338,6 +338,38 @@ def main():
     check("no specialist wording on core pages", not specialist, ", ".join(specialist[:4]))
     check("no dashes on core pages", not dashed, ", ".join(dashed[:4]))
 
+    # Meta descriptions on indexable pages other than articles sit between
+    # 120 and 160 characters (added 8 Sep 2026: eight pages had drifted to
+    # between 165 and 180 and were being truncated in results).
+    off_desc = []
+    for f in sorted(glob.glob("*.html")):
+        if f.startswith("insight-") or f == "_article-template.html":
+            continue
+        body = read(f)
+        if re.search(r'<meta name="robots" content="[^"]*noindex', body):
+            continue
+        d = re.search(r'<meta name="description" content="(.*?)">', body)
+        if not d or not 120 <= len(d.group(1)) <= 160:
+            off_desc.append("%s (%d)" % (f, len(d.group(1)) if d else 0))
+    check("page descriptions 120-160 chars (site-wide)", not off_desc, ", ".join(off_desc[:4]))
+
+    # Every article lead answers the title question first and stays short:
+    # at most 70 words in the article__lead paragraph (added 8 Sep 2026 when
+    # every lead was rewritten to open with the direct answer).
+    long_lead = []
+    for f in sorted(glob.glob("insight-*.html")):
+        m = re.search(r'<p class="article__lead">(.*?)</p>', read(f), re.S)
+        words = len(re.sub(r"<[^>]+>", " ", m.group(1)).split()) if m else 0
+        if not m or words > 70:
+            long_lead.append("%s (%d)" % (f, words))
+    check("article lead at most 70 words (site-wide)", not long_lead, ", ".join(long_lead[:4]))
+
+    # The About page carries an archive of every article (added 8 Sep 2026):
+    # a new article must be added to its practice area list there.
+    about = read("about.html")
+    unlisted = [f for f in sorted(glob.glob("insight-*.html")) if 'href="/%s"' % f[:-5] not in about]
+    check("every article listed in the about.html archive", not unlisted, ", ".join(unlisted[:4]))
+
     # Google rating markup: every page that shows the rating must show the same
     # number, in the shape scripts/refresh-google-rating.py rewrites, and no
     # page may state the number of reviews (owner instruction, 5 Sep 2026).

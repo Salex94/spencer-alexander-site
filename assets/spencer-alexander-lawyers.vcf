@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Alexander;Spencer;;;
+FN:Spencer Alexander
+ORG:Spencer Alexander Lawyers
+TITLE:Principal
+TEL;TYPE=WORK,VOICE:+61391258355
+EMAIL;TYPE=WORK:contact@spenceralexander.com.au
+ADR;TYPE=WORK:;;Suite 10\, 1 Main Street;Box Hill;VIC;3128;Australia
+URL:https://www.spenceralexander.com.au/
+END:VCARD

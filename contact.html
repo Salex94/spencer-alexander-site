@@ -26,7 +26,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap"></noscript>
   <link rel="stylesheet" href="styles/styles.css?v=4">
-  <link rel="stylesheet" href="styles/site.css?v=11">
+  <link rel="stylesheet" href="styles/site.css?v=12">
   <!-- Site-wide firm entity -->
   <script type="application/ld+json">
   {
@@ -225,7 +225,7 @@
             </div>
             <div class="info-block">
               <span class="icon-chip icon-chip--44"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span>
-              <div><div class="info-block__label">Office</div><div class="info-block__val">Suite 10, 1 Main Street, Box Hill VIC 3128</div><div class="info-block__sub">Acting for clients across Melbourne and Victoria, in person, by phone or by video. <a href="https://www.google.com/maps/search/?api=1&amp;query=Suite+10%2C+1+Main+Street%2C+Box+Hill+VIC+3128" rel="noopener" target="_blank">Get directions</a></div></div>
+              <div><div class="info-block__label">Office</div><div class="info-block__val">Suite 10, 1 Main Street, Box Hill VIC 3128</div><div class="info-block__sub">A short walk from Box Hill station, with parking at Box Hill Central. Acting for clients across Melbourne's east and all of Victoria, in person, by phone or by video. <a href="https://www.google.com/maps/search/?api=1&amp;query=Suite+10%2C+1+Main+Street%2C+Box+Hill+VIC+3128" rel="noopener" target="_blank">Get directions</a> or <a href="/assets/spencer-alexander-lawyers.vcf">save our contact card</a></div></div>
             </div>
             <div class="contact-next">
               <div class="contact-next__t">What happens next</div>
@@ -259,6 +259,25 @@
               <div class="field">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="calltime">Best time to call, if you would like a call back</label>
+                  <select id="calltime" name="best_time_to_call">
+                    <option value="Any time" selected>Any time</option>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="After 6pm">After 6pm</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="replyby">How would you like us to reply?</label>
+                  <select id="replyby" name="reply_by">
+                    <option value="Phone or email" selected>Phone or email</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Email">Email</option>
+                  </select>
+                </div>
               </div>
               <div class="field">
                 <label for="matter">What is your matter about? Optional</label>

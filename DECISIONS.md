@@ -13,6 +13,124 @@ Newest entries first.
 
 ---
 
+## 2026-09-08: Honest assessment and the second enhancement round, owner request in live chat
+
+The owner asked whether the site was good as it stood and for an honest view of
+the portrait, the film, the layout, the design and the copy. A five critic
+review fleet with adversarial refuters scored it: portrait 7, film 5, layout
+and design 8, copy 7, conversion 7, search and AI 8. The verdict given to the
+owner: a top decile sole practitioner site, more polished than persuasive, with
+the three weakest elements being the home headline, the film and the About
+page, then the stock photography and Melbourne head term targeting. The owner
+accepted the assessment, said the film cannot be reshot, asked whether it could
+be made noticeably better from here, and approved every other enhancement.
+Everything below was published directly to main by that instruction.
+
+### The film, rebuilt without a reshoot
+
+- **What was wrong.** A phone recording against a bare beige wall in flat
+  light, an open collared casual shirt, burned in system font captions, a
+  serif lower third, no phone number, no free first call, and a plural "we
+  believe" from a sole principal. Between the graded studio portrait and the
+  polished end card it read as a different, cheaper business.
+- **What post production can change and what it cannot.** The wall, the
+  light, the lower thirds and the close can be rebuilt; the shirt, the
+  delivery, the spoken words and the captions cannot. The captions rule from
+  5 and 6 September stands: they are carried across exactly, never cropped,
+  filled or covered.
+- **How it was rebuilt.** Robust Video Matting (mobilenetv3, CPU, about 0.2
+  seconds a frame) separates the presenter from the wall with clean hair and
+  hand edges. The static wall is measured as the median of every pixel he
+  never covers, and a caption pixel is one that stands well above that
+  reference, so the master's white captions lift off the wall and are laid
+  back on top in white while the master's own lower thirds vanish with the
+  wall. The presenter is composited on a studio backdrop drawn to match the
+  portrait (a soft pool of light behind the head, dark corners, a darker base
+  and a soft cast shadow), the whole frame takes the portrait grade, and two
+  lower thirds in Spectral and Libre Franklin are overlaid: the name card
+  from 0.9 to 5.9 seconds and, from 44.7 seconds to the cut, "Speak with
+  Spencer, 03 9125 8355, Your first call is free, spenceralexander.com.au".
+  The phone number is written without brackets, matching the owner's no
+  brackets rule. The film fades in from wine, dissolves half a second into
+  the owner's end card, and runs 57 seconds. The poster is the 30.6 second
+  frame without captions, so the earlier column filled caption is gone.
+- **Audio** was left alone: the master is already at minus 16 LUFS
+  integrated with a true peak of minus 1.5 dBFS and a noise floor below minus
+  55 dB in the pauses, so noise reduction would have cost more than it gave.
+- **Pipeline.** `scripts/prepare-home-video.py` now carries the whole
+  process. It fetches the RVM source and weights and the two fonts into
+  `scripts/.cache/` (git ignored) and needs a CPU build of torch. The 720p
+  file, the end card frames, the play overlay and the site script are
+  unchanged; VideoObject duration is PT57S and uploadDate 2026-09-08.
+- **Still the owner's to decide.** A reshoot to the portrait's standard
+  remains the ideal and the recommendation stands; this rebuild closes most
+  of the visible gap and is what ships in the meantime.
+
+### Home page and conversion
+
+- **Hero headline in the singular.** "Exceptional Melbourne lawyers, for
+  when it matters most." was self praise any firm could run and implied a
+  team. It is now "One Melbourne lawyer, from your first call to the last."
+  with a lead naming Box Hill and Spencer, the principal. The description
+  now leads with Box Hill and stays within 160 characters.
+- **Phone hero order.** The text block now comes before the portrait on
+  phones, so the promise and the call button sit on the first screen; the 4
+  by 3 portrait crop and the caption below the image are unchanged.
+- **Film after bar** states "Your first call is free" before the scan or
+  call prompt.
+- **Contact form** gains "Best time to call, if you would like a call back"
+  and "How would you like us to reply?" selects. The critic's proposal of a
+  booking page and an answering service was refuted: the pages already
+  state the one business day reply and after hours contact, and a third
+  button and a third party page would add promise and friction.
+- **vCard** `assets/spencer-alexander-lawyers.vcf` for saving the firm's
+  details, linked from the film's after bar on phones.
+
+### Search and AI
+
+- **Box Hill targeting.** Hub titles and h1s now lead with Box Hill and keep
+  Melbourne; the locality sentence names the office, the station and the
+  eastern suburbs; `areaServed` on the home page, the hubs and contact.html
+  lists Box Hill, Blackburn, Doncaster, Burwood, Balwyn, Surrey Hills, Mont
+  Albert and Ringwood. Office facts verified by web search on 8 Sep 2026: 1
+  Main Street is the Box Hill Central address, about a minute's walk from
+  Box Hill station, with parking at Box Hill Central. No suburb doorway
+  pages were built and none should be.
+- **Article leads answer first.** All 28 leads were rewritten by one agent
+  per article and verified by an independent skeptic against the body: at
+  most 70 words, first sentence answers the H1 question, deadline named,
+  no fact that is not already in the body, no dashes or parentheses. Each
+  changed article carries dateModified 2026-09-08 and its sitemap lastmod.
+  New gate check "article lead at most 70 words (site-wide)".
+- **Descriptions.** Eight pages had descriptions of 165 to 180 characters
+  (the hubs, faq, insights, privacy, resources, the separation checklist).
+  All now sit between 120 and 160. New gate check "page descriptions
+  120-160 chars (site-wide)", noindex pages exempt.
+- **About page** links the film and carries "Articles by Spencer", the full
+  archive in three practice area groups, so the author entity every article
+  points at has a body of work behind it. New gate check "every article
+  listed in the about.html archive"; the weekly routine must add each new
+  article there.
+- **Resources page** now shows three cards (the separation checklist, the
+  FAQ, the Insights library) instead of one, so it no longer looks
+  unfinished. llms.txt and the sitemap updated.
+
+### Open items for the owner, unchanged in substance
+
+- Admission year, Law Institute of Victoria membership, the courts and
+  tribunals he appears in, prior roles worth naming and any languages
+  spoken, for the About page and the Person schema.
+- Fee figures, if the owner is willing to publish from prices for a simple
+  will, a will pair, an enduring power of attorney, a divorce application
+  and an uncontested probate. Without figures the current position stands.
+- A half day of photography for the eight stock images a visitor meets
+  before any article, and the reshoot when it becomes possible.
+- Google Business Profile: ask every client for a review when a matter
+  closes, keep the categories, hours and services complete, answer the Q and
+  A section, and post the weekly article there.
+
+---
+
 ## 2026-09-05: Full site review and redesign, owner request in live chat
 
 The owner asked for a complete review of the site: legal accuracy, compliance

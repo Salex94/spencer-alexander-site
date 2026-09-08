@@ -283,6 +283,11 @@ cards by the clean href form and still accepts the old `.html` form.
   `related__link` entry before the "All insights" line, label drawn from the
   article's own headline, no dashes). Enforced by check-publish.py ("article
   linked from its practice page").
+  **Also the About page archive (8 Sep 2026):** `about.html` lists every
+  article under "Articles by Spencer" in three practice area groups; add the
+  new article's `related__link` to the matching group, label from the
+  headline. Enforced by check-publish.py ("every article listed in the
+  about.html archive").
 
 ## Site design v3 and site-wide house style, owner review 5 Sep 2026
 
@@ -389,7 +394,9 @@ future edit, every new page and every new article.
   from an engaged moment of the film, never the first frame (the owner found
   the standing start awkward, 6 Sep 2026); the film itself is trimmed by a
   quarter second and fades in from the wine colour so play opens on him
-  speaking. `end-card.jpg` the contact card with the QR code and
+  speaking. (The film was rebuilt on 8 Sep 2026 without a reshoot; see
+  "Second enhancement round" below. The captions and end card rules here
+  still apply.) `end-card.jpg` the contact card with the QR code and
   `end-card-small.jpg` a phone sized recomposition of it; the script fades
   the right one over the player when playback ends so the code stays on
   screen, and a "Watch again" and call bar appears beneath. The video
@@ -437,6 +444,52 @@ future edit, every new page and every new article.
   service promise, and never a specialist claim. The admission year and Law
   Institute membership are still to be supplied; an HTML comment on
   about.html marks where they go.
+
+## Second enhancement round, owner request 8 Sep 2026
+
+The owner asked for an honest view of the site, accepted the assessment,
+could not reshoot the film and asked for every other enhancement. These
+conventions came out of that round.
+
+- **Home hero is singular.** The h1 is "One Melbourne lawyer, from your first
+  call to the last." with the lead naming Box Hill and Spencer. Never revert
+  to a plural "lawyers" headline or self praise such as "Exceptional": the
+  firm is one principal and the headline carries the one promise a larger
+  firm cannot make. On phones the text block comes before the portrait so
+  the promise is on the first screen.
+- **Box Hill first, Melbourne second.** Hub titles and h1s lead with Box
+  Hill ("Family Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers", h1
+  "Family Lawyers in Box Hill, Melbourne"); the locality sentence on each hub
+  names the office, the station and the eastern suburbs; the firm's
+  `areaServed` lists Box Hill, Blackburn, Doncaster, Burwood, Balwyn, Surrey
+  Hills, Mont Albert and Ringwood alongside Melbourne and Victoria. Do not
+  build suburb doorway pages. Office facts in use: Suite 10, 1 Main Street is
+  a short walk from Box Hill station, with parking at Box Hill Central.
+- **Article leads answer first.** The `article__lead` is at most 70 words,
+  its first sentence answers the H1 question directly, it names any deadline
+  the body states, and every fact in it must already be in the body. All 28
+  leads were rewritten to this rule on 8 Sep 2026. Enforced by
+  check-publish.py ("article lead at most 70 words (site-wide)").
+- **Page descriptions 120 to 160 characters on every indexable page**, not
+  only articles. Enforced by check-publish.py ("page descriptions 120-160
+  chars (site-wide)"); noindex pages are exempt.
+- **Contact form** carries "Best time to call" and "How would you like us to
+  reply?" selects after the email field; both post to the same formsubmit
+  address. `assets/spencer-alexander-lawyers.vcf` is the firm's contact card,
+  linked from the film's after bar on phones.
+- **Home page film, rebuilt 8 Sep 2026 without a reshoot.** The presenter is
+  matted out of the master with Robust Video Matting and composited on a
+  studio backdrop drawn to match the portrait, graded with the portrait
+  grade, with the master's captions carried across in white and new lower
+  thirds in Spectral and Libre Franklin (name card at the start; call card
+  from 44.7 seconds with the phone number, "Your first call is free" and the
+  web address), a fade from wine, and a half second dissolve into the
+  owner's end card. The poster is the 30.6 second frame without captions.
+  `scripts/prepare-home-video.py` is the whole pipeline (torch CPU, the RVM
+  source and weights and the fonts are fetched into `scripts/.cache/`, git
+  ignored); it takes about half an hour. The captions rule stands: carried,
+  never cropped, filled or covered. The film is 57 seconds; the VideoObject
+  duration is PT57S and uploadDate 2026-09-08.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 
