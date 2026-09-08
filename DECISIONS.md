@@ -172,6 +172,17 @@ the wine band would break the page rhythm); a second checklist (a content
 job for a later run). The station and parking facts in the Office block
 rest on the web search recorded above; the owner should confirm them.
 
+### Merge with the 7 September article run
+
+While this round was in progress the weekly routine published "Safe harbour
+and small business restructuring" (7 Sep 2026) and the SEO audit trimmed the
+same eight descriptions this round had already rewritten. The merge kept this
+round's descriptions (they carry Box Hill and sit within 120 to 160), kept the
+audit's two cross links, and brought the new article under the new rules: its
+lead rewritten to 70 words that answer first from facts in its own body, its
+stylesheet key moved to v=13, its entry added to the About archive, and its
+dateModified and sitemap lastmod set to 8 September.
+
 ### Open items for the owner, unchanged in substance
 
 - Admission year, Law Institute of Victoria membership, the courts and
@@ -185,6 +196,71 @@ rest on the web search recorded above; the owner should confirm them.
 - Google Business Profile: ask every client for a review when a matter
   closes, keep the categories, hours and services complete, answer the Q and
   A section, and post the weekly article there.
+## 2026-09-08: Weekly SEO and GEO audit; ten small fixes, site otherwise clean
+
+Full sweep of all 44 HTML pages the day after the safe harbour article went
+live. Clean across the board: zero broken links, no orphan pages, one h1 per
+page with no heading jumps, every JSON-LD block parses, sitemap complete and
+matching the indexable set, feed.xml well formed and current (29 items),
+llms.txt covers the newest article, robots.txt still permissive to AI
+crawlers, the new article fully wired into all seven surfaces, Google rating
+markup current (refresh script reports the site already matches). Both gates
+pass (check-publish 67/67, check-article-images PASS, 3 spares).
+
+Tier 1 fixes applied: (1) the safe harbour article had zero in body inbound
+links, the usual cold start, so two neutral "Read our guide to" links were
+added from its closest relatives, the safe harbour paragraph of
+insight-directors-duties-victoria.html and the statutory demand section of
+insight-debt-recovery-victoria.html; dateModified deliberately unchanged on
+both (navigation only edits, same reasoning as the 18 and 24 Aug and 1 Sep
+audits). (2) Eight pages carried meta descriptions over the 160 character
+house limit (165 to 180 chars: the three hubs, faq, insights, privacy,
+resources and the separation resource); each was trimmed to 130 to 160
+characters by removing a list item or clause, never adding or strengthening a
+claim. The resource page's og:description and HowTo description were kept
+identical to its meta description as before; the hubs' shorter editorial
+og:description lines were left as designed. Sitemap lastmod deliberately
+unchanged (head metadata only, no visible content changed).
+
+Noted, unchanged: two 71 character titles sit within "about 70"; the
+unreferenced legacy images (jordyn.png, katalin.png, principal-portrait.jpg,
+og-card.png on some pages) remain per earlier notes. Tier 2 flag for the
+owner: the three hub meta descriptions open with plural wording ("Melbourne
+commercial lawyers", "Melbourne family lawyers", "Melbourne wills and estates
+lawyers"); the 5 Sep compliance sweep removed plural claims from visible copy
+for a sole principal firm, and the owner may want the same judgement applied
+to these head descriptions.
+
+---
+
+## 2026-09-07: Safe harbour and small business restructuring article published
+
+Monday article for 7 Sep 2026 Melbourne (confirmed via `TZ=Australia/Melbourne
+date`). Rotation: Commercial Law was due (Family 31 Aug, W&E 24 Aug,
+Commercial 17 Aug), and the 4 Sep backlog's item 1 recommended exactly this
+topic, so the backlog was followed. Not a rehash: the directors duties
+article gives safe harbour one paragraph and faq.html two short entries; the
+article goes well beyond both and links the directors duties and debt
+recovery articles plus the Commercial Law hub.
+
+Verification: legislation.gov.au remains blocked; s 588G/588GA and Part 5.3B
+claims were checked against AustLII search extracts and multiple independent
+firm sources. Kept general: all visible section and Part numbers apart from
+the Act name, the SBR day counts and approval threshold, the seven year
+repeat use restriction, and what counts toward the $1 million cap (the
+figure itself matches the live faq.html and multiple 2026 sources; it is
+under review but unchanged). Full claims register in the publish commit
+(`4d5a540`).
+
+Photo: spare `1521737852567` (small business team at laptops), visually
+inspected, full Unsplash id `1521737852567-6949f3f9f2b5` verified live for
+og:image. Three spares remain. Word count 1732 (gate count including FAQ
+text), above the brief's 1500 but under the gate's 1900, same reasoning as
+the 10 Aug entry: trimming further would have cut accurate substance.
+
+Published direct to main (fast forward `06ca6fa..4d5a540`) per the routine's
+OWNER PERMISSION FOR MAIN paragraph; this run's branch lock did not strand
+the work. Gates: check-publish 67/67, check-article-images PASS.
 
 ---
 
