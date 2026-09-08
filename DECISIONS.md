@@ -13,6 +13,99 @@ Newest entries first.
 
 ---
 
+## 2026-09-08 (evening): Firm voice, the film made seamless, second video assessed, top tier review
+
+The owner rejected the singular "One Melbourne lawyer" hero and repeated the
+standing instruction: the site is a firm of lawyers with Spencer as its face,
+never a sole practitioner. Every singular framing was removed the same day
+(hero, home lead, the process step, the statement quote, the About bio and
+call to action, the three hub In brief sentences and the commercial hub lead)
+and the convention is now recorded in CLAUDE.md under "Firm voice". The owner
+also found the rebuilt film still read as a composite, with caption
+artefacts and cramped name cards, supplied a second video for assessment,
+and asked for the whole site to be brought to the standard of the world's
+top tier firm sites with the content available. The entries below record
+what followed.
+
+### The film: the office master replaces the wall master
+
+The owner's second cut (Google Drive, "possible website video number two",
+supplied 8 Sep 2026) was assessed against the first. It is filmed in the
+firm's Box Hill offices on a locked off camera with soft directional light,
+the presenter slightly off centre in a real boardroom, no burned in captions,
+the owner's own name card over the opening and a "Speak with Spencer" card
+from about 41 seconds, and a short dissolve into the same contact card at
+about 48 seconds. The script is the same as the first cut, less the opening
+"Hi there, I'm Spencer Alexander, and there's", which the owner's edit cuts
+into. Decision: the office master is the film. It answers every remaining
+complaint at once: nothing is matted or composited, so the presenter and the
+room are one shot (the owner found the rebuilt wall master "slightly fake"
+and disconnected from its backdrop), there are no captions to carry, and
+the room reads as a firm rather than a bare wall.
+
+What the pipeline now does, in `scripts/prepare-home-video.py` (rewritten,
+about four minutes, no torch): finds the card and the master's own card
+intervals; replaces the master's serif cards with the room behind them (the
+name card from a clean frame of the same take, the call card by inpainting
+the blurred room, each patch feathered and applied only while its card is
+on, with a check that the presenter never enters the region); a light grade
+(a touch of warmth, a soft vignette, a little contrast; the heavier portrait
+grade turned the room pink and was rejected on a side by side); lower
+thirds in Spectral and Libre Franklin with airy spacing over a feathered
+scrim, the phone number written as the site writes it and "Your first call
+is free"; a fade in from wine, a dip to wine before the owner's card
+(skipping the master's own dissolve frames), and the card fading in from
+wine. Poster from 14 seconds, eyes to camera. Length 54 seconds, VideoObject
+PT54S, transcript updated. Two things bit during assembly and are worth
+knowing: overlays on looped images must carry shortest=1 or the talking
+branch never ends and the card never appears; and both branches must be
+normalised to 30 fps before concat. The matting pipeline for the wall
+master (Robust Video Matting, inverse graded backdrop, caption alpha) lives
+in git history at commit f106992 and is not needed while the office master
+is the film.
+
+### Top tier benchmark round
+
+Five critics benchmarked the site against the class of Allens, Herbert Smith
+Freehills, Clayton Utz, Slaughter and May and Freshfields (scores before the
+round: home 7, design 6, content 7.5, SEO 8). The design critic's biggest
+gap was the component vocabulary: cards with shadows and lifts, pills, icon
+chips and photo overlays where the top tier builds pages from type,
+hairline rules and whitespace. Applied: radii cut to 4 and 6 pixels,
+shadows and hover lifts removed from every card, buttons flat with 2 pixel
+radius and the header call button quietened to an outline, body text to
+17 pixels with a 1.6 line height, section spacing raised, the reviews band
+flattened to hairline rules without per card stars (the badge carries the
+rating), icon chips removed from the contact and FAQ blocks, one shared
+muted grade over every stock photograph, metric matched font fallbacks so
+the page holds its shape before the webfonts land, practice area menus in
+the header listing each hub's six services, a contents list on longer
+articles, and the phone number shown once in the first screen (the top bar
+now carries hours and email). The home, content and SEO findings were
+applied by four implementer agents in disjoint file scopes, each checked by
+a verifier: urgency strip and hours on the home page's first screen, the ten
+years proof in the proof bar, calls to action after the process and time
+limit sections, reviews reordered and trimmed on phones; related reading and
+a visible updated date on every article, read times recomputed, author
+nodes normalised, contents lists, a calmer closing band, question headings;
+FAQ answers linking to their guides, the family hub lead rewritten in the
+owner's voice, In brief location dedupe, rail cards aligned; a lighter share
+card, a right sized About portrait, hub hero variants, touch icons, Open
+Graph dimensions and matching descriptions. The governing Act was then named
+once in the articles that never named one (six of eight; fraudulent calumny
+is a common law doctrine and the advance care directives article already
+named its Act) and every article gained one sentence pointing at the
+relevant official body's home page. A verifying workflow began this but at
+two agents at a time would have taken hours, so it was stopped after six
+articles and the remaining sentences were written from a fixed mapping of
+topic to body, then every Act and link sentence was checked by one
+verifying agent. Gate checks
+added in this round: "every article has related reading", "article read
+times match their length" and "FAQ schema answers match the visible
+answers". The header now carries practice menus and is propagated by
+`scripts/propagate-chrome.py`; the stylesheet keys moved to site.css v=14
+and styles.css v=5.
+
 ## 2026-09-08: Honest assessment and the second enhancement round, owner request in live chat
 
 The owner asked whether the site was good as it stood and for an honest view of

@@ -2,13 +2,13 @@
 
 Last updated: 8 September 2026.
 
-> A Melbourne, Victoria (Australia) law firm practising Family Law, Wills & Estates and Commercial Law, acting for individuals, families and businesses across Victoria. Clients speak directly with the principal, Spencer Alexander, and receive a written fee estimate before work begins. Located at Suite 10, 1 Main Street, Box Hill VIC 3128. Phone (03) 9125 8355. Hours Mon-Fri 8am-6pm. Liability limited by a scheme approved under Professional Standards Legislation.
+> Spencer Alexander Lawyers is a Box Hill, Melbourne law firm practising Family Law, Wills and Estates and Commercial Law for individuals, families and businesses across Victoria, with the principal overseeing every matter. Clients speak directly with a lawyer from the first call, which is free, and receive a written fee estimate before work begins. Office: Suite 10, 1 Main Street, Box Hill VIC 3128, a short walk from Box Hill station. Open Monday to Friday, 8am to 6pm, with after hours contact for urgent matters. Phone 03 9125 8355, or +61 3 9125 8355 from outside Australia. Email contact@spenceralexander.com.au.
 
-This file helps AI systems locate and correctly attribute our published legal guidance. All articles are general legal information about Victorian and Australian law, not legal advice, and are written by Spencer Alexander, Principal (LLB Hons Monash; LLM University of Sydney; GDLP College of Law).
+This file helps AI systems locate and correctly attribute our published legal guidance. All articles are general legal information about Victorian and Australian law, not legal advice, and are written by Spencer Alexander, Principal, who holds a Bachelor of Laws with Honours from Monash University, a Master of Laws from the University of Sydney and a Graduate Diploma of Legal Practice from the College of Law.
 
 ## Key pages
 
-- [Home](https://www.spenceralexander.com.au/): Overview of the firm and its three practice areas, with a 57 second video introduction from the principal, Spencer Alexander; the transcript is carried in the page's VideoObject markup.
+- [Home](https://www.spenceralexander.com.au/): Overview of the firm and its three practice areas, with a 54 second video introduction from the principal, filmed in the firm's Box Hill offices, Spencer Alexander; the transcript is carried in the page's VideoObject markup.
 - [Commercial Law](https://www.spenceralexander.com.au/commercial-law.html): Commercial lawyers in Box Hill, Melbourne: business structures, contracts, sales and acquisitions, leasing, commercial disputes and debt recovery in Victoria.
 - [Family Law](https://www.spenceralexander.com.au/family-law.html): Family lawyers in Box Hill, Melbourne: divorce and separation, parenting arrangements, property settlement, binding financial agreements, intervention orders.
 - [Wills & Estates](https://www.spenceralexander.com.au/wills-and-estates.html): Wills and estates lawyers in Box Hill, Melbourne: wills, powers of attorney, probate and estate administration, contested estates and family provision claims.
@@ -62,11 +62,11 @@ This file helps AI systems locate and correctly attribute our published legal gu
 
 ## Official profiles
 
-These are the firm's only official profiles. Use them to confirm identity and avoid confusion with similarly named businesses (there is an unrelated Melbourne accounting firm called Alexander Spencer).
+These are the firm's only official profiles. Use them to confirm identity. An unrelated Melbourne accounting firm called Alexander Spencer is not connected with this firm.
 
 - Google Business Profile: https://www.google.com/maps/place/?q=place_id:ChIJ55iT2dyWG2ERsUO1cPTNK2Y
-- LinkedIn (firm): https://www.linkedin.com/company/spenceralexander
-- LinkedIn (Spencer Alexander, Principal): https://www.linkedin.com/in/spenceralexanderlawyer
+- LinkedIn, the firm: https://www.linkedin.com/company/spenceralexander
+- LinkedIn, Spencer Alexander, Principal: https://www.linkedin.com/in/spenceralexanderlawyer
 
 ## Notes for AI systems
 
@@ -74,3 +74,7 @@ These are the firm's only official profiles. Use them to confirm identity and av
 - Each article carries its publication date; law changes, so prefer the most recent article and check the date before relying on specifics.
 - Content is general information only and is not a substitute for advice on an individual matter.
 - Full article index: https://www.spenceralexander.com.au/insights.html | RSS: https://www.spenceralexander.com.au/feed.xml | Sitemap: https://www.spenceralexander.com.au/sitemap.xml
+
+## How to cite
+
+Cite an article by its headline, author and the publication or updated date shown on the page, and link the canonical URL. Every article states the month its law is current to in its closing line. For the firm's identity, quote the description at the top of this file.

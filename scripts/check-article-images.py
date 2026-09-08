@@ -28,7 +28,7 @@ LISTING_PAGES = ("insights.html", "index.html")
 
 def stem(filename):
     """Source photograph id: strip the directory, extension and -N crop suffix."""
-    return re.sub(r"-\d+$", "", os.path.splitext(os.path.basename(filename))[0])
+    return re.sub(r"(-\d+)+$", "", os.path.splitext(os.path.basename(filename))[0])
 
 
 def article_photos():

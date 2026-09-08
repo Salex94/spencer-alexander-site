@@ -288,6 +288,25 @@ cards by the clean href form and still accepts the old `.html` form.
   new article's `related__link` to the matching group, label from the
   headline. Enforced by check-publish.py ("every article listed in the
   about.html archive").
+  **Template placeholders (8 Sep 2026):** `_article-template.html` now
+  carries `{{LEAD}}` (the answer first lead, at most 70 words) separately
+  from `{{BODY}}` (everything after the lead), `{{UPDATED_HTML}}` (leave
+  empty on first publication; on a later edit it becomes an
+  `Updated D Mon YYYY` span with a `<time>` element), an "In this article"
+  contents list built from the H2s (`{{H2_SLUG_n}}` and `{{H2_TEXT_n}}`;
+  give every H2 an id equal to its slug, and drop the whole `article-toc`
+  block when the article has fewer than four H2s), and a related reading
+  block with three sibling articles (`{{RELATED_SLUG_n}}` and
+  `{{RELATED_HEADLINE_n}}`, the three closest articles by topic, same
+  practice area first, labels taken from their headlines). Fill every
+  placeholder: the gate's "no template placeholders" check fails on any
+  `{{` left behind, and "every article has related reading" and "article
+  read times match their length" (read time = max(3, round(body words /
+  230))) fail on an article without them. Question and answer pairs in the
+  closing section are `<h3 class="article-q">` followed by a paragraph, and
+  the Article node carries a `speakable` specification pointing at the lead
+  and an author node with `jobTitle` "Principal Lawyer" and the LinkedIn
+  `sameAs`, all of which the template shows.
 
 ## Site design v3 and site-wide house style, owner review 5 Sep 2026
 
@@ -451,12 +470,19 @@ The owner asked for an honest view of the site, accepted the assessment,
 could not reshoot the film and asked for every other enhancement. These
 conventions came out of that round.
 
-- **Home hero is singular.** The h1 is "One Melbourne lawyer, from your first
-  call to the last." with the lead naming Box Hill and Spencer. Never revert
-  to a plural "lawyers" headline or self praise such as "Exceptional": the
-  firm is one principal and the headline carries the one promise a larger
-  firm cannot make. On phones the text block comes before the portrait so
-  the promise is on the first screen.
+- **Firm voice: a firm of lawyers with Spencer as its face (owner instruction,
+  8 Sep 2026, twice repeated).** The site speaks of "lawyers", "senior
+  lawyers" and "exceptional lawyers", never of one lawyer, a sole
+  practitioner, or "the principal handling every matter". Spencer is the
+  face: the portrait, the film, the About profile, the author of every
+  article and the principal who oversees every matter, and quotes in his
+  voice are welcome, but nothing may state or imply that he is the only
+  lawyer. The h1 is "Exceptional Melbourne lawyers, for when it matters
+  most." (the owner's chosen register); a singular headline was tried on
+  8 Sep 2026 and rejected the same day. This supersedes the 5 Sep 2026
+  caution about "our lawyers": the owner has confirmed the firm has
+  lawyers, so the plural is the accurate form. On phones the text block
+  comes before the portrait so the promise is on the first screen.
 - **Box Hill first, Melbourne second.** Hub titles and h1s lead with Box
   Hill ("Family Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers", h1
   "Family Lawyers in Box Hill, Melbourne"); the locality sentence on each hub
@@ -481,25 +507,44 @@ conventions came out of that round.
   its fields so a wrapped label cannot misalign the inputs.
   `assets/spencer-alexander-lawyers.vcf` is the firm's contact card, linked
   from the film's after bar on phones and from the contact page.
-- **Home page film, rebuilt 8 Sep 2026 without a reshoot.** The presenter is
-  matted out of the master with Robust Video Matting and composited on a
-  studio backdrop drawn to match the portrait, graded with the portrait
-  grade, with the master's captions carried across in white and new lower
-  thirds in Spectral and Libre Franklin (name card at the start; call card
-  from 44.7 seconds with the phone number, "Your first call is free" and the
-  web address), a fade from wine, and a dip to wine into the owner's end
-  card (never a cross dissolve: it put his face over the QR code). The
-  captions are carried as alpha against a reference of the bare wall, so the
-  master's own caption fades survive, with a soft shadow under the strokes;
-  the backdrop is designed by its post grade look and inverse graded so it
-  lands on the portrait's warm grey, with fine grain and a gentle key from
-  camera left. The poster is the 29.6 second frame, chosen inside a caption
-  gap so it carries no caption.
-  `scripts/prepare-home-video.py` is the whole pipeline (torch CPU, the RVM
-  source and weights and the fonts are fetched into `scripts/.cache/`, git
-  ignored); it takes about half an hour. The captions rule stands: carried,
-  never cropped, filled or covered. The film is 57 seconds; the VideoObject
-  duration is PT57S and uploadDate 2026-09-08.
+- **Home page film: the office master (owner's second cut, 8 Sep 2026).**
+  The film is the owner's second recording, made in the firm's Box Hill
+  offices on a locked off camera with no burned in captions. Nothing is
+  matted or composited: the presenter and the room are one shot, which is
+  the standard the owner set after a matted rebuild of the first cut read as
+  fake. `scripts/prepare-home-video.py` takes the master and, in about four
+  minutes, replaces the master's own serif cards with the room behind them
+  (a clean frame of the same take, or inpainting where the card is on for
+  the whole take), applies a light grade only (warmth, a soft vignette, a
+  little contrast; never the heavier portrait grade, which turned the room
+  pink), overlays lower thirds in Spectral and Libre Franklin with airy
+  spacing over a feathered scrim (name card at the start; from 41.6 seconds
+  the phone number as the site writes it, "Your first call is free" and the
+  web address), fades in from wine, dips to wine before the owner's contact
+  card and fades the card in from wine. Overlays on looped images must carry
+  shortest=1 and both branches must be 30 fps before concat, or the card
+  never appears. The film is 54 seconds; VideoObject duration PT54S,
+  uploadDate 2026-09-08, transcript on index.html. The poster is the 14
+  second frame. No captions are added: the owner rejected added subtitles
+  on 5 Sep 2026. The first cut and its matting pipeline are in git history
+  at f106992.
+- **Top tier design conventions (8 Sep 2026).** The site is judged against
+  the best firm sites in the world, so the component vocabulary is type,
+  hairline rules and whitespace: radii are 4 and 6 pixels, no card carries a
+  shadow or a hover lift, buttons are flat with a 2 pixel radius, the header
+  call button is the outline style so the brass hero button is the one
+  emphatic call, the top bar carries hours and email but not the phone
+  number, body text is 17 pixels at a 1.6 line height, sections breathe at
+  64 to 128 pixels, the reviews band is hairline rules with the rating badge
+  and no per card stars, icon chips are not used, every stock photograph
+  takes one shared muted grade in CSS, and metric matched font fallbacks are
+  declared so the page holds its shape before the webfonts load. The header
+  carries a practice menu under each hub link listing its six services
+  (anchors to the `svc-` ids on the hub), built from index.html and
+  propagated to every page by `scripts/propagate-chrome.py`; longer
+  articles open with an "In this article" contents list; every article ends
+  with related reading and shows its updated date. Keep new work inside
+  this vocabulary.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 

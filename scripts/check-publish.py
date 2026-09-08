@@ -37,6 +37,11 @@ def check(name, ok, detail=""):
     results.append((name, bool(ok), detail))
 
 
+def html_unescape(t):
+    import html as _h
+    return _h.unescape(t)
+
+
 def read(path):
     return open(path, encoding="utf-8").read()
 
@@ -369,6 +374,40 @@ def main():
     about = read("about.html")
     unlisted = [f for f in sorted(glob.glob("insight-*.html")) if 'href="/%s"' % f[:-5] not in about]
     check("every article listed in the about.html archive", not unlisted, ", ".join(unlisted[:4]))
+
+    # Every article carries a related reading block and an honest read time
+    # (added 8 Sep 2026 with the top tier benchmark round).
+    no_related, bad_time = [], []
+    for f in sorted(glob.glob("insight-*.html")):
+        body = read(f)
+        if 'class="related__link"' not in body:
+            no_related.append(f)
+        m = re.search(r'<div class="article__body">(.*?)<p style="margin-top:28px', body, re.S)
+        rt = re.search(r"(\d+) min read", body)
+        if m and rt:
+            words = len(re.sub(r"<[^>]+>", " ", m.group(1)).split())
+            want = max(3, round(words / 230))
+            if abs(int(rt.group(1)) - want) > 1:
+                bad_time.append("%s (%s vs %d)" % (f, rt.group(1), want))
+    check("every article has related reading", not no_related, ", ".join(no_related[:4]))
+    check("article read times match their length", not bad_time, ", ".join(bad_time[:4]))
+
+    # FAQ schema answers must be the visible answers, word for word (added 8 Sep
+    # 2026: an answer engine that finds the schema and the page disagreeing
+    # trusts neither).
+    faq = read("faq.html"); drift = []
+    def plain(t):
+        return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html_unescape(t))).strip()
+    ld = [b for b in jsonld(faq) if isinstance(b, dict) and b.get("@type") == "FAQPage"]
+    items = re.findall(r'<summary class="faq-q">(.*?)<span class="faq-q__ic">.*?<div class="faq-a">(.*?)</div>\s*</details>', faq, re.S)
+    visible = {plain(q): plain(a) for q, a in items}
+    for q in (ld[0].get("mainEntity", []) if ld else []):
+        name = plain(q.get("name", "")); ans = plain(q.get("acceptedAnswer", {}).get("text", ""))
+        if name not in visible:
+            drift.append("missing on page: %s" % name[:40])
+        elif visible[name] != ans:
+            drift.append("differs: %s" % name[:40])
+    check("FAQ schema answers match the visible answers", ld and not drift, "; ".join(drift[:3]))
 
     # Google rating markup: every page that shows the rating must show the same
     # number, in the shape scripts/refresh-google-rating.py rewrites, and no
