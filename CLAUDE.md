@@ -305,7 +305,7 @@ cards by the clean href form and still accepts the old `.html` form.
   230))) fail on an article without them. Question and answer pairs in the
   closing section are `<h3 class="article-q">` followed by a paragraph, and
   the Article node carries a `speakable` specification pointing at the lead
-  and an author node with `jobTitle` "Principal Lawyer" and the LinkedIn
+  and an author node with `jobTitle` "Principal" and the LinkedIn
   `sameAs`, all of which the template shows.
 
 ## Site design v3 and site-wide house style, owner review 5 Sep 2026

@@ -51,6 +51,22 @@ gap, the ghost shadow on the reviews band); each was already fixed in the
 working tree and is now live. Gate: 73 checks, 0 failed; images PASS;
 Google rating unchanged at 5.0.
 
+Later the same day, three schema and crawl items from the first benchmark
+critique whose refuters were lost to a usage limit were checked by hand and
+applied: the firm node on index.html now carries GeoCoordinates for the
+office, taken from Google's own pin for the firm's listing in the public
+Maps embed that refresh-google-rating.py already reads, latitude
+-37.8191018 and longitude 145.1220999; the About page's Person node is the
+mainEntity of a ProfilePage node with a dateModified, the form Google's
+profile page guidance asks for, and every article author reference still
+resolves to the same Person @id; and the RSS alternate link is on every
+indexable page rather than only the home and insights pages. Head only
+changes, so no sitemap lastmod moved. CLAUDE.md's template note now says
+the author jobTitle is "Principal", matching the template and the two
+founder nodes. The two unreferenced legacy staff photographs in assets
+(jordyn.png and katalin.png) were left in place: they are the owner's files
+and nothing links to them.
+
 Supersedes the 5 September reviews note below that Kathy S.'s "Really good
 lawyers!" was omitted because the firm has one lawyer: the owner has
 confirmed the firm has lawyers, so that review is accurate to quote and may
