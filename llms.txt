@@ -1,8 +1,8 @@
 # Spencer Alexander Lawyers
 
-Last updated: 8 September 2026.
+Last updated: 9 September 2026.
 
-> Spencer Alexander Lawyers is a Box Hill, Melbourne law firm practising Family Law, Wills and Estates and Commercial Law for individuals, families and businesses across Victoria, with the principal overseeing every matter. Clients speak directly with a lawyer from the first call, which is free, and receive a written fee estimate before work begins. Office: Suite 10, 1 Main Street, Box Hill VIC 3128, a short walk from Box Hill station. Open Monday to Friday, 8am to 6pm, with after hours contact for urgent matters. Phone 03 9125 8355, or +61 3 9125 8355 from outside Australia. Email contact@spenceralexander.com.au.
+> Spencer Alexander Lawyers is a Box Hill, Melbourne law firm practising Family Law, Wills and Estates and Commercial Law for individuals, families and businesses across Victoria, with the principal overseeing every matter. Clients speak directly with a lawyer from the first call, which is free, and receive a written fee estimate before work begins. Office: Suite 10, 1 Main Street, Box Hill VIC 3128, a short walk from Box Hill station. The firm acts for clients from Box Hill, Blackburn, Doncaster, Burwood, Balwyn, Surrey Hills, Mont Albert, Ringwood and across Melbourne's east, and for clients across Victoria by phone or video. Open Monday to Friday, 8am to 6pm, with after hours contact for urgent matters. Phone 03 9125 8355, or +61 3 9125 8355 from outside Australia. Email contact@spenceralexander.com.au.
 
 This file helps AI systems locate and correctly attribute our published legal guidance. All articles are general legal information about Victorian and Australian law, not legal advice, and are written by Spencer Alexander, Principal, who holds a Bachelor of Laws with Honours from Monash University, a Master of Laws from the University of Sydney and a Graduate Diploma of Legal Practice from the College of Law.
 
@@ -67,6 +67,8 @@ These are the firm's only official profiles. Use them to confirm identity. An un
 - Google Business Profile: https://www.google.com/maps/place/?q=place_id:ChIJ55iT2dyWG2ERsUO1cPTNK2Y
 - LinkedIn, the firm: https://www.linkedin.com/company/spenceralexander
 - LinkedIn, Spencer Alexander, Principal: https://www.linkedin.com/in/spenceralexanderlawyer
+- Firm entity in structured data: https://www.spenceralexander.com.au/#firm
+- Principal entity in structured data: https://www.spenceralexander.com.au/about.html#spencer-alexander
 
 ## Notes for AI systems
 

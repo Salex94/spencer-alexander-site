@@ -409,6 +409,113 @@ def main():
             drift.append("differs: %s" % name[:40])
     check("FAQ schema answers match the visible answers", ld and not drift, "; ".join(drift[:3]))
 
+    # ---- 9 Sep 2026: GEO verification round ------------------------------
+    # The same FAQ equality on every article (h3.article-q + p) and hub.
+    sdrift = []
+    for f in sorted(glob.glob("insight-*.html")) + ["family-law.html", "commercial-law.html", "wills-and-estates.html"]:
+        h = read(f)
+        if f.startswith("insight-"):
+            pairs = re.findall(r'<h3 class="article-q"[^>]*>(.*?)</h3>\s*<p>(.*?)</p>', h, re.S)
+        else:
+            pairs = re.findall(r'<summary class="faq-q">(.*?)<span class="faq-q__ic">.*?<div class="faq-a">(.*?)</div>\s*</details>', h, re.S)
+        vis = {plain(q): plain(a) for q, a in pairs}
+        for b in jsonld(h):
+            if isinstance(b, dict) and b.get("@type") == "FAQPage":
+                for q in b.get("mainEntity", []):
+                    name = plain(q.get("name", "")); ans = plain(q.get("acceptedAnswer", {}).get("text", ""))
+                    if name not in vis:
+                        sdrift.append("%s missing: %s" % (f, name[:30]))
+                    elif vis[name] != ans:
+                        sdrift.append("%s differs: %s" % (f, name[:30]))
+    check("FAQ schema answers match the visible answers (site-wide)", not sdrift, "; ".join(sdrift[:3]))
+
+    # The header practice menus list each hub's six services on every page
+    # (the propagation script once matched a pattern the hubs no longer had
+    # and pushed empty menus to every page; nobody noticed for a day).
+    svc_ids = {hub: re.findall(r'<div class="svc" id="(svc-[^"]+)"', read(hub + ".html"))
+               for hub in ("family-law", "wills-and-estates", "commercial-law")}
+    menu_bad = []
+    for f in sorted(glob.glob("*.html")):
+        h = read(f)
+        if '<nav class="site-nav"' not in h:
+            continue
+        for hub, ids in svc_ids.items():
+            links = re.findall(r'href="/%s#(svc-[^"]+)"' % hub, h)
+            if len(ids) != 6 or links != ids:
+                menu_bad.append("%s %s %d" % (f, hub, len(links)))
+    check("practice menus list six services on every page", not menu_bad, "; ".join(menu_bad[:3]))
+
+    # Any other "as at Month YYYY" inside an article must agree with its
+    # currency line (the child support article once carried two months).
+    cur_bad = []
+    for f in sorted(glob.glob("insight-*.html")):
+        h = read(f)
+        cm = re.search(r"reflects the law applying in Victoria as at ([A-Z][a-z]+ \d{4})", h)
+        others = set(re.findall(r"\bas at ([A-Z][a-z]+ \d{4})", h))
+        if cm and others - {cm.group(1)}:
+            cur_bad.append("%s: %s" % (f, ", ".join(sorted(others - {cm.group(1)}))))
+    check("every dated currency phrase matches the currency line", not cur_bad, "; ".join(cur_bad[:3]))
+
+    # One firm entity: every JSON-LD object carrying the #firm @id must agree
+    # with the full node on index.html on every property it repeats.
+    FIRM = BASE + "#firm"
+    canon = next((b for b in jsonld(read("index.html")) if isinstance(b, dict) and b.get("@id") == FIRM), None)
+    def _walk(o, out):
+        if isinstance(o, dict):
+            if o.get("@id") == FIRM and len(o) > 1:
+                out.append(o)
+            for v in o.values():
+                _walk(v, out)
+        elif isinstance(o, list):
+            for v in o:
+                _walk(v, out)
+    firm_bad = []
+    for f in sorted(glob.glob("*.html")):
+        nodes = []
+        _walk(jsonld(read(f)), nodes)
+        for n in nodes:
+            for k, v in n.items():
+                if k in ("@id", "@context") or canon is None or k not in canon:
+                    continue
+                if isinstance(v, dict) and set(v) == {"@id"}:
+                    continue
+                if canon[k] != v:
+                    firm_bad.append("%s %s" % (f, k))
+    check("firm node consistent across pages", canon is not None and not firm_bad, "; ".join(sorted(set(firm_bad))[:4]))
+
+    # Dates that answer engines read: the FAQ page's visible reviewed date,
+    # the FAQPage nodes on faq.html and the hubs against the sitemap, the
+    # llms.txt Last updated line, and the Open Graph article dates.
+    FULL = ["January", "February", "March", "April", "May", "June", "July",
+            "August", "September", "October", "November", "December"]
+    smap_all = read("sitemap.xml")
+    fq = read("faq.html")
+    fld = next((b for b in jsonld(fq) if isinstance(b, dict) and b.get("@type") == "FAQPage"), {})
+    rv = re.search(r"Last reviewed (\d{1,2}) ([A-Z][a-z]+) (\d{4})", fq)
+    got = "%s-%02d-%02d" % (rv.group(3), FULL.index(rv.group(2)) + 1, int(rv.group(1))) if rv and rv.group(2) in FULL else ""
+    check("faq.html reviewed date matches its FAQPage dateModified", got and got == fld.get("dateModified"),
+          "%s vs %s" % (got, fld.get("dateModified")))
+    hub_bad = []
+    for hub in ("faq.html", "family-law.html", "commercial-law.html", "wills-and-estates.html"):
+        fp = next((b for b in jsonld(read(hub)) if isinstance(b, dict) and b.get("@type") == "FAQPage"), {})
+        entry = re.search(r"<url>\s*<loc>%s</loc>\s*<lastmod>([^<]+)</lastmod>" % re.escape(BASE + hub), smap_all)
+        if not (fp.get("dateModified") and fp.get("author") and fp.get("publisher") and entry and entry.group(1) == fp["dateModified"]):
+            hub_bad.append(hub)
+    check("FAQPage nodes carry author, publisher and the sitemap date", not hub_bad, ", ".join(hub_bad))
+    lu = re.search(r"Last updated: (\d{1,2}) ([A-Z][a-z]+) (\d{4})", read("llms.txt"))
+    lu_iso = "%s-%02d-%02d" % (lu.group(3), FULL.index(lu.group(2)) + 1, int(lu.group(1))) if lu and lu.group(2) in FULL else ""
+    newest = max(re.findall(r"<lastmod>(\d{4}-\d{2}-\d{2})</lastmod>", smap_all))
+    check("llms.txt Last updated matches the newest sitemap lastmod", lu_iso == newest, "%s vs %s" % (lu_iso, newest))
+    og_bad = []
+    for f in sorted(glob.glob("insight-*.html")):
+        h = read(f)
+        a = next((b for b in jsonld(h) if isinstance(b, dict) and b.get("@type") == "Article"), {})
+        pt = re.search(r'property="article:published_time" content="([^"]+)"', h)
+        mt = re.search(r'property="article:modified_time" content="([^"]+)"', h)
+        if not (pt and mt and pt.group(1) == a.get("datePublished") and mt.group(1) == a.get("dateModified", a.get("datePublished"))):
+            og_bad.append(f)
+    check("Open Graph article dates match the Article schema", not og_bad, ", ".join(og_bad[:3]))
+
     # Google rating markup: every page that shows the rating must show the same
     # number, in the shape scripts/refresh-google-rating.py rewrites, and no
     # page may state the number of reviews (owner instruction, 5 Sep 2026).

@@ -10,3 +10,6 @@ exclude:
 - scripts/preapproved-claude-settings.json
 - scripts/prepare-home-video.py
 - scripts/refresh-google-rating.py
+- scripts/propagate-chrome.py
+- scripts/sync-sitemap-dates.py
+- scripts/image-slot.js

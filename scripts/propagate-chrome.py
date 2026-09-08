@@ -1,5 +1,8 @@
 """Chrome propagation (8 Sep 2026). Build the practice menus into index.html's header, quieten the header call button and the top bar, add service ids to the hubs,
-then copy the top bar and header from index.html to every other page (chrome propagation rule)."""
+then copy the top bar and header from index.html to every other page (chrome propagation rule).
+
+Corrected 9 Sep 2026: the service pattern accepts a block that already carries its id. The first version matched
+<div class="svc"> exactly, so a second run found no services and propagated empty menus to every page."""
 import re, glob, html
 ROOT='/home/user/spencer-alexander-site'
 HUBS={'commercial-law':('Commercial Law','All commercial law services'),'family-law':('Family Law','All family law services'),'wills-and-estates':('Wills &amp; Estates','All wills and estates services')}
@@ -9,8 +12,12 @@ for hub in HUBS:
     p=f'{ROOT}/{hub}.html'; s=open(p).read(); items=[]
     def add_id(m):
         title=re.sub('<[^>]+>','',m.group(2)).strip(); sid='svc-'+slug(title); items.append((sid,title))
-        return m.group(1).replace('<div class="svc">', f'<div class="svc" id="{sid}">')+m.group(2)+m.group(3)
-    s2=re.sub(r'(<div class="svc">\s*<h3[^>]*>)(.*?)(</h3>)', add_id, s, flags=re.S)
+        head=m.group(1)
+        if ' id="' not in head.split('>')[0]:
+            head=head.replace('<div class="svc">', f'<div class="svc" id="{sid}">',1)
+        return head+m.group(2)+m.group(3)
+    s2=re.sub(r'(<div class="svc"(?: id="[^"]*")?>\s*<h3[^>]*>)(.*?)(</h3>)', add_id, s, flags=re.S)
+    assert len(items)==6, f'{hub}: expected six services, found {len(items)}'
     if s2!=s: open(p,'w').write(s2)
     menus[hub]=items
     print(hub, len(items), 'services')

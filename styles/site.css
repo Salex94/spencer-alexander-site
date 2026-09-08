@@ -262,7 +262,7 @@ img { max-width: 100%; display: block; }
 /* ---- Services in detail ---------------------------------------------------- */
 .svc-head { margin-top: clamp(40px, 5vw, 64px); }
 .svc-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(32px, 4vw, 56px); }
-.svc { border-top: 1px solid var(--border-default); padding: 22px 0 26px; }
+.svc { border-top: 1px solid var(--border-default); padding: 22px 0 26px; scroll-margin-top: 96px; }
 .svc__title { font-family: var(--font-display); font-weight: var(--weight-medium); font-size: var(--text-lg); line-height: 1.25; color: var(--text-strong); }
 .svc p { font-size: var(--text-sm); line-height: 1.66; color: var(--text-body); margin-top: 10px; max-width: 56ch; }
 .svc p a { font-weight: var(--weight-semibold); }

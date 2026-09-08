@@ -67,6 +67,39 @@ founder nodes. The two unreferenced legacy staff photographs in assets
 (jordyn.png and katalin.png) were left in place: they are the owner's files
 and nothing links to them.
 
+A final verification fleet (SEO, GEO and technical critics, each finding
+put to a skeptic) then ran against the live site, and its upheld findings
+were fixed the same night. The one real defect was that the header
+practice menus were empty on every page: the propagation script matched
+service blocks without an id, the hubs already carried ids, so a second
+run built the menus with no service links and pushed them everywhere. The
+script now accepts either form and asserts six services per hub, and the
+gate's new check "practice menus list six services on every page" would
+have caught it. The other fixes: FAQ schema rebuilt from the visible
+question and answer pairs on the five articles where they had drifted, and
+the gate's FAQ equality check now covers every article and hub; the child
+support article's reforms paragraph no longer carries its own month; the
+contact page firm node carries the same areaServed and geo as the home
+page, and a gate check compares every #firm object against the home page
+node; the FAQ page's visible reviewed date, llms.txt's Last updated line
+and the insights Blog name now agree with the schema and the feed, with
+gate checks for each; the home page's practice section opens with the
+entity sentence the schema and llms.txt carry, so the one line a model
+would quote is visible; every article author node carries the LinkedIn
+sameAs (CLAUDE.md said the template did, and it did not), the resource
+page author has a jobTitle, and the founder node carries the portrait;
+every article carries article:published_time, article:modified_time,
+article:author and article:section, the feed carries dc:creator, and the
+Article nodes carry @id, url, isPartOf and wordCount with the insights
+listing retyped to match; the hub FAQPage nodes carry author, publisher,
+dateModified and a speakable pointing at the In brief sentence; llms.txt
+names the served suburbs and the two entity @ids; the home page head now
+carries the PNG favicon and apple touch icon like every other page; the
+service blocks carry a scroll margin so a menu deep link lands below the
+sticky header, stylesheet key v16; and _config.yml stops Pages serving the
+propagation and sitemap scripts and an unused image scaffold. The gate now
+runs 81 checks.
+
 Supersedes the 5 September reviews note below that Kathy S.'s "Really good
 lawyers!" was omitted because the firm has one lawyer: the owner has
 confirmed the firm has lawyers, so that review is accurate to quote and may
