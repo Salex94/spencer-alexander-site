@@ -35,9 +35,10 @@ What this script does:
     cream and brass over a soft feathered scrim): the name card over the
     opening seconds and, from 41.6 seconds, the phone number as the site
     writes it, "Your first call is free" and the web address.
- 5. A fade in from the site's wine, a dip to wine before the owner's card
-    (the master's own dissolve frames are skipped), the card fading in from
-    wine, and both encodes.
+ 5. A fade in from the site's wine, the last clean frame held while the
+    picture dips to wine so his final word finishes on screen, the owner's
+    card fading in from wine (the master's own dissolve frames are skipped),
+    and both encodes.
 
 Dependencies: numpy, opencv-python, Pillow, imageio-ffmpeg. The two font
 families are fetched into scripts/.cache/ on first run (git ignored). The
@@ -54,14 +55,15 @@ OUT = os.path.join(ROOT, "assets", "video")
 W, H, FPS = 1920, 1080, 30
 DIP = 0.3                    # seconds of fade to wine either side of the cut to the end card
 WINE = "0x1A070C"
-NAME_CARD = (0.4, 0.5, 5.4, 0.5)   # fade in start, length, fade out start, length
-CALL_CARD = (41.6, 0.5, 0.45)      # fade in start, length, fade out length (it ends 0.5 s before the dip)
+NAME_CARD = (1.0, 0.5, 5.6, 0.5)   # fade in start, length, fade out start, length
+CALL_CARD = (41.6, 0.5, 0.4)       # fade in start, length, fade out length (it leaves with the picture)
+HOLD = 0.4                   # the last clean frame is held this long and the dip to wine runs over the hold
 FONTS = {
     "Spectral-Medium.ttf": "https://raw.githubusercontent.com/google/fonts/main/ofl/spectral/Spectral-Medium.ttf",
     "LibreFranklin[wght].ttf": "https://raw.githubusercontent.com/google/fonts/main/ofl/librefranklin/LibreFranklin%5Bwght%5D.ttf",
 }
 GRADE = ("format=rgb24,colorchannelmixer=rr=0.93:rg=0.09:rb=0.02:gr=0.04:gg=0.96:gb=0.02:br=0.03:bg=0.06:bb=0.9,"
-         "vignette=angle=PI/5.4,eq=saturation=1.02:contrast=1.05:brightness=-0.02")
+         "vignette=angle=PI/4.4,eq=saturation=1.02:contrast=1.05:brightness=-0.02")
 
 
 def ffmpeg():
@@ -188,18 +190,18 @@ def lower_thirds(work):
         scrim = Image.new("L", (W, H), 0); ImageDraw.Draw(scrim).rounded_rectangle([x - 130, y - 70, right + 120, bottom + 80], radius=90, fill=118)
         dark = Image.new("RGBA", (W, H), (26, 12, 14, 0)); dark.putalpha(scrim.filter(ImageFilter.GaussianBlur(70)))
         Image.alpha_composite(dark, im).save(out)
-    card([("Spencer Alexander", spectral(74), cream, 0, 30), ("PRINCIPAL", franklin(26, 600), brass, 7, 22),
-          ("Spencer Alexander Lawyers, Box Hill", franklin(36, 400), soft, 0, 0)], os.path.join(work, "lt_name.png"))
-    card([("Speak with Spencer", spectral(66), cream, 0, 26), ("(03) 9125 8355", franklin(54, 500), cream, 2, 22),
-          ("YOUR FIRST CALL IS FREE", franklin(26, 600), brass, 7, 22), ("spenceralexander.com.au", franklin(36, 400), soft, 0, 0)],
+    card([("Spencer Alexander", spectral(88), cream, 0, 32), ("PRINCIPAL", franklin(30, 600), brass, 8, 24),
+          ("Spencer Alexander Lawyers, Box Hill", franklin(42, 400), soft, 0, 0)], os.path.join(work, "lt_name.png"))
+    card([("Speak with Spencer", spectral(80), cream, 0, 28), ("(03) 9125 8355", franklin(72, 600), cream, 2, 24),
+          ("YOUR FIRST CALL IS FREE", franklin(32, 600), brass, 8, 24), ("spenceralexander.com.au", franklin(46, 400), soft, 0, 0)],
          os.path.join(work, "lt_call.png"))
 
 
 def assemble(ff, src, work, a, patches, poster_at):
     os.makedirs(OUT, exist_ok=True)
     talk = a["talk_end"] / FPS; card_start = a["card_start"] / FPS; master = duration(ff, src)
-    total = round(talk + (master - card_start), 3)
-    n_in, n_len, n_out, n_olen = NAME_CARD; c_in, c_len, c_olen = CALL_CARD; c_out = round(talk - DIP - 0.5 - c_olen, 3)
+    total = round(talk + HOLD + (master - card_start), 3)
+    n_in, n_len, n_out, n_olen = NAME_CARD; c_in, c_len, c_olen = CALL_CARD; c_out = round(talk - c_olen, 3)
     (p1, x1, y1), (p2, x2, y2) = patches
     s1, s2 = a["segs"][0], a["segs"][1]
     graph = (f"[1:v]format=rgba[p1];[2:v]format=rgba[p2];"
@@ -209,10 +211,10 @@ def assemble(ff, src, work, a, patches, poster_at):
              f"[t0][p1]overlay={x1}:{y1}:enable='between(t,0,{round(s1[1] / FPS + 0.15, 3)})':shortest=1[t1];"
              f"[t1][p2]overlay={x2}:{y2}:enable='between(t,{round(s2[0] / FPS - 0.15, 3)},{talk})':shortest=1[t2];"
              f"[t2]{GRADE}[t3];[t3][n]overlay=0:0:shortest=1[t4];[t4][c]overlay=0:0:shortest=1,"
-             f"fade=t=in:st=0:d=0.5:color={WINE},fade=t=out:st={round(talk - DIP, 3)}:d={DIP}:color={WINE},format=yuv420p,fps={FPS}[talk];"
-             f"[5:v]setpts=PTS-STARTPTS,fps={FPS},fade=t=in:st=0:d={DIP}:color={WINE},format=yuv420p[cardv];"
+             f"tpad=stop_mode=clone:stop_duration={HOLD},fade=t=in:st=0:d=0.9:color={WINE},fade=t=out:st={talk}:d={HOLD}:color={WINE},format=yuv420p,fps={FPS}[talk];"
+             f"[5:v]setpts=PTS-STARTPTS,fps={FPS},fade=t=in:st=0:d=0.6:color={WINE},format=yuv420p[cardv];"
              f"[talk][cardv]concat=n=2:v=1:a=0,split=2[full][half];[half]scale=1280:-2[v720];"
-             f"[0:a]atrim=0:{total},afade=t=in:st=0:d=0.2,asplit=2[aud1][aud2]")
+             f"[0:a]atrim=0:{total},afade=t=in:st=0:d=0.04,asplit=2[aud1][aud2]")
     common = ["-c:v", "libx264", "-preset", "slow", "-profile:v", "high", "-pix_fmt", "yuv420p", "-r", str(FPS), "-movflags", "+faststart", "-c:a", "aac", "-ar", "48000", "-t", str(total)]
     loop = ["-loop", "1", "-framerate", str(FPS), "-i"]
     subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-i", src, *loop, p1, *loop, p2, *loop, os.path.join(work, "lt_name.png"), *loop, os.path.join(work, "lt_call.png"),
@@ -227,7 +229,7 @@ def assemble(ff, src, work, a, patches, poster_at):
 def main():
     if len(sys.argv) < 2:
         print(__doc__); return 2
-    src = os.path.abspath(sys.argv[1]); poster_at = float(sys.argv[2]) if len(sys.argv) > 2 else 14.0
+    src = os.path.abspath(sys.argv[1]); poster_at = float(sys.argv[2]) if len(sys.argv) > 2 else 14.6
     ff = ffmpeg(); ensure_fonts(); work = os.path.join(CACHE, "work"); os.makedirs(work, exist_ok=True)
     print("analysing"); a = analyse(src); print("  ", json.dumps(a))
     if len(a["segs"]) != 2:

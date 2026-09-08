@@ -13,6 +13,49 @@ Newest entries first.
 
 ---
 
+## 2026-09-09: Final copy pass in the firm voice, and the round published
+
+Melbourne date 9 September 2026. The last critique of the benchmark round
+(design, film, conversion and copy, each with adversarial refuters) found
+the firm voice sweep incomplete, and every upheld item was fixed before the
+round went live. The home page search snippet, the About sign off and FAQ
+question one had still promised the principal personally; they now say
+"Free first call with a lawyer, and a fee estimate before any work begins",
+"you will speak with a lawyer" and "you deal with the lawyers running your
+file, and the principal oversees every matter". The rail card bullet "Direct
+access to the principal throughout", a fourth service promise outside the
+agreed three, became the supervision fact already used on the home page,
+"Every matter overseen by the principal", on every hub, article, resource
+page and the template. The proof bar heading now names its subject,
+"Spencer has practised for more than ten years", because the bare "More
+than ten years in practice" read as the firm's age against the owner's
+5 Sep correction. The Professional Standards line left the statement fact
+list (a limitation of liability is not a credential; the footer carries the
+statement on every page) in favour of "Advice and court work in one firm".
+The three hub In brief sentences are back to "Box Hill, Melbourne law firm
+advising ... and acting in ..." with the right verb for each list, the
+family and commercial hero leads lost a verbless fragment and a dangling
+"it", the divorce article's superannuation sentence now says what it means
+(an existing nomination may still name the former partner, since divorce
+does not revoke a nomination automatically) and its two bolted on cross
+link sentences were merged into prose, llms.txt's Home and About lines were
+untangled, and the founder Person nodes on index.html and about.html carry
+"Principal" like every article author node.
+
+Because the whole round reached main on 9 September Melbourne, every
+article's dateModified and visible updated line, every sitemap lastmod, the
+faq.html dateModified and the film's uploadDate carry 2026-09-09. The four
+refuters of the design critique all upheld their findings (phone overflow
+from the outline call button, practice headings hidden on phones, the menu
+gap, the ghost shadow on the reviews band); each was already fixed in the
+working tree and is now live. Gate: 73 checks, 0 failed; images PASS;
+Google rating unchanged at 5.0.
+
+Supersedes the 5 September reviews note below that Kathy S.'s "Really good
+lawyers!" was omitted because the firm has one lawyer: the owner has
+confirmed the firm has lawyers, so that review is accurate to quote and may
+be used in a future reviews refresh.
+
 ## 2026-09-08 (evening): Firm voice, the film made seamless, second video assessed, top tier review
 
 The owner rejected the singular "One Melbourne lawyer" hero and repeated the
@@ -55,8 +98,12 @@ thirds in Spectral and Libre Franklin with airy spacing over a feathered
 scrim, the phone number written as the site writes it and "Your first call
 is free"; a fade in from wine, a dip to wine before the owner's card
 (skipping the master's own dissolve frames), and the card fading in from
-wine. Poster from 14 seconds, eyes to camera. Length 54 seconds, VideoObject
-PT54S, transcript updated. Two things bit during assembly and are worth
+wine. Poster from 14.6 seconds, eyes to camera between syllables. Length 54.6
+seconds, VideoObject PT54S, transcript updated. A final film critique
+added: the last clean frame is held for 0.4 seconds while the picture dips
+to wine so his last word finishes on screen, the vignette was halved, the
+cards were scaled up about a quarter so the number reads on a phone, the
+opening fade runs 0.9 seconds and the card fades in over 0.6. Two things bit during assembly and are worth
 knowing: overlays on looped images must carry shortest=1 or the talking
 branch never ends and the card never appears; and both branches must be
 normalised to 30 fps before concat. The matting pipeline for the wall
@@ -99,7 +146,8 @@ relevant official body's home page. A verifying workflow began this but at
 two agents at a time would have taken hours, so it was stopped after six
 articles and the remaining sentences were written from a fixed mapping of
 topic to body, then every Act and link sentence was checked by one
-verifying agent. Gate checks
+verifying agent, which confirmed all 38 against the official sites and
+changed nothing. Gate checks
 added in this round: "every article has related reading", "article read
 times match their length" and "FAQ schema answers match the visible
 answers". The header now carries practice menus and is propagated by

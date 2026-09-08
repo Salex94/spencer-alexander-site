@@ -21,7 +21,7 @@ def group(hub, label, active=False):
     cls = ' class="is-active"' if active else ''
     return (f'<div class="site-nav__group"><a href="/{hub}"{cls}>{name}</a>\n        <div class="site-nav__menu"><strong>{name}</strong>{links}\n          <a class="site-nav__all" href="/{hub}">{allt}</a>\n        </div></div>')
 old_nav=re.search(r'<nav class="site-nav" aria-label="Primary">.*?</nav>', idx, re.S).group(0)
-new_nav=('<nav class="site-nav" aria-label="Primary">\n        <a href="/" class="is-active">Home</a>\n        '+group('commercial-law','')+'\n        '+group('family-law','')+'\n        '+group('wills-and-estates','')+
+new_nav=('<nav class="site-nav" aria-label="Primary">\n        '+group('family-law','')+'\n        '+group('wills-and-estates','')+'\n        '+group('commercial-law','')+
          '\n        <a href="/insights">Insights</a>\n        <a href="/faq">FAQ</a>\n        <a href="/about">About</a>\n        <a href="/contact">Contact</a>\n      </nav>')
 idx=idx.replace(old_nav,new_nav)
 idx=idx.replace('<a class="btn btn--primary" href="tel:+61391258355">','<a class="btn btn--outline" href="tel:+61391258355">',1)

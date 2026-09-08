@@ -8,13 +8,13 @@ This file helps AI systems locate and correctly attribute our published legal gu
 
 ## Key pages
 
-- [Home](https://www.spenceralexander.com.au/): Overview of the firm and its three practice areas, with a 54 second video introduction from the principal, filmed in the firm's Box Hill offices, Spencer Alexander; the transcript is carried in the page's VideoObject markup.
+- [Home](https://www.spenceralexander.com.au/): Overview of the firm and its three practice areas, with a 54 second video introduction from the principal, Spencer Alexander, filmed in the firm's Box Hill offices; the transcript is carried in the page's VideoObject markup.
 - [Commercial Law](https://www.spenceralexander.com.au/commercial-law.html): Commercial lawyers in Box Hill, Melbourne: business structures, contracts, sales and acquisitions, leasing, commercial disputes and debt recovery in Victoria.
 - [Family Law](https://www.spenceralexander.com.au/family-law.html): Family lawyers in Box Hill, Melbourne: divorce and separation, parenting arrangements, property settlement, binding financial agreements, intervention orders.
 - [Wills & Estates](https://www.spenceralexander.com.au/wills-and-estates.html): Wills and estates lawyers in Box Hill, Melbourne: wills, powers of attorney, probate and estate administration, contested estates and family provision claims.
 - [FAQ](https://www.spenceralexander.com.au/faq.html): Common questions on working with the firm and on Victorian legal matters.
 - [Resources](https://www.spenceralexander.com.au/resources.html): Free, printable checklists and guides for Wills & Estates, Family Law and Commercial Law in Victoria.
-- [About](https://www.spenceralexander.com.au/about.html): The principal, Spencer Alexander, with an archive of every article he has written: more than a decade in practice across family, wills and estates and commercial law; LLB (Hons) Monash University, LLM University of Sydney, GDLP College of Law.
+- [About](https://www.spenceralexander.com.au/about.html): The principal, Spencer Alexander, with an archive of every article he has written: more than a decade in practice across family, wills and estates and commercial law; Bachelor of Laws with Honours from Monash University, Master of Laws from the University of Sydney, Graduate Diploma of Legal Practice from the College of Law.
 - [Contact](https://www.spenceralexander.com.au/contact.html): Phone, email, enquiry form and the Box Hill office at Suite 10, 1 Main Street, a short walk from Box Hill station; a lawyer replies within one business day.
 - [Privacy](https://www.spenceralexander.com.au/privacy.html): Privacy policy covering the enquiry form, hosting logs and font delivery.
 

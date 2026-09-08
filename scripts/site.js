@@ -232,3 +232,8 @@
     });
   }
 })();
+
+  // Contents list: open on wide screens, collapsed on phones so the answer comes first
+  if (window.matchMedia("(min-width: 880px)").matches) {
+    Array.prototype.forEach.call(document.querySelectorAll("details.article-toc"), function (d) { d.open = true; });
+  }

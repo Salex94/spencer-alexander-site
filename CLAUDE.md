@@ -483,6 +483,17 @@ conventions came out of that round.
   caution about "our lawyers": the owner has confirmed the firm has
   lawyers, so the plural is the accurate form. On phones the text block
   comes before the portrait so the promise is on the first screen.
+  Fixed forms that carry the voice (9 Sep 2026): the rail card bullet on
+  every hub, article and resource page is "Every matter overseen by the
+  principal", never a promise of access to him; the proof bar names its
+  subject, "Spencer has practised for more than ten years"; the home
+  description is "Box Hill, Melbourne lawyers for Family Law, Wills and
+  Estates and Commercial Law. Free first call with a lawyer, and a fee
+  estimate before any work begins."; FAQ question one and the About sign
+  off say you speak with a lawyer; the founder Person nodes on index.html
+  and about.html say "Principal", matching every article author node. Only
+  three service promises exist: the free first call, the one business day
+  reply and after hours contact for urgent matters. Do not add a fourth.
 - **Box Hill first, Melbourne second.** Hub titles and h1s lead with Box
   Hill ("Family Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers", h1
   "Family Lawyers in Box Hill, Melbourne"); the locality sentence on each hub
@@ -524,7 +535,7 @@ conventions came out of that round.
   card and fades the card in from wine. Overlays on looped images must carry
   shortest=1 and both branches must be 30 fps before concat, or the card
   never appears. The film is 54 seconds; VideoObject duration PT54S,
-  uploadDate 2026-09-08, transcript on index.html. The poster is the 14
+  uploadDate 2026-09-09, transcript on index.html. The poster is the 14.6
   second frame. No captions are added: the owner rejected added subtitles
   on 5 Sep 2026. The first cut and its matting pipeline are in git history
   at f106992.
