@@ -42,7 +42,7 @@ def article_photos():
         # 15 Aug 2026; the old .html form is still accepted) shortly followed
         # by its <img>.
         for m in re.finditer(
-            r'href="/?(insight-[^"#?]+?)(?:\.html)?"[\s\S]{0,400}?src="assets/photos/([^"]+)"',
+            r'href="/?(insight-[^"#?]+?)(?:\.html)?"[\s\S]{0,600}?src="assets/photos/([^"]+)"',
             html,
         ):
             used[stem(m.group(2))].add(m.group(1) + ".html")

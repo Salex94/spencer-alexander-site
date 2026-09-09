@@ -575,7 +575,16 @@ conventions came out of that round.
   while the menu is open (`body.menu-open`); a print stylesheet lives in
   site.css; `.mobile-menu a.mobile-menu__call` carries the button colours
   because the menu's link rule outranks `.btn--primary`. Keys: site.css
-  v17, styles.css v7, site.js v12.
+  v18, styles.css v7, site.js v12.
+- **WebP for every inline photograph (9 Sep 2026).** Each in-page
+  `<img src="assets/....jpg">` sits inside
+  `<picture><source type="image/webp" srcset="assets/....webp"><img ...></picture>`,
+  the JPEG staying the canonical file for og:image, the schema image and
+  the uniqueness check. After adding a photograph run
+  `python3 scripts/make-webp.py` to write the sibling; the gate check
+  "every in-page photograph has a WebP sibling" blocks a publish without
+  it. The film's poster and end cards stay JPEG (they load through
+  script, not through a picture element).
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 

@@ -516,6 +516,22 @@ def main():
             og_bad.append(f)
     check("Open Graph article dates match the Article schema", not og_bad, ", ".join(og_bad[:3]))
 
+    # Every inline photograph is served as WebP with the JPEG as fallback
+    # (9 Sep 2026: about half the image bytes above the fold). scripts/make-webp.py
+    # writes the siblings; the <picture> form is in the template.
+    webp_bad = []
+    for f in sorted(glob.glob("*.html")):
+        h = read(f)
+        for m in re.finditer(r'<img\b[^>]*\ssrc="(assets/[^"]+\.(?:jpg|jpeg|png))"', h):
+            src = m.group(1)
+            if src.startswith("assets/video/"):
+                continue
+            sib = src.rsplit(".", 1)[0] + ".webp"
+            before = h[max(0, m.start() - 600):m.start()]
+            if not os.path.exists(sib) or ('srcset="%s"' % sib) not in before:
+                webp_bad.append("%s %s" % (f, src))
+    check("every in-page photograph has a WebP sibling", not webp_bad, "; ".join(webp_bad[:3]))
+
     # Google rating markup: every page that shows the rating must show the same
     # number, in the shape scripts/refresh-google-rating.py rewrites, and no
     # page may state the number of reviews (owner instruction, 5 Sep 2026).

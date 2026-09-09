@@ -160,9 +160,24 @@ Refuted or left alone: the blanket 9 September updated dates stand (the
 round rewrote every lead and rail, which is a modification); the three
 early articles keep their statement headings (their leads and FAQ pairs
 already answer first); the contact office block already carried a Get
-directions link; the secondary page H1s keep their register. Next
-generation image formats were measured at about half the above the fold
-image bytes and are recorded below when applied.
+directions link; the secondary page H1s keep their register.
+
+Next generation images. Every inline photograph now has a WebP sibling
+(quality 78, method 6, written by `scripts/make-webp.py`) and sits inside
+a `<picture>` whose first source is the WebP and whose `<img>` keeps the
+JPEG, its alt, dimensions, loading and fetchpriority attributes; the hero
+portrait's picture carries WebP sources for both the phone crop and the
+desktop crop ahead of the JPEG ones. Measured across the 38 photographs
+the pages show: 3.3 MB of JPEG becomes 1.5 MB of WebP, a 55 percent cut,
+and the home page's first screen halves its image bytes (127 KB for four
+images on desktop, 27 KB on a phone). The portrait at 2x was compared
+crop for crop and is indistinguishable. `picture` is `display: contents`
+so every existing image rule still reaches the img. The JPEGs remain the
+canonical files: og:image, the schema image, the photograph uniqueness
+check and the film's poster and end cards are untouched. The gate check
+"every in-page photograph has a WebP sibling" fails when a photograph is
+added without one, and the listing card window in check-article-images.py
+was widened from 400 to 600 characters to see past the picture wrapper.
 
 Supersedes the 5 September reviews note below that Kathy S.'s "Really good
 lawyers!" was omitted because the firm has one lawyer: the owner has
