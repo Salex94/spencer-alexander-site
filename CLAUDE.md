@@ -556,6 +556,26 @@ conventions came out of that round.
   articles open with an "In this article" contents list; every article ends
   with related reading and shows its updated date. Keep new work inside
   this vocabulary.
+- **Verification round conventions (9 Sep 2026).** The propagation script
+  asserts six services per hub and the gate checks every page's practice
+  menus carry them; FAQ schema must equal the visible question and answer
+  pairs on every article and hub, not only faq.html; every "as at Month
+  YYYY" inside an article must match its currency line; every JSON-LD
+  object carrying the #firm @id must agree with the index.html node; the
+  FAQ page's visible reviewed date, the FAQPage nodes' dateModified and the
+  llms.txt Last updated line must match the sitemap; Open Graph article
+  dates must equal the Article schema dates. Article nodes carry @id
+  (`<url>#article`), url, isPartOf the website node and wordCount, and
+  the insights listing uses the same @ids typed Article. Home title
+  "Lawyers in Box Hill, Melbourne | Spencer Alexander Lawyers". Form focus
+  is a 3 pixel wine outline, never a box shadow; every id has a 100 pixel
+  scroll margin; smooth scrolling applies to `html:focus-within` only;
+  the reveal effect never touches first screen content; the phone call
+  bar hides while the hero call button is visible (`body.cta-visible`) and
+  while the menu is open (`body.menu-open`); a print stylesheet lives in
+  site.css; `.mobile-menu a.mobile-menu__call` carries the button colours
+  because the menu's link rule outranks `.btn--primary`. Keys: site.css
+  v17, styles.css v7, site.js v12.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 

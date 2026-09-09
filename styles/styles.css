@@ -124,7 +124,7 @@
 :root {
   /* Families */
   --font-display: 'Spectral', 'Spectral Fallback', 'Iowan Old Style', Georgia, serif;
-  --font-serif:   'Spectral', Georgia, 'Times New Roman', serif;
+  --font-serif:   'Spectral', 'Spectral Fallback', Georgia, 'Times New Roman', serif;
   --font-sans:    'Libre Franklin', 'Libre Franklin Fallback', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono:    'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 

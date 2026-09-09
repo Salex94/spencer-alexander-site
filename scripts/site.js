@@ -1,4 +1,4 @@
-/* Spencer Alexander Lawyers, small site behaviours (v3) */
+/* Spencer Alexander Lawyers, small site behaviours (v4) */
 (function () {
   "use strict";
   document.documentElement.classList.add("js");
@@ -6,16 +6,33 @@
   var toggle = document.querySelector("[data-nav-toggle]");
   var menu = document.getElementById("mobile-menu");
   if (toggle && menu) {
-    toggle.addEventListener("click", function () {
-      var open = menu.classList.toggle("is-open");
+    var setMenu = function (open) {
+      menu.classList.toggle("is-open", open);
+      document.body.classList.toggle("menu-open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    });
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    };
+    toggle.addEventListener("click", function () { setMenu(!menu.classList.contains("is-open")); });
     menu.addEventListener("click", function (e) {
-      if (e.target.closest("a")) {
-        menu.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
-      }
+      if (e.target.closest("a")) setMenu(false);
     });
+    document.addEventListener("click", function (e) {
+      if (menu.classList.contains("is-open") && !menu.contains(e.target) && !toggle.contains(e.target)) setMenu(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape") return;
+      if (menu.classList.contains("is-open")) { setMenu(false); toggle.focus(); return; }
+      // Desktop practice menus open on focus within the group; blurring the link closes them
+      var group = document.activeElement && document.activeElement.closest && document.activeElement.closest(".site-nav__group");
+      if (group) document.activeElement.blur();
+    });
+  }
+  // The fixed call bar on phones steps aside while the hero's own call button is on screen, and while the menu is open
+  var heroCta = document.querySelector(".hero .btn--accent, .pagehero .btn--accent");
+  if (heroCta && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (entries) {
+      document.body.classList.toggle("cta-visible", entries[0].isIntersecting);
+    }).observe(heroCta);
   }
   // Current year in footer
   var y = document.querySelector("[data-year]");
@@ -60,17 +77,17 @@
         }, 980);
       };
       var vh = window.innerHeight || document.documentElement.clientHeight;
-      var onScreen = [];
+      // Anything already on the first screen paints complete; only what sits below gets the entrance
+      revealEls = revealEls.filter(function (el) {
+        var r = el.getBoundingClientRect();
+        return !(r.top < vh * 0.96 && r.bottom > 0);
+      });
       revealEls.forEach(function (el) {
         el.classList.add("reveal");
         var i = 0, sib = el;
         while ((sib = sib.previousElementSibling)) { if (sib.classList.contains("reveal")) i++; }
         el.style.transitionDelay = Math.min(i, 5) * 70 + "ms";
-        var r = el.getBoundingClientRect();
-        if (r.top < vh * 0.96 && r.bottom > 0) { onScreen.push(el); }
       });
-      // Reveal anything already in view on the next frame, no dependence on IO for first paint
-      requestAnimationFrame(function () { requestAnimationFrame(function () { onScreen.forEach(finish); }); });
       var ioFired = false;
       var io = new IntersectionObserver(function (entries) {
         ioFired = true;
@@ -188,8 +205,9 @@
       if (pick) video.src = pick;
     };
     var loadCard = function () {
-      if (!card || card.getAttribute("src")) return;
+      if (!card || card.hasAttribute("data-loaded")) return;
       var small = card.getAttribute("data-src-small");
+      card.setAttribute("data-loaded", "");
       card.src = small && card.clientWidth < 700 ? small : card.getAttribute("data-src");
     };
     var leaveNativeSurfaces = function () {
@@ -203,9 +221,17 @@
     };
     var start = function () {
       pickSource();
+      video.setAttribute("controls", "");
       quiet(video.play());
       video.focus({ preventScroll: true });
     };
+    // If the file cannot play, the overlay comes back so the visitor can try again
+    video.addEventListener("error", function () {
+      film.classList.remove("is-playing", "is-ended");
+      video.removeAttribute("controls");
+      if (after) after.hidden = true;
+      chosen = false;
+    });
     if (playBtn) playBtn.addEventListener("click", start);
     // The play event is the one place that sets the playing state, however playback was resumed
     video.addEventListener("play", function () {

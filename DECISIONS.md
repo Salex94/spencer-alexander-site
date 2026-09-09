@@ -100,6 +100,70 @@ sticky header, stylesheet key v16; and _config.yml stops Pages serving the
 propagation and sitemap scripts and an unused image scaffold. The gate now
 runs 81 checks.
 
+### The verification round, 9 September 2026
+
+Three critics (SEO, GEO and technical) read the finished site and a skeptic
+was set on every finding; the usage limit cut most of the skeptics off, so
+the technical items were checked by hand in Playwright instead. Applied and
+verified:
+
+Header practice menus. The propagation script's service pattern matched
+`<div class="svc">` exactly, so once the hubs carried their ids a second run
+found no services and pushed empty menus to every page; nobody noticed for
+a day. The pattern now accepts an existing id, the script asserts six
+services per hub, and the gate check "practice menus list six services on
+every page" fails if a menu ever empties again. Service anchors carry a
+scroll margin so a deep link lands below the sticky header.
+
+Schema and answer engine surfaces. FAQ schema is rebuilt from the visible
+question and answer pairs on every article (five had drifted, one carried
+four schema questions against two visible pairs) and the gate now compares
+them site wide, hubs included. Hub FAQPage nodes carry author, publisher,
+dateModified and a speakable pointer at the In brief sentence; faq.html's
+points at its lead. Every article node carries an @id, url, isPartOf the
+website node and wordCount, and the insights listing is typed Article with
+the same @ids. Author nodes carry the LinkedIn sameAs, the resource page's
+author its job title. Open Graph article dates and section are on every
+article and the feed carries dc:creator. The contact page firm node matches
+the home page node on areaServed and geo, and a gate check compares every
+#firm object across the site. The home page states in visible text what
+the firm is (the practice areas lead is the entity sentence). The home
+title is "Lawyers in Box Hill, Melbourne | Spencer Alexander Lawyers" and
+the share titles carry Box Hill, matching the hubs' pattern. The FAQ page's
+reviewed date, llms.txt's Last updated line and the insights blog name were
+aligned, with gate checks for the dates. The child support article's
+reforms paragraph no longer states a second currency month; a gate check
+now requires every "as at Month YYYY" in an article to match its currency
+line. Internal tooling in scripts/ is excluded from the published site.
+
+Technical finish. The mobile menu's call button had dark text on the wine
+ground because the menu's generic link rule outranked the button's colour
+(pre-existing, fixed with a more specific rule) and it overflowed the phone
+by its side margins. Form fields have a 3 pixel wine focus outline and a
+darker resting border for non text contrast. Every id and form field has a
+scroll margin, and smooth scrolling now applies only to in page interaction
+so a deep link does not glide for a second on load. The film player sets
+controls before it takes focus so keyboard users keep their place, and an
+error path returns the play overlay. The scroll reveal skips anything on
+the first screen, so the About portrait and the contact form paint at
+once. Without script the insights page shows every article and the film
+band shows the poster. A print stylesheet hides the chrome and prints the
+dark heroes dark on white. The phone call bar steps aside while the hero's
+own call button is on screen and while the menu is open. The resource
+checklist's checkboxes are labelled, the pills carry role group, the film
+card has a placeholder src, the 404 page's SVG icon is root relative, the
+header no longer blurs its backdrop, and the serif lead face has a metric
+matched fallback. Stylesheet keys are site.css v17, styles.css v7 and
+site.js v12.
+
+Refuted or left alone: the blanket 9 September updated dates stand (the
+round rewrote every lead and rail, which is a modification); the three
+early articles keep their statement headings (their leads and FAQ pairs
+already answer first); the contact office block already carried a Get
+directions link; the secondary page H1s keep their register. Next
+generation image formats were measured at about half the above the fold
+image bytes and are recorded below when applied.
+
 Supersedes the 5 September reviews note below that Kathy S.'s "Really good
 lawyers!" was omitted because the firm has one lawyer: the owner has
 confirmed the firm has lawyers, so that review is accurate to quote and may

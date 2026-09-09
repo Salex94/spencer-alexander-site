@@ -6,7 +6,7 @@
 :root {
   /* Families */
   --font-display: 'Spectral', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
-  --font-serif:   'Spectral', Georgia, 'Times New Roman', serif;
+  --font-serif:   'Spectral', 'Spectral Fallback', Georgia, 'Times New Roman', serif;
   --font-sans:    'Libre Franklin', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono:    'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
