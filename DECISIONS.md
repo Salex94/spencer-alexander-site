@@ -13,6 +13,26 @@ Newest entries first.
 
 ---
 
+## 2026-09-11: Demand scan; backlog refreshed, four FAQ entries added
+
+Friday demand scan (Melbourne date 11 September 2026).
+`scripts/content-backlog.md` refreshed: Wills and Estates is due Monday
+14 Sep and the attorney misuse article (item 1) is the recommended topic,
+with public trustee versus lawyer as the alternative; the Victorian
+government's own coercive control Bill (introduced August 2026, still not
+law) is logged as a status change and stays tracked, not actioned as an
+article. Four FAQ entries added to faq.html with matching FAQPage JSON-LD
+(43 questions total): unfair contract terms (Commercial Law), coercive
+control status (Family Law), trustee company versus lawyer for a will and
+what an executor can do while waiting for probate (Wills and Estates). The
+coercive control answer says Parliament is considering a standalone
+offence; refresh it when the Bill passes. faq.html reviewed date,
+FAQPage dateModified, sitemap lastmod and llms.txt Last updated all moved
+to 2026-09-11. Gates pass; published direct to main per the routine's
+owner permission paragraph.
+
+---
+
 ## 2026-09-09: Final copy pass in the firm voice, and the round published
 
 Melbourne date 9 September 2026. The last critique of the benchmark round
