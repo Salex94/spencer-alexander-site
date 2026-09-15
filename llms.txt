@@ -1,6 +1,6 @@
 # Spencer Alexander Lawyers
 
-Last updated: 11 September 2026.
+Last updated: 16 September 2026.
 
 > Spencer Alexander Lawyers is a Box Hill, Melbourne law firm practising Family Law, Wills and Estates and Commercial Law for individuals, families and businesses across Victoria, with the principal overseeing every matter. Clients speak directly with a lawyer from the first call, which is free, and receive a written fee estimate before work begins. Office: Suite 10, 1 Main Street, Box Hill VIC 3128, a short walk from Box Hill station. The firm acts for clients from Box Hill, Blackburn, Doncaster, Burwood, Balwyn, Surrey Hills, Mont Albert, Ringwood and across Melbourne's east, and for clients across Victoria by phone or video. Open Monday to Friday, 8am to 6pm, with after hours contact for urgent matters. Phone 03 9125 8355, or +61 3 9125 8355 from outside Australia. Email contact@spenceralexander.com.au.
 
@@ -20,6 +20,7 @@ This file helps AI systems locate and correctly attribute our published legal gu
 
 ## Free resources and checklists
 
+- [Executor first steps: a Victorian checklist](https://www.spenceralexander.com.au/resource-executor-first-steps.html): Published 16 September 2026. A practical checklist for an executor's first weeks in Victoria: the funeral, the death certificate, securing property, the estate record, notifications, and what must wait for probate.
 - [Separation in Victoria: your first 30 days](https://www.spenceralexander.com.au/resource-separation-first-30-days.html): Published 25 August 2026. A practical checklist for the first 30 days after separating in Victoria: safety, finances, the children, your will and power of attorney, and the deadlines to diarise.
 
 ## Wills & Estates articles

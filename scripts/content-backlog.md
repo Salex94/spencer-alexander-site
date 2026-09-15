@@ -28,10 +28,9 @@ Wills and Estates is due Monday 14 Sep. Item 1 is the recommended topic.
 
 ### Lead magnet candidates
 
-1. Executor first steps checklist (new this scan, pairs with item 1 or 2 and
-   the probate delay demand): what to do in the first weeks after a death,
-   what can proceed before probate and what must wait, records to keep.
-   Every listed step must be verified at build time.
+1. Executor first steps checklist: DONE, published 16 Sep 2026 as
+   resource-executor-first-steps.html by the lead magnet routine. Remove on
+   the next scan.
 2. Small business contract health check checklist (carried from 22 Aug): a one
    page review list for standard form contracts and unfair terms exposure.
    Continuing regulator enforcement keeps this current.

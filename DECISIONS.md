@@ -13,6 +13,44 @@ Newest entries first.
 
 ---
 
+## 2026-09-16: Executor first steps checklist published (fortnightly lead magnet)
+
+Wednesday lead magnet run, Melbourne date 16 September 2026. Fortnight gate
+open: the only prior resource carries datePublished 2026-08-25, 22 days
+earlier, and no unmerged resource sits on any branch or open PR.
+Topic taken from the backlog's lead magnet candidate 1 (executor first
+steps, new in the 11 Sep scan): `resource-executor-first-steps.html`,
+"Executor first steps: a Victorian checklist", HowTo JSON-LD, eight steps
+covering the first weeks after a death, two checkable lists (estate record
+and notifications), scoped to the pre-probate practicalities so it does
+work the executor duties article explains. Every legal claim hedged and
+consistent with the live faq.html and articles; no figures, statutes or
+case names. og:image is its own Unsplash photograph
+(photo-1517842645767, fountain pen on a notebook, visually inspected at
+the 1200 by 630 crop; the three spare photos in assets/photos suit real
+estate or motivational subjects, not this). No in-page photograph, matching
+the first resource.
+
+Wired in: resources hub card (first in the grid, hero lead now says two
+checklists), wills-and-estates.html related reading before the All insights
+line, neutral cross links from the probate, executor duties and
+superannuation death benefits articles (navigation only, their
+dateModified deliberately unchanged per the 18/24 Aug and 8 Sep precedent),
+one linking sentence added to the faq.html "waiting for probate" answer
+(schema and visible kept equal; faq reviewed date, FAQPage dateModified and
+sitemap lastmod all moved to 2026-09-16), sitemap entry lastmod 2026-09-16,
+resources.html lastmod bumped, llms.txt entry and Last updated 16 September
+2026. Gates: check-publish 92 checks 0 failed, check-article-images PASS,
+Google rating unchanged at 5.0. Published direct to main per the routine's
+owner permission paragraph.
+
+Flagged to the owner in the run report: the Monday 14 September article
+did not appear (newest commit on main before this run was the 11 Sep
+demand scan; newest article remains 7 Sep). The Monday routine may have
+failed or not fired; the owner should check its run history.
+
+---
+
 ## 2026-09-11: Demand scan; backlog refreshed, four FAQ entries added
 
 Friday demand scan (Melbourne date 11 September 2026).
