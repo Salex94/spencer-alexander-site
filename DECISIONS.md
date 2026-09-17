@@ -13,6 +13,32 @@ Newest entries first.
 
 ---
 
+## 2026-09-18: Demand scan; backlog refreshed, coercive control FAQ updated, two FAQ entries added
+
+Friday demand scan (Melbourne date 18 September 2026).
+`scripts/content-backlog.md` refreshed: Wills and Estates is due Monday
+21 Sep (the Monday 14 Sep article never appeared, re-flagged to the owner)
+and the attorney misuse article (item 1) remains the recommended topic. The
+week's defining signal: the Victorian Parliament passed the government's
+family violence reforms on 10 September 2026 (confirmed on the Premier's
+media release), creating a standalone coercive control offence for intimate
+partner relationships with commencement reported for 2028. The faq.html
+coercive control answer was refreshed for accuracy per the 11 Sep note
+("refresh it when the Bill passes"): it now says the legislation has
+passed, is not yet in force and commencement is expected in 2028, with the
+penalty deliberately unstated because reported figures vary between the
+bills. The coercive control article is now an actionable update candidate
+for Monday 28 Sep when Family Law is next due. Two FAQ entries added with
+matching FAQPage JSON-LD (45 questions total): the time limit for a
+property settlement after separation (Family Law) and contesting a will
+versus challenging its validity (Wills and Estates), both answered entirely
+from facts the divorce, de facto and contesting articles already state.
+faq.html reviewed date, FAQPage dateModified, sitemap lastmod and llms.txt
+Last updated all moved to 2026-09-18. Gates pass; published direct to main
+per the routine's owner permission paragraph.
+
+---
+
 ## 2026-09-16: Executor first steps checklist published (fortnightly lead magnet)
 
 Wednesday lead magnet run, Melbourne date 16 September 2026. Fortnight gate
