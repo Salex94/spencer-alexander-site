@@ -13,6 +13,35 @@ Newest entries first.
 
 ---
 
+## 2026-09-21: Power of attorney misuse article published
+
+Monday article for 21 Sep 2026 Melbourne (confirmed via `TZ=Australia/Melbourne
+date`). Rotation: Wills and Estates was due (Commercial 7 Sep, Family 31 Aug,
+W&E 24 Aug) and the 18 Sep backlog's item 1 recommended exactly this topic, so
+the backlog was followed: `insight-power-of-attorney-misuse.html`, "Misuse of
+a power of attorney in Victoria: what can you do?". Not a rehash: the enduring
+powers of attorney article covers appointment and safeguards and gives misuse
+one paragraph, and faq.html has one short entry; this article covers the
+attorney's duties, the warning signs, VCAT review and revocation, compensation
+and recovery, the criminal offences and the practical first steps, and links
+both sibling articles. Verification: legislation sites remain blocked; the
+section 135 offences (dishonestly obtaining or using an enduring power of
+attorney) were confirmed this run via an AustLII search result naming the
+section, and every other legal claim either already stands on the live site
+or was generalised. Kept general: who may apply to VCAT ("can generally
+apply"), the compensation time limit after the principal's death ("strict
+time considerations can apply"), revocation formalities, all penalties and
+section numbers. Photo: new Unsplash photo-1521791055366-0d553872125f (a hand
+signing a formal document with a fountain pen), visually inspected at the
+800 by 500 crop; the three spares (motivational letter board, two houses) do
+not suit the subject. The stem differs from the existing 1521791136064
+handshake photograph and the two are visibly different photos. Gates:
+check-publish 92 checks 0 failed, check-article-images PASS, Google rating
+unchanged at 5.0. Published direct to main per the routine's owner permission
+paragraph.
+
+---
+
 ## 2026-09-18: Demand scan; backlog refreshed, coercive control FAQ updated, two FAQ entries added
 
 Friday demand scan (Melbourne date 18 September 2026).

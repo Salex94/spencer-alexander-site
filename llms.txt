@@ -1,6 +1,6 @@
 # Spencer Alexander Lawyers
 
-Last updated: 18 September 2026.
+Last updated: 21 September 2026.
 
 > Spencer Alexander Lawyers is a Box Hill, Melbourne law firm practising Family Law, Wills and Estates and Commercial Law for individuals, families and businesses across Victoria, with the principal overseeing every matter. Clients speak directly with a lawyer from the first call, which is free, and receive a written fee estimate before work begins. Office: Suite 10, 1 Main Street, Box Hill VIC 3128, a short walk from Box Hill station. The firm acts for clients from Box Hill, Blackburn, Doncaster, Burwood, Balwyn, Surrey Hills, Mont Albert, Ringwood and across Melbourne's east, and for clients across Victoria by phone or video. Open Monday to Friday, 8am to 6pm, with after hours contact for urgent matters. Phone 03 9125 8355, or +61 3 9125 8355 from outside Australia. Email contact@spenceralexander.com.au.
 
@@ -25,6 +25,7 @@ This file helps AI systems locate and correctly attribute our published legal gu
 
 ## Wills & Estates articles
 
+- [Misuse of a power of attorney in Victoria: what can you do?](https://www.spenceralexander.com.au/insight-power-of-attorney-misuse.html): Published 21 September 2026. What to do when an attorney is misusing a power of attorney in Victoria: the duties an attorney owes, the warning signs, VCAT review, revocation and compensation, and when misuse is a crime.
 - [Fraudulent calumny in Victoria: can a lie invalidate a will?](https://www.spenceralexander.com.au/insight-fraudulent-calumny-victoria.html): Published 24 August 2026. Fraudulent calumny is emerging as a ground to challenge a will in Victoria, where deliberate lies shaped what the will maker decided. What it means and how to respond.
 - [Advance care directives in Victoria: who decides if you cannot](https://www.spenceralexander.com.au/insight-advance-care-directives-victoria.html): Published 10 August 2026. How advance care directives work in Victoria: instructional and values directives, appointing a medical treatment decision maker, and who decides if you have not.
 - [Guardianship and administration orders in Victoria: what happens without a power of attorney](https://www.spenceralexander.com.au/insight-guardianship-administration-orders.html): Published 27 July 2026. When someone loses capacity without an enduring power of attorney, VCAT can appoint a guardian or administrator. Here is how the process works in Victoria.
