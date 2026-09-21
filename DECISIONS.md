@@ -13,6 +13,42 @@ Newest entries first.
 
 ---
 
+## 2026-09-22: Weekly SEO and GEO audit; three cross links to the new article, site otherwise clean
+
+Full sweep of all 44 HTML pages the day after the power of attorney misuse
+article went live. Clean across the board: every internal link resolves, no
+orphan pages, one h1 per page with no heading jumps, all 117 JSON-LD blocks
+parse with complete Article and BreadcrumbList nodes, every indexable page
+carries a unique title and a unique description inside 120 to 160 characters,
+canonical and og:url agree on every page, the sitemap covers the indexable set
+with no dead entries, feed.xml is well formed and current at 30 items,
+llms.txt covers every article and resource, robots.txt is still permissive to
+AI crawlers, every image carries honest alt text and explicit dimensions, and
+the 21 Sep article is wired into all eight surfaces. Both gates pass
+(check-publish 92 checks 0 failed, check-article-images PASS, 3 spares).
+
+Tier 1 fix applied: the new article had the usual cold start, two inbound
+pages and no in body links from its closest relatives. Three neutral cross
+links added, from the faq.html attorney misuse answer (existing words wrapped
+in the link, so the visible text still equals the FAQPage schema text), from
+the "Safeguards against misuse" section of
+insight-enduring-powers-of-attorney.html, and from the accountability
+paragraph of insight-guardianship-administration-orders.html. It now has five
+inbound pages. dateModified and sitemap lastmod deliberately unchanged on all
+three (navigation only edits, same reasoning as the 18 and 24 Aug and the 1,
+8 and 16 Sep audits). No legal claim was introduced, strengthened or altered,
+and no surrounding sentence was rewritten.
+
+Noted, unchanged: four titles sit at 71 characters, within "about 70" by the
+5 Sep precedent. The unreferenced legacy images (jordyn.png 719 KB,
+katalin.png 650 KB, principal-portrait.jpg 311 KB) and the five spare
+photographs are never served to a visitor, so they cost repository size only
+and stay per earlier notes. The 8 Sep flag about plural wording in the hub
+meta descriptions is now resolved and was not re-raised: the owner confirmed
+on 8 Sep that the firm has lawyers, so the plural is the accurate form.
+
+---
+
 ## 2026-09-21: Power of attorney misuse article published
 
 Monday article for 21 Sep 2026 Melbourne (confirmed via `TZ=Australia/Melbourne
