@@ -13,3 +13,5 @@ exclude:
 - scripts/propagate-chrome.py
 - scripts/sync-sitemap-dates.py
 - scripts/image-slot.js
+- playbooks
+- scripts/accuracy-ledger.md

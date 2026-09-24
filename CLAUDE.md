@@ -44,6 +44,17 @@ a conversation will be lost.
 instructions, corrections and open items, newest first, and it carries context
 that this file's rules alone do not explain.
 
+**Routine playbooks, from 24 Sep 2026.** The four routines that work on this
+repository, the Monday article, the Tuesday site accuracy and health routine,
+the Wednesday service pages routine and the Friday demand scanner, now have
+short pasted launchers that read their full instructions from `playbooks/` on
+main, which `_config.yml` keeps off the public website. The routine prompt
+described in point 1 above is therefore a launcher, and structural changes to
+a job belong in its playbook, where they go live on the next run with nothing
+pasted. The service pages routine builds nothing until Spencer approves a page
+in a session. The lead magnet factory was retired the same day and its routine
+now runs service pages; the two published resources stay.
+
 ## Melbourne dates, always (owner rule, 27 Aug 2026)
 
 Every scheduled run fires while UTC is still the previous day (Monday 6:00am
@@ -243,6 +254,15 @@ cards by the clean href form and still accepts the old `.html` form.
   numbers or figures. If a specific is not certain, generalise it — the article
   must stay useful without it. Figures that index annually (thresholds, minimum
   rates, fee scales) are safest omitted.
+- **Primary legislation is reachable, from 24 Sep 2026.** `legislation.vic.gov.au`
+  and `legislation.gov.au` now return the authorised versions of Victorian and
+  Commonwealth Acts from the automated environment: the Victorian site links a
+  .docx or .pdf of each version, and the Commonwealth text pages and its API at
+  `api.prod.legislation.gov.au` work. Every statutory claim is checked there,
+  and the note below applies only to the sites that are still blocked. A review
+  against these sources on 24 Sep 2026 found eighteen errors across thirteen
+  pages; the corrections are prepared on branch `claude/youthful-bohr-aaeqrx`
+  and wait for Spencer's approval before they are published. See DECISIONS.md.
 - **Verification note:** Australian legislation and court/government sites
   (`legislation.gov.au`, `servicesaustralia.gov.au`, `guides.dss.gov.au`,
   `fcfcoa.gov.au`, `art.gov.au`, `vcat.vic.gov.au`) are also blocked by the

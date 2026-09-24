@@ -13,6 +13,30 @@ Newest entries first.
 
 ---
 
+## 2026-09-24: Routine playbooks; legal review held for the owner's approval
+
+Owner request in live chat: a full audit of every routine, with legal accuracy
+under Victorian law first and client acquisition second. Two outcomes reach
+this repository's main today.
+
+The routines that work here now read their instructions from `playbooks/`:
+`article.md` for the Monday article, `site-health.md` for the new Tuesday site
+accuracy and health routine that replaces the weekly SEO and GEO audit,
+`service-pages.md` for the Wednesday routine that replaces the lead magnet
+factory and builds a service page only after Spencer approves it, and
+`demand-scanner.md` for the Friday scan. `_config.yml` excludes `playbooks` and
+`scripts/accuracy-ledger.md` from the published site. No page content changed.
+
+A review of every page that states the law, against the authorised
+legislation, found eighteen errors across thirteen pages, among them the
+enduring powers of attorney article saying an attorney acts only at the
+principal's direction while the principal has capacity. The owner instructed on
+24 Sep 2026 that no change is published on the site without his approval, so
+the corrections sit on branch `claude/youthful-bohr-aaeqrx`, each checked
+against the Act, and are published only when he says so.
+
+---
+
 ## 2026-09-22: Weekly SEO and GEO audit; three cross links to the new article, site otherwise clean
 
 Full sweep of all 44 HTML pages the day after the power of attorney misuse
