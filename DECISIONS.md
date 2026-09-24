@@ -13,6 +13,40 @@ Newest entries first.
 
 ---
 
+## 2026-09-25: Demand scan; three FAQ entries added, first primary legislation check
+
+Friday demand scan (Melbourne date 25 September 2026), run from
+`playbooks/demand-scanner.md` for the first time. Three faq.html entries
+added: two Family Law, on the staged intervention order reforms and on being
+wrongly named as the respondent, and one Wills and Estates, on what a grant of
+probate costs. Fewer than the five the playbook allows, deliberately: the site
+already carries 174 FAQ pairs and most of what the scan evidenced was covered,
+so the will kit and lease review questions were left as backlog article items
+rather than added as near duplicates of existing answers. faq.html reviewed
+date, its FAQPage dateModified, the sitemap lastmod and the llms.txt date all
+moved to 2026-09-25 together.
+
+The Justice Legislation Amendment (Family Violence, Stalking and Other
+Matters) Act 2026 was confirmed as Act 1/2026 on legislation.vic.gov.au, the
+first statutory claim this routine has checked against the authorised source
+since egress opened on 24 Sep. The landing page carries no assent or
+commencement detail and the secondary sources disagree on timing, so both new
+answers say the changes commence in stages with some not yet in force, and
+publish no date.
+
+Note for whoever publishes the held corrections on branch
+`claude/youthful-bohr-aaeqrx`: that branch sets faq.html's reviewed date and
+FAQPage dateModified to 2026-09-24 and this commit sets them to 2026-09-25, so
+expect a one line conflict there. Keep the later date. The rest of that
+branch's faq.html changes (safe harbour, small business restructuring, pets,
+the attorney misuse link) are untouched by this commit.
+
+Hire marker derived mechanically for the Monday routine: the 21 Sep article
+was not a hire guide, so Monday 28 September is due a hire guide, in Family
+Law.
+
+---
+
 ## 2026-09-24: Routine playbooks; legal review held for the owner's approval
 
 Owner request in live chat: a full audit of every routine, with legal accuracy
