@@ -37,11 +37,19 @@ live site and correcting it, and does the structural audit once a month.
 ## Every run: the accuracy sweep
 
 1. The ledger is `scripts/accuracy-ledger.md`. Create it on the first run with one row per page
-   that states the law, meaning every `insight-*.html`, every `resource-*.html`, `faq.html` and the
-   three practice hubs, each with the date last verified and the outcome. Seed the pages
-   corrected on 24 September 2026 with that date and the rest as never verified.
-2. Take the **three** pages verified longest ago, never verified first, oldest article first.
-   With about 36 legal pages, every page is re-verified roughly once a quarter.
+   that states the law, meaning every `insight-*.html`, every `resource-*.html`, every
+   `service-*.html`, `faq.html` and the three practice hubs, each with the date last verified and
+   the outcome. Seed the pages corrected on 24 September 2026 with that date and the rest as never
+   verified. On every later run, first add a row for any legal page the ledger lacks: a page
+   published on or after 24 September 2026 takes its publication date as the date last verified,
+   because the article and service pages routines verify every claim against the authorised
+   legislation before they publish, and any other page is never verified.
+2. Count the legal pages in the ledger this run, divide by 13 and round up: that is how many
+   pages this run verifies, taking those verified longest ago, never verified first, oldest
+   article first. Thirteen weeks make a quarter, so every legal page is re-verified at least once
+   a quarter however many pages the site gains: 36 legal pages means three a week, and 44 means
+   four. Never carry last week's number forward, and state the count and the number verified in
+   the report.
 3. For each page, extract the visible text and the FAQ JSON-LD, list every legal proposition,
    and check each against its primary source: time limits and their exceptions, thresholds,
    who may apply, which court or tribunal, what the Act requires, and every named statute,
@@ -70,11 +78,14 @@ queries steer which pages get attention first.
 
 ## Publish and report
 
-Run `python3 scripts/check-publish.py` and `python3 scripts/check-article-images.py`; both must
+First run `python3 scripts/refresh-google-rating.py`, as CLAUDE.md requires before publishing, so
+a rating change that the Service pages routine reported but may not apply reaches every page. Then
+run `python3 scripts/check-publish.py` and `python3 scripts/check-article-images.py`; both must
 pass, and the scripts may be strengthened but never weakened. Commit to main as
 "Site accuracy and health <Melbourne date>: <summary>" and push with retry. A run that changed
 nothing still commits the ledger and its DECISIONS.md line.
 
-The final message, phone readable: the pages verified and the outcome for each, every correction
+The final message, phone readable: the number of legal pages and the weekly number it gives,
+the pages verified and the outcome for each, every correction
 in one line with its source, the structural audit result when it ran, and anything that needs
 Spencer. Never finish silently.
