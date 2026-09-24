@@ -13,6 +13,80 @@ Newest entries first.
 
 ---
 
+## 2026-09-24: Full legal accuracy review against the legislation; eighteen corrections across thirteen pages; routines moved to playbooks
+
+Owner request in live chat: a full audit of every routine with legal accuracy
+under Victorian law as the first priority. Every page that states the law was
+checked against the authorised legislation, which is now reachable from the
+automated environment on legislation.vic.gov.au and legislation.gov.au. Each
+finding below was confirmed by a second, independent reading of the primary
+source before the page was changed. Corrections, all dated 24 Sep 2026 with
+dateModified, the visible updated line and sitemap lastmod moved together:
+
+- insight-enduring-powers-of-attorney.html: removed "While you still have
+  capacity, your attorney acts only at your direction", which the Act does not
+  say; once the power has started the attorney can act without asking, while
+  the principal keeps their own powers and can revoke. Powers of Attorney Act
+  2014 ss 39, 42, 44. FAQ on payment now also allows remuneration authorised
+  by law, s 70.
+- insight-power-of-attorney-misuse.html: states the six month limit for a
+  compensation application after the principal's or attorney's death, and the
+  power to extend it, in the body and the FAQ. POA Act ss 77 to 79.
+- insight-contesting-a-will.html: children and stepchildren of any age are
+  eligible; dependency is required only of caring partners, grandchildren,
+  household members and a deceased child's partner; no general dependants
+  category. Administration and Probate Act 1958 ss 90, 91.
+- insight-executor-duties.html and resource-executor-first-steps.html:
+  executor's commission capped at 5 per cent, and for wills signed on or after
+  1 Nov 2017 the informed consent and duty to inform rules. APA ss 65 to 65D,
+  s 106(2).
+- insight-guardianship-administration-orders.html: orders have no end date;
+  VCAT must reassess within 12 months and then at least every three years.
+  Guardianship and Administration Act 2019 ss 159, 167.
+- insight-child-support-australia.html: the application to extend past 18 is
+  generally made while the child is 17, with late applications accepted in
+  exceptional circumstances. Child Support (Assessment) Act 1989 s 151C.
+- insight-intervention-orders.html: who may apply, replacing "Anyone can
+  apply". Family Violence Protection Act 2008 s 45.
+- insight-retail-leases-victoria.html: repairs to structure, fixtures, plant
+  and service fittings are the landlord's by statute and cannot be shifted.
+  Retail Leases Act 2003 ss 39, 41, 52, 94.
+- insight-directors-duties-victoria.html: the business judgment rule only
+  meets the duty of care and diligence and does not protect against insolvent
+  trading; the insolvent trading duty needs actual insolvency and reasonable
+  grounds to suspect it. Corporations Act ss 180(2), 588G.
+- insight-contracts-for-business.html: unfair contract terms regime added;
+  the worked example no longer promises payment in full. ACL ss 23, 24, 224;
+  Corporations Act s 588FA.
+- insight-safe-harbour-small-business-restructuring.html and faq.html:
+  restructuring eligibility counts debts and claims excluding employee
+  entitlements, not exceeding $1 million; insolvent trading stated with both
+  limbs; the ways safe harbour ends or is lost. Corporations Regulations
+  reg 5.3B.03; Corporations Act ss 588G, 588GA.
+- faq.html: the companion animal limits also bind consent orders. Family Law
+  Act 1975 s 79(6).
+- llms.txt no longer lists a commercial law checklist that does not exist.
+- The fee promise now reads "before any substantive work begins" in the home
+  hero and every rail card, matching faq.html and contact.html, because urgent
+  work can start before the written estimate. Rail card wording is chrome, so
+  it moved no dates.
+
+Open, for the owner, recorded in the bd repository's AUDIT-2026-09-24.md:
+whether the firm has lawyers other than Spencer, since the plural copy is
+misleading if he is the only one; the ten years of practice claim, the
+professional standards scheme statement and the "expert advice" line in the
+film. Open, for the site accuracy routine: insight-child-support-australia.html
+still says "As at August 2026" about the announced reforms, which the currency
+check misses because it is case sensitive; move it once the reforms' status is
+re-verified.
+
+Routines: the article, demand scanner and the new site accuracy and health
+routine, which replaces the weekly SEO and GEO audit, now read their
+instructions from `playbooks/`. The lead magnet factory is retired. Gates:
+check-publish 92 checks 0 failed, check-article-images PASS.
+
+---
+
 ## 2026-09-22: Weekly SEO and GEO audit; three cross links to the new article, site otherwise clean
 
 Full sweep of all 44 HTML pages the day after the power of attorney misuse
