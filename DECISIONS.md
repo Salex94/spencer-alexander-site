@@ -71,9 +71,11 @@ dateModified, the visible updated line and sitemap lastmod moved together:
   work can start before the written estimate. Rail card wording is chrome, so
   it moved no dates.
 
-Open, for the owner, recorded in the bd repository's AUDIT-2026-09-24.md:
-whether the firm has lawyers other than Spencer, since the plural copy is
-misleading if he is the only one; the ten years of practice claim, the
+Owner answer, same day: asked whether anyone other than Spencer practises at
+the firm, the owner answered "Yes, of course" and instructed that the
+"lawyers" wording stays as it is, consistent with the 8 Sep 2026 instruction
+in CLAUDE.md. Do not re-raise it. Still open, for the owner, recorded in the
+bd repository's AUDIT-2026-09-24.md: the ten years of practice claim, the
 professional standards scheme statement and the "expert advice" line in the
 film. Open, for the site accuracy routine: insight-child-support-australia.html
 still says "As at August 2026" about the announced reforms, which the currency
