@@ -39,7 +39,12 @@ live site and correcting it, and does the structural audit once a month.
 1. The ledger is `scripts/accuracy-ledger.md`. Create it on the first run with one row per page
    that states the law, meaning every `insight-*.html`, every `resource-*.html`, every
    `service-*.html`, `faq.html` and the three practice hubs, each with the date last verified and
-   the outcome. Seed the pages corrected on 24 September 2026 with that date and the rest as never
+   the outcome. The review of 24 September 2026 found errors on thirteen pages and prepared their
+   corrections on branch `claude/youthful-bohr-aaeqrx`, held until Spencer approves publishing
+   them. If `git log origin/main` shows that branch's corrections merged, seed those thirteen pages
+   with that date as verified. If not, mark those thirteen pages "corrections held for Spencer's
+   approval", leave them unedited, skip them in the sweep, and list them in one line of every report
+   until the branch is merged or Spencer decides otherwise. Seed every other page as never
    verified. On every later run, first add a row for any legal page the ledger lacks: a page
    published on or after 24 September 2026 takes its publication date as the date last verified,
    because the article and service pages routines verify every claim against the authorised
