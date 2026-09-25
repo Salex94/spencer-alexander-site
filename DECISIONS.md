@@ -16,7 +16,7 @@ Newest entries first.
 ## 2026-09-26: Thirty-one further corrections and a Sources line on every article, held with the 24 Sep corrections
 
 Checking every article's sources against the authorised legislation on 26 Sep 2026 found statements
-the legislation does not support on eighteen pages. Each finding was tested by a second, independent
+the legislation does not support on nineteen pages. Each finding was tested by a second, independent
 reading of the provision, which tried to refute it; 31 corrections survived and are made on this branch,
 with 2 findings judged not worth changing and none refuted. The pattern matches the 24 Sep review: time
 limits stated without the other party's consent as a way in, tests stated with a limb missing or a
