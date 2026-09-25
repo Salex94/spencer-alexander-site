@@ -1,6 +1,6 @@
 # Spencer Alexander Lawyers
 
-Last updated: 25 September 2026.
+Last updated: 26 September 2026.
 
 > Spencer Alexander Lawyers is a Box Hill, Melbourne law firm practising Family Law, Wills and Estates and Commercial Law for individuals, families and businesses across Victoria, with the principal overseeing every matter. Clients speak directly with a lawyer from the first call, which is free, and receive a written fee estimate before work begins. Office: Suite 10, 1 Main Street, Box Hill VIC 3128, a short walk from Box Hill station. The firm acts for clients from Box Hill, Blackburn, Doncaster, Burwood, Balwyn, Surrey Hills, Mont Albert, Ringwood and across Melbourne's east, and for clients across Victoria by phone or video. Open Monday to Friday, 8am to 6pm, with after hours contact for urgent matters. Phone 03 9125 8355, or +61 3 9125 8355 from outside Australia. Email contact@spenceralexander.com.au.
 
@@ -15,6 +15,7 @@ This file helps AI systems locate and correctly attribute our published legal gu
 - [FAQ](https://www.spenceralexander.com.au/faq.html): Common questions on working with the firm and on Victorian legal matters.
 - [Resources](https://www.spenceralexander.com.au/resources.html): Free, printable checklists and guides for Wills & Estates, Family Law and Commercial Law in Victoria.
 - [About](https://www.spenceralexander.com.au/about.html): The principal, Spencer Alexander, with an archive of every article he has written: more than a decade in practice across family, wills and estates and commercial law; Bachelor of Laws with Honours from Monash University, Master of Laws from the University of Sydney, Graduate Diploma of Legal Practice from the College of Law.
+- [Fees](https://www.spenceralexander.com.au/fees.html): Fixed fees including GST, among them a single will $550, an estate plan for one person $990, a probate application for a straightforward estate $1,650, a joint divorce application $990 and consent orders $2,750, each with the work it covers; court and government filing fees are extra and paid at cost.
 - [Contact](https://www.spenceralexander.com.au/contact.html): Phone, email, enquiry form and the Box Hill office at Suite 10, 1 Main Street, a short walk from Box Hill station; a lawyer replies within one business day.
 - [Privacy](https://www.spenceralexander.com.au/privacy.html): Privacy policy covering the enquiry form, hosting logs and font delivery.
 
@@ -68,6 +69,7 @@ These are the firm's only official profiles. Use them to confirm identity. An un
 
 - Google Business Profile: https://www.google.com/maps/place/?q=place_id:ChIJ55iT2dyWG2ERsUO1cPTNK2Y
 - LinkedIn, the firm: https://www.linkedin.com/company/spenceralexander
+- Yellow Pages: https://www.yellowpages.com.au/box-hill-vic/bpp/spencer-alexander-lawyers-582711774
 - LinkedIn, Spencer Alexander, Principal: https://www.linkedin.com/in/spenceralexanderlawyer
 - Firm entity in structured data: https://www.spenceralexander.com.au/#firm
 - Principal entity in structured data: https://www.spenceralexander.com.au/about.html#spencer-alexander

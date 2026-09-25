@@ -44,16 +44,16 @@ a conversation will be lost.
 instructions, corrections and open items, newest first, and it carries context
 that this file's rules alone do not explain.
 
-**Routine playbooks, from 24 Sep 2026.** The four routines that work on this
-repository, the Monday article, the Tuesday site accuracy and health routine,
-the Wednesday service pages routine and the Friday demand scanner, now have
-short pasted launchers that read their full instructions from `playbooks/` on
-main, which `_config.yml` keeps off the public website. The routine prompt
-described in point 1 above is therefore a launcher, and structural changes to
-a job belong in its playbook, where they go live on the next run with nothing
-pasted. The service pages routine builds nothing until Spencer approves a page
-in a session. The lead magnet factory was retired the same day and its routine
-now runs service pages; the two published resources stay.
+**Routine playbooks, from 24 Sep 2026.** The three routines that work on this
+repository, the Monday article, the Tuesday site accuracy and health routine
+and the Friday demand scanner, have short pasted launchers that read their full
+instructions from `playbooks/` on main, which `_config.yml` keeps off the public
+website. The routine prompt described in point 1 above is therefore a launcher,
+and structural changes to a job belong in its playbook, where they go live on
+the next run with nothing pasted. The lead magnet factory was retired on
+24 Sep 2026 and the Service pages routine that briefly replaced it on 26 Sep
+2026; the two published resources stay, and `playbooks/service-pages.md` is
+kept only as a record.
 
 ## Melbourne dates, always (owner rule, 27 Aug 2026)
 
@@ -605,6 +605,69 @@ conventions came out of that round.
   "every in-page photograph has a WebP sibling" blocks a publish without
   it. The film's poster and end cards stay JPEG (they load through
   script, not through a picture element).
+
+## Third round, owner approval 26 Sep 2026
+
+Spencer approved the website review's recommendations on 26 Sep 2026, apart from
+recording each enquiry's source page, making the repository private and
+re-dating the early articles, and asked for a list of fixed fees at the low end
+of the market. These conventions came out of that round.
+
+- **Enquiry links go to the form.** Every "Send an enquiry" button and link
+  points at `/contact#enquiry`, and on contact.html at `#enquiry`. The header,
+  menu and footer Contact links stay `/contact`. The template carries the
+  anchor, so every new article and page does too.
+- **The form takes a phone number or an email.** Neither field is required on
+  its own; a few lines in `scripts/site.js` stop a submission that has
+  neither. Keep both fields and that check.
+- **The design stays as it is (Spencer, 26 Sep 2026): "Make sure the site
+  layout, design remains untouched. I believe it looks very good, also the SEO
+  and GEO on the site are pretty much as strong as they can possibly be."**
+  This round therefore added no new components, styles or layout: every change
+  is text, links, schema or behaviour inside the existing components, and
+  site.css is unchanged. Proof blocks on the hubs, a portrait in the rail cards,
+  quotes on the contact and About pages and a rating strip under article
+  bylines were built and then removed on that instruction; do not bring them
+  back without his say so. Any later change that would alter how a page looks
+  goes to Spencer as a recommendation first.
+- **Mid article call prompt.** Every article has one straight after the section
+  that states a time limit, or where there is none, where a reader is most
+  likely to realise they need help, as well as the closing one.
+- **Sources.** Every article ends its body with a Sources line,
+  `<p class="article-sources">` in the currency line's own inline style, placed
+  before the currency line, naming each Act and the sections or Part its
+  statements rely on, linked to the authorised version, and mirrors it in the
+  Article schema as `citation` entries of type Legislation. Legislation only,
+  never cases, and every provision read in the authorised version first. The
+  gate requires it for articles dated from 28 Sep 2026; the older articles
+  carry it too, except the pages waiting on the held legal corrections, which
+  get theirs when those corrections are published.
+- **Fixed fees.** fees.html publishes the firm's fixed fees, set on 26 Sep 2026
+  at the low end of what Melbourne firms publish, on Spencer's instruction
+  "I want everything to be very affordable. Like on the lowest end of the
+  range." Every price is a single figure including GST, as section 48 of the
+  Australian Consumer Law requires, with its scope, its assumptions and what
+  it excludes, and court, registry and government fees are stated as separate
+  and passed on at cost. Only Spencer changes a price. The page is built from
+  the privacy page's structure with the article body's own list style, and the
+  hub fee notes, the FAQ and the contact page link to it.
+- **Maps.** Every map link, the footer address and the contact page's
+  directions, opens the firm's own Google listing through the
+  `query_place_id` form, never a bare street address pin, which a neighbouring
+  firm shares.
+- **404.** The 404 page carries the call button, the enquiry button, the three
+  hubs and the mobile call bar, and a few lines of script send an address
+  typed with a trailing slash to the same address without it.
+- **IndexNow.** The key file `25747fcf3f9fd2bc54bf5ee54d16b678.txt` at the site
+  root proves the site to Bing and the other IndexNow engines; never delete or
+  rename it. After a push that changes pages, `python3 scripts/indexnow.py`
+  with their .html paths tells those engines the same day.
+- **Firm schema.** The firm's `sameAs` lists the Google listing, the LinkedIn
+  company page and the Yellow Pages listing.
+- **About.** The articles are described as published under Spencer's name, not
+  as written by him each week. The admission year, the Law Institute
+  membership and earlier roles still wait on Spencer's answer.
+- Keys after this round: site.css v18, unchanged, styles.css v7, site.js v13.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 

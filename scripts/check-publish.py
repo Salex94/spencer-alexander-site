@@ -516,6 +516,25 @@ def main():
             og_bad.append(f)
     check("Open Graph article dates match the Article schema", not og_bad, ", ".join(og_bad[:3]))
 
+    # Sources (26 Sep 2026): an article dated from 28 Sep 2026 must end with a
+    # Sources line linking the authorised legislation, and any article carrying
+    # one must mirror it in its Article schema as citation entries, one per link.
+    src_bad = []
+    for f in sorted(glob.glob("insight-*.html")):
+        h = read(f)
+        a = next((b for b in jsonld(h) if isinstance(b, dict) and b.get("@type") == "Article"), {})
+        line = re.search(r'<p class="article-sources"[^>]*>(.*?)</p>', h, re.S)
+        cites = a.get("citation") or []
+        if a.get("datePublished", "") >= "2026-09-28" and not line:
+            src_bad.append(f + " has no Sources line")
+            continue
+        if line:
+            links = re.findall(r'href="(https://www\.legislation\.(?:vic\.)?gov\.au/[^"]+)"', line.group(1))
+            urls = [c.get("url") for c in cites if isinstance(c, dict)]
+            if not links or sorted(set(links)) != sorted(set(urls)):
+                src_bad.append(f + " Sources links and citation entries differ")
+    check("article Sources lines link legislation and match the schema", not src_bad, "; ".join(src_bad[:3]))
+
     # Every inline photograph is served as WebP with the JPEG as fallback
     # (9 Sep 2026: about half the image bytes above the fold). scripts/make-webp.py
     # writes the siblings; the <picture> form is in the template.

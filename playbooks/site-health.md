@@ -34,6 +34,21 @@ live site and correcting it, and does the structural audit once a month.
 - Change as little as possible. Correct the sentence that is wrong, keep the voice of the page,
   follow every house style rule, and never touch styles or layout.
 
+**From 26 September 2026.** After any push that changes a page, run `python3 scripts/indexnow.py`
+with the .html path of every page changed, as the article playbook sets out. Never change a price,
+its scope or its exclusions on fees.html: the prices are Spencer's, so a price that looks wrong, or a
+statement about court or registry fees that the law has overtaken, goes in the report for him, never
+into the page. Each week, check that every article dated from 28 September 2026 carries its Sources
+line, and that every provision in any Sources line on a page you check still says what the article
+relies on it for.
+
+**Held pages, from 26 September 2026.** Every page that branch `claude/youthful-bohr-aaeqrx`
+changes and main does not yet carry is held: the thirteen pages of 24 September and the further
+pages whose corrections and Sources lines were added to that branch on 26 September. List them with
+`git fetch origin claude/youthful-bohr-aaeqrx` and `git diff --name-only origin/main...origin/claude/youthful-bohr-aaeqrx`.
+Leave every held page's text alone and report anything you would have changed on it, until Spencer
+has the branch published.
+
 ## Every run: the accuracy sweep
 
 1. The ledger is `scripts/accuracy-ledger.md`. Create it on the first run with one row per page

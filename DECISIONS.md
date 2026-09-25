@@ -13,6 +13,57 @@ Newest entries first.
 
 ---
 
+## 2026-09-26: Website review recommendations made; design left untouched; fixed fees published
+
+Owner instructions in live chat, 26 Sep 2026. First: "are you able to implement all the suggestions
+that you have recommended?", with items 10, 12 and 15 of the 24 Sep website review declined: "I'm
+fine with it being public for now. Also no need to record each page an enquiry came from. Don't need
+to confirm when the first articles went public." Second, on prices: "I think we do need a list of
+fixed fee prices (like probate applications etc…) can you do that? But I want everything to be very
+affordable. Like on the lowest end of the range." Third, later the same day: "Make sure the site
+layout, design remains untouched. I believe it looks very good, also the SEO and GEO on the site are
+pretty much as strong as they can possibly be."
+
+Made, all within the existing components and styles, with site.css unchanged:
+
+- Every "Send an enquiry" button and link now points at /contact#enquiry, and the template carries it.
+- The enquiry form takes a phone number or an email; site.js stops a submission with neither.
+- Every map link opens the firm's own Google listing by its place id.
+- The commercial hub's hero meta leads with the free first call, as the other hubs do.
+- The 404 page carries the call and enquiry buttons, links to the three hubs, the mobile call bar and
+  a redirect for addresses typed with a trailing slash.
+- The fourteen older articles without one now carry a mid article call prompt after the section that
+  states a time limit; the seven older articles with held corrections get theirs when those publish.
+  Article dates were not moved, because a call prompt changes nothing about the law stated.
+- about.html describes the articles as published under Spencer's name and adds one paragraph on why
+  the three practice areas belong together; the admission year, Law Institute membership and earlier
+  roles still wait on Spencer.
+- The firm's sameAs lists its Yellow Pages listing, and an IndexNow key file and
+  scripts/indexnow.py tell Bing and the other IndexNow engines when pages change.
+- The article template carries a Sources line in the currency line's own style and a citation array
+  in the schema; the gate requires them for articles dated from 28 Sep 2026.
+- fees.html publishes 22 fixed fees, built from privacy.html's structure and the article body's own
+  list style. Each price is the low end of what Victorian law firms publish, from research on
+  26 Sep 2026 of 7 to 11 firm prices for most wills, estates and family items and fewer for
+  commercial work, which is why commercial items are "from" prices. Examples: single will $550,
+  estate plan for one person $990, probate application for a straightforward estate $1,650,
+  joint divorce $990, consent orders $2,750. Every price includes GST, as section 48 of the
+  Australian Consumer Law requires; court filing fees that vary or that clients pay directly to
+  the court are stated as extra with how they are worked out; the ASIC fee and the probate notice
+  fee are folded into their prices; and every "from" price says what costs more. The binding
+  financial agreement is from $2,750, the lowest law firm figure, on Spencer's instruction, although
+  the research suggested $3,300 for the risk it carries. Only Spencer changes a price.
+
+Built and then removed on the third instruction: the rating and a quote in each hub hero, the
+principal's portrait and a quote in the hub rail cards, a portrait and quote beside the contact form,
+two quotes on about.html, a rating strip under article bylines and a longer home page introduction.
+
+Held with the legal corrections on branch claude/youthful-bohr-aaeqrx, for Spencer's word: the
+eighteen corrections of 24 Sep, the further discrepancies the 26 Sep source checks confirm against
+the legislation, and the Sources lines for every article, which go live with the text they support.
+The Service pages routine is retired, and the routines are now eight, as the bd repository's
+CLAUDE.md records.
+
 ## 2026-09-25: Demand scan; three FAQ entries added, first primary legislation check
 
 Friday demand scan (Melbourne date 25 September 2026), run from
