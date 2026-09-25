@@ -243,7 +243,7 @@ def main():
     check("currency line month matches dateModified", bool(cm) and cm.group(1) == want_month,
           "%s vs %s" % (cm.group(1) if cm else "missing", want_month))
 
-    m = re.search(r'<div class="article__body">(.*?)<p style="margin-top:28px', art, re.S)
+    m = re.search(r'<div class="article__body">(.*?)<p (?:class="article-sources" )?style="margin-top:28px', art, re.S)
     if m:
         words = len(re.sub(r"<[^>]+>", " ", m.group(1)).split())
         check("body word count 1100-1900", 1100 <= words <= 1900, "%d words" % words)
@@ -382,7 +382,7 @@ def main():
         body = read(f)
         if 'class="related__link"' not in body:
             no_related.append(f)
-        m = re.search(r'<div class="article__body">(.*?)<p style="margin-top:28px', body, re.S)
+        m = re.search(r'<div class="article__body">(.*?)<p (?:class="article-sources" )?style="margin-top:28px', body, re.S)
         rt = re.search(r"(\d+) min read", body)
         if m and rt:
             words = len(re.sub(r"<[^>]+>", " ", m.group(1)).split())

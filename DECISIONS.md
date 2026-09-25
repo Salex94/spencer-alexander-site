@@ -13,6 +13,63 @@ Newest entries first.
 
 ---
 
+## 2026-09-26: Thirty-one further corrections and a Sources line on every article, held with the 24 Sep corrections
+
+Checking every article's sources against the authorised legislation on 26 Sep 2026 found statements
+the legislation does not support on eighteen pages. Each finding was tested by a second, independent
+reading of the provision, which tried to refute it; 31 corrections survived and are made on this branch,
+with 2 findings judged not worth changing and none refuted. The pattern matches the 24 Sep review: time
+limits stated without the other party's consent as a way in, tests stated with a limb missing or a
+limb added, and absolute words where the Act is qualified. Pages and provisions:
+
+- insight-property-reforms-2025: the transitional rule is when proceedings started, Family Law
+  Amendment Act 2024, Schedule 1 item 68.
+- insight-making-a-valid-will: the test for a will by a minor, Wills Act 1997 section 20.
+- insight-divorce-in-victoria: the exception where circumstances justify a divorce despite the
+  children's arrangements, section 55A; consent as well as leave after 12 months, section 44(3); the
+  Wills Act section 14 exception on revocation; attendance, section 98A.
+- insight-business-structures: director identification, Corporations Act sections 1272C and 1272E.
+- insight-parenting-arrangements: the most recent parenting plan where in the child's best interests,
+  section 65DAB.
+- insight-de-facto-separation and insight-property-after-separation: consent as well as leave out of
+  time, and the hardship test for leave, section 44(5) and (6).
+- insight-contesting-a-will: the extension test and the application before final distribution,
+  Administration and Probate Act section 99.
+- insight-retail-leases-victoria: the closed list of grounds for refusing an assignment, Retail
+  Leases Act section 60.
+- insight-superannuation-death-benefits: "ordinarily" only to defined classes, SIS Regulations
+  regulation 6.22.
+- insight-intervention-orders: firearms consequences of final and interim orders, Firearms Act and
+  Family Violence Protection Act section 95.
+- insight-dying-without-a-will: no discretion when an estate passes to the Crown, section 70ZL; the
+  partner takes everything only if all the children are the partner's, section 70K.
+- insight-guardianship-administration-orders: supportive orders need consent, sections 8, 30, 31
+  and 87; accounts and their examination, section 61; the Act's list of disabilities, section 3.
+- insight-child-support-australia: the grounds for a change of assessment, sections 98C and 117; the
+  current wording of Family Law Act section 66L.
+- insight-spousal-maintenance-victoria: consent as well as leave, and the statutory test for leave,
+  section 44.
+- insight-directors-duties-victoria: improper use under sections 182 and 183, and only the
+  constitution displaces a replaceable rule, section 135(2).
+- insight-grandparents-rights-victoria: best interests are paramount, not the only consideration,
+  section 60CA; the repealed presumption concerned equal shared parental responsibility; the mediation
+  certificate, section 60I.
+- insight-safe-harbour-small-business-restructuring: ordinary course debts are covered, section
+  588GA; entitlements and lodgements are conditions before the plan goes to creditors, not entry
+  criteria, regulations 5.3B.03, 5.3B.14 and 5.3B.24.
+- insight-power-of-attorney-misuse: who may apply to VCAT, Powers of Attorney Act sections 78 and 122.
+
+Every article also gains a Sources line in the currency line's own style, naming each Act and the
+provisions its statements rely on, each read in the authorised version on 25 and 26 Sep 2026, with the
+same list as citation entries in the Article schema. The seven older articles with held corrections gain
+the mid article call prompt the other fourteen received on main. Every article's dateModified, updated
+line, Open Graph date, currency line and sitemap lastmod move to 26 Sep 2026, and the retail leases
+read time moves to 7 minutes. Verification files are in the session scratchpad, not the repository.
+
+When Spencer says to publish: merge main into this branch, resolving conflicts in favour of main for the
+enquiry links, map links, sitemap entries for core pages and fees.html, and in favour of this branch
+for every article's text and dates; run the gate; then merge to main.
+
 ## 2026-09-24: Full legal accuracy review against the legislation; eighteen corrections across thirteen pages; routines moved to playbooks
 
 Owner request in live chat: a full audit of every routine with legal accuracy
