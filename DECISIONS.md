@@ -74,6 +74,15 @@ names the Act alone, so no line becomes a wall of numbers. Main was merged into 
 keeping main's enquiry links, map links, fees page, core page dates and playbooks and the branch's
 article text and dates, and the branch was merged to main.
 
+In the same change, on facts Spencer supplied that day, "My admission year was 2018, and I am a LIV
+member": about.html lists "Admitted as a lawyer in 2018" and "Member of the Law Institute of Victoria"
+as one credential beside the three degrees, so the four fill one row, and its Person schema carries the
+admission and memberOf. Admission in 2018 cannot support "practised for more than ten years", so the
+home page proof bar now reads "Spencer has more than ten years of legal experience", the home page
+principal band says "more than ten years of legal experience", and about.html says "over more than ten
+years in law he has worked across". The article author cards already said "more than a decade of
+experience" and are unchanged. Spencer is asked to confirm that the ten years is legal work.
+
 ## 2026-09-26: Website review recommendations made; design left untouched; fixed fees published
 
 Owner instructions in live chat, 26 Sep 2026. First: "are you able to implement all the suggestions

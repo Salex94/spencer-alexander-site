@@ -416,7 +416,10 @@ future edit, every new page and every new article.
 - **Experience wording (owner correction, 5 Sep 2026).** The firm is not ten
   years old; the principal has more than ten years of experience. Every
   experience claim names Spencer, never the firm, for example "Spencer has
-  practised for more than ten years".
+  more than ten years of legal experience". Spencer was admitted as a lawyer
+  in 2018 (owner, 26 Sep 2026), so no page says he has practised as a lawyer
+  for more than ten years; the ten years is legal experience. He is a Law
+  Institute of Victoria member, and about.html and its Person schema say both.
 - **Entity name.** The firm is "Spencer Alexander Lawyers" everywhere,
   including privacy.html; never "Pty Ltd".
 - **Home page film (owner instruction, 5 Sep 2026, placement 6 Sep 2026).**
@@ -508,7 +511,7 @@ conventions came out of that round.
   Fixed forms that carry the voice (9 Sep 2026): the rail card bullet on
   every hub, article and resource page is "Every matter overseen by the
   principal", never a promise of access to him; the proof bar names its
-  subject, "Spencer has practised for more than ten years"; the home
+  subject, "Spencer has more than ten years of legal experience"; the home
   description is "Box Hill, Melbourne lawyers for Family Law, Wills and
   Estates and Commercial Law. Free first call with a lawyer, and a fee
   estimate before any work begins."; FAQ question one and the About sign
