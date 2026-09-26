@@ -649,9 +649,8 @@ of the market. These conventions came out of that round.
   statements rely on, linked to the authorised version, and mirrors it in the
   Article schema as `citation` entries of type Legislation. Legislation only,
   never cases, and every provision read in the authorised version first. The
-  gate requires it for articles dated from 28 Sep 2026; the older articles
-  carry it too, except the pages waiting on the held legal corrections, which
-  get theirs when those corrections are published.
+  gate requires it for articles dated from 28 Sep 2026, and every older
+  article has carried one since 26 Sep 2026.
 - **Fixed fees.** fees.html publishes the firm's fixed fees, set on 26 Sep 2026
   at the low end of what Melbourne firms publish, on Spencer's instruction
   "I want everything to be very affordable. Like on the lowest end of the
