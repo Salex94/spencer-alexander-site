@@ -55,6 +55,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.spenceralexander.com.au/zh/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.spenceralexander.com.au/zh/family-law.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.spenceralexander.com.au/zh/wills-and-estates.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.spenceralexander.com.au/zh/commercial-law.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.spenceralexander.com.au/zh/fees.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.spenceralexander.com.au/zh/contact.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.spenceralexander.com.au/insights.html</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>

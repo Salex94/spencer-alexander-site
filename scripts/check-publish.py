@@ -588,6 +588,14 @@ def main():
                     zh_bad.append(zf + " FAQ schema differs from the visible answers")
     if len(zh_feet) > 1:
         zh_bad.append("Chinese footers differ between pages")
+    # Prices on a translated page are advertised prices too: the Chinese fees page must carry exactly
+    # the English page's figures, so a price change on fees.html cannot leave the old price in Chinese.
+    if os.path.exists("zh/fees.html") and os.path.exists("fees.html"):
+        def _prices(f):
+            b = re.sub(r"<script.*?</script>|<style.*?</style>", " ", read(f), flags=re.S)
+            return sorted(re.findall(r"\$[\d,]+", html_unescape(re.sub(r"<[^>]+>", " ", b))))
+        if _prices("zh/fees.html") != _prices("fees.html"):
+            zh_bad.append("zh/fees.html prices differ from fees.html")
     check("Chinese pages: lang, hreflang, style, links, footer, FAQ", not zh_bad, "; ".join(zh_bad[:4]) or "%d pages" % len(zh_pages))
 
     # Every inline photograph is served as WebP with the JPEG as fallback

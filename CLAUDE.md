@@ -679,6 +679,36 @@ of the market. These conventions came out of that round.
   membership and earlier roles still wait on Spencer's answer.
 - Keys after this round: site.css v18, unchanged, styles.css v7, site.js v13.
 
+## Chinese pages, Spencer's instruction of 26 Sep 2026
+
+Box Hill's 2021 census count has more residents speaking Mandarin at home than speaking English only,
+so seven pages have Simplified Chinese versions in `zh/`: the home page, contact, fees, the three
+practice pages and the thank you page. Spencer's words: "don't advertise that we have mandarin lawyers,
+just say that we have a mandarin translator available". A lawyer at the firm who reads Mandarin checks
+every Chinese line before it is published; `playbooks/zh/README.md` records her review, where it is and
+how it is applied, and `playbooks/zh/BRIEF.md` is the standard for every Chinese page.
+
+- **What the pages say about language.** Only 可提供普通话翻译, a Mandarin translator is available,
+  and never that a lawyer speaks Mandarin. The gate fails a page where 普通话 comes close before 律师.
+- **Same rules as the English site.** No dashes, including ——, and no brackets, including （）, apart
+  from the phone number and the (Vic) and (Cth) of Act titles; no 专家, 专攻 or 专精; no promised
+  outcome. Legal statements say exactly what the English says. Names, addresses, the phone number and
+  Google review quotes stay in English.
+- **Structure.** Each page is `lang="zh-Hans"` with its own canonical, `https://www.spenceralexander.com.au/zh/`
+  for the home page and `zh/<page>.html` for the others, and hreflang en-AU, zh-Hans and x-default
+  pointing both ways, x-default being the English page; the thank you page is noindex and has none.
+  Asset and page links are root relative. The Chinese header, menus and footer are one shared version
+  on all seven pages, and the English pages' top bar, mobile menu and footer carry a 中文 link to `/zh/`.
+  Links to pages that exist only in English say so in the Chinese.
+- **Keeping them in step.** A change to the substance of index.html, contact.html, fees.html or a
+  practice hub is made in the matching `zh/` page in the same change and flagged to Spencer for her
+  check; a routine reports the Chinese sentence with a proposed wording instead of editing it. The gate
+  checks lang, canonical, hreflang both ways, the style rules above, links and assets, one shared
+  footer, FAQ schema against the visible answers, and that the Chinese fees page carries exactly the
+  English page's prices.
+- `scripts/site.js` shows the form's phone or email message in Chinese on a `zh-Hans` page, and
+  `scripts/refresh-google-rating.py` updates the rating on the Chinese pages too. Keys: site.js v14.
+
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 
 The owner has asked that runs never require their input. Two facts every run
