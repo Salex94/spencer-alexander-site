@@ -13,7 +13,7 @@ Newest entries first.
 
 ---
 
-## 2026-09-26: Thirty-one further corrections and a Sources line on every article, held with the 24 Sep corrections
+## 2026-09-26: Thirty-one further corrections and a Sources line on every article; all corrections published
 
 Checking every article's sources against the authorised legislation on 26 Sep 2026 found statements
 the legislation does not support on nineteen pages. Each finding was tested by a second, independent
@@ -66,9 +66,98 @@ the mid article call prompt the other fourteen received on main. Every article's
 line, Open Graph date, currency line and sitemap lastmod move to 26 Sep 2026, and the retail leases
 read time moves to 7 minutes. Verification files are in the session scratchpad, not the repository.
 
-When Spencer says to publish: merge main into this branch, resolving conflicts in favour of main for the
-enquiry links, map links, sitemap entries for core pages and fees.html, and in favour of this branch
-for every article's text and dates; run the gate; then merge to main.
+Spencer authorised publication the same day, in live chat: "Are the corrections / naming the sources
+in articles the best approach ... If you can answer yes to all of those, then you can publish the
+corrections." The answer was yes on legal accuracy, search and answer engines, client acquisition, style
+and design, after one change: where an Act is relied on for more than eight provisions, its Sources line
+names the Act alone, so no line becomes a wall of numbers. Main was merged into the corrections branch,
+keeping main's enquiry links, map links, fees page, core page dates and playbooks and the branch's
+article text and dates, and the branch was merged to main.
+
+## 2026-09-26: Website review recommendations made; design left untouched; fixed fees published
+
+Owner instructions in live chat, 26 Sep 2026. First: "are you able to implement all the suggestions
+that you have recommended?", with items 10, 12 and 15 of the 24 Sep website review declined: "I'm
+fine with it being public for now. Also no need to record each page an enquiry came from. Don't need
+to confirm when the first articles went public." Second, on prices: "I think we do need a list of
+fixed fee prices (like probate applications etc…) can you do that? But I want everything to be very
+affordable. Like on the lowest end of the range." Third, later the same day: "Make sure the site
+layout, design remains untouched. I believe it looks very good, also the SEO and GEO on the site are
+pretty much as strong as they can possibly be."
+
+Made, all within the existing components and styles, with site.css unchanged:
+
+- Every "Send an enquiry" button and link now points at /contact#enquiry, and the template carries it.
+- The enquiry form takes a phone number or an email; site.js stops a submission with neither.
+- Every map link opens the firm's own Google listing by its place id.
+- The commercial hub's hero meta leads with the free first call, as the other hubs do.
+- The 404 page carries the call and enquiry buttons, links to the three hubs, the mobile call bar and
+  a redirect for addresses typed with a trailing slash.
+- The fourteen older articles without one now carry a mid article call prompt after the section that
+  states a time limit; the seven older articles with held corrections get theirs when those publish.
+  Article dates were not moved, because a call prompt changes nothing about the law stated.
+- about.html describes the articles as published under Spencer's name and adds one paragraph on why
+  the three practice areas belong together; the admission year, Law Institute membership and earlier
+  roles still wait on Spencer.
+- The firm's sameAs lists its Yellow Pages listing, and an IndexNow key file and
+  scripts/indexnow.py tell Bing and the other IndexNow engines when pages change.
+- The article template carries a Sources line in the currency line's own style and a citation array
+  in the schema; the gate requires them for articles dated from 28 Sep 2026.
+- fees.html publishes 22 fixed fees, built from privacy.html's structure and the article body's own
+  list style. Each price is the low end of what Victorian law firms publish, from research on
+  26 Sep 2026 of 7 to 11 firm prices for most wills, estates and family items and fewer for
+  commercial work, which is why commercial items are "from" prices. Examples: single will $550,
+  estate plan for one person $990, probate application for a straightforward estate $1,650,
+  joint divorce $990, consent orders $2,750. Every price includes GST, as section 48 of the
+  Australian Consumer Law requires; court filing fees that vary or that clients pay directly to
+  the court are stated as extra with how they are worked out; the ASIC fee and the probate notice
+  fee are folded into their prices; and every "from" price says what costs more. The binding
+  financial agreement is from $2,750, the lowest law firm figure, on Spencer's instruction, although
+  the research suggested $3,300 for the risk it carries. Only Spencer changes a price.
+
+Built and then removed on the third instruction: the rating and a quote in each hub hero, the
+principal's portrait and a quote in the hub rail cards, a portrait and quote beside the contact form,
+two quotes on about.html, a rating strip under article bylines and a longer home page introduction.
+
+Held with the legal corrections on branch claude/youthful-bohr-aaeqrx, for Spencer's word: the
+eighteen corrections of 24 Sep, the further discrepancies the 26 Sep source checks confirm against
+the legislation, and the Sources lines for every article, which go live with the text they support.
+The Service pages routine is retired, and the routines are now eight, as the bd repository's
+CLAUDE.md records.
+
+## 2026-09-25: Demand scan; three FAQ entries added, first primary legislation check
+
+Friday demand scan (Melbourne date 25 September 2026), run from
+`playbooks/demand-scanner.md` for the first time. Three faq.html entries
+added: two Family Law, on the staged intervention order reforms and on being
+wrongly named as the respondent, and one Wills and Estates, on what a grant of
+probate costs. Fewer than the five the playbook allows, deliberately: the site
+already carries 174 FAQ pairs and most of what the scan evidenced was covered,
+so the will kit and lease review questions were left as backlog article items
+rather than added as near duplicates of existing answers. faq.html reviewed
+date, its FAQPage dateModified, the sitemap lastmod and the llms.txt date all
+moved to 2026-09-25 together.
+
+The Justice Legislation Amendment (Family Violence, Stalking and Other
+Matters) Act 2026 was confirmed as Act 1/2026 on legislation.vic.gov.au, the
+first statutory claim this routine has checked against the authorised source
+since egress opened on 24 Sep. The landing page carries no assent or
+commencement detail and the secondary sources disagree on timing, so both new
+answers say the changes commence in stages with some not yet in force, and
+publish no date.
+
+Note for whoever publishes the held corrections on branch
+`claude/youthful-bohr-aaeqrx`: that branch sets faq.html's reviewed date and
+FAQPage dateModified to 2026-09-24 and this commit sets them to 2026-09-25, so
+expect a one line conflict there. Keep the later date. The rest of that
+branch's faq.html changes (safe harbour, small business restructuring, pets,
+the attorney misuse link) are untouched by this commit.
+
+Hire marker derived mechanically for the Monday routine: the 21 Sep article
+was not a hire guide, so Monday 28 September is due a hire guide, in Family
+Law.
+
+---
 
 ## 2026-09-24: Full legal accuracy review against the legislation; eighteen corrections across thirteen pages; routines moved to playbooks
 
@@ -143,6 +232,30 @@ Routines: the article, demand scanner and the new site accuracy and health
 routine, which replaces the weekly SEO and GEO audit, now read their
 instructions from `playbooks/`. The lead magnet factory is retired. Gates:
 check-publish 92 checks 0 failed, check-article-images PASS.
+
+---
+
+## 2026-09-24: Routine playbooks; legal review held for the owner's approval
+
+Owner request in live chat: a full audit of every routine, with legal accuracy
+under Victorian law first and client acquisition second. Two outcomes reach
+this repository's main today.
+
+The routines that work here now read their instructions from `playbooks/`:
+`article.md` for the Monday article, `site-health.md` for the new Tuesday site
+accuracy and health routine that replaces the weekly SEO and GEO audit,
+`service-pages.md` for the Wednesday routine that replaces the lead magnet
+factory and builds a service page only after Spencer approves it, and
+`demand-scanner.md` for the Friday scan. `_config.yml` excludes `playbooks` and
+`scripts/accuracy-ledger.md` from the published site. No page content changed.
+
+A review of every page that states the law, against the authorised
+legislation, found eighteen errors across thirteen pages, among them the
+enduring powers of attorney article saying an attorney acts only at the
+principal's direction while the principal has capacity. The owner instructed on
+24 Sep 2026 that no change is published on the site without his approval, so
+the corrections sit on branch `claude/youthful-bohr-aaeqrx`, each checked
+against the Act, and are published only when he says so.
 
 ---
 

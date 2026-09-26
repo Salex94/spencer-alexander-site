@@ -263,3 +263,22 @@
   if (window.matchMedia("(min-width: 880px)").matches) {
     Array.prototype.forEach.call(document.querySelectorAll("details.article-toc"), function (d) { d.open = true; });
   }
+
+// Enquiry form: a phone number or an email is enough, but the form needs one of them
+(function () {
+  var form = document.querySelector('form[name="contact"]');
+  if (!form) return;
+  var phone = form.querySelector("#phone");
+  var email = form.querySelector("#email");
+  if (!phone || !email) return;
+  var clear = function () { email.setCustomValidity(""); };
+  phone.addEventListener("input", clear);
+  email.addEventListener("input", clear);
+  form.addEventListener("submit", function (e) {
+    if (!phone.value.trim() && !email.value.trim()) {
+      e.preventDefault();
+      email.setCustomValidity("Please leave a phone number or an email address.");
+      email.reportValidity();
+    }
+  });
+})();
