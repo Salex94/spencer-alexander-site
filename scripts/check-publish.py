@@ -535,6 +535,61 @@ def main():
                 src_bad.append(f + " Sources links and citation entries differ")
     check("article Sources lines link legislation and match the schema", not src_bad, "; ".join(src_bad[:3]))
 
+    # Simplified Chinese pages (26 Sep 2026). Each zh/ page is a checked translation of one English
+    # page: lang zh-Hans, its own canonical, hreflang pairs that point both ways, no dashes or
+    # brackets in the Chinese, no specialist words, no claim that a lawyer speaks Mandarin, links that
+    # resolve, one footer shared by every Chinese page, and FAQ schema equal to the visible answers.
+    zh_pages = sorted(glob.glob("zh/*.html"))
+    zh_bad, zh_feet = [], set()
+    ZH_EN = {"zh/index.html": "index.html"}
+    for zf in zh_pages:
+        h = read(zf)
+        name = os.path.basename(zf)
+        enf = ZH_EN.get(zf, name)
+        zurl = BASE + ("zh/" if name == "index.html" else "zh/" + name)
+        eurl = BASE if enf == "index.html" else BASE + enf
+        if '<html lang="zh-Hans">' not in h:
+            zh_bad.append(zf + " lang")
+        if ('rel="canonical" href="%s"' % zurl) not in h:
+            zh_bad.append(zf + " canonical")
+        noindex = 'content="noindex' in h
+        if not noindex:
+            for hl, u in (("en-AU", eurl), ("zh-Hans", zurl), ("x-default", eurl)):
+                if ('hreflang="%s" href="%s"' % (hl, u)) not in h:
+                    zh_bad.append(zf + " hreflang " + hl)
+            if os.path.exists(enf) and ('hreflang="zh-Hans" href="%s"' % zurl) not in read(enf):
+                zh_bad.append(enf + " lacks hreflang to " + zf)
+        body = re.sub(r"<script.*?</script>|<style.*?</style>", " ", h, flags=re.S)
+        text = html_unescape(re.sub(r"<[^>]+>", " ", body))
+        text = text.replace("(03) 9125 8355", "").replace("(Vic)", "").replace("(Cth)", "")
+        for bad in ("\u2014", "\u2013", "\uff08", "\uff09", "(", ")", " - ", "\u4e13\u5bb6", "\u4e13\u653b", "\u4e13\u7cbe"):
+            if bad in text:
+                zh_bad.append("%s contains %r" % (zf, bad))
+        if re.search("\u666e\u901a\u8bdd[^\u3002\uff0c]{0,12}\u5f8b\u5e08", text):
+            zh_bad.append(zf + " may imply a Mandarin speaking lawyer")
+        for href in set(re.findall(r'href="(/[^"]*)"', h)):
+            path = href.split("#")[0].split("?")[0].lstrip("/")
+            ok = (path == "" or os.path.exists(path) or os.path.exists(path + ".html")
+                  or (path.endswith("/") and os.path.exists(path + "index.html")))
+            if not ok:
+                zh_bad.append(zf + " broken link " + href)
+        for src in set(re.findall(r'src="(/[^"]+)"', h)):
+            if not os.path.exists(src.lstrip("/").split("?")[0]):
+                zh_bad.append(zf + " missing asset " + src)
+        m = re.search(r'<footer class="site-footer">.*?</footer>', h, re.S)
+        zh_feet.add(m.group(0) if m else "")
+        blocks = jsonld(h)
+        for b in blocks:
+            if isinstance(b, dict) and b.get("@type") == "FAQPage":
+                vis = [html_unescape(re.sub(r"<[^>]+>", " ", a)) for a in re.findall(r'<div class="faq-a">(.*?)</div>', h, re.S)]
+                vis = [re.sub(r"\s+", " ", v).strip() for v in vis]
+                sch = [re.sub(r"\s+", " ", q.get("acceptedAnswer", {}).get("text", "")).strip() for q in b.get("mainEntity", [])]
+                if vis and sch != vis[:len(sch)]:
+                    zh_bad.append(zf + " FAQ schema differs from the visible answers")
+    if len(zh_feet) > 1:
+        zh_bad.append("Chinese footers differ between pages")
+    check("Chinese pages: lang, hreflang, style, links, footer, FAQ", not zh_bad, "; ".join(zh_bad[:4]) or "%d pages" % len(zh_pages))
+
     # Every inline photograph is served as WebP with the JPEG as fallback
     # (9 Sep 2026: about half the image bytes above the fold). scripts/make-webp.py
     # writes the siblings; the <picture> form is in the template.

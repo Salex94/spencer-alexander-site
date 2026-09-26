@@ -41,7 +41,7 @@ def main():
         return 2
     print("Google says: rating %s from %s reviews" % (rating, count))
     changed = []
-    for f in sorted(glob.glob("*.html")):
+    for f in sorted(glob.glob("*.html") + glob.glob("zh/*.html")):
         s = open(f, encoding="utf-8").read()
         s2 = re.sub(r'(<[a-z]+ [^>]*data-google-rating[^>]*>)[^<]*(</)', r'\g<1>' + rating + r'\g<2>', s)
         if s2 != s:
