@@ -13,6 +13,18 @@ Newest entries first.
 
 ---
 
+## 2026-09-26: A Mandarin translator is available; Chinese pages in preparation
+
+Spencer, in live chat on 26 Sep 2026, after the Box Hill census figures were put to him, 33.9 per cent
+speaking Mandarin at home against 32.5 per cent speaking English only: "yes, she's a lawyer and can check
+them, but don't advertise that we have mandarin lawyers, just say that we have a mandarin translator
+available". The contact form's description and llms.txt now say "A Mandarin translator is available."
+It is recorded in CLAUDE.md as the one addition to the three service promises. Simplified Chinese
+versions of the home, contact, fees and three practice pages are being prepared on branch
+claude/youthful-bohr-aaeqrx and go live only after the Mandarin reading lawyer at the firm has checked
+them. A five or six language switcher was advised against: machine translation adds nothing to search,
+can state the law wrongly, and would imply the firm serves clients in languages it does not.
+
 ## 2026-09-26: Thirty-one further corrections and a Sources line on every article; all corrections published
 
 Checking every article's sources against the authorised legislation on 26 Sep 2026 found statements
