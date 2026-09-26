@@ -13,6 +13,16 @@ Newest entries first.
 
 ---
 
+## 2026-09-26: Held pages rule retired in the site health playbook
+
+Every correction the branch claude/youthful-bohr-aaeqrx held was published on 26 Sep 2026, so the site
+health playbook no longer holds pages by comparing that branch with main. The branch now carries only the
+Chinese pages and the 中文 links that lead to them, which touch every page, so the old rule would have
+held the whole site. The accuracy ledger seeds the twenty-four corrected pages as verified on 26 Sep 2026.
+Once the Chinese pages are published, a run that corrects an English page they translate reports the
+matching Chinese sentence with a proposed wording for Spencer to have checked, and never edits the
+Chinese itself.
+
 ## 2026-09-26: A Mandarin translator is available; Chinese pages in preparation
 
 Spencer, in live chat on 26 Sep 2026, after the Box Hill census figures were put to him, 33.9 per cent

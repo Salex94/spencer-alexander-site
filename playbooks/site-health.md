@@ -42,25 +42,22 @@ into the page. Each week, check that every article dated from 28 September 2026 
 line, and that every provision in any Sources line on a page you check still says what the article
 relies on it for.
 
-**Held pages, from 26 September 2026.** Every page that branch `claude/youthful-bohr-aaeqrx`
-changes and main does not yet carry is held: the thirteen pages of 24 September and the further
-pages whose corrections and Sources lines were added to that branch on 26 September. List them with
-`git fetch origin claude/youthful-bohr-aaeqrx` and `git diff --name-only origin/main...origin/claude/youthful-bohr-aaeqrx`.
-Leave every held page's text alone and report anything you would have changed on it, until Spencer
-has the branch published.
+**Chinese pages, from 26 September 2026.** Simplified Chinese versions of the home, contact, fees
+and three practice pages wait on branch `claude/youthful-bohr-aaeqrx` until the firm's Mandarin
+reading lawyer has checked them, and nothing on main is held for them. Once they are published in
+`zh/`, a run never edits their Chinese text: when it corrects a statement on index.html,
+contact.html, fees.html or a practice hub, its report names the matching `zh/` page and the
+sentence, with a proposed Chinese wording, for Spencer to have checked.
 
 ## Every run: the accuracy sweep
 
 1. The ledger is `scripts/accuracy-ledger.md`. Create it on the first run with one row per page
    that states the law, meaning every `insight-*.html`, every `resource-*.html`, every
    `service-*.html`, `faq.html` and the three practice hubs, each with the date last verified and
-   the outcome. The review of 24 September 2026 found errors on thirteen pages and prepared their
-   corrections on branch `claude/youthful-bohr-aaeqrx`, held until Spencer approves publishing
-   them. If `git log origin/main` shows that branch's corrections merged, seed those thirteen pages
-   with that date as verified. If not, mark those thirteen pages "corrections held for Spencer's
-   approval", leave them unedited, skip them in the sweep, and list them in one line of every report
-   until the branch is merged or Spencer decides otherwise. Seed every other page as never
-   verified. On every later run, first add a row for any legal page the ledger lacks: a page
+   the outcome. The review of 24 September 2026 and the source checks of 26 September 2026
+   corrected twenty-four pages, all published on 26 September 2026, and DECISIONS.md names them in
+   its entries of those two dates: seed those pages as verified on 26 September 2026 and every other
+   page as never verified. On every later run, first add a row for any legal page the ledger lacks: a page
    published on or after 24 September 2026 takes its publication date as the date last verified,
    because the article and service pages routines verify every claim against the authorised
    legislation before they publish, and any other page is never verified.
