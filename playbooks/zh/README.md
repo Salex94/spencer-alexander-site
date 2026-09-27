@@ -24,7 +24,7 @@ before anything is published.
   | 4 Commercial law page | `142ZSgAeOgE4YBVAGFWc9Bw107tu3wc3kS6CM0dXA0WQ` |
   | 5 Fees page | `12F88pLGMWKHkwMDSzgXBs5uYZcojgLGt3b7DBdLGiTk` |
   | 6 Contact and thank you pages | `1ogvsfVpTNm5yQ_eKlBufqm3ahHvn1HUA845RpiVlxLw` |
-  | 7 Enquiry acknowledgement email | `1kbyIGVT3T4owdJPkOv-66S_JyAQaJV_1oVjPay396pk` |
+  | 7 Enquiry acknowledgement email | `1G66xrbVCXJXiGcpUGpVV0l3u9EGaV0EhgELAufoW7n8` |
 
 - `review-baseline/` holds exactly what each document said when it was sent to her, and `BRIEF.md`
   holds the standard the pages were translated to, with the fixed wordings and the rules.
