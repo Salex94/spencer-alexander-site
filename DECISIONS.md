@@ -13,6 +13,44 @@ Newest entries first.
 
 ---
 
+## 2026-09-28: Agreed property settlement hire guide published
+
+Monday article for 28 Sep 2026 Melbourne (confirmed via `TZ=Australia/Melbourne
+date`). Rotation derived from the article files: Family Law was due (its newest
+article 31 Aug, against Commercial 7 Sep and Wills and Estates 21 Sep), matching
+the 25 Sep backlog. Hire alternation derived from git after unshallowing the
+clone: commit 5585142 added insight-power-of-attorney-misuse.html and carries no
+`Article type` line, so it was an ordinary article and a hire guide fell due,
+again matching the backlog's marker. Backlog item 5 was taken:
+`insight-agreed-property-settlement.html`, "We have agreed how to split
+everything. Do we still need lawyers?", the first hire guide under the 24 Sep
+rule. Not a rehash: the property after separation article gives consent orders
+and financial agreements one section and one FAQ, and the binding financial
+agreements article covers agreements before and during a relationship; this
+article stays on the engagement question, what a private agreement fails to do,
+the time limits and consent as a way in, what the lawyer's work involves, who
+the lawyer acts for, and the fixed fee stated exactly as fees.html states it.
+Verification against the authorised texts, per the 24 Sep note: Family Law Act
+1975 (Cth) compilation 101 of 10 June 2025 on legislation.gov.au (sections 44,
+71B, 79, 79A, 81, 90G, 90K, 90SM, 90SN, 90UJ, 90UM, 90XT and 90XZD, so the
+Sources line names the Act alone under the more than eight provisions rule);
+Duties Act 2000 (Vic) version 141 of 24 June 2026, section 44; Income Tax
+Assessment Act 1997 (Cth) compilation 267 of 27 August 2026, section 126-5. The
+Duties Act exemption turns on the Commissioner being satisfied the transfer was
+made solely because of the breakdown, not on there being an order, so the
+article says orders or a binding agreement are the clearest way to show it. Open
+item for the Tuesday site health routine: insight-property-after-separation.html
+says a handshake transfer "isn't stamp-duty protected", which is stronger than
+section 44 supports; it was left for that routine. Photo: the spare assets/photos/1560518883.jpg (a miniature house and
+keys on a wooden table, Unsplash photo-1560518883-ce09059eeffa, confirmed live
+at the 1200 by 630 crop for og:image), visually inspected; WebP sibling made
+this run. Gates: check-publish 93 checks 0 failed after moving the family law
+hub's FAQPage dateModified with its sitemap date, check-article-images PASS,
+Google rating unchanged at 5.0. Published direct to main per the routine's
+owner permission paragraph.
+
+---
+
 ## 2026-09-26: Held pages rule retired in the site health playbook
 
 Every correction the branch claude/youthful-bohr-aaeqrx held was published on 26 Sep 2026, so the site
