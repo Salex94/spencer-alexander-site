@@ -12,7 +12,7 @@ before anything is published.
   every English page and the hreflang links on the six English pages they translate. None of it is on
   main until she has finished.
 - Her review is in Spencer's Google Drive, in the folder "Chinese website pages: translation check",
-  id `1XfXz8fCckvQ3beGULlvFI_B63Zg9vowU`. It holds seven Google Docs, one per page, each a table of
+  id `1XfXz8fCckvQ3beGULlvFI_B63Zg9vowU`. It holds eight Google Docs, one per page and one for the enquiry acknowledgement email, each a table of
   numbered rows with the English, the Chinese and a note:
 
   | Document | Drive id |
@@ -24,6 +24,7 @@ before anything is published.
   | 4 Commercial law page | `142ZSgAeOgE4YBVAGFWc9Bw107tu3wc3kS6CM0dXA0WQ` |
   | 5 Fees page | `12F88pLGMWKHkwMDSzgXBs5uYZcojgLGt3b7DBdLGiTk` |
   | 6 Contact and thank you pages | `1ogvsfVpTNm5yQ_eKlBufqm3ahHvn1HUA845RpiVlxLw` |
+  | 7 Enquiry acknowledgement email | `1kbyIGVT3T4owdJPkOv-66S_JyAQaJV_1oVjPay396pk` |
 
 - `review-baseline/` holds exactly what each document said when it was sent to her, and `BRIEF.md`
   holds the standard the pages were translated to, with the fixed wordings and the rules.
@@ -48,7 +49,11 @@ Spencer tells a session to publish the Chinese pages. That session:
    `python3 scripts/check-publish.py`, and publishes only on a clean gate, following the site's own
    publishing steps, then runs `python3 scripts/indexnow.py` with every changed .html path, the seven
    `zh/` pages among them.
-4. Records the publication in CLAUDE.md, DECISIONS.md and the bd repository's CLAUDE.md, and tells
+4. Applies her changes to document 7 to `COPY.zh` in the bd repository's
+   `tools/enquiry-autoreply/Code.template.gs`, runs its `build.py` and `test.js`, pushes, and asks
+   Spencer to paste the new `Code.gs` into his Enquiry auto reply script with `chineseChecked` set
+   to true, so enquiries from the Chinese contact page are acknowledged in Chinese.
+5. Records the publication in CLAUDE.md, DECISIONS.md and the bd repository's CLAUDE.md, and tells
    Spencer what changed.
 
 ## After publication
