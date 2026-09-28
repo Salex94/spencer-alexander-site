@@ -8,7 +8,7 @@
  "title": "Property Settlement Lawyers Box Hill | Spencer Alexander Lawyers",
  "h1": "Property Settlement Lawyers in Box Hill, Melbourne",
  "description": "Box Hill lawyers for property settlement after separation, from consent orders to court. Your first call is free, and you speak with a lawyer.",
- "lead": "From our Box Hill office, our lawyers help separated spouses and de facto partners divide property, superannuation and debts, and make the settlement binding by consent orders or a binding financial agreement, or in court when agreement is not possible. There is no automatic equal split. Married couples generally have 12 months from the divorce order taking effect to apply, and de facto partners two years from separation.",
+ "lead": "From our Box Hill office, our lawyers help separated spouses and de facto partners divide property, superannuation and debts, and make the settlement binding by consent orders or a binding financial agreement, or go to court when agreement is not possible. There is no automatic equal split. Married couples generally have 12 months from the divorce order taking effect to apply, and de facto partners two years from separation.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
   "Fixed fee consent orders for an agreed settlement",
@@ -23,7 +23,7 @@
   "bullets": [
    "There is no automatic equal split. The court weighs each person's contributions and current and future circumstances, and makes orders only if it is satisfied they are just and equitable.",
    "A private agreement, even a signed one, does not stop either of you applying to the court later, which is why an agreed settlement is made binding by consent orders or a binding financial agreement.",
-   "For de facto partners, the court can generally make property orders only if the relationship lasted at least two years, there is a child of the relationship, the relationship was registered, or the person applying made substantial contributions and refusing an order would cause them serious injustice."
+   "For de facto partners, the court can make property orders only if the relationship lasted at least two years, there is a child of the relationship, the relationship was registered, or the person applying made substantial contributions and refusing an order would cause them serious injustice."
   ]
  },
  "sections": [
@@ -40,7 +40,7 @@
    "items": [
     {
      "t": "Advice on where you stand",
-     "p": "We work through what the Family Law Act asks: what you own and owe, what each of you contributed, including as a parent or homemaker, each person's current and future circumstances, and whether the result is just and equitable, including the effect of family violence and of intentional or reckless wastage, which <a href=\"/insight-property-reforms-2025\">the 2025 reforms</a> added."
+     "p": "We work through what the Family Law Act asks: what you own and owe, what each of you contributed, including as a parent or homemaker, each person's current and future circumstances, and whether the result is just and equitable. Since <a href=\"/insight-property-reforms-2025\">the 2025 reforms</a>, the Act expressly lists the effect of any family violence on what a person could contribute and on their circumstances, and of any material waste of property or financial resources caused intentionally or recklessly."
     },
     {
      "t": "Disclosure and negotiation",
@@ -87,13 +87,13 @@
    },
    {
     "t": "Orders the court approves",
-    "d": "An agreement reached outside court goes to the court as an application for consent orders, and whether orders are agreed or decided at a hearing, the court makes them only if satisfied they are just and equitable."
+    "d": "An agreement reached outside court can be filed as an application for consent orders, and whether orders are agreed or decided at a hearing, the court makes them only if satisfied they are just and equitable."
    }
   ]
  },
  "fee": {
   "t": "What it costs to make an agreement final.",
-  "p": "Our fixed fee for consent orders for an agreed property settlement is $2,750 including GST. It covers advice on your agreement, the application and proposed orders, including one super split and one property transfer, the notice to the super fund, filing and the sealed orders, and assumes full financial disclosure has been exchanged and no company, trust or business is involved. A binding financial agreement is from $2,750 per party including GST. Negotiation, a disputed settlement and court proceedings are estimated in writing before any substantive work begins, and the court's filing fee is separate. Every price, and what costs more, is on our <a href=\"/fees\">fees page</a>."
+  "p": "Our fixed fee for consent orders for an agreed property settlement is $2,750 including GST. It covers advice on your agreement, the application and proposed orders, including one super split and one property transfer, the notice to the super fund, filing and the sealed orders, and assumes full financial disclosure has been exchanged and no company, trust or business is involved. A binding financial agreement drafted from terms you have agreed, with the advice the law requires, is from $2,750 per party including GST. Advice on an agreement drafted elsewhere, negotiation, a disputed settlement and court proceedings are estimated in writing before any substantive work begins, and the court's filing fee is separate. Every price, and what costs more, is on our <a href=\"/fees\">fees page</a>."
  },
  "related": [
   {
@@ -129,14 +129,14 @@
   },
   {
    "q": "What if my former partner will not disclose their finances?",
-   "a": "Each of you owes the other full and frank disclosure while preparing for a property case, and the court as well once one starts. The court can order disclosure, take a failure into account and order costs, and can set aside orders obtained through a failure to disclose."
+   "a": "Each of you owes the other full and frank disclosure while preparing for a property case, and the court as well once one starts. The court can order disclosure, take a failure into account and order costs, and can set aside orders where a failure to disclose has caused a miscarriage of justice."
   },
   {
    "q": "Can one lawyer act for both of us?",
    "a": "For a binding financial agreement, no. Each of you needs independent legal advice before signing, one of the steps the Act sets for the agreement to be binding. For consent orders the law requires no lawyer, and we act for one of you alone."
   }
  ],
- "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>, sections 44, 71A, 71B, 79, 79A, 90G, 90RI, 90SB, 90SM, 90SN, 90UJ, 90XC and 90XZD, and Parts VIIIA, VIIIAB and VIIIB.",
+ "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>, sections 4, 44, 71A, 71B, 79, 79A, 90G, 90RI, 90SB, 90SM, 90SN, 90UJ, 90XC and 90XZD, and Parts VIIIA, VIIIAB and VIIIB; <a href=\"https://www.legislation.gov.au/F2021L01197/latest\" rel=\"noopener\" target=\"_blank\">Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)</a>, rules 4.01, 10.04, 10.06 and 10.07, and Schedule 1, Part 1.",
  "cta": {
   "eyebrow": "After separation",
   "title": "Speak with a property settlement lawyer.",

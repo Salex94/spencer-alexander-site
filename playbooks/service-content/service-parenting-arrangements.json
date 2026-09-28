@@ -45,11 +45,11 @@
     },
     {
      "t": "Family dispute resolution",
-     "p": "We advise whether you need a certificate or an exemption applies, prepare you for mediation, and turn any agreement into terms precise enough to work."
+     "p": "We advise whether you need a certificate or can ask the court for an exemption, prepare you for mediation, and turn any agreement into terms precise enough to work."
     },
     {
      "t": "Court and urgent orders",
-     "p": "Where agreement is not possible, we apply for or respond to parenting orders, including interim and recovery orders, orders to stop a child being taken out of Australia and changes to final orders. If you are in immediate danger, call 000."
+     "p": "Where agreement is not possible, we apply for or respond to interim and final parenting orders, changes to final orders, recovery orders and orders to stop a child being taken out of Australia. If you are in immediate danger, call 000."
     }
    ]
   },
@@ -76,7 +76,7 @@
    },
    {
     "t": "A decision by the court",
-    "d": "Otherwise the application is filed with the certificate or an exemption request and a notice of any abuse, family violence or risk, and the court decides, treating the children's best interests as paramount."
+    "d": "Otherwise the application is filed with the certificate or an exemption request and the Notice of Child Abuse, Family Violence or Risk that every parenting application needs, and the court decides, treating the children's best interests as paramount."
    }
   ]
  },
@@ -110,11 +110,11 @@
  "faqs": [
   {
    "q": "Do the children have to spend equal time with each of us?",
-   "a": "No. The Family Law Act does not start from equal time or any other split, and since May 2024 there has been no presumption of equal shared parental responsibility. The court weighs the matters the Act lists for the particular child, starting with the safety of the child and their carers, and equal time remains possible where it suits the child."
+   "a": "No. The Family Law Act does not start from equal time or any other split, and since May 2024 there has been no presumption of equal shared parental responsibility. The court weighs the matters the Act lists for the particular child, starting with the safety of the child and their carers, and equal time remains possible where it is in the child's best interests."
   },
   {
    "q": "Do we have to try mediation before going to court?",
-   "a": "Usually. Unless the court grants an exemption, an application for parenting orders needs a family dispute resolution certificate, which a practitioner can also give if the other parent refuses or fails to attend. Exemptions are available for urgent applications, applications made by consent, and cases where the court is satisfied there are reasonable grounds to believe there has been family violence or child abuse, or a risk of either, among others. If you are in immediate danger, call 000."
+   "a": "Usually. Unless the court grants an exemption, an application for parenting orders needs a family dispute resolution certificate, which a practitioner can also give if the other parent refuses or fails to attend. Exemptions are available for urgent applications, applications made by consent, and cases where the court is satisfied there are reasonable grounds to believe a party has committed family violence or abused the child, or that there is a risk of family violence by a party, or of abuse if the application were delayed, among others. If you are in immediate danger, call 000."
   },
   {
    "q": "Is there a time limit for parenting orders?",
@@ -122,7 +122,7 @@
   },
   {
    "q": "Can I move away with the children?",
-   "a": "You should not, without the other parent's agreement or a court order, if the move would make it significantly harder for the children to spend time with that parent. The Act treats that as a major long-term issue, which parents are encouraged to consult each other about where it is safe, and, where a parenting order provides for joint decision-making, must consult on and genuinely try to decide together. Moving first and asking later can seriously damage your case."
+   "a": "You should not, without the other parent's agreement or a court order, if the move would make it significantly harder for the children to spend time with that parent. The Act treats that as a major long-term issue. Where it is safe, parents are encouraged to consult each other about it, and where a parenting order provides for joint decision-making, they must consult and genuinely try to decide together. Moving first and asking later can seriously damage your case."
   },
   {
    "q": "What if the other parent is keeping the children from me?",

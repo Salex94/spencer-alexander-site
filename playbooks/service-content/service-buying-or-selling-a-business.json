@@ -8,7 +8,7 @@
  "title": "Business Sale Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Business Sale Lawyers in Box Hill, Melbourne",
  "description": "Box Hill lawyers for buyers and sellers of businesses: the contract, due diligence, the lease transfer and staff. Call before you sign or pay a deposit.",
- "lead": "From our Box Hill office, our lawyers act for buyers and sellers of small and medium businesses on the contract, due diligence, the lease transfer and staff through to settlement. Call before you sign or pay a deposit, while the seller's disclosure can still be checked and the terms are still open.",
+ "lead": "From our Box Hill office, our lawyers act for buyers and sellers of small and medium businesses on the contract, due diligence, the lease transfer and staff through to settlement. Call before you sign or pay a deposit, while the terms are still open and the seller's disclosure can be checked before you are bound.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
   "For buyers and sellers of small and medium businesses",
@@ -23,7 +23,7 @@
   "bullets": [
    "The seller of a small business must generally give the buyer a section 52 statement before the buyer signs or pays a deposit.",
    "A landlord can refuse consent to the transfer of a retail lease only on one of the four grounds the Retail Leases Act lists.",
-   "A seller who follows the Act's disclosure steps when assigning a retail lease can be released from it, and so can the seller's guarantor."
+   "Where the business carries on, a seller who gives the landlord and the buyer an accurate and complete disclosure statement when assigning a retail lease is not liable to perform the lease or pay what the buyer owes under it, and nor is the seller's guarantor."
   ]
  },
  "sections": [
@@ -49,11 +49,11 @@
     },
     {
      "t": "Transferring the lease",
-     "p": "Transferring the lease usually needs the landlord's consent. For a seller we run the assignment as the Retail Leases Act requires, and for a buyer we check the rent, outgoings, term left and options to renew."
+     "p": "Transferring the lease usually needs the landlord's consent. For a seller we run the assignment under the lease and, for a retail lease, the Retail Leases Act, and for a buyer we check the rent, outgoings, term left and options to renew."
     },
     {
      "t": "Acting for sellers",
-     "p": "We prepare the contract, the section 52 statement for a small business, and the disclosure the Retail Leases Act asks of an outgoing tenant, so that you and your guarantor can be released from the lease, and we deal with the buyer's lawyer through to settlement."
+     "p": "We prepare the contract, the section 52 statement for a small business and, on a retail lease, the disclosure statement the Retail Leases Act asks of an outgoing tenant, and we deal with the buyer's lawyer through to settlement. Where the business carries on, giving the landlord and the buyer an accurate and complete disclosure statement means neither you nor your guarantor is liable to perform the lease or pay what the buyer owes under it."
     }
    ]
   },
@@ -61,8 +61,8 @@
    "eyebrow": "Time limits",
    "h2": "The dates that decide a sale.",
    "paras": [
-    "The section 52 limit above applies whether the statement was never given, was not in the prescribed form or stated its particulars inaccurately.",
-    "On a retail lease, a landlord that gives no written answer within 28 days after a request for consent to an assignment is taken to have consented, if the seller has followed every step section 61 of the Retail Leases Act requires. A landlord granting the buyer a new retail lease instead must give its disclosure statement and the proposed lease at least 14 days before the lease is entered into, and if it gives them later, the term is taken to start 14 days after they are given."
+    "The three month limit for ending the contract under section 52 applies whether the statement was never given, was not in the prescribed form, left out particulars the regulations require or stated any of them inaccurately.",
+    "On a retail lease, a landlord that gives no written answer within 28 days after a request for consent to an assignment is taken to have consented, if the seller has followed every step section 61 of the Retail Leases Act requires. A landlord granting the buyer a new retail lease instead must give its disclosure statement and the proposed lease at least 14 days before the lease is entered into, and if it gives them less than 14 days before, the term is taken to start 14 days after they are given."
    ]
   },
   {
@@ -93,7 +93,7 @@
  },
  "fee": {
   "t": "What it costs.",
-  "p": "Our review of a contract to buy a business is from $1,100 including GST, for a written report on the main risks in the contract and the vendor's disclosure with a call to go through it; a franchise or a purchase of shares costs more. Acting on a purchase through to settlement, acting for a seller and any dispute are not on our <a href=\"/fees\">fees page</a>, so each is estimated in writing before substantive work begins."
+  "p": "Our review of a contract to buy a business is from $1,100 including GST, for a written report on the main risks in the contract and the vendor's disclosure with a call to go through it; a franchise or a purchase of shares costs more. Acting on a purchase through to settlement, acting for a seller and any dispute are not priced on our <a href=\"/fees\">fees page</a>, so each is estimated in writing before substantive work begins."
  },
  "related": [
   {"href": "/insight-buying-a-business-victoria", "label": "Buying a business in Victoria: what to check before you sign"},
@@ -106,7 +106,7 @@
  "faqs": [
   {
    "q": "Does my business sale need a section 52 statement?",
-   "a": "Generally yes, if it is a small business under Victoria's Estate Agents Act 1980, which turns on the total price of the goodwill, plant, equipment and fittings. The seller or the seller's agent must give the buyer the statement, signed by the seller, before the buyer signs a binding contract or pays a deposit, unless the business cannot lawfully trade without its liquor licence."
+   "a": "Generally yes, if it is a small business under Victoria's Estate Agents Act 1980, a test that turns on the total price of the goodwill, plant, equipment and fittings. The seller or the seller's agent must give the buyer the statement, signed by the seller, before the buyer signs anything meant to bind them or pays a deposit, unless the business cannot lawfully trade without its liquor licence."
   },
   {
    "q": "Can the landlord refuse to transfer the lease to the buyer?",
@@ -118,14 +118,14 @@
   },
   {
    "q": "What happens to the staff when a business is sold?",
-   "a": "Their entitlements can follow them. Federal workplace law can count an employee's service with the seller as service with the buyer, and in Victoria a new owner must not refuse a continuing employee long service leave that accrued before the sale. The contract should therefore say whom the buyer takes on and how what they have accrued is adjusted at settlement."
+   "a": "Their entitlements can follow them. Federal workplace law can count an employee's service with the seller as service with the buyer, and in Victoria a new owner must not refuse a continuing employee long service leave that accrued before the sale. The contract should therefore say whom the buyer takes on and how their accrued entitlements are adjusted at settlement."
   },
   {
    "q": "How much does a lawyer cost for buying or selling a business?",
    "a": "Our review of a contract to buy a business is from $1,100 including GST. Everything else on a sale, including acting for a seller, is estimated in writing before substantive work begins, and our <a href=\"/fees\">fees page</a> sets out what the review covers."
   }
  ],
- "sources": "<a href=\"https://www.legislation.vic.gov.au/in-force/acts/estate-agents-act-1980\" rel=\"noopener\" target=\"_blank\">Estate Agents Act 1980 (Vic)</a>, sections 4 and 52; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/retail-leases-act-2003\" rel=\"noopener\" target=\"_blank\">Retail Leases Act 2003 (Vic)</a>, sections 17, 60, 61 and 62; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/long-service-leave-act-2018\" rel=\"noopener\" target=\"_blank\">Long Service Leave Act 2018 (Vic)</a>, section 11; <a href=\"https://www.legislation.gov.au/C2009A00028/latest\" rel=\"noopener\" target=\"_blank\">Fair Work Act 2009 (Cth)</a>, sections 22 and 311; <a href=\"https://www.legislation.gov.au/C2009A00130/latest\" rel=\"noopener\" target=\"_blank\">Personal Property Securities Act 2009 (Cth)</a>, section 148.",
+ "sources": "<a href=\"https://www.legislation.vic.gov.au/in-force/acts/estate-agents-act-1980\" rel=\"noopener\" target=\"_blank\">Estate Agents Act 1980 (Vic)</a>, sections 4 and 52; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/retail-leases-act-2003\" rel=\"noopener\" target=\"_blank\">Retail Leases Act 2003 (Vic)</a>, sections 17, 60, 61 and 62; <a href=\"https://www.legislation.vic.gov.au/in-force/statutory-rules/retail-leases-regulations-2023\" rel=\"noopener\" target=\"_blank\">Retail Leases Regulations 2023 (Vic)</a>, regulation 12 and Schedule 4; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/long-service-leave-act-2018\" rel=\"noopener\" target=\"_blank\">Long Service Leave Act 2018 (Vic)</a>, section 11; <a href=\"https://www.legislation.gov.au/C2009A00028/latest\" rel=\"noopener\" target=\"_blank\">Fair Work Act 2009 (Cth)</a>, sections 22 and 311; <a href=\"https://www.legislation.gov.au/C2009A00130/latest\" rel=\"noopener\" target=\"_blank\">Personal Property Securities Act 2009 (Cth)</a>, section 148.",
  "cta": {
   "eyebrow": "Before you sign",
   "title": "Speak with a business sale lawyer.",

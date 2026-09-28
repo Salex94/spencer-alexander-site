@@ -393,6 +393,18 @@ def main():
     check("every article has related reading", not no_related, ", ".join(no_related[:4]))
     check("article read times match their length", not bad_time, ", ".join(bad_time[:4]))
 
+    # A listing card shows the article's own read time (added 28 Sep 2026, when
+    # fourteen cards on insights.html were found a minute or two behind).
+    arts_rt = {f[:-5]: (re.search(r"(\d+) min read", read(f)) or [None, None])[1] for f in glob.glob("insight-*.html")}
+    card_drift = []
+    for lp in ("insights.html", "index.html"):
+        cards = re.split(r'<(?:article|a) class="(?:post-card|feature|insight-card|teaser)[^"]*"', read(lp))[1:]
+        for c in cards:
+            h = re.search(r'href="/(insight-[a-z0-9-]+)"', c); t = re.search(r"(\d+) min read", c)
+            if h and t and arts_rt.get(h.group(1)) != t.group(1):
+                card_drift.append("%s %s" % (lp, h.group(1)))
+    check("listing read times match the articles", not card_drift, ", ".join(card_drift[:4]))
+
     # FAQ schema answers must be the visible answers, word for word (added 8 Sep
     # 2026: an answer engine that finds the schema and the page disagreeing
     # trusts neither).

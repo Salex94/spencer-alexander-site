@@ -23,7 +23,7 @@
   "bullets": [
    "Contesting a will usually means a family provision claim under Part IV of the Administration and Probate Act 1958, asking the court to order provision from the estate.",
    "The court must be satisfied that the claimant is an eligible person, that the deceased had a moral duty at the time of death to provide for them, and that the distribution of the estate fails to make adequate provision for their proper maintenance and support. Some eligible people, such as a grandchild, must also show they were wholly or partly dependent on the deceased.",
-   "A challenge to the will's validity, such as for lack of capacity or undue influence, is a separate claim, usually raised by a caveat before probate is granted."
+   "A challenge to the will's validity, such as for lack of capacity or undue influence, is a separate claim, usually raised by a caveat before probate is granted, or after it by an application to revoke the grant."
   ]
  },
  "sections": [
@@ -32,7 +32,7 @@
    "h2": "When a will is in dispute.",
    "paras": [
     "People call us when a parent or partner has died and the will leaves them out or short, or when they doubt the will is valid at all. Executors call when a claimant's lawyers have written or a caveat has held up probate.",
-    "We act on either side, and for beneficiaries too, who bear any provision made for a claimant in proportion to their interests, unless the court orders otherwise."
+    "We act on either side, and for beneficiaries too, who bear the cost of any provision the court orders for a claimant, in proportion to the value of their interests, unless it orders otherwise."
    ]
   },
   {
@@ -49,7 +49,7 @@
     },
     {
      "t": "Defending an estate",
-     "p": "An executor served with a claim needs to protect the estate while it is decided. We gather the evidence of the deceased's reasons, which the court must take into account if it makes an order, and advise on <a href=\"/insight-executor-duties\">when it is safe to distribute</a>."
+     "p": "An executor served with a claim needs to protect the estate while the claim is decided. We gather the evidence of the deceased's reasons, which the court must take into account if it makes an order, and advise on <a href=\"/insight-executor-duties\">when it is safe to distribute</a>."
     },
     {
      "t": "Protecting a beneficiary's share",
@@ -122,7 +122,7 @@
  "faqs": [
   {
    "q": "Is it too late to contest a will once probate has been granted?",
-   "a": "Not necessarily. A family provision claim can be made within six months of the grant, or later if the court extends the time on an application made before the estate is finally distributed, though a late claim cannot disturb what has already been distributed. Validity challenges are usually raised before the grant, so call us promptly."
+   "a": "Not necessarily. A family provision claim can be made within six months of the grant, or later if the court extends the time on an application made before the estate is finally distributed, though a late claim cannot disturb what has already been distributed. A challenge to the will's validity is usually raised before the grant, but can still be made after it by applying to the court to revoke the grant, so call us promptly."
   },
   {
    "q": "Can a grandchild, a sibling or a carer make a claim?",
@@ -138,10 +138,10 @@
   },
   {
    "q": "Can a will be challenged if it was not signed and witnessed properly?",
-   "a": "Yes, since the Wills Act 1997 says a will is not valid unless it is signed and witnessed as the Act requires. The Supreme Court can still admit a document to probate if satisfied the person intended it to be their will, so a signing error does not always decide the dispute."
+   "a": "Yes. The Wills Act 1997 says a will is not valid unless it is signed and witnessed as the Act requires. The Supreme Court can still admit a document to probate if satisfied the person intended it to be their will, so a signing error does not always decide the dispute."
   }
  ],
- "sources": "<a href=\"https://www.legislation.vic.gov.au/in-force/acts/administration-and-probate-act-1958\" rel=\"noopener\" target=\"_blank\">Administration and Probate Act 1958 (Vic)</a>, sections 12 and 58 and Part IV; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/wills-act-1997\" rel=\"noopener\" target=\"_blank\">Wills Act 1997 (Vic)</a>, sections 7 and 9; <a href=\"https://www.legislation.vic.gov.au/in-force/statutory-rules/supreme-court-administration-and-probate-rules-2023\" rel=\"noopener\" target=\"_blank\">Supreme Court (Administration and Probate) Rules 2023 (Vic)</a>, Order 8; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/civil-procedure-act-2010\" rel=\"noopener\" target=\"_blank\">Civil Procedure Act 2010 (Vic)</a>, section 66; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/supreme-court-act-1986\" rel=\"noopener\" target=\"_blank\">Supreme Court Act 1986 (Vic)</a>, section 24; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/county-court-act-1958\" rel=\"noopener\" target=\"_blank\">County Court Act 1958 (Vic)</a>, section 78A.",
+ "sources": "<a href=\"https://www.legislation.vic.gov.au/in-force/acts/administration-and-probate-act-1958\" rel=\"noopener\" target=\"_blank\">Administration and Probate Act 1958 (Vic)</a>, sections 12 and 58 and Part IV; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/wills-act-1997\" rel=\"noopener\" target=\"_blank\">Wills Act 1997 (Vic)</a>, sections 7 and 9; <a href=\"https://www.legislation.vic.gov.au/in-force/statutory-rules/supreme-court-administration-and-probate-rules-2023\" rel=\"noopener\" target=\"_blank\">Supreme Court (Administration and Probate) Rules 2023 (Vic)</a>, Orders 8 and 11; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/civil-procedure-act-2010\" rel=\"noopener\" target=\"_blank\">Civil Procedure Act 2010 (Vic)</a>, section 66; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/supreme-court-act-1986\" rel=\"noopener\" target=\"_blank\">Supreme Court Act 1986 (Vic)</a>, section 24; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/county-court-act-1958\" rel=\"noopener\" target=\"_blank\">County Court Act 1958 (Vic)</a>, section 78A.",
  "cta": {
   "eyebrow": "Before the time runs",
   "title": "Speak with a will dispute lawyer.",

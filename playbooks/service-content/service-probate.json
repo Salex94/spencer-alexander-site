@@ -8,7 +8,7 @@
  "title": "Probate Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Probate Lawyers in Box Hill, Melbourne",
  "description": "Probate and letters of administration from our Box Hill office, with fixed fees for a straightforward estate. Call to find out if the estate needs a grant.",
- "lead": "We act for executors and families from our Box Hill office, preparing applications for probate and letters of administration and guiding or taking on the administration that follows. A straightforward probate application is a fixed fee of $1,650, and letters of administration $1,980, each including GST.",
+ "lead": "We act for executors and families from our Box Hill office, preparing applications for probate and letters of administration and guiding or taking on the administration that follows. A straightforward probate application is a fixed fee of $1,650, and letters of administration where there is no will $1,980, each including GST.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
   "Fixed fees for a straightforward probate or administration application",
@@ -40,7 +40,7 @@
    "items": [
     {
      "t": "Whether a grant is needed",
-     "p": "We look at what the person owned and how it was held, and tell you whether a grant is needed and who should apply. The law lets a bank or other holder release a smaller amount without one, if it chooses to."
+     "p": "We look at what the person owned and how it was held, and tell you whether a grant is needed and who should apply. The law lets a bank or other holder release money or other personal property up to a set threshold without one, if it chooses to."
     },
     {
      "t": "Probate applications",
@@ -60,7 +60,7 @@
    "eyebrow": "Time limits",
    "h2": "The dates an executor works to.",
    "paras": [
-    "There is usually no pressing deadline to apply, but once six weeks have passed since the death, anyone interested in the estate can ask the court to call on an executor who has neither applied nor renounced, and an application first made over three years after the death must explain the delay.",
+    "There is usually no pressing deadline to apply. Once six weeks have passed since the death, though, anyone interested in the estate, or a creditor, can ask the court to call on an executor who has neither applied nor renounced to do one or the other, or to explain why not. An application first made more than three years after the death must explain the delay by affidavit.",
     "The six months after the grant matter most. A family provision claim must generally be made within them. The court can extend that time, but only on an application made before final distribution, and an extension cannot disturb anything distributed before it was sought. An executor who distributes properly after the six months, with no notice of a claim, is generally protected. Our guide to <a href=\"/insight-contesting-a-will\">contesting a will in Victoria</a> explains who can claim."
    ]
   },
@@ -83,17 +83,17 @@
    },
    {
     "t": "The application",
-    "d": "Filed online with the applicant's affidavit, exhibiting the will if there is one, a certified copy of the death certificate and, where the Registrar asks, an inventory."
+    "d": "Filed online with the applicant's affidavit, exhibiting the will if there is one, a certified copy of the death certificate and the inventory of assets and liabilities the Registrar requires. Any original will is then filed with the Probate Office within 28 days."
    },
    {
     "t": "The grant",
-    "d": "Made by the Registrar when satisfied, while a doubtful application, or one met by a caveat, goes to the court. The estate can then be collected and, in time, distributed."
+    "d": "Made by the Registrar when satisfied, though the court's order is needed while a caveat stands or where it is doubtful whether a grant should be made. The estate can then be collected and, in time, distributed."
    }
   ]
  },
  "fee": {
   "t": "Fixed fees for a straightforward grant.",
-  "p": "A probate application is a fixed fee of $1,650 and letters of administration $1,980, each including GST, for a straightforward estate as our <a href=\"/fees\">fees page</a> defines it. For probate that means a properly signed original will, executors able to apply, assets in Victoria and no caveat or challenge, and for administration an applicant with the first right to apply and no dispute about who inherits. Each covers the application, the notice of intention and its fee, answering the Probate Office's routine questions and the grant. The court's filing fee is separate. Estate administration after the grant, disputes, litigation and anything else not on the fees page are estimated in writing before substantive work begins."
+  "p": "A probate application is a fixed fee of $1,650 and letters of administration $1,980, each including GST, for a straightforward estate as our <a href=\"/fees\">fees page</a> defines it. For probate that means a properly signed original will, executors able to apply, assets in Victoria and no caveat or challenge, and for administration an estate with no will, an applicant with the first right to apply and no dispute about who inherits. Each covers the application, the notice of intention and its fee, answering the Probate Office's routine questions and the grant. The court's filing fee is separate. Estate administration after the grant, disputes, litigation and anything else not on the fees page are estimated in writing before substantive work begins."
  },
  "related": [
   {
@@ -129,7 +129,7 @@
   },
   {
    "q": "How much does probate cost?",
-   "a": "Our fixed fee for a probate application in a straightforward estate is $1,650, and for letters of administration $1,980, each including GST. The court's filing fee is separate, scaled to the estate's gross value and nil where that value is less than $250,000. These costs are ordinarily paid from the estate."
+   "a": "Our fixed fee for a probate application in a straightforward estate is $1,650, and for letters of administration where there is no will $1,980, each including GST. The court's filing fee is separate, scaled to the estate's gross value and nil where that value is less than $250,000. Before any work begins, we confirm in writing how these costs will be paid."
   },
   {
    "q": "Do I have to act as executor?",
@@ -140,7 +140,7 @@
    "a": "Yes, the court's rules allow an executor to apply without a lawyer. Help is most worthwhile when the will is missing, damaged or not properly signed, when executors disagree or a claim is in view, and in the decisions after the grant about debts, tax and when to distribute."
   }
  ],
- "sources": "<a href=\"https://www.legislation.vic.gov.au/in-force/acts/administration-and-probate-act-1958\" rel=\"noopener\" target=\"_blank\">Administration and Probate Act 1958 (Vic)</a>, sections 6, 12, 13, 15, 16, 25, 31A, 37, 39, 39A, 49, 99 and 99A, and Parts IA and IV; <a href=\"https://www.legislation.vic.gov.au/in-force/statutory-rules/supreme-court-administration-and-probate-rules-2023\" rel=\"noopener\" target=\"_blank\">Supreme Court (Administration and Probate) Rules 2023 (Vic)</a>, rules 1.11, 2.03, 2.04, 3.02.1, 4.03, 4.04 and 6.02; <a href=\"https://www.legislation.vic.gov.au/in-force/statutory-rules/supreme-court-fees-regulations-2018\" rel=\"noopener\" target=\"_blank\">Supreme Court (Fees) Regulations 2018 (Vic)</a>, Schedule 1, item 4.2; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/trustee-act-1958\" rel=\"noopener\" target=\"_blank\">Trustee Act 1958 (Vic)</a>, sections 33 and 36.",
+ "sources": "<a href=\"https://www.legislation.vic.gov.au/in-force/acts/administration-and-probate-act-1958\" rel=\"noopener\" target=\"_blank\">Administration and Probate Act 1958 (Vic)</a>, sections 6, 12, 13, 15, 16, 25, 31A, 37, 39, 39A, 49, 99 and 99A, and Parts IA and IV; <a href=\"https://www.legislation.vic.gov.au/in-force/statutory-rules/supreme-court-administration-and-probate-rules-2023\" rel=\"noopener\" target=\"_blank\">Supreme Court (Administration and Probate) Rules 2023 (Vic)</a>, rules 1.11, 2.02.1, 2.03, 2.04, 3.02.1, 3.03, 4.03, 4.04 and 6.02; <a href=\"https://www.legislation.vic.gov.au/in-force/statutory-rules/supreme-court-fees-regulations-2018\" rel=\"noopener\" target=\"_blank\">Supreme Court (Fees) Regulations 2018 (Vic)</a>, Schedule 1, item 4.2; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/trustee-act-1958\" rel=\"noopener\" target=\"_blank\">Trustee Act 1958 (Vic)</a>, sections 33 and 36.",
  "cta": {
   "eyebrow": "Named as executor, or next of kin",
   "title": "Speak with a probate lawyer.",
