@@ -13,6 +13,22 @@ Newest entries first.
 
 ---
 
+## 2026-09-28, late evening: will prices and prices shown before and after GST
+
+Asked whether the fees were too cheap, Spencer chose to leave them as they are except the wills: "make
+will 450 dollars. And make wills for couples 800 dollars. Exclude GST from all of the prices", then "show
+the pre and post GST prices ... except the updated will figures, those figures should have the +10
+percent GST on top." A single will is therefore $450 plus GST, $495 in total, and wills for a couple
+$800 plus GST, $880 in total, on fees.html, the wills hub, the wills service page, two articles and
+llms.txt. Every other total is unchanged. fees.html now shows the amount before GST beneath each total,
+which stays the more prominent figure as section 48 of the Australian Consumer Law requires; showing
+only the figure before GST to consumers would breach it. The schema keeps the total as each offer's
+price. The company set up price includes the ASIC fee, which carries no GST, so that row says how GST
+applies instead of showing a figure before GST. At $495 the single will is the second lowest of the
+Victorian firms that publish a price, and at $880 the couple's wills are the lowest by $320.
+
+---
+
 ## 2026-09-28, evening: Spencer's voice, nothing about AI, no shoots, and his answers
 
 Spencer's words: "I also don't plan on conducting any photo shoots / videos - I want you to assess and

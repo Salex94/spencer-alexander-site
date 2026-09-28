@@ -595,6 +595,22 @@ def main():
             ai_bad.append("%s mentions %r" % (f, m.group(0)))
     check("no mention of AI anywhere on the site", not ai_bad, "; ".join(ai_bad[:4]))
 
+    # Each price on fees.html shows the total including GST and, beneath it and less prominent, the
+    # amount before GST (Spencer, 28 Sep 2026); the two must agree, so a price change moves both.
+    from decimal import Decimal, ROUND_HALF_UP
+    gst_bad = []
+    for fid, total, before in re.findall(r'<div class="fee" id="(fee-[^"]+)">.*?<p class="fee__price">([^<]+)</p>(?:<p class="fee__gst">([^<]+)</p>)?', read("fees.html"), re.S):
+        if fid == "fee-company-set-up":
+            continue
+        if not before:
+            gst_bad.append(fid + " has no amount before GST"); continue
+        t = Decimal(re.sub(r"[^\d.]", "", total))
+        want = (t / Decimal("1.1")).quantize(Decimal("0.01"), ROUND_HALF_UP)
+        want_s = ("from " if total.startswith("from") else "") + ("${:,.0f}".format(want) if want == want.to_integral() else "${:,.2f}".format(want)) + " plus GST"
+        if before != want_s:
+            gst_bad.append("%s shows %r, expected %r" % (fid, before, want_s))
+    check("fees page amounts before GST match the totals", not gst_bad, "; ".join(gst_bad[:3]))
+
     # Every inline photograph is served as WebP with the JPEG as fallback
     # (9 Sep 2026: about half the image bytes above the fold). scripts/make-webp.py
     # writes the siblings; the <picture> form is in the template.

@@ -61,7 +61,7 @@
  },
  "fee": {
   "t": "Fixed fees for wills and estate plans.",
-  "p": "An estate plan for one person, with a will, an enduring power of attorney and a medical treatment decision maker appointment, is a fixed fee of $990 including GST, or $1,800 for a couple, each with one advice meeting and one signing appointment. A single will is $550, mirror wills for a couple are $1,100, and a power of attorney or medical appointment on its own is $330 per person. A will with a testamentary trust is from $1,500, or from $2,750 for a couple, confirmed in writing after the first meeting. Our <a href=\"/fees\">fees page</a> sets out what each price covers and assumes, and anything it does not list, such as an advance care directive, is estimated in writing before substantive work begins."
+  "p": "An estate plan for one person, with a will, an enduring power of attorney and a medical treatment decision maker appointment, is a fixed fee of $990 including GST, or $1,800 for a couple, each with one advice meeting and one signing appointment. A single will is $495, mirror wills for a couple are $880, and a power of attorney or medical appointment on its own is $330 per person. A will with a testamentary trust is from $1,500, or from $2,750 for a couple, confirmed in writing after the first meeting. Our <a href=\"/fees\">fees page</a> sets out what each price covers and assumes, and anything it does not list, such as an advance care directive, is estimated in writing before substantive work begins."
  },
  "related": [
   {"href": "/insight-making-a-valid-will", "label": "How to make a valid will in Victoria"},
@@ -87,8 +87,8 @@
  "offers": [
   {"name": "Estate plan for one person", "price": "990"},
   {"name": "Estate plan for a couple", "price": "1800"},
-  {"name": "Single will", "price": "550"},
-  {"name": "Wills for a couple", "price": "1100"},
+  {"name": "Single will", "price": "495"},
+  {"name": "Wills for a couple", "price": "880"},
   {"name": "Enduring power of attorney, per person", "price": "330"},
   {"name": "Appointment of a medical treatment decision maker, per person", "price": "330"}
  ]

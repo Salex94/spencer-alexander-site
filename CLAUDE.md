@@ -798,6 +798,13 @@ the final round were published to main on 28 Sep 2026; DECISIONS.md records both
 - **ABN.** The firm's main business location is Box Hill 3128, the office address the site uses. The
   public ABN register still showed VIC 3106 on 28 Sep 2026 until Spencer updates it; the site is right.
 - **About** lists no earlier roles.
+- **Prices, Spencer's instruction of 28 Sep 2026.** A single will is $450 plus GST, $495 in total, and
+  wills for a couple $800 plus GST, $880 in total; every other price stayed as it was. fees.html shows
+  each price as the total including GST, the prominent figure, with the amount before GST beneath it in
+  smaller type, because section 48 of the Australian Consumer Law requires the total to be at least as
+  prominent as any part of it. The company set up row states instead that its ASIC fee carries no GST.
+  Every other page, the schema, llms.txt and the Business Profile quote the total including GST. The
+  gate's "fees page amounts before GST match the totals" check keeps the two figures in step.
 
 ## English only, Spencer's instruction of 28 Sep 2026
 
