@@ -288,8 +288,7 @@
   form.addEventListener("submit", function (e) {
     if (!phone.value.trim() && !email.value.trim()) {
       e.preventDefault();
-      var zh = /^zh/i.test(document.documentElement.lang || "");
-      email.setCustomValidity(zh ? "请留下电话号码或电子邮箱。" : "Please leave a phone number or an email address.");
+      email.setCustomValidity("Please leave a phone number or an email address.");
       email.reportValidity();
     }
   });

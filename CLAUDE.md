@@ -487,12 +487,10 @@ future edit, every new page and every new article.
   in the Professional Standards scheme, so the footer statement stays; the
   first call is free; enquiries are answered within one business day and
   after hours contact is available for urgent matters. Do not add any further
-  service promise, and never a specialist claim. The one addition, on
-  Spencer's instruction of 26 Sep 2026, is "A Mandarin translator is
-  available", in exactly those words or 可提供普通话翻译 in Chinese: "don't
-  advertise that we have mandarin lawyers, just say that we have a mandarin
-  translator available". No page says or implies that a lawyer at the firm
-  speaks Mandarin. The admission year, 2018, and the Law Institute
+  service promise, and never a specialist claim. The site is in English
+  only and offers no translator or interpreter, on Spencer's instruction of
+  28 Sep 2026, which replaced his translator line of 26 Sep 2026; see
+  "English only" below. The admission year, 2018, and the Law Institute
   membership are on about.html and in every article's author card.
 
 ## Second enhancement round, owner request 8 Sep 2026
@@ -727,8 +725,7 @@ came out of them and is settled:
 
 Spencer asked for a final review so that every category is the best it can be and gave full rein to
 implement it: "You have full rein to implement evrything you see fit accordingly". The preview below and
-the final round were published to main on 28 Sep 2026, with the Chinese pages held back; DECISIONS.md
-records both.
+the final round were published to main on 28 Sep 2026; DECISIONS.md records both.
 
 - **Service pages.** Eight `service-*.html` pages, the playbook's cap, built by
   `scripts/build-service-page.py` from content files in `playbooks/service-content/`, which hold the
@@ -766,50 +763,24 @@ records both.
   service pages; the commercial hub's urgent strip and a FAQ say what to do the day a statutory demand
   arrives, with an email link for a photo of it.
 - **Trust.** The firm node carries the ABN as `taxID`; About links the Register of Lawyers; each hub
-  names Melbourne's eastern suburbs and says a Mandarin translator is available.
+  names Melbourne's eastern suburbs.
 - **Letters of administration** at $1,980 is always quoted as where there is no will, as fees.html
   prices it. The probate page says nothing about costs being paid from the estate until Spencer gives
   his view on rule 9.01 of the probate rules.
 - **Listing read times** on insights.html and index.html must equal each article's own; the gate
   checks it.
-- **The Chinese pages were held back from the publish of 28 Sep 2026**, because the Mandarin reading
-  lawyer had not finished: main has no `zh/`, no 中文 links in the top bar, mobile menu and footer, no
-  hreflang links and no Chinese sitemap entries, so no English page links to a page that is not live.
-  The branch `claude/youthful-bohr-aaeqrx` keeps them, and they are published later under
-  `playbooks/zh/README.md`, whose carry list says what each must take from the English first. They are
-  never published unchecked.
-- Keys after this round: site.css v21, styles.css v9, site.js v16.
+- Keys after this round: site.css v21, styles.css v9, site.js v17.
 
-## Chinese pages, Spencer's instruction of 26 Sep 2026
+## English only, Spencer's instruction of 28 Sep 2026
 
-Box Hill's 2021 census count has more residents speaking Mandarin at home than speaking English only,
-so seven pages have Simplified Chinese versions in `zh/`, kept on the branch `claude/youthful-bohr-aaeqrx`
-and not yet on main: the home page, contact, fees, the three
-practice pages and the thank you page. Spencer's words: "don't advertise that we have mandarin lawyers,
-just say that we have a mandarin translator available". A lawyer at the firm who reads Mandarin checks
-every Chinese line before it is published; `playbooks/zh/README.md` records her review, where it is and
-how it is applied, and `playbooks/zh/BRIEF.md` is the standard for every Chinese page.
-
-- **What the pages say about language.** Only 可提供普通话翻译, a Mandarin translator is available,
-  and never that a lawyer speaks Mandarin. The gate fails a page where 普通话 comes close before 律师.
-- **Same rules as the English site.** No dashes, including ——, and no brackets, including （）, apart
-  from the phone number and the (Vic) and (Cth) of Act titles; no 专家, 专攻 or 专精; no promised
-  outcome. Legal statements say exactly what the English says. Names, addresses, the phone number and
-  Google review quotes stay in English.
-- **Structure.** Each page is `lang="zh-Hans"` with its own canonical, `https://www.spenceralexander.com.au/zh/`
-  for the home page and `zh/<page>.html` for the others, and hreflang en-AU, zh-Hans and x-default
-  pointing both ways, x-default being the English page; the thank you page is noindex and has none.
-  Asset and page links are root relative. The Chinese header, menus and footer are one shared version
-  on all seven pages, and the English pages' top bar, mobile menu and footer carry a 中文 link to `/zh/`.
-  Links to pages that exist only in English say so in the Chinese.
-- **Keeping them in step.** A change to the substance of index.html, contact.html, fees.html or a
-  practice hub is made in the matching `zh/` page in the same change and flagged to Spencer for her
-  check; a routine reports the Chinese sentence with a proposed wording instead of editing it. The gate
-  checks lang, canonical, hreflang both ways, the style rules above, links and assets, one shared
-  footer, FAQ schema against the visible answers, and that the Chinese fees page carries exactly the
-  English page's prices.
-- `scripts/site.js` shows the form's phone or email message in Chinese on a `zh-Hans` page, and
-  `scripts/refresh-google-rating.py` updates the rating on the Chinese pages too. Keys: site.js v16, with the final round of 28 Sep 2026.
+"We are an Australian law firm based in English and should only provide English content / services, so
+let's scrap the mandarin or other language considerations." The seven Simplified Chinese pages built on
+26 Sep 2026 were never published and have been deleted, with their review notes, and the line "A Mandarin
+translator is available" has been removed from every page, the rail card, the contact form and llms.txt.
+Every page is `lang="en-AU"`, with no hreflang, no page in another language and no offer of a translator
+or interpreter. Never add one without a new instruction from Spencer. The gate's English only check fails
+a `zh/` directory, a page in another language, an hreflang link, text in a non Latin script, any mention of Mandarin or Cantonese,
+and any offer of a translator or interpreter; a statement of law about translating documents stays allowed. Keys: site.js v17, English only.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 

@@ -42,12 +42,10 @@ into the page. Each week, check that every article dated from 28 September 2026 
 line, and that every provision in any Sources line on a page you check still says what the article
 relies on it for.
 
-**Chinese pages, from 26 September 2026.** Simplified Chinese versions of the home, contact, fees
-and three practice pages wait on branch `claude/youthful-bohr-aaeqrx` until the firm's Mandarin
-reading lawyer has checked them, and nothing on main is held for them. Once they are published in
-`zh/`, a run never edits their Chinese text: when it corrects a statement on index.html,
-contact.html, fees.html or a practice hub, its report names the matching `zh/` page and the
-sentence, with a proposed Chinese wording, for Spencer to have checked.
+**English only, Spencer's instruction of 28 September 2026.** "We are an Australian law firm based
+in English and should only provide English content / services." The site has no page in another
+language and offers no translator or interpreter, and a run never adds either. The gate's English only
+check fails any page that does.
 
 ## Every run: the accuracy sweep
 

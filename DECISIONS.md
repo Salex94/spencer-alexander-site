@@ -13,13 +13,38 @@ Newest entries first.
 
 ---
 
+## 2026-09-28: English only
+
+Spencer, reviewing the final round the same evening: "It looks okay, I agree with everything except let's
+not include the Chinese pages or other languages. We are an Australian law firm based in English and
+should only provide English content / services, so let's scrap the mandarin or other language
+considerations."
+
+- The seven Simplified Chinese pages, never published, were deleted from the branch with their review
+  notes in `playbooks/zh/`, and the enquiry auto reply in the bd repository lost its Chinese version.
+- "A Mandarin translator is available", added on his instruction of 26 Sep 2026, was removed from the
+  rail card on every hub, article, resource and service page, the three hub locality lines, the home
+  page, the contact page's enquiry hint and llms.txt.
+- The script that showed the form message in Chinese, the rating refresh and the chrome propagation no
+  longer handle Chinese pages, and site.js is v17.
+- The gate's Chinese page check became an English only check: it fails a `zh/` directory, a page not in
+  `en-AU`, an hreflang link, text in a non Latin script, any mention of Mandarin or Cantonese, and any
+  offer of a translator or interpreter. The divorce page's statement that we arrange translations of
+  documents not in English stays, because the court requires an English translation of any document
+  filed in another language, such as an overseas marriage certificate; that is procedure, not a
+  language service.
+- The Drive folder "Chinese website pages: translation check" is Spencer's to delete; no session
+  deletes it.
+
+---
+
 ## 2026-09-28: Final round published with full rein, Chinese pages held back
 
 After the six audits and the preview, Spencer asked for one final review so that every category is the
 best it can be, and gave full rein to implement it: "You have full rein to implement evrything you see
 fit accordingly, if you cannot do anything, tell me and I will address it on my side." The preview and
-the final round were published to main that day. The Chinese pages were held back, because the Mandarin
-reading lawyer has not yet checked them; they stay on the branch `claude/youthful-bohr-aaeqrx`.
+the final round were published to main that day. The Chinese pages were held back, and the English
+only entry above then scrapped them.
 
 - **The preview**, as recorded in CLAUDE.md: eight service pages, prices where people decide, Fees in
   the navigation, new hub photographs, the call and enquire bar on phones, the quick exit on family
