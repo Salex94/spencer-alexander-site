@@ -13,6 +13,17 @@ Newest entries first.
 
 ---
 
+## 2026-09-28, night: the fleet check moves to Site accuracy and health
+
+Spencer's routines were switched over to their launchers on 28 September 2026. The Saturday
+scoreboard's fleet check needs the Claude Code Remote connector, and the routines screen does not
+offer it, while Site accuracy and health already carries it. So from 29 September 2026 the Tuesday
+run calls `list_triggers`, read only, and puts at the top of its report any routine that failed,
+went silent, is missing, or should have been deleted. `playbooks/site-health.md` sets it out, and
+nothing from it is written to this repository.
+
+---
+
 ## 2026-09-28, night: four files nothing used were removed
 
 Spencer asked that his GitHub be kept simple and that anything in it that does nothing be dealt with.

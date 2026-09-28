@@ -97,6 +97,31 @@ restructure a page or change design goes into the report as a recommendation, ne
 If a Drive folder named "Search Console exports" holds a recent performance export, let its
 queries steer which pages get attention first.
 
+## Every run: the fleet check
+
+From 28 September 2026 this routine also watches the firm's other routines, because it is the one
+routine carrying the Claude Code Remote connector, which the routines screen could not add to the
+Saturday scoreboard. Call `list_triggers` once and only read what it returns: never change, fire,
+pause or delete any routine. Ignore one-off reminders, meaning any routine with a single run time
+rather than a schedule. Then put one plain line for each of these at the top of the final message:
+
+- any routine whose last run did not succeed;
+- Daily referral prospecting or the Morning desk with no run for two or more weekdays, the Inbox
+  desk with no run on the whole of the previous weekday, or the Matter Filer waiting list with no
+  run for three hours or more;
+- Weekly business events, Weekly website insights article, Site accuracy and health, PR and
+  community, Demand scanner or Weekly scoreboard with no run for nine days or more;
+- any of the ten routines missing: Daily referral prospecting, Morning desk, Inbox desk, Weekly
+  business events, Weekly website insights article, Site accuracy and health, PR and community,
+  Demand scanner, Weekly scoreboard and Matter Filer waiting list; and any other routine present,
+  naming in particular any of the six retired in September 2026, being Referral meeting follow-ups,
+  Referral partner master list, Lead magnet factory, Weekly LinkedIn posts, Citation and directory
+  sprint and Media and PR scanner.
+
+When nothing is wrong, the one line is "All ten routines ran as scheduled". When `list_triggers` is
+not available, the line is "Fleet check not done: the Claude Code Remote connector is missing", and
+the site work carries on either way. Nothing from the fleet check is written to the repository.
+
 ## Publish and report
 
 First run `python3 scripts/refresh-google-rating.py`, as CLAUDE.md requires before publishing, so
@@ -106,7 +131,7 @@ pass, and the scripts may be strengthened but never weakened. Commit to main as
 "Site accuracy and health <Melbourne date>: <summary>" and push with retry. A run that changed
 nothing still commits the ledger and its DECISIONS.md line.
 
-The final message, phone readable: the number of legal pages and the weekly number it gives,
+The final message, phone readable: the fleet check line or lines first, then the number of legal pages and the weekly number it gives,
 the pages verified and the outcome for each, every correction
 in one line with its source, the structural audit result when it ran, and anything that needs
 Spencer. Never finish silently.
