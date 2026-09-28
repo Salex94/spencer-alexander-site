@@ -13,6 +13,85 @@ Newest entries first.
 
 ---
 
+## 2026-09-28: Six audits, faults fixed, legal corrections read twice, and a preview for Spencer
+
+Spencer asked on 28 Sep 2026 for the site to be the strongest it can be for search, AI answers,
+conversion, acquisition, design and layout, assessed against a brief he supplied. Six audits ran
+that day, technical, information architecture and local search, conversion, design, content and
+legal, and a second legal check read every proposed correction against the authorised legislation
+again. Two commits published what needed no approval, on the same footing as the site accuracy and
+health routine's corrections.
+
+- **Faults and alignment**, the first commit: the film's after bar button, the header clipped
+  between 960 and 1099 pixels, related reading running into the FAQ heading, broken phone numbers,
+  contrast of brass eyebrows on sunken bands, the experience wording on 34 pages, fixed fees stated
+  in the will, divorce, probate and testamentary trust articles and two FAQ answers, claims no longer
+  true, unapproved service promises on the home page, and a new gate check that keeps every quoted
+  price equal to fees.html.
+- **Legal corrections**, the second commit, each confirmed or amended by the second check:
+  three faq.html corrections recorded as published on 26 Sep 2026 that the merge of that day
+  dropped, companion animals, safe harbour and small business restructuring, now restored in their
+  amended form; the consent orders filing fee, which card holders do not pay rather than pay at a
+  reduced rate, on fees.html and the agreed settlement article; a late property application needs
+  both people's consent or the court's leave, on the family hub, faq.html and the separation
+  checklist; the misidentification duties of Act 1/2026, not yet in force; will witnesses need not
+  be adults; the statutory demand wording on the home page, faq.html and the commercial hub; the
+  family provision extension, which can only be sought before final distribution; the executor's
+  protection, which depends on having no notice of a claim; an enduring power of attorney starts
+  when it is made unless it says otherwise; best interests are the paramount consideration, not the
+  only question; the de facto serious injustice limb; the effect of family violence in property
+  cases; the coercive control offence's commencement; relocation without orders; the fees page
+  introduction, which called "from" prices fixed; and the joint application rule for reduced
+  divorce fees. Sources read are in the second check's notes in the session.
+- **Fixed wording changed**: the home description now ends "a fee estimate before substantive
+  work", matching the Uniform Law and the rest of the site; CLAUDE.md is updated.
+- **One scope line added on fees.html**: the parenting plan now states that one round of changes is
+  included, as every other drafting price does, so its "from" price is not misleading. Spencer
+  should confirm that is his intended scope.
+- **Not published, held for Spencer's approval as one preview**: eight service pages, Fees in the
+  navigation and footer, a call and enquire bar on phones, a quick exit on family law pages, fine
+  underlines on links in running text, a shorter laptop hero, deeper brass for contrast, text
+  resource cards, three featured reviews, About and Contact copy, replacement photographs for four
+  articles whose images contradicted them and for the clichés, and the fees page layout.
+
+## 2026-09-28: Agreed property settlement hire guide published
+
+Monday article for 28 Sep 2026 Melbourne (confirmed via `TZ=Australia/Melbourne
+date`). Rotation derived from the article files: Family Law was due (its newest
+article 31 Aug, against Commercial 7 Sep and Wills and Estates 21 Sep), matching
+the 25 Sep backlog. Hire alternation derived from git after unshallowing the
+clone: commit 5585142 added insight-power-of-attorney-misuse.html and carries no
+`Article type` line, so it was an ordinary article and a hire guide fell due,
+again matching the backlog's marker. Backlog item 5 was taken:
+`insight-agreed-property-settlement.html`, "We have agreed how to split
+everything. Do we still need lawyers?", the first hire guide under the 24 Sep
+rule. Not a rehash: the property after separation article gives consent orders
+and financial agreements one section and one FAQ, and the binding financial
+agreements article covers agreements before and during a relationship; this
+article stays on the engagement question, what a private agreement fails to do,
+the time limits and consent as a way in, what the lawyer's work involves, who
+the lawyer acts for, and the fixed fee stated exactly as fees.html states it.
+Verification against the authorised texts, per the 24 Sep note: Family Law Act
+1975 (Cth) compilation 101 of 10 June 2025 on legislation.gov.au (sections 44,
+71B, 79, 79A, 81, 90G, 90K, 90SM, 90SN, 90UJ, 90UM, 90XT and 90XZD, so the
+Sources line names the Act alone under the more than eight provisions rule);
+Duties Act 2000 (Vic) version 141 of 24 June 2026, section 44; Income Tax
+Assessment Act 1997 (Cth) compilation 267 of 27 August 2026, section 126-5. The
+Duties Act exemption turns on the Commissioner being satisfied the transfer was
+made solely because of the breakdown, not on there being an order, so the
+article says orders or a binding agreement are the clearest way to show it. Open
+item for the Tuesday site health routine: insight-property-after-separation.html
+says a handshake transfer "isn't stamp-duty protected", which is stronger than
+section 44 supports; it was left for that routine. Photo: the spare assets/photos/1560518883.jpg (a miniature house and
+keys on a wooden table, Unsplash photo-1560518883-ce09059eeffa, confirmed live
+at the 1200 by 630 crop for og:image), visually inspected; WebP sibling made
+this run. Gates: check-publish 93 checks 0 failed after moving the family law
+hub's FAQPage dateModified with its sitemap date, check-article-images PASS,
+Google rating unchanged at 5.0. Published direct to main per the routine's
+owner permission paragraph.
+
+---
+
 ## 2026-09-26: Held pages rule retired in the site health playbook
 
 Every correction the branch claude/youthful-bohr-aaeqrx held was published on 26 Sep 2026, so the site

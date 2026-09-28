@@ -3,11 +3,13 @@ then copy the top bar and header from index.html to every other page (chrome pro
 
 Corrected 9 Sep 2026: the service pattern accepts a block that already carries its id. The first version matched
 <div class="svc"> exactly, so a second run found no services and propagated empty menus to every page."""
-import re, glob, html
-ROOT='/home/user/spencer-alexander-site'
+import re, glob, html, os
+ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # the checkout this script sits in
 HUBS={'commercial-law':('Commercial Law','All commercial law services'),'family-law':('Family Law','All family law services'),'wills-and-estates':('Wills &amp; Estates','All wills and estates services')}
 def slug(t): return re.sub(r'[^a-z0-9]+','-',html.unescape(re.sub('<[^>]+>','',t)).lower()).strip('-')
 menus={}
+SERVICE_PAGE={}
+def target(hub,sid): return SERVICE_PAGE.get(sid, f'/{hub}#{sid}')
 for hub in HUBS:
     p=f'{ROOT}/{hub}.html'; s=open(p).read(); items=[]
     def add_id(m):
@@ -20,22 +22,27 @@ for hub in HUBS:
     assert len(items)==6, f'{hub}: expected six services, found {len(items)}'
     if s2!=s: open(p,'w').write(s2)
     menus[hub]=items
+    # a service with its own page (linked from its hub block) is linked to that page from the menus (28 Sep 2026)
+    for sid,_ in items:
+        blk=re.search(r'<div class="svc" id="%s">(.*?)</div>' % re.escape(sid), s2, re.S)
+        sp=blk and re.search(r'href="/(service-[a-z0-9-]+)"', blk.group(1))
+        if sp: SERVICE_PAGE[sid]='/'+sp.group(1)
     print(hub, len(items), 'services')
 idx=open(f'{ROOT}/index.html').read()
 def group(hub, label, active=False):
     name, allt = HUBS[hub]
-    links=''.join(f'\n          <a href="/{hub}#{sid}">{html.escape(t,quote=False)}</a>' for sid,t in menus[hub])
+    links=''.join(f'\n          <a href="{target(hub,sid)}">{html.escape(t,quote=False)}</a>' for sid,t in menus[hub])
     cls = ' class="is-active"' if active else ''
     return (f'<div class="site-nav__group"><a href="/{hub}"{cls}>{name}</a>\n        <div class="site-nav__menu"><strong>{name}</strong>{links}\n          <a class="site-nav__all" href="/{hub}">{allt}</a>\n        </div></div>')
 old_nav=re.search(r'<nav class="site-nav" aria-label="Primary">.*?</nav>', idx, re.S).group(0)
 new_nav=('<nav class="site-nav" aria-label="Primary">\n        '+group('family-law','')+'\n        '+group('wills-and-estates','')+'\n        '+group('commercial-law','')+
-         '\n        <a href="/insights">Insights</a>\n        <a href="/faq">FAQ</a>\n        <a href="/about">About</a>\n        <a href="/contact">Contact</a>\n      </nav>')
+         '\n        <a href="/insights">Insights</a>\n        <a href="/faq">FAQ</a>\n        <a href="/fees">Fees</a>\n        <a href="/about">About</a>\n        <a href="/contact">Contact</a>\n      </nav>')
 idx=idx.replace(old_nav,new_nav)
 idx=idx.replace('<a class="btn btn--primary" href="tel:+61391258355">','<a class="btn btn--outline" href="tel:+61391258355">',1)
 idx=idx.replace('        <a class="topbar__tel" href="tel:+61391258355">(03) 9125 8355</a>\n','',1)
 open(f'{ROOT}/index.html','w').write(idx)
 # propagate: the top bar and header blocks, marking the active link per page
-top=re.search(r'<div class="topbar">.*?</div>\s*</div>\s*</div>', idx, re.S)
+top=re.search(r'<div class="topbar"[^>]*>.*?</div>\s*</div>\s*</div>', idx, re.S)
 hdr=re.search(r'<header class="site-header">.*?</header>', idx, re.S).group(0)
 tb=re.search(r'<div class="topbar".*?</header>', idx, re.S).group(0)   # top bar through header end
 count=0
@@ -48,9 +55,13 @@ for p in sorted(glob.glob(f'{ROOT}/*.html')):
     if not m: print('no chrome in', p); continue
     page=p.split('/')[-1][:-5]
     block=tb.replace(' class="is-active"','')
-    active={'commercial-law':'/commercial-law','family-law':'/family-law','wills-and-estates':'/wills-and-estates','insights':'/insights','faq':'/faq','about':'/about','contact':'/contact'}
+    active={'commercial-law':'/commercial-law','family-law':'/family-law','wills-and-estates':'/wills-and-estates','insights':'/insights','faq':'/faq','about':'/about','contact':'/contact','fees':'/fees'}
     href=active.get(page) or ('/insights' if page.startswith('insight-') or page.startswith('resource') else None)
     if href:
         block=block.replace(f'<a href="{href}">', f'<a href="{href}" class="is-active">',1)
+    # a page with a Chinese version links it from the top bar and the mobile menu (28 Sep 2026)
+    twin={'contact':'/zh/contact','fees':'/zh/fees','family-law':'/zh/family-law','wills-and-estates':'/zh/wills-and-estates','commercial-law':'/zh/commercial-law'}.get(page)
+    if twin:
+        block=block.replace('<a href="/zh/" lang="zh-Hans"', f'<a href="{twin}" lang="zh-Hans"')
     s=s[:m.start()]+block+s[m.end():]; open(p,'w').write(s); count+=1
 print('header propagated to', count, 'pages')

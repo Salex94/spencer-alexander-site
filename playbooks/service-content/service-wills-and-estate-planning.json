@@ -1,0 +1,95 @@
+{
+ "slug": "service-wills-and-estate-planning",
+ "hub": "wills-and-estates",
+ "hub_label": "Wills &amp; Estates",
+ "crumb": "Wills and estate planning",
+ "service_name": "Wills and estate planning",
+ "date": "2026-09-28",
+ "title": "Wills and Estate Planning Lawyers Box Hill | Spencer Alexander Lawyers",
+ "h1": "Wills and Estate Planning Lawyers in Box Hill, Melbourne",
+ "description": "Wills, testamentary trusts, enduring powers of attorney and medical treatment appointments, prepared at our Box Hill office. Free first call with a lawyer.",
+ "lead": "From our Box Hill office we prepare wills, testamentary trusts, enduring powers of attorney and medical treatment decision maker appointments. Your will decides who receives your estate, and the other documents decide who can act for you while you are alive. An estate plan for one person is a fixed fee of $990 including GST.",
+ "meta": [
+  "Your first call is free, and you speak with a lawyer",
+  "Fixed fees for wills and estate plans",
+  "Suite 10, 1 Main Street, Box Hill"
+ ],
+ "brief": {
+  "entity": "Spencer Alexander Lawyers is a Box Hill, Melbourne law firm acting for individuals, couples and families on wills, testamentary trusts, enduring powers of attorney and medical treatment decision maker appointments, with the principal overseeing every matter.",
+  "bullets": [
+   "A will must be in writing and signed by you in front of two witnesses present at the same time, who each sign it in your presence.",
+   "Without a valid will, the <a href=\"/insight-dying-without-a-will\">intestacy rules</a> decide who inherits.",
+   "An enduring power of attorney starts on the day it is made unless it says otherwise. It continues if you lose capacity.",
+   "Superannuation is paid under your fund's rules and any valid binding nomination, not automatically under your will."
+  ]
+ },
+ "sections": [
+  {
+   "eyebrow": "Who we act for",
+   "h2": "Who we help, and when they call.",
+   "paras": [
+    "People call when something has changed: a new baby, a marriage or new relationship, a separation, a business, or a parent who is finding decisions harder. We act for individuals, couples and blended families from Suite 10, 1 Main Street, a short walk from Box Hill station with parking at Box Hill Central.",
+    "A complete estate plan has three documents. Your will decides who receives your estate when you die, and an enduring power of attorney and a medical treatment decision maker appointment decide who can act for you while you are alive. Each depends on your capacity when you sign, so act while you are well."
+   ]
+  },
+  {
+   "eyebrow": "How we help",
+   "h2": "What we prepare for you.",
+   "items": [
+    {"t": "Wills", "p": "We draft a <a href=\"/insight-making-a-valid-will\">valid will</a> that appoints your executors and leaves your estate to the people you choose. Because <a href=\"/insight-superannuation-death-benefits\">superannuation</a>, property owned as joint tenants and assets in a family trust or company often pass outside a will, we check how everything is held."},
+    {"t": "Testamentary trusts", "p": "A <a href=\"/insight-testamentary-trusts\">testamentary trust</a>, set up by your will, lets a trustee hold an inheritance for a child who is young, vulnerable or in business, instead of it passing to them outright. We tell you plainly when a simple will is enough."},
+    {"t": "Enduring powers of attorney", "p": "An <a href=\"/insight-enduring-powers-of-attorney\">enduring power of attorney</a> lets someone you trust make financial decisions, personal decisions or both for you. It starts on the day it is made unless it says otherwise, so we advise on when it should begin and who should act."},
+    {"t": "Medical treatment decision makers", "p": "A power of attorney made now does not cover medical treatment. That is the role of a medical treatment decision maker you appoint, who decides when you cannot. Appoint nobody and the law looks to any guardian VCAT has appointed, then to a list headed by your spouse or domestic partner. We also draft <a href=\"/insight-advance-care-directives-victoria\">advance care directives</a>."}
+   ]
+  },
+  {
+   "eyebrow": "Your first appointment",
+   "h2": "What to bring to a first appointment.",
+   "paras": [
+    "Whatever you have to hand: your current will, any power of attorney you have signed before, your latest superannuation statement, a rough list of your assets and debts, and your questions. If you have little on paper, that is fine too. The first conversation is about understanding your situation, not testing your paperwork."
+   ]
+  }
+ ],
+ "process": {
+  "eyebrow": "What to expect",
+  "h2": "From first meeting to signed documents.",
+  "steps": [
+   {"t": "What you have, and who matters", "d": "Your family, property, business interests and superannuation, and how each is held."},
+   {"t": "Signed and witnessed as the law requires", "d": "We oversee signing. A will needs two witnesses present together, and a power of attorney or medical appointment two adult witnesses, one a doctor or a person authorised to witness affidavits."},
+   {"t": "Accepted by the people you appoint", "d": "Your attorneys and medical treatment decision maker each sign an acceptance, witnessed by an adult, before their appointment takes effect. We hold your originals in safe custody."}
+  ]
+ },
+ "fee": {
+  "t": "Fixed fees for wills and estate plans.",
+  "p": "An estate plan for one person, with a will, an enduring power of attorney and a medical treatment decision maker appointment, is a fixed fee of $990 including GST, or $1,800 for a couple, each with one advice meeting and one signing appointment. A single will is $550, mirror wills for a couple are $1,100, and a power of attorney or medical appointment on its own is $330 per person. A will with a testamentary trust is from $1,500, or from $2,750 for a couple, confirmed in writing after the first meeting. Our <a href=\"/fees\">fees page</a> sets out what each price covers and assumes, and anything it does not list, such as an advance care directive, is estimated in writing before substantive work begins."
+ },
+ "related": [
+  {"href": "/insight-making-a-valid-will", "label": "How to make a valid will in Victoria"},
+  {"href": "/insight-testamentary-trusts", "label": "Testamentary trusts: protecting an inheritance in Victoria"},
+  {"href": "/insight-enduring-powers-of-attorney", "label": "Enduring powers of attorney in Victoria"},
+  {"href": "/insight-advance-care-directives-victoria", "label": "Advance care directives in Victoria"},
+  {"href": "/wills-and-estates", "label": "All wills and estates services"}
+ ],
+ "faq_h2": "Common questions about wills and estate planning.",
+ "faqs": [
+  {"q": "What is the difference between a power of attorney and a medical treatment decision maker?", "a": "Your attorney makes financial and personal decisions for you, from the day the power is made or a later time or event you choose, and can keep acting if you lose capacity. Medical treatment decisions, which a power of attorney made now does not cover, are made by a medical treatment decision maker when you cannot."},
+  {"q": "Can a parent who is losing capacity still make a power of attorney?", "a": "Possibly, if they act early. The law presumes capacity unless there is evidence otherwise and judges it decision by decision, so a diagnosis such as early dementia does not by itself rule one out, but both witnesses must certify that your parent appeared to have capacity. If it has gone, the family may need to ask VCAT to appoint a guardian or administrator."},
+  {"q": "Who can witness my will?", "a": "Two people present together who can see you sign, who each then sign in your presence. The Wills Act sets no minimum age, and a witness who is a beneficiary keeps their gift, but independent adult witnesses remove an easy argument for anyone who later disputes the will."},
+  {"q": "Does getting married or divorced change my will?", "a": "Often, yes. Marriage generally revokes an earlier will unless it was made in contemplation of that marriage, and divorce generally revokes gifts to a former spouse and their appointment as executor, unless it appears you wanted them to stand. Separation alone does neither, so review your will after any of these changes."},
+  {"q": "Do I need a testamentary trust?", "a": "Not always. One is worth considering where a beneficiary is young, vulnerable or in business, or may later separate, or where you want to provide for a partner while keeping capital for your children. Otherwise a simple will may be enough."}
+ ],
+ "sources": "<a href=\"https://www.legislation.vic.gov.au/in-force/acts/wills-act-1997\" rel=\"noopener\" target=\"_blank\">Wills Act 1997 (Vic)</a>, sections 4, 7, 10, 11, 13 and 14; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/powers-attorney-act-2014\" rel=\"noopener\" target=\"_blank\">Powers of Attorney Act 2014 (Vic)</a>, sections 3, 4, 22, 23, 33, 35 to 37 and 39; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/medical-treatment-planning-and-decisions-act-2016\" rel=\"noopener\" target=\"_blank\">Medical Treatment Planning and Decisions Act 2016 (Vic)</a>, Part 2 and sections 3, 26, 28, 29, 36, 55 and 58; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/guardianship-and-administration-act-2019\" rel=\"noopener\" target=\"_blank\">Guardianship and Administration Act 2019 (Vic)</a>, sections 22, 23 and 30; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/administration-and-probate-act-1958\" rel=\"noopener\" target=\"_blank\">Administration and Probate Act 1958 (Vic)</a>, Part IA; <a href=\"https://www.legislation.gov.au/C2004A04633/latest\" rel=\"noopener\" target=\"_blank\">Superannuation Industry (Supervision) Act 1993 (Cth)</a>, section 59.",
+ "cta": {
+  "eyebrow": "Planning ahead",
+  "title": "Speak with a wills and estate planning lawyer.",
+  "lead": "One call tells you which documents your family needs and what each will cost."
+ },
+ "offers": [
+  {"name": "Estate plan for one person", "price": "990"},
+  {"name": "Estate plan for a couple", "price": "1800"},
+  {"name": "Single will", "price": "550"},
+  {"name": "Wills for a couple", "price": "1100"},
+  {"name": "Enduring power of attorney, per person", "price": "330"},
+  {"name": "Appointment of a medical treatment decision maker, per person", "price": "330"}
+ ]
+}

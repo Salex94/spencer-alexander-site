@@ -63,3 +63,36 @@ index.html, contact.html, fees.html or a practice hub is published, the same cha
 matching `zh/` page under `BRIEF.md` and flagged to Spencer for her check, or, from a routine, reported
 with a proposed Chinese wording as the site health playbook says. The gate refuses a publish in which
 the Chinese fees page's prices differ from the English page's.
+
+## English changes since the Chinese pages were translated
+
+The seven Chinese pages were translated from the English pages of 26 Sep 2026. On 28 Sep 2026 the English
+pages they translate changed as below, first as corrections published straight away and then as the
+preview Spencer approves as a whole. Before the Chinese pages are published, each change is carried into
+the matching Chinese page under `BRIEF.md` and sent to the Mandarin reading lawyer as new rows, and the
+publishing session checks this list off.
+
+Corrections, live on the English site since 28 Sep 2026:
+- **fees.html:** the introduction now explains that a single figure is a fixed fee and a "from" figure
+  covers the work described; for consent orders, card holders pay no filing fee and the Court can waive it
+  for hardship, and in a joint application both people must qualify; the probate filing fee is nil where
+  the estate's gross value is under $250,000; the parenting plan includes one round of changes.
+- **family-law.html:** a late property application needs both people's consent or the court's permission;
+  best interests are the paramount consideration, not the only question; 12 months runs from the divorce
+  order taking effect; the costs heading says before substantive work starts.
+- **wills-and-estates.html:** witnesses need not be adults, and video witnessing is possible; an executor
+  is protected after six months only without notice of a claim; an enduring power of attorney starts when
+  it is signed and accepted unless it says otherwise; a medical treatment decision maker acts when you
+  cannot decide yourself.
+- **commercial-law.html:** the disclosure statement is due 14 days before the lease; the statutory demand
+  wording; prices for defined documents are published prices, confirmed before substantive work.
+- **index.html:** the statutory demand and family provision time limits; the description says a fee
+  estimate before substantive work; only the three approved service promises in How we work.
+- **contact.html and thank-you.html:** a lawyer replies by phone if a number was left, otherwise by email.
+
+The preview, once Spencer approves it: prices on the hub heroes and service blocks, the family cost
+question, links to the eight service pages from the hubs and menus, Fees in the navigation and footer,
+the fees page as priced rows with call buttons, the rail card's translator line, new hero leads on the
+wills and commercial hubs, the Contact page copy, the thank you page's safety net, the quick exit on the
+family page with its note, and the call and enquire bar on phones. The Chinese pages carry none of these
+yet; the quick exit label and the Enquire button need Chinese wording she approves.

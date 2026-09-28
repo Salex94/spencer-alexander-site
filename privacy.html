@@ -30,8 +30,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap"></noscript>
-  <link rel="stylesheet" href="styles/styles.css?v=7">
-  <link rel="stylesheet" href="styles/site.css?v=18">
+  <link rel="stylesheet" href="styles/styles.css?v=8">
+  <link rel="stylesheet" href="styles/site.css?v=20">
   <script type="application/ld+json">
   { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.spenceralexander.com.au/" },
@@ -43,7 +43,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Header -->
-  <div class="topbar">
+  <div class="topbar" role="region" aria-label="Opening hours and email">
     <div class="container topbar__inner">
       <span class="topbar__loc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg> Box Hill, Melbourne &middot; Acting for clients across Victoria</span>
       <span class="topbar__contact">
@@ -62,9 +62,9 @@
       <nav class="site-nav" aria-label="Primary">
         <div class="site-nav__group"><a href="/family-law">Family Law</a>
         <div class="site-nav__menu"><strong>Family Law</strong>
-          <a href="/family-law#svc-divorce-and-separation">Divorce and separation</a>
-          <a href="/family-law#svc-parenting-arrangements">Parenting arrangements</a>
-          <a href="/family-law#svc-property-and-financial-settlement">Property and financial settlement</a>
+          <a href="/service-divorce">Divorce and separation</a>
+          <a href="/service-parenting-arrangements">Parenting arrangements</a>
+          <a href="/service-property-settlement">Property and financial settlement</a>
           <a href="/family-law#svc-binding-financial-agreements">Binding financial agreements</a>
           <a href="/family-law#svc-child-support-and-spousal-maintenance">Child support and spousal maintenance</a>
           <a href="/family-law#svc-family-violence-and-intervention-orders">Family violence and intervention orders</a>
@@ -72,11 +72,11 @@
         </div></div>
         <div class="site-nav__group"><a href="/wills-and-estates">Wills &amp; Estates</a>
         <div class="site-nav__menu"><strong>Wills &amp; Estates</strong>
-          <a href="/wills-and-estates#svc-wills-and-testamentary-trusts">Wills and testamentary trusts</a>
-          <a href="/wills-and-estates#svc-powers-of-attorney-and-medical-decisions">Powers of attorney and medical decisions</a>
-          <a href="/wills-and-estates#svc-probate-and-letters-of-administration">Probate and letters of administration</a>
+          <a href="/service-wills-and-estate-planning">Wills and testamentary trusts</a>
+          <a href="/service-wills-and-estate-planning">Powers of attorney and medical decisions</a>
+          <a href="/service-probate">Probate and letters of administration</a>
           <a href="/wills-and-estates#svc-estate-administration">Estate administration</a>
-          <a href="/wills-and-estates#svc-contesting-and-defending-wills">Contesting and defending wills</a>
+          <a href="/service-contesting-a-will">Contesting and defending wills</a>
           <a href="/wills-and-estates#svc-superannuation-and-death-benefits">Superannuation and death benefits</a>
           <a class="site-nav__all" href="/wills-and-estates">All wills and estates services</a>
         </div></div>
@@ -84,14 +84,15 @@
         <div class="site-nav__menu"><strong>Commercial Law</strong>
           <a href="/commercial-law#svc-business-structures-and-formation">Business structures and formation</a>
           <a href="/commercial-law#svc-contracts-and-terms-of-trade">Contracts and terms of trade</a>
-          <a href="/commercial-law#svc-buying-or-selling-a-business">Buying or selling a business</a>
-          <a href="/commercial-law#svc-commercial-and-retail-leasing">Commercial and retail leasing</a>
+          <a href="/service-buying-or-selling-a-business">Buying or selling a business</a>
+          <a href="/service-commercial-leases">Commercial and retail leasing</a>
           <a href="/commercial-law#svc-shareholder-and-partnership-agreements">Shareholder and partnership agreements</a>
           <a href="/commercial-law#svc-disputes-debt-recovery-and-litigation">Disputes, debt recovery and litigation</a>
           <a class="site-nav__all" href="/commercial-law">All commercial law services</a>
         </div></div>
         <a href="/insights">Insights</a>
         <a href="/faq">FAQ</a>
+        <a href="/fees">Fees</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
       </nav>
@@ -115,6 +116,7 @@
       <a href="/about">About</a>
       <a href="/insights">Insights</a>
       <a href="/faq">FAQ</a>
+      <a href="/fees">Fees</a>
       <a href="/contact">Contact</a>
       <a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a>
       <a class="btn btn--primary btn--block mobile-menu__call" href="tel:+61391258355">Call (03) 9125 8355</a>
@@ -156,7 +158,7 @@
             <p>We use personal information to respond to enquiries, to provide legal services, to manage our relationship with you, to send you information you have asked for, and to meet our legal and professional obligations. If you have subscribed to receive updates or resources, every email we send includes a simple way to opt out, and we stop immediately when you do.</p>
 
             <h2>Disclosure</h2>
-            <p>We do not sell personal information. We disclose it only as needed to provide our services (for example to barristers, experts or other professionals engaged for your matter, with your knowledge), where you consent, or where the law requires or permits it. Information clients give us in the course of a matter is held in confidence in accordance with our professional conduct obligations.</p>
+            <p>We do not sell personal information. We disclose it only where you consent, where the law requires or permits it, or as needed to provide our services, for example to a barrister, expert or other professional engaged for your matter with your knowledge. Information clients give us in the course of a matter is held in confidence in accordance with our professional conduct obligations.</p>
 
             <h2>Storage and security</h2>
             <p>We store information in our email, document and practice systems, some of which are reputable cloud services that may store data outside Australia. We take reasonable steps to protect personal information from misuse, interference, loss and unauthorised access, and to destroy or de-identify it when it is no longer needed, subject to our record keeping obligations as a law practice.</p>
@@ -209,6 +211,7 @@
               <a href="/insights">Insights</a>
               <a href="/resources">Free resources</a>
               <a href="/faq">FAQ</a>
+              <a href="/fees">Fixed fees</a>
               <a href="/contact">Contact</a>
               <a href="/privacy">Privacy</a>
               <a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a>
@@ -223,11 +226,14 @@
     </div>
   </footer>
 
-  <a class="mobile-call" href="tel:+61391258355">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
-    Call now &middot; (03) 9125 8355
-  </a>
+  <div class="mobile-bar" role="region" aria-label="Call or enquire">
+    <a class="mobile-call" href="tel:+61391258355">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+      Call (03) 9125 8355
+    </a>
+    <a class="mobile-enquire" href="/contact#enquiry">Enquire</a>
+  </div>
 
-  <script src="scripts/site.js?v=14"></script>
+  <script src="scripts/site.js?v=15"></script>
 </body>
 </html>

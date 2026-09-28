@@ -434,7 +434,7 @@ future edit, every new page and every new article.
   click to play, never autoplay, self hosted in `assets/video/` because the
   owner does not want YouTube. `spencer-alexander-intro-1080.mp4` and the 720p
   version are graded to match the hero portrait up to the end card cut, and
-  the end card keeps its true colours. `poster-1600.jpg` is a graded still
+  the end card keeps its true colours. `poster-1920.jpg` is a graded still
   from an engaged moment of the film, never the first frame (the owner found
   the standing start awkward, 6 Sep 2026); the film itself is trimmed by a
   quarter second and fades in from the wine colour so play opens on him
@@ -490,9 +490,8 @@ future edit, every new page and every new article.
   available", in exactly those words or 可提供普通话翻译 in Chinese: "don't
   advertise that we have mandarin lawyers, just say that we have a mandarin
   translator available". No page says or implies that a lawyer at the firm
-  speaks Mandarin. The admission year and Law
-  Institute membership are still to be supplied; an HTML comment on
-  about.html marks where they go.
+  speaks Mandarin. The admission year, 2018, and the Law Institute
+  membership are on about.html and in every article's author card.
 
 ## Second enhancement round, owner request 8 Sep 2026
 
@@ -519,7 +518,9 @@ conventions came out of that round.
   subject, "Spencer has more than ten years of legal experience"; the home
   description is "Box Hill, Melbourne lawyers for Family Law, Wills and
   Estates and Commercial Law. Free first call with a lawyer, and a fee
-  estimate before any work begins."; FAQ question one and the About sign
+  estimate before substantive work." (corrected 28 Sep 2026: a fee is
+  disclosed before substantive work, which is what the Uniform Law and the
+  rest of the site say); FAQ question one and the About sign
   off say you speak with a lawyer; the founder Person nodes on index.html
   and about.html say "Principal", matching every article author node. Only
   three service promises exist: the free first call, the one business day
@@ -674,9 +675,84 @@ of the market. These conventions came out of that round.
 - **Firm schema.** The firm's `sameAs` lists the Google listing, the LinkedIn
   company page and the Yellow Pages listing.
 - **About.** The articles are described as published under Spencer's name, not
-  as written by him each week. The admission year, the Law Institute
-  membership and earlier roles still wait on Spencer's answer.
+  as written by him each week. Earlier roles still wait on Spencer's answer.
 - Keys after this round: site.css v18, unchanged, styles.css v7, site.js v13.
+
+## Fourth round, owner request of 28 Sep 2026
+
+Spencer asked for the site to be the strongest it can be for search, AI answers,
+conversion, design, layout and content, assessed against a brief he supplied, with
+nothing left that would stop an honest yes on each. Six audits ran that day. What
+came out of them and is settled:
+
+- **Corrections and fixes publish straight away**, on the same footing as the site
+  accuracy and health routine's corrections under Spencer's rules of 24 and 26 Sep
+  2026: legal corrections read against the authorised legislation and checked a
+  second time, faults in the build such as an unreadable button or a clipped
+  header, phone numbers that could not be tapped, claims that were no longer true,
+  and wording that contradicted what Spencer had already confirmed. Everything
+  else the audits recommended, new pages, copy rewrites, photographs and anything
+  that changes how a page looks, goes to Spencer as one preview for his approval.
+- **Experience wording** is one form everywhere: more than ten years of legal
+  experience, admitted as a lawyer in 2018, member of the Law Institute of
+  Victoria, and the two degrees. The author card on every article carries it.
+- **The desktop navigation starts at 1100 pixels**, not 960, so the header call
+  button is never cut off on a tablet held landscape.
+- **Poster.** The film's poster is `assets/video/poster-1920.jpg`, the same 14.6
+  second frame exported at full width so it is sharp on high density screens.
+- **Prices stay in step.** Wherever a page other than fees.html quotes a fixed
+  fee, the figure must be one fees.html carries; the gate's "prices quoted
+  elsewhere match fees.html" check fails any other, so a price Spencer changes on
+  fees.html must change everywhere it is quoted in the same commit.
+- **Lastmod never trails the schema.** The gate fails any page whose sitemap
+  lastmod is older than a dateModified in its own schema. Boilerplate such as the
+  author card does not move a page's dates; a change to what the page says does.
+- **Accessibility fixes that change nothing visible**: on phones a control reached
+  by keyboard scrolls clear of the call bar, the top bar and the call bar sit in
+  labelled regions, and the enquiry hint is tied to the phone and email fields.
+- **Hub hero photographs** offer 800 and 1200 pixel WebP files, so phones take the
+  smaller one; `scripts/make-webp.py` writes a WebP for every width in an image's
+  srcset. `scripts/propagate-chrome.py` now works in whatever checkout it sits in.
+- **Article rail card.** The template's quiet rail card is a generic "Our practice
+  areas" card; every article replaces it with its own practice area's card, copied
+  from a sibling article in the same area, and the gate's "article rail card
+  matches its practice area" check fails an article that keeps the generic one.
+- **llms.txt** carries the admission year, the Law Institute membership and
+  "published under his name", matching about.html.
+- Keys after this round: site.css v19.
+
+## Preview of 28 Sep 2026, live only once Spencer approves it
+
+Everything in this section sits on the branch `claude/youthful-bohr-aaeqrx` until Spencer approves the
+preview; the session that publishes it records his words and the date here and in DECISIONS.md.
+
+- **Service pages.** Eight `service-*.html` pages, the playbook's cap, built by
+  `scripts/build-service-page.py` from content files in `playbooks/service-content/`, which hold the
+  words while the script holds the design: head, header, menus, footer, call bar and rail call card
+  come from the practice hub, and the body uses only the hubs' own components. To change a page, edit
+  its content file and rebuild; never hand edit the page. Each hub service block that has a page ends
+  with a "Read more about" link to it, the header practice menus link that page instead of the hub
+  anchor, and the hub's OfferCatalog item carries the page's @id and url. The gate's service page
+  checks come from `playbooks/service-pages.md`, whose fee rule is replaced: a page quotes the fixed
+  fees fees.html carries, in the same figures, and says everything else is estimated in writing.
+- **Fees in the chrome.** Fees sits between FAQ and About in the navigation, in the mobile menu and in
+  the footer's Firm column as "Fixed fees". The navigation is compact from 1100 to 1279 pixels so the
+  header call button always keeps its 24 pixel margin.
+- **Prices where people decide.** Each hub hero meta line links its section of the fees page with one
+  price, each hub service block ends with its published price, and the family hub's cost question
+  replaces what to bring, which the family service pages carry. fees.html sets each price on a
+  hairline row, price aligned right, with the hero call buttons, jump links and a closing band.
+- **Phones.** The fixed bar offers Call and Enquire side by side; the menu button shows a close mark
+  while the menu is open; hub photographs are hidden under 640 pixels so the call to action and the
+  urgent strip come first.
+- **Quick exit** on the family hub, every Family Law article, the separation checklist and the family
+  service pages, leaving for the Bureau of Meteorology site and replacing the page in the history; the
+  gate checks it is present. It has no keyboard shortcut, because Escape already closes the menus.
+- **Look.** Links inside running text carry a fine underline; the home hero is shorter on laptops so
+  its call button sits above the fold; brass text is one step deeper for contrast (`--text-seal` is
+  brass 800); resource cards are text cards; the home page features three reviews; the home hero
+  portrait overlay matches About.
+- Keys after the preview: site.css v20, styles.css v8, site.js v15.
 
 ## Chinese pages, Spencer's instruction of 26 Sep 2026
 
@@ -706,7 +782,7 @@ how it is applied, and `playbooks/zh/BRIEF.md` is the standard for every Chinese
   footer, FAQ schema against the visible answers, and that the Chinese fees page carries exactly the
   English page's prices.
 - `scripts/site.js` shows the form's phone or email message in Chinese on a `zh-Hans` page, and
-  `scripts/refresh-google-rating.py` updates the rating on the Chinese pages too. Keys: site.js v14.
+  `scripts/refresh-google-rating.py` updates the rating on the Chinese pages too. Keys: site.js v15, with the preview of 28 Sep 2026.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 

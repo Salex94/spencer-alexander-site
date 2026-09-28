@@ -6,7 +6,7 @@ Usage:  python3 scripts/prepare-home-video.py <master.mp4> [poster_seconds]
 Produces, in assets/video/:
   spencer-alexander-intro-1080.mp4   the finished film, 30 fps, faststart
   spencer-alexander-intro-720.mp4    the same at 1280x720 for handheld or slow devices
-  poster-1600.jpg                    a graded still from the film, no cards over it
+  poster-1920.jpg                    a graded still from the film, no cards over it
 
 Not produced here: end-card.jpg and end-card-small.jpg, the owner's contact
 card frames, which stay as they are (recipes in DECISIONS.md, 5 Sep 2026).
@@ -222,7 +222,7 @@ def assemble(ff, src, work, a, patches, poster_at):
         "-map", "[full]", "-map", "[aud1]", *common, "-crf", "21", "-level", "4.1", "-b:a", "128k", os.path.join(OUT, "spencer-alexander-intro-1080.mp4"),
         "-map", "[v720]", "-map", "[aud2]", *common, "-crf", "22", "-level", "4.0", "-b:a", "112k", os.path.join(OUT, "spencer-alexander-intro-720.mp4")])
     subprocess.check_call([ff, "-hide_banner", "-loglevel", "error", "-y", "-ss", str(poster_at), "-i", os.path.join(OUT, "spencer-alexander-intro-1080.mp4"),
-                           "-frames:v", "1", "-vf", "scale=1600:-2", "-q:v", "4", os.path.join(OUT, "poster-1600.jpg")])
+                           "-frames:v", "1", "-vf", "scale=1920:-2", "-q:v", "3", os.path.join(OUT, "poster-1920.jpg")])
     return total
 
 
@@ -239,7 +239,7 @@ def main():
     patches = [card_patch(src, a["segs"][0], work, "name", clean_frame=clean), card_patch(src, a["segs"][1], work, "call")]
     lower_thirds(work)
     print("assembling"); total = assemble(ff, src, work, a, patches, poster_at)
-    for f in ("spencer-alexander-intro-1080.mp4", "spencer-alexander-intro-720.mp4", "poster-1600.jpg"):
+    for f in ("spencer-alexander-intro-1080.mp4", "spencer-alexander-intro-720.mp4", "poster-1920.jpg"):
         print("  %-36s %9d bytes" % (f, os.path.getsize(os.path.join(OUT, f))))
     print("film length %.2f s: update the VideoObject duration on index.html if it changed" % total)
     return 0

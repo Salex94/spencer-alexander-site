@@ -33,8 +33,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap"></noscript>
-  <link rel="stylesheet" href="styles/styles.css?v=7">
-  <link rel="stylesheet" href="styles/site.css?v=18">
+  <link rel="stylesheet" href="styles/styles.css?v=8">
+  <link rel="stylesheet" href="styles/site.css?v=20">
   <!-- Site-wide firm entity -->
   <script type="application/ld+json">
   {
@@ -167,13 +167,13 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Header -->
-  <div class="topbar">
+  <div class="topbar" role="region" aria-label="Opening hours and email">
     <div class="container topbar__inner">
       <span class="topbar__loc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg> Box Hill, Melbourne &middot; Acting for clients across Victoria</span>
       <span class="topbar__contact">
         <span class="topbar__hours">Mon to Fri, 8am to 6pm</span>
         <a href="mailto:contact@spenceralexander.com.au">contact@spenceralexander.com.au</a>
-        <a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a>
+        <a href="/zh/contact" lang="zh-Hans" hreflang="zh-Hans">中文</a>
       </span>
     </div>
   </div>
@@ -186,9 +186,9 @@
       <nav class="site-nav" aria-label="Primary">
         <div class="site-nav__group"><a href="/family-law">Family Law</a>
         <div class="site-nav__menu"><strong>Family Law</strong>
-          <a href="/family-law#svc-divorce-and-separation">Divorce and separation</a>
-          <a href="/family-law#svc-parenting-arrangements">Parenting arrangements</a>
-          <a href="/family-law#svc-property-and-financial-settlement">Property and financial settlement</a>
+          <a href="/service-divorce">Divorce and separation</a>
+          <a href="/service-parenting-arrangements">Parenting arrangements</a>
+          <a href="/service-property-settlement">Property and financial settlement</a>
           <a href="/family-law#svc-binding-financial-agreements">Binding financial agreements</a>
           <a href="/family-law#svc-child-support-and-spousal-maintenance">Child support and spousal maintenance</a>
           <a href="/family-law#svc-family-violence-and-intervention-orders">Family violence and intervention orders</a>
@@ -196,11 +196,11 @@
         </div></div>
         <div class="site-nav__group"><a href="/wills-and-estates">Wills &amp; Estates</a>
         <div class="site-nav__menu"><strong>Wills &amp; Estates</strong>
-          <a href="/wills-and-estates#svc-wills-and-testamentary-trusts">Wills and testamentary trusts</a>
-          <a href="/wills-and-estates#svc-powers-of-attorney-and-medical-decisions">Powers of attorney and medical decisions</a>
-          <a href="/wills-and-estates#svc-probate-and-letters-of-administration">Probate and letters of administration</a>
+          <a href="/service-wills-and-estate-planning">Wills and testamentary trusts</a>
+          <a href="/service-wills-and-estate-planning">Powers of attorney and medical decisions</a>
+          <a href="/service-probate">Probate and letters of administration</a>
           <a href="/wills-and-estates#svc-estate-administration">Estate administration</a>
-          <a href="/wills-and-estates#svc-contesting-and-defending-wills">Contesting and defending wills</a>
+          <a href="/service-contesting-a-will">Contesting and defending wills</a>
           <a href="/wills-and-estates#svc-superannuation-and-death-benefits">Superannuation and death benefits</a>
           <a class="site-nav__all" href="/wills-and-estates">All wills and estates services</a>
         </div></div>
@@ -208,14 +208,15 @@
         <div class="site-nav__menu"><strong>Commercial Law</strong>
           <a href="/commercial-law#svc-business-structures-and-formation">Business structures and formation</a>
           <a href="/commercial-law#svc-contracts-and-terms-of-trade">Contracts and terms of trade</a>
-          <a href="/commercial-law#svc-buying-or-selling-a-business">Buying or selling a business</a>
-          <a href="/commercial-law#svc-commercial-and-retail-leasing">Commercial and retail leasing</a>
+          <a href="/service-buying-or-selling-a-business">Buying or selling a business</a>
+          <a href="/service-commercial-leases">Commercial and retail leasing</a>
           <a href="/commercial-law#svc-shareholder-and-partnership-agreements">Shareholder and partnership agreements</a>
           <a href="/commercial-law#svc-disputes-debt-recovery-and-litigation">Disputes, debt recovery and litigation</a>
           <a class="site-nav__all" href="/commercial-law">All commercial law services</a>
         </div></div>
         <a href="/insights">Insights</a>
         <a href="/faq">FAQ</a>
+        <a href="/fees">Fees</a>
         <a href="/about">About</a>
         <a href="/contact" class="is-active">Contact</a>
       </nav>
@@ -239,8 +240,9 @@
       <a href="/about">About</a>
       <a href="/insights">Insights</a>
       <a href="/faq">FAQ</a>
+      <a href="/fees">Fees</a>
       <a href="/contact">Contact</a>
-      <a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a>
+      <a href="/zh/contact" lang="zh-Hans" hreflang="zh-Hans">中文</a>
       <a class="btn btn--primary btn--block mobile-menu__call" href="tel:+61391258355">Call (03) 9125 8355</a>
       <div class="mobile-menu__meta">Monday to Friday, 8am to 6pm &middot; Suite 10, 1 Main Street, Box Hill</div>
     </nav>
@@ -255,8 +257,8 @@
           <span>Contact</span>
         </nav>
         <span class="eyebrow-light">Contact</span>
-        <h1 class="pagehero__title">Speak with a Melbourne lawyer today.</h1>
-        <p class="pagehero__lead">Call and you will speak directly with a lawyer about your matter. Prefer to write? Send an enquiry below and we will reply within one business day.</p>
+        <h1 class="pagehero__title">Speak with a lawyer in Box Hill, Melbourne.</h1>
+        <p class="pagehero__lead">Your first call is free, and you speak with a lawyer. Prefer to write? Send an enquiry below and a lawyer will reply within one business day.</p>
         <div class="pagehero__actions">
           <a class="btn btn--accent btn--lg" href="tel:+61391258355">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
@@ -274,7 +276,7 @@
           <div class="contact-info">
             <div class="info-block">
               <span class="icon-chip icon-chip--44"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg></span>
-              <div><div class="info-block__label">Phone</div><div class="info-block__val"><a href="tel:+61391258355">(03) 9125 8355</a></div><div class="info-block__sub">Your first call is free, and it is with a lawyer, not a call centre.</div></div>
+              <div><div class="info-block__label">Phone</div><div class="info-block__val"><a href="tel:+61391258355">(03) 9125 8355</a></div><div class="info-block__sub">Answered by a lawyer, not a call centre.</div></div>
             </div>
             <div class="info-block">
               <span class="icon-chip icon-chip--44"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
@@ -282,7 +284,7 @@
             </div>
             <div class="info-block">
               <span class="icon-chip icon-chip--44"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
-              <div><div class="info-block__label">Hours</div><div class="info-block__val">Monday to Friday, 8am to 6pm</div><div class="info-block__sub">After hours available for urgent matters.</div></div>
+              <div><div class="info-block__label">Hours</div><div class="info-block__val">Monday to Friday, 8am to 6pm</div><div class="info-block__sub">After hours contact is available for urgent matters.</div></div>
             </div>
             <div class="info-block">
               <span class="icon-chip icon-chip--44"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span>
@@ -291,16 +293,16 @@
             <div class="contact-next">
               <div class="contact-next__t">What happens next</div>
               <ol>
-                <li>A lawyer reads your enquiry and replies within one business day, by phone or email as you prefer.</li>
+                <li>A lawyer reads your enquiry and replies within one business day, by phone if you left a number, otherwise by email.</li>
                 <li>We talk through what has happened, flag anything urgent, and tell you plainly whether and how we can help.</li>
-                <li>If you decide to proceed, we send a letter of engagement with a written fee estimate, or the fixed fee from our <a href="/fees">fees page</a>, before any substantive work begins.</li>
+                <li>If you decide to proceed, we send an engagement letter and costs agreement with a written fee estimate, or the fixed fee from our <a href="/fees">fees page</a>, before any substantive work begins.</li>
               </ol>
             </div>
           </div>
 
           <div class="form-card" id="enquiry">
             <h2 class="form-card__t">Send an enquiry</h2>
-            <p class="form-card__d">Tell us a little about your matter. A phone number or an email is enough, whichever suits you. A Mandarin translator is available. If it is urgent, please call.</p>
+            <p class="form-card__d" id="enquiry-hint">Tell us a little about your matter. A phone number or an email is enough, whichever suits you. A Mandarin translator is available. If it is urgent, please call.</p>
             <form class="form" name="contact" method="POST" action="https://formsubmit.co/contact@spenceralexander.com.au">
               <input type="hidden" name="_subject" value="New website enquiry, spenceralexander.com.au">
               <input type="hidden" name="_template" value="table">
@@ -314,13 +316,13 @@
                 </div>
                 <div class="field">
                   <label for="phone">Phone</label>
-                  <input type="tel" id="phone" name="phone" autocomplete="tel">
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="enquiry-hint">
                 </div>
               </div>
               <div class="form-row">
                 <div class="field">
                   <label for="email">Email</label>
-                  <input type="email" id="email" name="email" autocomplete="email">
+                  <input type="email" id="email" name="email" autocomplete="email" aria-describedby="enquiry-hint">
                 </div>
                 <div class="field">
                   <label for="calltime">Best time for a call back</label>
@@ -328,7 +330,6 @@
                     <option value="Any time" selected>Any time</option>
                     <option value="Morning">Morning</option>
                     <option value="Afternoon">Afternoon</option>
-                    <option value="After 6pm">After 6pm</option>
                   </select>
                 </div>
               </div>
@@ -390,6 +391,7 @@
               <a href="/insights">Insights</a>
               <a href="/resources">Free resources</a>
               <a href="/faq">FAQ</a>
+              <a href="/fees">Fixed fees</a>
               <a href="/contact">Contact</a>
               <a href="/privacy">Privacy</a>
               <a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a>
@@ -404,11 +406,14 @@
     </div>
   </footer>
 
-  <a class="mobile-call" href="tel:+61391258355">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
-    Call now &middot; (03) 9125 8355
-  </a>
+  <div class="mobile-bar" role="region" aria-label="Call or enquire">
+    <a class="mobile-call" href="tel:+61391258355">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+      Call (03) 9125 8355
+    </a>
+    <a class="mobile-enquire" href="/contact#enquiry">Enquire</a>
+  </div>
 
-  <script src="scripts/site.js?v=14"></script>
+  <script src="scripts/site.js?v=15"></script>
 </body>
 </html>

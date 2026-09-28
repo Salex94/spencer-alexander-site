@@ -533,9 +533,9 @@ img.page-photo, .bio__frame img { filter: sepia(0.12) saturate(1.05) contrast(1.
 .cross-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); }
 
 /* ---- Responsive ---------------------------------------------------------- */
-@media (min-width: 960px) { .site-nav { display: flex; } .nav-toggle { display: none; } .mobile-menu { display: none !important; } }
-@media (min-width: 960px) and (max-width: 1179px) { .site-nav { gap: clamp(10px, 1.2vw, 16px); } .site-nav a { font-size: 0.75rem; } .site-nav a[href="/"] { display: none; } .header-right .btn--primary { padding: 0 14px; font-size: var(--text-xs); } }
-@media (max-width: 959px) { .header-right { margin-left: auto; } }
+@media (min-width: 1100px) { .site-nav { display: flex; } .nav-toggle { display: none; } .mobile-menu { display: none !important; } }
+@media (min-width: 1100px) and (max-width: 1179px) { .site-nav { gap: clamp(10px, 1.2vw, 16px); } .site-nav a { font-size: 0.75rem; } .site-nav a[href="/"] { display: none; } .header-right .btn--primary { padding: 0 14px; font-size: var(--text-xs); } }
+@media (max-width: 1099px) { .header-right { margin-left: auto; } }
 @media (max-width: 1100px) { .hub { grid-template-columns: 1fr; } .rail { position: static; grid-template-columns: 1fr 1fr; } .article-layout { grid-template-columns: 1fr; } .article-layout .article { margin: 0 auto; } .article-rail { max-width: 720px; margin: 0 auto; width: 100%; } }
 @media (max-width: 980px) { .bio { grid-template-columns: 1fr; } .bio__media { position: static; max-width: 440px; } .featured { grid-template-columns: 1fr; } .featured__media { min-height: 240px; } .statement { grid-template-columns: 1fr; } .footer-top { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 900px) { .hero__grid { grid-template-columns: 1fr; } .hero-portrait { margin-left: 0; max-width: 380px; } .pagehero--split { grid-template-columns: 1fr; } .pagehero__media { max-width: 560px; } .practice-grid { grid-template-columns: 1fr; } .urgent-grid { grid-template-columns: 1fr; } .process-row { grid-template-columns: 1fr; } .process-row .step { padding-top: 18px; } }
@@ -598,7 +598,7 @@ img.page-photo, .bio__frame img { filter: sepia(0.12) saturate(1.05) contrast(1.
 .film__after[hidden] { display: none; }
 .film__player.is-playing .film__after[hidden] { display: flex; visibility: hidden; }
 .film__after-phone { display: none; }
-.film__after a { color: var(--brass-300); text-decoration: underline; text-decoration-thickness: 1px; }
+.film__after p a { color: var(--brass-300); text-decoration: underline; text-decoration-thickness: 1px; }
 .film__after p { margin: 0; font-size: var(--text-sm); color: var(--wine-200); max-width: 60ch; }
 .film__after-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
 @media (max-width: 880px) { .film__after-desk { display: none; } .film__after-phone { display: inline; } }
@@ -636,7 +636,7 @@ img.page-photo, .bio__frame img { filter: sepia(0.12) saturate(1.05) contrast(1.
   .practice-card__list { display: none; }
   .practice-card__media { aspect-ratio: auto; background: transparent; }
   .practice-card__media img, .practice-card__media::after { display: none; }
-  .practice-card__label { position: static; color: var(--text-strong); padding: 22px 22px 0; }
+  .practice-card__label { position: static; color: var(--text-strong); padding: 24px 26px 0; text-shadow: none; }
   #home-insights .post-grid > *:nth-child(n+3) { display: none; }
   #home-reviews .review-grid > *:nth-child(n+4) { display: none; }
   .article-toc ol { columns: 1; }
@@ -683,3 +683,56 @@ html:not(.js) .film__video { background: transparent; }
   a[href]::after { content: "" !important; }
   img { max-height: 90mm; }
 }
+
+/* Fixes from the design audit of 28 Sep 2026: no change to the approved design, only faults corrected */
+.related + .section-head { margin-top: clamp(48px, 6vw, 80px); }
+.article__body a[href^="tel:"], .article-callout a[href^="tel:"], .faq-a a[href^="tel:"], .svc a[href^="tel:"], .urgent a[href^="tel:"], .cta__lead a[href^="tel:"], p a[href^="tel:"] { white-space: nowrap; }
+h2, h3, .faq-q, .post-card__title, .featured__title, .rail-card__t, .svc__title, .urgent__t { text-wrap: balance; }
+.section--sunken .sa-eyebrow { color: var(--brass-800); }
+@media (max-width: 640px) { .article-meta .post-meta { white-space: normal; } .hero-portrait__firm { display: none; } }
+/* A control reached by keyboard on a phone scrolls clear of the fixed call bar (WCAG 2.4.11), 28 Sep 2026 */
+@media (max-width: 880px) { html { scroll-padding-bottom: 74px; } }
+
+/* Preview for Spencer's approval, 28 Sep 2026: design refinements from the audits */
+/* Links inside running text carry a fine underline, so they read as links without relying on colour (WCAG 1.4.1) */
+.article__body p a, .article__body li a, .article-callout a, .article-sources a, .prose a, .svc p a, .faq-a p a, .brief a, .form__note a, .fee-note__d a, .about-archive__lead a, .fees-body a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(110,31,46,.42); }
+.article__body p a:hover, .article__body li a:hover, .article-callout a:hover, .prose a:hover, .svc p a:hover, .faq-a p a:hover, .brief a:hover, .fee-note__d a:hover { text-decoration-color: currentColor; }
+/* The home hero keeps its call button above the fold on common laptops */
+@media (min-width: 901px) { .hero__grid { padding-block: clamp(32px, 3.5vw, 48px) clamp(40px, 5vw, 72px); } .hero__title { font-size: clamp(2.7rem, 4.4vw, 3.75rem); margin-top: 16px; } .hero__lead { margin-top: 18px; } .hero__actions { margin-top: 26px; } }
+/* One portrait, one look: the home hero overlay is lighter so it matches About */
+.hero-portrait__frame::before { opacity: .5; }
+/* Resource cards are text cards, without an empty image box */
+.post-card--text { border-top: 3px solid var(--brass-600); }
+.post-card--text .post-cat { align-self: flex-start; }
+/* On phones the hub's call to action and urgent strip come before its stock photograph */
+@media (max-width: 640px) { .pagehero--split .pagehero__media { display: none; } }
+/* The menu button shows a close mark while the menu is open */
+.nav-toggle svg line { transition: transform 180ms var(--ease-standard), opacity 180ms var(--ease-standard); transform-box: view-box; transform-origin: 12px 12px; }
+.nav-toggle[aria-expanded="true"] svg line:nth-child(1) { transform: rotate(45deg) translateY(6px); }
+.nav-toggle[aria-expanded="true"] svg line:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] svg line:nth-child(3) { transform: rotate(-45deg) translateY(-6px); }
+@media (prefers-reduced-motion: reduce) { .nav-toggle svg line { transition: none; } }
+/* Phones: the fixed bar offers both a call and an enquiry */
+.mobile-enquire { display: none; position: fixed; bottom: 0; right: 0; width: 34%; z-index: 60; align-items: center; justify-content: center; height: 58px; background: var(--wine-800); color: var(--paper-50); font-weight: var(--weight-bold); font-size: var(--text-md); text-decoration: none; padding-bottom: env(safe-area-inset-bottom); box-shadow: 0 -6px 24px rgba(0,0,0,0.18); transition: transform 200ms ease; }
+.mobile-enquire:hover { color: var(--paper-50); text-decoration: none; }
+.mobile-enquire:focus-visible { outline: 3px solid var(--brass-300); outline-offset: -5px; }
+@media (max-width: 880px) { .mobile-bar .mobile-call { right: 34%; } .mobile-enquire { display: flex; } }
+.cta-visible .mobile-enquire, .menu-open .mobile-enquire { transform: translateY(110%); }
+@media (prefers-reduced-motion: reduce) { .mobile-enquire { transition: none; } }
+/* Quick exit on family law pages: one tap leaves for a neutral site */
+.quick-exit { position: fixed; right: 16px; bottom: 24px; z-index: 70; display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; background: var(--ink-900); color: var(--paper-50); border: 1px solid rgba(255,255,255,0.24); border-radius: var(--radius-sm); font-size: var(--text-sm); font-weight: var(--weight-bold); letter-spacing: 0.02em; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.28); }
+.quick-exit:hover { color: var(--paper-50); background: var(--wine-900); text-decoration: none; }
+.quick-exit:focus-visible { outline: 3px solid var(--brass-300); outline-offset: 2px; }
+@media (max-width: 880px) { .quick-exit { bottom: 74px; right: 12px; padding: 10px 14px; } }
+@media print { .quick-exit, .mobile-enquire { display: none !important; } }
+/* With Fees in the navigation, the header stays inside its container from 1100 to 1279 pixels (the compact rule above targets the old primary button) */
+@media (min-width: 1100px) and (max-width: 1279px) { .site-nav { gap: 13px; } .site-nav a { font-size: 0.75rem; } .header-right .btn { padding: 0 14px; font-size: var(--text-xs); } .header-right { margin-left: 18px; } }
+.article-toc a, .article__body .article-toc li a { text-decoration: none; }
+/* Reviews: the three most specific, quoted larger; every review is one click away on Google */
+.review-grid--featured .review-card__q { font-size: clamp(1.1875rem, 1.6vw, 1.375rem); line-height: 1.5; }
+/* Fees page: each price on a hairline row, aligned right, with its scope beneath (preview, 28 Sep 2026) */
+.fee-list { margin-top: 18px; border-bottom: 1px solid var(--border-hairline); }
+.fee { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 24px; padding: 18px 0; border-top: 1px solid var(--border-hairline); }
+.article__body .fee__name { margin: 0; font-family: var(--font-display); font-weight: var(--weight-medium); font-size: var(--text-lg); line-height: 1.3; color: var(--text-strong); }
+.article__body .fee__price { margin: 0; font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.3; color: var(--wine-700); font-variant-numeric: lining-nums tabular-nums; text-align: right; white-space: nowrap; }
+.article__body .fee__scope { grid-column: 1 / -1; margin: 0; font-size: var(--text-base); line-height: 1.6; color: var(--text-muted); max-width: 62ch; }
