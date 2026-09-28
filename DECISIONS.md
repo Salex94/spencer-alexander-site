@@ -13,6 +13,49 @@ Newest entries first.
 
 ---
 
+## 2026-09-29: Site accuracy and health; ledger created, four pages verified, one sentence corrected
+
+First run of the accuracy sweep under `playbooks/site-health.md` (Melbourne date Tuesday 29 September
+2026). `scripts/accuracy-ledger.md` was created with 45 legal pages: the 24 pages corrected on 24 and
+26 Sep 2026 seeded as verified on 26 Sep 2026, the agreed property settlement article and the eight
+service pages as verified on their publication on 28 Sep 2026, and twelve pages as never verified.
+45 divided by 13 and rounded up gives 4 pages this run, the four oldest never verified articles:
+
+- insight-probate-victoria.html: correct. Administration and Probate Act 1958 (Vic) version 130,
+  sections 6, 13, 25, 39, 58, 99 and 99A; Supreme Court (Administration and Probate) Rules 2023 (Vic)
+  version 002, rules 2.02 and 2.03, the 14 day notice; Supreme Court (Fees) Regulations 2018 (Vic)
+  version 003, Schedule 1 item 4.2, nil below $250,000; Wills Act 1997 (Vic) version 036.
+- insight-binding-financial-agreements.html: correct. Family Law Act 1975 (Cth) compilation 101,
+  sections 90G, 90K, 90KA and 90UJ, including 90UJ(3), a de facto agreement ceasing to bind on marriage.
+- insight-testamentary-trusts.html: correct. Income Tax Assessment Act 1936 (Cth) compilation 192,
+  section 102AG(2)(a) and (2AA); Perpetuities and Accumulations Act 1968 (Vic) version 023, section 5;
+  Wills Act 1997 (Vic) sections 4 and 7. The announced discretionary trust minimum tax and its
+  testamentary trust exclusion were confirmed by search of Treasury and ATO pages; still not law.
+- insight-debt-recovery-victoria.html: correct. Magistrates' Court Act 1989 (Vic) version 239,
+  sections 3, 100, 111 and 112; Corporations Act 2001 (Cth) compilation 148, sections 459C, 459E, 459G
+  and 459H; Corporations Regulations 2001 (Cth) compilation 214, regulation 5.4.01AAA, $4,000;
+  Bankruptcy Act 1966 (Cth) compilation 97, section 41; Bankruptcy Regulations 2021 (Cth)
+  compilation 5, section 10A, $10,000.
+
+Correction, the open item the 28 Sep article run left for this routine:
+
+- insight-property-after-separation.html. Old: "An informal deal does not stop either of you going to
+  court later, a transfer under it is not protected from stamp duty, and it cannot split
+  superannuation." New: "An informal deal does not stop either of you going to court later, and it
+  cannot split superannuation. A transfer of property under it is also harder to bring within the
+  stamp duty exemption, which applies only where the Commissioner of State Revenue is satisfied that
+  the transfer was made solely because the relationship broke down, and consent orders or a binding
+  financial agreement are the clearest way to show that." Source: Duties Act 2000 (Vic) version 141,
+  section 44(1), which requires no order. The Sources line and citation schema now name the Duties
+  Act. The page's dates already stood at 29 Sep 2026 from the price change, so none moved.
+
+Still open: insight-child-support-australia.html says "As at August 2026" about the announced child
+support reforms; it is re-verified when its ledger turn comes. Light structural check: the gate's 103
+checks pass, robots.txt stays permissive, no orphan pages. Fleet check: all ten routines ran as
+scheduled.
+
+---
+
 ## 2026-09-29: prices raised on Spencer's instruction, with a $495 minimum
 
 Spencer's words: "I do want somethings like power of attorney and medical attorney document to be 450
