@@ -13,6 +13,18 @@ Newest entries first.
 
 ---
 
+## 2026-09-28, night: four files nothing used were removed
+
+Spencer asked that his GitHub be kept simple and that anything in it that does nothing be dealt with.
+Four files in this repository did nothing: the staff photographs jordyn.png and katalin.png, which no
+page uses; scripts/image-slot.js, a design tool scaffold that no page loads; and
+scripts/preapproved-claude-settings.json, an older and narrower copy of the allowlist that is live as
+.claude/settings.json. All four were removed and stay in git history, so the earlier notes that kept the
+photographs as the owner's files are superseded. The spare photographs in assets/photos stay, because
+the article routine draws on them. The publishing gate passed all 103 checks.
+
+---
+
 ## 2026-09-28, late evening: will prices and prices shown before and after GST
 
 Asked whether the fees were too cheap, Spencer chose to leave them as they are except the wills: "make

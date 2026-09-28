@@ -824,11 +824,9 @@ must know:
 
 - A run **cannot** write `.claude/settings.json` or otherwise grant itself
   permissions — the Auto Mode classifier hard-blocks it. Do not retry or work
-  around it. The prepared allowlist lives at
-  `scripts/preapproved-claude-settings.json`; only the owner can activate it
-  (rename to `.claude/settings.json` on GitHub, or add the repo as a source in
-  the environment settings). If `.claude/settings.json` exists, the owner has
-  activated it — never edit or weaken it without owner instruction.
+  around it. The owner has activated the allowlist as `.claude/settings.json`,
+  and the older staged copy was removed on 28 Sep 2026. Never edit or weaken
+  it without owner instruction.
 - If a run is blocked waiting on a permission the owner has not granted,
   proceed with whatever else is possible; if publishing itself is blocked,
   stop without degrading and tell the owner exactly which approval was missing
