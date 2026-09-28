@@ -110,3 +110,8 @@ demand strip and a FAQ on what to do when a demand arrives; each hub names Melbo
 says a translator is available and links its pills to the service pages; fees.html gives every fee an
 anchor and links each service page; the footer says a Box Hill, Melbourne law firm. The Chinese pages
 carry none of these yet, apart from the self-hosted fonts and the stylesheet and script versions.
+
+On 28 Sep 2026 main was published without the Chinese pages by commit a851685, which removed `zh/`, the
+中文 links, the hreflang links, the Chinese sitemap entries and the llms.txt section. When the pages are
+ready, the publishing session carries the lists above into them, has them checked, merges this branch
+into main and reverts a851685 in the same push, then runs the gate.
