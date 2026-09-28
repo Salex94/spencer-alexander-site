@@ -96,3 +96,7 @@ the fees page as priced rows with call buttons, the rail card's translator line,
 wills and commercial hubs, the Contact page copy, the thank you page's safety net, the quick exit on the
 family page with its note, and the call and enquire bar on phones. The Chinese pages carry none of these
 yet; the quick exit label and the Enquire button need Chinese wording she approves.
+
+Photographs, in the preview: the commercial hub's hero and process image and the home page's Commercial card
+and insight cards now use new photographs. The Chinese pages keep the old files until their alt text is
+translated and checked with the rest.
