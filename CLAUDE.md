@@ -752,6 +752,10 @@ preview; the session that publishes it records his words and the date here and i
   its call button sits above the fold; brass text is one step deeper for contrast (`--text-seal` is
   brass 800); resource cards are text cards; the home page features three reviews; the home hero
   portrait overlay matches About.
+- **If the preview is approved before the Mandarin reading lawyer has finished**, the publishing
+  session holds back `zh/`, the 中文 links in the top bar, mobile menu and footer, the hreflang links
+  and the Chinese sitemap entries, so no English page links to a page that is not live, and publishes
+  them later under `playbooks/zh/README.md`. The Chinese pages are never published unchecked.
 - Keys after the preview: site.css v20, styles.css v8, site.js v15.
 
 ## Chinese pages, Spencer's instruction of 26 Sep 2026
