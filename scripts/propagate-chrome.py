@@ -29,7 +29,7 @@ def group(hub, label, active=False):
     return (f'<div class="site-nav__group"><a href="/{hub}"{cls}>{name}</a>\n        <div class="site-nav__menu"><strong>{name}</strong>{links}\n          <a class="site-nav__all" href="/{hub}">{allt}</a>\n        </div></div>')
 old_nav=re.search(r'<nav class="site-nav" aria-label="Primary">.*?</nav>', idx, re.S).group(0)
 new_nav=('<nav class="site-nav" aria-label="Primary">\n        '+group('family-law','')+'\n        '+group('wills-and-estates','')+'\n        '+group('commercial-law','')+
-         '\n        <a href="/insights">Insights</a>\n        <a href="/faq">FAQ</a>\n        <a href="/about">About</a>\n        <a href="/contact">Contact</a>\n      </nav>')
+         '\n        <a href="/insights">Insights</a>\n        <a href="/faq">FAQ</a>\n        <a href="/fees">Fees</a>\n        <a href="/about">About</a>\n        <a href="/contact">Contact</a>\n      </nav>')
 idx=idx.replace(old_nav,new_nav)
 idx=idx.replace('<a class="btn btn--primary" href="tel:+61391258355">','<a class="btn btn--outline" href="tel:+61391258355">',1)
 idx=idx.replace('        <a class="topbar__tel" href="tel:+61391258355">(03) 9125 8355</a>\n','',1)
@@ -48,7 +48,7 @@ for p in sorted(glob.glob(f'{ROOT}/*.html')):
     if not m: print('no chrome in', p); continue
     page=p.split('/')[-1][:-5]
     block=tb.replace(' class="is-active"','')
-    active={'commercial-law':'/commercial-law','family-law':'/family-law','wills-and-estates':'/wills-and-estates','insights':'/insights','faq':'/faq','about':'/about','contact':'/contact'}
+    active={'commercial-law':'/commercial-law','family-law':'/family-law','wills-and-estates':'/wills-and-estates','insights':'/insights','faq':'/faq','about':'/about','contact':'/contact','fees':'/fees'}
     href=active.get(page) or ('/insights' if page.startswith('insight-') or page.startswith('resource') else None)
     if href:
         block=block.replace(f'<a href="{href}">', f'<a href="{href}" class="is-active">',1)

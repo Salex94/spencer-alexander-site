@@ -282,3 +282,14 @@
     }
   });
 })();
+
+// Quick exit on family law pages: leave at once for a neutral site, replacing this page in the history
+(function () {
+  var q = document.querySelector("[data-quick-exit]");
+  if (!q) return;
+  q.addEventListener("click", function (e) {
+    e.preventDefault();
+    try { window.open("https://www.google.com.au/", "_blank", "noopener"); } catch (err) {}
+    window.location.replace(q.href);
+  });
+})();

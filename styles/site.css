@@ -692,3 +692,39 @@ h2, h3, .faq-q, .post-card__title, .featured__title, .rail-card__t, .svc__title,
 @media (max-width: 640px) { .article-meta .post-meta { white-space: normal; } .hero-portrait__firm { display: none; } }
 /* A control reached by keyboard on a phone scrolls clear of the fixed call bar (WCAG 2.4.11), 28 Sep 2026 */
 @media (max-width: 880px) { html { scroll-padding-bottom: 74px; } }
+
+/* Preview for Spencer's approval, 28 Sep 2026: design refinements from the audits */
+/* Links inside running text carry a fine underline, so they read as links without relying on colour (WCAG 1.4.1) */
+.article__body p a, .article__body li a, .article-callout a, .article-sources a, .prose a, .svc p a, .faq-a p a, .brief a, .form__note a, .fee-note__d a, .about-archive__lead a, .fees-body a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(110,31,46,.42); }
+.article__body p a:hover, .article__body li a:hover, .article-callout a:hover, .prose a:hover, .svc p a:hover, .faq-a p a:hover, .brief a:hover, .fee-note__d a:hover { text-decoration-color: currentColor; }
+/* The home hero keeps its call button above the fold on common laptops */
+@media (min-width: 901px) { .hero__grid { padding-block: clamp(32px, 3.5vw, 48px) clamp(40px, 5vw, 72px); } .hero__title { font-size: clamp(2.7rem, 4.4vw, 3.75rem); margin-top: 16px; } .hero__lead { margin-top: 18px; } .hero__actions { margin-top: 26px; } }
+/* One portrait, one look: the home hero overlay is lighter so it matches About */
+.hero-portrait__frame::before { opacity: .5; }
+/* Resource cards are text cards, without an empty image box */
+.post-card--text { border-top: 3px solid var(--brass-600); }
+.post-card--text .post-cat { align-self: flex-start; }
+/* On phones the hub's call to action and urgent strip come before its stock photograph */
+@media (max-width: 640px) { .pagehero--split .pagehero__media { display: none; } }
+/* The menu button shows a close mark while the menu is open */
+.nav-toggle svg line { transition: transform 180ms var(--ease-standard), opacity 180ms var(--ease-standard); transform-box: view-box; transform-origin: 12px 12px; }
+.nav-toggle[aria-expanded="true"] svg line:nth-child(1) { transform: rotate(45deg) translateY(6px); }
+.nav-toggle[aria-expanded="true"] svg line:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] svg line:nth-child(3) { transform: rotate(-45deg) translateY(-6px); }
+@media (prefers-reduced-motion: reduce) { .nav-toggle svg line { transition: none; } }
+/* Phones: the fixed bar offers both a call and an enquiry */
+.mobile-enquire { display: none; position: fixed; bottom: 0; right: 0; width: 34%; z-index: 60; align-items: center; justify-content: center; height: 58px; background: var(--wine-800); color: var(--paper-50); font-weight: var(--weight-bold); font-size: var(--text-md); text-decoration: none; padding-bottom: env(safe-area-inset-bottom); box-shadow: 0 -6px 24px rgba(0,0,0,0.18); transition: transform 200ms ease; }
+.mobile-enquire:hover { color: var(--paper-50); text-decoration: none; }
+.mobile-enquire:focus-visible { outline: 3px solid var(--brass-300); outline-offset: -5px; }
+@media (max-width: 880px) { .mobile-bar .mobile-call { right: 34%; } .mobile-enquire { display: flex; } }
+.cta-visible .mobile-enquire, .menu-open .mobile-enquire { transform: translateY(110%); }
+@media (prefers-reduced-motion: reduce) { .mobile-enquire { transition: none; } }
+/* Quick exit on family law pages: one tap leaves for a neutral site */
+.quick-exit { position: fixed; right: 16px; bottom: 24px; z-index: 70; display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; background: var(--ink-900); color: var(--paper-50); border: 1px solid rgba(255,255,255,0.24); border-radius: var(--radius-sm); font-size: var(--text-sm); font-weight: var(--weight-bold); letter-spacing: 0.02em; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.28); }
+.quick-exit:hover { color: var(--paper-50); background: var(--wine-900); text-decoration: none; }
+.quick-exit:focus-visible { outline: 3px solid var(--brass-300); outline-offset: 2px; }
+@media (max-width: 880px) { .quick-exit { bottom: 74px; right: 12px; padding: 10px 14px; } }
+@media print { .quick-exit, .mobile-enquire { display: none !important; } }
+/* With Fees in the navigation, the header stays inside its container from 1100 to 1279 pixels (the compact rule above targets the old primary button) */
+@media (min-width: 1100px) and (max-width: 1279px) { .site-nav { gap: 13px; } .site-nav a { font-size: 0.75rem; } .header-right .btn { padding: 0 14px; font-size: var(--text-xs); } .header-right { margin-left: 18px; } }
+.article-toc a, .article__body .article-toc li a { text-decoration: none; }
