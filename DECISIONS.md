@@ -13,6 +13,49 @@ Newest entries first.
 
 ---
 
+## 2026-09-28: Final round published with full rein, Chinese pages held back
+
+After the six audits and the preview, Spencer asked for one final review so that every category is the
+best it can be, and gave full rein to implement it: "You have full rein to implement evrything you see
+fit accordingly, if you cannot do anything, tell me and I will address it on my side." The preview and
+the final round were published to main that day. The Chinese pages were held back, because the Mandarin
+reading lawyer has not yet checked them; they stay on the branch `claude/youthful-bohr-aaeqrx`.
+
+- **The preview**, as recorded in CLAUDE.md: eight service pages, prices where people decide, Fees in
+  the navigation, new hub photographs, the call and enquire bar on phones, the quick exit on family
+  pages and the laptop hero.
+- **Enquiries.** The contact form asks whether it is safe to email or leave a message, with four
+  answers, and the message is optional; the enquiry email's subject carries the Melbourne date and
+  time, so Gmail never groups two enquiries in one thread. The enquiry auto reply in the bd repository
+  reads the safety answer and writes to a family law enquirer only where email is safe.
+- **Paths to a call.** A statutory demand strip and FAQ on the commercial hub with an email link for a
+  photo of the demand; a call line in the FAQ page's time limit answer; every fee on fees.html has an
+  anchor and links its service page; faq.html answers open from a link; hub pills link their service
+  pages; the home page shows six reviews again, not three.
+- **Trust and search.** The ABN in the firm schema; the Register of Lawyers link on About; the eastern
+  suburbs and the translator line on each hub; the footer names Box Hill; the fonts are served from
+  the site itself, so no page calls a Google font service, and the privacy page says so.
+- **Articles.** All thirty one were polished: brackets written into the sentence, court website
+  sentences folded in, filler trimmed, question headings where they read naturally, fixed fee
+  sentences and links to the service pages. Letters of administration at $1,980 is qualified as where
+  there is no will wherever it is quoted, and the property article no longer says an informal deal
+  binds no one. The insights listing's read times were a minute or two behind on fourteen cards; they
+  now match, and a new gate check keeps them matched.
+- **Service pages, second legal read.** An adversarial read of all eight against the authorised Acts
+  and Rules found one error, the retail lease option notice on the commercial leases page, and sixty
+  four imprecise or badly worded statements, all corrected. The findings are summarised in the
+  commit message.
+- **Waiting on Spencer.** Rule 9.01 of the Supreme Court (Administration and Probate) Rules 2023 sets
+  the professional charges for a grant that may be paid out of an estate by its Appendix scale, so
+  the probate page no longer says the costs are ordinarily paid from the estate until he gives his
+  view. The phrase "tell you where you stand" beside the free first call, on the hubs, the rail card
+  and several articles, is his to keep or change against his rule that the free call is not free
+  advice; the commercial leases page no longer offers to review the lease on that call. A trusts and
+  succession article for business owners is a gap the audit found; it is recorded here because the
+  demand scanner rewrites the backlog each week.
+
+---
+
 ## 2026-09-28: Six audits, faults fixed, legal corrections read twice, and a preview for Spencer
 
 Spencer asked on 28 Sep 2026 for the site to be the strongest it can be for search, AI answers,

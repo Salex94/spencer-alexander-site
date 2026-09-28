@@ -100,3 +100,13 @@ yet; the quick exit label and the Enquire button need Chinese wording she approv
 Photographs, in the preview: the commercial hub's hero and process image and the home page's Commercial card
 and insight cards now use new photographs. The Chinese pages keep the old files until their alt text is
 translated and checked with the rest.
+
+The final round, live on the English site since 28 Sep 2026: contact.html asks whether it is safe to email
+or leave a message, with four answers, and the message is optional; index.html shows six reviews, a new
+hero lead, a practice introduction on how the three areas meet with the translator line, the second
+process step on fixed fees and the engagement letter, the statement on Spencer's experience, the
+admission and Law Institute line and the ABN in the firm schema; commercial-law.html has the statutory
+demand strip and a FAQ on what to do when a demand arrives; each hub names Melbourne's eastern suburbs,
+says a translator is available and links its pills to the service pages; fees.html gives every fee an
+anchor and links each service page; the footer says a Box Hill, Melbourne law firm. The Chinese pages
+carry none of these yet, apart from the self-hosted fonts and the stylesheet and script versions.

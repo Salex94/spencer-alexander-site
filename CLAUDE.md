@@ -723,10 +723,12 @@ came out of them and is settled:
   "published under his name", matching about.html.
 - Keys after this round: site.css v19.
 
-## Preview of 28 Sep 2026, live only once Spencer approves it
+## Preview and final round of 28 Sep 2026, published the same day
 
-Everything in this section sits on the branch `claude/youthful-bohr-aaeqrx` until Spencer approves the
-preview; the session that publishes it records his words and the date here and in DECISIONS.md.
+Spencer asked for a final review so that every category is the best it can be and gave full rein to
+implement it: "You have full rein to implement evrything you see fit accordingly". The preview below and
+the final round were published to main on 28 Sep 2026, with the Chinese pages held back; DECISIONS.md
+records both.
 
 - **Service pages.** Eight `service-*.html` pages, the playbook's cap, built by
   `scripts/build-service-page.py` from content files in `playbooks/service-content/`, which hold the
@@ -752,18 +754,37 @@ preview; the session that publishes it records his words and the date here and i
   gate checks it is present. It has no keyboard shortcut, because Escape already closes the menus.
 - **Look.** Links inside running text carry a fine underline; the home hero is shorter on laptops so
   its call button sits above the fold; brass text is one step deeper for contrast (`--text-seal` is
-  brass 800); resource cards are text cards; the home page features three reviews; the home hero
+  brass 800); resource cards are text cards; the home page shows six reviews; the home hero
   portrait overlay matches About.
-- **If the preview is approved before the Mandarin reading lawyer has finished**, the publishing
-  session holds back `zh/`, the 中文 links in the top bar, mobile menu and footer, the hreflang links
-  and the Chinese sitemap entries, so no English page links to a page that is not live, and publishes
-  them later under `playbooks/zh/README.md`. The Chinese pages are never published unchecked.
-- Keys after the preview: site.css v20, styles.css v8, site.js v15.
+- **Enquiries.** The contact form asks, optionally, whether it is safe to email or leave a message,
+  in the field `safe_to_contact` whose four answers the auto reply in the bd repository reads, and the
+  message is optional. `scripts/site.js` adds the Melbourne date and time to the enquiry's `_subject` on submit, so
+  Gmail never groups two enquiries in one thread. Keep the field name and its four answers exactly as
+  they are, or change the auto reply's `emailSafe_` in the same change.
+- **Paths to a call.** Every fee on fees.html has an id, `fee-<slug>`, and its name links the matching
+  service page; faq.html answers carry ids, `q-<slug>`, and a link to one opens it; hub pills link their
+  service pages; the commercial hub's urgent strip and a FAQ say what to do the day a statutory demand
+  arrives, with an email link for a photo of it.
+- **Trust.** The firm node carries the ABN as `taxID`; About links the Register of Lawyers; each hub
+  names Melbourne's eastern suburbs and says a Mandarin translator is available.
+- **Letters of administration** at $1,980 is always quoted as where there is no will, as fees.html
+  prices it. The probate page says nothing about costs being paid from the estate until Spencer gives
+  his view on rule 9.01 of the probate rules.
+- **Listing read times** on insights.html and index.html must equal each article's own; the gate
+  checks it.
+- **The Chinese pages were held back from the publish of 28 Sep 2026**, because the Mandarin reading
+  lawyer had not finished: main has no `zh/`, no 中文 links in the top bar, mobile menu and footer, no
+  hreflang links and no Chinese sitemap entries, so no English page links to a page that is not live.
+  The branch `claude/youthful-bohr-aaeqrx` keeps them, and they are published later under
+  `playbooks/zh/README.md`, whose carry list says what each must take from the English first. They are
+  never published unchecked.
+- Keys after this round: site.css v21, styles.css v9, site.js v16.
 
 ## Chinese pages, Spencer's instruction of 26 Sep 2026
 
 Box Hill's 2021 census count has more residents speaking Mandarin at home than speaking English only,
-so seven pages have Simplified Chinese versions in `zh/`: the home page, contact, fees, the three
+so seven pages have Simplified Chinese versions in `zh/`, kept on the branch `claude/youthful-bohr-aaeqrx`
+and not yet on main: the home page, contact, fees, the three
 practice pages and the thank you page. Spencer's words: "don't advertise that we have mandarin lawyers,
 just say that we have a mandarin translator available". A lawyer at the firm who reads Mandarin checks
 every Chinese line before it is published; `playbooks/zh/README.md` records her review, where it is and
@@ -788,7 +809,7 @@ how it is applied, and `playbooks/zh/BRIEF.md` is the standard for every Chinese
   footer, FAQ schema against the visible answers, and that the Chinese fees page carries exactly the
   English page's prices.
 - `scripts/site.js` shows the form's phone or email message in Chinese on a `zh-Hans` page, and
-  `scripts/refresh-google-rating.py` updates the rating on the Chinese pages too. Keys: site.js v15, with the preview of 28 Sep 2026.
+  `scripts/refresh-google-rating.py` updates the rating on the Chinese pages too. Keys: site.js v16, with the final round of 28 Sep 2026.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 
