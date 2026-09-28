@@ -80,6 +80,9 @@ def main(path):
 
     # ---- chrome from the hub, no link active
     chrome = re.search(r'<body>.*?</header>\n', hub, re.S).group(0).replace(' class="is-active"', "")
+    if c["hub"] == "family-law" and "data-quick-exit" not in chrome:
+        chrome = chrome.replace('<a class="skip-link" href="#main">Skip to content</a>\n',
+                                '<a class="skip-link" href="#main">Skip to content</a>\n  <a class="quick-exit" href="https://www.bom.gov.au/" data-quick-exit>Quick exit</a>\n', 1)
     tail = hub[hub.index("  <footer class=\"site-footer\">"):]
     rail_call = re.search(r'<div class="rail-card">.*?<p class="rail-card__meta">.*?</p>\n          </div>', hub, re.S).group(0)
     fee_icon = re.search(r'<div class="fee-note">\s*(<span class="icon-chip icon-chip--44">.*?</span>)', hub, re.S).group(1)

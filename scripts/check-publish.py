@@ -644,6 +644,18 @@ def main():
             wrong_card.append(f)
     check("article rail card matches its practice area", not wrong_card, ", ".join(wrong_card[:4]))
 
+    # Family law pages carry the quick exit (added 28 Sep 2026): the hub, every
+    # Family Law article, the separation checklist and every family service page.
+    no_exit = []
+    for f in sorted(glob.glob("*.html")):
+        h = read(f)
+        fam = f in ("family-law.html", "resource-separation-first-30-days.html") \
+            or (f.startswith("insight-") and '"articleSection": "Family Law"' in h) \
+            or (f.startswith("service-") and 'href="/family-law">Family Law</a>' in h.split('<nav class="crumbs"', 1)[-1][:2000])
+        if fam and "data-quick-exit" not in h:
+            no_exit.append(f)
+    check("family law pages carry the quick exit", not no_exit, ", ".join(no_exit[:4]))
+
     # ---- report ----------------------------------------------------------
     width = max(len(n) for n, _, _ in results)
     failed = 0
