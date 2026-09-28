@@ -59,5 +59,9 @@ for p in sorted(glob.glob(f'{ROOT}/*.html')):
     href=active.get(page) or ('/insights' if page.startswith('insight-') or page.startswith('resource') else None)
     if href:
         block=block.replace(f'<a href="{href}">', f'<a href="{href}" class="is-active">',1)
+    # a page with a Chinese version links it from the top bar and the mobile menu (28 Sep 2026)
+    twin={'contact':'/zh/contact','fees':'/zh/fees','family-law':'/zh/family-law','wills-and-estates':'/zh/wills-and-estates','commercial-law':'/zh/commercial-law'}.get(page)
+    if twin:
+        block=block.replace('<a href="/zh/" lang="zh-Hans"', f'<a href="{twin}" lang="zh-Hans"')
     s=s[:m.start()]+block+s[m.end():]; open(p,'w').write(s); count+=1
 print('header propagated to', count, 'pages')
