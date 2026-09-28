@@ -31,7 +31,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap"></noscript>
   <link rel="stylesheet" href="styles/styles.css?v=7">
-  <link rel="stylesheet" href="styles/site.css?v=18">
+  <link rel="stylesheet" href="styles/site.css?v=19">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -105,7 +105,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Header -->
-  <div class="topbar">
+  <div class="topbar" role="region" aria-label="Opening hours and email">
     <div class="container topbar__inner">
       <span class="topbar__loc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg> Box Hill, Melbourne &middot; Acting for clients across Victoria</span>
       <span class="topbar__contact">
@@ -201,10 +201,10 @@
             </a>
             <a class="btn btn--ghost btn--lg" href="/contact#enquiry">Send an enquiry</a>
           </div>
-          <div class="pagehero__meta"><span>Your first call is free and with a lawyer</span><span>Box Hill and Melbourne's east</span><span>In person, by phone or by video</span></div>
+          <div class="pagehero__meta"><span>Your first call is free, and you speak with a lawyer</span><span>Box Hill and Melbourne's east</span><span>In person, by phone or by video</span></div>
         </div>
         <div class="pagehero__media">
-          <picture><source type="image/webp" srcset="assets/photos/1517048676732.webp"><img src="assets/photos/1517048676732.jpg" srcset="assets/photos/1517048676732-800.jpg 800w, assets/photos/1517048676732.jpg 1200w" sizes="(max-width: 860px) 100vw, 46vw" alt="A quiet conversation across a meeting room table in warm, natural light" width="1200" height="800" fetchpriority="high"></picture>
+          <picture><source type="image/webp" srcset="assets/photos/1517048676732-800.webp 800w, assets/photos/1517048676732.webp 1200w" sizes="(max-width: 860px) 100vw, 46vw"><img src="assets/photos/1517048676732.jpg" srcset="assets/photos/1517048676732-800.jpg 800w, assets/photos/1517048676732.jpg 1200w" sizes="(max-width: 860px) 100vw, 46vw" alt="A quiet conversation across a meeting room table in warm, natural light" width="1200" height="800" fetchpriority="high"></picture>
         </div>
       </div>
     </section>
@@ -253,7 +253,7 @@
             </div>
             <div class="svc" id="svc-binding-financial-agreements">
               <h3 class="svc__title">Binding financial agreements</h3>
-              <p>A binding financial agreement can be made before, during or after a relationship and settles how property would be divided. Strict formalities apply, including independent legal advice for each person, so we draft and review them to hold up when it counts. Read <a href="/insight-binding-financial-agreements">how binding financial agreements work</a>.</p>
+              <p>A binding financial agreement can be made before, during or after a relationship and settles how property would be divided. Strict formalities apply, including independent legal advice for each person, so we draft and review each one against every requirement the Family Law Act sets. Read <a href="/insight-binding-financial-agreements">how binding financial agreements work</a>.</p>
             </div>
             <div class="svc" id="svc-child-support-and-spousal-maintenance">
               <h3 class="svc__title">Child support and spousal maintenance</h3>
@@ -261,7 +261,7 @@
             </div>
             <div class="svc" id="svc-family-violence-and-intervention-orders">
               <h3 class="svc__title">Family violence and intervention orders</h3>
-              <p>Where safety is at risk we act immediately, applying for or responding to intervention orders and urgent parenting orders, and advising how they affect the rest of your matter. In immediate danger, always call 000 first. Otherwise call (03) 9125 8355 and tell us it is urgent. Read our guide to <a href="/insight-intervention-orders">intervention orders in Victoria</a>.</p>
+              <p>Where safety is at risk we act immediately, applying for or responding to intervention orders and urgent parenting orders, and advising how they affect the rest of your matter. In immediate danger, always call 000 first. Otherwise call <a href="tel:+61391258355">(03) 9125 8355</a> and tell us it is urgent. Read our guide to <a href="/insight-intervention-orders">intervention orders in Victoria</a>.</p>
             </div>
           </div>
 
@@ -449,10 +449,12 @@
     </div>
   </footer>
 
-  <a class="mobile-call" href="tel:+61391258355">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
-    Call now &middot; (03) 9125 8355
-  </a>
+  <div role="region" aria-label="Call the firm">
+    <a class="mobile-call" href="tel:+61391258355">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+      Call now &middot; (03) 9125 8355
+    </a>
+  </div>
 
   <script src="scripts/site.js?v=13"></script>
 </body>

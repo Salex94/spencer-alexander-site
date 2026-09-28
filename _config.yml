@@ -16,3 +16,5 @@ exclude:
 - playbooks
 - scripts/accuracy-ledger.md
 - scripts/indexnow.py
+- scripts/make-webp.py
+- styles/tokens

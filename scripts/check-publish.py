@@ -547,7 +547,8 @@ def main():
                 continue
             sib = src.rsplit(".", 1)[0] + ".webp"
             before = h[max(0, m.start() - 600):m.start()]
-            if not os.path.exists(sib) or ('srcset="%s"' % sib) not in before:
+            # the sibling may be one width among several in the source's srcset (28 Sep 2026)
+            if not os.path.exists(sib) or not re.search(r'srcset="(?:[^"]*, )?%s(?: \d+w)?[",]' % re.escape(sib), before):
                 webp_bad.append("%s %s" % (f, src))
     check("every in-page photograph has a WebP sibling", not webp_bad, "; ".join(webp_bad[:3]))
 
@@ -601,6 +602,47 @@ def main():
                 foot_priv.append("%s: %d" % (f, n))
     check("privacy link never in navigation", not nav_priv, ", ".join(nav_priv[:4]))
     check("privacy link exactly once per footer", not foot_priv, ", ".join(foot_priv[:4]))
+
+    # Any price the firm quotes outside fees.html must be one of its prices
+    # (added 28 Sep 2026 when the articles and FAQ began quoting fixed fees):
+    # only Spencer changes a price, and a changed price must change everywhere.
+    fee_amounts = set(re.findall(r"\$[\d,]+", re.sub(r"<[^>]+>", " ", read("fees.html"))))
+    stray_fee = []
+    for f in sorted(glob.glob("*.html")) + sorted(glob.glob("zh/*.html")):
+        if f in ("fees.html", "zh/fees.html"):
+            continue
+        text = re.sub(r"<[^>]+>", " ", read(f))
+        for sent in re.split(r"(?<=[.!?])\s+", text):
+            if re.search(r"fixed fee|our own fee|our fee|fees page|including GST", sent, re.I):
+                for amt in re.findall(r"\$[\d,]*\d", sent):
+                    if amt not in fee_amounts:
+                        stray_fee.append("%s %s" % (f, amt))
+    check("prices quoted elsewhere match fees.html", not stray_fee, ", ".join(stray_fee[:4]))
+
+    # No page's sitemap lastmod may be older than a dateModified in its own
+    # schema (added 28 Sep 2026 after a resource page corrected on 24 Sep kept
+    # a lastmod of 16 Sep): Google trusts lastmod only while it stays accurate.
+    stale_lm = []
+    for loc, lm in re.findall(r"<loc>https://www\.spenceralexander\.com\.au/([^<]*)</loc>\s*<lastmod>([^<]+)</lastmod>", read("sitemap.xml")):
+        f = loc or "index.html"
+        if os.path.exists(f):
+            dm = re.findall(r'"dateModified":\s*"(\d{4}-\d{2}-\d{2})', read(f))
+            if dm and max(dm) > lm:
+                stale_lm.append("%s %s < %s" % (f, lm, max(dm)))
+    check("sitemap lastmod never older than schema dateModified", not stale_lm, ", ".join(stale_lm[:4]))
+
+    # Every article's quiet rail card is its own practice area's card (added 28 Sep
+    # 2026: the template carries a generic card, and the first article built from
+    # it kept it while its siblings carry their practice card).
+    hub_of = {"Family Law": "/family-law", "Wills & Estates": "/wills-and-estates", "Commercial Law": "/commercial-law"}
+    wrong_card = []
+    for f in sorted(glob.glob("insight-*.html")):
+        h = read(f)
+        sec = re.search(r'"articleSection": "([^"]+)"', h)
+        q = re.search(r'<div class="rail-card rail-card--quiet">(.*?)</div>\s*</aside>', h, re.S)
+        if sec and (not q or 'href="%s"' % hub_of.get(sec.group(1), "?") not in q.group(1) or "Our practice areas" in q.group(1)):
+            wrong_card.append(f)
+    check("article rail card matches its practice area", not wrong_card, ", ".join(wrong_card[:4]))
 
     # ---- report ----------------------------------------------------------
     width = max(len(n) for n, _, _ in results)

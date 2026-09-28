@@ -3,8 +3,8 @@ then copy the top bar and header from index.html to every other page (chrome pro
 
 Corrected 9 Sep 2026: the service pattern accepts a block that already carries its id. The first version matched
 <div class="svc"> exactly, so a second run found no services and propagated empty menus to every page."""
-import re, glob, html
-ROOT='/home/user/spencer-alexander-site'
+import re, glob, html, os
+ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # the checkout this script sits in
 HUBS={'commercial-law':('Commercial Law','All commercial law services'),'family-law':('Family Law','All family law services'),'wills-and-estates':('Wills &amp; Estates','All wills and estates services')}
 def slug(t): return re.sub(r'[^a-z0-9]+','-',html.unescape(re.sub('<[^>]+>','',t)).lower()).strip('-')
 menus={}
@@ -35,7 +35,7 @@ idx=idx.replace('<a class="btn btn--primary" href="tel:+61391258355">','<a class
 idx=idx.replace('        <a class="topbar__tel" href="tel:+61391258355">(03) 9125 8355</a>\n','',1)
 open(f'{ROOT}/index.html','w').write(idx)
 # propagate: the top bar and header blocks, marking the active link per page
-top=re.search(r'<div class="topbar">.*?</div>\s*</div>\s*</div>', idx, re.S)
+top=re.search(r'<div class="topbar"[^>]*>.*?</div>\s*</div>\s*</div>', idx, re.S)
 hdr=re.search(r'<header class="site-header">.*?</header>', idx, re.S).group(0)
 tb=re.search(r'<div class="topbar".*?</header>', idx, re.S).group(0)   # top bar through header end
 count=0

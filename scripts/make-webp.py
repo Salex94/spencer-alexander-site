@@ -18,6 +18,9 @@ for f in glob.glob("*.html"):
     s = open(f, encoding="utf-8").read()
     refs.update(re.findall(r'<img[^>]*\ssrc="(assets/[^"]+\.(?:jpg|jpeg|png))"', s))
     refs.update(re.findall(r'<source[^>]*\ssrcset="(assets/[^"]+\.(?:jpg|jpeg|png))"', s))
+    # every JPEG width variant in an <img> srcset gets its WebP twin too (28 Sep 2026)
+    for ss in re.findall(r'<img[^>]*\ssrcset="([^"]+)"', s):
+        refs.update(re.findall(r'(assets/[^\s",]+\.(?:jpg|jpeg|png))', ss))
 made = 0
 for src in sorted(refs):
     if not os.path.exists(src) or src.startswith("assets/video/"):
