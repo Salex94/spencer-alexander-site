@@ -18,4 +18,5 @@ exclude:
 - scripts/indexnow.py
 - scripts/make-webp.py
 - scripts/build-service-page.py
+- scripts/check_style.py
 - styles/tokens

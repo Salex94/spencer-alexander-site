@@ -1,3 +1,5 @@
+@AGENTS.md
+
 # Spencer Alexander Lawyers — site conventions
 
 This repository **is** the live website (static HTML/CSS/JS, no build step,
@@ -483,8 +485,10 @@ future edit, every new page and every new article.
   prefers-reduced-motion: no-preference. Home page photographs on the
   practice cards use the 800 by 500 crops. The gate checks JSON-LD blocks
   for duplicate keys.
-- **Confirmed firm facts (owner, 5 Sep 2026).** The principal participates
-  in the Professional Standards scheme, so the footer statement stays; the
+- **Confirmed firm facts (owner, 5 Sep 2026).** The firm is an active member
+  of the Law Institute of Victoria and its liability is limited by the
+  Institute's scheme approved under Professional Standards Legislation, cover
+  the firm has purchased (Spencer, 28 Sep 2026), so the footer statement stays; the
   first call is free; enquiries are answered within one business day and
   after hours contact is available for urgent matters. Do not add any further
   service promise, and never a specialist claim. The site is in English
@@ -675,7 +679,8 @@ of the market. These conventions came out of that round.
 - **Firm schema.** The firm's `sameAs` lists the Google listing, the LinkedIn
   company page and the Yellow Pages listing.
 - **About.** The articles are described as published under Spencer's name, not
-  as written by him each week. Earlier roles still wait on Spencer's answer.
+  as written by him each week. About lists no earlier roles, on Spencer's instruction of 28 Sep 2026:
+  they are not relevant, because he works at this firm.
 - Keys after this round: site.css v18, unchanged, styles.css v7, site.js v13.
 
 ## Fourth round, owner request of 28 Sep 2026
@@ -770,6 +775,29 @@ the final round were published to main on 28 Sep 2026; DECISIONS.md records both
 - **Listing read times** on insights.html and index.html must equal each article's own; the gate
   checks it.
 - Keys after this round: site.css v21, styles.css v9, site.js v17.
+
+## Spencer's instructions of the evening of 28 Sep 2026
+
+- **His voice is the standard for everything written for the site.** Every article, FAQ answer,
+  correction and page is written as the spencer-alexander-voice skill sets out, and AGENTS.md at the
+  root carries his writing rules and exemplar for any session without the skill. `scripts/check_style.py`
+  is the skill's checker, the same one the bd repository uses; run it on the visible text of anything
+  written and fix every failure other than the (Vic) and (Cth) of Act titles and the phone number.
+- **Nothing about AI.** "I don't want any comments re AI on the website." No page, article, FAQ,
+  schema, llms.txt, feed or contact card mentions AI, artificial intelligence or any AI product, and no
+  article is ever about AI. llms.txt keeps its name and its job but no longer says it is for AI systems.
+  The gate's "no mention of AI anywhere on the site" check fails any mention.
+- **No photo shoots and no new video.** The photographs and the film were assessed that evening: the
+  film's titles, colour, loudness at about minus 16 LUFS, fast start and end card QR code, which scans
+  to the firm's correct contact card, are right, and every photograph suits its page apart from the
+  dying without a will article's, a newspaper chart whose alt text wrongly described a ledger, now a
+  family in silhouette on a beach. The handshake, toy house, Lady Justice, motivational sign and office
+  laptop spares were deleted so no routine uses them. Never recommend a shoot or a reshoot again.
+- **Professional Standards.** The firm is an active Law Institute of Victoria member covered by its
+  scheme, which it purchased, so the limitation statement in every footer is correct.
+- **ABN.** The firm's main business location is Box Hill 3128, the office address the site uses. The
+  public ABN register still showed VIC 3106 on 28 Sep 2026 until Spencer updates it; the site is right.
+- **About** lists no earlier roles.
 
 ## English only, Spencer's instruction of 28 Sep 2026
 

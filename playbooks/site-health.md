@@ -47,6 +47,12 @@ in English and should only provide English content / services." The site has no 
 language and offers no translator or interpreter, and a run never adds either. The gate's English only
 check fails any page that does.
 
+**Voice and no AI, Spencer's instructions of 28 September 2026.** Every sentence a run writes or
+corrects is in Spencer's voice: load the spencer-alexander-voice skill where the session lists it,
+otherwise follow the writing rules and exemplar in AGENTS.md, and run `python3 scripts/check_style.py`
+on the changed text before publishing. Nothing on the site mentions AI or any AI product, and a run
+that finds a mention removes it as a correction; the gate fails any page that has one.
+
 ## Every run: the accuracy sweep
 
 1. The ledger is `scripts/accuracy-ledger.md`. Create it on the first run with one row per page

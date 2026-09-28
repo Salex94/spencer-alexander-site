@@ -13,6 +13,33 @@ Newest entries first.
 
 ---
 
+## 2026-09-28, evening: Spencer's voice, nothing about AI, no shoots, and his answers
+
+Spencer's words: "I also don't plan on conducting any photo shoots / videos - I want you to assess and
+make sure the video and photo are okay for now and / or improve them if you think you can to suit the
+site. Also I don't want to include earlier roles ... and I also don't want to post ANYTHING about the use
+of AI ... My voice / skill with my voice can be the way content is written (such as the articles)
+henceforth so it won't appear AI like." He also confirmed that the firm is an active Law Institute of
+Victoria member whose liability is limited under the Institute's scheme, which it purchased, and that
+the firm's ABN postcode is 3128, Box Hill.
+
+- **Voice.** AGENTS.md, the constitution every repository carries, was missing here and is added, with
+  CLAUDE.md now reading it first, so every routine on this repository loads his writing rules and
+  exemplar. `scripts/check_style.py` is the voice skill's checker, copied from the bd repository's
+  improved version. The article, site health and demand scanner playbooks now require his voice and
+  the checker.
+- **AI.** llms.txt no longer says it is written for AI systems, and a new gate check fails any mention of
+  AI or an AI product anywhere on the site. The three playbooks bar AI topics.
+- **Photographs and film.** Assessed: the film is right as it is, and its end card QR codes scan to the
+  firm's correct contact card. One photograph was wrong, the dying without a will article's newspaper
+  chart, whose alt text described a ledger; it is now a spare photograph of a family in silhouette on a
+  beach. Six clichéd spares were deleted. Unsplash's own pages now refuse automated access, so the
+  article playbook asks each run to report how many suitable spares remain.
+- **Records.** No earlier roles on About; the footer's limitation statement is confirmed; the public ABN
+  register still shows VIC 3106, Spencer's home postcode, until he updates it to 3128.
+
+---
+
 ## 2026-09-28: English only
 
 Spencer, reviewing the final round the same evening: "It looks okay, I agree with everything except let's

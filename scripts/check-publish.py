@@ -581,6 +581,20 @@ def main():
             lang_bad.append(f + " offers another language")
     check("English only: no other language, alternates or translator offer", not lang_bad, "; ".join(lang_bad[:4]))
 
+    # Nothing about AI (Spencer, 28 Sep 2026: "I don't want any comments re AI on the website"). No
+    # page, llms.txt, feed or contact card mentions AI or any AI product, in text or in schema.
+    ai_bad = []
+    AI_RX = re.compile(r"\bAI\b|(?i:artificial intelligence|machine learning|chatgpt|chatbot|large language model|generative|openai|anthropic)")
+    for f in sorted(glob.glob("*.html")) + ["llms.txt", "feed.xml", "robots.txt"] + glob.glob("assets/*.vcf"):
+        if not os.path.exists(f) or f.startswith("_"):
+            continue
+        txt = re.sub(r"<[^>]+>", " ", read(f)) if f.endswith(".html") else read(f)
+        txt += " " + " ".join(re.findall(r'content="([^"]*)"', read(f)))
+        m = AI_RX.search(txt)
+        if m:
+            ai_bad.append("%s mentions %r" % (f, m.group(0)))
+    check("no mention of AI anywhere on the site", not ai_bad, "; ".join(ai_bad[:4]))
+
     # Every inline photograph is served as WebP with the JPEG as fallback
     # (9 Sep 2026: about half the image bytes above the fold). scripts/make-webp.py
     # writes the siblings; the <picture> form is in the template.
