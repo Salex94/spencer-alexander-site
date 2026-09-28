@@ -518,7 +518,9 @@ conventions came out of that round.
   subject, "Spencer has more than ten years of legal experience"; the home
   description is "Box Hill, Melbourne lawyers for Family Law, Wills and
   Estates and Commercial Law. Free first call with a lawyer, and a fee
-  estimate before any work begins."; FAQ question one and the About sign
+  estimate before substantive work." (corrected 28 Sep 2026: a fee is
+  disclosed before substantive work, which is what the Uniform Law and the
+  rest of the site say); FAQ question one and the About sign
   off say you speak with a lawyer; the founder Person nodes on index.html
   and about.html say "Principal", matching every article author node. Only
   three service promises exist: the free first call, the one business day

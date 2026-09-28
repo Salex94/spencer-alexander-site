@@ -13,6 +13,47 @@ Newest entries first.
 
 ---
 
+## 2026-09-28: Six audits, faults fixed, legal corrections read twice, and a preview for Spencer
+
+Spencer asked on 28 Sep 2026 for the site to be the strongest it can be for search, AI answers,
+conversion, acquisition, design and layout, assessed against a brief he supplied. Six audits ran
+that day, technical, information architecture and local search, conversion, design, content and
+legal, and a second legal check read every proposed correction against the authorised legislation
+again. Two commits published what needed no approval, on the same footing as the site accuracy and
+health routine's corrections.
+
+- **Faults and alignment**, the first commit: the film's after bar button, the header clipped
+  between 960 and 1099 pixels, related reading running into the FAQ heading, broken phone numbers,
+  contrast of brass eyebrows on sunken bands, the experience wording on 34 pages, fixed fees stated
+  in the will, divorce, probate and testamentary trust articles and two FAQ answers, claims no longer
+  true, unapproved service promises on the home page, and a new gate check that keeps every quoted
+  price equal to fees.html.
+- **Legal corrections**, the second commit, each confirmed or amended by the second check:
+  three faq.html corrections recorded as published on 26 Sep 2026 that the merge of that day
+  dropped, companion animals, safe harbour and small business restructuring, now restored in their
+  amended form; the consent orders filing fee, which card holders do not pay rather than pay at a
+  reduced rate, on fees.html and the agreed settlement article; a late property application needs
+  both people's consent or the court's leave, on the family hub, faq.html and the separation
+  checklist; the misidentification duties of Act 1/2026, not yet in force; will witnesses need not
+  be adults; the statutory demand wording on the home page, faq.html and the commercial hub; the
+  family provision extension, which can only be sought before final distribution; the executor's
+  protection, which depends on having no notice of a claim; an enduring power of attorney starts
+  when it is made unless it says otherwise; best interests are the paramount consideration, not the
+  only question; the de facto serious injustice limb; the effect of family violence in property
+  cases; the coercive control offence's commencement; relocation without orders; the fees page
+  introduction, which called "from" prices fixed; and the joint application rule for reduced
+  divorce fees. Sources read are in the second check's notes in the session.
+- **Fixed wording changed**: the home description now ends "a fee estimate before substantive
+  work", matching the Uniform Law and the rest of the site; CLAUDE.md is updated.
+- **One scope line added on fees.html**: the parenting plan now states that one round of changes is
+  included, as every other drafting price does, so its "from" price is not misleading. Spencer
+  should confirm that is his intended scope.
+- **Not published, held for Spencer's approval as one preview**: eight service pages, Fees in the
+  navigation and footer, a call and enquire bar on phones, a quick exit on family law pages, fine
+  underlines on links in running text, a shorter laptop hero, deeper brass for contrast, text
+  resource cards, three featured reviews, About and Contact copy, replacement photographs for four
+  articles whose images contradicted them and for the clichés, and the fees page layout.
+
 ## 2026-09-28: Agreed property settlement hire guide published
 
 Monday article for 28 Sep 2026 Melbourne (confirmed via `TZ=Australia/Melbourne
