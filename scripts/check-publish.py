@@ -15,6 +15,7 @@ Judgement calls this CANNOT check, which still need a human or a careful read:
 """
 
 import glob
+import html as html_mod
 import json
 import os
 import re
@@ -434,14 +435,25 @@ def main():
     # and pushed empty menus to every page; nobody noticed for a day).
     svc_ids = {hub: re.findall(r'<div class="svc" id="(svc-[^"]+)"', read(hub + ".html"))
                for hub in ("family-law", "wills-and-estates", "commercial-law")}
+    svc_page = {}
+    for hub in svc_ids:
+        svc_page[hub] = {}
+        for blk_id, blk in re.findall(r'<div class="svc" id="(svc-[^"]+)">(.*?)</div>', read(hub + ".html"), re.S):
+            sp = re.search(r'href="(/service-[a-z0-9-]+)"', blk)
+            if sp:
+                svc_page[hub][blk_id] = sp.group(1)
     menu_bad = []
     for f in sorted(glob.glob("*.html")):
         h = read(f)
         if '<nav class="site-nav"' not in h:
             continue
+        nav = re.search(r'<nav class="site-nav".*?</nav>', h, re.S)
         for hub, ids in svc_ids.items():
-            links = re.findall(r'href="/%s#(svc-[^"]+)"' % hub, h)
-            if len(ids) != 6 or links != ids:
+            # each menu entry is the hub anchor, or the service page its hub block links (28 Sep 2026)
+            want = [svc_page[hub].get(i, "/%s#%s" % (hub, i)) for i in ids]
+            menu = re.search(r'<div class="site-nav__group"><a href="/%s"[^>]*>[^<]*</a>\s*<div class="site-nav__menu"><strong>[^<]*</strong>(.*?)<a class="site-nav__all"' % hub, nav.group(0) if nav else "", re.S)
+            links = re.findall(r'<a href="([^"]+)">', menu.group(1)) if menu else []
+            if len(ids) != 6 or links != want:
                 menu_bad.append("%s %s %d" % (f, hub, len(links)))
     check("practice menus list six services on every page", not menu_bad, "; ".join(menu_bad[:3]))
 
@@ -655,6 +667,66 @@ def main():
         if fam and "data-quick-exit" not in h:
             no_exit.append(f)
     check("family law pages carry the quick exit", not no_exit, ", ".join(no_exit[:4]))
+
+    # ---- service pages (added 28 Sep 2026, playbooks/service-pages.md "Gate") ----
+    svc_pages = sorted(glob.glob("service-*.html"))
+    check("at most eight service pages", len(svc_pages) <= 8, "%d found" % len(svc_pages))
+    idx_firm = re.search(r'"areaServed":\s*\[(.*?)\]\s*,\s*"', read("index.html"), re.S)
+    places = [p for p in re.findall(r'"name":\s*"([^"]+)"', idx_firm.group(1) if idx_firm else "") if p not in ("Melbourne", "Box Hill", "Victoria")]
+    sm_text, llms_text = read("sitemap.xml"), read("llms.txt")
+    hubs_text = "".join(read(h) for h in ("family-law.html", "wills-and-estates.html", "commercial-law.html"))
+    svc_bad = []
+    for f in svc_pages:
+        h = read(f)
+        slug = f[:-5]
+        title = re.search(r"<title>([^<]*)</title>", h)
+        h1 = re.search(r'<h1[^>]*>(.*?)</h1>', h, re.S)
+        tt, hh = (title.group(1) if title else ""), (re.sub(r"<[^>]+>", "", h1.group(1)) if h1 else "")
+        if "Box Hill" not in tt or "Box Hill" not in hh:
+            svc_bad.append("%s: Box Hill missing from title or h1" % f)
+        for p in places:
+            if p.lower() in (tt + " " + hh + " " + slug).lower().replace("-", " "):
+                svc_bad.append("%s: names %s" % (f, p))
+        if not tt.endswith(" | Spencer Alexander Lawyers"):
+            svc_bad.append("%s: title suffix" % f)
+        if not re.search(r'"@type": "Service".*?"provider": \{"@id": "https://www\.spenceralexander\.com\.au/#firm"', h, re.S):
+            svc_bad.append("%s: no Service node with the #firm provider" % f)
+        if 'href="/%s"' % slug not in hubs_text:
+            svc_bad.append("%s: no hub links it" % f)
+        if "<form" in h:
+            svc_bad.append("%s: carries a form" % f)
+        canon = "https://www.spenceralexander.com.au/%s" % f
+        if '<link rel="canonical" href="%s">' % canon not in h:
+            svc_bad.append("%s: canonical" % f)
+        if 'name="robots" content="index' not in h:
+            svc_bad.append("%s: robots" % f)
+        lm = re.search(r"<loc>%s</loc>\s*<lastmod>([^<]+)</lastmod>" % re.escape(canon), sm_text)
+        if not lm:
+            svc_bad.append("%s: not in sitemap" % f)
+        if canon not in llms_text:
+            svc_bad.append("%s: not in llms.txt" % f)
+        faqs = [json.loads(b) for b in re.findall(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', h, re.S)]
+        faqs = [b for b in faqs if b.get("@type") == "FAQPage"]
+        vis_q = [re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", q)).strip() for q in re.findall(r'<summary class="faq-q">(.*?)<span class="faq-q__ic">', h, re.S)]
+        vis_a = [html_mod.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", a))).strip() for a in re.findall(r'<div class="faq-a"><p>(.*?)</p></div>', h, re.S)]
+        if len(faqs) != 1 or len(vis_q) != 5:
+            svc_bad.append("%s: needs one FAQPage and five questions" % f)
+        else:
+            fq = faqs[0]
+            sq = [html_mod.unescape(q["name"]) for q in fq.get("mainEntity", [])]
+            sa = [q["acceptedAnswer"]["text"] for q in fq.get("mainEntity", [])]
+            if sq != [html_mod.unescape(q) for q in vis_q] or sa != vis_a:
+                svc_bad.append("%s: FAQ schema differs from the visible questions" % f)
+            if "author" not in fq or "publisher" not in fq or (lm and fq.get("dateModified") != lm.group(1)):
+                svc_bad.append("%s: FAQPage author, publisher or dateModified" % f)
+            mon = re.search(r"as at (\w+ \d{4})\.", h)
+            if not mon or not fq.get("dateModified") or mon.group(1) != __import__("datetime").date.fromisoformat(fq["dateModified"]).strftime("%B %Y"):
+                svc_bad.append("%s: currency line month" % f)
+        if "It is general information only, not legal advice" not in h:
+            svc_bad.append("%s: general information sentence" % f)
+        if re.search(r"[–—]| - |specialis|specialt|speciality|accredited|expert", h, re.I):
+            svc_bad.append("%s: dash or specialist wording" % f)
+    check("service pages meet the playbook standard", not svc_bad, "; ".join(svc_bad[:4]))
 
     # ---- report ----------------------------------------------------------
     width = max(len(n) for n, _, _ in results)
