@@ -48,4 +48,4 @@ Every legal statement on the page, with the provision behind it and the version 
 
 ## Fees
 
-Only fees.html's "Review of a contract to buy a business, from $1,100", with its scope and "A franchise or a purchase of shares costs more". It is never called a fixed fee. Settlement work, anything for a seller and any dispute are stated as estimated in writing before substantive work begins, matching fees.html's closing line for the commercial section. No offers in schema, because there is no single figure fee.
+Only fees.html's "Review of a contract to buy a business, from $1,210", with its scope and "A franchise or a purchase of shares costs more". It is never called a fixed fee. Settlement work, anything for a seller and any dispute are stated as estimated in writing before substantive work begins, matching fees.html's closing line for the commercial section. No offers in schema, because there is no single figure fee.

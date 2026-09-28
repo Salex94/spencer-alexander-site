@@ -45,7 +45,7 @@ legislation.vic.gov.au. Fee figures come from fees.html, not from law.
 | Process 1 | Notice at least 14 days before applying, unless the court or the Registrar shortens that time | Rules 2.03(1), 3.02.1(1), 4.03(1), 1.11(1) |
 | Process 2 | Affidavit exhibiting the will, a certified copy of the death certificate and, where the Registrar asks, an inventory | Rules 2.04(2)(d), (3), 4.04(2)(d), (3) |
 | Process 3 | The Registrar makes the grant when satisfied; a doubtful application, or one met by a caveat, goes to the court | APA s 12(1), (2) |
-| Fee note and FAQ 3 | $1,650 and $1,980 including GST, what each covers and assumes | fees.html, quoted figure for figure |
+| Fee note and FAQ 3 | $1,815 and $2,178 including GST, what each covers and assumes | fees.html, quoted figure for figure |
 | FAQ 3 | The court's filing fee is scaled to the estate's gross value and is nil where that value is less than $250,000 | Fees Regulations Sch 1 item 4.2(a) to (h); the threshold is a fixed dollar band, not indexed |
 | FAQ 3 | These costs are ordinarily paid from the estate | Trustee Act s 36(2) with s 3, trustee including a personal representative; APA s 39A(2); "ordinarily" kept |
 | FAQ 1 | Joint tenancy property passes to the survivor; a share held as tenants in common forms part of the estate | General law of survivorship, not statute; consistent with the probate article and checklist |

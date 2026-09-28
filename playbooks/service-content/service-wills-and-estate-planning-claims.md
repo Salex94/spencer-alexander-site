@@ -47,7 +47,7 @@ Each was downloaded today as the authorised Word version linked from its legisla
 
 ## Fees
 
-Every figure is copied from fees.html as it stands today: estate plan for one person $990 and for a couple $1,800, single will $550, wills for a couple $1,100, enduring power of attorney $330 per person, medical treatment decision maker appointment $330 per person, will with a testamentary trust from $1,500 and for a couple from $2,750. Only the six single figure fees are in the schema offers. The fee note says that anything fees.html does not list, naming the advance care directive the page mentions, is estimated in writing before substantive work begins.
+Every figure is copied from fees.html as it stands on 29 Sep 2026, after Spencer's repricing that day: estate plan for one person $1,089 and for a couple $1,980, single will $495, wills for a couple $880, enduring power of attorney $495 per person, medical treatment decision maker appointment $495 per person, will with a testamentary trust from $1,650 and for a couple from $3,025. Only the six single figure fees are in the schema offers. The fee note says that anything fees.html does not list, naming the advance care directive the page mentions, is estimated in writing before substantive work begins.
 
 ## Found wrong in law elsewhere on the site
 

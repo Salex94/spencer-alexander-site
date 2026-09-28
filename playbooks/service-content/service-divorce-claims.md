@@ -34,7 +34,7 @@ Page: service-divorce.html, content file service-divorce.json. Drafted 28 Septem
 | Block 4 | Divorce revokes a gift in a will to the former spouse and their appointment as executor, unless it appears the will maker did not want that | Wills Act s 14(1)(a), (c) and (2); s 14(4) definition of divorce |
 | FAQ 3 | Jurisdiction: on the day of filing, either party is an Australian citizen, is domiciled in Australia, or has been ordinarily resident here for the 12 months before | FLA s 39(3) |
 | FAQ 5 | A reduced court fee is available to concession card holders and people in financial hardship | Fees Regulations ss 2.04(1)(b), 2.06(1) and (2) |
-| Fee note, FAQ 5, meta | Fixed fees of $990 joint and $1,320 sole, including GST, with their scope and assumptions | fees.html, copied figures and summarised assumptions |
+| Fee note, FAQ 5, meta | Fixed fees of $1,089 joint and $1,452 sole, including GST, with their scope and assumptions | fees.html, copied figures and summarised assumptions |
 
 ## Generalised or not verified
 

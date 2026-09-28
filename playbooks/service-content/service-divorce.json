@@ -4,7 +4,7 @@
  "hub_label": "Family Law",
  "crumb": "Divorce",
  "service_name": "Divorce",
- "date": "2026-09-28",
+ "date": "2026-09-29",
  "title": "Divorce Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Divorce Lawyers in Box Hill, Melbourne",
  "description": "Box Hill divorce lawyers preparing joint and sole divorce applications on fixed fees, with advice on property, children and your will. Your first call is free.",
@@ -93,7 +93,7 @@
  },
  "fee": {
   "t": "Fixed fees for a divorce application.",
-  "p": "Our fixed fee for a divorce application is $990 for a joint application and $1,320 for a sole one, including GST. The joint fee covers checking that you can apply, preparing the application, helping you both sign it, filing it and dealing with the Court until the order is made, and assumes at least 12 months of separation without living under one roof. The sole fee adds arranging service, the affidavit proving it and attending the hearing if the Court requires it, and assumes your spouse can be served in Australia and does not oppose the divorce. The Court's own filing fee is separate. Where an assumption does not hold, or for anything our <a href=\"/fees\">fees page</a> does not list, such as a property or parenting dispute, we give you a written estimate before substantive work begins."
+  "p": "Our fixed fee for a divorce application is $1,089 for a joint application and $1,452 for a sole one, including GST. The joint fee covers checking that you can apply, preparing the application, helping you both sign it, filing it and dealing with the Court until the order is made, and assumes at least 12 months of separation without living under one roof. The sole fee adds arranging service, the affidavit proving it and attending the hearing if the Court requires it, and assumes your spouse can be served in Australia and does not oppose the divorce. The Court's own filing fee is separate. Where an assumption does not hold, or for anything our <a href=\"/fees\">fees page</a> does not list, such as a property or parenting dispute, we give you a written estimate before substantive work begins."
  },
  "related": [
   {
@@ -137,7 +137,7 @@
   },
   {
    "q": "How much does a divorce cost?",
-   "a": "The Court charges a filing fee, and a reduced fee is available to concession card holders and people in financial hardship, although for a joint application both of you must qualify. Our own fee is fixed at $990 for a joint application and $1,320 for a sole one, including GST, and our <a href=\"/fees\">fees page</a> sets out what each covers."
+   "a": "The Court charges a filing fee, and a reduced fee is available to concession card holders and people in financial hardship, although for a joint application both of you must qualify. Our own fee is fixed at $1,089 for a joint application and $1,452 for a sole one, including GST, and our <a href=\"/fees\">fees page</a> sets out what each covers."
   }
  ],
  "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>, sections 4, 39, 44, 48 to 50, 55, 55A, 59 and 98A; <a href=\"https://www.legislation.gov.au/F2021L01197/latest\" rel=\"noopener\" target=\"_blank\">Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)</a>, rules 2.17, 2.18, 2.28, 2.34, 2.35, 2.42 to 2.46, 15.06 and 15.15; <a href=\"https://www.legislation.gov.au/F2023L00022/latest\" rel=\"noopener\" target=\"_blank\">Family Law (Fees) Regulations 2022 (Cth)</a>, sections 2.02, 2.04 and 2.06; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/wills-act-1997\" rel=\"noopener\" target=\"_blank\">Wills Act 1997 (Vic)</a>, section 14; <a href=\"https://www.legislation.gov.au/C2004A02560/latest\" rel=\"noopener\" target=\"_blank\">Domicile Act 1982 (Cth)</a>, section 10.",
@@ -149,11 +149,11 @@
  "offers": [
   {
    "name": "Divorce application, joint",
-   "price": "990"
+   "price": "1089"
   },
   {
    "name": "Divorce application, sole",
-   "price": "1320"
+   "price": "1452"
   }
  ]
 }

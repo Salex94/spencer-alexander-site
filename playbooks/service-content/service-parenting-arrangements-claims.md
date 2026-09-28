@@ -44,7 +44,7 @@ The Sources line names the Family Law Act alone, because the page relies on more
 | FAQ 5 | The court can order a child's return to a parent. | FLA s 67Q(a)(i), s 67U, with best interests paramount under s 67V |
 | FAQ 5 | The court can deal with a breach of existing orders. | FLA Part VII, Division 13A |
 | FAQ 5 | The court can excuse family dispute resolution where an application is urgent. | FLA s 60I(9)(d) |
-| Fee paragraph | Consent orders for agreed parenting arrangements $2,750 including GST, and a parenting plan from $1,320 including GST, with the scope and assumptions fees.html gives. | fees.html as at 28 Sep 2026; only the single figure fee is in `offers` |
+| Fee paragraph | Consent orders for agreed parenting arrangements $3,025 including GST, and a parenting plan from $1,452 including GST, with the scope and assumptions fees.html gives. | fees.html as at 28 Sep 2026; only the single figure fee is in `offers` |
 | Fee paragraph | The court's filing fee is separate and paid to it directly. | Family Law (Fees) Regulations 2022 Sch 1 item 6; no figure stated |
 
 ## Advice and practice statements, not law

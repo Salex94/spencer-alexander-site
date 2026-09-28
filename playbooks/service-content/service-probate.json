@@ -4,11 +4,11 @@
  "hub_label": "Wills &amp; Estates",
  "crumb": "Probate",
  "service_name": "Probate and letters of administration",
- "date": "2026-09-28",
+ "date": "2026-09-29",
  "title": "Probate Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Probate Lawyers in Box Hill, Melbourne",
  "description": "Probate and letters of administration from our Box Hill office, with fixed fees for a straightforward estate. Call to find out if the estate needs a grant.",
- "lead": "We act for executors and families from our Box Hill office, preparing applications for probate and letters of administration and guiding or taking on the administration that follows. A straightforward probate application is a fixed fee of $1,650, and letters of administration where there is no will $1,980, each including GST.",
+ "lead": "We act for executors and families from our Box Hill office, preparing applications for probate and letters of administration and guiding or taking on the administration that follows. A straightforward probate application is a fixed fee of $1,815, and letters of administration where there is no will $2,178, each including GST.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
   "Fixed fees for a straightforward probate or administration application",
@@ -93,7 +93,7 @@
  },
  "fee": {
   "t": "Fixed fees for a straightforward grant.",
-  "p": "A probate application is a fixed fee of $1,650 and letters of administration $1,980, each including GST, for a straightforward estate as our <a href=\"/fees\">fees page</a> defines it. For probate that means a properly signed original will, executors able to apply, assets in Victoria and no caveat or challenge, and for administration an estate with no will, an applicant with the first right to apply and no dispute about who inherits. Each covers the application, the notice of intention and its fee, answering the Probate Office's routine questions and the grant. The court's filing fee is separate. Estate administration after the grant, disputes, litigation and anything else not on the fees page are estimated in writing before substantive work begins."
+  "p": "A probate application is a fixed fee of $1,815 and letters of administration $2,178, each including GST, for a straightforward estate as our <a href=\"/fees\">fees page</a> defines it. For probate that means a properly signed original will, executors able to apply, assets in Victoria and no caveat or challenge, and for administration an estate with no will, an applicant with the first right to apply and no dispute about who inherits. Each covers the application, the notice of intention and its fee, answering the Probate Office's routine questions and the grant. The court's filing fee is separate. Estate administration after the grant, disputes, litigation and anything else not on the fees page are estimated in writing before substantive work begins."
  },
  "related": [
   {
@@ -129,7 +129,7 @@
   },
   {
    "q": "How much does probate cost?",
-   "a": "Our fixed fee for a probate application in a straightforward estate is $1,650, and for letters of administration where there is no will $1,980, each including GST. The court's filing fee is separate, scaled to the estate's gross value and nil where that value is less than $250,000. Before any work begins, we confirm in writing how these costs will be paid."
+   "a": "Our fixed fee for a probate application in a straightforward estate is $1,815, and for letters of administration where there is no will $2,178, each including GST. The court's filing fee is separate, scaled to the estate's gross value and nil where that value is less than $250,000. Before any work begins, we confirm in writing how these costs will be paid."
   },
   {
    "q": "Do I have to act as executor?",
@@ -163,11 +163,11 @@
  "offers": [
   {
    "name": "Probate application",
-   "price": "1650"
+   "price": "1815"
   },
   {
    "name": "Letters of administration",
-   "price": "1980"
+   "price": "2178"
   }
  ]
 }

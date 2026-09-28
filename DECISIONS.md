@@ -13,6 +13,32 @@ Newest entries first.
 
 ---
 
+## 2026-09-29: prices raised on Spencer's instruction, with a $495 minimum
+
+Spencer's words: "I do want somethings like power of attorney and medical attorney document to be 450
+(excluding gst) 495 total to be charged. The minimum any work should be is 1 hour of my time on a fixed
+fee being 495 including GST. From there, it scales up depending on the work involved. I think the rest
+of the prices should be bumped by 10 percent across the board." Earlier he had asked that fees be
+competitive but not the absolute cheapest.
+
+- The enduring power of attorney and the medical treatment decision maker appointment are $495 each,
+  $450 plus GST.
+- Every other price rose by exactly 10 per cent on both the total and the amount before GST, except the
+  single will at $495 and wills for a couple at $880, which he set on 28 Sep 2026. Estate plan for one
+  person $1,089, for a couple $1,980; testamentary trust wills from $1,650 and from $3,025; probate
+  $1,815; letters of administration $2,178; divorce $1,089 joint and $1,452 sole; consent orders
+  $3,025; parenting plan from $1,452; binding financial agreement from $3,025 per party; lease review
+  from $1,089; company set up $1,210 including the ASIC fee; shareholders agreement from $2,420; terms
+  of trade from $1,815; contract to buy a business from $1,210.
+- The letter of demand would have been $484, below the minimum, so it is $495.
+- fees.html now says that no piece of work costs less than $495 including GST, an hour of a lawyer's
+  time. Every page, schema offer, service page content file and llms.txt quoting a fee was changed in
+  the same commit, 34 pages had their dates moved to 29 Sep 2026, and the gate passes.
+- Left for Spencer: with the attorney documents at $495 each, the estate plan bundles now cost about
+  27 per cent less than buying the three documents separately, against about 14 per cent before.
+
+---
+
 ## 2026-09-28, night: the fleet check moves to Site accuracy and health
 
 Spencer's routines were switched over to their launchers on 28 September 2026. The Saturday

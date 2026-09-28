@@ -4,7 +4,7 @@
  "hub_label": "Family Law",
  "crumb": "Parenting arrangements",
  "service_name": "Parenting arrangements",
- "date": "2026-09-28",
+ "date": "2026-09-29",
  "title": "Parenting Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Parenting Lawyers in Box Hill, Melbourne",
  "description": "Parenting lawyers in Box Hill for parenting plans, consent orders and court applications about children after separation. Your first call is free.",
@@ -82,7 +82,7 @@
  },
  "fee": {
   "t": "What agreed arrangements cost.",
-  "p": "Consent orders for agreed parenting arrangements are a fixed fee of $2,750 including GST, covering advice on what you have agreed, the application and proposed orders, filing and the sealed orders, where there are no family violence or child safety concerns for the court to look into. A parenting plan built from agreed arrangements is from $1,320 including GST, and further rounds of changes cost more. Anything our <a href=\"/fees\">fees page</a> does not list, such as a disputed matter or court proceedings, is estimated in writing before substantive work begins, and the court's filing fee is paid to it directly."
+  "p": "Consent orders for agreed parenting arrangements are a fixed fee of $3,025 including GST, covering advice on what you have agreed, the application and proposed orders, filing and the sealed orders, where there are no family violence or child safety concerns for the court to look into. A parenting plan built from agreed arrangements is from $1,452 including GST, and further rounds of changes cost more. Anything our <a href=\"/fees\">fees page</a> does not list, such as a disputed matter or court proceedings, is estimated in writing before substantive work begins, and the court's filing fee is paid to it directly."
  },
  "related": [
   {
@@ -148,7 +148,7 @@
  "offers": [
   {
    "name": "Consent orders for agreed parenting arrangements",
-   "price": "2750"
+   "price": "3025"
   }
  ]
 }

@@ -35,7 +35,7 @@
 
 ## Other facts on the page
 
-- Fee: "Lease review for a tenant, from $990", its scope and "A non-standard lease or more than one premises costs more" come from fees.html. No single figure fee applies, so the page carries no offers.
+- Fee: "Lease review for a tenant, from $1,089", its scope and "A non-standard lease or more than one premises costs more" come from fees.html. No single figure fee applies, so the page carries no offers.
 - What to bring: the lease or draft, any disclosure statement, and letters or notices. These are documents a tenant or landlord plainly holds, and the page states no requirement to bring anything. Office facts are as CLAUDE.md records them.
 
 ## Generalised or left out
@@ -56,5 +56,5 @@ It passes on all the page's prose. Its one failure is the "(Vic)" in the Sources
 ## For Spencer: the hub, faq.html, fees.html and the audit
 
 1. **Audit item 24 is itself wrong.** The prescribed disclosure statement has a tenant signature block that acknowledges receipt, in Schedule 1 Part 10 and Schedule 2 Part 12 of the Regulations. So "the tenant does not sign it" is inaccurate, and the hub's "never sign blind" is defensible. If the hub is corrected, say what the signature does rather than that there is none.
-2. **"Fixed fee" for the lease review.** The hub's fee note says a lease review has a fixed fee, and its cost answer says such work is "usually quoted as a fixed fee". fees.html shows "from $990". This is the same risk as audit item 25.
+2. **"Fixed fee" for the lease review.** The hub's fee note says a lease review has a fixed fee, and its cost answer says such work is "usually quoted as a fixed fee". fees.html shows "from $1,089". This is the same risk as audit item 25.
 3. **The retail leases article, outside this page.** It says the landlord must give notice of the option date "but the risk of the calendar remains with you". That understates s 28(2), which moves the last date to three months after a late notice.

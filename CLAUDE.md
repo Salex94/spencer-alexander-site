@@ -769,7 +769,7 @@ the final round were published to main on 28 Sep 2026; DECISIONS.md records both
   arrives, with an email link for a photo of it.
 - **Trust.** The firm node carries the ABN as `taxID`; About links the Register of Lawyers; each hub
   names Melbourne's eastern suburbs.
-- **Letters of administration** at $1,980 is always quoted as where there is no will, as fees.html
+- **Letters of administration** at $2,178 is always quoted as where there is no will, as fees.html
   prices it. The probate page says nothing about costs being paid from the estate until Spencer gives
   his view on rule 9.01 of the probate rules.
 - **Listing read times** on insights.html and index.html must equal each article's own; the gate
@@ -805,6 +805,16 @@ the final round were published to main on 28 Sep 2026; DECISIONS.md records both
   prominent as any part of it. The company set up row states instead that its ASIC fee carries no GST.
   Every other page, the schema, llms.txt and the Business Profile quote the total including GST. The
   gate's "fees page amounts before GST match the totals" check keeps the two figures in step.
+
+- **Prices, Spencer's instruction of 29 Sep 2026.** "I do want somethings like power of attorney and
+  medical attorney document to be 450 (excluding gst) 495 total to be charged. The minimum any work should
+  be is 1 hour of my time on a fixed fee being 495 including GST. From there, it scales up depending on
+  the work involved. I think the rest of the prices should be bumped by 10 percent across the board." So
+  the enduring power of attorney and the medical treatment decision maker appointment are each $495, and
+  every other price rose by exactly 10 per cent, apart from the two wills prices he set the day before,
+  which stay at $495 and $880; the letter of demand, which 10 per cent would have left at $484, is $495.
+  Company set up is $1,210 including the ASIC registration fee. fees.html says no piece of work costs less
+  than $495 including GST, and no price, estimate or quote anywhere may go below it.
 
 ## English only, Spencer's instruction of 28 Sep 2026
 

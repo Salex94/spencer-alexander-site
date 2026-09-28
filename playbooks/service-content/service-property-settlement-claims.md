@@ -38,8 +38,8 @@
 
 These are copied in substance from fees.html as live on 28 Sep 2026:
 
-- Consent orders for an agreed property settlement, $2,750 including GST, with its scope and assumptions.
-- Binding financial agreement from $2,750 per party including GST. It is not called a fixed fee, and it is left out of the schema offers.
+- Consent orders for an agreed property settlement, $3,025 including GST, with its scope and assumptions.
+- Binding financial agreement from $3,025 per party including GST. It is not called a fixed fee, and it is left out of the schema offers.
 - A disputed settlement, negotiation and court proceedings are estimated in writing before substantive work.
 - The court's filing fee is separate, with no figure, no reduced rate and nothing on exemptions.
 
