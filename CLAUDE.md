@@ -346,8 +346,10 @@ future edit, every new page and every new article.
 - **Stylesheets.** `styles/styles.css` is one flattened file of tokens and
   base styles with no @import chain, and `styles/site.css` carries every
   component. Both are linked with `?v=3`; bump the version on both links on
-  every page when either file changes materially. Google Fonts load through a
-  preload link with a noscript fallback. Keep both arrangements.
+  every page when either file changes materially. The webfonts are self hosted in `assets/fonts` since 28 Sep 2026, declared
+  at the top of styles.css, and each page head preloads the three first screen faces;
+  never load them from Google again, because the privacy page says no font service
+  receives a visitor's details.
 - **No dashes anywhere on the site.** The 6 Aug 2026 article rule now applies
   to every page, every JSON-LD block, feed.xml and llms.txt: no em dash, no en
   dash, no spaced hyphen. check-publish.py enforces "no dashes on core pages"

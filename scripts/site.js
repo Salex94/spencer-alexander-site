@@ -274,6 +274,17 @@
   var clear = function () { email.setCustomValidity(""); };
   phone.addEventListener("input", clear);
   email.addEventListener("input", clear);
+  // Each notification's subject carries the time it was sent, so Gmail never groups two enquiries into one conversation
+  var subject = form.querySelector('input[name="_subject"]');
+  var baseSubject = subject ? subject.value : "";
+  form.addEventListener("submit", function () {
+    if (!subject || e_invalid()) return;
+    try {
+      var when = new Intl.DateTimeFormat("en-AU", { timeZone: "Australia/Melbourne", day: "numeric", month: "short", year: "numeric", hour: "numeric", minute: "2-digit", second: "2-digit" }).format(new Date());
+      subject.value = baseSubject + ", " + when;
+    } catch (err) {}
+  });
+  function e_invalid() { return !phone.value.trim() && !email.value.trim(); }
   form.addEventListener("submit", function (e) {
     if (!phone.value.trim() && !email.value.trim()) {
       e.preventDefault();
@@ -293,4 +304,16 @@
     try { window.open("https://www.google.com.au/", "_blank", "noopener"); } catch (err) {}
     window.location.replace(q.href);
   });
+})();
+
+// A link to one question on the FAQ page opens its answer (28 Sep 2026)
+(function () {
+  function openFromHash() {
+    var id = location.hash.slice(1);
+    if (!id) return;
+    var d = document.getElementById(id);
+    if (d && d.tagName === "DETAILS") { d.open = true; }
+  }
+  openFromHash();
+  window.addEventListener("hashchange", openFromHash);
 })();

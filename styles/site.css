@@ -698,7 +698,7 @@ h2, h3, .faq-q, .post-card__title, .featured__title, .rail-card__t, .svc__title,
 .article__body p a, .article__body li a, .article-callout a, .article-sources a, .prose a, .svc p a, .faq-a p a, .brief a, .form__note a, .fee-note__d a, .about-archive__lead a, .fees-body a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(110,31,46,.42); }
 .article__body p a:hover, .article__body li a:hover, .article-callout a:hover, .prose a:hover, .svc p a:hover, .faq-a p a:hover, .brief a:hover, .fee-note__d a:hover { text-decoration-color: currentColor; }
 /* The home hero keeps its call button above the fold on common laptops */
-@media (min-width: 901px) { .hero__grid { padding-block: clamp(32px, 3.5vw, 48px) clamp(40px, 5vw, 72px); } .hero__title { font-size: clamp(2.7rem, 4.4vw, 3.75rem); margin-top: 16px; } .hero__lead { margin-top: 18px; } .hero__actions { margin-top: 26px; } }
+@media (min-width: 901px) { .hero__grid { padding-block: clamp(24px, 2.4vw, 40px) clamp(40px, 5vw, 72px); } .hero__title { font-size: clamp(2.7rem, 4.4vw, 3.75rem); margin-top: 12px; } .hero__lead { margin-top: 18px; } .hero__actions { margin-top: 26px; } }
 /* One portrait, one look: the home hero overlay is lighter so it matches About */
 .hero-portrait__frame::before { opacity: .5; }
 /* Resource cards are text cards, without an empty image box */
@@ -728,8 +728,6 @@ h2, h3, .faq-q, .post-card__title, .featured__title, .rail-card__t, .svc__title,
 /* With Fees in the navigation, the header stays inside its container from 1100 to 1279 pixels (the compact rule above targets the old primary button) */
 @media (min-width: 1100px) and (max-width: 1279px) { .site-nav { gap: 13px; } .site-nav a { font-size: 0.75rem; } .header-right .btn { padding: 0 14px; font-size: var(--text-xs); } .header-right { margin-left: 18px; } }
 .article-toc a, .article__body .article-toc li a { text-decoration: none; }
-/* Reviews: the three most specific, quoted larger; every review is one click away on Google */
-.review-grid--featured .review-card__q { font-size: clamp(1.1875rem, 1.6vw, 1.375rem); line-height: 1.5; }
 /* Fees page: each price on a hairline row, aligned right, with its scope beneath (preview, 28 Sep 2026) */
 .fee-list { margin-top: 18px; border-bottom: 1px solid var(--border-hairline); }
 .fee { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 24px; padding: 18px 0; border-top: 1px solid var(--border-hairline); }
@@ -739,3 +737,7 @@ h2, h3, .faq-q, .post-card__title, .featured__title, .rail-card__t, .svc__title,
 /* Links in a dark hero's meta line read in the hero's own light tone */
 .pagehero__meta a { color: var(--wine-100); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(251,249,245,.4); }
 .pagehero__meta a:hover { color: var(--brass-300); text-decoration-color: currentColor; }
+/* Hub pills that have their own page are links, in the pill's own style */
+a.pill { text-decoration: none; transition: background-color 160ms var(--ease-standard), color 160ms var(--ease-standard); }
+a.pill:hover { background: var(--wine-100); color: var(--wine-800); text-decoration: none; }
+a.pill:focus-visible { outline: 3px solid var(--wine-700); outline-offset: 2px; }
