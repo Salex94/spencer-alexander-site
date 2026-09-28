@@ -721,6 +721,39 @@ came out of them and is settled:
   "published under his name", matching about.html.
 - Keys after this round: site.css v19.
 
+## Preview of 28 Sep 2026, live only once Spencer approves it
+
+Everything in this section sits on the branch `claude/youthful-bohr-aaeqrx` until Spencer approves the
+preview; the session that publishes it records his words and the date here and in DECISIONS.md.
+
+- **Service pages.** Eight `service-*.html` pages, the playbook's cap, built by
+  `scripts/build-service-page.py` from content files in `playbooks/service-content/`, which hold the
+  words while the script holds the design: head, header, menus, footer, call bar and rail call card
+  come from the practice hub, and the body uses only the hubs' own components. To change a page, edit
+  its content file and rebuild; never hand edit the page. Each hub service block that has a page ends
+  with a "Read more about" link to it, the header practice menus link that page instead of the hub
+  anchor, and the hub's OfferCatalog item carries the page's @id and url. The gate's service page
+  checks come from `playbooks/service-pages.md`, whose fee rule is replaced: a page quotes the fixed
+  fees fees.html carries, in the same figures, and says everything else is estimated in writing.
+- **Fees in the chrome.** Fees sits between FAQ and About in the navigation, in the mobile menu and in
+  the footer's Firm column as "Fixed fees". The navigation is compact from 1100 to 1279 pixels so the
+  header call button always keeps its 24 pixel margin.
+- **Prices where people decide.** Each hub hero meta line links its section of the fees page with one
+  price, each hub service block ends with its published price, and the family hub's cost question
+  replaces what to bring, which the family service pages carry. fees.html sets each price on a
+  hairline row, price aligned right, with the hero call buttons, jump links and a closing band.
+- **Phones.** The fixed bar offers Call and Enquire side by side; the menu button shows a close mark
+  while the menu is open; hub photographs are hidden under 640 pixels so the call to action and the
+  urgent strip come first.
+- **Quick exit** on the family hub, every Family Law article, the separation checklist and the family
+  service pages, leaving for the Bureau of Meteorology site and replacing the page in the history; the
+  gate checks it is present. It has no keyboard shortcut, because Escape already closes the menus.
+- **Look.** Links inside running text carry a fine underline; the home hero is shorter on laptops so
+  its call button sits above the fold; brass text is one step deeper for contrast (`--text-seal` is
+  brass 800); resource cards are text cards; the home page features three reviews; the home hero
+  portrait overlay matches About.
+- Keys after the preview: site.css v20, styles.css v8, site.js v15.
+
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 
 The owner has asked that runs never require their input. Two facts every run

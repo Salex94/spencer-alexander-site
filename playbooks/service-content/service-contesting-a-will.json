@@ -1,0 +1,150 @@
+{
+ "slug": "service-contesting-a-will",
+ "hub": "wills-and-estates",
+ "hub_label": "Wills &amp; Estates",
+ "crumb": "Will disputes",
+ "service_name": "Contesting and defending wills",
+ "date": "2026-09-28",
+ "title": "Will Dispute Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
+ "h1": "Will Dispute Lawyers in Box Hill, Melbourne",
+ "description": "Will dispute lawyers in Box Hill for people contesting a will and for executors and beneficiaries defending one. Time limits apply, so call us early.",
+ "lead": "From our Box Hill office, we act for people contesting a will, whether they were left out, left short or doubt the will is valid, and for executors and beneficiaries defending one, through negotiation, mediation and any hearing.",
+ "meta": [
+  "Your first call is free, and you speak with a lawyer",
+  "For claimants, executors and beneficiaries",
+  "Suite 10, 1 Main Street, Box Hill"
+ ],
+ "urgent": {
+  "strong": "Left out of a will, or served with a claim?",
+  "text": "A family provision claim must generally be made within six months of the grant of probate or administration. The court can extend the time, but only on an application made before the estate is finally distributed, and a late claim cannot disturb a distribution already made."
+ },
+ "brief": {
+  "entity": "Spencer Alexander Lawyers is a Box Hill, Melbourne law firm acting for people who contest a will and for the executors and beneficiaries who defend one, with the principal overseeing every matter.",
+  "bullets": [
+   "Contesting a will usually means a family provision claim under Part IV of the Administration and Probate Act 1958, asking the court to order provision from the estate.",
+   "The court must be satisfied that the claimant is an eligible person, that the deceased had a moral duty at the time of death to provide for them, and that the distribution of the estate fails to make adequate provision for their proper maintenance and support. Some eligible people, such as a grandchild, must also show they were wholly or partly dependent on the deceased.",
+   "A challenge to the will's validity, such as for lack of capacity or undue influence, is a separate claim, usually raised by a caveat before probate is granted."
+  ]
+ },
+ "sections": [
+  {
+   "eyebrow": "Who we act for",
+   "h2": "When a will is in dispute.",
+   "paras": [
+    "People call us when a parent or partner has died and the will leaves them out or short, or when they doubt the will is valid at all. Executors call when a claimant's lawyers have written or a caveat has held up probate.",
+    "We act on either side, and for beneficiaries too, who bear any provision made for a claimant in proportion to their interests, unless the court orders otherwise."
+   ]
+  },
+  {
+   "eyebrow": "How we help",
+   "h2": "What we do in a will dispute.",
+   "items": [
+    {
+     "t": "Making a family provision claim",
+     "p": "We advise whether you are an eligible person and how the court's test applies to you, prepare the claim and your evidence, and act for you through negotiation, mediation and any hearing. Our <a href=\"/insight-contesting-a-will\">guide to contesting a will</a> sets out the law."
+    },
+    {
+     "t": "Challenging or upholding a will",
+     "p": "A will can be challenged for reasons such as lack of capacity, undue influence, <a href=\"/insight-fraudulent-calumny-victoria\">fraudulent calumny</a> or a signing that did not meet the Wills Act 1997. We gather the evidence and lodge caveats, and act to uphold wills too, including one not properly signed, which the Supreme Court can admit to probate if satisfied the person intended it to be their will."
+    },
+    {
+     "t": "Defending an estate",
+     "p": "An executor served with a claim needs to protect the estate while it is decided. We gather the evidence of the deceased's reasons, which the court must take into account if it makes an order, and advise on <a href=\"/insight-executor-duties\">when it is safe to distribute</a>."
+    },
+    {
+     "t": "Protecting a beneficiary's share",
+     "p": "When a claim threatens a gift you were left, we put your own circumstances and needs before the court, which can weigh them alongside the claimant's."
+    }
+   ]
+  },
+  {
+   "eyebrow": "Time limits",
+   "h2": "The dates that decide what you can do.",
+   "paras": [
+    "The six month limit for a family provision claim runs from the date of the grant, not the date of death. The court can extend it, even after it has expired, but only on an application made before the estate is finally distributed, and an extension does not disturb anything distributed before that application.",
+    "A validity challenge is usually raised by a caveat before the grant, and while the caveat stands the registrar cannot make a grant without a court order. Once someone applies for a grant, the caveat lapses 30 days after the caveator is notified, unless grounds of objection are filed and served in that time or a judge orders otherwise."
+   ]
+  },
+  {
+   "eyebrow": "Your first call",
+   "h2": "What to bring to your first call.",
+   "paras": [
+    "Whatever you have to hand: a copy of the will if you have one, the grant of probate or letters of administration if one has been made, any letters from the executor, a claimant or their lawyers, and your questions. If you have little on paper, that is fine too. The first conversation is about understanding your situation, not testing your paperwork.",
+    "Our office is at Suite 10, 1 Main Street, a short walk from Box Hill station, with parking at Box Hill Central."
+   ]
+  }
+ ],
+ "process": {
+  "eyebrow": "What to expect",
+  "h2": "How a will dispute proceeds.",
+  "steps": [
+   {
+    "t": "Checking the grant",
+    "d": "We find out whether a grant of probate or administration has been made and when, because its date starts the time limit for a family provision claim."
+   },
+   {
+    "t": "Filing the claim or the caveat",
+    "d": "A family provision claim is filed in the Supreme Court or the County Court and served on the executor or administrator. A caveator notified of an application for a grant files and serves grounds of objection, then applies for directions."
+   },
+   {
+    "t": "Mediation or a hearing",
+    "d": "The court can refer the dispute to mediation at any stage. If it does not settle, the court decides whether the will is admitted to probate, or whether to order provision and how much."
+   }
+  ]
+ },
+ "fee": {
+  "t": "Costs, estimated in writing.",
+  "p": "An estate dispute has no fixed fee, and as our <a href=\"/fees\">fees page</a> explains, a dispute is charged on a written estimate instead. After we understand what you need, we provide a letter of engagement setting out a clear fee estimate before any substantive work begins. Who pays the costs of the dispute itself is for the court to decide or the parties to agree."
+ },
+ "related": [
+  {
+   "href": "/insight-contesting-a-will",
+   "label": "Contesting a will in Victoria: your rights and the time limits"
+  },
+  {
+   "href": "/insight-fraudulent-calumny-victoria",
+   "label": "Fraudulent calumny in Victoria: can a lie invalidate a will?"
+  },
+  {
+   "href": "/insight-executor-duties",
+   "label": "An executor's duties in Victoria: the complete checklist"
+  },
+  {
+   "href": "/insight-power-of-attorney-misuse",
+   "label": "Misuse of a power of attorney in Victoria: what can you do?"
+  },
+  {
+   "href": "/wills-and-estates",
+   "label": "All wills and estates services"
+  }
+ ],
+ "faq_h2": "Common questions about will disputes.",
+ "faqs": [
+  {
+   "q": "Is it too late to contest a will once probate has been granted?",
+   "a": "Not necessarily. A family provision claim can be made within six months of the grant, or later if the court extends the time on an application made before the estate is finally distributed, though a late claim cannot disturb what has already been distributed. Validity challenges are usually raised before the grant, so call us promptly."
+  },
+  {
+   "q": "Can a grandchild, a sibling or a carer make a claim?",
+   "a": "Only as an eligible person. A grandchild, a member of the deceased's household or a registered caring partner is eligible, but the court can make an order for them only if they were wholly or partly dependent on the deceased. A sibling or a carer who fits none of the Act's categories cannot make a family provision claim."
+  },
+  {
+   "q": "I am the executor and a claim has been threatened. Can I distribute?",
+   "a": "Get advice first. An executor who properly distributes after six months from the grant, without notice of a claim, is generally protected, but a distribution made earlier, or after notice of a claim, can fall outside that protection and leave you personally liable."
+  },
+  {
+   "q": "Who pays the legal costs of a will dispute?",
+   "a": "It cannot be assumed that the estate pays everyone's costs. The court generally decides who pays the costs of a proceeding and how much, and it can order a party to pay costs personally, although a settlement can deal with costs by agreement."
+  },
+  {
+   "q": "Can a will be challenged if it was not signed and witnessed properly?",
+   "a": "Yes, since the Wills Act 1997 says a will is not valid unless it is signed and witnessed as the Act requires. The Supreme Court can still admit a document to probate if satisfied the person intended it to be their will, so a signing error does not always decide the dispute."
+  }
+ ],
+ "sources": "<a href=\"https://www.legislation.vic.gov.au/in-force/acts/administration-and-probate-act-1958\" rel=\"noopener\" target=\"_blank\">Administration and Probate Act 1958 (Vic)</a>, sections 12 and 58 and Part IV; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/wills-act-1997\" rel=\"noopener\" target=\"_blank\">Wills Act 1997 (Vic)</a>, sections 7 and 9; <a href=\"https://www.legislation.vic.gov.au/in-force/statutory-rules/supreme-court-administration-and-probate-rules-2023\" rel=\"noopener\" target=\"_blank\">Supreme Court (Administration and Probate) Rules 2023 (Vic)</a>, Order 8; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/civil-procedure-act-2010\" rel=\"noopener\" target=\"_blank\">Civil Procedure Act 2010 (Vic)</a>, section 66; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/supreme-court-act-1986\" rel=\"noopener\" target=\"_blank\">Supreme Court Act 1986 (Vic)</a>, section 24; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/county-court-act-1958\" rel=\"noopener\" target=\"_blank\">County Court Act 1958 (Vic)</a>, section 78A.",
+ "cta": {
+  "eyebrow": "Before the time runs",
+  "title": "Speak with a will dispute lawyer.",
+  "lead": "Tell us what has happened and, if you know it, when probate was granted, and we will tell you where you stand."
+ }
+}
