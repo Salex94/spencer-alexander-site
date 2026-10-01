@@ -13,6 +13,10 @@ Newest entries first.
 
 ---
 
+## 2026-10-02: Demand scan, two FAQ entries added to faq.html, on enforcing ignored property orders and the new National Enforcement List, and on deadlock in a 50/50 company, read against the Family Law Act compilation 101 and the Corporations Act compilation 149.
+
+---
+
 ## 2026-09-29: Site accuracy and health; ledger created, four pages verified, one sentence corrected
 
 First run of the accuracy sweep under `playbooks/site-health.md` (Melbourne date Tuesday 29 September
