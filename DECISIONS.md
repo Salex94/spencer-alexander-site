@@ -13,6 +13,28 @@ Newest entries first.
 
 ---
 
+## 2026-10-05: Weekly article, business partner disputes, an ordinary Commercial Law article
+
+New article insight-business-partner-disputes-victoria.html, published Monday 5 October 2026 Melbourne
+time. Rotation: Commercial Law was due, its newest article 7 Sep against Family Law 28 Sep and Wills and
+Estates 21 Sep. Alternation: the clone was unshallowed and commit 8589c9a, which `git show --name-status`
+shows adding insight-agreed-property-settlement.html, carries `Article type: hire guide`, so an ordinary
+article was due; this matches the backlog's hire marker. Topic: backlog item 2, co-owners of a company who
+cannot agree, the dispute side companion to the shareholder agreements article, which stays on drafting.
+
+Every statement was read in the Corporations Act 2001 (Cth) compilation 149, registered C2026C00432, in
+force from 19 Sep 2026, downloaded from the legislation.gov.au API: sections 9 (contributory), 58AA, 135,
+198F, 203C, 232, 233, 234, 236, 237, 247A, 248E, 248F, 248G, 250E, 290, 461, 462, 467(4) and 1072G. No
+cost figures, no fee, no case names.
+
+Photograph: none of the ten spares suited the topic, so Unsplash photo-1517502884422-41eaead166d4, an
+empty meeting room in daylight, was fetched by id, inspected and committed as assets/photos/1517502884422.jpg
+with its WebP sibling. The spares left are mostly family and home scenes; two of the ten the image check
+lists as free, 1431540015161 and 1468779036391, already appear on the commercial hub and service pages,
+so the pool holds no suitable commercial photograph for the next Commercial Law article.
+
+---
+
 ## 2026-10-02: Demand scan, two FAQ entries added to faq.html, on enforcing ignored property orders and the new National Enforcement List, and on deadlock in a 50/50 company, read against the Family Law Act compilation 101 and the Corporations Act compilation 149.
 
 ---
