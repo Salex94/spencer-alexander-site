@@ -7,11 +7,12 @@ Dates are Melbourne dates.
 
 | Page | Last verified | Outcome |
 |---|---|---|
-| insight-advance-care-directives-victoria.html | never | Never verified |
+| insight-advance-care-directives-victoria.html | 2026-10-06 | Verified, no change needed |
 | insight-agreed-property-settlement.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
 | insight-binding-financial-agreements.html | 2026-09-29 | Verified, no change needed |
+| insight-business-partner-disputes-victoria.html | 2026-10-05 | Published 5 Oct 2026 after verification by the publishing routine |
 | insight-business-structures.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| insight-buying-a-business-victoria.html | never | Never verified |
+| insight-buying-a-business-victoria.html | 2026-10-06 | Verified, no change needed |
 | insight-child-support-australia.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
 | insight-contesting-a-will.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
 | insight-contracts-for-business.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
@@ -22,7 +23,7 @@ Dates are Melbourne dates.
 | insight-dying-without-a-will.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
 | insight-enduring-powers-of-attorney.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
 | insight-executor-duties.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| insight-fraudulent-calumny-victoria.html | never | Never verified |
+| insight-fraudulent-calumny-victoria.html | 2026-10-06 | Verified, no change needed; the 2026 judgment itself could not be read, reporting confirms it and finds no trial decision yet |
 | insight-grandparents-rights-victoria.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
 | insight-guardianship-administration-orders.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
 | insight-intervention-orders.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
@@ -34,7 +35,7 @@ Dates are Melbourne dates.
 | insight-property-reforms-2025.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
 | insight-retail-leases-victoria.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
 | insight-safe-harbour-small-business-restructuring.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| insight-shareholder-agreements.html | never | Never verified |
+| insight-shareholder-agreements.html | 2026-10-06 | Verified, no change needed |
 | insight-spousal-maintenance-victoria.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
 | insight-superannuation-death-benefits.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
 | insight-testamentary-trusts.html | 2026-09-29 | Verified, no change needed |
@@ -56,3 +57,4 @@ Dates are Melbourne dates.
 ## Runs
 
 - 2026-09-29: ledger created; 45 legal pages, so 4 a week, 4 verified this run (probate, binding financial agreements, testamentary trusts, debt recovery), all correct; one flagged sentence corrected on insight-property-after-separation.html.
+- 2026-10-06: business partner disputes article added; 46 legal pages, so 4 a week, 4 verified this run (shareholder agreements, buying a business, advance care directives, fraudulent calumny), all correct, no corrections.

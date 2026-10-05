@@ -13,6 +13,41 @@ Newest entries first.
 
 ---
 
+## 2026-10-06: Site accuracy and health; four pages verified, all correct, monthly structural audit clean
+
+Melbourne date Tuesday 6 October 2026, the first run of the month, so the structural audit ran as well.
+The ledger gained insight-business-partner-disputes-victoria.html, verified on its publication on 5 Oct
+2026, giving 46 legal pages; 46 divided by 13 and rounded up is 4, the four oldest never verified articles:
+
+- insight-shareholder-agreements.html: correct. Corporations Act 2001 (Cth) compilation 149, C2026C00432,
+  sections 134, 135, 140, 198A, 201G, 203C, 232, 233 and 234.
+- insight-buying-a-business-victoria.html: correct. Estate Agents Act 1980 (Vic) version 217, sections 4
+  and 52, including the three month avoidance window before possession in section 52(3); Estate Agents
+  (General, Accounts and Audit) Regulations 2018 (Vic) version 002, regulation 8, $450,000; Retail Leases
+  Act 2003 (Vic) version 027, sections 60 and 61; Long Service Leave Act 2018 (Vic) version 006, section
+  11(3); A New Tax System (Goods and Services Tax) Act 1999 (Cth) compilation 96, section 38-325.
+- insight-advance-care-directives-victoria.html: correct. Medical Treatment Planning and Decisions Act
+  2016 (Vic) version 012, sections 3 (authorised witness, primary carer), 4, 6, 16, 17, 20, 22, 28, 29,
+  36, 43, 53, 55, 61, 63 and 70; Carers Recognition Act 2012 (Vic) version 003, section 4(4), which
+  supports the paid carer exclusion.
+- insight-fraudulent-calumny-victoria.html: correct. Administration and Probate Act 1958 (Vic) version
+  130, sections 58, 91 and 99. Re the Estate of Iovenitti [2026] VSC 106 was confirmed through the
+  caveators' solicitors' published commentary; the judgment itself could not be read because AustLII and
+  the court site are blocked, and no later trial judgment was found, so "still to come" stays true.
+
+Structural audit: the gate's 103 checks pass and the image check passes; titles and descriptions unique;
+one h1 per page with no heading jumps; every image carries alt text; every indexable page is in the
+sitemap and llms.txt and every article in the feed; robots.txt stays permissive; no orphan pages beyond
+404, thank-you and the template. The 5 Oct article had no in body links from its relatives, so three
+neutral cross links were added by wrapping existing words: the oppression remedy in
+insight-shareholder-agreements.html, "disputes" in the conflicts paragraph of
+insight-directors-duties-victoria.html, and the deadlock answer on faq.html, where the visible text still
+equals the FAQPage schema. Dates and lastmod unchanged on all three, navigation only edits as in earlier
+audits. No legal claim changed. Fleet check: all ten routines ran; Trust desk is also present and is not
+one of the ten.
+
+---
+
 ## 2026-10-05: Weekly article, business partner disputes, an ordinary Commercial Law article
 
 New article insight-business-partner-disputes-victoria.html, published Monday 5 October 2026 Melbourne
