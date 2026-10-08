@@ -13,6 +13,8 @@ Newest entries first.
 
 ---
 
+## 2026-10-09: Demand scan, one FAQ entry added to faq.html, on using an enduring power of attorney when a parent moves into aged care and the VCAT route where none was signed, read against the Powers of Attorney Act 2014 version 007 and the Guardianship and Administration Act 2019 version 010.
+
 ## 2026-10-06: Site accuracy and health; four pages verified, all correct, monthly structural audit clean
 
 Melbourne date Tuesday 6 October 2026, the first run of the month, so the structural audit ran as well.
