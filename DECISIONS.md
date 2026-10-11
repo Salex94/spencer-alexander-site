@@ -13,6 +13,33 @@ Newest entries first.
 
 ---
 
+## 2026-10-12: Weekly article, trustee company or lawyer for your will, a Wills and Estates hire guide
+
+New article insight-trustee-company-or-lawyer-will.html, published Monday 12 October 2026 Melbourne
+time. Rotation: Wills and Estates was due, its newest article 21 Sep against Family Law 28 Sep and
+Commercial Law 5 Oct. Alternation: the clone was unshallowed and f91d879, which `git show --name-status`
+shows adding insight-business-partner-disputes-victoria.html, carries `Article type: ordinary`, so a hire
+guide was due, matching the backlog marker. Topic: backlog item 15, chosen over the recommended item 16,
+will kit or lawyer, because insight-making-a-valid-will.html already carries a full section and FAQ on
+kit wills and on the execution errors item 16 would rest on, so item 16 could not be written without
+rehashing it. Item 15 overlapped only one faq.html answer.
+
+Read in the authorised versions that run: Administration and Probate Act 1958 (Vic) version 130,
+sections 3 and 5 definitions, 65, 65A, 65B, 65C, 65D and 65E; Corporations Act 2001 (Cth) compilation
+149, C2026C00432, sections 601RAC, 601TAA, 601TBA, 601TBB, 601TBD, 601TBE, 601TCA and 601TCB; Wills Act
+1997 (Vic) version 036, sections 7 and 12. Prices quoted exactly as fees.html: single will $495, wills for
+a couple $880, estate plan for one person $1,089, probate application $1,815. No trustee company fee
+figure, no percentage other than the statutory 5 per cent ceiling, no claim that the Corporations Act
+fee rules bind State Trustees, which was not verified.
+
+Photograph: spare 1511632765486, a family arm in arm at sunset, Unsplash
+photo-1511632765486-a01980e01a18, already in the repository with its WebP. The image check now lists nine
+spares. Two of them already appear on the commercial hub and service pages and the newspaper chart was
+judged unsuitable on 28 Sep 2026, which leaves six usable: three family and child scenes, the library,
+the house at dusk and the Flinders Street scene. None is a commercial image.
+
+---
+
 ## 2026-10-09: Demand scan, one FAQ entry added to faq.html, on using an enduring power of attorney when a parent moves into aged care and the VCAT route where none was signed, read against the Powers of Attorney Act 2014 version 007 and the Guardianship and Administration Act 2019 version 010.
 
 ## 2026-10-06: Site accuracy and health; four pages verified, all correct, monthly structural audit clean
