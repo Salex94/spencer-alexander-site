@@ -110,18 +110,22 @@ rather than a schedule. Then put one plain line for each of these at the top of 
   or more weekdays, the Inbox desk, the Front desk or the Document desk with no run on the whole of
   the previous day, or the Matter Filer waiting list with no run for three hours or more;
 - Weekly business events, Weekly website insights article, Site accuracy and health, PR and
-  community, Demand scanner, Weekly scoreboard or the Growth desk with no run for nine days or more;
-- any of the fifteen routines missing: Daily referral prospecting, Morning desk, Inbox desk, Weekly
+  community, Demand scanner, Weekly scoreboard or the Growth desk with no run for nine days or more,
+  or the Development desk, which runs on the 1st of each month from 1 November 2026, with no run for
+  thirty two days or more;
+- any of the sixteen routines missing: Daily referral prospecting, Morning desk, Inbox desk, Weekly
   business events, Weekly website insights article, Site accuracy and health, PR and community,
-  Demand scanner, Weekly scoreboard, Matter Filer waiting list, and the five desks of 11 October
-  2026, being the Front desk, Document desk, Matter desk, Trust desk and Growth desk; and any other
+  Demand scanner, Weekly scoreboard, Matter Filer waiting list, the five desks of 11 October 2026,
+  being the Front desk, Document desk, Matter desk, Trust desk and Growth desk, and the Development
+  desk of 12 October 2026. Once Spencer switches off the Inbox desk or the Weekly scoreboard, as
+  the audit of 12 October 2026 proposed, that routine is expected to be off and is never reported; and any other
   enabled routine present, naming in particular any of the six retired in September 2026, being
   Referral meeting follow-ups, Referral partner master list, Lead magnet factory, Weekly LinkedIn
   posts, Citation and directory sprint and Media and PR scanner. Switched off routines named
   "Replaced 11 Oct 2026" or "Books desk, folded into the Growth desk" are expected and are never
   reported.
 
-When nothing is wrong, the one line is "All fifteen routines ran as scheduled". When `list_triggers`
+When nothing is wrong, the one line is "All routines ran as scheduled". When `list_triggers`
 is not available, the line is "Fleet check not done: the Claude Code Remote connector is missing",
 and the site work carries on either way. Nothing from the fleet check is written to the repository.
 
