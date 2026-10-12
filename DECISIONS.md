@@ -13,6 +13,30 @@ Newest entries first.
 
 ---
 
+## 2026-10-13: Site accuracy and health; four pages verified, all correct, every legal page now verified at least once
+
+Melbourne date Tuesday 13 October 2026. Not the first run of the month, so no structural audit. The ledger gained
+insight-trustee-company-or-lawyer-will.html, verified on its publication on 12 Oct 2026, giving 47 legal pages; 47
+divided by 13 and rounded up is 4, the last four never verified pages:
+
+- resource-separation-first-30-days.html: correct. Wills Act 1997 (Vic) version 036, sections 13 and 14, divorce
+  not separation revoking a gift to or appointment of a former spouse; Powers of Attorney Act 2014 (Vic) version 007,
+  sections 51 to 54, no revocation of an enduring power on separation or divorce; Family Law Act 1975 (Cth)
+  compilation 101, C2025C00341, sections 44(3), 44(5), 48 and 49(2).
+- family-law.html: correct. Family Law Act 1975 (Cth) compilation 101, sections 44(3), 44(5), 44(6), 48, 60CA,
+  60I(9) and 90SB.
+- commercial-law.html: correct. Retail Leases Act 2003 (Vic) version 027, sections 17(1), 14 days, and 21;
+  Corporations Act 2001 (Cth) compilation 149, C2026C00432, sections 9 statutory period, 459C, 459E, 459F and 459G;
+  Corporations Regulations 2001 (Cth) F2026C00854, regulation 5.4.01AAA, 21 days.
+- wills-and-estates.html: correct. Wills Act 1997 (Vic) version 036, sections 3 special witness, 7 and 8A;
+  Administration and Probate Act 1958 (Vic) version 130, sections 99 and 99A(3); Powers of Attorney Act 2014 (Vic)
+  version 007, sections 37 and 39.
+
+No page changed, so no dates moved. Fleet check: all sixteen routines present and every last run succeeded; no
+retired routine is enabled.
+
+---
+
 ## 2026-10-12: Weekly article, trustee company or lawyer for your will, a Wills and Estates hire guide
 
 New article insight-trustee-company-or-lawyer-will.html, published Monday 12 October 2026 Melbourne

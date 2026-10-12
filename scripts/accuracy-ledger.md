@@ -39,8 +39,9 @@ Dates are Melbourne dates.
 | insight-spousal-maintenance-victoria.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
 | insight-superannuation-death-benefits.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
 | insight-testamentary-trusts.html | 2026-09-29 | Verified, no change needed |
+| insight-trustee-company-or-lawyer-will.html | 2026-10-12 | Published 12 Oct 2026 after verification by the publishing routine |
 | resource-executor-first-steps.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| resource-separation-first-30-days.html | never | Never verified |
+| resource-separation-first-30-days.html | 2026-10-13 | Verified, no change needed |
 | service-buying-or-selling-a-business.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
 | service-commercial-leases.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
 | service-contesting-a-will.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
@@ -50,11 +51,12 @@ Dates are Melbourne dates.
 | service-property-settlement.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
 | service-wills-and-estate-planning.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
 | faq.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| family-law.html | never | Never verified |
-| commercial-law.html | never | Never verified |
-| wills-and-estates.html | never | Never verified |
+| family-law.html | 2026-10-13 | Verified, no change needed |
+| commercial-law.html | 2026-10-13 | Verified, no change needed |
+| wills-and-estates.html | 2026-10-13 | Verified, no change needed |
 
 ## Runs
 
 - 2026-09-29: ledger created; 45 legal pages, so 4 a week, 4 verified this run (probate, binding financial agreements, testamentary trusts, debt recovery), all correct; one flagged sentence corrected on insight-property-after-separation.html.
 - 2026-10-06: business partner disputes article added; 46 legal pages, so 4 a week, 4 verified this run (shareholder agreements, buying a business, advance care directives, fraudulent calumny), all correct, no corrections.
+- 2026-10-13: trustee company or lawyer article added; 47 legal pages, so 4 a week, 4 verified this run (separation checklist and the family, commercial and wills hubs, the last never verified pages), all correct, no corrections.
