@@ -13,6 +13,8 @@ Newest entries first.
 
 ---
 
+## 2026-10-16: Demand scan, one FAQ entry added to faq.html, on whether a business can still charge a card surcharge since 1 October 2026, read against the Reserve Bank's FAQs on its surcharging conclusions and the Small Business Ombudsman's card surcharging ban page of 12 Oct 2026.
+
 ## 2026-10-13: Site accuracy and health; four pages verified, all correct, every legal page now verified at least once
 
 Melbourne date Tuesday 13 October 2026. Not the first run of the month, so no structural audit. The ledger gained
