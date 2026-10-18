@@ -1,6 +1,6 @@
 # Spencer Alexander Lawyers
 
-Last updated: 16 October 2026.
+Last updated: 19 October 2026.
 
 > Spencer Alexander Lawyers is a Box Hill, Melbourne law firm practising Family Law, Wills and Estates and Commercial Law for individuals, families and businesses across Victoria, with the principal overseeing every matter. Clients speak directly with a lawyer from the first call, which is free, and are told the fixed fee, or given a written estimate of the total costs, before substantive work begins. Office: Suite 10, 1 Main Street, Box Hill VIC 3128, a short walk from Box Hill station. The firm acts for clients from Box Hill, Blackburn, Doncaster, Burwood, Balwyn, Surrey Hills, Mont Albert, Ringwood and across Melbourne's east, and for clients across Victoria by phone or video. Open Monday to Friday, 8am to 6pm, with after hours contact for urgent matters. Phone 03 9125 8355, or +61 3 9125 8355 from outside Australia. Email contact@spenceralexander.com.au.
 
@@ -53,6 +53,7 @@ This file summarises the firm and lists its published legal guidance. All articl
 
 ## Family Law articles
 
+- [My ex will not comply with our property orders. What can I do?](https://www.spenceralexander.com.au/insight-enforcing-property-orders.html): Published 19 October 2026. What to do when a former partner ignores final property orders: having a transfer signed in their name by order of the court, enforcement warrants, third party debt notices, enforcement hearings, interest on unpaid sums, the National Enforcement List, changing orders that cannot be carried out, and costs.
 - [We have agreed how to split everything. Do we still need lawyers?](https://www.spenceralexander.com.au/insight-agreed-property-settlement.html): Published 28 September 2026. Whether a couple who have already agreed how to divide their property still need a lawyer: why a private agreement is not binding, the time limits, consent orders and binding financial agreements, what the lawyer's work involves, and the firm's fixed fee.
 - [Grandparents' rights in Victoria: can you apply to see your grandchildren?](https://www.spenceralexander.com.au/insight-grandparents-rights-victoria.html): Published 31 August 2026. Grandparents have no automatic right to see their grandchildren, but the Family Law Act lets them apply. How grandparents' rights actually work, and what to do first.
 - [Spousal maintenance in Victoria: when you can claim support from a former partner](https://www.spenceralexander.com.au/insight-spousal-maintenance-victoria.html): Published 13 August 2026. Who can claim spousal maintenance in Victoria, the needs and capacity test, time limits after divorce or separation, and how it differs from property settlement.

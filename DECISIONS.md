@@ -13,6 +13,35 @@ Newest entries first.
 
 ---
 
+## 2026-10-19: Weekly article, enforcing ignored property orders, an ordinary Family Law article
+
+New article insight-enforcing-property-orders.html, published Monday 19 October 2026 Melbourne time.
+Rotation: Family Law was due, its newest article 28 Sep against Commercial Law 5 Oct and Wills and Estates
+12 Oct. Alternation: the clone was unshallowed and 9287780, which `git show --name-status` shows adding
+insight-trustee-company-or-lawyer-will.html, carries `Article type: hire guide`, so an ordinary article was
+due, matching the backlog marker. Topic: backlog item 2, the recommendation, what to do when final property
+orders are ignored. Distinct from the agreed property settlement and property after separation articles,
+which stop at the making of orders; it overlaps only the faq.html answer of 2 Oct.
+
+Read in the authorised versions that run: Family Law Act 1975 (Cth) compilation 101, C2025C00341, still
+current and with no unincorporated amendments, sections 79A, 90SN, 105, 106A, 106B, 107, 112AA to 112AE,
+114UB and 117B; Federal Circuit and Family Court of Australia (Family Law) Rules 2021 compilation 4,
+F2025C00594, Part 11.1, rules 11.01, 11.05 to 11.12, 11.15 to 11.17, 11.32 to 11.38, 11.44, 11.45, 11.48,
+11.49 and 11.55 to 11.58; and the Division 2 (Family Law) Rules 2021, F2025C00557, rule 2.01, which applies
+those rules in Division 2 with no change to Chapter 11. Costs sit in Part XIVC, section 114UB, since the
+2024 amendments; section 117 no longer holds them. The National Enforcement List practice direction on
+fcfcoa.gov.au returned 403, so its start date, scope, first return hearing and costs warning were taken
+from search results quoting the court's own page and the Queensland Law Society's Proctor, and stated
+without detail. No filing fee, no penalty figure, no imprisonment claim, no case names.
+
+Photograph: spare 1568605114967, the house at dusk, Unsplash photo-1568605114967-8130f3a36994, already in
+the repository; its WebP was written this run. The image check now lists eight spares, of which two
+already appear on the commercial hub and service pages and the newspaper chart was judged unsuitable, which
+leaves five usable: three family and child scenes, the library and the Flinders Street scene. None is a
+commercial image.
+
+---
+
 ## 2026-10-16: Demand scan, one FAQ entry added to faq.html, on whether a business can still charge a card surcharge since 1 October 2026, read against the Reserve Bank's FAQs on its surcharging conclusions and the Small Business Ombudsman's card surcharging ban page of 12 Oct 2026.
 
 ## 2026-10-13: Site accuracy and health; four pages verified, all correct, every legal page now verified at least once
