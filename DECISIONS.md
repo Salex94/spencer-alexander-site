@@ -13,6 +13,32 @@ Newest entries first.
 
 ---
 
+## 2026-10-20: Site accuracy and health; four pages verified, all correct
+
+Melbourne date Tuesday 20 October 2026. Not the first run of the month, so no structural audit. The ledger gained
+insight-enforcing-property-orders.html, verified on its publication on 19 Oct 2026, giving 48 legal pages; 48
+divided by 13 and rounded up is 4, the four oldest articles among those last verified on 26 Sep 2026:
+
+- insight-property-reforms-2025.html: correct. Family Law Act 1975 (Cth) compilation 101, C2025C00341, still current
+  with no unincorporated amendments, sections 4AB(2)(g) and (2A), 44(3) and (5), 71B(1), (2), (5) and (6), 79(2) to (7)
+  and 90XC; Family Law Amendment Act 2024 (Cth), C2024A00118, Schedule 1 item 68, which applies the framework to
+  proceedings instituted from 10 June 2025 and to pending ones whose final hearing had not begun, and the
+  commencement table, 10 June 2025.
+- insight-making-a-valid-will.html: correct. Wills Act 1997 (Vic) version 036, still the latest, sections 5, 6, 7, 8,
+  9, 10, 11, 13, 14, 15, 20 and 21; Administration and Probate Act 1958 (Vic) version 130 still current.
+- insight-divorce-in-victoria.html: correct. Family Law Act 1975 (Cth) compilation 101, sections 39(3), 44(1A), (3)
+  and (3AA), 48, 49, 50, 55, 55A and 98A, including 98A(2A); Family Law Amendment Act 2024 (Cth) commencement table,
+  Schedule 3 Parts 1A and 2 from 10 June 2025; Wills Act 1997 (Vic) version 036, section 14.
+- insight-business-structures.html: correct. Partnership Act 1958 (Vic) version 084, sections 5, 9 and 13;
+  Corporations Act 2001 (Cth) compilation 149, C2026C00432, still current, sections 119, 124, 180, 181, 516, 588G,
+  1272B and 1272C.
+
+No page changed, so no dates moved. For Spencer, not changed: insight-business-structures.html says other defined
+work "is quoted as a fixed fee before we start", while fees.html says work it does not price is estimated in writing.
+Fleet check: all sixteen routines present and every last run succeeded; no retired routine is enabled.
+
+---
+
 ## 2026-10-19: Weekly article, enforcing ignored property orders, an ordinary Family Law article
 
 New article insight-enforcing-property-orders.html, published Monday 19 October 2026 Melbourne time.
