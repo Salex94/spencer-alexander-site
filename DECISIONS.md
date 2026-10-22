@@ -13,6 +13,8 @@ Newest entries first.
 
 ---
 
+## 2026-10-23: Demand scan, one FAQ entry added to faq.html, on what a tenant must do to make good at the end of a commercial lease and where a retail lease dispute goes first, read against the Retail Leases Act 2003 (Vic) version 027, sections 81 and 87.
+
 ## 2026-10-20: Site accuracy and health; four pages verified, all correct
 
 Melbourne date Tuesday 20 October 2026. Not the first run of the month, so no structural audit. The ledger gained
