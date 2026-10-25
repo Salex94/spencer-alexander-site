@@ -13,6 +13,34 @@ Newest entries first.
 
 ---
 
+## 2026-10-26: Weekly article, a template or a lawyer for your terms and conditions, a Commercial Law hire guide
+
+New article insight-terms-and-conditions-template-or-lawyer.html, published Monday 26 October 2026 Melbourne
+time. Rotation: Commercial Law was due, its newest article 5 Oct against Wills and Estates 12 Oct and Family
+Law 19 Oct. Alternation: the clone was unshallowed and d4186ce, which `git show --name-status` shows adding
+insight-enforcing-property-orders.html, carries `Article type: ordinary`, so a hire guide was due, matching
+the backlog marker. Topic: backlog item 16, the recommendation. It overlaps the terms of trade section of
+insight-contracts-for-business.html, so it stays on the engagement question and goes further on the
+consumer guarantees, warranties against defects, the PPSA consequences of an unregistered retention of
+title and the unfair terms tests, and links that article.
+
+Read in the authorised versions that run, through api.prod.legislation.gov.au: Competition and Consumer
+Act 2010 (Cth) compilation 167, C2026C00405, current with no unincorporated amendments, Schedule 2 sections
+3, 23, 24, 25, 27, 29(1)(m), 54, 60, 64, 64A and 102; Competition and Consumer Regulations 2010 (Cth)
+compilation 100, F2026C00856, current, regulation 90; Personal Property Securities Act 2009 (Cth)
+compilation 22, C2024C00719, current, sections 12, 20, 21 and 267. Price quoted exactly as fees.html:
+terms of trade from $1,815 including GST, with its scope and exclusions. No consumer threshold figure, no
+penalty figure, no registration timing rule, no case names. A note for later runs: the API's document
+download needs the version key, `documents(titleId=...,start=...,retrospectiveStart=...,rectificationVersionNumber=0,type='Primary',uniqueTypeNumber=0,volumeNumber=N,format='Word')`;
+the registerId form returns 404. PIL is broken in this environment, so the WebP was written with ImageMagick
+at the same quality.
+
+Photograph: none of the eight spares suited a commercial piece, so Unsplash photo-1517842645767-c639042777db,
+a fountain pen on an open notebook beside reading glasses, was downloaded, inspected and committed with
+its WebP. The spare pool is unchanged at eight, of which five are usable and none is a commercial image.
+
+---
+
 ## 2026-10-23: Demand scan, one FAQ entry added to faq.html, on what a tenant must do to make good at the end of a commercial lease and where a retail lease dispute goes first, read against the Retail Leases Act 2003 (Vic) version 027, sections 81 and 87.
 
 ## 2026-10-20: Site accuracy and health; four pages verified, all correct
