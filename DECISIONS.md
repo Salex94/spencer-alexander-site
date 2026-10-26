@@ -13,6 +13,42 @@ Newest entries first.
 
 ---
 
+## 2026-10-27: Site accuracy and health; four pages verified, one sentence corrected
+
+Melbourne date Tuesday 27 October 2026. Not the first run of the month, so no structural audit. The ledger gained
+insight-terms-and-conditions-template-or-lawyer.html, verified on its publication on 26 Oct 2026, giving 49 legal pages;
+49 divided by 13 and rounded up is 4, the four oldest articles among those last verified on 26 Sep 2026:
+
+- insight-parenting-arrangements.html: correct. Family Law Act 1975 (Cth) compilation 101, C2025C00341, still current
+  with no unincorporated amendments, sections 60CA, 60CC, 60CD, 60CE, 60I(7) to (9), 61C, 61D(3), 61DAA, 61DAB, 63C,
+  65C, 65DAAA and 65DAB, with 61DA and 65DAA no longer in the Act; Family Law Amendment Act 2023 (Cth), C2023A00087,
+  Schedule 1 items 16 and 24, and the compilation's endnotes giving Schedule 1 commencement as 6 May 2024.
+- insight-enduring-powers-of-attorney.html: one correction. Powers of Attorney Act 2014 (Vic) version 007, still the
+  latest, sections 21, 22, 28, 30, 31, 35, 36, 39, 42, 44 to 46, 48, 50, 55, 63, 64, 70, 77, 116 and 120; Powers of
+  Attorney Regulations 2025 (Vic) version 001, the witness certificate in the enduring power form; Medical Treatment
+  Planning and Decisions Act 2016 (Vic) version 012, sections 6, 12 and 26; Guardianship and Administration Act 2019
+  (Vic) version 010, sections 22, 23 and 30. Section 35(2)(c) and the prescribed certificate exclude "an attorney under
+  the power of attorney" and say nothing of an alternative attorney, so the flat statement that an alternative attorney
+  cannot witness was not supported by the text read.
+  Old: "Neither witness can be an attorney or alternative attorney named in the document, a relative of yours, a
+  relative of any attorney, or your care worker or accommodation provider."
+  New: "Neither witness can be an attorney named in the document, a relative of yours, a relative of any attorney, or
+  your care worker or accommodation provider, and it is safest not to ask an alternative attorney to witness either."
+  dateModified, article:modified_time, the updated date, the currency line and the sitemap lastmod moved to 27 Oct 2026.
+- insight-executor-duties.html: correct. Administration and Probate Act 1958 (Vic) version 130, still the latest,
+  sections 13, 15, 16, 18, 39, 65, 65A to 65E, 83, 99, 99A and 106(2), which confines 65B to 65D to wills executed on or
+  after 1 November 2017.
+- insight-de-facto-separation.html: correct. Family Law Act 1975 (Cth) compilation 101, sections 4AA, 44(5), (5A) and
+  (6), 90SB, 90SF and 90SM, including the family violence and companion animal provisions; Administration and Probate
+  Act 1958 (Vic) version 130, section 3 definitions of domestic partner and unregistered domestic partner, 70B and 90;
+  Superannuation Industry (Supervision) Act 1993 (Cth) compilation 131, C2026C00361, current, section 10 spouse.
+
+For Spencer, not changed: the attorney article's statement that VCAT "appoints thousands of administrators each year"
+rests on no primary source read this run. Fleet check: the Front desk and the Document desk have been switched off since
+22 Oct 2026 and did not run on 26 Oct; every other routine present ran as scheduled and no retired routine is enabled.
+
+---
+
 ## 2026-10-26: Weekly article, a template or a lawyer for your terms and conditions, a Commercial Law hire guide
 
 New article insight-terms-and-conditions-template-or-lawyer.html, published Monday 26 October 2026 Melbourne
