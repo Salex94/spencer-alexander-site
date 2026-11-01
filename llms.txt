@@ -1,6 +1,6 @@
 # Spencer Alexander Lawyers
 
-Last updated: 27 October 2026.
+Last updated: 2 November 2026.
 
 > Spencer Alexander Lawyers is a Box Hill, Melbourne law firm practising Family Law, Wills and Estates and Commercial Law for individuals, families and businesses across Victoria, with the principal overseeing every matter. Clients speak directly with a lawyer from the first call, which is free, and are told the fixed fee, or given a written estimate of the total costs, before substantive work begins. Office: Suite 10, 1 Main Street, Box Hill VIC 3128, a short walk from Box Hill station. The firm acts for clients from Box Hill, Blackburn, Doncaster, Burwood, Balwyn, Surrey Hills, Mont Albert, Ringwood and across Melbourne's east, and for clients across Victoria by phone or video. Open Monday to Friday, 8am to 6pm, with after hours contact for urgent matters. Phone 03 9125 8355, or +61 3 9125 8355 from outside Australia. Email contact@spenceralexander.com.au.
 
@@ -37,6 +37,7 @@ This file summarises the firm and lists its published legal guidance. All articl
 
 ## Wills & Estates articles
 
+- [What can beneficiaries do when an executor will not distribute the estate?](https://www.spenceralexander.com.au/insight-executor-not-distributing-estate.html): Published 2 November 2026. What a beneficiary in Victoria can do when an executor will not distribute the estate or explain the delay: the executor's year and what it does and does not mean, the legitimate reasons for waiting, including the six month family provision period, what a beneficiary can ask to see, how to ask, the court's power to require an inventory and account, calling on an executor who has not applied for probate within six weeks, and removal of an executor who refuses or is unfit to act.
 - [Should a trustee company or a lawyer prepare your will?](https://www.spenceralexander.com.au/insight-trustee-company-or-lawyer-will.html): Published 12 October 2026. Whether to have a trustee company or a lawyer prepare your will in Victoria: who acts as executor, how a trustee company, a family executor and a lawyer are each paid from the estate, and what to check before naming a trustee company.
 - [Misuse of a power of attorney in Victoria: what can you do?](https://www.spenceralexander.com.au/insight-power-of-attorney-misuse.html): Published 21 September 2026. What to do when an attorney is misusing a power of attorney in Victoria: the duties an attorney owes, the warning signs, VCAT review, revocation and compensation, and when misuse is a crime.
 - [Fraudulent calumny in Victoria: can a lie invalidate a will?](https://www.spenceralexander.com.au/insight-fraudulent-calumny-victoria.html): Published 24 August 2026. Fraudulent calumny is emerging as a ground to challenge a will in Victoria, where deliberate lies shaped what the will maker decided. What it means and how to respond.

@@ -13,6 +13,28 @@ Newest entries first.
 
 ---
 
+## 2026-11-02: Weekly article, when an executor will not distribute the estate, an ordinary Wills and Estates article
+
+New article insight-executor-not-distributing-estate.html, published Monday 2 November 2026 Melbourne time.
+Rotation: Wills and Estates was due, its newest article 12 Oct against Family Law 19 Oct and Commercial Law
+26 Oct. Alternation: the clone was unshallowed and 9477e7d, which `git show --name-status` shows adding
+insight-terms-and-conditions-template-or-lawyer.html, carries `Article type: hire guide`, so an ordinary
+article was due, matching the backlog marker. Topic: backlog item 2, the recommendation, written from the
+beneficiary's side; insight-executor-duties.html is written for the executor and faq.html has only a short
+answer, both of which the new article goes well beyond.
+
+Read in the authorised version that run: Administration and Probate Act 1958 (Vic) version 130, incorporating
+amendments as at 22 October 2025 and still the latest, sections 15, 28, 34, 48, 49, 99 and 99A. No case names,
+no court fee, no price, and no statement that a beneficiary has a statutory right to a copy of the will before
+probate. The hub's FAQPage dateModified moved with its sitemap lastmod, as the gate requires.
+
+Photograph: none of the eight spares suited the piece, so Unsplash photo-1506784983877-45594efa4cbe, an open
+monthly planner beside a cup of black coffee, was downloaded, inspected and committed, with its WebP written
+by ImageMagick because PIL is still broken in this environment. The spare pool is unchanged at eight, of which
+five are usable and none suits a wills or commercial piece well.
+
+---
+
 ## 2026-10-27: Site accuracy and health; four pages verified, one sentence corrected
 
 Melbourne date Tuesday 27 October 2026. Not the first run of the month, so no structural audit. The ledger gained
