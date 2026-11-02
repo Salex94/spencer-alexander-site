@@ -13,6 +13,47 @@ Newest entries first.
 
 ---
 
+## 2026-11-03: Site accuracy and health; four pages verified, all correct, monthly structural audit clean
+
+Melbourne date Tuesday 3 November 2026, the first run of the month, so the structural audit ran as well. The ledger
+gained insight-executor-not-distributing-estate.html, verified on its publication on 2 Nov 2026, giving 50 legal pages;
+50 divided by 13 and rounded up is 4, the four oldest articles among those last verified on 26 Sep 2026:
+
+- insight-retail-leases-victoria.html: correct. Retail Leases Act 2003 (Vic) version 027, still the latest, sections 4,
+  12, 15, 17, 18, 21, 28, 35, 39, 41, 46, 47, 50, 52, 60, 61, 62, 64, 87 and 94, including the commercial and industrial
+  property tax ban in section 50 and the urgent repair reimbursement in section 52(4) and (5).
+- insight-superannuation-death-benefits.html: correct. Superannuation Industry (Supervision) Act 1993 (Cth) compilation
+  131, C2026C00361, current with no unincorporated amendments, sections 10, 59(1A), 68AAA and 68AAB; the only later
+  amendment, from 1 December 2026, is the Treasury Laws Amendment (Financial Reporting System Reform) Act 2026, which
+  does not touch death benefits. Superannuation Industry (Supervision) Regulations 1994 (Cth) compilation 159,
+  F2026C00541, regulation 6.17A, including the three year lapse in 6.17A(7); Income Tax Assessment Act 1997 (Cth)
+  compilation 268, C2026C00471, sections 302-140, 302-145, 302-195 and 302-200; Income Tax Assessment Act 1936 (Cth)
+  compilation 193, C2026C00454, section 251S(1)(c), which excludes a deceased estate from the Medicare levy.
+- insight-contesting-a-will.html: correct. Administration and Probate Act 1958 (Vic) version 130, still the latest,
+  sections 90, 90A, 91, 91A, 93, 94, 97, 99 and 99A.
+- insight-intervention-orders.html: correct as the law stands. Family Violence Protection Act 2008 (Vic) version 070,
+  in force from 30 Sep 2026, sections 5, 24, 26, 31, 45, 46, 109 and 123; Firearms Act 1996 (Vic) version 107, section
+  3 prohibited person. The Justice Legislation Amendment (Family Violence, Coercive Control, Good Character, Risk
+  Assessment and Other Matters) Act 2026 (Vic), No. 41 of 2026, read as made: only its electronic signature sections
+  35 and 36 have commenced. Its Part 2, letting the court extend or vary an order of its own motion, commences by
+  7 February 2028 at the latest, its Part 3, on extending final orders, by 9 August 2027, and its Part 6, a coercive
+  control offence in the Crimes Act 1958, by 1 March 2028. Nothing on the page is wrong today; the article routine or
+  this routine should update it as each part commences.
+
+Structural audit: the gate's 103 checks pass and the image check passes; titles and descriptions unique; one h1 per
+page with no heading jumps; every image carries alt text; every indexable page is in the sitemap and every article in
+the feed and llms.txt; robots.txt stays permissive; no orphan pages beyond 404, thank-you and the template. The 2 Nov
+article had no in body links from its relatives, so three neutral cross links were added by wrapping existing words:
+"Beneficiaries can complain" in insight-executor-duties.html, "distributing exactly as the will directs" in
+insight-probate-victoria.html, and "account for the estate" in the faq.html answer on executors who will not
+distribute, where the visible text still equals the FAQPage schema. Dates and lastmod unchanged on all three,
+navigation only edits as in earlier audits. No legal claim changed.
+
+Fleet check: the Front desk and the Document desk have been switched off since 22 Oct 2026 and did not run on 2 Nov;
+every other routine present ran as scheduled and no retired routine is enabled.
+
+---
+
 ## 2026-11-02: Weekly article, when an executor will not distribute the estate, an ordinary Wills and Estates article
 
 New article insight-executor-not-distributing-estate.html, published Monday 2 November 2026 Melbourne time.
