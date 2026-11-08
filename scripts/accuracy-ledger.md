@@ -7,56 +7,61 @@ Dates are Melbourne dates.
 
 | Page | Last verified | Outcome |
 |---|---|---|
-| insight-advance-care-directives-victoria.html | 2026-10-06 | Verified, no change needed |
-| insight-agreed-property-settlement.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
-| insight-binding-financial-agreements.html | 2026-09-29 | Verified, no change needed |
-| insight-business-partner-disputes-victoria.html | 2026-10-05 | Published 5 Oct 2026 after verification by the publishing routine |
-| insight-business-structures.html | 2026-10-20 | Verified, no change needed |
-| insight-buying-a-business-victoria.html | 2026-10-06 | Verified, no change needed |
-| insight-child-support-australia.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| insight-contesting-a-will.html | 2026-11-03 | Verified, no change needed |
-| insight-contracts-for-business.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| insight-de-facto-separation.html | 2026-10-27 | Verified, no change needed |
-| insight-debt-recovery-victoria.html | 2026-09-29 | Verified, no change needed |
-| insight-directors-duties-victoria.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| insight-divorce-in-victoria.html | 2026-10-20 | Verified, no change needed |
-| insight-dying-without-a-will.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| insight-enduring-powers-of-attorney.html | 2026-10-27 | Verified; witness sentence corrected, an alternative attorney is not expressly excluded by s 35 |
-| insight-enforcing-property-orders.html | 2026-10-19 | Published 19 Oct 2026 after verification by the publishing routine |
-| insight-executor-not-distributing-estate.html | 2026-11-02 | Published 2 Nov 2026 after verification by the publishing routine |
-| insight-executor-duties.html | 2026-10-27 | Verified, no change needed |
-| insight-fraudulent-calumny-victoria.html | 2026-10-06 | Verified, no change needed; the 2026 judgment itself could not be read, reporting confirms it and finds no trial decision yet |
-| insight-grandparents-rights-victoria.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| insight-guardianship-administration-orders.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| insight-intervention-orders.html | 2026-11-03 | Verified, no change needed; Act 41 of 2026 amendments to intervention orders and the coercive control offence not yet in force |
-| insight-making-a-valid-will.html | 2026-10-20 | Verified, no change needed |
-| insight-parenting-arrangements.html | 2026-10-27 | Verified, no change needed |
-| insight-power-of-attorney-misuse.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| insight-probate-victoria.html | 2026-09-29 | Verified, no change needed |
-| insight-property-after-separation.html | 2026-09-26 | Seeded from the 26 Sep 2026 corrections; stamp duty sentence corrected 2026-09-29 against Duties Act 2000 (Vic) s 44, full re-verification still due |
-| insight-property-reforms-2025.html | 2026-10-20 | Verified, no change needed |
-| insight-retail-leases-victoria.html | 2026-11-03 | Verified, no change needed |
-| insight-safe-harbour-small-business-restructuring.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| insight-shareholder-agreements.html | 2026-10-06 | Verified, no change needed |
-| insight-spousal-maintenance-victoria.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| insight-superannuation-death-benefits.html | 2026-11-03 | Verified, no change needed |
-| insight-testamentary-trusts.html | 2026-09-29 | Verified, no change needed |
-| insight-terms-and-conditions-template-or-lawyer.html | 2026-10-26 | Published 26 Oct 2026 after verification by the publishing routine |
-| insight-trustee-company-or-lawyer-will.html | 2026-10-12 | Published 12 Oct 2026 after verification by the publishing routine |
-| resource-executor-first-steps.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| resource-separation-first-30-days.html | 2026-10-13 | Verified, no change needed |
-| service-buying-or-selling-a-business.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
-| service-commercial-leases.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
-| service-contesting-a-will.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
-| service-divorce.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
-| service-parenting-arrangements.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
-| service-probate.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
-| service-property-settlement.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
-| service-wills-and-estate-planning.html | 2026-09-28 | Published 28 Sep 2026 after verification by the publishing routine |
-| faq.html | 2026-09-26 | Seeded: corrected and verified in the reviews of 24 and 26 Sep 2026 |
-| family-law.html | 2026-10-13 | Verified, no change needed |
-| commercial-law.html | 2026-10-13 | Verified, no change needed |
-| wills-and-estates.html | 2026-10-13 | Verified, no change needed |
+| insight-advance-care-directives-victoria.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-agreed-property-settlement.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-binding-financial-agreements.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-business-partner-disputes-victoria.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-business-structures.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-buying-a-business-victoria.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-child-support-australia.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-contesting-a-will.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-contracts-for-business.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-de-facto-separation.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-debt-recovery-victoria.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-directors-duties-victoria.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-divorce-in-victoria.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-dying-without-a-will.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-enduring-powers-of-attorney.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-enforcing-property-orders.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-executor-duties.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-executor-not-distributing-estate.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-fraudulent-calumny-victoria.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-grandparents-rights-victoria.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-guardianship-administration-orders.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-intervention-orders.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-making-a-valid-will.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-parenting-arrangements.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-parenting-consent-orders.html | 2026-11-09 | Published 9 Nov 2026 after verification by the publishing routine, and verified again by the final audit of the site audit the same day |
+| insight-power-of-attorney-misuse.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-probate-victoria.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-property-after-separation.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-property-reforms-2025.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-retail-leases-victoria.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-safe-harbour-small-business-restructuring.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-shareholder-agreements.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-spousal-maintenance-victoria.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-superannuation-death-benefits.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-terms-and-conditions-template-or-lawyer.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-testamentary-trusts.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| insight-trustee-company-or-lawyer-will.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| resource-executor-first-steps.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| resource-separation-first-30-days.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| service-binding-financial-agreements.html | 2026-11-09 | Published 9 Nov 2026 in the site audit, verified by its editor and again by the final audit |
+| service-buying-or-selling-a-business.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| service-commercial-leases.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| service-contesting-a-will.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| service-debt-recovery.html | 2026-11-09 | Published 9 Nov 2026 in the site audit, verified by its editor and again by the final audit |
+| service-divorce.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| service-parenting-arrangements.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| service-powers-of-attorney.html | 2026-11-09 | Published 9 Nov 2026 in the site audit, verified by its editor and again by the final audit |
+| service-probate.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| service-property-settlement.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| service-shareholder-agreements.html | 2026-11-09 | Published 9 Nov 2026 in the site audit, verified by its editor and again by the final audit |
+| service-wills-and-estate-planning.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| commercial-law.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| family-law.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| faq.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
+| wills-and-estates.html | 2026-11-09 | Corrected or confirmed in the site audit of 9 Nov 2026 and its final audit, every changed statement read in the current authorised version |
 
 ## Runs
 
@@ -66,3 +71,4 @@ Dates are Melbourne dates.
 - 2026-10-20: enforcing property orders article added; 48 legal pages, so 4 a week, 4 verified this run (2025 property reforms, making a valid will, divorce, business structures), the four oldest articles last verified on 26 Sep 2026, all correct, no corrections.
 - 2026-10-27: terms and conditions article added; 49 legal pages, so 4 a week, 4 verified this run (parenting arrangements, enduring powers of attorney, executor duties, de facto separation), the four oldest articles last verified on 26 Sep 2026; one sentence corrected on the enduring powers of attorney article.
 - 2026-11-03: executor not distributing article added; 50 legal pages, so 4 a week, 4 verified this run (retail leases, superannuation death benefits, contesting a will, intervention orders), the four oldest articles last verified on 26 Sep 2026, all correct, no corrections; monthly structural audit clean.
+- 2026-11-09: site audit implemented; 55 legal pages; every legal page edited or confirmed by an editor that read its provisions in the current authorised versions, then checked again by a final audit of four legal reviewers, each finding tested by two verifiers, against the live site; four service pages and the parenting consent orders article added; Sources lines now name an Act alone past eight provisions, Spencer's rule of 26 Sep 2026.

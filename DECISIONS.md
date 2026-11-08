@@ -13,6 +13,53 @@ Newest entries first.
 
 ---
 
+## 2026-11-09: The audit's changes, finally audited and published
+
+Spencer read the audit and asked for a final audit, with every change implemented if it made the key aspects of the
+site better. Eleven editors, each in its own worktree,
+applied the verified corrections and content findings page by page, reading every provision they relied on in the
+current authorised version that day. A central pass changed the shared pages, the template, the chrome and the gate.
+Then a final audit of nine independent reviewers, four on the law and one each on search and answer engines,
+conversion, design, voice and the FAQ, compared the branch with the live site, and every finding went to one or two
+verifiers who tried to refute it. Each reviewer found the branch better than live in its area; every finding that
+survived was fixed before the merge to main. CLAUDE.md, "Audit round of 9 Nov 2026", carries the conventions.
+
+- Prices: probate $1,980 and letters of administration $2,178, each including the fee for publishing the notice
+  of intention to apply; company set up $660 with ASIC's fee at cost; consent orders for property and parenting
+  together $3,850; advice on a financial agreement the other party drafted from $1,100. The audit proposed the
+  probate notice fee at cost, but ACL s 48(7)(a), read in Competition and Consumer Act compilation 167, counts a
+  known charge payable to the firm in the single price for a consumer service, so it stays inside the fee. If
+  Spencer wants the $38 on top, the single price would have to rise to include it.
+- Law: the intervention order pages and FAQ are date neutral for stage three of Act No. 1 of 2026 on 10 November.
+  No page says the fee for obtaining a grant comes from the estate, under rule 9.01, and every correction in
+  playbooks/audit-2026-11-09/legal-corrections.md that survived its checks is on the site. The final audit
+  added the de facto gateway's applicant limb, the Children's Court, the 21 day leave route for an absent
+  respondent, the tenant's notice under Retail Leases Act s 64(5), the two missing limbs of the bankruptcy notice
+  test, the executor's compensation claim under Powers of Attorney Act s 78(c), and a hedged account of the
+  testamentary trust exclusion in the proposed trust minimum tax, whose bill text could not be read.
+- Pages: four new service pages, the cap raised to twelve; a referrals page for advisers; a subscriber thank-you
+  page; the answer before the photograph in every article; the Quick exit as a strip on phones; "Published by"
+  bylines; the settled call wording everywhere; the rating line without "by clients"; the AML/CTF identity checks
+  section on the privacy page, matching the shareholder agreements page.
+- Sources lines: Spencer's condition of 26 Sep 2026, that an Act relied on for more than eight provisions is named
+  alone, had never reached the article playbook, and twelve live lines had drifted past it. All 26 such entries now
+  name the Act alone, and the rule is in CLAUDE.md, both playbooks, the template and a new gate check.
+- Gate: fragment links must land on a real id; the currency phrase check is case insensitive; Sources lines past
+  eight provisions fail; more core pages are checked for dashes and specialist claims. 106 checks.
+- Left for Spencer, none of which blocked publishing:
+  - Confirm replies to enquiries follow the safe contact answer, as the contact and thank-you pages now say.
+  - Confirm the firm's AML/CTF programme and AUSTRAC enrolment match what the privacy and shareholder agreements
+    pages now say about identity checks before company work.
+  - Confirm each of the six quoted Google reviewers was a client, or the reviews heading changes to "What people
+    say on Google"; and name the countries where the firm's cloud systems hold data, for the privacy policy.
+  - Decide: a fixed price for an advance care directive; whether the consent orders fee applies where a
+    grandparent is a party; whether a verification that changes nothing restamps the currency line; square
+    brackets in case citations; whether to read each article on the day so the byline can return to "By".
+  - Recommendation, which changes how desktop pages look: the Quick exit as a strip at every width, because the
+    floating button can still pass over a call button while a desktop page scrolls, as it did on live.
+  - Off the site: the Business Profile category and review requests, Search Console and Bing indexing of the four
+    new service pages, directory listings, and a way to measure where enquiries come from.
+
 ## 2026-11-09: Weekly article, parenting consent orders, a Family Law hire guide
 
 New article insight-parenting-consent-orders.html, published Monday 9 November 2026 Melbourne time.

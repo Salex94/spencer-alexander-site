@@ -844,9 +844,8 @@ and any offer of a translator or interpreter; a statement of law about translati
 
 ## Audit round of 9 Nov 2026, approved by Spencer and published the same day
 
-Spencer asked for a full audit of the site and a fee survey, saw the recommendations, and said: "Do a final
-audit and ensure that all the changes make all the key aspects of the site better, if they do, then implement
-all the changes onto the site." The record is `playbooks/audit-2026-11-09/`. What came out of it and is settled:
+Spencer asked for a full audit of the site and a fee survey, saw the recommendations, and asked for a final
+audit, with every change implemented if it made the key aspects of the site better. The record is `playbooks/audit-2026-11-09/`. What came out of it and is settled:
 
 - **Prices, Spencer's approval of 9 Nov 2026.** A probate application for a straightforward estate is $1,980
   including GST, and letters of administration where there is no will $2,178, each including the fee for
