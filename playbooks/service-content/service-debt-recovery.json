@@ -11,7 +11,7 @@
  "lead": "From our Box Hill office, our lawyers recover unpaid debts for businesses, by letter of demand, court proceedings or statutory demand, and act for companies served with a statutory demand. A company served with one has 21 days to pay, secure or compromise the debt or apply to set it aside, so call us the day it arrives. A letter of demand is a fixed fee of $495 including GST.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
-  "Letters of demand a fixed fee of $495",
+  "<a href=\"/fees#fee-letter-of-demand\">Letter of demand $495, fixed fee</a>",
   "Suite 10, 1 Main Street, Box Hill"
  ],
  "urgent": {
@@ -42,7 +42,7 @@
    "items": [
     {
      "t": "Letters of demand",
-     "p": "A letter on our letterhead to the debtor, setting out what is owed, any interest your contract allows and a deadline to pay. For an undisputed debt it often resolves the matter, or opens the way to a payment plan that we can put in writing for you."
+     "p": "We send the debtor a letter on our letterhead setting out what is owed, any interest your contract allows and a deadline to pay. For an undisputed debt it often resolves the matter, or opens the way to a payment plan that we can put in writing for you."
     },
     {
      "t": "Court proceedings",
@@ -54,7 +54,7 @@
     },
     {
      "t": "When your company is served",
-     "p": "We check the demand and the debt the day it arrives, and advise whether to pay, secure or compromise it or apply to set it aside. The court can set a demand aside, or reduce it, where there is a genuine dispute about the existence or amount of the debt or the company has an offsetting claim, and can set it aside where a defect in it would otherwise cause substantial injustice or there is some other reason it should be set aside."
+     "p": "When a demand arrives, we check it and the debt it claims, and advise whether to pay, secure or compromise the debt or apply to set the demand aside. The court can set a demand aside, or reduce it, where there is a genuine dispute about the existence or amount of the debt or the company has an offsetting claim, and can set it aside where a defect in it would otherwise cause substantial injustice or there is some other reason it should be set aside."
     }
    ]
   },
@@ -84,7 +84,7 @@
    },
    {
     "t": "A statutory demand or a court claim",
-    "d": "Against a company that owes an undisputed debt of at least $4,000, we can serve a statutory demand, and otherwise, or against an individual, we bring a claim in the court that fits the amount."
+    "d": "Against a company that owes an undisputed debt of at least $4,000, we can serve a statutory demand. Otherwise, including against an individual, we bring a claim in the court that fits the amount."
    },
    {
     "t": "Judgment and enforcement",
@@ -94,7 +94,7 @@
  },
  "fee": {
   "t": "Fees for debt recovery.",
-  "p": "A <a href=\"/fees#fee-letter-of-demand\">letter of demand</a> to one debtor for an undisputed debt is a fixed fee of $495 including GST, setting out what is owed, any interest your contract allows and a deadline to pay. Statutory demands, court proceedings, applications to set a demand aside and enforcement are not priced on our fees page, so each is estimated in writing before substantive work begins, with the cost weighed against what you stand to recover. <a href=\"/fees#fee-terms-of-trade\">Terms of trade</a>, which decide much of what you can recover, are from $1,815 including GST."
+  "p": "Our fixed fee for a <a href=\"/fees#fee-letter-of-demand\">letter of demand</a> to one debtor for an undisputed debt is $495 including GST. The letter sets out what is owed, any interest your contract allows and a deadline to pay. Statutory demands, court proceedings, applications to set a demand aside and enforcement are not priced on our fees page, so each is estimated in writing before substantive work begins, with the cost weighed against what you stand to recover. <a href=\"/fees#fee-terms-of-trade\">Terms of trade</a>, which decide much of what you can recover, are from $1,815 including GST."
  },
  "related": [
   {
