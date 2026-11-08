@@ -13,6 +13,32 @@ Newest entries first.
 
 ---
 
+## 2026-11-09: Weekly article, parenting consent orders, a Family Law hire guide
+
+New article insight-parenting-consent-orders.html, published Monday 9 November 2026 Melbourne time.
+Rotation: Family Law was due, its newest article 19 Oct against Commercial Law 26 Oct and Wills and Estates
+2 Nov. Alternation: the clone was unshallowed and 9ad2440, which `git show --name-status` shows adding
+insight-executor-not-distributing-estate.html, carries `Article type: ordinary`, so a hire guide was due,
+matching the backlog marker. Topic: backlog item 2, the recommendation, kept on the engagement question
+because insight-parenting-arrangements.html and service-parenting-arrangements.html already cover the
+principles.
+
+Read in the authorised versions that run, through api.prod.legislation.gov.au: Family Law Act 1975 (Cth)
+compilation 101, C2025C00341, current with no unincorporated amendments, sections 4 definition of major
+long-term issues, 60CA, 60CC including (4), 60D, 60I(7) to (9), 61D(3), 61DAA, 61DAB, 63B and its note, 63C(1)
+and (1A), 63D, 63DA, 64B(2) and (4A), 64D, 65DA, 65DAAA, 65DAB and 65H; Federal Circuit and Family Court of
+Australia (Family Law) Rules 2021 (Cth) compilation 4, F2025C00594, current, rules 2.04, 10.04, 10.05, 10.07 and
+10.08, the last being the 90 day lapse of the respondent's consent to an unfiled Application for Consent Orders.
+Prices quoted exactly as fees.html: consent orders for agreed parenting arrangements $3,025 and a parenting
+plan from $1,452, both including GST, with their scope. No court fee figure, no case names, nothing from the
+conduct rules, which were not read.
+
+Photograph: the spare 1502086223501, children playing in a misty avenue of trees, with its WebP written by
+ImageMagick because PIL is still broken. Seven spares remain, of which four are usable: two family scenes,
+a library and Flinders Street; none suits a commercial piece.
+
+---
+
 ## 2026-11-03: Site accuracy and health; four pages verified, all correct, monthly structural audit clean
 
 Melbourne date Tuesday 3 November 2026, the first run of the month, so the structural audit ran as well. The ledger
