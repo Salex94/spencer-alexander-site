@@ -595,6 +595,22 @@ def main():
             ai_bad.append("%s mentions %r" % (f, m.group(0)))
     check("no mention of AI anywhere on the site", not ai_bad, "; ".join(ai_bad[:4]))
 
+    # Firm voice (Spencer, 8 Sep 2026, confirmed 9 Nov 2026: "the wording on the website is to refer
+    # to lawyers, not to myself"). The site speaks of the firm's lawyers and never calls the firm a
+    # sole practice or Spencer its only lawyer. "One lawyer" is not matched, because the articles use
+    # it correctly: one lawyer cannot advise both parties to an agreement.
+    voice_bad = []
+    VOICE_RX = re.compile(r"(?i)\b(sole (practitioner|practice|lawyer|solicitor)|only (lawyer|solicitor)|single lawyer|lone lawyer|just one lawyer|one[- ]lawyer (firm|practice)|one[- ](person|man) (firm|practice)|(i|he) handles? every matter|handling every matter)\b")
+    for f in sorted(glob.glob("*.html")) + ["llms.txt", "feed.xml"] + glob.glob("assets/*.vcf"):
+        if not os.path.exists(f) or f.startswith("_"):
+            continue
+        txt = re.sub(r"<[^>]+>", " ", read(f)) if f.endswith(".html") else read(f)
+        txt += " " + " ".join(re.findall(r'content="([^"]*)"', read(f)))
+        m = VOICE_RX.search(txt)
+        if m:
+            voice_bad.append("%s says %r" % (f, m.group(0)))
+    check("firm voice: never a sole practice or an only lawyer (site-wide)", not voice_bad, "; ".join(voice_bad[:4]))
+
     # Each price on fees.html shows the total including GST and, beneath it and less prominent, the
     # amount before GST (Spencer, 28 Sep 2026); the two must agree, so a price change moves both.
     from decimal import Decimal, ROUND_HALF_UP

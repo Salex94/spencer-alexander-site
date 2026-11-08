@@ -516,6 +516,15 @@ conventions came out of that round.
   caution about "our lawyers": the owner has confirmed the firm has
   lawyers, so the plural is the accurate form. On phones the text block
   comes before the portrait so the promise is on the first screen.
+  Confirmed a third time on 9 Nov 2026, after a full site audit flagged the
+  plural against the description of the firm in AGENTS.md: "No, the wording
+  on the website is to refer to lawyers, not to myself, this is important
+  to always remember." So no audit, routine or session flags "lawyers",
+  "our lawyers", "senior lawyers" or the h1 as misleading, and none proposes
+  wording that refers to Spencer alone as the firm's lawyer; AGENTS.md
+  governs how agents work for the firm, and this rule governs the website's
+  wording. The gate's "firm voice" check fails any page that calls the firm
+  a sole practice or Spencer its only lawyer.
   Fixed forms that carry the voice (9 Sep 2026): the rail card bullet on
   every hub, article and resource page is "Every matter overseen by the
   principal", never a promise of access to him; the proof bar names its

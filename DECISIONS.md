@@ -13,6 +13,25 @@ Newest entries first.
 
 ---
 
+## 2026-11-09: The website refers to lawyers, a third confirmation, now checked by the gate
+
+Melbourne date Monday 9 November 2026. Spencer asked for a full site audit with recommendations before
+anything changes. Early in that audit the reviewers were told that AGENTS.md describes Spencer as the
+firm's only lawyer, and the first progress note raised the plural wording on the home page quote, About
+and five service pages as a possible advertising risk. Spencer's answer: "No, the wording on the website
+is to refer to lawyers, not to myself, this is important to always remember."
+
+- This is the third time he has given the instruction, after the two of 8 Sep 2026 recorded under
+  "Firm voice" in CLAUDE.md, so that rule now records the confirmation and says expressly that no
+  audit, routine or session flags the plural or proposes wording that refers to Spencer alone.
+- A new gate check, "firm voice: never a sole practice or an only lawyer (site-wide)", fails any page,
+  llms.txt, the feed or the contact card that calls the firm a sole practice or Spencer its sole or
+  only lawyer. It does not match "one lawyer", which the articles use correctly in explaining that one
+  lawyer cannot advise both parties to an agreement.
+- No page changed; the audit's recommendations go to Spencer first, as he asked.
+
+---
+
 ## 2026-11-03: Site accuracy and health; four pages verified, all correct, monthly structural audit clean
 
 Melbourne date Tuesday 3 November 2026, the first run of the month, so the structural audit ran as well. The ledger
