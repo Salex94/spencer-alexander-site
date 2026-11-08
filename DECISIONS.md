@@ -13,6 +13,33 @@ Newest entries first.
 
 ---
 
+## 2026-11-09: Full site audit and fee survey; everything awaits Spencer's approval
+
+Spencer asked for a full audit of the site for search, answer engines, design, style, content, legal accuracy,
+conversion and acquisition, and for the fixed fees to be checked against as many Melbourne sites as possible and
+set at about 3.5 to 4 out of 10, just below the market average, with recommendations before anything changes.
+Nothing on the site changed. His report is the private artifact https://claude.ai/artifact/NCGsEe3GCQ5sdYHDvADfjd,
+and the working record is playbooks/audit-2026-11-09/ on branch claude/adoring-pascal-f6r85z.
+
+- Legal: about 60 findings, each re-read by two independent checkers in the authorised legislation; one, a change
+  to the child support appeal deadline, was refuted and must not be applied. Time critical: stage three of Act
+  No. 1 of 2026 commences on 10 November 2026 under its s 2(4), so two faq.html answers and the intervention orders
+  article go stale that day. Rule 9.01 of the probate rules limits what may be paid from an estate for obtaining a
+  grant to its Appendix scale; the probate and trustee company articles, a faq.html answer and llms.txt say the
+  grant fee comes from the estate, and must not, whatever Spencer decides on price.
+- Fees: about 270 published Victorian law firm prices, the first 181 re-read independently. Most of the firm's
+  fees sit at or a little above the target; probate and the legal part of company set up sit below it. Recommended:
+  probate $1,980 with the $38 notice fee at cost, company set up $660 plus ASIC's $636 at cost, two new family fees,
+  hold the rest, cut nothing. Nearly every fee pays for less than the likely hours at $450.
+- Faults that cost enquiries: the Quick exit button covers the call buttons on phones on 17 family pages, the
+  thank-you page's phone number is wine on wine, the brass call button is below contrast on four dark heroes, a
+  missing poster file is requested on every home page load, nine running text links lack underlines, and the
+  gate's currency check is case sensitive and missed "As at August 2026".
+- Off the site: Business Profile category, a review request at the close of every matter, Search Console and Bing
+  indexing, directory listings, and a way to measure where enquiries come from.
+
+---
+
 ## 2026-11-09: The website refers to lawyers, a third confirmation, now checked by the gate
 
 Melbourne date Monday 9 November 2026. Spencer asked for a full site audit with recommendations before
