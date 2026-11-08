@@ -1,5 +1,30 @@
 # Claims register: service-property-settlement, 28 September 2026
 
+## Changes of 9 November 2026
+
+Made from the audit of 9 Nov 2026 that Spencer approved, in playbooks/audit-2026-11-09/. The FAQPage dateModified and
+the currency line move to 9 Nov 2026 and November 2026; the sitemap lastmod is synced by the central pass.
+
+Read today on the Federal Register of Legislation through `api.prod.legislation.gov.au`:
+
+- Family Law Act 1975 (Cth), Compilation No. 101, C2025C00341, compilation date 10 June 2025, still the latest, with
+  no commenced unincorporated amendments: ss 44(3), (4), (5), (6), 71B, 79(2) to (5), 79A(1) and 90G(1).
+- Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth), Compilation No. 4, F2025C00594,
+  rectified version, still the latest: rr 10.04 and 10.06.
+
+| Where | Change | Authority |
+|---|---|---|
+| Lead | "make the settlement binding ..., and run the case in court when agreement is not possible", at 70 words | Practice; the time limits in the lead are unchanged, FLA s 44(3), (5) |
+| Advice block | The 2025 reforms sentence split so the two listed matters read separately | FLA s 79(4)(ca) and (5)(a), the effect of family violence on contributions and on current and future circumstances; s 79(5)(d), material wastage caused intentionally or recklessly |
+| Time limits 2 | The leave sentence split, every condition kept, and a call prompt added | FLA s 44(3), (4)(a) for marriages; s 44(5), (6)(a) for de facto relationships |
+| FAQ 4 | The remedy first, then the duty | FLA s 71B(1), (5) and the note to s 71B(2) on disclosure orders, taking the failure into account and costs; s 79A(1)(a), a miscarriage of justice by suppression of evidence, including failure to disclose |
+| FAQ 1 | "divorce" linked to /service-divorce, words unchanged | Navigation only |
+| Fee note | "Our fixed fee" for consent orders, $3,025; new: consent orders for property and parenting together, $3,850 on the same assumptions as the two separate fees; the binding financial agreement fee "from $3,025 including GST for the person we act for, and the other party needs a lawyer of their own"; new: advice on a binding financial agreement drafted by the other party, with the certificate of independent legal advice, from $1,100; the fee note no longer says advice on an agreement drafted elsewhere is estimated in writing, because it now has a published price | Fee list Spencer approved on 9 Nov 2026 and the central pass's fees.html rows; FLA s 90G(1)(b), (c), each spouse party needs independent legal advice and a signed statement from their own practitioner |
+| Schema offers | An Offer for 3850 | Fee list |
+| Description, og, JSON-LD, hero meta | The $3,025 consent orders fee, linked on the first screen to /fees#fee-consent-orders-for-an-agreed-property-settlement | Fee list |
+| What to have with you | Heading changed to match its eyebrow | Practice |
+| Call to action | "One call tells you plainly whether and how we can help, which deadline applies to you and how an agreement is made binding", replacing "where you stand" | Rule 36 check B5 in the audit |
+
 ## Sources read today
 
 - **Family Law Act 1975 (Cth)**: Compilation No. 101, compilation date 10 June 2025, register ID C2025C00341. Both Word volumes were downloaded from api.prod.legislation.gov.au on 28 Sep 2026. The Register lists it as current and latest, with no unincorporated amendments. The endnotes show s 79 amended by Act No. 118, 2024.
@@ -39,7 +64,8 @@
 These are copied in substance from fees.html as live on 28 Sep 2026:
 
 - Consent orders for an agreed property settlement, $3,025 including GST, with its scope and assumptions.
-- Binding financial agreement from $3,025 per party including GST. It is not called a fixed fee, and it is left out of the schema offers.
+- Binding financial agreement from $3,025 per party including GST, written from 9 Nov 2026 as "for the person we act for". It is not called a fixed fee, and it is left out of the schema offers.
+- From 9 Nov 2026: consent orders for property and parenting together, $3,850 including GST, a single figure and in the schema offers; advice on a binding financial agreement drafted by the other party from $1,100 including GST, not called a fixed fee and left out of the offers.
 - A disputed settlement, negotiation and court proceedings are estimated in writing before substantive work.
 - The court's filing fee is separate, with no figure, no reduced rate and nothing on exemptions.
 

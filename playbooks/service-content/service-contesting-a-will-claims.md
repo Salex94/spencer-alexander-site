@@ -2,6 +2,33 @@
 
 Every legal statement on the page, with the provision it rests on. All texts were read today, 28 September 2026, in the authorised versions on legislation.vic.gov.au, downloaded as the Word files the site links for each version.
 
+## Changes of 9 November 2026
+
+Made from the audit of 9 Nov 2026 that Spencer approved, in playbooks/audit-2026-11-09/. The FAQPage dateModified and
+the currency line move to 9 Nov 2026 and November 2026; the sitemap lastmod is synced by the central pass.
+
+Read today in the authorised versions on legislation.vic.gov.au, each the version marked In force:
+
+- Supreme Court (Administration and Probate) Rules 2023 (Vic), version 002, as at 11 November 2024: Order 8, rr 8.01
+  to 8.08, and r 1.11(2), which keeps r 8.03 outside the general power to extend or abridge time.
+- Administration and Probate Act 1958 (Vic), version 130, amendments as at 22 October 2025: ss 12, 58, 90, 90A, 91,
+  97, 99 and 99A.
+- Wills Act 1997 (Vic), version 036, amendments as at 26 April 2021: s 9.
+
+| Where | Change | Authority |
+|---|---|---|
+| Time limits 2 | R3 of the audit, in its checked final wording: "A caveat expires six months after it is lodged, so a fresh one may be needed", placed between the caveat sentence and the 30 day lapse sentence; then a call prompt | Rules r 8.03(1), "a caveat expires 6 months after the date it is lodged"; r 8.05(1), a fresh caveat may be lodged before or after the expiry of an earlier one; r 8.03(2), (3) unchanged |
+| Lead | The six month limit added: "A family provision claim must generally be made within six months of the grant of probate or administration" | APA s 99(1); "generally" for s 99(2) |
+| Description, og, JSON-LD | The six month limit and costs estimated in writing | APA s 99(1); fees.html "When a fixed fee does not fit" |
+| Who we act for 2 | Split in two: "Unless the court orders otherwise, the beneficiaries bear the cost of any provision it orders for a claimant, in proportion to the value of their interests" | APA s 97(2) |
+| Challenging block | Split; "a will that was not properly signed, which the Supreme Court can admit to probate if it is satisfied the person intended it to be their will" | Wills Act s 9(1)(a) |
+| What to have with you | Heading changed; address now names Box Hill | Practice facts, CLAUDE.md |
+| Fee note | "An estate dispute is charged on a written estimate rather than a fixed fee", linked to /fees#when-a-fixed-fee-does-not-fit | fees.html |
+| FAQ 2 | Answers first: a grandchild can claim, as can a household member or registered caring partner, if dependent | APA s 90 paras (h), (i), (k); s 91(2)(b) |
+| FAQ 3 | Question recast as "Can I distribute the estate if a claim has been threatened?" and opened "Not before you have taken advice"; the rest unchanged | APA s 99A(3) |
+| FAQ 4 | The two sentences swapped so the answer comes first, words unchanged | Supreme Court Act s 24(1); County Court Act s 78A(1), not re-read today, wording unchanged |
+| Call to action | "we will tell you plainly whether and how we can help and which time limit applies", replacing "tell you where you stand" | Rule 36 check B5 in the audit |
+
 ## Versions read
 
 - Administration and Probate Act 1958 (Vic), Version No. 130, incorporating amendments as at 22 October 2025, the version in force. Part IV, ss 90 to 99A, read in full, with ss 12 and 58.
@@ -34,6 +61,7 @@ Every legal statement on the page, with the provision it rests on. All texts wer
 | Challenging a will, FAQ 5 | The Supreme Court can admit a document to probate if satisfied the person intended it to be their will | Wills Act s 9(1)(a) |
 | Brief, time limits, FAQ 1 | A validity challenge is usually raised by a caveat before the grant | APA s 58, any person may lodge a caveat against the making of a grant. "Usually" is practice, as today's legal audit put it, and is softened |
 | Time limits | While a caveat stands, the registrar cannot make a grant without a court order | APA s 12(2)(a) |
+| Time limits | A caveat expires six months after it is lodged, so a fresh one may be needed (added 9 Nov 2026) | Rules rr 8.03(1), 8.05(1) |
 | Time limits | Once a grant is applied for, the caveat lapses 30 days after the caveator is notified, unless grounds of objection are filed and served in that time or a judge orders otherwise | Rules rr 8.02(b), 8.03(2), 8.03(3)(a) and (b) |
 | Process step 2 | A family provision claim is filed in the Supreme Court or the County Court and served on the executor or administrator | APA s 90 definition of Court; s 93 |
 | Process step 2 | A notified caveator files and serves grounds of objection, then applies for directions | Rules rr 8.03(3)(a), 8.06, 8.07(1) |
@@ -53,7 +81,7 @@ A copy of the will if the caller has one, the grant if one has been made, letter
 
 - Capacity, undue influence, knowledge and approval and fraudulent calumny are general law and were not verified against any case, since no case is cited. They are named only as grounds on which a will can be challenged.
 - Court practice notes, the Supreme Court's General Civil Procedure Rules and court websites were not read; court and AustLII sites are blocked. Procedure is stated only as far as the Acts and Order 8 of the 2023 Rules set it out.
-- Left out deliberately: the six month expiry of a caveat and fresh caveats, rr 8.03(1) and 8.05; the notice of intention to claim in APA s 99A(4); how costs are commonly ordered in practice; how long claims take; and any statement that most claims settle.
+- Left out deliberately: the notice of intention to claim in APA s 99A(4); how costs are commonly ordered in practice; how long claims take; and any statement that most claims settle.
 - Rule 36 of the Australian Solicitors' Conduct Rules was not read in an official current copy.
 
 ## Wording elsewhere on the site that is wrong or incomplete in law

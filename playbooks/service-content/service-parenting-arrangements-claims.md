@@ -2,6 +2,37 @@
 
 Page: `service-parenting-arrangements.html`, Parenting Lawyers in Box Hill, Melbourne. Drafted 28 September 2026 in Melbourne.
 
+## Changes of 9 November 2026
+
+Made from the audit of 9 Nov 2026 that Spencer approved, in playbooks/audit-2026-11-09/. The FAQPage dateModified and
+the currency line move to 9 Nov 2026 and November 2026; the sitemap lastmod is synced by the central pass.
+
+Read today on the Federal Register of Legislation through `api.prod.legislation.gov.au`:
+
+- Family Law Act 1975 (Cth), Compilation No. 101, C2025C00341, compilation date 10 June 2025, still the latest, with
+  no commenced unincorporated amendments: ss 60CA, 60CC, 60I(7) to (9), 61B, 61C, 61CA, 61D, 61DAA, 61DAB, 63C,
+  64B, 64C, 64D, 65DAB, 65H, 67Q, 67U, 67V, 67ZD, 68B and 111B(2).
+- Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth), Compilation No. 4, F2025C00594,
+  compilation date 10 June 2025, rectified version, still the latest: rr 10.04 and 10.05.
+
+| Where | Change | Authority |
+|---|---|---|
+| Who we act for, new paragraph | "Many people still call these arrangements custody. The law now speaks of parenting orders, which can set out who a child lives with, the time the child spends with other people and who is responsible for making decisions about the child." The audit's proposed last limb, "who makes decisions about the child", was amended to fit the Act | FLA s 64B(2)(a), "the person or persons with whom a child is to live"; (b), "the time a child is to spend with another person or other persons"; (c), "the allocation of parental responsibility"; and s 64B(3), "the allocation of responsibility for making decisions about major long-term issues". "No longer custody" rests on s 111B(2): since the Family Law Reform Act 1995 a court "can no longer make an order under this Act expressed in terms of granting a person custody of, or access to, a child". "Can set out" because s 64B(2) says a parenting order "may deal with" these matters |
+| Urgent strip, new | "Children kept from you, or about to be taken overseas?" The court can order a child's return to a parent and make orders to stop a child being taken out of Australia, and it can excuse family dispute resolution where an application is urgent; call 000 in immediate danger. Every statement was already on the page | FLA ss 67Q(a)(i), 67U, 67V; ss 67ZD, 68B; s 60I(8A), (8B), (9)(d) |
+| Lead | The free call line, which appeared four times on the page, replaced by "An application for parenting orders generally needs a family dispute resolution certificate, unless the court grants an exemption", taken from the In brief box | FLA s 60I(7), (8A), (8B) |
+| Parenting plans block | Opens with what we do; "A plan must be signed and dated, and made free of any threat, duress or coercion" | FLA s 63C(1)(a), (b), (ba), (bb), (1A), (2); s 65DAB |
+| Consent orders block | "In the application, each of you tells the court of any concern about abuse, family violence or risk", separated from the force of consent orders | Rules r 10.05(3), (4), (6)(c) |
+| FAQ 2 | The exemptions sentence split in two, every limb kept | FLA s 60I(9)(a)(i), (b)(i) to (iv), (d) |
+| What to have with you | Heading changed; the repeated free call sentence removed | Practice |
+| Fee note and schema offers | "Our fixed fee for consent orders for agreed parenting arrangements is $3,025"; new: "Consent orders for property and parenting arrangements together are $3,850 including GST, on the same assumptions as the two separate fees"; parenting plan from $1,452 "with one round of changes"; link to /fees#fee-consent-orders-for-agreed-parenting-arrangements; an Offer for 3850 | Fee list Spencer approved on 9 Nov 2026 and the central pass's fees.html, whose new row reads "with everything the two prices above include and on the same assumptions as each" |
+| Description, og, JSON-LD, hero meta | "what many still call custody" and the $3,025 consent orders fee, linked on the first screen | Fee list; FLA s 111B(2) |
+| Call to action | "we will tell you plainly whether and how we can help and what the next step will cost", replacing "One call tells you where you stand" | Rule 36 check B5 in the audit |
+| Sources | Unchanged: the Family Law Act stays named alone under the more than eight provisions rule | DECISIONS.md, 26 Sep 2026 |
+
+Not changed: FAQ 4 on moving away. The audit proposed opening it "Not without the other parent's agreement or a
+court order", but that reads as a legal bar the Act does not contain where no orders exist, ss 61CA and 61DAA, so
+"You should not" stays, matching faq.html.
+
 ## Legislation read on 28 September 2026
 
 All fetched that day from the Federal Register of Legislation through `api.prod.legislation.gov.au`, each the current version with no unincorporated amendments.
@@ -44,7 +75,7 @@ The Sources line names the Family Law Act alone, because the page relies on more
 | FAQ 5 | The court can order a child's return to a parent. | FLA s 67Q(a)(i), s 67U, with best interests paramount under s 67V |
 | FAQ 5 | The court can deal with a breach of existing orders. | FLA Part VII, Division 13A |
 | FAQ 5 | The court can excuse family dispute resolution where an application is urgent. | FLA s 60I(9)(d) |
-| Fee paragraph | Consent orders for agreed parenting arrangements $3,025 including GST, and a parenting plan from $1,452 including GST, with the scope and assumptions fees.html gives. | fees.html as at 28 Sep 2026; only the single figure fee is in `offers` |
+| Fee paragraph | Consent orders for agreed parenting arrangements $3,025 including GST, consent orders for property and parenting together $3,850 including GST (added 9 Nov 2026), and a parenting plan from $1,452 including GST with one round of changes, with the scope and assumptions fees.html gives. | fees.html as at 28 Sep 2026 and the fee list approved 9 Nov 2026; only the single figure fees are in `offers` |
 | Fee paragraph | The court's filing fee is separate and paid to it directly. | Family Law (Fees) Regulations 2022 Sch 1 item 6; no figure stated |
 
 ## Advice and practice statements, not law

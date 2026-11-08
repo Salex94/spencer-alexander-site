@@ -4,11 +4,11 @@
  "hub_label": "Wills &amp; Estates",
  "crumb": "Will disputes",
  "service_name": "Contesting and defending wills",
- "date": "2026-09-28",
+ "date": "2026-11-09",
  "title": "Will Dispute Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Will Dispute Lawyers in Box Hill, Melbourne",
- "description": "Will dispute lawyers in Box Hill for people contesting a will and for executors and beneficiaries defending one. Time limits apply, so call us early.",
- "lead": "From our Box Hill office, we act for people contesting a will, whether they were left out, left short or doubt the will is valid, and for executors and beneficiaries defending one, through negotiation, mediation and any hearing.",
+ "description": "Will dispute lawyers in Box Hill. A family provision claim must generally be made within six months of the grant, and your costs are estimated in writing first.",
+ "lead": "From our Box Hill office, we act for people contesting a will because they were left out, left short or doubt the will is valid, and for executors and beneficiaries defending one, through negotiation, mediation and any hearing. A family provision claim must generally be made within six months of the grant of probate or administration.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
   "For claimants, executors and beneficiaries",
@@ -32,7 +32,7 @@
    "h2": "When a will is in dispute.",
    "paras": [
     "People call us when a parent or partner has died and the will leaves them out or short, or when they doubt the will is valid at all. Executors call when a claimant's lawyers have written or a caveat has held up probate.",
-    "We act on either side, and for beneficiaries too, who bear the cost of any provision the court orders for a claimant, in proportion to the value of their interests, unless it orders otherwise."
+    "We act on either side, and for beneficiaries too. Unless the court orders otherwise, the beneficiaries bear the cost of any provision it orders for a claimant, in proportion to the value of their interests."
    ]
   },
   {
@@ -45,7 +45,7 @@
     },
     {
      "t": "Challenging or upholding a will",
-     "p": "A will can be challenged for reasons such as lack of capacity, undue influence, <a href=\"/insight-fraudulent-calumny-victoria\">fraudulent calumny</a> or a signing that did not meet the Wills Act 1997. We gather the evidence and lodge caveats, and act to uphold wills too, including one not properly signed, which the Supreme Court can admit to probate if satisfied the person intended it to be their will."
+     "p": "A will can be challenged for reasons such as lack of capacity, undue influence, <a href=\"/insight-fraudulent-calumny-victoria\">fraudulent calumny</a> or a signing that did not meet the Wills Act 1997. We gather the evidence and lodge caveats. We also act to uphold wills, including a will that was not properly signed, which the Supreme Court can admit to probate if it is satisfied the person intended it to be their will."
     },
     {
      "t": "Defending an estate",
@@ -62,15 +62,15 @@
    "h2": "The dates that decide what you can do.",
    "paras": [
     "The six month limit for a family provision claim runs from the date of the grant, not the date of death. The court can extend it, even after it has expired, but only on an application made before the estate is finally distributed, and an extension does not disturb anything distributed before that application.",
-    "A validity challenge is usually raised by a caveat before the grant, and while the caveat stands the registrar cannot make a grant without a court order. Once someone applies for a grant, the caveat lapses 30 days after the caveator is notified, unless grounds of objection are filed and served in that time or a judge orders otherwise."
+    "A validity challenge is usually raised by a caveat before the grant, and while the caveat stands the registrar cannot make a grant without a court order. A caveat expires six months after it is lodged, so a fresh one may be needed. Once someone applies for a grant, the caveat lapses 30 days after the caveator is notified, unless grounds of objection are filed and served in that time or a judge orders otherwise. If probate has been granted, or you have been told that someone has applied for a grant, call us now."
    ]
   },
   {
    "eyebrow": "Your first call",
-   "h2": "What to bring to your first call.",
+   "h2": "What to have with you when you call.",
    "paras": [
     "Whatever you have to hand: a copy of the will if you have one, the grant of probate or letters of administration if one has been made, any letters from the executor, a claimant or their lawyers, and your questions. If you have little on paper, that is fine too. The first conversation is about understanding your situation, not testing your paperwork.",
-    "Our office is at Suite 10, 1 Main Street, a short walk from Box Hill station, with parking at Box Hill Central."
+    "Our office is at Suite 10, 1 Main Street, Box Hill, a short walk from Box Hill station, with parking at Box Hill Central."
    ]
   }
  ],
@@ -94,7 +94,7 @@
  },
  "fee": {
   "t": "Costs, estimated in writing.",
-  "p": "An estate dispute has no fixed fee, and as our <a href=\"/fees\">fees page</a> explains, a dispute is charged on a written estimate instead. After we understand what you need, we provide an engagement letter and costs agreement setting out a clear fee estimate before any substantive work begins. Who pays the costs of the dispute itself is for the court to decide or the parties to agree."
+  "p": "An estate dispute is charged on a written estimate rather than a fixed fee, as our <a href=\"/fees#when-a-fixed-fee-does-not-fit\">fees page</a> explains. After we understand what you need, we provide an engagement letter and costs agreement setting out a clear fee estimate before any substantive work begins. Who pays the costs of the dispute itself is for the court to decide or the parties to agree."
  },
  "related": [
   {
@@ -126,15 +126,15 @@
   },
   {
    "q": "Can a grandchild, a sibling or a carer make a claim?",
-   "a": "Only as an eligible person. A grandchild, a member of the deceased's household or a registered caring partner is eligible, but the court can make an order for them only if they were wholly or partly dependent on the deceased. A sibling or a carer who fits none of the Act's categories cannot make a family provision claim."
+   "a": "A grandchild can, and so can a member of the deceased's household or a registered caring partner, but the court can make an order for them only if they were wholly or partly dependent on the deceased. A sibling or a carer who fits none of the Act's categories of eligible person cannot make a family provision claim."
   },
   {
-   "q": "I am the executor and a claim has been threatened. Can I distribute?",
-   "a": "Get advice first. An executor who properly distributes after six months from the grant, without notice of a claim, is generally protected, but a distribution made earlier, or after notice of a claim, can fall outside that protection and leave you personally liable."
+   "q": "Can I distribute the estate if a claim has been threatened?",
+   "a": "Not before you have taken advice. An executor who properly distributes after six months from the grant, without notice of a claim, is generally protected, but a distribution made earlier, or after notice of a claim, can fall outside that protection and leave you personally liable."
   },
   {
    "q": "Who pays the legal costs of a will dispute?",
-   "a": "It cannot be assumed that the estate pays everyone's costs. The court generally decides who pays the costs of a proceeding and how much, and it can order a party to pay costs personally, although a settlement can deal with costs by agreement."
+   "a": "The court generally decides who pays the costs of a proceeding and how much, and it can order a party to pay costs personally, although a settlement can deal with costs by agreement. It cannot be assumed that the estate pays everyone's costs."
   },
   {
    "q": "Can a will be challenged if it was not signed and witnessed properly?",
@@ -145,6 +145,6 @@
  "cta": {
   "eyebrow": "Before the time runs",
   "title": "Speak with a will dispute lawyer.",
-  "lead": "Tell us what has happened and, if you know it, when probate was granted, and we will tell you where you stand."
+  "lead": "Tell us what has happened and, if you know it, when probate was granted, and we will tell you plainly whether and how we can help and which time limit applies."
  }
 }

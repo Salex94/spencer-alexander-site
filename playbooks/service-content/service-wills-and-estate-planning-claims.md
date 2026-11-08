@@ -2,6 +2,32 @@
 
 Page: Wills and estate planning, drafted 28 September 2026 for Spencer's approval. Nothing is published. Built in a throwaway copy of the site: 1,398 visible words, check-publish.py 96 checks and 0 failed, and the voice checker passes on all visible text except the Sources line, whose only failure is the (Vic) and (Cth) of Act titles, which the house style permits.
 
+## Changes of 9 November 2026
+
+Made from the audit of 9 Nov 2026 that Spencer approved, in playbooks/audit-2026-11-09/. The FAQPage dateModified and
+the currency line move to 9 Nov 2026 and November 2026; the sitemap lastmod is synced by the central pass.
+
+Read today in the authorised versions on legislation.vic.gov.au, each the version marked In force:
+
+- Powers of Attorney Act 2014 (Vic), version 007, amendments as at 26 April 2021: s 3, definition of personal
+  matter; ss 31, 33, 34, 35, 36 and 38.
+- Medical Treatment Planning and Decisions Act 2016 (Vic), version 012, amendments as at 1 July 2024: s 3,
+  definition of authorised witness; ss 26, 27, 28, 29, 36, 37 and 55.
+- Wills Act 1997 (Vic), version 036, amendments as at 26 April 2021: ss 9 and 14.
+
+| Where | Change | Authority |
+|---|---|---|
+| Process step 2 | The witness sentence split, and the bar recast so it no longer suggests the Act bars an alternative attorney, matching the enduring powers article | POA s 35(1), (2); MTPD s 36(1), (2)(d); see the row in the table below |
+| Medical block | Opens with what we prepare; "If you appoint nobody" | POA s 3, personal matter; MTPD ss 26(1), 55(1) to (3) |
+| Who we act for 2 | The repeat of the lead removed; a call prompt for a parent whose memory is failing, "while they may still be able to make these documents" | POA s 23(1)(b), MTPD s 26(1); "may" because capacity is judged decision by decision, POA s 4 |
+| Who we act for 1 | The office address names Box Hill | CLAUDE.md office facts |
+| Lead, fee note | "Our fixed fee for an estate plan for one person is $1,089"; fee note linked to /fees#fee-estate-plan-for-one-person | Fee list approved 9 Nov 2026, unchanged prices |
+| Description, og, JSON-LD, hero meta | The $495 single will and $1,089 estate plan; linked price on the first screen | Fee list |
+| FAQ 1 | "What is the difference between a power of attorney and a medical treatment decision maker?" replaced by "How much does a will cost?", which the playbook allows on this page; the difference stays explained in the two service blocks | Fee list: single will $495, couple $880, estate plan $1,089, testamentary trust from $1,650; "from" never called a fixed fee |
+| What to have with you | Eyebrow and heading changed to the first call | Practice |
+| Sources | Unchanged. The Powers of Attorney Act stays named alone, because the page relies on more than eight of its provisions, the rule recorded in DECISIONS.md on 26 Sep 2026; the witnessing change relies on ss 35 and 36 of that Act and s 36 of the MTPD Act, which the line already names | DECISIONS.md, 26 Sep 2026 |
+| Call to action | "we will tell you plainly whether and how we can help and what each document will cost", replacing "One call tells you which documents your family needs" | Rule 36 check B5 in the audit |
+
 ## Versions read today, 28 September 2026
 
 Each was downloaded today as the authorised Word version linked from its legislation.vic.gov.au page, marked In force there, or as the compilation text served by legislation.gov.au. Copies are in `w-wills/`.
@@ -19,16 +45,17 @@ Each was downloaded today as the authorised Word version linked from its legisla
 |---|---|---|
 | Brief, bullet 1; process step 2 | A will must be in writing and signed by you in front of two witnesses present at the same time, who each sign it in your presence. | Wills Act s 7(1)(a), (c) and (d). Signing by another person at your direction and the remote execution procedure, ss 7(5) to (7) and 8A, are not mentioned; the sentence states the ordinary rule. No age is stated for witnesses. |
 | Brief, bullet 2 | Without a valid will, the intestacy rules decide who inherits. | APA Part IA, s 70A(1), with ss 70J to 70ZL. The task named Part I Division 6; the intestacy rules are Part IA, and its Division 6 is only the no partner case, so the Sources line cites Part IA. |
-| Brief, bullet 3; EPA block; FAQ 1 | An enduring power of attorney starts on the day it is made unless it says otherwise, or from a later time or event you choose, and continues if you lose capacity. | POA s 39(1) and (2); s 22(3). Never stated as working only once capacity is lost. |
+| Brief, bullet 3; EPA block; former FAQ 1, removed 9 Nov 2026 | An enduring power of attorney starts on the day it is made unless it says otherwise, or from a later time or event you choose, and continues if you lose capacity. | POA s 39(1) and (2); s 22(3). Never stated as working only once capacity is lost. |
 | Brief, bullet 4; wills block | Superannuation is paid under the fund's rules and any valid binding nomination, not automatically under your will. | SIS Act s 59(1A). The SIS Regulations were not read today, so nothing about how a nomination is made, witnessed or lapses is stated. |
 | Wills block | Superannuation, property owned as joint tenants and assets in a family trust or company often pass outside a will. | Wills Act s 4(1), which excludes property the will maker holds as trustee. Joint tenancy survivorship and company ownership are general law with no provision behind them, so the sentence says "often". |
 | Section 1 | Each document depends on your capacity when you sign. | POA s 23(1)(b); MTPD s 26(1). For a will, testamentary capacity is a general law requirement that Wills Act s 21 presupposes but no section states, so the page says "depends on", not "must". |
-| EPA block; FAQ 1 | An attorney can make financial decisions, personal decisions or both. | POA s 22(1) and (2). |
-| Medical block; FAQ 1 | A power of attorney made now does not cover medical treatment. | POA s 3, definition of personal matter, which excludes medical treatment. "Made now" because MTPD s 103 and POA s 155 keep medical powers in some instruments made before 12 March 2018. |
-| Medical block; FAQ 1 | A medical treatment decision maker you appoint makes medical treatment decisions when you cannot. | MTPD ss 26(1), 27, 55(1) and 58(1). |
+| EPA block; former FAQ 1 | An attorney can make financial decisions, personal decisions or both. | POA s 22(1) and (2). |
+| Medical block; former FAQ 1 | A power of attorney made now does not cover medical treatment. | POA s 3, definition of personal matter, which excludes medical treatment. "Made now" because MTPD s 103 and POA s 155 keep medical powers in some instruments made before 12 March 2018. |
+| Medical block; former FAQ 1 | A medical treatment decision maker you appoint makes medical treatment decisions when you cannot. | MTPD ss 26(1), 27, 55(1) and 58(1). |
 | Medical block | Appoint nobody and the law looks to any guardian VCAT has appointed, then to a list headed by your spouse or domestic partner. | MTPD s 55(2) and (3). The list's conditions, a close and continuing relationship and reasonable availability, are left to the linked article. |
 | Medical block | We also draft advance care directives. | MTPD Part 2, ss 6 and 12; named only. Not on fees.html, so the fee note names it among work estimated in writing. |
 | Process step 2 | A power of attorney or medical appointment needs two adult witnesses, one a doctor or a person authorised to witness affidavits. | POA ss 33(1)(b), 35(1)(b) and 35(2)(a); MTPD s 36(1)(a) and (c) with s 3, definition of authorised witness. |
+| Process step 2 | Neither witness can be an attorney or medical treatment decision maker named in the document, and for a power of attorney neither can be a relative of yours or of an attorney, or your care worker or accommodation provider. It is also safest not to ask an alternative attorney to witness. (9 Nov 2026, replacing "the Acts bar some people from witnessing, including anyone you appoint", which took in alternative attorneys) | POA s 35(2)(c), "an attorney under the power of attorney", and (d)(i) to (iii), read 9 Nov 2026 in version 007, with the witness statement in s 36(1)(b); the Act says nothing of an alternative attorney, s 31(4) applying the Act to an alternative attorney only when acting. MTPD s 36(2)(d), each witness certifies "the witness is not an appointee under the appointment", read in version 012. The alternative attorney sentence matches the enduring powers article as corrected on 27 Oct 2026. |
 | Process step 3 | Attorneys and the medical treatment decision maker each sign an acceptance, witnessed by an adult, before their appointment takes effect. | POA s 37(1), and s 38 for alternates; MTPD ss 28(1)(g) and 29. |
 | FAQ 2 | The law presumes capacity unless there is evidence otherwise and judges it decision by decision, so a diagnosis such as early dementia does not by itself rule out a power of attorney. | POA s 4(1), (2) and (4)(a). The conclusion about a diagnosis follows from the functional test in s 4(1); the Act does not say it in terms. |
 | FAQ 2 | Both witnesses must certify that the person appeared to have capacity. | POA s 36(1)(a)(ii). |

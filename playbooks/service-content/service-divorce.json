@@ -4,14 +4,14 @@
  "hub_label": "Family Law",
  "crumb": "Divorce",
  "service_name": "Divorce",
- "date": "2026-09-29",
+ "date": "2026-11-09",
  "title": "Divorce Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Divorce Lawyers in Box Hill, Melbourne",
- "description": "Box Hill divorce lawyers preparing joint and sole divorce applications on fixed fees, with advice on property, children and your will. Your first call is free.",
- "lead": "From our Box Hill office, our lawyers prepare joint and sole divorce applications and deal with the Federal Circuit and Family Court of Australia until the divorce order is made. A divorce needs 12 months of separation, and it does not divide property or decide parenting, so we also advise on your property settlement and your will.",
+ "description": "Divorce lawyers in Box Hill. A joint divorce application is a fixed fee of $1,089 and a sole one $1,452, each including GST, and your first call is free.",
+ "lead": "From our Box Hill office, our lawyers prepare joint and sole divorce applications and deal with the Federal Circuit and Family Court of Australia until the divorce order is made. A divorce needs 12 months of separation. It does not divide property or decide parenting, and it can change how your will operates, so we also advise on your property settlement and your will.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
-  "Fixed fees for joint and sole divorce applications",
+  "<a href=\"/fees#fee-divorce-application-joint\">Joint divorce application $1,089, sole $1,452, fixed fees</a>",
   "Suite 10, 1 Main Street, Box Hill"
  ],
  "urgent": {
@@ -32,7 +32,7 @@
    "h2": "When people call us about a divorce.",
    "paras": [
     "Most people who call us have been separated for a year or more and want the marriage formally ended. Some apply together, and others apply alone because their spouse will not sign or cannot be reached.",
-    "We also act for spouses served with a divorce application. A response disputing it, for example over the date you separated, must generally be filed and served within 28 days after service, although the Court can extend that time."
+    "We also act for spouses served with a divorce application. A response disputing it, for example over the date you separated, must generally be filed and served within 28 days after service, although the Court can extend that time. If you have been served and do not agree with the application, call us as soon as you can."
    ]
   },
   {
@@ -45,7 +45,7 @@
     },
     {
      "t": "Sole applications",
-     "p": "Either spouse can apply alone, and the application must then be served on the other, by post with an acknowledgment form or by hand from anyone but you. We arrange service, prove it and attend the hearing if the Court requires it."
+     "p": "Either spouse can apply alone, and the application must then be served on the other spouse, by post with an acknowledgement form or by hand by someone other than you. We arrange service, prove it and attend the hearing if the Court requires it."
     },
     {
      "t": "Less straightforward applications",
@@ -53,7 +53,7 @@
     },
     {
      "t": "Divorce, property and your will",
-     "p": "A divorce taking effect starts the time for property and maintenance claims, so we advise on whether to settle property first. It also cancels any gift in your will to your former spouse and their appointment as executor, unless it appears you wanted them to stand, so we review your will too."
+     "p": "A divorce taking effect starts the time for property and maintenance claims, so we advise on whether to <a href=\"/service-property-settlement\">settle property first</a>. It also cancels any gift in your will to your former spouse and their appointment as executor, unless it appears you wanted them to stand, so we <a href=\"/service-wills-and-estate-planning\">review your will too</a>."
     }
    ]
   },
@@ -67,7 +67,7 @@
   },
   {
    "eyebrow": "Your first call",
-   "h2": "What to bring to the first call.",
+   "h2": "What to have with you when you call.",
    "paras": [
     "Whatever you have to hand: your marriage certificate if you have it, the date you separated, any divorce application or letters from your spouse or their lawyer, and your questions. If you have little on paper, that is fine too. The first conversation is about understanding your situation, not testing your paperwork. We can speak by phone or video, or meet at our office at Suite 10, 1 Main Street, Box Hill, a short walk from Box Hill station, with parking at Box Hill Central."
    ]
@@ -87,13 +87,13 @@
    },
    {
     "t": "The divorce order",
-    "d": "If asked, and once satisfied that proper arrangements have been made for any children of the marriage under 18, the Court can decide the application without anyone attending, unless the other spouse asks to attend or the Court directs otherwise. The order generally takes effect one month after it is made."
+    "d": "If you ask it to, the Court can decide the application without anyone attending, unless the other spouse asks to attend or the Court directs otherwise. Where there are children of the marriage under 18, it must first be satisfied that proper arrangements have been made for them. The order generally takes effect one month after it is made."
    }
   ]
  },
  "fee": {
   "t": "Fixed fees for a divorce application.",
-  "p": "Our fixed fee for a divorce application is $1,089 for a joint application and $1,452 for a sole one, including GST. The joint fee covers checking that you can apply, preparing the application, helping you both sign it, filing it and dealing with the Court until the order is made, and assumes at least 12 months of separation without living under one roof. The sole fee adds arranging service, the affidavit proving it and attending the hearing if the Court requires it, and assumes your spouse can be served in Australia and does not oppose the divorce. The Court's own filing fee is separate. Where an assumption does not hold, or for anything our <a href=\"/fees\">fees page</a> does not list, such as a property or parenting dispute, we give you a written estimate before substantive work begins."
+  "p": "Our fixed fee for a divorce application is $1,089 for a joint application and $1,452 for a sole one, including GST. The joint fee covers checking that you can apply, preparing the application, helping you both sign it, filing it and dealing with the Court until the order is made, and assumes at least 12 months of separation without living under one roof. The sole fee adds arranging service, the affidavit proving it and attending the hearing if the Court requires it, and assumes your spouse can be served in Australia and does not oppose the divorce. The Court's own filing fee is separate. Where an assumption does not hold, or for anything our <a href=\"/fees#fee-divorce-application-joint\">fees page</a> does not list, such as a property or parenting dispute, we give you a written estimate before substantive work begins."
  },
  "related": [
   {
@@ -137,14 +137,14 @@
   },
   {
    "q": "How much does a divorce cost?",
-   "a": "The Court charges a filing fee, and a reduced fee is available to concession card holders and people in financial hardship, although for a joint application both of you must qualify. Our own fee is fixed at $1,089 for a joint application and $1,452 for a sole one, including GST, and our <a href=\"/fees\">fees page</a> sets out what each covers."
+   "a": "Our fixed fee is $1,089 for a joint application and $1,452 for a sole one, including GST, and our <a href=\"/fees#fee-divorce-application-joint\">fees page</a> sets out what each covers. The Court also charges a filing fee, and a reduced fee is available to concession card holders and people in financial hardship, although for a joint application both of you must qualify."
   }
  ],
  "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>, sections 4, 39, 44, 48 to 50, 55, 55A, 59 and 98A; <a href=\"https://www.legislation.gov.au/F2021L01197/latest\" rel=\"noopener\" target=\"_blank\">Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)</a>, rules 2.17, 2.18, 2.28, 2.34, 2.35, 2.42 to 2.46, 15.06 and 15.15; <a href=\"https://www.legislation.gov.au/F2023L00022/latest\" rel=\"noopener\" target=\"_blank\">Family Law (Fees) Regulations 2022 (Cth)</a>, sections 2.02, 2.04 and 2.06; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/wills-act-1997\" rel=\"noopener\" target=\"_blank\">Wills Act 1997 (Vic)</a>, section 14; <a href=\"https://www.legislation.gov.au/C2004A02560/latest\" rel=\"noopener\" target=\"_blank\">Domicile Act 1982 (Cth)</a>, section 10.",
  "cta": {
   "eyebrow": "Separated for a year or more",
   "title": "Speak with a divorce lawyer.",
-  "lead": "Tell us when you separated and whether your spouse will sign, and we will tell you which application fits and what to settle first."
+  "lead": "Tell us when you separated and whether your spouse will sign, and we will tell you plainly whether and how we can help, which application fits and what it will cost."
  },
  "offers": [
   {

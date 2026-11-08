@@ -4,14 +4,14 @@
  "hub_label": "Commercial Law",
  "crumb": "Commercial leases",
  "service_name": "Commercial and retail leasing",
- "date": "2026-09-29",
+ "date": "2026-11-09",
  "title": "Commercial Lease Lawyers Box Hill | Spencer Alexander Lawyers",
  "h1": "Commercial Lease Lawyers in Box Hill, Melbourne",
- "description": "Commercial lease lawyers in Box Hill for tenants and landlords, from lease reviews to renewals, assignments and disputes. Free first call with a lawyer.",
+ "description": "Commercial lease lawyers in Box Hill for tenants and landlords. A lease review for a tenant is from $1,089 including GST, and your first call is free.",
  "lead": "From our Box Hill office, our lawyers act for tenants and landlords of shops, offices and other business premises on new leases, renewals, assignments and disputes. The best time to call is before you sign. Many Victorian business leases are retail leases, and the Retail Leases Act 2003 gives their tenants protections that no lease clause can remove.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
-  "Tenant lease reviews from $1,089 including GST",
+  "<a href=\"/fees#fee-lease-review-for-a-tenant\">Tenant lease reviews from $1,089 including GST</a>",
   "Suite 10, 1 Main Street, Box Hill"
  ],
  "urgent": {
@@ -31,7 +31,7 @@
    "eyebrow": "Who we act for",
    "h2": "Leases for shops, offices and business premises.",
    "paras": [
-    "We act for tenants taking premises for the first time, businesses renewing or moving, owners selling a business with its lease, and landlords letting premises. People usually call when a lease arrives to sign, an option date is close, a rent review or outgoings bill looks wrong, or a dispute has started over repairs, rent or the end of the lease. The best time to call is before you sign.",
+    "We act for tenants taking premises for the first time, businesses renewing or moving, owners selling a business with its lease, and landlords letting premises. People usually call when a lease arrives to sign, an option date is close, a rent review or outgoings bill looks wrong, or a dispute has started over repairs, rent or the end of the lease.",
     "Whether the Retail Leases Act applies is the first question in any lease. A lease it does not cover is governed mainly by its own terms, without most of the protections on this page, which our guide to <a href=\"/insight-retail-leases-victoria\">retail leases in Victoria</a> explains."
    ]
   },
@@ -49,11 +49,11 @@
     },
     {
      "t": "Assigning a lease when a business is sold",
-     "p": "Under a retail lease the landlord can refuse consent only on grounds the Act lists, such as a buyer it considers lacks the financial resources or business experience to meet the lease's obligations. Where the business carries on, the seller and its guarantors are not liable for the buyer's obligations if the seller gives the landlord and the buyer an accurate and complete disclosure statement."
+     "p": "We prepare the assignment, the request for the landlord's consent and the seller's disclosure statement, and our <a href=\"/service-buying-or-selling-a-business\">business sale page</a> explains how we act on the sale itself. Under a retail lease the landlord can refuse consent only on grounds the Act lists, such as a buyer it considers lacks the financial resources or business experience to meet the lease's obligations. Where the business carries on, the seller and its guarantors are not liable for the buyer's obligations if the seller gives the landlord and the buyer an accurate and complete disclosure statement."
     },
     {
      "t": "Renewals, rent reviews and disputes",
-     "p": "We check the landlord's notices before an option date, act on market rent reviews, where an experienced retail valuer sets the rent if landlord and tenant cannot agree, and act in disputes at the Small Business Commission, at VCAT and in court."
+     "p": "We check the landlord's notices before an option date and act on market rent reviews, where an experienced retail valuer sets the rent if landlord and tenant cannot agree. When a dispute starts, we act for you at the Small Business Commission, at VCAT and in court."
     }
    ]
   },
@@ -61,9 +61,9 @@
    "eyebrow": "Time limits",
    "h2": "The dates that matter in a retail lease.",
    "paras": [
-    "The 14 days for disclosure run to the day the lease is entered into, which the Act treats as the first of everyone signing, you moving in with the landlord's consent or you starting to pay rent. If the statement and proposed lease arrive less than 14 days before that day, the lease term is taken to start 14 days after you receive them.",
+    "The 14 days for disclosure are counted back from the day the lease is entered into, which under the Act is the earliest of the day everyone has signed, the day you move in with the landlord's consent and the day you start paying rent. If the statement and proposed lease arrive less than 14 days before that day, the lease term is taken to start 14 days after you receive them.",
     "If you enter into the lease without having been given a disclosure statement, you can give the landlord written notice of that between 7 and 90 days afterwards. You then owe no rent from the day of your notice until the statement arrives, and you can give notice ending the lease at any time until 7 days after it arrives. If the statement is misleading, false or materially incomplete, or you were not given the proposed lease as the Act requires, you can give notice ending the lease within 28 days of the latest of receiving the statement, receiving the proposed lease and entering into the lease.",
-      "Either notice ends the lease 14 days after you give it, unless within those 14 days the landlord objects that it acted honestly and reasonably and ought fairly to be excused, and that you are substantially as well off as if it had complied. If you do not tell the landlord in writing within 14 days of its objection whether you accept it, you are taken to have accepted it and the lease continues. The Retail Leases Act gives no way to extend any of these periods."
+      "Either notice ends the lease 14 days after you give it, unless within those 14 days the landlord objects that it acted honestly and reasonably and ought fairly to be excused, and that you are substantially as well off as if it had complied. If you do not tell the landlord in writing within 14 days of its objection whether you accept it, you are taken to have accepted it and the lease continues. The Retail Leases Act gives no way to extend any of these periods, so if you have signed without a disclosure statement, or the one you were given was wrong, call us now."
    ]
   },
   {
@@ -94,7 +94,7 @@
  },
  "fee": {
   "t": "Fees for lease work.",
-  "p": "A lease review for a tenant is from $1,089 including GST, for a written summary of the terms that matter and, for a retail lease, the disclosure statement, with recommended changes and a call to go through it. A non-standard lease or more than one premises costs more. Leases for landlords, negotiations, assignments and disputes are not priced on our <a href=\"/fees\">fees page</a>, so each is estimated in writing before substantive work begins."
+  "p": "Our fee for reviewing a lease for a tenant is from $1,089 including GST. It covers a written summary of the terms that matter, and of the disclosure statement for a retail lease, with our recommended changes and a call to go through it. A non-standard lease or more than one premises costs more. Leases for landlords, negotiations, assignments and disputes are not priced on our <a href=\"/fees#fee-lease-review-for-a-tenant\">fees page</a>, so each is estimated in writing before substantive work begins."
  },
  "related": [
   {
@@ -130,7 +130,7 @@
   },
   {
    "q": "Can my landlord charge me land tax?",
-   "a": "Under a retail lease, generally not. A clause passing on the landlord's land tax or commercial and industrial property tax is void, and so is one charging its depreciation or the interest on its borrowings. Its capital costs are excluded too, apart from capital works you agree to carry out yourself and some essential safety measure costs."
+   "a": "Under a retail lease, generally not. A clause passing on the landlord's land tax or commercial and industrial property tax is void, and so is one charging its depreciation or the interest on its borrowings. The landlord's capital costs are excluded too, apart from capital works you agree to carry out yourself and some essential safety measure costs."
   },
   {
    "q": "Who pays the legal costs of preparing the lease?",

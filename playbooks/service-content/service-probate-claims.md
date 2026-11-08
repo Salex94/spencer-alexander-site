@@ -3,6 +3,40 @@
 Every legal statement on the page, with the provision behind it and the version read today on
 legislation.vic.gov.au. Fee figures come from fees.html, not from law.
 
+## Changes of 9 November 2026
+
+Made from the audit of 9 Nov 2026 that Spencer approved, in playbooks/audit-2026-11-09/. The page's FAQPage
+dateModified and its currency line move to 9 Nov 2026 and November 2026; the sitemap lastmod is synced by the
+central pass.
+
+Read today in the authorised versions on legislation.vic.gov.au, each the version marked In force:
+
+- Administration and Probate Act 1958 (Vic), version 130, amendments as at 22 October 2025: ss 12, 39A, 49, 57, 58,
+  90, 90A, 91, 97, 99 and 99A.
+- Supreme Court (Administration and Probate) Rules 2023 (Vic), version 002, as at 11 November 2024: rr 1.11, 2.02,
+  2.02.1, 2.03, 2.04, 4.04, 7.01, 8.01 to 8.08, 9.01 and 9.03 and the Appendix.
+- Supreme Court (Fees) Regulations 2018 (Vic), version 003, as at 18 November 2024: Sch 1 items 4.1(a), the fee for
+  posting a notice of intention to apply for a grant, and 4.2(a), nil filing fee under $250,000 gross.
+- Trustee Act 1958 (Vic), version 127, as at 1 September 2023: s 36(2).
+
+| Where | Change | Authority |
+|---|---|---|
+| Description, og, JSON-LD | Probate lawyers in Box Hill for executors and families, the $1,980 fee and the free first call | Fee list approved 9 Nov 2026 |
+| Lead | "in deceased estates" added; fees as "Our fixed fee for a straightforward probate application is $1,980, and for letters of administration where there is no will $2,178" | Fee list; no law changed |
+| Hero meta | Linked price, /fees#fee-probate-application | Fee list |
+| In brief 3 | "until a year has passed since the death" | APA s 49 |
+| Block 3 | Reordered so it opens with what we do; "and we prepare that evidence" added | Rules r 4.04(2)(b)(vii), (ix), (x) |
+| Time limits 2 | Sentences joined; a call prompt linking the will disputes page added | APA ss 99(1) to (4), 99A(3)(a) |
+| Process 1 to 3 | Recast as full sentences, substance unchanged | Rules rr 2.03(1), 1.11(1), 2.04(2)(d), 2.02.1; APA s 12(2)(a), (b) |
+| Fee note | $1,980 and $2,178; covers preparing and filing, publishing the notice, routine requisitions and the grant; the Supreme Court's notice fee passed on at cost; filing fee separate; administration assumes no surety guarantee; how our fee will be met confirmed in writing | Fees Regulations Sch 1 items 4.1(a), 4.2; APA s 57(1); Rules r 7.01 |
+| FAQ 3 | $1,980 and $2,178, notice fee at cost, then the full rule 9.01 wording | Rules rr 9.01, 9.03, Appendix; Trustee Act s 36(2); APA s 39A(2) |
+| Sources | APA s 57; Rules rr 7.01, 9.01, 9.03 and the Appendix; Fees Regulations item 4.1 | As above |
+| Call to action | "we will tell you plainly whether and how we can help and what it is likely to cost", the settled wording, replacing a promise to say on the call whether a grant is needed | Rule 36 check B5 in the audit |
+| Schema offers | Probate application 1980 | Fee list |
+
+Not changed: the urgent strip, whose APA s 99 was re-read today, and FAQs 1, 2, 4 and 5, which rest on provisions
+not re-read today, APA s 16 and Part IA among them, and were left word for word as verified on 28 Sep 2026.
+
 ## Versions read on 28 September 2026
 
 - Administration and Probate Act 1958 (Vic), version 130, incorporating amendments as at
@@ -28,7 +62,7 @@ legislation.vic.gov.au. Fee figures come from fees.html, not from law.
 | In brief 1 | Without a will, or without an executor able to act, the grant is letters of administration | APA s 5(1) definition of administration, including with the will annexed; ss 16(1), 25; Rules Orders 3 and 4 |
 | In brief 2 | Land in the deceased's sole name vests in the executor or administrator on the grant | APA s 13(1), which vests it as from the death |
 | In brief 2 | A sale of it generally cannot be completed without a grant | Generalised practice, consistent with faq.html; the Transfer of Land Act 1958 was not read |
-| In brief 3 | An executor is not bound to distribute before a year from the death | APA s 49 |
+| In brief 3 | An executor is not bound to distribute the estate until a year has passed since the death (reworded 9 Nov 2026) | APA s 49, re-read 9 Nov 2026 |
 | In brief 3 | Debts and the costs of administration come ahead of the beneficiaries | APA ss 37, 39A(2) |
 | Who we act for | People interstate or overseas, where the deceased left property in Victoria | APA s 6 |
 | Block 1 | The law lets a bank or other holder release a smaller amount without a grant, if it chooses to | APA s 31A(1), "may"; the threshold is indexed under s 31B, so no figure is stated |
@@ -45,9 +79,10 @@ legislation.vic.gov.au. Fee figures come from fees.html, not from law.
 | Process 1 | Notice at least 14 days before applying, unless the court or the Registrar shortens that time | Rules 2.03(1), 3.02.1(1), 4.03(1), 1.11(1) |
 | Process 2 | Affidavit exhibiting the will, a certified copy of the death certificate and, where the Registrar asks, an inventory | Rules 2.04(2)(d), (3), 4.04(2)(d), (3) |
 | Process 3 | The Registrar makes the grant when satisfied; a doubtful application, or one met by a caveat, goes to the court | APA s 12(1), (2) |
-| Fee note and FAQ 3 | $1,815 and $2,178 including GST, what each covers and assumes | fees.html, quoted figure for figure |
+| Fee note and FAQ 3 | $1,980 and, where there is no will, $2,178 including GST, what each covers and assumes, the Supreme Court's notice fee passed on at cost, and for administration no surety guarantee required (9 Nov 2026) | The fee list Spencer approved on 9 Nov 2026, matching the central pass's fees.html rows; notice fee Supreme Court (Fees) Regulations 2018 Sch 1 item 4.1(a); surety APA s 57(1) and Rules r 7.01 |
 | FAQ 3 | The court's filing fee is scaled to the estate's gross value and is nil where that value is less than $250,000 | Fees Regulations Sch 1 item 4.2(a) to (h); the threshold is a fixed dollar band, not indexed |
-| FAQ 3 | These costs are ordinarily paid from the estate | Trustee Act s 36(2) with s 3, trustee including a personal representative; APA s 39A(2); "ordinarily" kept |
+| FAQ 3 | The court's fees come out of the estate, and so ordinarily do the legal costs of administering it after the grant (9 Nov 2026, replacing "Before any work begins, we confirm in writing how these costs will be paid", which had itself replaced "These costs are ordinarily paid from the estate" on 28 Sep 2026) | Trustee Act s 36(2) with s 3, trustee including a personal representative; APA s 39A(2); "ordinarily" kept. The wording is the rule 9.01 wording verified by three independent checks in playbooks/audit-2026-11-09/legal-corrections.md |
+| FAQ 3 | A lawyer's charge for the ordinary work of obtaining the grant is different: the Supreme Court's rules set a scale for how much of it can be paid from the estate, and any amount above that scale falls to the executor unless the beneficiaries whose shares would bear it agree in writing to the estate paying it | Rules r 9.01 and the Appendix, with r 9.03 allowing fees, charges and expenses and special or unusual work on top; the consequence is the general law position recorded in the audit's rule 9.01 analysis, used in the audit's verified words. The page never says the grant fee is paid from the estate |
 | FAQ 1 | Joint tenancy property passes to the survivor; a share held as tenants in common forms part of the estate | General law of survivorship, not statute; consistent with the probate article and checklist |
 | FAQ 2 | Letters of administration usually go to the closest next of kin; the estate passes under the intestacy rules | APA Part IA for the intestacy rules; "usually" is practice, since the Rules require the applicant to show their right and name anyone with priority, rule 4.04(2)(b)(viii), (ix), without setting an order |
 | FAQ 4 | An executor can renounce, and their rights then end as if never appointed | APA s 16(1)(c) |
