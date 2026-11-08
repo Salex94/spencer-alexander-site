@@ -1,6 +1,6 @@
 # Fee survey, 9 November 2026
 
-Awaiting Spencer's approval. Only Spencer changes a price. Scores out of 10: rank is the percentile among comparable published law firm prices divided by 10; scale is Spencer's own, with the average at 5 and the dearest at 10. Recommended: raise probate to $1,980 ($1,800 plus GST) with the $38 notice fee at cost; letters of administration $2,178 with the $38 notice fee at cost; company set up $660 legal fee ($600 plus GST) plus ASIC's $636 at cost; new fees: consent orders for property and parenting together $3,850 ($3,500 plus GST), advice and certificate on a binding financial agreement drafted by the other party from $1,100 ($1,000 plus GST); hold everything else; cut nothing.
+Awaiting Spencer's approval. Only Spencer changes a price. Scores out of 10: rank is the percentile among comparable published law firm prices divided by 10; scale is Spencer's own, with the average at 5 and the dearest at 10. Recommended: raise probate to $1,980 ($1,800 plus GST) with the $38 notice fee at cost; letters of administration $2,178 with the $38 notice fee at cost; company set up $660 legal fee ($600 plus GST) plus ASIC's $636 at cost; new fees: consent orders for property and parenting together $3,850 ($3,500 plus GST), advice and certificate on a binding financial agreement drafted by the other party from $1,100 ($1,000 plus GST); hold everything else; cut nothing. 279 law firm prices in all; a crawl of 866 Victorian commercial firm websites found only seven publishing a usable commercial price.
 
 | item | n | now | rank now | scale now | recommended comparable | rank then | scale then | p35 | p40 | mean |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -22,12 +22,12 @@ Awaiting Spencer's approval. Only Spencer changes a price. Scores out of 10: ran
 | parenting_plan | 2 | 1452 | 0.0 | 4.8 | 1452 | 0.0 | 4.8 | 1500 | 1500 | 1500 |
 | bfa | 14 | 3025 | 6.2 | 4.9 | 3025 | 6.2 | 4.9 | 2101 | 2310 | 3101 |
 | bfa_review | 7 | None |  |  | 1100 | 5.0 | 3.4 | 1090 | 1093 | 1633 |
-| lease_review | 4 | 1089 | 8.2 | 7.5 | 1089 | 8.2 | 7.5 | 709 | 736 | 862 |
-| company_setup | 3 | 574 | 2.9 | 3.3 | 660 | 3.8 | 3.8 | 633 | 679 | 875 |
-| sha | 7 | 2420 | 7.2 | 6.1 | 2420 | 7.2 | 6.1 | 1320 | 1320 | 2006 |
+| lease_review | 7 | 1089 | 4.9 | 5.8 | 1089 | 4.9 | 5.8 | 902 | 968 | 1027 |
+| company_setup | 5 | 574 | 2.6 | 3.3 | 660 | 3.7 | 3.8 | 646 | 688 | 858 |
+| sha | 8 | 2420 | 7.6 | 6.2 | 2420 | 7.6 | 6.2 | 1320 | 1320 | 1961 |
 | tot | 6 | 1815 | 8.5 | 6.5 | 1815 | 8.5 | 6.5 | 1292 | 1375 | 1429 |
 | business_review | 1 | 1210 |  | 5.0 | 1210 |  | 5.0 | 990 | 990 | 990 |
-| lod | 4 | 495 | 10.0 | 10.0 | 495 | 10.0 | 10.0 | 283 | 308 | 315 |
+| lod | 8 | 495 | 7.1 | 5.8 | 495 | 7.1 | 5.8 | 349 | 407 | 415 |
 
 ## Sources, every price read on the provider's own page on 9 November 2026
 
@@ -365,30 +365,36 @@ Awaiting Spencer's approval. Only Spencer changes a price. Scores out of 10: ran
 - $1,760 [Fair Family Law](https://fairfamilylaw.com.au/services/extra-service), Level 14, 460 Lonsdale Street, Melbourne. We offer a fixed-fee service of $1,760 including GST to review a Binding Financial Agreements BFAs and provide the required Certificate of Independent
 
 
-### Lease review for a tenant, 4 prices
+### Lease review for a tenant, 7 prices
 
 
 - $550 [SLK Lawyers Sutton Laurence King via contractreviews.com.au](https://contractreviews.com.au/office-lease-review), Melbourne VIC 3000, offices throughout A. "Most standard commercial office leases fall within $550 to $990 including GST."
 - $700 [I Global Lawyers](https://www.i-lawyers.com.au/our-fees/), Melbourne office Level 40, 140 William S. "Advice on a retail shop lease $700.00" Leasing, as tenant; "Advice on a commercial lease $570.00"
 - $880 [Sprintlaw](https://sprintlaw.com.au/commercial-leases/commercial-lease-review-retail/), Online, national incorporated legal prac. Retail Lease Review: "This package starts at $500 + GST." plus Lease Review Amendment Advice: "Our package starts from $300 + GST"
+- $1,100 [Professional Edge Lawyers trading as Lease Lawyers](https://leaselawyers.com.au/fees/), 435 Nepean Highway, Frankston VIC 3199. Lease review: $1,100 including GST $1,000 + GST for most commercial and retail leases
+- $1,210 [Marcus and Marcus](https://www.marcusandmarcus.com.au/lease-retail-commercial), Level 11, 456 Lonsdale Street, Melbourne. Review, Retail/Commercial Lease Standard, $1,100 plus GST *Additional charges will apply for any disbursements
 - $1,320 [Lawpath](https://lawpath.com.au/business-lawyers), Online, national employee lawyers, statu. "Commercial property & leasing | Retail and commercial lease review | $1,200 + GST" starts from
+- $1,430 [Ganci Huggett Lawyers](https://gancihuggett.com.au/our-costs/), 351 King Street, West Melbourne VIC 3003. Leasing acting for Tenant $1,300, $2,300 ... All prices quoted are excluding GST and disbursements
 
 
-### Company set up, legal fee, 3 prices
+### Company set up, legal fee, 5 prices
 
 
 - $314 [I Global Lawyers](https://www.i-lawyers.com.au/our-fees/), Melbourne office Level 40, 140 William S. "Company registration including ASIC fees $950.00"
+- $564 [Coulter Legal](https://www.coulterlegal.com.au/corporate-commercial-lawyers/corporate-services-geelong/), Level 1, 235 Ryrie Street, Geelong VIC 3. Incorporation of a Company: Electronic Register: $1,200.00 including GST and ASIC fee of $636.00 prices as of 1 July 2026
 - $770 [Lawpath](https://lawpath.com.au/business-lawyers), Online, national employee lawyers. "Business formation & company setup | Pty Ltd, trust deeds, shareholder onboarding | $700 + GST" starts from; FAQ: "ACN registration ... $600 + GST pl
+- $1,100 [Clever Legal Witty Claims Pty Ltd](https://cleverlegal.com.au/counsel), 13/287 Bank Street, South Melbourne VIC . Company Registration + Constitution Investment Ready from $1,000; prices exclusive of GST; third-party disbursements charged at cost
 - $1,540 [UX Law](https://uxlaw.com.au/product/company-incorporation/), North Sydney, online, clients across Aus. "Company incorporation ... The price is exclusive of GST ... $ 1,400.00"
 
 
-### Shareholders agreement, 7 prices
+### Shareholders agreement, 8 prices
 
 
 - $800 [Allied Legal](https://www.alliedlegal.com.au/shareholders-agreement/), Melbourne Level 14/330 Collins Street, B. "competitive fixed fees starting from $800"
 - $1,140 [I Global Lawyers](https://www.i-lawyers.com.au/our-fees/), Melbourne office Level 40, 140 William S. "Shareholder agreement $1,140.00"
 - $1,320 [My Law Firm](https://mylawfirm.com.au/shareholders-agreement/), Brisbane, Melbourne, Sydney. "a Shareholder Agreement For a Fixed Fee of Just $1200+GST"
 - $1,320 [Sprintlaw](https://sprintlaw.com.au/business-set-up/shareholders-agreement/), Online, national. "starting from $1,200 + GST"
+- $1,650 [Clever Legal Witty Claims Pty Ltd](https://cleverlegal.com.au/counsel), 13/287 Bank Street, South Melbourne VIC . Shareholders Agreement + Share Vesting from $1,500; prices exclusive of GST
 - $1,760 [Lawpath](https://lawpath.com.au/business-lawyers), Online, national. "Shareholders agreement $1,600, $3,000 + GST"
 - $3,850 [Lawbase](https://www.lawbase.com.au/shareholders-agreement-package/), Sydney, online, clients across Australia. "Fixed Fee: $3,500 AUD + GST + ASIC Company Search approximately $10.00"
 - $3,850 [UX Law](https://uxlaw.com.au/product/shareholders-agreement/), North Sydney, online, clients across Aus. "$ 3,500.00" "The price is exclusive of GST"
@@ -411,13 +417,17 @@ Awaiting Spencer's approval. Only Spencer changes a price. Scores out of 10: ran
 - $990 [Sprintlaw](https://sprintlaw.com.au/business-sales/business-sale-agreement-review-only-package/), Online, national. "Our fixed-fee Business Sale Agreement Review packages start at $900 + GST."
 
 
-### Letter of demand, 4 prices
+### Letter of demand, 8 prices
 
 
 - $50 [Debt Set Legal](https://www.debtsetlegal.com.au/send-letter-of-demand), Online, Australia. "We'll send a Letter of Demand for you, $50"
+- $132 [O'Haire Legal](https://www.ohairelegal.com.au/our-fees), Unit 5, Level 1, 21 View Street, Bendigo. Letter of demand $120 plus GST plus disbursements fees page; Fixed Fee Letter of Demand $120 + GST letter of demand page
 - $275 [Woods & Day Solicitors](https://woodsandday.com.au/debt-collectors-melbourne/), Melbourne and Victoria debt collection p. "an upfront Fixed Fee of $250 excluding GST for a Letter of Demand to be drafted on our letterhead"
 - $440 [Lawpath](https://lawpath.com.au/debt-collection-lawyer), Online, national. "Letter of demand $400, $900 + GST"
+- $440 [Professional Edge Lawyers letters of demand service](https://lettersofdemand.com.au/fees/), 435 Nepean Highway, Frankston VIC 3199. Letter of demand $440 including GST $400 plus GST
 - $495 [Progressive Legal](https://progressivelegal.com.au/dispute-resolution/letter-of-demand/), Woolloomooloo NSW; letters for Victoria . "We charge $450 + GST for a standard, non-complex letter of demand."
+- $550 [Clever Legal Witty Claims Pty Ltd](https://cleverlegal.com.au/counsel), 13/287 Bank Street, South Melbourne VIC . Demand Letter from $500; prices exclusive of GST
+- $935 [Ganci Huggett Lawyers](https://gancihuggett.com.au/our-costs/), 351 King Street, West Melbourne VIC 3003. Letters of Demand Per Letter $850, $1,250 ... excluding GST and disbursements
 
 
 ## Reviewer report: pricing-wills
