@@ -888,7 +888,7 @@ all the changes onto the site." The record is `playbooks/audit-2026-11-09/`. Wha
 - **Gate.** The currency phrase check is case insensitive, the service page cap is twelve, fees.html,
   referrals.html and thank-you-subscribe.html are core pages for the dash and specialist checks, and only the
   template's photograph placeholder is exempt from the WebP check.
-- Keys after this round: site.css v23, styles.css v9, site.js v18.
+- Keys after this round: site.css v24, styles.css v9, site.js v18.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 
