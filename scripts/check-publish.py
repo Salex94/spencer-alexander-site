@@ -314,6 +314,25 @@ def main():
             if not os.path.exists(s.split("?")[0].lstrip("/")):
                 wide_missing.append("%s -> %s" % (f, s))
     check("internal links resolve (site-wide)", not wide_broken, "; ".join(wide_broken[:4]))
+
+    # Fragment links land on a real id (added 9 Nov 2026, when the audit linked
+    # every quoted price to its own row on /fees): /page#id and #id must find
+    # id="id" on the target page, or the reader lands at the top of the page.
+    ids_of, frag_bad = {}, []
+    def page_ids(name):
+        if name not in ids_of:
+            ids_of[name] = set(re.findall(r'\sid="([^"]+)"', read(name))) if os.path.exists(name) else None
+        return ids_of[name]
+    for f in sorted(glob.glob("*.html")):
+        if f == "_article-template.html":
+            continue
+        body = read(f)
+        for path, frag in set(re.findall(r'href="(/[a-z0-9-]*|)#([^"]+)"', body)):
+            target = f if path == "" else ("index.html" if path == "/" else path.lstrip("/") + ".html")
+            ids = page_ids(target)
+            if ids is not None and frag not in ids:
+                frag_bad.append("%s -> %s#%s" % (f, path, frag))
+    check("fragment links land on a real id (site-wide)", not frag_bad, "; ".join(sorted(frag_bad)[:4]))
     check("local assets exist (site-wide)", not wide_missing, "; ".join(wide_missing[:4]))
 
     # Site chrome and house style on the core pages (added 5 Sep 2026 with the
