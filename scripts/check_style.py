@@ -148,7 +148,9 @@ def prose_brackets(p):
     references like clause 17.1(a) and paragraph (b), and brackets inside a statute's official
     title are part of its name. Any other bracket is a bracket in prose."""
     t = re.sub(r"\((?:[a-z]|[ivxlc]{1,6}|[A-Z]|\d{1,3})\)", "", p)
-    t = re.sub(r"\([A-Z][^()]{0,60}\)(?=\s+Act\b)", "", t)
+    # Rules and Regulations added 9 Nov 2026 (site audit): "Supreme Court (Administration and Probate)
+    # Rules 2023" is an official title just as "Family Law (Child Protection Convention) Act" is.
+    t = re.sub(r"\([A-Z][^()]{0,60}\)(?=\s+(?:Act|Rules|Regulations)\b)", "", t)
     t = t.replace("Uniform Law (Victoria)", "Uniform Law Victoria")
     t = re.sub(r"(\d{4})\s*\((?:Vic|Cth|NSW|Qld|SA|WA|Tas|NT|ACT)\)", r"\1", t)
     return re.findall(r"[()\[\]]", t)
