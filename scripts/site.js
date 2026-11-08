@@ -264,33 +264,46 @@
     Array.prototype.forEach.call(document.querySelectorAll("details.article-toc"), function (d) { d.open = true; });
   }
 
-// Enquiry form: a phone number or an email is enough, but the form needs one of them
+// Enquiry form: a phone number or an email is enough, but the form needs one of them.
+// When neither is given, a lasting message appears under the two fields and both are marked, rather than a browser bubble that fades.
 (function () {
   var form = document.querySelector('form[name="contact"]');
   if (!form) return;
   var phone = form.querySelector("#phone");
   var email = form.querySelector("#email");
   if (!phone || !email) return;
-  var clear = function () { email.setCustomValidity(""); };
+  var msg = document.createElement("p");
+  msg.className = "form__error";
+  msg.id = "contact-needs";
+  msg.setAttribute("role", "alert");
+  msg.hidden = true;
+  msg.textContent = "Please leave a phone number or an email address, so a lawyer can reply.";
+  var row = email.closest(".form-row") || email.parentNode;
+  row.parentNode.insertBefore(msg, row.nextSibling);
+  function e_invalid() { return !phone.value.trim() && !email.value.trim(); }
+  var clear = function () {
+    if (!e_invalid()) { msg.hidden = true; phone.removeAttribute("aria-invalid"); email.removeAttribute("aria-invalid"); }
+  };
   phone.addEventListener("input", clear);
   email.addEventListener("input", clear);
+  form.addEventListener("submit", function (e) {
+    if (e_invalid()) {
+      e.preventDefault();
+      msg.hidden = false;
+      phone.setAttribute("aria-invalid", "true");
+      email.setAttribute("aria-invalid", "true");
+      phone.focus();
+    }
+  });
   // Each notification's subject carries the time it was sent, so Gmail never groups two enquiries into one conversation
   var subject = form.querySelector('input[name="_subject"]');
   var baseSubject = subject ? subject.value : "";
-  form.addEventListener("submit", function () {
-    if (!subject || e_invalid()) return;
+  form.addEventListener("submit", function (e) {
+    if (!subject || e.defaultPrevented || e_invalid()) return;
     try {
       var when = new Intl.DateTimeFormat("en-AU", { timeZone: "Australia/Melbourne", day: "numeric", month: "short", year: "numeric", hour: "numeric", minute: "2-digit", second: "2-digit" }).format(new Date());
       subject.value = baseSubject + ", " + when;
     } catch (err) {}
-  });
-  function e_invalid() { return !phone.value.trim() && !email.value.trim(); }
-  form.addEventListener("submit", function (e) {
-    if (!phone.value.trim() && !email.value.trim()) {
-      e.preventDefault();
-      email.setCustomValidity("Please leave a phone number or an email address.");
-      email.reportValidity();
-    }
   });
 })();
 

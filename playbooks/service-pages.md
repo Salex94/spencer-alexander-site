@@ -28,7 +28,10 @@ kept correct by the site accuracy and health routine.
 
 ## The limits, which no entry and no run can change
 
-- At most eight service pages ever, counting every `service-*.html` on main.
+- At most twelve service pages ever, counting every `service-*.html` on main. Spencer raised the
+  limit from eight to twelve on 9 November 2026, when he approved the site audit of that day and
+  its four new pages: powers of attorney, binding financial agreements, debt recovery and
+  shareholder agreements.
 - One page per service, at the one office, Suite 10, 1 Main Street, Box Hill. Never a page for a
   suburb, a locality, a region or any place other than Box Hill, whether in the title, the h1,
   the file name or the audience a page is written for. The hubs already name the suburbs the firm
@@ -263,7 +266,7 @@ Wire it in has changed, restore it with `git checkout -- <file>` before committi
 In the same commit as the first service page, unless an earlier build has already done it,
 strengthen `scripts/check-publish.py` with a service pages section that fails when:
 
-- there are more than eight `service-*.html` files;
+- there are more than twelve `service-*.html` files;
 - a service page's title or h1 lacks Box Hill, or its title, h1 or file name names any other
   place, testing at least every locality in the areaServed list of the #firm node on index.html,
   with Melbourne allowed;

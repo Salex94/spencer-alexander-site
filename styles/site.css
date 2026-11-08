@@ -133,7 +133,7 @@ picture > source { display: none; }
 .hero-portrait { position: relative; max-width: 440px; margin-left: auto; }
 .hero-portrait__frame { position: relative; border-radius: var(--radius-xl); overflow: hidden; background: var(--wine-900); box-shadow: 0 30px 70px rgba(0,0,0,0.42); border: 1px solid rgba(255,255,255,0.12); }
 .hero-portrait__frame::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(110,31,46,0.28), rgba(38,10,17,0.5)); mix-blend-mode: multiply; z-index: 1; pointer-events: none; }
-.hero-portrait__frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,7,12,0.55) 0%, rgba(26,7,12,0) 42%); z-index: 1; pointer-events: none; }
+.hero-portrait__frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,7,12,0.7) 0%, rgba(26,7,12,0) 50%); z-index: 1; pointer-events: none; }
 .hero-portrait__frame img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%; filter: sepia(0.22) saturate(1.05) contrast(1.04); }
 .hero-portrait__caption { position: absolute; left: 22px; right: 22px; bottom: 20px; z-index: 2; color: var(--paper-50); }
 .hero-portrait__name { font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.15; }
@@ -665,7 +665,7 @@ details.article-toc[open] > summary { margin-bottom: 8px; }
 @media (max-width: 640px) { .hero__title { text-wrap: pretty; } #home-process .btn { width: 100%; } }
 
 /* Verification round (9 Sep 2026): print, no script fallbacks, the phone call bar */
-html:not(.js) .film__frame { background: var(--wine-900) url("../assets/video/poster-1600.jpg") center / cover no-repeat; }
+html:not(.js) .film__frame { background: var(--wine-900); }
 html:not(.js) .film__video { background: transparent; }
 .mobile-call { transition: transform 200ms ease; }
 @media (prefers-reduced-motion: reduce) { .mobile-call { transition: none; } }
@@ -695,8 +695,8 @@ h2, h3, .faq-q, .post-card__title, .featured__title, .rail-card__t, .svc__title,
 
 /* Preview for Spencer's approval, 28 Sep 2026: design refinements from the audits */
 /* Links inside running text carry a fine underline, so they read as links without relying on colour (WCAG 1.4.1) */
-.article__body p a, .article__body li a, .article-callout a, .article-sources a, .prose a, .svc p a, .faq-a p a, .brief a, .form__note a, .fee-note__d a, .about-archive__lead a, .fees-body a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(110,31,46,.42); }
-.article__body p a:hover, .article__body li a:hover, .article-callout a:hover, .prose a:hover, .svc p a:hover, .faq-a p a:hover, .brief a:hover, .fee-note__d a:hover { text-decoration-color: currentColor; }
+.article__body p a, .article__body li a, .article-callout a, .article-sources a, .prose a, .svc p a, .faq-a p a, .brief a, .form__note a, .fee-note__d a, .about-archive__lead a, .fees-body a, .step__d a, .info-block__sub a, .contact-next a, .bio__body p a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(110,31,46,.42); }
+.article__body p a:hover, .article__body li a:hover, .article-callout a:hover, .prose a:hover, .svc p a:hover, .faq-a p a:hover, .brief a:hover, .fee-note__d a:hover, .step__d a:hover, .info-block__sub a:hover, .contact-next a:hover, .bio__body p a:hover { text-decoration-color: currentColor; }
 /* The home hero keeps its call button above the fold on common laptops */
 @media (min-width: 901px) { .hero__grid { padding-block: clamp(24px, 2.4vw, 40px) clamp(40px, 5vw, 72px); } .hero__title { font-size: clamp(2.7rem, 4.4vw, 3.75rem); margin-top: 12px; } .hero__lead { margin-top: 18px; } .hero__actions { margin-top: 26px; } }
 /* One portrait, one look: the home hero overlay is lighter so it matches About */
@@ -742,3 +742,33 @@ h2, h3, .faq-q, .post-card__title, .featured__title, .rail-card__t, .svc__title,
 a.pill { text-decoration: none; transition: background-color 160ms var(--ease-standard), color 160ms var(--ease-standard); }
 a.pill:hover { background: var(--wine-100); color: var(--wine-800); text-decoration: none; }
 a.pill:focus-visible { outline: 3px solid var(--wine-700); outline-offset: 2px; }
+
+/* Audit of 9 Nov 2026, approved by Spencer: faults fixed and refinements */
+/* On phones the Quick exit is a slim strip above the header, so it never covers a call or enquiry button */
+@media (max-width: 880px) {
+  body > .quick-exit { position: sticky; top: 0; right: auto; bottom: auto; z-index: 60; display: flex; justify-content: center; align-items: center; width: 100%; min-height: 34px; padding: 8px max(16px, env(safe-area-inset-right, 0px)) 8px max(16px, env(safe-area-inset-left, 0px)); border: 0; border-radius: 0; box-shadow: none; font-size: var(--text-xs); line-height: 18px; letter-spacing: 0.08em; text-transform: uppercase; }
+  body:has(> .quick-exit) .site-header { top: 34px; }
+  body:has(> .quick-exit) [id] { scroll-margin-top: 134px; }
+}
+/* The wine glow on dark bands sits behind the content, so the brass call button keeps its contrast */
+.field-dark { isolation: isolate; }
+.field-dark > * { z-index: 1; }
+/* A link in a dark call to action band, such as the phone number on the thank you page */
+.cta__lead a { color: var(--paper-50); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(251,249,245,.5); }
+.cta__lead a:hover { color: var(--brass-300); }
+/* Related reading that opens a section does not add its own top margin to the section's padding */
+.section > .container > .related:first-child { margin-top: 0; }
+/* Four cards sit two by two rather than leaving one alone on a second row */
+@media (min-width: 900px) { .post-grid:has(> :nth-child(4):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* The answer first lead comes before the photograph in every article */
+.article__body > .article-figure { margin: 26px 0 4px; }
+/* Compound words in headlines never split across lines */
+.nowrap { white-space: nowrap; }
+/* Contact form: optional marks and a lasting message when neither phone nor email is given */
+.field label .opt { font-weight: var(--weight-regular); color: var(--text-muted); font-size: var(--text-xs); margin-left: 6px; letter-spacing: 0.02em; }
+.form__error { margin-top: 12px; padding: 10px 14px; border-left: 3px solid var(--text-danger); background: var(--bg-danger); color: var(--text-danger); font-size: var(--text-sm); line-height: 1.5; border-radius: var(--radius-sm); }
+.form__error[hidden] { display: none; }
+/* Printed checklists carry the firm's details, and not the empty subscribe box */
+.print-only { display: none; }
+@media print { .resource-subscribe { display: none !important; } .print-only { display: block !important; margin-top: 18px; font-size: 11pt; } }
+

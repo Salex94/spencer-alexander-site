@@ -61,3 +61,16 @@ for p in sorted(glob.glob(f'{ROOT}/*.html')):
         block=block.replace(f'<a href="{href}">', f'<a href="{href}" class="is-active">',1)
     s=s[:m.start()]+block+s[m.end():]; open(p,'w').write(s); count+=1
 print('header propagated to', count, 'pages')
+
+# The footer as well (9 Nov 2026): the gate requires it identical on every page, so it is copied
+# from index.html in the same pass rather than by hand.
+foot = re.search(r'<footer class="site-footer">.*?</footer>', idx, re.S).group(0)
+fcount = 0
+for p in sorted(glob.glob(f'{ROOT}/*.html')):
+    if p.endswith('/index.html'): continue
+    if SKIP_ARTICLES and os.path.basename(p).startswith('insight-'): continue
+    s = open(p).read()
+    m = re.search(r'<footer class="site-footer">.*?</footer>', s, re.S)
+    if not m or m.group(0) == foot: continue
+    s = s[:m.start()] + foot + s[m.end():]; open(p, 'w').write(s); fcount += 1
+print('footer propagated to', fcount, 'pages')

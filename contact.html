@@ -115,7 +115,8 @@
     "sameAs": [
       "https://www.google.com/maps/place/?q=place_id:ChIJ55iT2dyWG2ERsUO1cPTNK2Y",
       "https://www.linkedin.com/company/spenceralexander",
-      "https://www.yellowpages.com.au/box-hill-vic/bpp/spencer-alexander-lawyers-582711774"
+      "https://www.yellowpages.com.au/box-hill-vic/bpp/spencer-alexander-lawyers-582711774",
+      "https://www.truelocal.com.au/box-hill-vic/tlp/spencer-alexander-lawyers-582711774"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -282,14 +283,14 @@
             </div>
             <div class="info-block">
               <span class="icon-chip icon-chip--44"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span>
-              <div><div class="info-block__label">Office</div><div class="info-block__val">Suite 10, 1 Main Street, Box Hill VIC 3128</div><div class="info-block__sub">A short walk from Box Hill station and bus interchange, with parking at Box Hill Central. Acting for clients across Melbourne's eastern suburbs and all of Victoria, in person, by phone or by video. <a href="https://www.google.com/maps/search/?api=1&amp;query=Spencer+Alexander+Lawyers%2C+Box+Hill+VIC+3128&amp;query_place_id=ChIJ55iT2dyWG2ERsUO1cPTNK2Y" rel="noopener" target="_blank">Get directions</a> or <a href="/assets/spencer-alexander-lawyers.vcf">save our contact card</a></div></div>
+              <div><div class="info-block__label">Office</div><div class="info-block__val">Suite 10, 1 Main Street, Box Hill VIC 3128</div><div class="info-block__sub">A short walk from Box Hill station and bus interchange, with parking at Box Hill Central. Acting for clients across Melbourne's eastern suburbs and all of Victoria, in person, by phone or by video. <a href="https://www.google.com/maps/search/?api=1&amp;query=Spencer+Alexander+Lawyers%2C+Box+Hill+VIC+3128&amp;query_place_id=ChIJ55iT2dyWG2ERsUO1cPTNK2Y" rel="noopener" target="_blank">Get directions</a> or <a href="/assets/spencer-alexander-lawyers.vcf">save our contact card</a>.</div></div>
             </div>
             <div class="contact-next">
               <div class="contact-next__t">What happens next</div>
               <ol>
-                <li>A lawyer reads your enquiry and replies within one business day, by phone if you left a number, otherwise by email.</li>
+                <li>A lawyer reads your enquiry and replies within one business day, by phone or by email in the way you told us is safe.</li>
                 <li>We talk through what has happened, flag anything urgent, and tell you plainly whether and how we can help.</li>
-                <li>If you decide to proceed, we send an engagement letter and costs agreement with a written fee estimate, or the fixed fee from our <a href="/fees">fees page</a>, before any substantive work begins.</li>
+                <li>If you decide to proceed, we send an engagement letter and costs agreement with a written fee estimate, or the published price from our <a href="/fees">fees page</a>, before any substantive work begins.</li>
               </ol>
             </div>
           </div>
@@ -310,7 +311,7 @@
                 </div>
                 <div class="field">
                   <label for="phone">Phone</label>
-                  <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="enquiry-hint">
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="enquiry-hint" pattern="[^0-9]*([0-9][^0-9]*){8,}" title="Please enter a phone number with at least eight digits">
                 </div>
               </div>
               <div class="form-row">
@@ -328,7 +329,7 @@
                 </div>
               </div>
               <div class="field">
-                <label for="matter">What is your matter about? Optional</label>
+                <label for="matter">What is your matter about? <span class="opt">Optional</span></label>
                 <select id="matter" name="matter">
                   <option value="" selected disabled>Please choose</option>
                   <option value="Family Law">Family Law</option>
@@ -338,7 +339,7 @@
                 </select>
               </div>
               <div class="field">
-                <label for="safe">Is it safe for us to email you or leave a message? Optional</label>
+                <label for="safe">Is it safe for us to email you or leave a message? <span class="opt">Optional</span></label>
                 <select id="safe" name="safe_to_contact">
                   <option value="" selected disabled>Please choose</option>
                   <option value="Yes, email or a message is fine">Yes, email or a message is fine</option>
@@ -348,7 +349,7 @@
                 </select>
               </div>
               <div class="field">
-                <label for="message">How can we help? Optional</label>
+                <label for="message">How can we help? <span class="opt">Optional</span></label>
                 <textarea id="message" name="message"></textarea>
               </div>
               <button class="btn btn--primary btn--md btn--block" type="submit">Send enquiry</button>

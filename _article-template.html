@@ -142,7 +142,7 @@
         <h1 class="pagehero__title" style="font-size:clamp(2.1rem,4.2vw,3.25rem);">{{TITLE}}</h1>
         <div class="article-meta">
           <span class="post-cat post-cat--ghost">{{CATEGORY_HTML}}</span>
-          <span class="post-meta" style="color:var(--wine-200);">By <a href="/about">Spencer Alexander</a>, Principal · 2026 · {{READ}} min read</span>
+          <span class="post-meta" style="color:var(--wine-200);">Published by <a href="/about">Spencer Alexander</a>, Principal · 2026 · {{READ}} min read</span>
           <!-- READ is max(3, round(body words / 230)), counting the words inside article__body up to the currency line. -->
           <!-- Updated line: leave the placeholder below empty when dateModified equals datePublished. Otherwise write the dateModified date as Updated D Mon YYYY with no leading zero, for example: <span class="post-meta" style="color:var(--wine-200);">Updated <time datetime="2026-09-08">8 Sep 2026</time></span> -->
           {{UPDATED_HTML}}
@@ -155,7 +155,9 @@
         <article class="article">
           <div class="article__body">
             <p class="article__lead">{{LEAD}}</p>
-            <!-- Contents list: keep this nav directly after the lead paragraph whenever the article has four or more h2 headings, one entry per h2 in order, and give every h2 a matching id that is a lowercase slug of its text using letters, digits and hyphens, for example <h2 id="who-can-apply">Who can apply?</h2>. Remove the whole nav when there are fewer than four h2 headings. -->
+            <!-- Photograph: directly after the lead, inside the article body, so the answer is the first thing a reader sees on every screen. The article's own 800 by 500 photograph, never used by another article, with descriptive alt text matching the listing cards; no fetchpriority and no lazy loading. -->
+            <figure class="article-figure"><picture><source type="image/webp" srcset="assets/photos/{{PHOTO}}.webp"><img src="assets/photos/{{PHOTO}}.jpg" alt="{{PHOTO_ALT}}" width="800" height="500"></picture></figure>
+            <!-- Contents list: keep this nav directly after the photograph whenever the article has four or more h2 headings, one entry per h2 in order, and give every h2 a matching id that is a lowercase slug of its text using letters, digits and hyphens, for example <h2 id="who-can-apply">Who can apply?</h2>. Remove the whole nav when there are fewer than four h2 headings. -->
             <details class="article-toc"><summary class="sa-eyebrow">In this article</summary>
               <ol>
                 <li><a href="#{{H2_SLUG_1}}">{{H2_TEXT_1}}</a></li>
@@ -196,12 +198,12 @@
         <aside class="rail article-rail" aria-label="Talk to a lawyer">
           <div class="rail-card">
             <div class="rail-card__t">Talk it through with a lawyer.</div>
-            <p class="rail-card__d">This page is general information. Your situation will have details that change the answer, and a short call sorts them out.</p>
+            <p class="rail-card__d">This page is general information. Your situation will have details that change the answer, and a short call tells you plainly whether and how we can help.</p>
             <a class="btn btn--primary btn--block" href="tel:+61391258355"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg> Call (03) 9125 8355</a>
             <a class="btn btn--outline btn--block" href="/contact#enquiry">Send an enquiry</a>
             <ul class="rail-list">
               <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Your first call is free, and you speak with a lawyer</li>
-              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.94 6.26 6.86.83-5.06 4.72 1.32 6.79L12 17.7l-6.06 3.4 1.32-6.79L2.2 9.59l6.86-.83z"/></svg> <span>Rated <span data-google-rating>5.0</span> stars on Google by clients</span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.94 6.26 6.86.83-5.06 4.72 1.32 6.79L12 17.7l-6.06 3.4 1.32-6.79L2.2 9.59l6.86-.83z"/></svg> <span>Rated <span data-google-rating>5.0</span> stars on Google</span></li>
               <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> A written fee estimate before substantive work begins</li>
               <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Every matter overseen by the principal</li>
             </ul>

@@ -324,7 +324,8 @@ def main():
     # site-wide in the 5 Sep 2026 review).
     core = ["index.html", "family-law.html", "wills-and-estates.html", "commercial-law.html",
             "about.html", "contact.html", "faq.html", "insights.html", "resources.html",
-            "privacy.html", "thank-you.html", "404.html", "_article-template.html"]
+            "privacy.html", "thank-you.html", "404.html", "_article-template.html",
+            "fees.html", "referrals.html", "thank-you-subscribe.html"]   # last three added 9 Nov 2026
     ref_foot = re.search(r'<footer class="site-footer">.*?</footer>', idx, re.S)
     odd_foot, no_skip, specialist, dashed = [], [], [], []
     for f in sorted(glob.glob("*.html")):
@@ -475,7 +476,9 @@ def main():
     for f in sorted(glob.glob("insight-*.html")):
         h = read(f)
         cm = re.search(r"reflects the law applying in Victoria as at ([A-Z][a-z]+ \d{4})", h)
-        others = set(re.findall(r"\bas at ([A-Z][a-z]+ \d{4})", h))
+        # case-insensitive from 9 Nov 2026: a sentence opening "As at August 2026"
+        # escaped the check and left the child support article two months behind.
+        others = set(re.findall(r"(?i)\bas at ([A-Z][a-z]+ \d{4})", h))
         if cm and others - {cm.group(1)}:
             cur_bad.append("%s: %s" % (f, ", ".join(sorted(others - {cm.group(1)}))))
     check("every dated currency phrase matches the currency line", not cur_bad, "; ".join(cur_bad[:3]))
@@ -637,6 +640,8 @@ def main():
             src = m.group(1)
             if src.startswith("assets/video/"):
                 continue
+            if f == "_article-template.html" and "{{" in src:
+                continue   # the template's photograph placeholder (9 Nov 2026), filled per article
             sib = src.rsplit(".", 1)[0] + ".webp"
             before = h[max(0, m.start() - 600):m.start()]
             # the sibling may be one width among several in the source's srcset (28 Sep 2026)
@@ -750,7 +755,8 @@ def main():
 
     # ---- service pages (added 28 Sep 2026, playbooks/service-pages.md "Gate") ----
     svc_pages = sorted(glob.glob("service-*.html"))
-    check("at most eight service pages", len(svc_pages) <= 8, "%d found" % len(svc_pages))
+    # cap raised from eight to twelve on Spencer's approval of the 9 Nov 2026 audit
+    check("at most twelve service pages", len(svc_pages) <= 12, "%d found" % len(svc_pages))
     idx_firm = re.search(r'"areaServed":\s*\[(.*?)\]\s*,\s*"', read("index.html"), re.S)
     places = [p for p in re.findall(r'"name":\s*"([^"]+)"', idx_firm.group(1) if idx_firm else "") if p not in ("Melbourne", "Box Hill", "Victoria")]
     sm_text, llms_text = read("sitemap.xml"), read("llms.txt")
