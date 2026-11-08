@@ -2,6 +2,31 @@
 
 Page: service-divorce.html, content file service-divorce.json. Drafted 28 September 2026, Melbourne.
 
+## Changes of 9 November 2026
+
+Made from the audit of 9 Nov 2026 that Spencer approved, in playbooks/audit-2026-11-09/. The FAQPage dateModified and
+the currency line move to 9 Nov 2026 and November 2026; the sitemap lastmod is synced by the central pass.
+
+Read today on the Federal Register of Legislation through `api.prod.legislation.gov.au`, and on legislation.vic.gov.au:
+
+- Family Law Act 1975 (Cth), Compilation No. 101, C2025C00341, compilation date 10 June 2025, still the latest, with
+  no commenced unincorporated amendments: ss 44(1A), (3), (4), 48, 49, 50, 55, 55A and 98A, including s 98A(2A).
+- Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth), Compilation No. 4, F2025C00594,
+  rectified version, still the latest: rr 2.35, 2.42, 2.43 and 2.44 to 2.46.
+- Wills Act 1997 (Vic), version 036, amendments as at 26 April 2021, the version in force: s 14.
+
+| Where | Change | Authority |
+|---|---|---|
+| Lead | Split: "A divorce needs 12 months of separation. It does not divide property or decide parenting, and it can change how your will operates, so we also advise on your property settlement and your will." | FLA s 48(2); Wills Act s 14(1), (2) |
+| Process step 3 | Split: "If you ask it to, the Court can decide the application without anyone attending, unless the other spouse asks to attend or the Court directs otherwise. Where there are children of the marriage under 18, it must first be satisfied that proper arrangements have been made for them." | FLA s 98A(1)(c), (d), (2), (2A); s 55(1) for "generally takes effect one month after it is made" |
+| Block 2 | "served on the other spouse, by post with an acknowledgement form or by hand by someone other than you" | Rules rr 2.42, 2.43(a), 2.35(3) |
+| Who we act for 2 | A call prompt after the 28 day response limit | Rules r 2.18, unchanged sentence |
+| Block 4 | "settle property first" linked to /service-property-settlement and "review your will too" to /service-wills-and-estate-planning, words unchanged | Navigation only |
+| FAQ 5 | Our fixed fee first, then the Court's filing fee and the reduced fee, words otherwise unchanged; link to /fees#fee-divorce-application-joint | Family Law (Fees) Regulations 2022 ss 2.04, 2.06, not re-read today, wording unchanged; fee list approved 9 Nov 2026, prices unchanged |
+| Fee note, hero meta, description, og, JSON-LD | Links to /fees#fee-divorce-application-joint; the $1,089 and $1,452 fees on the first screen and in the description | Fee list |
+| What to have with you | Heading changed | Practice |
+| Call to action | "we will tell you plainly whether and how we can help, which application fits and what it will cost", replacing "what to settle first", which read as advice on the free call | Rule 36 check B5 in the audit and Spencer's rule that the free call is not free advice |
+
 ## Legislation read today, 28 September 2026
 
 - Family Law Act 1975 (Cth), compilation No. 101, register ID C2025C00341, compilation date 10 June 2025, current and latest on the Federal Register of Legislation API, with no unincorporated amendments. Read in the authorised Word volumes 1 and 2.
@@ -25,7 +50,7 @@ Page: service-divorce.html, content file service-divorce.json. Drafted 28 Septem
 | FAQ 1 | If the s 48 ground and service are shown, the Court can make the order whether or not the other spouse wants the divorce | FLA s 48(2), which says the order "shall be made"; softened to "can" because jurisdiction, service and s 55A also apply |
 | Section 1 | A response must generally be filed and served within 28 days after service; the Court can extend time | Rules r 2.18(1)(c) and (2); r 15.06(1) and (2) |
 | Block 1, process step 2 | A joint application does not have to be served | Rules r 2.28(5)(a) |
-| Block 2, process step 2 | A sole application must be served, by post with an acknowledgment form or personally by someone other than the applicant; service is proved to the Court | Rules rr 2.42, 2.43, 2.35(3), 2.44 to 2.46 |
+| Block 2, process step 2 | A sole application must be served, by post with an acknowledgement form or personally by someone other than the applicant; service is proved to the Court | Rules rr 2.42, 2.43, 2.35(3), 2.44 to 2.46, re-read 9 Nov 2026 |
 | Block 3 | The Court can allow service another way or dispense with service where a spouse cannot be found | Rules r 2.34(1) |
 | Block 3 | A document filed that is not in English needs an English translation and the translator's affidavit | Rules r 2.17 |
 | Process step 3, FAQ 2 | If requested, the Court can decide without anyone attending, unless the respondent asks to attend or the Court directs otherwise; in a joint application both must ask for attendance to be excused | FLA s 98A(1), (2), (2B); Rules r 15.15(1), (2)(b), (ba) |

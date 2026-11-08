@@ -1,5 +1,24 @@
 # Claims register: service-commercial-leases, 28 September 2026
 
+## Changes of 9 November 2026
+
+Made from the audit of 9 Nov 2026 that Spencer approved, in playbooks/audit-2026-11-09/. The FAQPage dateModified and
+the currency line move to 9 Nov 2026 and November 2026; the sitemap lastmod is synced by the central pass.
+
+Read today: Retail Leases Act 2003 (Vic), version 027, amendments as at 1 July 2024, still the version marked In force
+on legislation.vic.gov.au: ss 7, 17, 18, 41, 50, 60, 61 and 62.
+
+| Where | Change | Authority |
+|---|---|---|
+| Time limits 1 | "The 14 days for disclosure are counted back from the day the lease is entered into, which under the Act is the earliest of the day everyone has signed, the day you move in with the landlord's consent and the day you start paying rent" | RLA s 7(a) to (c), "whichever first occurs"; s 17(1) |
+| Time limits 3 | A call prompt after "The Retail Leases Act gives no way to extend any of these periods" | RLA ss 17(2), (5), (6), 18; no extension power in either |
+| Assignment block | Opens with what we do: the assignment, the request for consent and the seller's disclosure statement, linking the business sale page; the two legal sentences unchanged | RLA ss 60(1), 61(2), (5A), 62(1), (2) |
+| Renewals block | Split, so the valuer clause no longer separates the two halves; substance unchanged | RLA s 37, not re-read today, wording unchanged |
+| FAQ 4 | "The landlord's capital costs" for "Its capital costs" | RLA s 41(1), (2); s 50(1) |
+| Who we act for | The closing repeat of the lead, "The best time to call is before you sign", removed | Practice |
+| Fee note | "Our fee for reviewing a lease for a tenant is from $1,089 including GST", the scope in fees.html's terms, linked to /fees#fee-lease-review-for-a-tenant | Fee list approved 9 Nov 2026, price unchanged; never called a fixed fee |
+| Description, og, JSON-LD, hero meta | The tenant lease review price; the existing hero line linked to its fee row | Fee list |
+
 ## Sources read today
 
 - Retail Leases Act 2003 (Vic), authorised version 027, incorporating amendments as at 1 July 2024, downloaded today from legislation.vic.gov.au as 03-4a027.docx. The Act's page lists 027 as the version in force, effective 1 July 2024, with nothing later.

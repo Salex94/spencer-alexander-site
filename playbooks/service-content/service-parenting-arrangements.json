@@ -4,16 +4,20 @@
  "hub_label": "Family Law",
  "crumb": "Parenting arrangements",
  "service_name": "Parenting arrangements",
- "date": "2026-09-29",
+ "date": "2026-11-09",
  "title": "Parenting Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Parenting Lawyers in Box Hill, Melbourne",
- "description": "Parenting lawyers in Box Hill for parenting plans, consent orders and court applications about children after separation. Your first call is free.",
- "lead": "From our Box Hill office, our lawyers help separated parents settle where the children live, their time with each parent and how major decisions are made, then record it in a parenting plan or consent orders. Where agreement is not possible, we put your case to the court. Your first call is free, and you speak with a lawyer.",
+ "description": "Parenting lawyers in Box Hill for what many still call custody. Consent orders for agreed arrangements are $3,025 including GST, and your first call is free.",
+ "lead": "From our Box Hill office, our lawyers help separated parents settle where the children live, their time with each parent and how major decisions are made, then record it in a parenting plan or consent orders. Where agreement is not possible, we put your case to the court. An application for parenting orders generally needs a family dispute resolution certificate, unless the court grants an exemption.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
-  "Fixed fee consent orders for agreed arrangements",
+  "<a href=\"/fees#fee-consent-orders-for-agreed-parenting-arrangements\">Consent orders for agreed arrangements $3,025, fixed fee</a>",
   "Suite 10, 1 Main Street, Box Hill"
  ],
+ "urgent": {
+  "strong": "Children kept from you, or about to be taken overseas?",
+  "text": "The court can order a child's return to a parent and make orders to stop a child being taken out of Australia, and it can excuse family dispute resolution where an application is urgent. If you are in immediate danger, call 000."
+ },
  "brief": {
   "entity": "Spencer Alexander Lawyers is a Box Hill, Melbourne law firm acting for parents and grandparents in parenting plans, consent orders and court proceedings about children, with the principal overseeing every matter.",
   "bullets": [
@@ -28,6 +32,7 @@
    "h2": "When families call us about the children.",
    "paras": [
     "Most people call soon after separating, when the children are moving between two homes on an arrangement nobody has written down, or one parent wants a pattern the other will not accept. Others have agreed and want it recorded, have orders that no longer fit, or face a move that would make it much harder for the children to see a parent.",
+    "Many people still call these arrangements custody. The law now speaks of parenting orders, which can set out who a child lives with, the time the child spends with other people and who is responsible for making decisions about the child.",
     "We act for mothers and fathers, and for <a href=\"/insight-grandparents-rights-victoria\">grandparents</a> and others concerned with a child's care, who can apply for parenting orders themselves."
    ]
   },
@@ -37,11 +42,11 @@
    "items": [
     {
      "t": "Parenting plans",
-     "p": "A written agreement between the parents, signed, dated and made free of any threat, duress or coercion, on where the children live, their time with each of you, holidays and decisions. It cannot be enforced as orders can, but a court making orders has regard to the latest plan where that is in the children's best interests."
+     "p": "We draft parenting plans, which are written agreements between the parents about where the children live, their time with each parent, holidays and decisions. A plan must be signed and dated, and made free of any threat, duress or coercion. It cannot be enforced as orders can, but a court making orders has regard to the latest plan where that is in the children's best interests."
     },
     {
      "t": "Consent orders",
-     "p": "Once you agree, we prepare the application and proposed orders. Each of you tells the court of any concern about abuse, family violence or risk, and consent orders have the same force as orders made after a hearing."
+     "p": "Once you agree, we prepare the application and the proposed orders. In the application, each of you tells the court of any concern about abuse, family violence or risk. Consent orders have the same force as orders made after a hearing."
     },
     {
      "t": "Family dispute resolution",
@@ -55,10 +60,10 @@
   },
   {
    "eyebrow": "Your first call",
-   "h2": "What to bring to your first call.",
+   "h2": "What to have with you when you call.",
    "paras": [
     "Whatever you have to hand: any parenting plan or court orders, any intervention order, letters from the other parent or their lawyer, a note of the current arrangements, and your questions. If you have little on paper, that is fine too. The first conversation is about understanding your situation, not testing your paperwork.",
-    "Your first call is free, and you speak with a lawyer. Our office is at Suite 10, 1 Main Street, Box Hill, a short walk from Box Hill station, with parking at Box Hill Central."
+    "Our office is at Suite 10, 1 Main Street, Box Hill, a short walk from Box Hill station, with parking at Box Hill Central."
    ]
   }
  ],
@@ -82,7 +87,7 @@
  },
  "fee": {
   "t": "What agreed arrangements cost.",
-  "p": "Consent orders for agreed parenting arrangements are a fixed fee of $3,025 including GST, covering advice on what you have agreed, the application and proposed orders, filing and the sealed orders, where there are no family violence or child safety concerns for the court to look into. A parenting plan built from agreed arrangements is from $1,452 including GST, and further rounds of changes cost more. Anything our <a href=\"/fees\">fees page</a> does not list, such as a disputed matter or court proceedings, is estimated in writing before substantive work begins, and the court's filing fee is paid to it directly."
+  "p": "Our fixed fee for consent orders for agreed parenting arrangements is $3,025 including GST. It covers advice on what you have agreed, the application and proposed orders, filing and the sealed orders, where there are no family violence or child safety concerns for the court to look into. Consent orders for property and parenting arrangements together are $3,850 including GST, on the same assumptions as the two separate fees. A parenting plan drawn from arrangements you have already agreed is from $1,452 including GST, with one round of changes, and further rounds cost more. Anything our <a href=\"/fees#fee-consent-orders-for-agreed-parenting-arrangements\">fees page</a> does not list, such as a disputed matter or court proceedings, is estimated in writing before substantive work begins, and the court's filing fee is paid to it directly."
  },
  "related": [
   {
@@ -114,7 +119,7 @@
   },
   {
    "q": "Do we have to try mediation before going to court?",
-   "a": "Usually. Unless the court grants an exemption, an application for parenting orders needs a family dispute resolution certificate, which a practitioner can also give if the other parent refuses or fails to attend. Exemptions are available for urgent applications, applications made by consent, and cases where the court is satisfied there are reasonable grounds to believe a party has committed family violence or abused the child, or that there is a risk of family violence by a party, or of abuse if the application were delayed, among others. If you are in immediate danger, call 000."
+   "a": "Usually. Unless the court grants an exemption, an application for parenting orders needs a family dispute resolution certificate, which a practitioner can also give if the other parent refuses or fails to attend. Exemptions are available for urgent applications and applications made by consent, among others. The court can also grant one where it is satisfied there are reasonable grounds to believe that a party has committed family violence or abused the child, that there is a risk of family violence by a party, or that the child would be at risk of abuse if the application were delayed. If you are in immediate danger, call 000."
   },
   {
    "q": "Is there a time limit for parenting orders?",
@@ -129,11 +134,11 @@
    "a": "If you are in immediate danger, call 000. Otherwise call us the day it happens. The court can order a child's return to a parent, deal with a breach of existing orders, and excuse family dispute resolution where an application is urgent."
   }
  ],
- "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>; <a href=\"https://www.legislation.gov.au/C2023A00087/latest\" rel=\"noopener\" target=\"_blank\">Family Law Amendment Act 2023 (Cth)</a>, Schedule 1, Part 2; <a href=\"https://www.legislation.gov.au/F2021L01197/latest\" rel=\"noopener\" target=\"_blank\">Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)</a>, rules 2.04, 4.01, 4.02, 10.04, 10.05 and 10.07, and Schedule 1, Part 2.",
+ "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>;<a href=\"https://www.legislation.gov.au/C2023A00087/latest\" rel=\"noopener\" target=\"_blank\">Family Law Amendment Act 2023 (Cth)</a>, Schedule 1, Part 2; <a href=\"https://www.legislation.gov.au/F2021L01197/latest\" rel=\"noopener\" target=\"_blank\">Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)</a>, rules 2.04, 4.01, 4.02, 10.04, 10.05 and 10.07, and Schedule 1, Part 2.",
  "cta": {
   "eyebrow": "Talk to us early",
   "title": "Speak with a parenting lawyer.",
-  "lead": "One call tells you where you stand and what the next step would be."
+  "lead": "Tell us how the children's time is shared now and what you want to change, and we will tell you plainly whether and how we can help and what the next step will cost."
  },
  "rail_quiet": {
   "t": "Free checklist: your first 30 days after separation.",
@@ -149,6 +154,10 @@
   {
    "name": "Consent orders for agreed parenting arrangements",
    "price": "3025"
+  },
+  {
+   "name": "Consent orders for property and parenting together",
+   "price": "3850"
   }
  ]
 }

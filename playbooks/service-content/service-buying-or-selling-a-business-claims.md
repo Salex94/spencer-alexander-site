@@ -2,6 +2,29 @@
 
 Every legal statement on the page, with the provision behind it and the version read today. All texts were downloaded on 28 September 2026 from the authorised sources and are kept in `law-bsale/` beside this file.
 
+## Changes of 9 November 2026
+
+Made from the audit of 9 Nov 2026 that Spencer approved, in playbooks/audit-2026-11-09/. The FAQPage dateModified and
+the currency line move to 9 Nov 2026 and November 2026; the sitemap lastmod is synced by the central pass.
+
+Read today on legislation.vic.gov.au, each the version marked In force:
+
+- Estate Agents Act 1980 (Vic), version 136, amendments as at 1 October 2026, which replaced version 135 after this
+  page was built: s 52 in full, unchanged in substance, including s 52(3)(a) and (b) and s 52(8).
+- Retail Leases Act 2003 (Vic), version 027, amendments as at 1 July 2024: ss 60, 61 and 62.
+
+| Where | Change | Authority |
+|---|---|---|
+| Time limits 1 | A call prompt: "If you have signed and the statement was missing or wrong, call us before you take possession of the business, because the right to end the contract under section 52 must be used before then" | EAA s 52(3)(b), "before he takes possession of the business" |
+| Acting for sellers | The fourth statement of the seller's release from the lease removed; it stays in the In brief box and FAQ 3 | RLA s 62, unchanged wording elsewhere |
+| Transferring the lease | Split into steps for a seller and for a buyer, linking the commercial leases page | RLA ss 60, 61 |
+| Who we act for 1 | Split; "In each case it is better to speak with us before anything is signed, because a signed contract binds you" | Practice |
+| Fee note | "Our fee for reviewing a contract to buy a business is from $1,210 including GST", with "the seller's disclosure" for "the vendor's", linked to /fees#fee-review-of-a-contract-to-buy-a-business | Fee list approved 9 Nov 2026, price unchanged; never called a fixed fee |
+| FAQ 5 | The fees page link points to the review's own row | fees.html |
+| Description, og, JSON-LD, hero meta | The $1,210 review price, linked on the first screen | Fee list |
+| What to have with you | Heading changed | Practice |
+| Call to action | "we will tell you plainly whether and how we can help and what it is likely to cost", replacing "what needs checking", which read as advice on the free call | Rule 36 check B5 in the audit |
+
 ## Acts and versions read
 
 - Retail Leases Act 2003 (Vic), version 027, incorporating amendments as at 1 July 2024, the current version on legislation.vic.gov.au: ss 16, 17, 18, 59 to 64.
