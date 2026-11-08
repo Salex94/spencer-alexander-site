@@ -25,19 +25,6 @@ be automated: whether every legal claim is true, whether the topic genuinely
 avoids rehashing an existing article, and whether the writing is good. Those
 still need the multi-pass read described in the routine brief.
 
-## The purpose of the site and its routines, Spencer's instruction of 9 Nov 2026
-
-Spencer set the purpose of the website, its three routines and every Claude Code session on this
-repository on 9 November 2026: they exist for sales, marketing, client acquisition and client
-conversion, and he wants every one of them "geared towards one thing and one thing only", which is
-"getting as many clients as possible". So each choice a run makes, an article's topic, a new page or a
-change to a page, is judged first by how many more enquiries and clients it is likely to bring, and
-every recommendation to Spencer states that effect and its economics. This sets the purpose and changes
-none of the rules: legal accuracy still outranks everything on the site, the design stays as it is
-without his approval, and the no dashes, no specialist, no AI and English only rules hold as before.
-The audit he asked for that day, with its evidence and the decisions waiting on him, is
-`AUDIT-2026-11-09.md` in the spencer-alexander-bd repository.
-
 ## Why these files exist (read this before adding a rule)
 
 Instructions given in conversation do not survive to the next scheduled run —

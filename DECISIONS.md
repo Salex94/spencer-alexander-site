@@ -13,21 +13,6 @@ Newest entries first.
 
 ---
 
-## 2026-11-09: The purpose of the site and its routines is client acquisition
-
-Spencer, 9 November 2026, of the routines, the Claude Code sessions run through GitHub and the website:
-"The most important thing is actually getting a constant stream of clients, a massive amount and growing
-the business. The only difference between a smaller firm and a larger one is the volume and stream of
-clients." He wants all of them "geared towards one thing and one thing only", which is "getting as many
-clients as possible". Recorded in CLAUDE.md as the purpose every run reads; it changes no rule, so
-accuracy still comes first and the design stays untouched without his approval. The audit he asked for,
-with its evidence and the decisions waiting on him, is `AUDIT-2026-11-09.md` in spencer-alexander-bd.
-Its items for this repository wait on his word: steering the Monday article towards people about to hire,
-with a short Business Profile update in each run's report for him to paste, and an optional "How did you
-find us?" field on the contact form, which changes how the page looks.
-
----
-
 ## 2026-11-03: Site accuracy and health; four pages verified, all correct, monthly structural audit clean
 
 Melbourne date Tuesday 3 November 2026, the first run of the month, so the structural audit ran as well. The ledger
