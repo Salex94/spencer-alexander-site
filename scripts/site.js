@@ -31,8 +31,9 @@
   var heroCta = document.querySelector(".hero .btn--accent, .pagehero .btn--accent");
   if (heroCta && "IntersectionObserver" in window) {
     new IntersectionObserver(function (entries) {
-      document.body.classList.toggle("cta-visible", entries[0].isIntersecting);
-    }).observe(heroCta);
+      // Most of the button must be on screen, so a button cut off at the bottom edge never hides the bar
+      document.body.classList.toggle("cta-visible", entries[0].isIntersecting && entries[0].intersectionRatio >= 0.75);
+    }, { threshold: [0, 0.75, 1] }).observe(heroCta);
   }
   // Current year in footer
   var y = document.querySelector("[data-year]");
@@ -122,7 +123,10 @@
     var el = document.getElementById(id);
     if (!el) return;
     e.preventDefault();
-    var top = el.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop) - 84;
+    // On phones the Quick exit strip sits above the sticky header, so the landing point moves down by its height
+    var qe = document.querySelector("body > .quick-exit");
+    var off = 84 + (qe && getComputedStyle(qe).position === "sticky" ? qe.offsetHeight : 0);
+    var top = el.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop) - off;
     if (top < 0) top = 0;
     try { history.pushState(null, "", "#" + id); } catch (err) { /* no-op */ }
     window.scrollTo({ top: top, behavior: reduceMotion ? "auto" : "smooth" });

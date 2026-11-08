@@ -747,13 +747,14 @@ a.pill:focus-visible { outline: 3px solid var(--wine-700); outline-offset: 2px; 
 /* On phones the Quick exit is a slim strip above the header, so it never covers a call or enquiry button */
 @media (max-width: 880px) {
   body > .quick-exit { position: sticky; top: 0; right: auto; bottom: auto; z-index: 60; display: flex; justify-content: center; align-items: center; width: 100%; min-height: 34px; padding: 8px max(16px, env(safe-area-inset-right, 0px)) 8px max(16px, env(safe-area-inset-left, 0px)); border: 0; border-radius: 0; box-shadow: none; font-size: var(--text-xs); line-height: 18px; letter-spacing: 0.08em; text-transform: uppercase; }
-  body:has(> .quick-exit) .site-header { top: 34px; }
-  body:has(> .quick-exit) [id] { scroll-margin-top: 134px; }
+  body > .quick-exit ~ .site-header { top: 34px; }
+  body > .quick-exit ~ [id], body > .quick-exit ~ * [id] { scroll-margin-top: 134px; }
 }
 /* The wine glow on dark bands sits behind the content, so the brass call button keeps its contrast */
-/* An open phone menu taller than the screen scrolls within itself, so its call button can always be reached */
-@media (max-width: 1099px) { .site-header:has(.mobile-menu.is-open) { max-height: 100vh; max-height: 100dvh; overflow-y: auto; overscroll-behavior: contain; } }
-@media (max-width: 880px) { body:has(> .quick-exit) .site-header:has(.mobile-menu.is-open) { max-height: calc(100vh - 34px); max-height: calc(100dvh - 34px); } }
+/* The open menu scrolls within the screen, so its call button and hours can always be reached */
+@media (max-width: 1099px) { .mobile-menu.is-open { max-height: calc(100vh - 118px); max-height: calc(100dvh - 118px); overflow-y: auto; overscroll-behavior: contain; } }
+@media (max-width: 900px) { .mobile-menu.is-open { max-height: calc(100vh - 80px); max-height: calc(100dvh - 80px); } }
+@media (max-width: 880px) { body > .quick-exit ~ .site-header .mobile-menu.is-open { max-height: calc(100vh - 114px); max-height: calc(100dvh - 114px); } }
 .field-dark { isolation: isolate; }
 .field-dark > * { z-index: 1; }
 /* A link in a dark call to action band, such as the phone number on the thank you page */
