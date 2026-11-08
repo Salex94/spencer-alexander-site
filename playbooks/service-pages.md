@@ -183,6 +183,9 @@ stylesheet links and their versions, fonts and Open Graph tags follow the hub ex
   plainly holds, such as the will, the grant or the lease, states no legal requirement to hold or
   bring anything, keeps the line that having little on paper is fine, and records the list in the
   claims register.
+- **Sources,** in the content file's "sources" value, each Act linked to its authorised version with the
+  sections or Part the page relies on, except that an Act relied on for more than eight provisions is named
+  alone, with no section list, under Spencer's rule of 26 September 2026, which the gate enforces.
 - **Fees,** copied word for word from the live site and never paraphrased, using only the
   sentences named here for each page, and no fee sentence of the run's own. Any FAQ about cost
   answers only in these words.

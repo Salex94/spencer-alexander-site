@@ -665,6 +665,11 @@ of the market. These conventions came out of that round.
   never cases, and every provision read in the authorised version first. The
   gate requires it for articles dated from 28 Sep 2026, and every older
   article has carried one since 26 Sep 2026.
+  Where an Act is relied on for more than eight provisions, its Sources line names the Act alone, with no
+  section list, so no line becomes a wall of numbers: Spencer's condition when he approved Sources lines on
+  26 Sep 2026, recorded in DECISIONS.md, written here on 9 Nov 2026 after the playbook's omission of it let
+  twelve live lines drift past it, and checked by the gate's "Sources lines name an Act alone past eight
+  provisions". The service pages follow the same rule.
 - **Fixed fees.** fees.html publishes the firm's fixed fees, set on 26 Sep 2026
   at the low end of what Melbourne firms publish, on Spencer's instruction
   "I want everything to be very affordable. Like on the lowest end of the

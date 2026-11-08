@@ -333,6 +333,33 @@ def main():
             if ids is not None and frag not in ids:
                 frag_bad.append("%s -> %s#%s" % (f, path, frag))
     check("fragment links land on a real id (site-wide)", not frag_bad, "; ".join(sorted(frag_bad)[:4]))
+
+    # Spencer's condition of 26 Sep 2026 for publishing Sources lines: an Act relied on for
+    # more than eight provisions is named alone, so no line becomes a wall of numbers. The
+    # playbook never carried it and twelve live lines had drifted past it by 9 Nov 2026.
+    def _provisions(spec):
+        spec = re.sub(r"\b(sections?|clauses?|rules?|regulations?|items?|Orders?|Divisions?|Parts?|Schedule \w+|Subdivision \S+)\b", " ", spec)
+        n = 0
+        for it in [x.strip() for x in re.split(r",| and ", spec) if x.strip()]:
+            m = re.match(r"^(\d+)([A-Z]*)\s+to\s+(\d+)([A-Z]*)", it)
+            if m:
+                a, b = int(m.group(1)), int(m.group(3))
+                n += (ord(m.group(4)[-1]) - ord(m.group(2)[-1]) + 1) if (a == b and m.group(2) and m.group(4)) else max(2, b - a + 1)
+            elif re.search(r"\w", it):
+                n += 1
+        return n
+    walls = []
+    for f in sorted(glob.glob("insight-*.html") + glob.glob("resource-*.html") + glob.glob("service-*.html")):
+        h = read(f)
+        m = re.search(r'class="article-sources"[^>]*>(.*?)</p>', h, re.S) or re.search(r"<p[^>]*>\s*Sources:(.*?)</p>", h, re.S)
+        if not m:
+            continue
+        t = re.sub(r"^Sources:\s*", "", html_mod.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip()).rstrip(".")
+        for entry in t.split(";"):
+            em = re.match(r"\s*(.*?\(\w+\))\s*,?\s*(.*)$", entry)
+            if em and em.group(2) and _provisions(em.group(2)) > 8:
+                walls.append("%s: %s" % (f, em.group(1)))
+    check("Sources lines name an Act alone past eight provisions", not walls, "; ".join(walls[:3]))
     check("local assets exist (site-wide)", not wide_missing, "; ".join(wide_missing[:4]))
 
     # Site chrome and house style on the core pages (added 5 Sep 2026 with the
