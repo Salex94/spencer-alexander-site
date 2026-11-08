@@ -779,8 +779,8 @@ the final round were published to main on 28 Sep 2026; DECISIONS.md records both
 - **Trust.** The firm node carries the ABN as `taxID`; About links the Register of Lawyers; each hub
   names Melbourne's eastern suburbs.
 - **Letters of administration** at $2,178 is always quoted as where there is no will, as fees.html
-  prices it. The probate page says nothing about costs being paid from the estate until Spencer gives
-  his view on rule 9.01 of the probate rules.
+  prices it. Since 9 Nov 2026 every page that touches who pays for a grant uses the verified rule 9.01
+  wording in the audit round below, and none says the fee for obtaining a grant comes from the estate.
 - **Listing read times** on insights.html and index.html must equal each article's own; the gate
   checks it.
 - Keys after this round: site.css v21, styles.css v9, site.js v17.
@@ -822,7 +822,8 @@ the final round were published to main on 28 Sep 2026; DECISIONS.md records both
   the enduring power of attorney and the medical treatment decision maker appointment are each $495, and
   every other price rose by exactly 10 per cent, apart from the two wills prices he set the day before,
   which stay at $495 and $880; the letter of demand, which 10 per cent would have left at $484, is $495.
-  Company set up is $1,210 including the ASIC registration fee. fees.html says no piece of work costs less
+  Company set up was $1,210 including the ASIC registration fee until 9 Nov 2026, when it became $660 with
+  ASIC's fee at cost; see the audit round below. fees.html says no piece of work costs less
   than $495 including GST, and no price, estimate or quote anywhere may go below it.
 
 ## English only, Spencer's instruction of 28 Sep 2026
@@ -835,6 +836,54 @@ Every page is `lang="en-AU"`, with no hreflang, no page in another language and 
 or interpreter. Never add one without a new instruction from Spencer. The gate's English only check fails
 a `zh/` directory, a page in another language, an hreflang link, text in a non Latin script, any mention of Mandarin or Cantonese,
 and any offer of a translator or interpreter; a statement of law about translating documents stays allowed. Keys: site.js v17, English only.
+
+## Audit round of 9 Nov 2026, approved by Spencer and published the same day
+
+Spencer asked for a full audit of the site and a fee survey, saw the recommendations, and said: "Do a final
+audit and ensure that all the changes make all the key aspects of the site better, if they do, then implement
+all the changes onto the site." The record is `playbooks/audit-2026-11-09/`. What came out of it and is settled:
+
+- **Prices, Spencer's approval of 9 Nov 2026.** A probate application for a straightforward estate is $1,980
+  including GST, and letters of administration where there is no will $2,178, each including the fee for
+  publishing the notice of intention to apply. The audit proposed passing that fee on at cost, but section 48(7)(a)
+  of the Australian Consumer Law counts any known, compulsory charge payable to the firm as part of the single
+  price for a consumer service, so it stays inside the fixed fee; a probate filing fee scaled to an estate's value
+  is not known in advance and stays separate. Company set up is $660 including GST, with ASIC's registration fee
+  passed on at cost, replacing the $1,210 all in price of 29 Sep 2026; company set up is a business service, which
+  section 48(1) does not reach, so the separate government fee is permissible there. Two prices are
+  new: consent orders for property and parenting together $3,850, and advice and a certificate on a binding
+  financial agreement the other party drafted, from $1,100. Every other price is unchanged, the $495 minimum
+  stands, and only Spencer changes a price.
+- **What an estate pays for a grant.** Rule 9.01 of the Supreme Court's probate rules limits what may be paid
+  from an estate for a lawyer's ordinary work in obtaining a grant to the scale in their Appendix, and any
+  excess falls on the executor unless the beneficiaries who would bear it agree in writing. No page says the
+  grant fee is paid from the estate; the wording in `playbooks/audit-2026-11-09/legal-corrections.md` is the
+  form to use.
+- **Calls.** Wherever a page said a call tells you "where you stand", it now says a call tells you "plainly
+  whether and how we can help". The article and resource rail cards say "a short call tells you plainly whether
+  and how we can help", and the rating line is "Rated 5.0 stars on Google", without "by clients", because the
+  firm cannot know that every Google reviewer was a client. Under the home page badge it reads "Google rating
+  for Spencer Alexander Lawyers".
+- **Bylines.** Articles and resources read "Published by Spencer Alexander, Principal", and the FAQ hero
+  "Published by Spencer Alexander, Principal", because the routines write and publish without a human reading
+  each piece first. If Spencer later reads each article on the day it goes live, he can restore "By".
+- **The answer before the photograph.** Every article opens its body with the lead, then the photograph, then
+  the contents list. The photograph carries no fetchpriority. `_article-template.html` shows the order.
+- **Quick exit on phones** is a slim strip at the very top of the page, above the top bar and the sticky header,
+  so it never covers a call or enquiry button; on wider screens it stays at the bottom right.
+- **Checklist requests** land on `thank-you-subscribe.html`, a noindex page, and enquiries on `thank-you.html`,
+  so the two can be told apart. A printed checklist carries the firm's address and number and not the subscribe
+  box.
+- **Referrals page.** `referrals.html`, cloned from the privacy page, explains to accountants, planners and
+  other advisers how to refer a client. The footer's Firm column links it as "For referrers". It quotes no
+  price, and says nothing about payment for referrals.
+- **Service pages.** The cap is twelve, raised from eight on Spencer's approval; the four added on 9 Nov 2026
+  are powers of attorney, binding financial agreements, debt recovery and shareholder agreements.
+- **The footer** is now copied from index.html by `scripts/propagate-chrome.py` along with the header.
+- **Gate.** The currency phrase check is case insensitive, the service page cap is twelve, fees.html,
+  referrals.html and thank-you-subscribe.html are core pages for the dash and specialist checks, and only the
+  template's photograph placeholder is exempt from the WebP check.
+- Keys after this round: site.css v23, styles.css v9, site.js v18.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 
