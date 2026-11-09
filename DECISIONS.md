@@ -13,6 +13,37 @@ Newest entries first.
 
 ---
 
+## 2026-11-10: Site accuracy and health; five pages verified, all correct
+
+Melbourne date Tuesday 10 November 2026. Not the first run of the month, so no structural audit. The ledger holds 55
+legal pages and lacks none; 55 divided by 13 and rounded up is 5. Every page was last verified on 9 Nov 2026 in the site
+audit, so the five oldest articles by publication date were taken:
+
+- insight-property-reforms-2025.html: correct. Family Law Act 1975 (Cth) compilation 101, C2025C00341, still current
+  with no unincorporated amendments, sections 4AB including (2A), 44(3) and (5), 71B, 79(2) to (7), 90RI, 90SM and
+  90XC; Family Law Amendment Act 2024 (Cth) as made, Schedule 1 item 68, the application of the property framework to
+  proceedings started from commencement and pending ones without a final hearing begun.
+- insight-making-a-valid-will.html: correct. Wills Act 1997 (Vic) version 036, still the latest, sections 5, 6, 7, 9,
+  11, 13, 14 and 20; Administration and Probate Act 1958 (Vic) version 130, still the latest, sections 90 and 91.
+- insight-divorce-in-victoria.html: correct. Family Law Act compilation 101 sections 39(3), 44, 48, 49, 50, 55, 55A and
+  98A; Family Law Amendment Act 2024 Schedule 3 Parts 1A and 2; Domicile Act 1982 (Cth) compilation 4 section 10;
+  Family Law (Fees) Regulations 2022 (Cth) compilation 2, F2025C00377, sections 2.02(3) and 2.06, which is why both
+  joint applicants must qualify for the reduced fee; Federal Circuit and Family Court of Australia (Family Law) Rules
+  2021 (Cth) compilation 4, F2025C00594, rule 2.17.
+- insight-probate-victoria.html: correct. Administration and Probate Act version 130 sections 6, 13, 18, 25, 39, 58, 99
+  and 99A; Supreme Court (Administration and Probate) Rules 2023 (Vic) version 002 rules 2.02, 2.03, 2.04, 9.01 and
+  9.03; Supreme Court (Fees) Regulations 2018 (Vic) version 003 Schedule 1 item 4.2, nil below $250,000; Trustee Act
+  1958 (Vic) version 127 section 36. The rule 9.01 sentence is the form settled on 9 Nov 2026 and was left as it is.
+- insight-business-structures.html: correct. Partnership Act 1958 (Vic) version 084 sections 5, 9 and 13; Corporations
+  Act 2001 (Cth) compilation 149, C2026C00432, sections 516 and 1272C; Income Tax Assessment Act 1997 (Cth) compilation
+  268 section 328-430; Income Tax Rates Act 1986 (Cth) compilation 66, C2026C00300, sections 12(9), at 45 per cent,
+  and 23AA; Taxation Administration Act 1953 (Cth) compilation 227 Schedule 1 Division 269.
+
+No page changed, so no page dates moved. Fleet check: the Front desk and the Document desk remain switched off since
+22 Oct 2026; every other routine present ran as scheduled and no retired routine is enabled.
+
+---
+
 ## 2026-11-09: The audit's changes, finally audited and published
 
 Spencer read the audit and asked for a final audit, with every change implemented if it made the key aspects of the
