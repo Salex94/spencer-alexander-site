@@ -13,6 +13,15 @@ Newest entries first.
 
 ---
 
+## 2026-11-13: Demand scan, two FAQ entries added
+
+Friday 13 November 2026 Melbourne. faq.html gained "Do I need a lawyer to get divorced?" and "Can I apply for probate
+myself without a lawyer?", both built only from wording already verified on the site; the FAQ's dateModified, reviewed
+date, sitemap lastmod and llms.txt Last updated moved to 13 November. Backlog refreshed; Commercial Law is due Monday
+16 November and, after a hire guide, an ordinary article.
+
+---
+
 ## 2026-11-10: Site accuracy and health; five pages verified, all correct
 
 Melbourne date Tuesday 10 November 2026. Not the first run of the month, so no structural audit. The ledger holds 55
