@@ -4,14 +4,14 @@
  "hub_label": "Family Law",
  "crumb": "Parenting arrangements",
  "service_name": "Parenting arrangements",
- "date": "2026-11-09",
+ "date": "2026-11-16",
  "title": "Parenting Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Parenting Lawyers in Box Hill, Melbourne",
- "description": "Parenting lawyers in Box Hill for what many still call custody. Consent orders for agreed arrangements are $3,025 including GST, and your first call is free.",
+ "description": "Parenting lawyers in Box Hill for what many still call custody. Consent orders for agreed arrangements are $2,948 including GST, and your first call is free.",
  "lead": "From our Box Hill office, our lawyers help separated parents settle where the children live, their time with each parent and how major decisions are made, then record it in a parenting plan or consent orders. Where agreement is not possible, we put your case to the court. An application for parenting orders generally needs a family dispute resolution certificate, unless the court grants an exemption.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
-  "<a href=\"/fees#fee-consent-orders-for-agreed-parenting-arrangements\">Consent orders for agreed arrangements $3,025, fixed fee</a>",
+  "<a href=\"/fees#fee-consent-orders-for-agreed-parenting-arrangements\">Consent orders for agreed arrangements $2,948, fixed fee</a>",
   "Suite 10, 1 Main Street, Box Hill"
  ],
  "urgent": {
@@ -87,7 +87,7 @@
  },
  "fee": {
   "t": "What agreed arrangements cost.",
-  "p": "Our fixed fee for consent orders for agreed parenting arrangements is $3,025 including GST. It covers advice on what you have agreed, the application and proposed orders, filing and the sealed orders, where there are no family violence or child safety concerns for the court to look into. Consent orders for property and parenting arrangements together are <a href=\"/fees#fee-consent-orders-for-property-and-parenting\">$3,850 including GST</a>, on the same assumptions as the two separate fees. A parenting plan drawn from arrangements you have already agreed is from $1,452 including GST, with one round of changes, and further rounds cost more. Anything our <a href=\"/fees#fee-consent-orders-for-agreed-parenting-arrangements\">fees page</a> does not list, such as a disputed matter or court proceedings, is estimated in writing before substantive work begins, and the court's filing fee is paid to it directly."
+  "p": "Our fixed fee for consent orders for agreed parenting arrangements is $2,948 including GST. It covers advice on what you have agreed, the application and proposed orders, filing and the sealed orders, where there are no family violence or child safety concerns for the court to look into. Consent orders for property and parenting arrangements together are <a href=\"/fees#fee-consent-orders-for-property-and-parenting\">$4,576 including GST</a>, on the same assumptions as the two separate fees. A parenting plan drawn from arrangements you have already agreed is from $1,342 including GST, with one round of changes, and further rounds cost more. Anything our <a href=\"/fees#fee-consent-orders-for-agreed-parenting-arrangements\">fees page</a> does not list, such as a disputed matter or court proceedings, is estimated in writing before substantive work begins, and the court's filing fee is paid to it directly."
  },
  "related": [
   {
@@ -153,11 +153,11 @@
  "offers": [
   {
    "name": "Consent orders for agreed parenting arrangements",
-   "price": "3025"
+   "price": "2948"
   },
   {
    "name": "Consent orders for property and parenting together",
-   "price": "3850"
+   "price": "4576"
   }
  ]
 }

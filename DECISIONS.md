@@ -13,6 +13,39 @@ Newest entries first.
 
 ---
 
+## 2026-11-16: Every fixed fee reset to four out of ten
+
+Spencer's words: "All fixed fee prices must be 4/10 - that is, just very slightly below average (10 percent below
+the average price). To determine the average price, as much information from the internet and pricing from other
+firms listings must be discovered, then a small 10 percent reduction from the average price of atleast 10-20
+different Victorian firms or as many firms as you can finding pricing on applied to ensure that pricing is always
+4/10. Also when we assess any work we must assess it at 4/10 pricing too."
+
+A fresh survey on 16 Nov 2026 read 213 published prices from Victorian law firms; the method, every firm counted
+and every firm left out are in `playbooks/fees-2026-11-16/`. Each fee is the average less 10 per cent, divided by
+1.1 and rounded down to the nearest $10 before GST.
+
+- Up: single will $517, wills for a couple $946, probate $2,321, letters of administration $2,530, consent orders
+  for an agreed property settlement $3,212, consent orders for property and parenting together $4,576, advice on
+  a financial agreement the other party drafted from $1,650.
+- Down: estate plan $990 for one person and $1,628 for a couple, testamentary trust wills from $1,595 and from
+  $2,596, divorce $1,023 joint and $1,111 sole, parenting consent orders $2,948, parenting plan from $1,342,
+  binding financial agreement from $2,948, lease review from $814, company set up $539 with ASIC's fee at cost,
+  shareholders agreement from $1,111, terms of trade from $1,243, business purchase review from $913.
+- Held at $495: the enduring power of attorney, the medical treatment decision maker appointment and the letter
+  of demand, which four out of ten would put at about $352, $308 and $418, below Spencer's $495 minimum of
+  29 Sep 2026. Spencer decides which rule wins.
+- Thin: sixteen services have fewer than ten Victorian firms publishing a price, and the shareholders agreement,
+  terms of trade and business purchase review averages rest on two to five mostly online firms.
+- Pages: fees.html and its OfferCatalog, the three hubs, faq.html, 24 articles, both resources, insights.html,
+  feed.xml, llms.txt and the eleven service pages rebuilt from their content files. Articles and service pages
+  moved to 16 Nov 2026 within the same month, so no currency line changed; faq.html's reviewed date and every
+  changed page's sitemap lastmod moved with them. CLAUDE.md, "Prices at four out of ten", holds the rule.
+- Off the site, for Spencer: the Google Business Profile services still show the old prices, and the Firm
+  Register's Fees tab is updated the same day.
+
+---
+
 ## 2026-11-16: Weekly article, make good at the end of a commercial lease, an ordinary Commercial Law article
 
 New article insight-make-good-end-of-commercial-lease.html, published Monday 16 November 2026 Melbourne time, commit

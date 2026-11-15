@@ -783,8 +783,8 @@ the final round were published to main on 28 Sep 2026; DECISIONS.md records both
   arrives, with an email link for a photo of it.
 - **Trust.** The firm node carries the ABN as `taxID`; About links the Register of Lawyers; each hub
   names Melbourne's eastern suburbs.
-- **Letters of administration** at $2,178 is always quoted as where there is no will, as fees.html
-  prices it. Since 9 Nov 2026 every page that touches who pays for a grant uses the verified rule 9.01
+- **Letters of administration** at $2,530 since 16 Nov 2026 is always quoted as where there is no will, as
+  fees.html prices it. Since 9 Nov 2026 every page that touches who pays for a grant uses the verified rule 9.01
   wording in the audit round below, and none says the fee for obtaining a grant comes from the estate.
 - **Listing read times** on insights.html and index.html must equal each article's own; the gate
   checks it.
@@ -888,6 +888,27 @@ audit, with every change implemented if it made the key aspects of the site bett
   referrals.html and thank-you-subscribe.html are core pages for the dash and specialist checks, and only the
   template's photograph placeholder is exempt from the WebP check.
 - Keys after this round: site.css v24, styles.css v9, site.js v18.
+
+## Prices at four out of ten, Spencer's instruction of 16 Nov 2026
+
+"All fixed fee prices must be 4/10 - that is, just very slightly below average (10 percent below the average
+price)." The average is the plain mean of the published fees of at least ten to twenty Victorian firms for the same
+work, or of as many as publish one, and four out of ten is that average less 10 per cent. Work that is not on
+fees.html is priced the same way, by the spencer-alexander-pricing skill. This replaces the low end of the market
+rule of 26 Sep 2026 and the 10 per cent rise of 29 Sep 2026.
+
+- **The survey.** `playbooks/fees-2026-11-16/` holds the method, every firm counted with its link, and the firms
+  left out and why. A firm counts when it is a law practice with an office in Victoria. Prices are brought to the
+  firm's own scope, including GST, with court and government fees removed and the $38 probate notice fee added
+  where a firm leaves it out, because the firm's probate and administration fees include it.
+- **Rounding.** The fee before GST is four out of ten divided by 1.1, rounded down to the nearest $10, so no fee
+  sits above four out of ten; the published total is that fee plus GST, for example $470 plus GST, $517.
+- **The $495 minimum.** The enduring power of attorney, the medical treatment decision maker appointment and the
+  letter of demand come out below $495 at four out of ten, about $352, $308 and $418. They stay at $495, and fees.html
+  still says no piece of work costs less than $495, until Spencer decides which rule wins.
+- **Resurveys.** A price is reset only from a fresh survey read on the day, never from memory or an old survey,
+  and only Spencer changes a price. A change touches fees.html, its OfferCatalog, every page and service content
+  file that quotes it, llms.txt and feed.xml in one commit, with the page dates and sitemap lastmod moved.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 

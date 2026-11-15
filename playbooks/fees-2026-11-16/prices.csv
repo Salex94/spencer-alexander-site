@@ -1,0 +1,219 @@
+provider,location,item,published,gst,inc_gst,url,read,notes
+O'Haire Legal,Bendigo VIC 3550,will_single,$330,inc,330,https://www.ohairelegal.com.au/our-fees,2026-11-16,
+O'Haire Legal,Bendigo VIC 3550,will_couple,$600,inc,600,https://www.ohairelegal.com.au/our-fees,2026-11-16,
+O'Haire Legal,Bendigo VIC 3550,plan_single,$750,inc,750,https://www.ohairelegal.com.au/our-fees,2026-11-16,will EPOA MTDM
+O'Haire Legal,Bendigo VIC 3550,plan_couple,"$1,350",inc,1350,https://www.ohairelegal.com.au/our-fees,2026-11-16,
+O'Haire Legal,Bendigo VIC 3550,epoa,$300,inc,300,https://www.ohairelegal.com.au/our-fees,2026-11-16,
+O'Haire Legal,Bendigo VIC 3550,mtdm,$275,inc,275,https://www.ohairelegal.com.au/our-fees,2026-11-16,
+O'Haire Legal,Bendigo VIC 3550,tt_single,"from $1,100",inc,1100,https://www.ohairelegal.com.au/our-fees,2026-11-16,will alone
+O'Haire Legal,Bendigo VIC 3550,tt_couple,"from $1,870",inc,1870,https://www.ohairelegal.com.au/our-fees,2026-11-16,wills alone
+O'Haire Legal,Bendigo VIC 3550,div_joint,starting at $900 plus GST,ex,990,https://www.ohairelegal.com.au/our-fees,2026-11-16,
+O'Haire Legal,Bendigo VIC 3550,div_sole,"starting at $1,200 plus GST",ex,1320,https://www.ohairelegal.com.au/our-fees,2026-11-16,
+O'Haire Legal,Bendigo VIC 3550,co_prop,"starting at $2,500 plus GST",ex,2750,https://www.ohairelegal.com.au/our-fees,2026-11-16,
+O'Haire Legal,Bendigo VIC 3550,co_par,"starting at $2,500 plus GST",ex,2750,https://www.ohairelegal.com.au/our-fees,2026-11-16,
+O'Haire Legal,Bendigo VIC 3550,bfa,"starting at $3,500 plus GST",ex,3850,https://www.ohairelegal.com.au/our-fees,2026-11-16,
+O'Haire Legal,Bendigo VIC 3550,bfa_review,"starting at $1,500 plus GST",ex,1650,https://www.ohairelegal.com.au/our-fees,2026-11-16,
+O'Haire Legal,Bendigo VIC 3550,lod,$120 plus GST plus disbursements,ex,132,https://www.ohairelegal.com.au/our-fees,2026-11-16,
+Silk Legal,Narre Warren VIC 3805,will_single,$550 incl GST,inc,550,https://www.silklegal.com.au/our-fixed-fees-wills-and-estates,2026-11-16,
+Silk Legal,Narre Warren VIC 3805,will_couple,$880 inc GST,inc,880,https://www.silklegal.com.au/our-fixed-fees-wills-and-estates,2026-11-16,
+Silk Legal,Narre Warren VIC 3805,plan_single,$880 inc GST,inc,880,https://www.silklegal.com.au/our-fixed-fees-wills-and-estates,2026-11-16,Package 2
+Silk Legal,Narre Warren VIC 3805,plan_couple,"$1,650 inc GST",inc,1650,https://www.silklegal.com.au/our-fixed-fees-wills-and-estates,2026-11-16,Package 3
+Silk Legal,Narre Warren VIC 3805,epoa,$330 incl GST,inc,330,https://www.silklegal.com.au/our-fixed-fees-wills-and-estates,2026-11-16,
+Silk Legal,Narre Warren VIC 3805,mtdm,$330 incl GST,inc,330,https://www.silklegal.com.au/our-fixed-fees-wills-and-estates,2026-11-16,
+Silk Legal,Narre Warren VIC 3805,div_joint,"$990 to $1,320 incl GST",inc,990,https://www.silklegal.com.au/our-fixed-fees-family-law,2026-11-16,low end of range; joint and sole not separated so sole left out
+Silk Legal,Narre Warren VIC 3805,co_prop,"$2,750+ incl GST",inc,2750,https://www.silklegal.com.au/our-fixed-fees-family-law,2026-11-16,
+Silk Legal,Narre Warren VIC 3805,co_par,"$2,750+ incl GST",inc,2750,https://www.silklegal.com.au/our-fixed-fees-family-law,2026-11-16,
+Silk Legal,Narre Warren VIC 3805,co_both,"$3,300+ incl GST",inc,3300,https://www.silklegal.com.au/our-fixed-fees-family-law,2026-11-16,
+Silk Legal,Narre Warren VIC 3805,par_plan,"$1,500+ incl GST",inc,1500,https://www.silklegal.com.au/our-fixed-fees-family-law,2026-11-16,
+Silk Legal,Narre Warren VIC 3805,bfa,"$2,750 incl GST",inc,2750,https://www.silklegal.com.au/our-fixed-fees-family-law,2026-11-16,
+Silk Legal,Narre Warren VIC 3805,bfa_review,"$1,100 to $1,650 incl GST",inc,1100,https://www.silklegal.com.au/our-fixed-fees-family-law,2026-11-16,low end of range
+Legal Essentials,Melbourne VIC,will_single,$500,inc,500,https://www.legalessentials.com.au/prices/,2026-11-16,page says all prices include GST; valid from 1 July 2026
+Legal Essentials,Melbourne VIC,will_couple,$940,inc,940,https://www.legalessentials.com.au/prices/,2026-11-16,
+Legal Essentials,Melbourne VIC,plan_single,"$1,100",inc,1100,https://www.legalessentials.com.au/prices/,2026-11-16,Standard Package
+Legal Essentials,Melbourne VIC,plan_couple,"$2,200",inc,2200,https://www.legalessentials.com.au/prices/,2026-11-16,
+Legal Essentials,Melbourne VIC,epoa,$450,inc,450,https://www.legalessentials.com.au/prices/,2026-11-16,
+Legal Essentials,Melbourne VIC,mtdm,$250,inc,250,https://www.legalessentials.com.au/prices/,2026-11-16,
+Legal Essentials,Melbourne VIC,tt_single,"$2,200",inc,2200,https://www.legalessentials.com.au/prices/,2026-11-16,will incorporating discretionary trust
+Legal Essentials,Melbourne VIC,tt_couple,"$4,400",inc,4400,https://www.legalessentials.com.au/prices/,2026-11-16,DTT and estate plans; equals two of its single trust wills
+Legal Essentials,Melbourne VIC,probate,"$6,000",inc,6038,https://www.legalessentials.com.au/prices/,2026-11-16,grant of representation only; notice fee not stated so added
+Legal Essentials,Melbourne VIC,loa,"$6,000",inc,6038,https://www.legalessentials.com.au/prices/,2026-11-16,grant of representation only; notice fee not stated so added
+dlegal,Chelsea Heights and Dandenong VIC,will_single,from 990 AUD excl GST,ex,1089,https://dlegal.com.au/about-us/fees/,2026-11-16,
+dlegal,Chelsea Heights and Dandenong VIC,will_couple,from 1320 AUD excl GST,ex,1452,https://dlegal.com.au/about-us/fees/,2026-11-16,
+dlegal,Chelsea Heights and Dandenong VIC,epoa,330 to 440 AUD excl GST,ex,363,https://dlegal.com.au/about-us/fees/,2026-11-16,low end of range
+dlegal,Chelsea Heights and Dandenong VIC,mtdm,330 to 440 AUD excl GST,ex,363,https://dlegal.com.au/about-us/fees/,2026-11-16,low end of range
+dlegal,Chelsea Heights and Dandenong VIC,plan_single,from 960 AUD excl GST,ex,1056,https://dlegal.com.au/about-us/fees/,2026-11-16,
+dlegal,Chelsea Heights and Dandenong VIC,plan_couple,from 1920 AUD excl GST,ex,2112,https://dlegal.com.au/about-us/fees/,2026-11-16,
+RobynLouise J Thomas Lawyer,Miners Rest VIC 3352,will_single,$330,inc,330,https://www.rjtlaw.com.au/costs,2026-11-16,includes signing appointment
+RobynLouise J Thomas Lawyer,Miners Rest VIC 3352,tt_single,"$1,500",inc,1500,https://www.rjtlaw.com.au/costs,2026-11-16,
+RobynLouise J Thomas Lawyer,Miners Rest VIC 3352,epoa,$270,inc,270,https://www.rjtlaw.com.au/costs,2026-11-16,
+RobynLouise J Thomas Lawyer,Miners Rest VIC 3352,mtdm,$270,inc,270,https://www.rjtlaw.com.au/costs,2026-11-16,
+SMR Legal,Shepparton VIC,will_single,"$1,100",inc,1100,https://smrlegal.com.au/our-fees-shepparton-law-firm/,2026-11-16,excl disbursements
+SMR Legal,Shepparton VIC,plan_single,"$1,430",inc,1430,https://smrlegal.com.au/our-fees-shepparton-law-firm/,2026-11-16,standard will and EPAs
+SMR Legal,Shepparton VIC,will_couple,"$1,650",inc,1650,https://smrlegal.com.au/our-fees-shepparton-law-firm/,2026-11-16,
+SMR Legal,Shepparton VIC,plan_couple,"$1,980",inc,1980,https://smrlegal.com.au/our-fees-shepparton-law-firm/,2026-11-16,
+SMR Legal,Shepparton VIC,probate,"$3,300",inc,3338,https://smrlegal.com.au/our-fees-shepparton-law-firm/,2026-11-16,standard estate under $1m without shares; excl disbursements so notice fee added
+SMR Legal,Shepparton VIC,div_joint,"$1,500",inc,1500,https://smrlegal.com.au/our-fees-shepparton-law-firm/,2026-11-16,standard divorce no children under 18; one price for either kind
+SMR Legal,Shepparton VIC,div_sole,"$1,500",inc,1500,https://smrlegal.com.au/our-fees-shepparton-law-firm/,2026-11-16,standard divorce no children under 18; one price for either kind
+SMR Legal,Shepparton VIC,lease_review,"$1,595",inc,1595,https://smrlegal.com.au/our-fees-shepparton-law-firm/,2026-11-16,standard retail lease acting for tenant
+SMR Legal,Shepparton VIC,tot,"$3,300",inc,3300,https://smrlegal.com.au/our-fees-shepparton-law-firm/,2026-11-16,standard business terms and conditions
+Ganci Huggett Lawyers,West Melbourne VIC 3003,will_single,"$680 to $1,275 excl GST",ex,748,https://gancihuggett.com.au/our-costs/,2026-11-16,low end of range
+Ganci Huggett Lawyers,West Melbourne VIC 3003,tt_single,"$2,900 to $6,200 excl GST",ex,3190,https://gancihuggett.com.au/our-costs/,2026-11-16,testamentary or complex; low end
+Ganci Huggett Lawyers,West Melbourne VIC 3003,epoa,$550 to $850 excl GST,ex,605,https://gancihuggett.com.au/our-costs/,2026-11-16,low end
+Ganci Huggett Lawyers,West Melbourne VIC 3003,div_joint,"$1,250 to $4,450 excl GST",ex,1375,https://gancihuggett.com.au/our-costs/,2026-11-16,amicable divorce application; low end taken as joint
+Ganci Huggett Lawyers,West Melbourne VIC 3003,bfa,"$3,400 to $10,200 excl GST",ex,3740,https://gancihuggett.com.au/our-costs/,2026-11-16,amicable; low end
+Ganci Huggett Lawyers,West Melbourne VIC 3003,lease_review,"$1,300 to $2,300 excl GST",ex,1430,https://gancihuggett.com.au/our-costs/,2026-11-16,acting for tenant; low end
+Ganci Huggett Lawyers,West Melbourne VIC 3003,lod,"$850 to $1,250 excl GST",ex,935,https://gancihuggett.com.au/our-costs/,2026-11-16,per letter; low end
+RV Legal,Williamstown VIC,will_single,$600 inc GST,inc,600,https://www.rvlegal.com.au/wills-and-estates/fixed-price-wills/,2026-11-16,dedicated page modified 1 Jul 2026; services page still shows $500
+RV Legal,Williamstown VIC,plan_single,$1000 inc GST,inc,1000,https://www.rvlegal.com.au/wills-and-estates/fixed-price-wills/,2026-11-16,will plus POA plus medical authority; services page shows $800
+Gleesons Lawyers,South Melbourne VIC 3205,will_single,$440 inc GST,inc,440,https://www.gclawyers.com.au/wills-and-estate-lawyers/,2026-11-16,standard will package with complimentary medical and enduring POAs
+Gleesons Lawyers,South Melbourne VIC 3205,will_couple,$760 inc GST,inc,760,https://www.gclawyers.com.au/wills-and-estate-lawyers/,2026-11-16,same package for couples
+Gleesons Lawyers,South Melbourne VIC 3205,plan_single,$440 inc GST,inc,440,https://www.gclawyers.com.au/wills-and-estate-lawyers/,2026-11-16,will with complimentary medical and enduring POAs
+Gleesons Lawyers,South Melbourne VIC 3205,plan_couple,$760 inc GST,inc,760,https://www.gclawyers.com.au/wills-and-estate-lawyers/,2026-11-16,
+Maitland Legal,North Geelong VIC 3215,will_single,$490,unstated,490,https://maitlandlegal.com.au/,2026-11-16,GST not stated; treated as including
+Maitland Legal,North Geelong VIC 3215,plan_single,$660,unstated,660,https://maitlandlegal.com.au/,2026-11-16,GST not stated
+Maitland Legal,North Geelong VIC 3215,will_couple,$750,unstated,750,https://maitlandlegal.com.au/,2026-11-16,GST not stated
+Maitland Legal,North Geelong VIC 3215,plan_couple,$950,unstated,950,https://maitlandlegal.com.au/,2026-11-16,GST not stated
+Madison Sloan Lawyers,Park Orchards VIC 3114,plan_single,"$1,595 plus GST",ex,1754.5,https://www.madisonsloanlawyers.com.au/services/wills-estate-planning/,2026-11-16,Essential package includes an advance care directive
+Madison Sloan Lawyers,Park Orchards VIC 3114,plan_couple,"$2,200 plus GST",ex,2420,https://www.madisonsloanlawyers.com.au/services/wills-estate-planning/,2026-11-16,
+Sutherland Lawyers,Bentleigh VIC 3204,will_single,$330 incl GST,inc,330,https://www.sutherlandlawyers.com/,2026-11-16,
+Sutherland Lawyers,Bentleigh VIC 3204,will_couple,$440 incl GST,inc,440,https://www.sutherlandlawyers.com/,2026-11-16,
+Sutherland Lawyers,Bentleigh VIC 3204,probate,$770 plus filing fee,unstated,808,https://www.sutherlandlawyers.com/,2026-11-16,GST not stated; notice fee added
+Nevett Ford Lawyers,Melbourne VIC,will_single,$675.00 excl GST,ex,742.5,https://nevettfordlawyers.com.au/wills-and-estate-lawyers-melbourne/wills-and-estate-lawyers/,2026-11-16,search extract page age 47 days; matches 9 Nov reading
+Nevett Ford Lawyers,Melbourne VIC,will_couple,"$1,150.00 excl GST",ex,1265,https://nevettfordlawyers.com.au/wills-and-estate-lawyers-melbourne/wills-and-estate-lawyers/,2026-11-16,
+Nevett Ford Lawyers,Melbourne VIC,epoa,$450.00 excl GST,ex,495,https://nevettfordlawyers.com.au/wills-and-estate-lawyers-melbourne/wills-and-estate-lawyers/,2026-11-16,
+Nevett Ford Lawyers,Melbourne VIC,mtdm,$450.00 excl GST,ex,495,https://nevettfordlawyers.com.au/wills-and-estate-lawyers-melbourne/wills-and-estate-lawyers/,2026-11-16,
+Nevett Ford Lawyers,Melbourne VIC,plan_single,"$1,150.00 excl GST",ex,1265,https://nevettfordlawyers.com.au/wills-and-estate-lawyers-melbourne/wills-and-estate-lawyers/,2026-11-16,package wills and powers of attorney
+Nevett Ford Lawyers,Melbourne VIC,plan_couple,"$2,000.00 excl GST",ex,2200,https://nevettfordlawyers.com.au/wills-and-estate-lawyers-melbourne/wills-and-estate-lawyers/,2026-11-16,
+Pearsons Lawyers,Melbourne VIC incl Box Hill,will_single,$874.50,inc,874.5,https://pearsonslawyers.com.au/will-lawyers-melbourne/,2026-11-16,page says prices include GST; page age 17 days
+Pearsons Lawyers,Melbourne VIC incl Box Hill,will_couple,"$1,749",inc,1749,https://pearsonslawyers.com.au/will-lawyers-melbourne/,2026-11-16,
+Pearsons Lawyers,Melbourne VIC incl Box Hill,epoa,$350,inc,350,https://pearsonslawyers.com.au/will-lawyers-melbourne/,2026-11-16,
+Pearsons Lawyers,Melbourne VIC incl Box Hill,mtdm,$350,inc,350,https://pearsonslawyers.com.au/will-lawyers-melbourne/,2026-11-16,
+Pearsons Lawyers,Melbourne VIC incl Box Hill,plan_single,"$1,300",inc,1300,https://pearsonslawyers.com.au/will-lawyers-melbourne/,2026-11-16,
+Pearsons Lawyers,Melbourne VIC incl Box Hill,plan_couple,"$2,600",inc,2600,https://pearsonslawyers.com.au/will-lawyers-melbourne/,2026-11-16,
+Kapadia and Gordon Lawyers,Dandenong VIC,will_single,From $440 including GST,inc,440,https://www.kapadialegal.com/wills-estates-dandenong-melbourne,2026-11-16,
+Kapadia and Gordon Lawyers,Dandenong VIC,epoa,$220 including GST,inc,220,https://www.kapadialegal.com/wills-estates-dandenong-melbourne,2026-11-16,powers of attorney
+McManus & Co Lawyers,Maribyrnong and Queenscliff VIC,plan_single,From Individual $1550,unstated,1550,https://www.mcmanuslawyers.com.au/fees/,2026-11-16,GST not stated
+McManus & Co Lawyers,Maribyrnong and Queenscliff VIC,plan_couple,From Couple $2200,unstated,2200,https://www.mcmanuslawyers.com.au/fees/,2026-11-16,GST not stated
+McManus & Co Lawyers,Maribyrnong and Queenscliff VIC,epoa,From $440,unstated,440,https://www.mcmanuslawyers.com.au/fees/,2026-11-16,GST not stated
+McManus & Co Lawyers,Maribyrnong and Queenscliff VIC,mtdm,From $440,unstated,440,https://www.mcmanuslawyers.com.au/fees/,2026-11-16,GST not stated
+Papson Legal,South Melbourne VIC,plan_single,from $660 per person,inc,660,https://www.papsonlegal.com.au/?page_id=729,2026-11-16,typically $660 including GST
+Papson Legal,South Melbourne VIC,plan_couple,from $660 per person,inc,1320,https://www.papsonlegal.com.au/?page_id=729,2026-11-16,per person price doubled for a couple
+Van Beveren Lawyers,Geelong VIC,plan_single,$880,unstated,880,https://www.vanbeveren.com.au/wills-packages,2026-11-16,GST not stated; standard will has no specific gifts
+Van Beveren Lawyers,Geelong VIC,plan_couple,$1760,unstated,1760,https://www.vanbeveren.com.au/wills-packages,2026-11-16,GST not stated
+Dexterity Law,Melbourne VIC,plan_single,$1980 inc GST,inc,1980,https://www.dexteritylaw.com.au/wills-and-estates,2026-11-16,single will simple plus EPA; no MTDM named
+Dexterity Law,Melbourne VIC,plan_couple,$2980 inc GST,inc,2980,https://www.dexteritylaw.com.au/wills-and-estates,2026-11-16,joint or mirror wills simple plus EPAs
+Alderuccio Solicitors,Moonee Ponds VIC,will_single,$660,unstated,660,https://aldersol.com.au/wills-estates/,2026-11-16,GST not stated
+Alderuccio Solicitors,Moonee Ponds VIC,will_couple,"$1,200",unstated,1200,https://aldersol.com.au/wills-estates/,2026-11-16,GST not stated
+Alderuccio Solicitors,Moonee Ponds VIC,epoa,$500,unstated,500,https://aldersol.com.au/powers-of-attorney/,2026-11-16,GST not stated
+Alderuccio Solicitors,Moonee Ponds VIC,mtdm,$300,unstated,300,https://aldersol.com.au/powers-of-attorney/,2026-11-16,GST not stated
+Notary Public Geelong Srechko Kontelj OAM,Geelong VIC,will_single,From $250.00,unstated,250,https://notarypublicgeelong.com.au/wills-and-power-of-attorney/,2026-11-16,page age 1351 days; GST not stated
+Notary Public Geelong Srechko Kontelj OAM,Geelong VIC,epoa,From $200 per POA,unstated,200,https://notarypublicgeelong.com.au/wills-and-power-of-attorney/,2026-11-16,
+Notary Public Geelong Srechko Kontelj OAM,Geelong VIC,mtdm,From $200 per POA,unstated,200,https://notarypublicgeelong.com.au/wills-and-power-of-attorney/,2026-11-16,
+Freadman Lawyers,Richmond VIC 3121,will_single,Simple will $385,inc,385,https://freadmanlawyers.com.au/,2026-11-16,prices include GST plus expenses; its wills page says $250 and product page $350
+Lorraine Jones Pty Ltd,Eltham VIC,will_single,from $550 excl GST,ex,605,https://lorrainejones.com.au/wills-and-powers-of-attorney-pricing/,2026-11-16,
+Lorraine Jones Pty Ltd,Eltham VIC,will_couple,from $990 excl GST,ex,1089,https://lorrainejones.com.au/wills-and-powers-of-attorney-pricing/,2026-11-16,
+Lorraine Jones Pty Ltd,Eltham VIC,epoa,$350 excl GST,ex,385,https://lorrainejones.com.au/wills-and-powers-of-attorney-pricing/,2026-11-16,
+Lorraine Jones Pty Ltd,Eltham VIC,mtdm,$350 excl GST,ex,385,https://lorrainejones.com.au/wills-and-powers-of-attorney-pricing/,2026-11-16,
+Lorraine Jones Pty Ltd,Eltham VIC,plan_single,"from $1,150 excl GST",ex,1265,https://lorrainejones.com.au/wills-and-powers-of-attorney-pricing/,2026-11-16,
+Lorraine Jones Pty Ltd,Eltham VIC,plan_couple,"from $2,100 excl GST",ex,2310,https://lorrainejones.com.au/wills-and-powers-of-attorney-pricing/,2026-11-16,
+Zenith Lawyers & Consultants,Scoresby VIC,will_single,will only $250,unstated,250,https://zenlaw.com.au/special-offers/,2026-11-16,special offer with no date; GST not stated
+Zenith Lawyers & Consultants,Scoresby VIC,will_couple,wills only $500,unstated,500,https://zenlaw.com.au/special-offers/,2026-11-16,special offer
+Zenith Lawyers & Consultants,Scoresby VIC,plan_single,$500,unstated,500,https://zenlaw.com.au/special-offers/,2026-11-16,will medical and financial power of attorney
+Zenith Lawyers & Consultants,Scoresby VIC,plan_couple,$750,unstated,750,https://zenlaw.com.au/special-offers/,2026-11-16,
+Woolcock Lawyers,Camberwell VIC 3124,will_single,Simple Wills $660 including GST,inc,660,https://woolcocklawyers.com.au/,2026-11-16,fixed fees now start from
+Woolcock Lawyers,Camberwell VIC 3124,tt_single,"Testamentary trust Wills $1,500 including GST",inc,1500,https://woolcocklawyers.com.au/,2026-11-16,
+Woolcock Lawyers,Camberwell VIC 3124,epoa,Enduring powers of attorney $440 including GST,inc,440,https://woolcocklawyers.com.au/,2026-11-16,
+RV Legal,Williamstown VIC,probate,"$2,500 (inc GST) + Supreme Court disbursements",inc,2538,https://www.rvlegal.com.au/services/fixed-price-probate-letters-of-administration/,2026-11-16,small value estates only; modified 30 Jun 2026; notice fee added
+RV Legal,Williamstown VIC,loa,"$2,500 (inc GST) plus disbursements",inc,2538,https://www.rvlegal.com.au/services/fixed-price-probate-letters-of-administration/,2026-11-16,small value estates only; notice fee added
+Norton Legal,Footscray VIC,will_single,$920,inc,920,https://www.nortonlegal.com.au/making-wills-and-estate-planning,2026-11-16,page says fees estimated are inclusive of GST; plus disbursements
+Norton Legal,Footscray VIC,will_couple,$1725,inc,1725,https://www.nortonlegal.com.au/making-wills-and-estate-planning,2026-11-16,
+Norton Legal,Footscray VIC,plan_single,$1320,inc,1320,https://www.nortonlegal.com.au/making-wills-and-estate-planning,2026-11-16,
+Norton Legal,Footscray VIC,plan_couple,$2170,inc,2170,https://www.nortonlegal.com.au/making-wills-and-estate-planning,2026-11-16,
+Norton Legal,Footscray VIC,tt_single,$1550,inc,1550,https://www.nortonlegal.com.au/making-wills-and-estate-planning,2026-11-16,will only
+Norton Legal,Footscray VIC,tt_couple,$3025,inc,3025,https://www.nortonlegal.com.au/making-wills-and-estate-planning,2026-11-16,wills only
+Galbally & O'Bryan,Melbourne VIC,loa,"professional fixed fee of $2,500 (plus GST)",ex,2788,https://www.galballyobryan.com.au/what-we-do/wills-estates/letters-of-administration,2026-11-16,plus Court filing fee; notice fee added
+CAC Legal,Melbourne CBD VIC,probate,"$1,300.00 + GST + Advertisement ($37.00) and Filing Fee",ex,1468,https://www.caclegal.com.au/estates,2026-11-16,full service fixed fee; notice fee added at the 2026-27 rate
+CAC Legal,Melbourne CBD VIC,loa,"$1,300.00 + GST + Advertisement ($37.00) and Filing Fee",ex,1468,https://www.caclegal.com.au/estates,2026-11-16,same price for probate or letters
+Olivetree Legal,Mount Martha VIC,will_single,Single Classic Will $385.00 plus initial strategy meeting $275.00,inc,660,https://olivetreelegal.com.au/wp-content/uploads/2025/04/Olivetree-Legal-Price-List-2025.pdf,2026-11-16,price list linked from the price schedule page; meeting fee added; FAQ gives the meeting as $220
+Olivetree Legal,Mount Martha VIC,will_couple,Couple Classic Wills $660.00 plus meeting $275.00,inc,935,https://olivetreelegal.com.au/wp-content/uploads/2025/04/Olivetree-Legal-Price-List-2025.pdf,2026-11-16,meeting fee added
+Olivetree Legal,Mount Martha VIC,tt_single,"Single Will establishing testamentary trust $1,100.00 plus meeting $275.00",inc,1375,https://olivetreelegal.com.au/wp-content/uploads/2025/04/Olivetree-Legal-Price-List-2025.pdf,2026-11-16,meeting fee added
+Olivetree Legal,Mount Martha VIC,tt_couple,"Couple Wills establishing testamentary trusts $1,980.00 plus meeting $275.00",inc,2255,https://olivetreelegal.com.au/wp-content/uploads/2025/04/Olivetree-Legal-Price-List-2025.pdf,2026-11-16,meeting fee added
+Olivetree Legal,Mount Martha VIC,epoa,Enduring Power of Attorney (Financial) $385.00 plus meeting $275.00,inc,660,https://olivetreelegal.com.au/wp-content/uploads/2025/04/Olivetree-Legal-Price-List-2025.pdf,2026-11-16,meeting fee added
+Olivetree Legal,Mount Martha VIC,mtdm,Enduring Power of Attorney (Medical) $275.00 plus meeting $275.00,inc,550,https://olivetreelegal.com.au/wp-content/uploads/2025/04/Olivetree-Legal-Price-List-2025.pdf,2026-11-16,meeting fee added
+Olivetree Legal,Mount Martha VIC,plan_single,"Essential Package Single $1,100.00 inc GST",inc,1100,https://olivetreelegal.com.au/wp-content/uploads/2025/04/Olivetree-Legal-Price-List-2025.pdf,2026-11-16,includes the strategy meeting
+Olivetree Legal,Mount Martha VIC,plan_couple,"Essential Package Couple $1,540.00 inc GST",inc,1540,https://olivetreelegal.com.au/wp-content/uploads/2025/04/Olivetree-Legal-Price-List-2025.pdf,2026-11-16,
+Hemmings Legal,Bayswater VIC 3153,will_single,$430.00,unstated,430,https://hemmingslegal.com.au/estate-planning-legal-services-2/,2026-11-16,GST not stated
+Hemmings Legal,Bayswater VIC 3153,plan_single,$750.00,unstated,750,https://hemmingslegal.com.au/estate-planning-legal-services-2/,2026-11-16,will financial POA and MTDM
+Hemmings Legal,Bayswater VIC 3153,plan_couple,"$1,250.00",unstated,1250,https://hemmingslegal.com.au/estate-planning-legal-services-2/,2026-11-16,
+Hemmings Legal,Bayswater VIC 3153,epoa,$300.00,unstated,300,https://hemmingslegal.com.au/estate-planning-legal-services-2/,2026-11-16,financial power of attorney
+Hemmings Legal,Bayswater VIC 3153,mtdm,$300.00,unstated,300,https://hemmingslegal.com.au/estate-planning-legal-services-2/,2026-11-16,
+Hemmings Legal,Bayswater VIC 3153,tt_single,"$1,800.00",unstated,1800,https://hemmingslegal.com.au/estate-planning-legal-services-2/,2026-11-16,
+Stratus Legal,Portland and Melbourne CBD VIC,div_joint,"starting at $1,090 incl GST",inc,1090,https://www.stratuslegal.com.au/family-law/property-matters/,2026-11-16,filing fee extra
+Stratus Legal,Portland and Melbourne CBD VIC,div_sole,"$1,460 incl GST",inc,1460,https://www.stratuslegal.com.au/family-law/property-matters/,2026-11-16,
+Stratus Legal,Portland and Melbourne CBD VIC,co_par,"start from $3,300 incl GST",inc,3300,https://www.stratuslegal.com.au/family-law/property-matters/,2026-11-16,
+Stratus Legal,Portland and Melbourne CBD VIC,co_prop,"$3,800",inc,3800,https://www.stratuslegal.com.au/family-law/property-matters/,2026-11-16,from price in the same sentence as incl GST
+Stratus Legal,Portland and Melbourne CBD VIC,bfa,"from $3,150 incl GST and disbursements",inc,3150,https://www.stratuslegal.com.au/family-law/property-matters/,2026-11-16,
+Stratus Legal,Portland and Melbourne CBD VIC,bfa_review,"$1,650 incl GST and disbursements",inc,1650,https://www.stratuslegal.com.au/family-law/property-matters/,2026-11-16,
+Lord Law,Melbourne CBD VIC 3000,plan_single,"$1,690",unstated,1690,https://www.lordlaw.com.au/wills-estates-and-powers-of-attorney/,2026-11-16,standard will EPOA medical POA; GST not stated
+Lord Law,Melbourne CBD VIC 3000,plan_couple,"$1,850",unstated,1850,https://www.lordlaw.com.au/wills-estates-and-powers-of-attorney/,2026-11-16,GST not stated
+Galbally & O'Bryan,Melbourne VIC,probate,"professional fixed fee of $2,500 (plus GST)",ex,2788,https://www.galballyobryan.com.au/what-we-do/wills-estates/probate,2026-11-16,plus Court filing fee; notice fee added
+Madison Sloan Lawyers,Park Orchards VIC 3114,probate,"$4,400 plus GST and Disbursements",ex,4878,https://www.madisonsloanlawyers.com.au/services/probate/,2026-11-16,grant of probate package; notice fee added; older probate-cost page shows $3850
+Madison Sloan Lawyers,Park Orchards VIC 3114,loa,"$4,400 plus GST and Disbursements",ex,4878,https://www.madisonsloanlawyers.com.au/services/probate/,2026-11-16,same package covers letters
+Gauld & Co Solicitors,Hawthorn East VIC,probate,"$1,800 plus normal Supreme Court fees",unstated,1838,https://gauldandco.com.au/wp/our-fees/,2026-11-16,GST not stated; notice fee added
+Gauld & Co Solicitors,Hawthorn East VIC,loa,"$1,800 plus normal Supreme Court fees",unstated,1838,https://gauldandco.com.au/wp/our-fees/,2026-11-16,same fee for letters
+Victoria Probate,Melbourne CBD VIC,probate,"$1,741.20 including GST, of which $1,500 professional fee plus $150 GST",inc,1688,https://victoriaprobate.com.au/cost-of-probate-victoria/,2026-11-16,legal fee with GST plus the notice fee; their own $55 notice and postage removed
+Fogarty Oliver Rothschild,St Kilda VIC,div_joint,"Fixed-fee divorce $1,500",inc,1500,https://www.fogartyoliverandrothschild.com.au/packages,2026-11-16,all fees inclusive of GST; sole or joint
+Fogarty Oliver Rothschild,St Kilda VIC,div_sole,"Fixed-fee divorce $1,500",inc,1500,https://www.fogartyoliverandrothschild.com.au/packages,2026-11-16,process server extra for sole
+Fogarty Oliver Rothschild,St Kilda VIC,co_prop,"Consent orders property only $2,750",inc,2750,https://www.fogartyoliverandrothschild.com.au/packages,2026-11-16,
+Fogarty Oliver Rothschild,St Kilda VIC,co_par,"Consent orders parenting only $2,750",inc,2750,https://www.fogartyoliverandrothschild.com.au/packages,2026-11-16,
+Fogarty Oliver Rothschild,St Kilda VIC,co_both,"property + parenting combined $3,850",inc,3850,https://www.fogartyoliverandrothschild.com.au/packages,2026-11-16,
+Fogarty Oliver Rothschild,St Kilda VIC,bfa,"Pre-nuptial BFA $4,400",inc,4400,https://www.fogartyoliverandrothschild.com.au/packages,2026-11-16,BFAs from $4400
+Fogarty Oliver Rothschild,St Kilda VIC,par_plan,"$1,500 to $2,500 for us to draft one",inc,1500,https://www.fogartyoliverandrothschild.com.au/insights/family-lawyer-cost-melbourne,2026-11-16,low end; all fixed fees include GST
+JosephDavid Lawyers,Chadstone VIC,co_prop,"$5,500.00 incl GST with superannuation split",inc,5500,https://josephdavidlawyers.com.au/practice/consent-orders/,2026-11-16,super split matches the firm's scope; $4400 without
+JosephDavid Lawyers,Chadstone VIC,co_par,"$4,400 incl GST",inc,4400,https://josephdavidlawyers.com.au/practice/consent-orders/,2026-11-16,
+JosephDavid Lawyers,Chadstone VIC,co_both,"$6,600 incl GST with superannuation split",inc,6600,https://josephdavidlawyers.com.au/practice/consent-orders/,2026-11-16,
+Allison Rowe Family Lawyers,Geelong VIC,co_prop,"Property Consent Orders $4,400 (including GST)",inc,4400,https://www.allisonrowe.com.au/blog/finalisingpropertysettlement-victoria-wsxg6-axm75,2026-11-16,
+RV Legal,Williamstown VIC,co_prop,"$4,000 (inc GST) (plus disbursements)",inc,4000,https://www.rvlegal.com.au/family-law/fixed-price-application-for-consent-orders/,2026-11-16,page age 138 days; older financial orders page says $2500
+RV Legal,Williamstown VIC,co_par,"$4,000 (inc GST) (plus disbursements)",inc,4000,https://www.rvlegal.com.au/family-law/fixed-price-application-for-consent-orders/,2026-11-16,parties agree
+CAC Legal,Melbourne CBD VIC,bfa_review,Advice & Certificate Fixed Fee $990.00 (inc GST),inc,990,https://www.caclegal.com.au/family-law,2026-11-16,
+CAC Legal,Melbourne CBD VIC,bfa,"Standard Agreement Fixed Fee $2,750.00 (inc GST)",inc,2750,https://www.caclegal.com.au/family-law,2026-11-16,
+Nest Legal,Northcote VIC,co_prop,consent orders (property or parenting) from $5280,unstated,5280,https://www.nestlegal.com.au/familylawpricing,2026-11-16,court filing fees extra; GST not stated
+Nest Legal,Northcote VIC,co_par,consent orders (property or parenting) from $5280,unstated,5280,https://www.nestlegal.com.au/familylawpricing,2026-11-16,
+Nest Legal,Northcote VIC,bfa,"preparation packages start from $5,500",unstated,5500,https://www.nestlegal.com.au/familylawpricing,2026-11-16,
+Nest Legal,Northcote VIC,bfa_review,"review packages start from $3,850",unstated,3850,https://www.nestlegal.com.au/familylawpricing,2026-11-16,
+Astor Family Law,Melbourne CBD VIC,co_prop,Consent Orders from $990,unstated,990,https://astorfamilylaw.com.au/what-is-the-difference-between-consent-orders-and-a-binding-financial-agreement,2026-11-16,GST not stated
+Astor Family Law,Melbourne CBD VIC,co_par,Consent Orders from $990,unstated,990,https://astorfamilylaw.com.au/what-is-the-difference-between-consent-orders-and-a-binding-financial-agreement,2026-11-16,
+Astor Family Law,Melbourne CBD VIC,bfa,"Binding Financial Agreement Fixed Fee from $1,650",unstated,1650,https://astorfamilylaw.com.au/binding-financial-agreement-fixed-fee,2026-11-16,
+Fair Family Law,Melbourne CBD VIC,div_joint,fixed fee of $880 (including GST),inc,880,https://fairfamilylaw.com.au/,2026-11-16,preparing filing and appearing; page age 558 days
+Fair Family Law,Melbourne CBD VIC,div_sole,fixed fee of $880 (including GST),inc,880,https://fairfamilylaw.com.au/,2026-11-16,one price for either kind
+Freemont Family Lawyers,Melbourne CBD and Dandenong VIC,div_joint,"divorce applications from $1,200 plus court costs",unstated,1200,https://www.freemontfamilylawyers.com.au/family-law,2026-11-16,sole or joint; four Victorian offices; GST not stated
+Freemont Family Lawyers,Melbourne CBD and Dandenong VIC,div_sole,"divorce applications from $1,200 plus court costs",unstated,1200,https://www.freemontfamilylawyers.com.au/family-law,2026-11-16,
+My Legal Crunch,Melbourne VIC,div_joint,"$1,955 fixed fee for standard divorces",inc,785,https://www.mylegalcrunch.com.au/family-lawyers-frankston/,2026-11-16,price includes the court filing fee so $1170 removed; page age 564 days
+My Legal Crunch,Melbourne VIC,div_sole,"$1,955 fixed fee for standard divorces",inc,785,https://www.mylegalcrunch.com.au/family-lawyers-frankston/,2026-11-16,same derivation
+Allison Rowe Family Lawyers,Geelong VIC,co_both,"Property + Parenting Consent Orders $6,600 inc GST",inc,6600,https://www.allisonrowe.com.au/property-consent-orders,2026-11-16,
+RV Legal,Williamstown VIC,bfa,"$3,000 (inc. GST)",inc,3000,https://www.rvlegal.com.au/services/fixed-price-binding-financial-prenuptial-agreements/,2026-11-16,dedicated page; services summary says $2500
+my law firm,Melbourne VIC and Sydney,bfa,"simple BFAs $1,980 inclusive of GST",inc,1980,https://mylawfirm.com.au/binding-financial-agreement-vic/,2026-11-16,Victorian page age 12 days; full service $2970
+Fair Family Law,Melbourne CBD VIC,bfa_review,"$1,760 (including GST)",inc,1760,https://fairfamilylaw.com.au/services/extra-service,2026-11-16,review and certificate of independent legal advice
+I Global Lawyers,Melbourne VIC 3000 and Brisbane,lease_review,Commercial lease advice (tenant) $570,unstated,570,https://www.i-lawyers.com.au/what-does-commercial-lawyers-do,2026-11-16,GST not stated; retail shop lease advice $700
+I Global Lawyers,Melbourne VIC 3000 and Brisbane,company,"Company registration, including ASIC fees $950",unstated,314,https://www.i-lawyers.com.au/what-does-commercial-lawyers-do,2026-11-16,ASIC fee of $636 removed
+I Global Lawyers,Melbourne VIC 3000 and Brisbane,sha,"Shareholder agreement $1,140",unstated,1140,https://www.i-lawyers.com.au/what-does-commercial-lawyers-do,2026-11-16,
+I Global Lawyers,Melbourne VIC 3000 and Brisbane,biz_review,"Purchase of a business, including due diligence $1,050",unstated,1050,https://www.i-lawyers.com.au/what-does-commercial-lawyers-do,2026-11-16,
+I Global Lawyers,Melbourne VIC 3000 and Brisbane,lod,Letter of demand and negotiation of settlement $550.00,unstated,550,https://www.i-lawyers.com.au/our-fees/,2026-11-16,includes negotiation; page age 907 days
+Clever Legal,South Melbourne VIC,company,"Company Registration + Constitution from $1,000",ex,1100,https://cleverlegal.com.au/counsel,2026-11-16,prices exclusive of GST; third party costs at cost
+Clever Legal,South Melbourne VIC,sha,"Shareholders Agreement + Share Vesting from $1,500",ex,1650,https://cleverlegal.com.au/counsel,2026-11-16,
+Allied Legal,Melbourne VIC 3000,sha,fixed fees starting from $800,unstated,800,https://www.alliedlegal.com.au/shareholders-agreement/,2026-11-16,GST not stated
+Allied Legal,Melbourne VIC 3000,lease_review,fixed fees starting from $800,unstated,800,https://www.alliedlegal.com.au/review-commercial-lease/,2026-11-16,GST not stated
+Woods & Day Solicitors,Melbourne VIC,lod,$250 (ex GST) letter of demand,ex,275,https://woodsandday.com.au/order-letter-of-demand/,2026-11-16,
+Sprintlaw,online with Melbourne office,lease_review,This package starts at $500 + GST,ex,550,https://www.sprintlaw.com.au/commercial-leases/commercial-lease-review-retail,2026-11-16,list of amendments is a separate package
+Pointon Partners,Melbourne VIC 3000,company,"Register a private company for $1,095 (GST & ASIC fee inclusive)",inc,459,https://pointonpartners.com.au/simplify-business-growth/,2026-11-16,ASIC fee of $636 removed
+Sprintlaw,online with Melbourne office,tot,Credit Application & Terms of Trade packages start at $500 + GST,ex,550,https://sprintlaw.com.au/getting-finance/credit-application-terms-terms-of-trade/,2026-11-16,terms of sale for goods start at $1250 + GST
+Sprintlaw,online with Melbourne office,biz_review,Business Sale Agreement Review packages start at $900 + GST,ex,990,https://sprintlaw.com.au/business-sales/business-sale-agreement-review-only-package/,2026-11-16,page age 592 days
+Sprintlaw,online with Melbourne office,sha,"starting from $1,200 + GST",ex,1320,https://sprintlaw.com.au/business-set-up/shareholders-agreement/,2026-11-16,page age 599 days
+my law firm,Melbourne VIC and Sydney,sha,Fixed Fee of Just $1200+GST,ex,1320,https://mylawfirm.com.au/shareholders-agreement/,2026-11-16,page age 82 days
+Coulter Legal,Geelong VIC 3220,company,"$1,200.00 including GST and ASIC fee of $636.00",inc,564,https://www.coulterlegal.com.au/corporate-commercial-lawyers/corporate-services-geelong/,2026-11-16,prices as of 1 July 2026; ASIC fee removed
+SLK Lawyers via ContractReviews,Melbourne VIC 3000,lease_review,$550 to $990 including GST,inc,550,https://contractreviews.com.au/office-lease-review,2026-11-16,standard office lease; low end
+Legal123,Melbourne VIC online ILP,tot,fixed fee from $295 + GST,ex,324.5,https://legal123.com.au/legal-services/terms-and-conditions-lawyer/,2026-11-16,custom terms drafting
+Zenith Lawyers & Consultants,Scoresby VIC,probate,"$1,300 plus GST, court filing fee and court advertising fee",ex,1468,https://zenlaw.com.au/wills-probate-estates/,2026-11-16,notice fee added
+Zenith Lawyers & Consultants,Scoresby VIC,loa,"$1,300 plus GST, court filing fee and court advertising fee",ex,1468,https://zenlaw.com.au/wills-probate-estates/,2026-11-16,notice fee added
+Spirit Legal,Clyde North VIC,probate,"Our Professional Fee From just $1,500",unstated,1538,https://spiritlegal.com.au/our-pricing-1,2026-11-16,GST not stated; court advertising fee separate so notice fee added; its probate page says from $1300
+Spirit Legal,Clyde North VIC,loa,"Our Professional Fee From just $1,500",unstated,1538,https://spiritlegal.com.au/our-pricing-1,2026-11-16,same fee for letters
