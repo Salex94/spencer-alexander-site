@@ -13,6 +13,19 @@ Newest entries first.
 
 ---
 
+## 2026-11-16: Weekly article, make good at the end of a commercial lease, an ordinary Commercial Law article
+
+New article insight-make-good-end-of-commercial-lease.html, published Monday 16 November 2026 Melbourne time, commit
+4a856f9. Rotation: Commercial Law was due, its newest article 26 Oct. Alternation: d99196e carries `Article type: hire
+guide`, so an ordinary article was due, matching the backlog marker. Topic: backlog item 2, the recommendation.
+Read in the Retail Leases Act 2003 (Vic) version 027, still the latest: sections 4, 11, 12, 24, 52, 64, 81, 83, 86,
+87, 88, 89, 91, 92 and 94; the Sources line names the Act alone. No price quoted, as fees.html has no end of lease fee.
+The commercial-law.html FAQPage dateModified moved with its sitemap lastmod, as the gate requires when the hub's
+related list changes. Photograph: new Unsplash 1497366216548, an empty fitted out office floor. The seven spares are
+untouched, and of them only the boardroom 1431540015161 might suit a future commercial piece.
+
+---
+
 ## 2026-11-13: Demand scan, two FAQ entries added
 
 Friday 13 November 2026 Melbourne. faq.html gained "Do I need a lawyer to get divorced?" and "Can I apply for probate
