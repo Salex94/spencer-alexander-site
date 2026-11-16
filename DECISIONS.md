@@ -36,6 +36,14 @@ GST, with listed fees running from $495 to $5,000 at four out of ten where they 
   `playbooks/fees-2026-11-16/README.md`, the Firm Register, the Front desk and Growth desk playbooks and the skill
   proposals carry the new rounding and range. The Growth desk now raises a fee whenever four out of ten, rounded
   the same way, gives a different figure, which replaces the five per cent test of the entry below.
+- The Google Business Profile, updated through Chrome on the Mac mini at Spencer's request that afternoon, still
+  quoted the prices of September and earlier, such as probate at $1,650. Its seven priced services now carry the
+  new totals in the price field and in the description: Buying or selling a business from $895, Commercial and
+  retail leases from $795, Property settlement from $3,195, Divorce from $995, Parenting arrangements from $1,295,
+  Probate and letters of administration from $2,295 and Wills and estate planning from $495. Five of them had
+  shown a single fixed price although each covers work at more than one price, so they now show From before the
+  lowest published fee they cover, as From $2,295 does for probate and letters of administration together. The
+  profile has no products and its description quotes no price.
 
 ---
 

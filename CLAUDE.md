@@ -911,7 +911,11 @@ rule of 26 Sep 2026 and the 10 per cent rise of 29 Sep 2026.
   out of ten would put at $295, $295 and $395, stay at $495, and fees.html still says no piece of work costs less.
 - **Resurveys.** A price is reset only from a fresh survey read on the day, never from memory or an old survey,
   and only Spencer changes a price. A change touches fees.html, its OfferCatalog, every page and service content
-  file that quotes it, llms.txt and feed.xml in one commit, with the page dates and sitemap lastmod moved.
+  file that quotes it, llms.txt and feed.xml in one commit, with the page dates and sitemap lastmod moved. The
+  Google Business Profile's services quote the same totals, in the price field and in the description, so a
+  change is made there too, through Chrome on the Mac mini once Spencer says yes; a service that covers work at
+  more than one price shows From before the lowest published fee it covers, as Probate and letters of
+  administration shows From $2,295.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 
