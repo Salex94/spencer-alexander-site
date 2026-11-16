@@ -13,6 +13,32 @@ Newest entries first.
 
 ---
 
+## 2026-11-16: Fees end in 95 and run from $495 to $5,000
+
+An hour after the reset below, Spencer asked for each fixed fee to be rounded down to five dollars under the
+nearest hundred, so that a will at $517 becomes $495, and then said no fee should be listed under $495 including
+GST, with listed fees running from $495 to $5,000 at four out of ten where they can be.
+
+- Each published total is now four out of ten rounded down to the nearest amount ending in 95, and never under
+  $495: wills $495 and $895 for a couple, estate plans $995 and $1,595, testamentary trust wills from $1,595 and
+  $2,595, probate $2,295, letters of administration $2,495, divorce $995 joint and $1,095 sole, consent orders
+  $3,195 for property, $2,895 for parenting and $4,495 for both, parenting plan from $1,295, financial agreement
+  from $2,895 and advice on the other party's from $1,595, lease review from $795, company set up $495, shareholders
+  agreement from $1,095, terms of trade from $1,195 and business purchase review from $895.
+- The estate plan for one person rose from $990 to $995, the only rise, because $995 is five dollars under a
+  hundred and still below its four out of ten of $999.88. Rounding $990 down would have given $895.
+- The enduring power of attorney, the medical treatment decision maker appointment and the letter of demand stay
+  at $495, which answers Open item O2611161106a, and fees.html keeps its $495 minimum.
+- The amounts before GST on fees.html now carry cents, such as $813.64 plus GST under $895, because a total ending
+  in 95 divides evenly by 1.1 only at $495 and $1,595. The gate expects that form.
+- Pages: fees.html and its OfferCatalog, the hubs, faq.html, the articles and resources, insights.html, feed.xml,
+  llms.txt and the eleven service pages rebuilt; every one already carried the date of 16 Nov 2026. CLAUDE.md,
+  `playbooks/fees-2026-11-16/README.md`, the Firm Register, the Front desk and Growth desk playbooks and the skill
+  proposals carry the new rounding and range. The Growth desk now raises a fee whenever four out of ten, rounded
+  the same way, gives a different figure, which replaces the five per cent test of the entry below.
+
+---
+
 ## 2026-11-16: Every fixed fee reset to four out of ten
 
 Spencer's words: "All fixed fee prices must be 4/10 - that is, just very slightly below average (10 percent below

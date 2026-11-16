@@ -783,7 +783,7 @@ the final round were published to main on 28 Sep 2026; DECISIONS.md records both
   arrives, with an email link for a photo of it.
 - **Trust.** The firm node carries the ABN as `taxID`; About links the Register of Lawyers; each hub
   names Melbourne's eastern suburbs.
-- **Letters of administration** at $2,530 since 16 Nov 2026 is always quoted as where there is no will, as
+- **Letters of administration** at $2,495 since 16 Nov 2026 is always quoted as where there is no will, as
   fees.html prices it. Since 9 Nov 2026 every page that touches who pays for a grant uses the verified rule 9.01
   wording in the audit round below, and none says the fee for obtaining a grant comes from the estate.
 - **Listing read times** on insights.html and index.html must equal each article's own; the gate
@@ -901,11 +901,14 @@ rule of 26 Sep 2026 and the 10 per cent rise of 29 Sep 2026.
   left out and why. A firm counts when it is a law practice with an office in Victoria. Prices are brought to the
   firm's own scope, including GST, with court and government fees removed and the $38 probate notice fee added
   where a firm leaves it out, because the firm's probate and administration fees include it.
-- **Rounding.** The fee before GST is four out of ten divided by 1.1, rounded down to the nearest $10, so no fee
-  sits above four out of ten; the published total is that fee plus GST, for example $470 plus GST, $517.
-- **The $495 minimum.** The enduring power of attorney, the medical treatment decision maker appointment and the
-  letter of demand come out below $495 at four out of ten, about $352, $308 and $418. They stay at $495, and fees.html
-  still says no piece of work costs less than $495, until Spencer decides which rule wins.
+- **Rounding**, Spencer's instruction of 16 Nov 2026: each published total including GST is four out of ten rounded
+  down to the nearest amount five dollars under a hundred, so a single will at four out of ten of $523.72 is $495,
+  and no fee sits above four out of ten. The amount before GST shown beneath it on fees.html is the total divided by
+  1.1, to the cent, such as $813.64 plus GST under $895, which the gate's check of the two figures expects.
+- **The range**, Spencer's instruction of 16 Nov 2026: no listed fee is under $495 including GST, and listed fees run
+  from $495 to $5,000, at four out of ten where they can be, so the highest a listed fee can be is $4,995. The
+  enduring power of attorney, the medical treatment decision maker appointment and the letter of demand, which four
+  out of ten would put at $295, $295 and $395, stay at $495, and fees.html still says no piece of work costs less.
 - **Resurveys.** A price is reset only from a fresh survey read on the day, never from memory or an old survey,
   and only Spencer changes a price. A change touches fees.html, its OfferCatalog, every page and service content
   file that quotes it, llms.txt and feed.xml in one commit, with the page dates and sitemap lastmod moved.

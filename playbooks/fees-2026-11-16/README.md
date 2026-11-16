@@ -8,38 +8,38 @@ Every price was read on 16 November 2026, either on the firm's own page or on th
 
 Each price was brought to the firm's own scope and footing: the total including GST, with GST added where a price was stated before GST, and a price whose GST treatment is not stated treated as including GST, which errs low. A from price was taken at its from figure and a range at its lowest figure. Court and government fees were removed. For probate and letters of administration the firm's fee includes publishing the notice of intention to apply, so the Supreme Court's $38 fee for 2026 to 2027 was added to each price that leaves it out. ASIC's $636 registration fee was taken out of company set up prices that include it, and where a firm's document price excludes a compulsory first meeting, the meeting was added.
 
-The four out of ten figure is 90 per cent of the plain average. The fee before GST is that figure divided by 1.1 and rounded down to the nearest $10, so no fee sits above four out of ten, and the published total is that fee plus GST.
+The four out of ten figure is 90 per cent of the plain average. On Spencer's instruction later the same morning, each published total including GST is that figure rounded down to the nearest amount five dollars under a hundred, so a single will at four out of ten of $523.72 is $495 and no fee sits above four out of ten. The amount before GST shown beneath it is the total divided by 1.1, to the cent. No listed fee is under $495 or over $5,000 including GST.
 
 ## Results
 
-The enduring power of attorney, the medical treatment decision maker appointment and the letter of demand come out below the firm's $495 minimum, which is an hour of Spencer's time, so they stay at $495 until Spencer decides between the two rules.
+The enduring power of attorney, the medical treatment decision maker appointment and the letter of demand come out below the firm's $495 minimum, which is an hour of Spencer's time, so they stay at $495: Spencer decided the same morning that no fee is listed under $495, and that listed fees run from $495 to $5,000 including GST, at four out of ten where they can be.
 
 | Service | Firms | Average | Four out of ten | New fee | Before GST | Was |
 |---|---|---|---|---|---|---|
-| Single will | 23 | $581.91 | $523.72 | $517 | $470 | $495 |
-| Wills for a couple | 15 | $1,062.33 | $956.10 | $946 | $860 | $880 |
-| Estate plan for one person | 21 | $1,110.98 | $999.88 | $990 | $900 | $1,089 |
-| Estate plan for a couple | 20 | $1,817.60 | $1,635.84 | $1,628 | $1,480 | $1,980 |
-| Enduring power of attorney | 16 | $394.25 | $354.82 | $495, held | $450 | $495 |
-| Appointment of a medical treatment decision maker | 13 | $346.77 | $312.09 | $495, held | $450 | $495 |
+| Single will | 23 | $581.91 | $523.72 | $495 | $450 | $495 |
+| Wills for a couple | 15 | $1,062.33 | $956.10 | $895 | $813.64 | $880 |
+| Estate plan for one person | 21 | $1,110.98 | $999.88 | $995 | $904.55 | $1,089 |
+| Estate plan for a couple | 20 | $1,817.60 | $1,635.84 | $1,595 | $1,450 | $1,980 |
+| Enduring power of attorney | 16 | $394.25 | $354.82 | $495, the minimum | $450 | $495 |
+| Appointment of a medical treatment decision maker | 13 | $346.77 | $312.09 | $495, the minimum | $450 | $495 |
 | Will with a testamentary trust for one person | 8 | $1,776.88 | $1,599.19 | from $1,595 | from $1,450 | $1,650 |
-| Wills with testamentary trusts for a couple | 4 | $2,887.50 | $2,598.75 | from $2,596 | from $2,360 | $3,025 |
-| Probate application | 11 | $2,580.73 | $2,322.65 | $2,321 | $2,110 | $1,980 |
-| Letters of administration | 8 | $2,819.25 | $2,537.32 | $2,530 | $2,300 | $2,178 |
-| Divorce application, joint | 9 | $1,145.56 | $1,031.00 | $1,023 | $930 | $1,089 |
-| Divorce application, sole | 7 | $1,235.00 | $1,111.50 | $1,111 | $1,010 | $1,452 |
-| Consent orders for an agreed property settlement | 9 | $3,580.00 | $3,222.00 | $3,212 | $2,920 | $3,025 |
-| Consent orders for agreed parenting arrangements | 8 | $3,277.50 | $2,949.75 | $2,948 | $2,680 | $3,025 |
-| Consent orders for property and parenting together | 4 | $5,087.50 | $4,578.75 | $4,576 | $4,160 | $3,850 |
-| Parenting plan | 2 | $1,500.00 | $1,350.00 | from $1,342 | from $1,220 | $1,452 |
-| Binding financial agreement | 10 | $3,277.00 | $2,949.30 | from $2,948 | from $2,680 | $3,025 |
-| Advice on a binding financial agreement drafted by the other party | 6 | $1,833.33 | $1,650.00 | from $1,650 | from $1,500 | $1,100 |
-| Lease review for a tenant | 6 | $915.83 | $824.25 | from $814 | from $740 | $1,089 |
-| Company set up, legal fee without ASIC | 4 | $609.25 | $548.32 | $539 | $490 | $660 |
-| Shareholders agreement | 5 | $1,246.00 | $1,121.40 | from $1,111 | from $1,010 | $2,420 |
-| Terms of trade | 3 | $1,391.50 | $1,252.35 | from $1,243 | from $1,130 | $1,815 |
-| Review of a contract to buy a business | 2 | $1,020.00 | $918.00 | from $913 | from $830 | $1,210 |
-| Letter of demand | 4 | $473.00 | $425.70 | $495, held | $450 | $495 |
+| Wills with testamentary trusts for a couple | 4 | $2,887.50 | $2,598.75 | from $2,595 | from $2,359.09 | $3,025 |
+| Probate application | 11 | $2,580.73 | $2,322.65 | $2,295 | $2,086.36 | $1,980 |
+| Letters of administration | 8 | $2,819.25 | $2,537.32 | $2,495 | $2,268.18 | $2,178 |
+| Divorce application, joint | 9 | $1,145.56 | $1,031.00 | $995 | $904.55 | $1,089 |
+| Divorce application, sole | 7 | $1,235.00 | $1,111.50 | $1,095 | $995.45 | $1,452 |
+| Consent orders for an agreed property settlement | 9 | $3,580.00 | $3,222.00 | $3,195 | $2,904.55 | $3,025 |
+| Consent orders for agreed parenting arrangements | 8 | $3,277.50 | $2,949.75 | $2,895 | $2,631.82 | $3,025 |
+| Consent orders for property and parenting together | 4 | $5,087.50 | $4,578.75 | $4,495 | $4,086.36 | $3,850 |
+| Parenting plan | 2 | $1,500.00 | $1,350.00 | from $1,295 | from $1,177.27 | $1,452 |
+| Binding financial agreement | 10 | $3,277.00 | $2,949.30 | from $2,895 | from $2,631.82 | $3,025 |
+| Advice on a binding financial agreement drafted by the other party | 6 | $1,833.33 | $1,650.00 | from $1,595 | from $1,450 | $1,100 |
+| Lease review for a tenant | 6 | $915.83 | $824.25 | from $795 | from $722.73 | $1,089 |
+| Company set up, legal fee without ASIC | 4 | $609.25 | $548.32 | $495 | $450 | $660 |
+| Shareholders agreement | 5 | $1,246.00 | $1,121.40 | from $1,095 | from $995.45 | $2,420 |
+| Terms of trade | 3 | $1,391.50 | $1,252.35 | from $1,195 | from $1,086.36 | $1,815 |
+| Review of a contract to buy a business | 2 | $1,020.00 | $918.00 | from $895 | from $813.64 | $1,210 |
+| Letter of demand | 4 | $473.00 | $425.70 | $495, the minimum | $450 | $495 |
 
 
 ## Where the market is thin
