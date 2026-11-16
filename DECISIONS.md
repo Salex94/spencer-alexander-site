@@ -13,6 +13,37 @@ Newest entries first.
 
 ---
 
+## 2026-11-17: Site accuracy and health; five pages verified, all correct
+
+Melbourne date Tuesday 17 November 2026. Not the first run of the month, so no structural audit. The ledger lacked
+insight-make-good-end-of-commercial-lease.html, published 16 Nov 2026, which was added as verified that day; it now
+holds 56 legal pages, and 56 divided by 13 and rounded up is 5. The five oldest articles last verified on 9 Nov 2026
+were taken:
+
+- insight-parenting-arrangements.html: correct. Family Law Act 1975 (Cth) compilation 101, C2025C00341, still current
+  with no unincorporated amendments, section 4 definition of major long-term issues and its new partner sentence,
+  sections 60CA, 60CC including (2A) and (3), 60CE, 60I(7) to (9), 61CA, 61DAA, 61DAB, 63C, 65C and 65DAB.
+- insight-enduring-powers-of-attorney.html: correct. Powers of Attorney Act 2014 (Vic) version 007, still the latest,
+  sections 21, 28, 30, 35, 39, 42, 44, 45, 50, 55, 63, 64, 69 and 70, the VCAT revocation power and Part 7 on supportive
+  attorneys; Medical Treatment Planning and Decisions Act 2016 (Vic) version 012 sections 6, 12 and 26; Guardianship and
+  Administration Act 2019 (Vic) version 010 sections 22, 23, 30 and 31.
+- insight-binding-financial-agreements.html: correct. Family Law Act compilation 101 sections 90B, 90C, 90D, 90G
+  including (1A) to (1C), 90K(1), 90UB to 90UD, and 90UJ(3), under which a de facto agreement stops binding if the
+  parties later marry each other.
+- insight-executor-duties.html: correct. Administration and Probate Act 1958 (Vic) version 130 sections 18, 39, 65,
+  65A to 65E and the transitional provision limiting 65B to 65D to wills made from their commencement, 99 and 99A(3);
+  Trustee Act 1958 (Vic) version 127 sections 33 and 36; Transfer of Land Act 1958 (Vic) version 184 section 49, under
+  which proving executors become the registered proprietors, which is why every one of them must sign a dealing.
+- insight-shareholder-agreements.html: correct. Corporations Act 2001 (Cth) compilation 149, C2026C00432, still current
+  with no unincorporated amendments, sections 136, 140, 198A, 201G, 232, 233 and 248G.
+
+No page changed, so no page dates moved. Fleet check: the Front desk and the Document desk remain switched off since
+22 Oct 2026; two routines not on the list of sixteen are enabled, the Daily plan and the Catch-up sweep, both created
+on 13 Nov 2026 Melbourne time, the Daily plan running successfully and the Catch-up sweep not yet due its first run;
+every other routine present ran as scheduled and no retired routine is enabled.
+
+---
+
 ## 2026-11-16: Fees end in 95 and run from $495 to $5,000
 
 An hour after the reset below, Spencer asked for each fixed fee to be rounded down to five dollars under the
