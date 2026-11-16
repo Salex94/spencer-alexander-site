@@ -41,8 +41,14 @@ and every firm left out are in `playbooks/fees-2026-11-16/`. Each fee is the ave
   feed.xml, llms.txt and the eleven service pages rebuilt from their content files. Articles and service pages
   moved to 16 Nov 2026 within the same month, so no currency line changed; faq.html's reviewed date and every
   changed page's sitemap lastmod moved with them. CLAUDE.md, "Prices at four out of ten", holds the rule.
-- Off the site, for Spencer: the Google Business Profile services still show the old prices, and the Firm
-  Register's Fees tab is updated the same day.
+- Off the site, for Spencer: the Google Business Profile services still show the old prices. The Firm
+  Register's Fees tab was copied from the new page the same day, its Competitor fees tab holds the survey firm
+  by firm, Open item O2611161106a asks Spencer about the $495 minimum, and the Front desk and Growth desk
+  playbooks and the Matter Project Master Instructions now price at four out of ten. The Growth desk rechecks
+  the market on the first Saturday of each month and raises a fee only when four out of ten has moved more
+  than five per cent from it.
+- IndexNow could not be reached from this session, the proxy refusing it, so the next run with network access
+  sends fees.html, faq.html, the three hubs and the eleven changed service pages with `python3 scripts/indexnow.py`.
 
 ---
 
