@@ -13,6 +13,10 @@ Newest entries first.
 
 ---
 
+## 2026-11-20: Demand scan, one FAQ entry added to faq.html, on whether a will made online or from a will kit is valid in Victoria, built only from the verified will kit and formal validity wording of insight-making-a-valid-will.html; faq.html's reviewed date, FAQPage dateModified, sitemap lastmod and the llms.txt Last updated line moved to 20 November 2026.
+
+---
+
 ## 2026-11-17: Site accuracy and health; five pages verified, all correct
 
 Melbourne date Tuesday 17 November 2026. Not the first run of the month, so no structural audit. The ledger lacked
