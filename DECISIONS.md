@@ -13,6 +13,22 @@ Newest entries first.
 
 ---
 
+## 2026-11-23: Weekly article, what it costs to contest a will and who pays, a Wills and Estates hire guide
+
+New article insight-cost-of-contesting-a-will.html, published Monday 23 November 2026 Melbourne time. Rotation: Wills
+and Estates was due, its newest article 2 Nov. Alternation: 4a856f9, which adds the make good article, carries
+`Article type: ordinary`, so a hire guide was due, matching the backlog marker. Topic: backlog item 2, the
+recommendation. Read in the authorised versions: Administration and Probate Act 1958 (Vic) version 130, sections 90,
+97(2), 99 and 99A(3) and (4); Supreme Court Act 1986 (Vic) version 113, sections 24 and 24A; County Court Act 1958 (Vic)
+version 186, section 78A; Trustee Act 1958 (Vic) version 127, sections 3(1) and 36(2); Legal Profession Uniform Law
+Application Act 2014 (Vic) version 018, Schedule 1 sections 172, 173, 174, 181, 182 and 183. No price is quoted, since
+fees.html has no fixed fee for a will dispute; the written fee estimate wording is used, with no cost range, court fee or
+hourly rate. Photograph: the spare 1505664194779, a heritage library with busts, visually inspected; six spares remain,
+of which none suits a Wills and Estates piece well. The wills-and-estates.html FAQPage dateModified moved with its
+sitemap lastmod.
+
+---
+
 ## 2026-11-20: Demand scan, one FAQ entry added to faq.html, on whether a will made online or from a will kit is valid in Victoria, built only from the verified will kit and formal validity wording of insight-making-a-valid-will.html; faq.html's reviewed date, FAQPage dateModified, sitemap lastmod and the llms.txt Last updated line moved to 20 November 2026.
 
 ---
