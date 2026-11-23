@@ -917,14 +917,14 @@ rule of 26 Sep 2026 and the 10 per cent rise of 29 Sep 2026.
   more than one price shows From before the lowest published fee it covers, as Probate and letters of
   administration shows From before the probate application fee.
 
-## Audit round of 23 Nov 2026, a preview awaiting Spencer's release
+## Audit round of 23 Nov 2026, released on 24 Nov 2026
 
 Spencer asked for a full audit and for the fees that changed in the release of 16 Nov 2026 to go back to the amounts
-published immediately before it. The work is on the branch
-`claude/affectionate-einstein-xytjjz` and nothing in this section is live until he publishes it. The record is
+published immediately before it. The work was done on the branch
+`claude/affectionate-einstein-xytjjz` and went to main on 24 Nov 2026 as commit 7766814, on his word. The record is
 `playbooks/audit-2026-11-23/`, and the parts of it that are about the business are in the private business development
 repository at `audits/2026-11-23/`, because this repository is public. Nothing about enquiries, calls, matters or
-income is ever written into this repository, in a record, a commit message or a comment. Once released, these are the
+income is ever written into this repository, in a record, a commit message or a comment. These are the
 conventions.
 
 - **One fee source.** `playbooks/fees.json` holds each fee once: its total including GST, whether it is a from price,
@@ -978,8 +978,9 @@ conventions.
   recheck leaves them alone, until Spencer says otherwise. The fourteen that fell on 16 Nov 2026 stay at their four
   out of ten amounts until he decides whether any returns to its earlier amount. The whole earlier schedule is a list
   of totals in `playbooks/audit-2026-11-23/fees-full-earlier-schedule.json`, and `python3 scripts/fees.py use` with
-  that file applies it. The Business Profile's services and the Firm Register's Fees tab change on the day of
-  release, through Chrome on the Mac mini once he says yes.
+  that file applies it. The Firm Register's Fees tab was copied from the new fees page on the day of release. The
+  Business Profile's services keep the amounts of 16 Nov 2026 until they are changed through Chrome on the Mac mini,
+  once he says yes.
 - **What the courts and ASIC charge.** The fees page carries a table of the Supreme Court's probate filing fee by the
   gross value of the assets in Victoria, the notice fee, the Federal Circuit and Family Court's divorce and consent
   orders filing fees and ASIC's company registration fee, and the probate, divorce, property, parenting and company
@@ -1094,11 +1095,11 @@ conventions.
   switched on, so the film looks as it did. The words are the transcript in the page's schema, and the timings were
   taken from the film's own sound. Speech in a video without captions fails a level A accessibility rule, which is why
   the track exists. If the film is ever replaced, the captions are made again from the new sound.
-- **Release.** One release, as a single commit on main, so that it can be undone with one `git revert`. The steps are
-  in `playbooks/audit-2026-11-23/README.md`: bring main into the branch, run
-  `python3 scripts/fees.py stamp` with the day and `--since origin/main`, run the gate, commit both on the branch,
-  squash onto main, run the gate again there, publish, send IndexNow, change the Business Profile, copy the Fees tab
-  and bring the scoreboard change into main of the business development repository.
+- **Release.** Released on 24 Nov 2026 as one commit on main, 7766814, by the steps in
+  `playbooks/audit-2026-11-23/README.md`. To undo it, revert the commit that recorded the release and then 7766814,
+  which `git revert --no-edit` does in one command when given both in that order. Left for Spencer's word after the
+  release: the Business Profile's prices, and bringing the scoreboard change into main of the business development
+  repository.
 - Keys after this round: site.css v25, styles.css v9, site.js v19.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)

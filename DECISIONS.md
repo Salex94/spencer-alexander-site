@@ -13,12 +13,22 @@ Newest entries first.
 
 ---
 
-## 2026-11-23: Audit round, a preview on the branch claude/affectionate-einstein-xytjjz, not yet released
+## 2026-11-23: Audit round, released on 24 Nov 2026 as commit 7766814
+
+**Released.** Spencer approved publishing on Tuesday 24 November 2026, and the round went to main that morning as one
+commit, 7766814, so everything below is live. The release steps in `playbooks/audit-2026-11-23/README.md` were
+followed with the day 2026-11-24: main had not moved, 35 pages were dated that day, the gate passed with 113 checks on
+the branch and again on main, and the live fees page showed all 24 fees as the fee source has them. IndexNow accepted
+the 65 changed pages, and the Firm Register's Fees tab was copied from the new fees page the same day. Still to do,
+each on Spencer's word: the Business Profile's prices, which need Chrome on the Mac mini, and bringing the scoreboard
+change into main of the business development repository. He also sends one enquiry through the live form to confirm
+that a notification arrives. To undo the whole release, revert the commit that added this paragraph and then 7766814,
+which `git revert --no-edit` does in one command when given both in that order.
 
 Spencer's request of Monday 23 November 2026: audit and improve the site for design, usability, search, AI answers,
 acquisition and conversion, and restore the fees that changed in the recent pricing release to the amounts published
 immediately before it. Later the same day he asked that everything the audit supports be implemented as well.
-Publishing stays with him, so everything below is on the branch, as one commit, and nothing is on main. The record is
+Publishing stayed with him until he approved it on 24 November 2026. The record is
 `playbooks/audit-2026-11-23/`, whose README gives the release steps. This repository is public, so the parts of the
 record that are about the business, and the report he reads, are kept privately.
 
