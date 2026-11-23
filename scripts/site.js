@@ -31,9 +31,10 @@
   var heroCta = document.querySelector(".hero .btn--accent, .pagehero .btn--accent");
   if (heroCta && "IntersectionObserver" in window) {
     new IntersectionObserver(function (entries) {
-      // Most of the button must be on screen, so a button cut off at the bottom edge never hides the bar
-      document.body.classList.toggle("cta-visible", entries[0].isIntersecting && entries[0].intersectionRatio >= 0.75);
-    }, { threshold: [0, 0.75, 1] }).observe(heroCta);
+      // The whole button must be on screen: a button cut off at the bottom edge never hides the bar (23 Nov 2026,
+      // when a short phone screen showed three quarters of the button and no bar)
+      document.body.classList.toggle("cta-visible", entries[0].isIntersecting && entries[0].intersectionRatio >= 0.98);
+    }, { threshold: [0, 0.5, 0.98, 1] }).observe(heroCta);
   }
   // Current year in footer
   var y = document.querySelector("[data-year]");
@@ -99,6 +100,18 @@
         });
       }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
       revealEls.forEach(function (el) { io.observe(el); });
+      // A control reached by keyboard is never left transparent. The observer ignores the lowest strip of the
+      // screen, so a link there could hold focus while still invisible; focus entering a block shows it at once
+      // (23 Nov 2026).
+      document.addEventListener("focusin", function (e) {
+        var el = e.target && e.target.closest ? e.target.closest(".reveal") : null;
+        while (el) {
+          io.unobserve(el);
+          el.classList.remove("reveal", "is-inview");
+          el.style.transitionDelay = "";
+          el = el.parentElement ? el.parentElement.closest(".reveal") : null;
+        }
+      });
       // Canary: if IO never fires (hidden or throttled contexts), drop the effect entirely
       setTimeout(function () {
         if (!ioFired) {
@@ -285,8 +298,16 @@
   var row = email.closest(".form-row") || email.parentNode;
   row.parentNode.insertBefore(msg, row.nextSibling);
   function e_invalid() { return !phone.value.trim() && !email.value.trim(); }
+  // The message is tied to both fields while it shows, so a screen reader reads it with the field (23 Nov 2026)
+  var describe = function (on) {
+    [phone, email].forEach(function (f) {
+      var ids = (f.getAttribute("aria-describedby") || "").split(/\s+/).filter(function (x) { return x && x !== msg.id; });
+      if (on) ids.push(msg.id);
+      if (ids.length) f.setAttribute("aria-describedby", ids.join(" ")); else f.removeAttribute("aria-describedby");
+    });
+  };
   var clear = function () {
-    if (!e_invalid()) { msg.hidden = true; phone.removeAttribute("aria-invalid"); email.removeAttribute("aria-invalid"); }
+    if (!e_invalid()) { msg.hidden = true; phone.removeAttribute("aria-invalid"); email.removeAttribute("aria-invalid"); describe(false); }
   };
   phone.addEventListener("input", clear);
   email.addEventListener("input", clear);
@@ -296,9 +317,40 @@
       msg.hidden = false;
       phone.setAttribute("aria-invalid", "true");
       email.setAttribute("aria-invalid", "true");
+      describe(true);
       phone.focus();
     }
   });
+  // One enquiry, one message: once a valid enquiry is on its way the button says so and a second press does
+  // nothing. On a slow connection a second press used to send the same enquiry twice (23 Nov 2026).
+  var button = form.querySelector('button[type="submit"]');
+  var buttonText = button ? button.textContent : "";
+  var sending = false, stalled = null;
+  // If the send has not finished after twenty seconds the lock lets go and a line says so, with the number to
+  // call. A visitor whose connection stalled used to be left with a button that would never send (23 Nov 2026).
+  var slow = document.createElement("p");
+  slow.className = "form__error";
+  slow.id = "contact-slow";
+  slow.setAttribute("role", "alert");
+  slow.hidden = true;
+  slow.innerHTML = 'This is taking longer than it should. Please press Send enquiry again, or call us on <a href="tel:+61391258355">(03) 9125 8355</a>.';
+  if (button) { button.parentNode.insertBefore(slow, button.nextSibling); }
+  var unlock = function () {
+    sending = false;
+    if (stalled) { clearTimeout(stalled); stalled = null; }
+    form.classList.remove("is-sending");
+    if (button) { button.removeAttribute("aria-disabled"); button.textContent = buttonText; }
+  };
+  form.addEventListener("submit", function (e) {
+    if (e.defaultPrevented) return;
+    if (sending) { e.preventDefault(); return; }
+    sending = true;
+    slow.hidden = true;
+    form.classList.add("is-sending");
+    if (button) { button.setAttribute("aria-disabled", "true"); button.textContent = "Sending your enquiry"; }
+    stalled = setTimeout(function () { unlock(); slow.hidden = false; }, 20000);
+  });
+  window.addEventListener("pageshow", function () { unlock(); slow.hidden = true; });
   // Each notification's subject carries the time it was sent, so Gmail never groups two enquiries into one conversation
   var subject = form.querySelector('input[name="_subject"]');
   var baseSubject = subject ? subject.value : "";
@@ -315,6 +367,7 @@
 (function () {
   var q = document.querySelector("[data-quick-exit]");
   if (!q) return;
+  document.documentElement.classList.add("has-quick-exit");
   q.addEventListener("click", function (e) {
     e.preventDefault();
     try { window.open("https://www.google.com.au/", "_blank", "noopener"); } catch (err) {}

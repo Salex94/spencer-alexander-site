@@ -4,7 +4,7 @@
  "hub_label": "Wills &amp; Estates",
  "crumb": "Will disputes",
  "service_name": "Contesting and defending wills",
- "date": "2026-11-09",
+ "date": "2026-11-24",
  "title": "Will Dispute Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Will Dispute Lawyers in Box Hill, Melbourne",
  "description": "Will dispute lawyers in Box Hill. A family provision claim must generally be made within six months of the grant, and your costs are estimated in writing first.",
@@ -16,9 +16,10 @@
  ],
  "urgent": {
   "strong": "Left out of a will, or served with a claim?",
-  "text": "A family provision claim must generally be made within six months of the grant of probate or administration. The court can extend the time, but only on an application made before the estate is finally distributed, and a late claim cannot disturb a distribution already made."
+  "text": "Under the Administration and Probate Act 1958 (Vic), a family provision claim must generally be made within six months of the grant of probate or administration. The court can extend the time, but only on an application made before the estate is finally distributed, and a late claim cannot disturb a distribution already made."
  },
  "brief": {
+  "sources": ["Administration and Probate Act 1958 (Vic)", "Supreme Court (Administration and Probate) Rules 2023 (Vic)"],
   "entity": "Spencer Alexander Lawyers is a Box Hill, Melbourne law firm acting for people who contest a will and for the executors and beneficiaries who defend one, with the principal overseeing every matter.",
   "bullets": [
    "Contesting a will usually means a family provision claim under Part IV of the Administration and Probate Act 1958, asking the court to order provision from the estate.",

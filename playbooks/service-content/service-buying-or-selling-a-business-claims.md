@@ -46,7 +46,7 @@ Read today on legislation.vic.gov.au, each the version marked In force:
 | Time limits section | Landlord taken to have consented if no written notice consenting or withholding within 28 days after the request, where the tenant has complied with s 61. | RLA s 61(6). |
 | Process step 3 | Request in writing, with the information the landlord reasonably requires about the assignee's financial resources and business experience. | RLA s 61(2). |
 | Process step 2 | Before requesting consent, the seller gives the buyer a copy of the landlord's disclosure statement and details of changes; for an ongoing business the seller gives the landlord and the buyer a disclosure statement in the prescribed form. | RLA s 61(3), (5A). The s 61(5) exception, where the landlord fails to supply a current statement within 14 days, is not stated. |
-| In brief, FAQ 3, seller block | A seller who gives the s 61(5A) statement, with nothing false, misleading or materially incomplete in it, is not liable to perform the lease or pay amounts the buyer owes, nor is a guarantor. | RLA s 62(1), (2). The In brief bullet compresses this to "follows the Act's disclosure steps ... can be released"; FAQ 3 gives both limbs. |
+| In brief, FAQ 3, seller block | A seller who gives the s 61(5A) statement, with nothing false, misleading or materially incomplete in it, is not liable to perform the lease or pay amounts the buyer owes, nor is a guarantor. | RLA s 62(1), (2). The In brief bullet and FAQ 3 each give both limbs. |
 | Time limits section | On a new retail lease the landlord must give the disclosure statement and proposed lease at least 14 days before the lease is entered into; if given later, the term is taken to start 14 days after they are given. | RLA s 17(1), (1C). Consistent with today's audit: the tenant does not sign the statement, and the page never says it does. |
 | FAQ 4 | Federal workplace law can count service with the seller as service with the buyer. | FWA s 22(5), (7)(b), s 311(1). "Can" because a transfer of business needs all four limbs of s 311(1), and a buyer that is not an associated entity may decline to recognise prior service for annual leave and redundancy pay, as the note to s 22(5) records. |
 | FAQ 4 | In Victoria a new owner must not refuse a continuing employee long service leave that accrued before the sale. | LSL Act s 11(3)(b), and s 11(6) for asset transfers. |
@@ -72,3 +72,22 @@ Read today on legislation.vic.gov.au, each the version marked In force:
 ## Fees
 
 Only fees.html's "Review of a contract to buy a business, from $1,210", with its scope and "A franchise or a purchase of shares costs more". It is never called a fixed fee. Settlement work, anything for a seller and any dispute are stated as estimated in writing before substantive work begins, matching fees.html's closing line for the commercial section. No offers in schema, because there is no single figure fee.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 rests on the Estate Agents Act 1980 (Vic). Bullet 2 rests on the Retail Leases
+Act 2003 (Vic). Bullet 3 rests on the Retail Leases Act 2003 (Vic).
+
+## Names added on 23 November 2026
+
+The urgent strip now opens Under section 52 of the Estate Agents Act 1980 (Vic) and ends the section gives no way to
+extend that time, where it said section 52 without naming the Act. The rows above already give section 52(3) as its
+authority, and the statement itself is unchanged.
+
+From 23 November 2026 the fee note opens, and each answer that quotes one of the firm's fees ends, with one sentence
+the page builder writes: whose fees they are, where, in Australian dollars, the day, who published them and where. It
+is a statement about the firm's own fees and not a statement of law.

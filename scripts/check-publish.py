@@ -529,6 +529,66 @@ def main():
             cur_bad.append("%s: %s" % (f, ", ".join(sorted(others - {cm.group(1)}))))
     check("every dated currency phrase matches the currency line", not cur_bad, "; ".join(cur_bad[:3]))
 
+    # The currency line's month equals the month of dateModified on every article, checklist and
+    # service page, not only on the newest article (added 23 Nov 2026: a price change dated in a
+    # later month could leave forty pages saying the law was read in an earlier one, unseen).
+    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
+              "October", "November", "December"]
+    cur_all = []
+    for f in sorted(glob.glob("insight-*.html") + glob.glob("resource-*.html") + glob.glob("service-*.html")):
+        h = read(f)
+        cm = re.search(r"reflects the law applying in Victoria as at ([A-Z][a-z]+ \d{4})", h)
+        dms = {"%s %s" % (months[int(mo) - 1], y) for y, mo in re.findall(r'"dateModified":\s*"(\d{4})-(\d{2})-\d{2}"', h)}
+        if cm and dms and dms != {cm.group(1)}:
+            cur_all.append("%s: line %s, dates %s" % (f, cm.group(1), ", ".join(sorted(dms))))
+    check("currency line month matches dateModified on every page", not cur_all, "; ".join(cur_all[:3]))
+
+    # A practice hub's closing line makes two statements: the day the page was updated and the month its law
+    # was read. The weekly article routine adds a link to a hub and moves its date without reading its law
+    # again, so the day follows the page's date and the month only has to be no later than it. The month moves
+    # when the hub's law is read again and the page is dated with --law-read.
+    hub_close = []
+    for f in ("family-law.html", "wills-and-estates.html", "commercial-law.html"):
+        h = read(f)
+        fp = next((b for b in jsonld(h) if isinstance(b, dict) and b.get("@type") == "FAQPage"), {})
+        day = fp.get("dateModified", "")
+        shown = re.findall(r'updated on <time datetime="(\d{4}-\d{2}-\d{2})">([^<]*)</time>', h)
+        cm = re.findall(r"reflects the law applying in Victoria as at ([A-Z][a-z]+) (\d{4})", h)
+        fix = "run python3 scripts/fees.py stamp with today's date in Melbourne and %s" % f
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", day) or not shown or len(cm) != 1 or cm[0][0] not in months:
+            hub_close.append("%s: needs one closing line with its updated day and the month its law was read" % f)
+        elif any(s != (day, "%d %s %s" % (int(day[8:10]), months[int(day[5:7]) - 1], day[:4])) for s in shown):
+            hub_close.append("%s: the page says updated on %s, and its date is %s: %s"
+                             % (f, ", ".join(sorted({s[1] for s in shown})), day, fix))
+        elif (int(cm[0][1]), months.index(cm[0][0]) + 1) > (int(day[:4]), int(day[5:7])):
+            hub_close.append("%s: law read in %s %s, after the page's date %s" % (f, cm[0][0], cm[0][1], day))
+    check("hub closing line gives the page's date, and a month for its law no later", not hub_close,
+          "; ".join(hub_close[:3]))
+
+    # An Article's wordCount is the gate's own count of its body (added 23 Nov 2026)
+    wc_bad = []
+    for f in sorted(glob.glob("insight-*.html")):
+        h = read(f)
+        m = re.search(r'<div class="article__body">(.*?)<p (?:class="article-sources" )?style="margin-top:28px', h, re.S)
+        wc = re.search(r'"wordCount":\s*(\d+)', h)
+        if m and wc and len(re.sub(r"<[^>]+>", " ", m.group(1)).split()) != int(wc.group(1)):
+            wc_bad.append("%s: %s in the schema, %d counted" % (f, wc.group(1), len(re.sub(r"<[^>]+>", " ", m.group(1)).split())))
+    check("Article wordCount equals the body count", not wc_bad, "; ".join(wc_bad[:3]))
+
+    # Every page loads the stylesheets and the script at the keys the home page carries, and every rail card
+    # ends with the line the article template carries (added 23 Nov 2026: an article merged from an older
+    # main kept the old keys and the old line, and nothing stopped it).
+    def keys_of(h):
+        return tuple(re.findall(r'(?:styles/styles\.css|styles/site\.css|scripts/site\.js)\?v=(\d+)', h))
+    home_keys = keys_of(read("index.html"))
+    key_bad = [f for f in sorted(glob.glob("*.html")) if keys_of(read(f)) != home_keys]
+    check("every page carries the home page's stylesheet and script keys", len(home_keys) == 3 and not key_bad,
+          ", ".join(key_bad[:4]))
+    rail = re.search(r'<p class="rail-card__meta">(.*?)</p>', read("_article-template.html"), re.S)
+    rail_bad = [f for f in sorted(glob.glob("*.html"))
+                if any(t != rail.group(1) for t in re.findall(r'<p class="rail-card__meta">(.*?)</p>', read(f), re.S))] if rail else ["_article-template.html"]
+    check("every rail card ends with the template's line", not rail_bad, ", ".join(rail_bad[:4]))
+
     # One firm entity: every JSON-LD object carrying the #firm @id must agree
     # with the full node on index.html on every property it repeats.
     FIRM = BASE + "#firm"
@@ -761,6 +821,24 @@ def main():
                     if amt not in fee_amounts:
                         stray_fee.append("%s %s" % (f, amt))
     check("prices quoted elsewhere match fees.html", not stray_fee, ", ".join(stray_fee[:4]))
+
+    # One maintained fee source (added 23 Nov 2026): playbooks/fees.json holds each fee once, and
+    # scripts/fees.py ties every quoted figure on every page, in every meta description and JSON-LD
+    # string, in llms.txt, feed.xml and the service content files, to the fee named beside it. The
+    # check above passes any figure that some fee carries. This one also holds every sentence that
+    # quotes a figure against playbooks/fees-renditions.json, the record of what each figure belongs
+    # to, so a figure that is right for another fee, two figures swapped, or a new sentence nobody
+    # has read fails until scripts/fees.py snapshot records it. It also fails a service page that
+    # is not what its content file builds, and dates on the fees page that disagree.
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("fees", os.path.join("scripts", "fees.py"))
+    fees_mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(fees_mod)
+    fee_problems = fees_mod.check(quiet=True)
+    check("every fee rendition matches playbooks/fees.json", not fee_problems, "; ".join(fee_problems[:3]))
+    # The yearly reading of the court and ASIC charges: shown here from three weeks before the period
+    # ends, so that every routine sees it, and failed by the check above a fortnight after it ends.
+    check("court and ASIC charges are inside the period they were read for", True, "; ".join(fees_mod.NOTICES))
 
     # No page's sitemap lastmod may be older than a dateModified in its own
     # schema (added 28 Sep 2026 after a resource page corrected on 24 Sep kept

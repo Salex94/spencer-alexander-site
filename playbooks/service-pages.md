@@ -183,6 +183,11 @@ stylesheet links and their versions, fonts and Open Graph tags follow the hub ex
   plainly holds, such as the will, the grant or the lease, states no legal requirement to hold or
   bring anything, keeps the line that having little on paper is fine, and records the list in the
   claims register.
+- **In brief sources,** in "sources" under "brief": the Acts, Regulations and Rules behind the statements of law in
+  the In brief block, named exactly as the page's Sources line names them and taken from the claims register. The
+  builder ends the block with who published the page, the day and, after the word Legislation, those names, and
+  stops if the list is empty or a name is not in the Sources line. The urgent strip opens with the name of its Act,
+  and an answer names its court in full the first time it mentions it, because each may be quoted by itself.
 - **Sources,** in the content file's "sources" value, each Act linked to its authorised version with the
   sections or Part the page relies on, except that an Act relied on for more than eight provisions is named
   alone, with no section list, under Spencer's rule of 26 September 2026, which the gate enforces.

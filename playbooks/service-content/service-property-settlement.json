@@ -4,21 +4,22 @@
  "hub_label": "Family Law",
  "crumb": "Property settlement",
  "service_name": "Property and financial settlement",
- "date": "2026-11-16",
+ "date": "2026-11-24",
  "title": "Property Settlement Lawyers Box Hill | Spencer Alexander Lawyers",
  "h1": "Property Settlement Lawyers in Box Hill, Melbourne",
- "description": "Property settlement lawyers in Box Hill. Consent orders for an agreed property settlement are a fixed fee of $3,195 including GST, and your first call is free.",
+ "description": "Property settlement lawyers in Box Hill. Consent orders for an agreed property settlement are a fixed fee of $3,025 including GST, and your first call is free.",
  "lead": "From our Box Hill office, our lawyers help separated spouses and de facto partners divide property, superannuation and debts, make the settlement binding by consent orders or a binding financial agreement, and run the case in court when agreement is not possible. There is no automatic equal split. Married couples generally have 12 months from the divorce order taking effect to apply, and de facto partners two years from separation.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
-  "<a href=\"/fees#fee-consent-orders-for-an-agreed-property-settlement\">Consent orders for an agreed settlement $3,195, fixed fee</a>",
+  "<a href=\"/fees#fee-consent-orders-for-an-agreed-property-settlement\">Consent orders for an agreed settlement $3,025, fixed fee</a>",
   "Suite 10, 1 Main Street, Box Hill"
  ],
  "urgent": {
   "strong": "Divorced, or separated from a de facto partner?",
-  "text": "A property application must generally be made within 12 months of the divorce order taking effect, or two years after a de facto relationship ends, and after that it needs both people's consent or the court's leave."
+  "text": "Under the Family Law Act 1975 (Cth), a property application must generally be made within 12 months of the divorce order taking effect, or two years after a de facto relationship ends, and after that it needs both people's consent or the court's leave."
  },
  "brief": {
+  "sources": ["Family Law Act 1975 (Cth)"],
   "entity": "Spencer Alexander Lawyers is a Box Hill, Melbourne law firm acting for separated spouses and de facto partners in property and financial settlements, by agreement or in court, with the principal overseeing every matter.",
   "bullets": [
    "There is no automatic equal split. The court weighs each person's contributions and current and future circumstances, and makes orders only if it is satisfied they are just and equitable.",
@@ -93,7 +94,7 @@
  },
  "fee": {
   "t": "What it costs to make an agreement final.",
-  "p": "Our fixed fee for consent orders for an agreed property settlement is $3,195 including GST. It covers advice on your agreement, the application and proposed orders, including one super split and one property transfer, the notice to the super fund, filing and the sealed orders, and assumes full financial disclosure has been exchanged and no company, trust or business is involved. Consent orders for property and parenting arrangements together are <a href=\"/fees#fee-consent-orders-for-property-and-parenting\">$4,495 including GST</a>, on the same assumptions as the two separate fees. For a binding financial agreement drafted from terms you have agreed, with the advice the law requires, our fee is from $2,895 including GST for the person we act for, and the other party needs a lawyer of their own. Advice on a binding financial agreement drafted by the other party, with the certificate of independent legal advice, is <a href=\"/fees#fee-advice-on-a-binding-financial-agreement\">from $1,595 including GST</a>. Negotiation, a disputed settlement and court proceedings are estimated in writing before any substantive work begins, and the court's filing fee is separate. Every price, and what costs more, is on our <a href=\"/fees#fee-consent-orders-for-an-agreed-property-settlement\">fees page</a>."
+  "p": "Our fixed fee for consent orders for an agreed property settlement is $3,025 including GST. It covers advice on your agreement, the application and proposed orders, including one super split and one property transfer, the notice to the super fund, filing and the sealed orders, and assumes full financial disclosure has been exchanged and no company, trust or business is involved. Consent orders for property and parenting arrangements together are <a href=\"/fees#fee-consent-orders-for-property-and-parenting\">$3,850 including GST</a>, on the same assumptions as the two separate fees. For a binding financial agreement drafted from terms you have agreed, with the advice the law requires, our fee is from $2,895 including GST for the person we act for, and the other party needs a lawyer of their own. Advice on a binding financial agreement drafted by the other party, with the certificate of independent legal advice, is <a href=\"/fees#fee-advice-on-a-binding-financial-agreement\">from $1,100 including GST</a>. Negotiation, a disputed settlement and court proceedings are estimated in writing before any substantive work begins, and the court's filing fee for an application for consent orders, $215 under the Commonwealth's notice of family law fees since 1 July 2026, is separate. Every price, and what costs more, is on our <a href=\"/fees#fee-consent-orders-for-an-agreed-property-settlement\">fees page</a>."
  },
  "related": [
   {
@@ -136,20 +137,20 @@
    "a": "For a binding financial agreement, no. Each of you needs independent legal advice before signing, one of the steps the Act sets for the agreement to be binding. For consent orders the law requires no lawyer, and we act for one of you alone."
   }
  ],
- "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>; <a href=\"https://www.legislation.gov.au/F2021L01197/latest\" rel=\"noopener\" target=\"_blank\">Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)</a>, rules 4.01, 10.04, 10.06 and 10.07, and Schedule 1, Part 1.",
+ "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>; <a href=\"https://www.legislation.gov.au/F2021L01197/latest\" rel=\"noopener\" target=\"_blank\">Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)</a>, rules 4.01, 10.04, 10.06 and 10.07, and Schedule 1, Part 1; <a href=\"https://www.legislation.gov.au/F2023L00022/latest\" rel=\"noopener\" target=\"_blank\">Family Law (Fees) Regulations 2022 (Cth)</a>, section 2.02 and Schedule 1, item 6.",
  "cta": {
   "eyebrow": "After separation",
   "title": "Speak with a property settlement lawyer.",
-  "lead": "One call tells you plainly whether and how we can help, which deadline applies to you and how an agreement is made binding."
+  "lead": "One call tells you plainly whether and how we can help, which deadline applies to you and how an agreement is made binding. If it is not safe for us to email you or leave a message, the enquiry form lets you say so, and we reply only in the way you tell us is safe."
  },
  "offers": [
   {
    "name": "Consent orders for an agreed property settlement",
-   "price": "3195"
+   "price": "3025"
   },
   {
    "name": "Consent orders for property and parenting together",
-   "price": "4495"
+   "price": "3850"
   }
  ]
 }

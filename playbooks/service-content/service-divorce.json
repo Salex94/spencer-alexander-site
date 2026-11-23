@@ -4,7 +4,7 @@
  "hub_label": "Family Law",
  "crumb": "Divorce",
  "service_name": "Divorce",
- "date": "2026-11-16",
+ "date": "2026-11-24",
  "title": "Divorce Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Divorce Lawyers in Box Hill, Melbourne",
  "description": "Divorce lawyers in Box Hill. A joint divorce application is a fixed fee of $995 and a sole one $1,095, each including GST, and your first call is free.",
@@ -16,12 +16,13 @@
  ],
  "urgent": {
   "strong": "Divorced, or about to be?",
-  "text": "Property and spousal maintenance proceedings must generally be started within 12 months of the divorce order taking effect. After that they need both spouses' consent or the court's permission, which is not guaranteed."
+  "text": "Under the Family Law Act 1975 (Cth), property and spousal maintenance proceedings must generally be started within 12 months of the divorce order taking effect. After that they need both spouses' consent or the court's permission, which is not guaranteed."
  },
  "brief": {
+  "sources": ["Family Law Act 1975 (Cth)"],
   "entity": "Spencer Alexander Lawyers is a Box Hill, Melbourne law firm acting for people applying for a divorce, together or on their own, and for spouses served with a divorce application, with the principal overseeing every matter.",
   "bullets": [
-   "The Court makes a divorce order when it is satisfied that you lived separately and apart for at least the 12 months immediately before filing, unless there is a reasonable likelihood of you getting back together.",
+   "The Federal Circuit and Family Court of Australia makes a divorce order when it is satisfied that you lived separately and apart for at least the 12 months immediately before filing, unless there is a reasonable likelihood of you getting back together.",
    "You can be separated under one roof, and one reconciliation of up to three months does not restart the 12 months, although the time together does not count.",
    "Where there are children of the marriage under 18, the divorce takes effect only once the Court is satisfied that proper arrangements have been made for them, or that circumstances justify it taking effect anyway."
   ]
@@ -61,7 +62,7 @@
    "eyebrow": "Time limits",
    "h2": "The deadline a divorce starts.",
    "paras": [
-    "A divorce order generally takes effect one month after it is made. From that day you generally have 12 months to start property settlement or spousal maintenance proceedings, and after that you need both spouses' consent or the court's permission, which is not guaranteed.",
+    "Under the Family Law Act 1975 (Cth), a divorce order generally takes effect one month after it is made. From that day you generally have 12 months to start property settlement or spousal maintenance proceedings, and after that you need both spouses' consent or the court's permission, which is not guaranteed.",
     "You do not have to be divorced to settle property. If your divorce has already taken effect and nothing has been formalised, call us now."
    ]
   },
@@ -93,7 +94,7 @@
  },
  "fee": {
   "t": "Fixed fees for a divorce application.",
-  "p": "Our fixed fee for a divorce application is $995 for a joint application and $1,095 for a sole one, including GST. The joint fee covers checking that you can apply, preparing the application, helping you both sign it, filing it and dealing with the Court until the order is made, and assumes at least 12 months of separation without living under one roof. The sole fee adds arranging service, the affidavit proving it and attending the hearing if the Court requires it, and assumes your spouse can be served in Australia and does not oppose the divorce. The Court's own filing fee is separate. Where an assumption does not hold, or for anything our <a href=\"/fees#fee-divorce-application-joint\">fees page</a> does not list, such as a property or parenting dispute, we give you a written estimate before substantive work begins."
+  "p": "Our fixed fee for a divorce application is $995 for a joint application and $1,095 for a sole one, including GST. The joint fee covers checking that you can apply, preparing the application, helping you both sign it, filing it and dealing with the Federal Circuit and Family Court of Australia until the order is made, and assumes at least 12 months of separation without living under one roof. The sole fee adds arranging service, the affidavit proving it and attending the hearing if the Court requires it, and assumes your spouse can be served in Australia and does not oppose the divorce. The Court's own filing fee is separate, and under the Commonwealth's notice of family law fees it has been $1,170 since 1 July 2026, or $390 for people who qualify for the reduced fee. Where an assumption does not hold, or for anything our <a href=\"/fees#fee-divorce-application-joint\">fees page</a> does not list, such as a property or parenting dispute, we give you a written estimate before substantive work begins."
  },
  "related": [
   {
@@ -121,11 +122,11 @@
  "faqs": [
   {
    "q": "Do we both have to agree to the divorce?",
-   "a": "No. Either spouse can apply alone. If the Court is satisfied that you have been separated for at least 12 months, that there is no reasonable likelihood of you getting back together and that the application was properly served, it can make the order whether or not the other spouse wants the divorce."
+   "a": "No. Either spouse can apply alone. If the Federal Circuit and Family Court of Australia is satisfied that you have been separated for at least 12 months, that there is no reasonable likelihood of you getting back together and that the application was properly served, it can make the order whether or not the other spouse wants the divorce."
   },
   {
    "q": "Do I have to go to court for a divorce?",
-   "a": "Generally not. If the applicant, or both applicants in a joint application, ask the Court to decide the application in their absence, nobody needs to attend unless the other spouse asks to or the Court directs otherwise. With children of the marriage under 18, the Court must first be satisfied that proper arrangements have been made for them."
+   "a": "Generally not. If the applicant, or both applicants in a joint application, ask the Federal Circuit and Family Court of Australia to decide the application in their absence, nobody needs to attend unless the other spouse asks to or the Court directs otherwise. With children of the marriage under 18, the Court must first be satisfied that proper arrangements have been made for them."
   },
   {
    "q": "Can I divorce in Australia if I married overseas?",
@@ -133,18 +134,18 @@
   },
   {
    "q": "When can I remarry?",
-   "a": "Once the divorce order has taken effect, which is generally one month after it is made. The Court can shorten that period if special circumstances justify it, so if a wedding is booked, tell us on the first call."
+   "a": "Once the divorce order has taken effect, which is generally one month after it is made. The Federal Circuit and Family Court of Australia can shorten that period if special circumstances justify it, so if a wedding is booked, tell us on the first call."
   },
   {
    "q": "How much does a divorce cost?",
-   "a": "Our fixed fee is $995 for a joint application and $1,095 for a sole one, including GST, and our <a href=\"/fees#fee-divorce-application-joint\">fees page</a> sets out what each covers. The Court also charges a filing fee, and a reduced fee is available to concession card holders and people in financial hardship, although for a joint application both of you must qualify."
+   "a": "Our fixed fee is $995 for a joint application and $1,095 for a sole one, including GST, and our <a href=\"/fees#fee-divorce-application-joint\">fees page</a> sets out what each covers. The Federal Circuit and Family Court of Australia also charges a filing fee, which under the Commonwealth's notice of family law fees has been $1,170 since 1 July 2026, and a reduced fee of $390 is available to concession card holders and people in financial hardship, although for a joint application both of you must qualify."
   }
  ],
  "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>; <a href=\"https://www.legislation.gov.au/F2021L01197/latest\" rel=\"noopener\" target=\"_blank\">Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)</a>, rules 2.17, 2.18, 2.28, 2.34, 2.35, 2.42 to 2.46, 15.06 and 15.15; <a href=\"https://www.legislation.gov.au/F2023L00022/latest\" rel=\"noopener\" target=\"_blank\">Family Law (Fees) Regulations 2022 (Cth)</a>, sections 2.02, 2.04 and 2.06; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/wills-act-1997\" rel=\"noopener\" target=\"_blank\">Wills Act 1997 (Vic)</a>, section 14; <a href=\"https://www.legislation.gov.au/C2004A02560/latest\" rel=\"noopener\" target=\"_blank\">Domicile Act 1982 (Cth)</a>, section 10.",
  "cta": {
   "eyebrow": "Separated for a year or more",
   "title": "Speak with a divorce lawyer.",
-  "lead": "Tell us when you separated and whether your spouse will sign, and we will tell you plainly whether and how we can help, which application fits and what it will cost."
+  "lead": "Tell us when you separated and whether your spouse will sign, and we will tell you plainly whether and how we can help, which application fits and what it will cost. If it is not safe for us to email you or leave a message, the enquiry form lets you say so, and we reply only in the way you tell us is safe."
  },
  "offers": [
   {

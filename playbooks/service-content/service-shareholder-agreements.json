@@ -4,20 +4,21 @@
  "hub_label": "Commercial Law",
  "crumb": "Shareholder agreements",
  "service_name": "Shareholder agreements and company set up",
- "date": "2026-11-16",
+ "date": "2026-11-24",
  "title": "Shareholder Agreement Lawyers Box Hill | Spencer Alexander Lawyers",
  "h1": "Shareholder Agreement Lawyers in Box Hill, Melbourne",
  "description": "Shareholder agreements and company set up at our Box Hill office. Company set up is $495 including GST, with ASIC's registration fee passed on at cost.",
  "lead": "From our Box Hill office, our lawyers set up companies and draft shareholder agreements for founders, family businesses and co-owners, settling how decisions are made, how a deadlock is broken and how an owner leaves, while everyone is still on good terms. Setting up a company is a fixed fee of $495 including GST, with ASIC's registration fee passed on at cost, and a shareholder agreement is from $1,095.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
-  "<a href=\"/fees#fee-company-set-up\">Company set up $495, fixed fee, plus ASIC's fee at cost</a>",
+  "<a href=\"/fees#fee-shareholders-agreement\">Shareholder agreement from $1,095</a>",
   "Suite 10, 1 Main Street, Box Hill"
  ],
  "brief": {
+  "sources": ["Corporations Act 2001 (Cth)"],
   "entity": "Spencer Alexander Lawyers is a Box Hill, Melbourne law firm setting up companies and drafting shareholder agreements and constitutions for founders, family businesses and co-owners, and acting when co-owners fall out, with the principal overseeing every matter.",
   "bullets": [
-   "A proprietary company needs at least one member and at least one director who ordinarily resides in Australia, and can have no more than 50 shareholders who are not employees.",
+   "Under the Corporations Act 2001 (Cth), a proprietary company needs at least one member and at least one director who ordinarily resides in Australia, and can have no more than 50 shareholders who are not employees.",
    "Every director needs a director identification number, or must have applied for one, before being appointed.",
    "A company's constitution, with any replaceable rules of the Corporations Act that apply to it, is a contract between the company and each member and between the members themselves, and the constitution can be changed by a special resolution passed by at least 75 per cent of the votes cast.",
    "A shareholder agreement binds only those who sign it, so it works alongside the constitution rather than replacing it."
@@ -46,7 +47,7 @@
     },
     {
      "t": "Constitutions that match",
-     "p": "Without a constitution of its own, a company's internal management is generally governed by the Act's replaceable rules. Under them, for example, the directors of a proprietary company can refuse to register a share transfer for any reason, and new shares must be offered first to existing holders of that class in proportion to their holdings unless the members resolve otherwise. We draft the constitution and the agreement to work together."
+     "p": "Without a constitution of its own, a company's internal management is generally governed by the Corporations Act's replaceable rules. Under them, for example, the directors of a proprietary company can refuse to register a share transfer for any reason, and new shares must be offered first to existing holders of that class in proportion to their holdings unless the members resolve otherwise. We draft the constitution and the agreement to work together."
     },
     {
      "t": "When co-owners fall out",
@@ -90,7 +91,7 @@
  },
  "fee": {
   "t": "Fees for companies and shareholder agreements.",
-  "p": "<a href=\"/fees#fee-company-set-up\">Setting up a company</a> is a fixed fee of $495 including GST, for registering one proprietary company with up to two directors and shareholders, with its constitution, consents, register of members, share certificates and first resolutions, and an ABN and GST registration if needed. ASIC's registration fee is passed on at cost. A <a href=\"/fees#fee-shareholders-agreement\">shareholder agreement</a> is from $1,095 including GST, for one private company with up to three shareholders who have agreed the commercial terms, with one round of changes, and more shareholders, investors or employee shares cost more. Anything else, including a dispute between owners, is estimated in writing before substantive work begins."
+  "p": "<a href=\"/fees#fee-company-set-up\">Setting up a company</a> is a fixed fee of $495 including GST, for registering one proprietary company with up to two directors and shareholders, with its constitution, consents, register of members, share certificates and first resolutions, and an ABN and GST registration if needed. ASIC's registration fee, $636 on ASIC's fee list since 1 July 2026, is passed on at cost. A <a href=\"/fees#fee-shareholders-agreement\">shareholder agreement</a> is from $1,095 including GST, for one private company with up to three shareholders who have agreed the commercial terms, with one round of changes, and more shareholders, investors or employee shares cost more. Where your company falls outside that description, the first call tells you so and we confirm your fee in writing before any substantive work begins. Anything else, including a dispute between owners, is estimated in writing before substantive work begins."
  },
  "related": [
   {
@@ -130,11 +131,11 @@
   },
   {
    "q": "How many directors and shareholders does a company need?",
-   "a": "A proprietary company needs at least one member and at least one director who ordinarily resides in Australia, and every director must be at least 18. It does not need a company secretary, although it can have one, and it can have no more than 50 shareholders who are not employees. Every director also needs a director identification number."
+   "a": "Under the Corporations Act 2001 (Cth), a proprietary company needs at least one member and at least one director who ordinarily resides in Australia, and every director must be at least 18. It does not need a company secretary, although it can have one, and it can have no more than 50 shareholders who are not employees. Every director also needs a director identification number."
   },
   {
    "q": "How much does it cost to set up a company and a shareholder agreement?",
-   "a": "Setting up a company is a fixed fee of $495 including GST, and ASIC's registration fee is passed on at cost. A shareholder agreement is from $1,095 including GST for one private company with up to three shareholders who have agreed the commercial terms, and our <a href=\"/fees#fee-shareholders-agreement\">fees page</a> sets out what each covers."
+   "a": "Setting up a company is a fixed fee of $495 including GST, and a shareholder agreement is from $1,095 including GST for one private company with up to three shareholders who have agreed the commercial terms. ASIC's registration fee, $636 on ASIC's fee list since 1 July 2026, is passed on at cost, and our <a href=\"/fees#fee-shareholders-agreement\">fees page</a> sets out what each of our fees covers."
   }
  ],
  "sources": "<a href=\"https://www.legislation.gov.au/C2004A00818/latest\" rel=\"noopener\" target=\"_blank\">Corporations Act 2001 (Cth)</a>; <a href=\"https://www.legislation.gov.au/C2006A00169/latest\" rel=\"noopener\" target=\"_blank\">Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (Cth)</a>, sections 6 and 28.",

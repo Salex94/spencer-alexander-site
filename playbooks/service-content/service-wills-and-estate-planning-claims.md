@@ -82,3 +82,17 @@ Every figure is copied from fees.html as it stands on 29 Sep 2026, after Spencer
 - wills-and-estates.html, powers of attorney service block and the FAQ "What is the difference between a power of attorney and a medical treatment decision maker?": "if you lose capacity" and "if you cannot" contradict POA s 39(2), under which the power starts when made unless it says otherwise, and the FAQ's "in the same circumstances" then misdescribes the medical treatment decision maker. This page answers the same question correctly, so it departs from the hub there. This is the audit's item 14.
 - faq.html, "Can I change or cancel my will?": "divorce cancels gifts to a former spouse" omits the s 14(2) exception where the will maker wanted the gift to stand; this page says "generally". Not in today's audit.
 - fees.html: nothing in its wills and estates entries is wrong in law.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 rests on the Wills Act 1997 (Vic). Bullet 2 rests on the Administration and
+Probate Act 1958 (Vic). Bullet 3 rests on the Powers of Attorney Act 2014 (Vic). Bullet 4 rests on the Superannuation
+Industry (Supervision) Act 1993 (Cth).
+
+From 23 November 2026 the fee note opens, and each answer that quotes one of the firm's fees ends, with one sentence
+the page builder writes: whose fees they are, where, in Australian dollars, the day, who published them and where. It
+is a statement about the firm's own fees and not a statement of law.

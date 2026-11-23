@@ -32,8 +32,33 @@ THE HIRE MARKER, added 24 September 2026: directly under the rotation note, writ
 
 PAGE ITEMS, redefined 24 September 2026: a "page" item proposes a dedicated service page for one of the firm's services at its one office, Suite 10, 1 Main Street, Box Hill, for a commercial intent search that the article format cannot serve. Never propose a page for a suburb, a locality, a region or any place other than that office, never a second page for a service that already has a service-*.html, and never a page once the site carries eight service pages, which is the limit. Page items are evidenced ideas and nothing more: the Service pages routine builds a page only when Spencer has approved it in a session and it appears in the Approved service pages list in playbooks/service-pages.md, and nothing in this backlog is ever approval. Resource items likewise stay in the backlog as evidenced ideas, because the lead magnet factory that built them was retired on 24 September 2026 and nothing builds them automatically.
 
-STEP 3, FAQ ENHANCEMENT (the direct site improvement): pick up to 5 genuinely demanded questions that existing pages can answer accurately, and add them as FAQ entries to the most relevant existing pages (the FAQ page or an article's FAQ block), keeping FAQPage JSON-LD valid wherever it is touched. Answers follow the site's accuracy rules with full severity: plain English, general information framing, generalise any uncertain specific, disclaimer conventions untouched, no dashes. Do not rewrite any existing content; only add.
+STEP 3, FAQ ENHANCEMENT (the direct site improvement): pick up to 5 genuinely demanded questions that existing pages can answer accurately, and add them as FAQ entries to the most relevant existing pages (the FAQ page or an article's FAQ block), keeping FAQPage JSON-LD valid wherever it is touched. From 23 November 2026 an answer that quotes a fee or a court charge quotes it exactly as `playbooks/fees.json` has it and names the fee in the same sentence, because the gate ties every dollar figure to the fee named beside it. A new or reworded answer that quotes a fee or a charge fails the gate until it is recorded: read each sentence the fee check prints, with every figure beside the fee it was tied to, then run `python3 scripts/fees.py snapshot` and commit the record with the answer. A dollar figure that is no fee or charge is added to `other_amounts` in `playbooks/fees.json` in the same commit. Answers follow the site's accuracy rules with full severity: plain English, general information framing, generalise any uncertain specific, disclaimer conventions untouched, no dashes. Do not rewrite any existing content; only add.
 
 STEP 4, VERIFY AND PUBLISH: python3 scripts/check-publish.py AND python3 scripts/check-article-images.py must pass; never weaken them. Commit directly to main ("Demand scan <date>: backlog refreshed, N FAQ entries added"), push with retry. Add one brief dated line to DECISIONS.md only if FAQs were added.
 
 STEP 5, REPORT: final message, phone readable: the top 3 demand insights of the week, the hire marker line and whether it means Monday is due a hire guide or an ordinary article, what Monday's article should probably cover on that basis, the number of evidenced hire items in each practice area, and what FAQs were added. Never finish silently.
+
+From 23 November 2026 the answers on faq.html to its questions about cost carry one dated
+sentence about the firm's fees, in the page and in its markup. Where an answer also gives a court
+or ASIC charge, the order is the firm's fees, then the dated sentence, then the charge, so the
+sentence is never read as covering the charge, and the fee check fails the other order. A question
+goes into an article's own FAQ block only in the month the article's closing line gives for its
+law. From the month after that, put the question on faq.html, because dating the article again
+would say its law was read that month: do that only when the run has read the whole article's law
+again, and then date it with `python3 scripts/fees.py stamp`, the day, the article and
+`--law-read`. Whenever a run changes faq.html, move
+the page's dates with `python3 scripts/fees.py stamp YYYY-MM-DD faq.html` and the Melbourne date,
+which moves the reviewed date, each dateModified, the sitemap date, the llms.txt date and the day
+those sentences give, all together. Never type one of those dates by hand, and never add a link or a
+time element inside one of those sentences, because the gate needs the page and its markup to read
+word for word the same. The questions whose answers end with that sentence are listed by page under
+`dated_answers` in `playbooks/fees.json`: a run that rewords one of them changes the list in the same
+commit, and a run that adds a question beginning How much whose answer quotes a fee ends the answer
+with the sentence and adds the question to the list. A reworded question above an answer that quotes
+a fee is reported by the fee check as a changed sentence, so read the answer against
+`playbooks/fees.json` and run `python3 scripts/fees.py snapshot`.
+
+A new answer on faq.html to a question that begins How much, if it quotes one of the firm's fees,
+ends with that sentence copied word for word from another answer about cost, in the page and in its
+markup, and the gate fails until it does. An answer gives the firm's fees before any court or
+government charge.

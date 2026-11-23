@@ -80,3 +80,26 @@ Read today on the Federal Register of Legislation through `api.prod.legislation.
 - faq.html "Is there a time limit for a property settlement after separation?": same omission of consent.
 - fees.html "What the prices do not include": the Court's fee is set by regulation, not by the Court, and for consent orders card holders are exempt and hardship leads to a waiver, not a reduced fee, Fees Regulations ss 2.04, 2.05 and 2.06. For a divorce the reduced fee statement is correct.
 - resource-separation-first-30-days.html and insight-property-after-separation.html, outside the requested scope: the first omits consent, and the second says "within twelve months of divorce" rather than of the divorce order taking effect.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 rests on the Family Law Act 1975 (Cth). Bullet 2 rests on the Family Law Act 1975
+(Cth). Bullet 3 rests on the Family Law Act 1975 (Cth).
+
+## Names added on 23 November 2026
+
+The fee note and the answers to questions 1, 2, 4 and 5 now name the Federal Circuit and Family Court of Australia the
+first time each mentions the Court, and In brief bullet 1 names it where it said the Court. The lead and the first
+step of the process already named it. No statement of law changed, and each row above stands as it is.
+
+From 23 November 2026 the fee note opens, and each answer that quotes one of the firm's fees ends, with one sentence
+the page builder writes: whose fees they are, where, in Australian dollars, the day, who published them and where. It
+is a statement about the firm's own fees and not a statement of law.
+\n\nThe urgent strip now opens with the name of its Act, the Family Law Act 1975 (Cth), which the rows above already give
+as its authority. The statement itself is unchanged. The fee note and the answer about cost now say the Court's filing
+fee is the amount under the Commonwealth's notice of family law fees, the notice recorded with its address under
+charges in playbooks/fees.json.\n

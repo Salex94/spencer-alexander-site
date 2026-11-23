@@ -36,9 +36,42 @@ live site and correcting it, and does the structural audit once a month.
 
 **From 26 September 2026.** After any push that changes a page, run `python3 scripts/indexnow.py`
 with the .html path of every page changed, as the article playbook sets out. Never change a price,
-its scope or its exclusions on fees.html: the prices are Spencer's, so a price that looks wrong, or a
-statement about court or registry fees that the law has overtaken, goes in the report for him, never
-into the page. Each week, check that every article dated from 28 September 2026 carries its Sources
+its scope or its exclusions: the prices are Spencer's, they live in `playbooks/fees.json` and reach
+the pages only through `python3 scripts/fees.py apply`, so a price that looks wrong goes in the report
+for him, never into the page. What the courts and ASIC charge is different, from 23 November 2026:
+those amounts sit in the same file under `charges`, with the day they were read and the last day they
+are current, and they are corrected from the source like any other statement of law. In June each
+year, when the gate first gives notice, read the Supreme Court's Probate Office fee list, the
+Commonwealth's notice of family law fees for the year that follows and ASIC's fee list, whose
+addresses are under `sources` in the same file, and put what will change in the report. At the first
+run on or after the day the new amounts take effect, usually 1 July, and whenever the gate fails on
+them, update each amount with `valid_from`, `valid_to` and `read`, replace the label and address of
+the Commonwealth's notice under `sources` with that year's notice, run
+`python3 scripts/fees.py apply` with the Melbourne date, and record the sources in DECISIONS.md.
+apply refuses amounts whose first day has not yet come, and the check fails a source whose label
+names another year, so next year's charges are never published early or under last year's notice. apply moves the day the charges took effect in every sentence that gives it.
+It does not rewrite a band's thresholds, so if the Court changes where a band begins, run
+`python3 scripts/fees.py where probate-filing-250k` and the same for the other bands, and reword by
+hand each sentence that states a threshold. The gate shows a notice from three weeks before
+`valid_to` and fails a fortnight after it, so the reading is never left to a later routine. Any
+other statement about court or registry fees that the law has overtaken goes in the report for him.
+From 23 November 2026 the fee check also holds every sentence that quotes a fee or a charge against
+`playbooks/fees-renditions.json`. When it reports a sentence as new or changed, read the sentence
+with each figure beside the fee it was tied to, and when each is right run
+`python3 scripts/fees.py snapshot`. A dollar figure that is no fee or charge, such as a statutory
+threshold, is added to `other_amounts` in `playbooks/fees.json` in the same commit. A date moved
+into a new month also moves a page's currency line, which says when its law was read, so
+`apply` and `stamp` refuse it unless `--law-read` is given: give it only when the law on those
+pages has been read again in that run. A practice hub keeps the month its law was read when its date
+moves, so the only time a hub's month changes is when a run has read the hub's law again and dates
+it by name, with `python3 scripts/fees.py stamp`, the day, the hub's file name and `--law-read`.
+`--law-read` on `apply`, or on `stamp` with `--since`, speaks only for the pages the stop named and
+never moves a hub's month. The record holds each fee sentence with its paragraph and the heading or
+question above it, so a correction to any of those is reported as a changed sentence: read it and
+run snapshot as above. Queued from the audit of 23 November 2026, for a run with
+room: give faq.html a Sources line in the articles' form, reading each provision its answers rely
+on in the authorised version first, and naming an Act alone where more than eight of its
+provisions are relied on. Each week, check that every article dated from 28 September 2026 carries its Sources
 line, and that every provision in any Sources line on a page you check still says what the article
 relies on it for.
 

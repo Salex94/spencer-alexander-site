@@ -17,4 +17,5 @@ exclude:
 - scripts/make-webp.py
 - scripts/build-service-page.py
 - scripts/check_style.py
+- scripts/fees.py
 - styles/tokens

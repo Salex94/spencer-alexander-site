@@ -4,7 +4,7 @@
  "hub_label": "Commercial Law",
  "crumb": "Buying or selling a business",
  "service_name": "Buying or selling a business",
- "date": "2026-11-16",
+ "date": "2026-11-24",
  "title": "Business Sale Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Business Sale Lawyers in Box Hill, Melbourne",
  "description": "Business sale lawyers in Box Hill for buyers and sellers. Our review of a contract to buy a business is from $895 including GST. Call before you sign.",
@@ -16,9 +16,10 @@
  ],
  "urgent": {
   "strong": "Signed to buy a small business without a proper section 52 statement?",
-  "text": "You can generally end the contract by written notice to the seller or the agent within three months after you first signed and before you take possession of the business, and section 52 gives no way to extend that time."
+  "text": "Under section 52 of the Estate Agents Act 1980 (Vic), you can generally end the contract by written notice to the seller or the agent within three months after you first signed and before you take possession of the business, and the section gives no way to extend that time."
  },
  "brief": {
+  "sources": ["Estate Agents Act 1980 (Vic)", "Retail Leases Act 2003 (Vic)"],
   "entity": "Spencer Alexander Lawyers is a Box Hill, Melbourne law firm acting for buyers and sellers of small and medium businesses, with the principal overseeing every matter.",
   "bullets": [
    "The seller of a small business must generally give the buyer a section 52 statement before the buyer signs or pays a deposit.",
