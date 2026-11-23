@@ -13,6 +13,37 @@ Newest entries first.
 
 ---
 
+## 2026-11-24: Site accuracy and health, five pages verified, one sentence corrected
+
+The Tuesday routine under `playbooks/site-health.md`. The cost of contesting a will article of 23 Nov 2026 joined the
+ledger, so there are 57 legal pages and five a week. Verified: de facto separation, testamentary trusts, retail leases,
+superannuation death benefits and contesting a will, the five oldest articles among the pages last verified on
+9 Nov 2026. Not the first run of the month, so no structural audit.
+
+- **Correction, insight-de-facto-separation.html.** Old: "A former de facto partner who cannot adequately support
+  themselves, because of childcare responsibilities, age or health, can seek maintenance from the other, where the
+  other has capacity to pay." New: "A former de facto partner who cannot adequately support themselves, whether because
+  they care for a child of the relationship who is under 18, because of their age or an incapacity for appropriate
+  work, or for any other adequate reason, can seek maintenance from the other, to the extent the other is reasonably
+  able to pay." Source: section 90SF(1) of the Family Law Act 1975 (Cth), compilation 101, C2025C00341, which adds
+  "for any other adequate reason" to the care of a child under 18 and age or incapacity for appropriate gainful
+  employment, and limits the duty to what the other party is reasonably able to pay. The old sentence read as a
+  closed list. The page was already dated 24 Nov 2026 by the release that morning and its currency line already said
+  November 2026, so no date moved.
+- **Read and correct**: the rest of the de facto page against ss 4AA, 44(5) and (6), 90SB and 90SM of the same Act,
+  ss 3 and 90 of the Administration and Probate Act 1958 (Vic) version 130 and s 10 of the Superannuation Industry
+  (Supervision) Act 1993 (Cth) compilation 131; testamentary trusts against s 102AG of the Income Tax Assessment Act
+  1936 (Cth) compilation 193 and s 5 of the Perpetuities and Accumulations Act 1968 (Vic) version 023, with the
+  Treasury Laws Amendment (Tax Reform No. 3) Bill 2026 confirmed not yet an Act on the Federal Register of
+  Legislation, so "not yet law" stands; retail leases against the Retail Leases Act 2003 (Vic) version 027;
+  superannuation death benefits against the SIS Act and Regulations, ss 302-10, 302-145 and 302-195 of the Income Tax
+  Assessment Act 1997 (Cth) compilation 268, s 251S of the 1936 Act and ss 1053 and 1056 of the Corporations Act 2001
+  (Cth) compilation 149; contesting a will against Part IV of the Administration and Probate Act 1958 (Vic).
+- **Wording only, left for Spencer**: no other page carries the corrected sentence; family-law.html's shorter
+  maintenance line states the general principle and needs no change.
+
+---
+
 ## 2026-11-24: Review of the live site after the release, built and published the same day
 
 Spencer's words of Tuesday 24 November 2026, after the audit round went live: the core is that every criterion is at
