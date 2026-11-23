@@ -53,3 +53,17 @@ The page carries five, as `playbooks/service-pages.md` and the gate require. The
 - `scripts/check_style.py` on the page's visible text: PASS, with notes only for the hub's "!" urgent mark, paragraph shape and the length of the Sources line.
 - `scripts/check-publish.py` in this branch: no failure of the page's own. It shares the expected failures from files outside this task, the page limit and the hub link, sitemap and llms.txt entries. In a test copy of the central branch with sitemap and llms.txt entries added, the service page checks pass for this page.
 - FAQ 1 repeats the commercial hub's and faq.html's verified answer word for word, so a later change to that answer should be made on all three pages.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 states practice and no rule of law, so it has no instrument. Bullet 2 rests on
+the Limitation of Actions Act 1958 (Vic). Bullet 3 rests on the Corporations Act 2001 (Cth) and the Corporations
+Regulations 2001 (Cth). Bullet 4 rests on the Corporations Act 2001 (Cth).
+
+From 23 November 2026 the fee note opens, and each answer that quotes one of the firm's fees ends, with one sentence
+the page builder writes: whose fees they are, where, in Australian dollars, the day, who published them and where. It
+is a statement about the firm's own fees and not a statement of law.

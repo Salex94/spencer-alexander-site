@@ -580,8 +580,9 @@ conventions came out of that round.
   shortest=1 and both branches must be 30 fps before concat, or the card
   never appears. The film is 54 seconds; VideoObject duration PT54S,
   uploadDate 2026-09-09, transcript on index.html. The poster is the 14.6
-  second frame. No captions are added: the owner rejected added subtitles
-  on 5 Sep 2026. The first cut and its matting pipeline are in git history
+  second frame. No captions are burned into the picture: the owner rejected
+  added subtitles on 5 Sep 2026. Since 23 Nov 2026 the player carries a
+  caption track that a visitor switches on, as the audit section below sets out. The first cut and its matting pipeline are in git history
   at f106992.
 - **Top tier design conventions (8 Sep 2026).** The site is judged against
   the best firm sites in the world, so the component vocabulary is type,
@@ -783,8 +784,7 @@ the final round were published to main on 28 Sep 2026; DECISIONS.md records both
   arrives, with an email link for a photo of it.
 - **Trust.** The firm node carries the ABN as `taxID`; About links the Register of Lawyers; each hub
   names Melbourne's eastern suburbs.
-- **Letters of administration** at $2,495 since 16 Nov 2026 is always quoted as where there is no will, as
-  fees.html prices it. Since 9 Nov 2026 every page that touches who pays for a grant uses the verified rule 9.01
+- **Letters of administration** is always quoted as where there is no will, as fees.html prices it. Since 9 Nov 2026 every page that touches who pays for a grant uses the verified rule 9.01
   wording in the audit round below, and none says the fee for obtaining a grant comes from the estate.
 - **Listing read times** on insights.html and index.html must equal each article's own; the gate
   checks it.
@@ -915,7 +915,161 @@ rule of 26 Sep 2026 and the 10 per cent rise of 29 Sep 2026.
   Google Business Profile's services quote the same totals, in the price field and in the description, so a
   change is made there too, through Chrome on the Mac mini once Spencer says yes; a service that covers work at
   more than one price shows From before the lowest published fee it covers, as Probate and letters of
-  administration shows From $2,295.
+  administration shows From before the probate application fee.
+
+## Audit round of 23 Nov 2026, a preview awaiting Spencer's release
+
+Spencer asked for a full audit and for the fees that changed in the release of 16 Nov 2026 to go back to the amounts
+published immediately before it. The work is on the branch
+`claude/affectionate-einstein-xytjjz` and nothing in this section is live until he publishes it. The record is
+`playbooks/audit-2026-11-23/`, and the parts of it that are about the business are in the private business development
+repository at `audits/2026-11-23/`, because this repository is public. Nothing about enquiries, calls, matters or
+income is ever written into this repository, in a record, a commit message or a comment. Once released, these are the
+conventions.
+
+- **One fee source.** `playbooks/fees.json` holds each fee once: its total including GST, whether it is a from price,
+  its scope and the phrases that identify it in a sentence. Never type or edit a price on a page. To change one, edit
+  the source, run `python3 scripts/fees.py apply`, read the diff and run the gate. apply regenerates the rows, the at a
+  glance list, the four prices in the hero, the charges table and the OfferCatalog on fees.html, rewrites every
+  sentence, meta description and JSON-LD string that quotes the fee, llms.txt, feed.xml and the service content files,
+  rebuilds the service pages and moves the dates of the pages it changed, to today in Melbourne unless a day is given.
+  It works every file out before it writes any, and it stops, writing nothing, where one figure stands for two fees
+  that have come to differ, so that sentence is reworded by hand, where the pages and the record of sentences differ,
+  where a total is not a whole number of dollars from the $495 minimum to the $4,995 ceiling, which are `minimum` and
+  `maximum` in the source, where a price has been typed into a scope, a note or a label in the source, and where the
+  charges' first day has not yet come. A fee that changes between a fixed price and a from price fails the check
+  until each sentence that quotes it has been reworded and recorded, and so does a page that states a minimum other
+  than the source's. Every price in a page's markup must be one of the firm's fees. A figure is written as $1,234
+  and nowhere else: the check refuses one split by a tag, written with AUD or as a character reference, or placed in
+  the script, the contact card or the film's caption file. It cannot read a figure written in words or with no
+  dollar sign, so none is written that way. apply is for a change meant to stand: a price tried and changed back
+  through apply leaves its pages dated the day of the trial, so a trial that was never published is dropped with
+  `git checkout`. `python3 scripts/fees.py where` lists every place each fee is quoted.
+- **Every sentence that quotes a figure is on record.** `playbooks/fees-renditions.json` holds each such sentence with
+  its figures replaced by the fee or charge each belongs to. `python3 scripts/fees.py check`, which the gate runs, fails
+  when a sentence that quotes a figure is new, has changed or has gone, and prints it with each figure beside the fee
+  it was tied to. Read each against the source, and when every one is right run `python3 scripts/fees.py snapshot` and
+  commit the record. A new article or answer that quotes a fee needs this step, and so does a reworded sentence. A
+  sentence on record keeps the tie the record gives each of its figures, whatever the amounts become, so two fees that
+  come to share an amount are never confused, the whole earlier schedule applies cleanly, and a change of price
+  through apply needs no new snapshot. Where a sentence gives one figure for two fees, the record says so, and each
+  fee otherwise has its own figure: no sentence says one fee is the same as another. Unless a sentence names its fee
+  in words that are that fee's own, the record holds the paragraph around it too, so a change to that paragraph is
+  read again like a change to the sentence. A phrase two fees share, such as consent orders or for a couple, is not
+  a fee's own. The record is written by snapshot and never by hand, because a tie changed by hand between two fees
+  at the same amount cannot be told from a true one. In a merge, take one side's record whole and run the check,
+  which then reports each sentence that differs from the pages. The record is what catches two fees' figures swapped inside one sentence, a court charge that is right for another
+  court, and a worked total that no longer adds up. A dollar figure that is no fee or charge, such as a statutory
+  threshold or an amount in an example, is added to `other_amounts` in the source in the same commit.
+- **Six fees restored, fourteen held.** The release of 16 Nov 2026 raised six fees and lowered fourteen. On Spencer's
+  instruction of 23 Nov 2026 the six that rose are back at the amounts fees.html carried at commit 759a5e9, live from
+  9 Nov 2026 to 16 Nov 2026: probate application $1,980, letters of administration $2,178, wills for a couple $880,
+  consent orders for an agreed property settlement $3,025, consent orders for property and parenting together $3,850
+  and advice on a binding financial agreement the other party drafted from $1,100. The four out of ten rule above does
+  not apply to those six: no routine, skill or session raises them to four out of ten, and the Growth desk's monthly
+  recheck leaves them alone, until Spencer says otherwise. The fourteen that fell on 16 Nov 2026 stay at their four
+  out of ten amounts until he decides whether any returns to its earlier amount. The whole earlier schedule is a list
+  of totals in `playbooks/audit-2026-11-23/fees-full-earlier-schedule.json`, and `python3 scripts/fees.py use` with
+  that file applies it. The Business Profile's services and the Firm Register's Fees tab change on the day of
+  release, through Chrome on the Mac mini once he says yes.
+- **What the courts and ASIC charge.** The fees page carries a table of the Supreme Court's probate filing fee by the
+  gross value of the assets in Victoria, the notice fee, the Federal Circuit and Family Court's divorce and consent
+  orders filing fees and ASIC's company registration fee, and the probate, divorce, property, parenting and company
+  pages quote the charge that applies. They live in `playbooks/fees.json` under `charges`, with the day they were read
+  and `valid_to`, the last day they are current. They are not the firm's prices, and they are set by regulation. The
+  gate shows a notice from three weeks before `valid_to` and fails a fortnight after it. In June each year the Tuesday
+  site accuracy and health routine reads each body's schedule for the year that follows, and at the first run on or
+  after the day the new amounts take effect it updates the amounts, `valid_from`, `valid_to` and `read`, replaces the
+  label and address of any source named by its year, runs `scripts/fees.py apply` with the date and publishes it as a
+  correction, with the sources in DECISIONS.md. apply refuses amounts whose first day has not yet come, and the check
+  fails a source whose label names another year. A sentence that quotes a charge and dates it gives the day in
+  `valid_from`, which the check enforces and apply moves. apply does not rewrite a band's thresholds, so a change to
+  where a band begins is reworded by hand. This replaces the earlier caution against quoting figures that index each
+  year, for these charges only, because they are now dated, sourced and checked.
+- **Every price carries its date.** One sentence does it: These are the fees of Spencer Alexander Lawyers in Box Hill,
+  Victoria, in Australian dollars, as at the day, published by Spencer Alexander, Principal, at
+  spenceralexander.com.au/fees. It opens the lead of fees.html, where the at a glance band repeats the day, a WebPage
+  node carries it as dateModified and the sitemap agrees. The page builder opens every service page's fee note that
+  quotes a price with it and ends every answer on a service page that quotes one of the firm's fees with it, in the
+  page and in its markup, with the page's own date. None of that is typed in a content file. On the hubs and the FAQ
+  page the answers to the questions about cost end with the same sentence, typed once as plain words with no link or
+  time element so that the page and its markup stay word for word the same, and stamp and apply move its day with the
+  page. The fee check fails a page whose fee sentences give different days or a day later than the page's own. The
+  reason is what the answer engines showed on 23 Nov 2026: two of them quoted a probate price the site had not
+  carried since 9 Nov 2026, one gave a Victorian fee in American dollars, and nothing in the passage they lifted
+  said whose price it was, in what currency or how current.
+- **Dates.** apply and stamp refuse a day that is not real, has not yet come or is in a month that has passed, and
+  stamp refuses a day earlier than a page's own, because a date never moves backwards. A page's currency line says when its
+  law was read, and the gate now ties it to dateModified on every article, checklist and service page, so apply and
+  stamp refuse to date a page into a month other than the one its currency line names unless `--law-read` is given.
+  Give it only when the law on those pages has been read again, and never give a day in an earlier month to get
+  past it. So a change of price made in a later month than the pages that quote it were last read costs that reading
+  as well. `python3 scripts/fees.py stamp YYYY-MM-DD --since REF`
+  moves the dates of the pages whose own words changed since a git ref, and leaves alone a page that differs only in
+  its header, footer, rail cards, version keys or dates.
+- **Service pages are what their content files build.** The fee check builds each one afresh and fails a page that
+  differs, so a page edited by hand, or left behind by a change to its hub or to the builder, cannot be published.
+- **Passages that stand alone.** A sentence an answer engine is likely to lift names its country, its court or its Act
+  inside the sentence, because engines filled each gap wrongly at least once on 23 Nov 2026, with British law for a
+  statutory demand and American dollars for a Victorian fee. The statutory demand statements name the Corporations Act
+  2001 (Cth), the divorce and property time limits the Family Law Act 1975 (Cth), the wills hub Victoria and the
+  probate pages the Supreme Court of Victoria. Every urgent strip on a service page opens with the name of its Act,
+  and each answer on the divorce page names the Federal Circuit and Family Court of Australia the first time it
+  mentions the Court. New pages and articles follow the same habit, adding a name the page already states elsewhere
+  and never a new statement of law.
+- **In brief.** The In brief block on every service page ends with one line: Published by Spencer Alexander,
+  Principal, the day the page was updated, and after the word Legislation the Acts, Regulations and Rules the block
+  cites. The label is Legislation and not Sources because a block can also state general law or practice. The page builder
+  writes it from the page's date and from `sources` under `brief` in the content file, and stops if a name there is
+  not in the page's own Sources line. Whenever a statement in a page's In brief block is added or changed, set
+  `brief.sources` from the claims register row for that statement, naming legislation only. The reason is the
+  acceptance test for answer engines: a summary lifted by itself must carry its jurisdiction, scope, exceptions,
+  author, date and source.
+- **Fees page.** The hero carries four prices above its two buttons, so a price is on the first screen of a short
+  phone, and a band beneath it lists every fee at a glance, one short row each, with per person or per party where the
+  fee is charged that way. A note under a row belongs to that row: the Supreme Court's separate filing fee under the
+  probate application, and under each estate plan what its documents come to bought separately, a figure derived in
+  the fee source. All of it is generated or checked, and none is edited by hand.
+- **Enquiry form.** Once a valid enquiry is on its way the button reads Sending your enquiry and a second press does
+  nothing, so one enquiry sends one message. If the send has not finished after twenty seconds the button frees itself
+  and a line gives the telephone number. The lasting error is tied to the phone and email fields while it shows. Keep
+  all three when the form changes.
+- **Family law pages** say beside their closing call buttons that the enquiry form lets a visitor say it is not safe
+  to email or leave a message, and that we reply only in the way they tell us is safe. It is the contact page's own
+  promise and no new one. The contact page carries the Quick exit, because it is where a family law visitor types a
+  name and a number. The family hub's urgent strip names 000 and 1800RESPECT on 1800 737 732 as numbers that can be
+  tapped.
+- **Reply time.** The rail card on every hub, service page, article and checklist, and the closing band of the fees
+  page, say that enquiries are answered within one business day, the home page's own sentence. It is one of the three
+  service promises and no fourth.
+- **Keyboard.** The page carries a scroll padding of 100 pixels, 134 on a phone where the Quick exit strip shows, in
+  place of scroll margins on some elements, so a control reached with Tab or with Shift and Tab never sits under the
+  sticky header. Focus entering a block that has yet to fade in shows it at once, and a call bar control that takes
+  focus comes back into view.
+- **Wordmarks.** Below 400 pixels the header and footer wordmarks scale with the screen, so the menu button stays
+  inside the gutter and the footer wordmark is not cut off. The word Lawyers under the header wordmark is brass 800.
+- **Home hero.** One line under the rating says fixed fees are published in full and gives two of them, a single will
+  and a straightforward probate application, each linking its row on the fees page. Its figures come from the fee
+  source like every other. From 768 to 900 pixels the hero sets its text beside the portrait, with the heading sized
+  to fall in three lines.
+- **Phones.** The fixed call bar stays until the hero's call button is wholly on screen. The paragraphs a reader
+  decides by, being the service blocks, the fee note and the time limit cards on the home page, are 16 pixels on
+  phones; notes, sources and captions stay at 14.
+- **Desktops.** From 1100 pixels the running text of hubs and service pages keeps a measure of about 68 characters,
+  the articles' own, where lines used to run to 97.
+- **Hubs.** Each practice hub ends its questions with a Sources line and a closing line that says who published the
+  page, when it was updated and the month its law was read, in the service pages' form.
+- **Film captions.** The home page film carries a caption track, `assets/video/spencer-alexander-intro.en.vtt`, which a
+  visitor switches on in the player's own controls. Nothing is burned into the picture and nothing shows unless it is
+  switched on, so the film looks as it did. The words are the transcript in the page's schema, and the timings were
+  taken from the film's own sound. Speech in a video without captions fails a level A accessibility rule, which is why
+  the track exists. If the film is ever replaced, the captions are made again from the new sound.
+- **Release.** One release, as a single commit on main, so that it can be undone with one `git revert`. The steps are
+  in `playbooks/audit-2026-11-23/README.md`: bring main into the branch, run
+  `python3 scripts/fees.py stamp` with the day and `--since origin/main`, run the gate, commit both on the branch,
+  squash onto main, run the gate again there, publish, send IndexNow, change the Business Profile, copy the Fees tab
+  and bring the scoreboard change into main of the business development repository.
+- Keys after this round: site.css v25, styles.css v9, site.js v19.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 

@@ -1,0 +1,506 @@
+{
+ "about": "Every sentence on the site that quotes a fee or charge, with each figure replaced by the fee or charge it belongs to. Written by scripts/fees.py snapshot and never by hand. scripts/fees.py check fails when a sentence here is new, has changed or has gone.",
+ "from_prices": [
+  "advice-on-a-binding-financial-agreement",
+  "binding-financial-agreement",
+  "lease-review-for-a-tenant",
+  "parenting-plan",
+  "review-of-a-contract-to-buy-a-business",
+  "shareholders-agreement",
+  "terms-of-trade",
+  "will-with-a-testamentary-trust-for-one-person",
+  "wills-with-testamentary-trusts-for-a-couple"
+ ],
+ "renditions": {
+  "commercial-law.html": [
+   "a lease review for a tenant is from {lease-review-for-a-tenant} including gst",
+   "a letter of demand is usually the first step, and for an undisputed debt our fixed fee is {letter-of-demand} including gst",
+   "a letter of demand is {letter-of-demand} including gst.",
+   "a letter of demand is {letter-of-demand} including gst.",
+   "a letter of demand is {letter-of-demand} including gst.",
+   "a review of a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst",
+   "a shareholders agreement is from {shareholders-agreement} including gst",
+   "setting up a company is a fixed fee of {company-set-up} including gst, with asic's registration fee passed on at cost",
+   "terms of trade are from {terms-of-trade} including gst.",
+   "the lawyers who draft your documents are the lawyers who defend them, and defined work has a published price, from {letter-of-demand} for a letter of demand.",
+   "your first call is free, and you speak with a lawyer founders, family businesses and established companies a lease review for a tenant is from {lease-review-for-a-tenant}"
+  ],
+  "family-law.html": [
+   "a binding financial agreement is from {binding-financial-agreement} per party, and advice on an agreement the other party's lawyer has drafted is from {advice-on-a-binding-financial-agreement}, both including gst",
+   "a joint application is a fixed fee of {divorce-application-joint} and a sole application {divorce-application-sole}, both including gst, and you pay the court's filing fee directly to the court",
+   "a joint divorce application is {divorce-application-joint} including gst, and your first call is free.",
+   "a joint divorce application is {divorce-application-joint} including gst, and your first call is free.",
+   "a joint divorce application is {divorce-application-joint} including gst, and your first call is free.",
+   "consent orders for agreed parenting arrangements are a fixed fee of {consent-orders-for-agreed-parenting-arrangements} including gst, and a parenting plan is from {parenting-plan}",
+   "consent orders for an agreed settlement are a fixed fee of {consent-orders-for-an-agreed-property-settlement} including gst, or {consent-orders-for-property-and-parenting} where they also cover agreed parenting arrangements",
+   "defined steps have published prices including gst: a joint divorce application is a fixed fee of {divorce-application-joint}, consent orders for an agreed property settlement are a fixed fee of {consent-orders-for-an-agreed-property-settlement} and for agreed parenting arrangements {consent-orders-for-agreed-parenting-arrangements}, and a binding financial agreement is from {binding-financial-agreement} per party",
+   "defined steps have published prices including gst: a joint divorce application is a fixed fee of {divorce-application-joint}, consent orders for an agreed property settlement are a fixed fee of {consent-orders-for-an-agreed-property-settlement} and for agreed parenting arrangements {consent-orders-for-agreed-parenting-arrangements}, and a binding financial agreement is from {binding-financial-agreement} per party",
+   "we settle where agreement is possible and go to court when it is not, and defined steps have fixed fees, such as {divorce-application-joint} for a joint divorce application.",
+   "your first call is free, and you speak with a lawyer property consent orders {consent-orders-for-an-agreed-property-settlement}, fixed fee in person, by phone or by video"
+  ],
+  "faq.html": [
+   "a letter of demand to one debtor for an undisputed debt is a fixed fee of {letter-of-demand} including gst, and a disputed matter is estimated in writing once we know what is involved",
+   "a letter of demand to one debtor for an undisputed debt is a fixed fee of {letter-of-demand} including gst, and a disputed matter is estimated in writing once we know what is involved",
+   "a simple will is quick to put in place and easy to update as life changes, and our fixed fee for a single will is {single-will} including gst.",
+   "a simple will is quick to put in place and easy to update as life changes, and our fixed fee for a single will is {single-will} including gst.",
+   "consent orders for an agreed property settlement are a fixed fee of {consent-orders-for-an-agreed-property-settlement}, and a binding financial agreement is from {binding-financial-agreement} per party, both including gst",
+   "consent orders for an agreed property settlement are a fixed fee of {consent-orders-for-an-agreed-property-settlement}, and a binding financial agreement is from {binding-financial-agreement} per party, both including gst",
+   "if you are buying, our review of the contract is from {review-of-a-contract-to-buy-a-business} including gst, and our page on buying or selling a business explains how we act on each side. <<in the paragraph>> the value is in the detail: what exactly is being sold, the warranties and conditions, restraint of trade, the treatment of staff, leases and key contracts, and how the price is paid and secured. proper due diligence and a well drafted contract are what protect you, and we manage both so the deal holds up. our guide to buying a business in victoria sets out what to check before you sign. if you are buying, our review of the contract is from $# including gst, and our page on buying or selling a business explains how we act on each side.",
+   "if you are buying, our review of the contract is from {review-of-a-contract-to-buy-a-business} including gst, and our page on buying or selling a business explains how we act on each side. <<in the paragraph>> the value is in the detail: what exactly is being sold, the warranties and conditions, restraint of trade, the treatment of staff, leases and key contracts, and how the price is paid and secured. proper due diligence and a well drafted contract are what protect you, and we manage both so the deal holds up. our guide to buying a business in victoria sets out what to check before you sign. if you are buying, our review of the contract is from $# including gst, and our page on buying or selling a business explains how we act on each side.",
+   "it is open to a company whose directors have resolved that it is insolvent or likely to become insolvent, and whose debts and claims, not counting employee entitlements, total no more than $1 million",
+   "it is open to a company whose directors have resolved that it is insolvent or likely to become insolvent, and whose debts and claims, not counting employee entitlements, total no more than $1 million",
+   "many everyday matters have a published fixed fee, such as {single-will} including gst for a single will and {probate-application} including gst for a probate application in a straightforward estate, and our fees page lists each one with what it covers and what is charged separately",
+   "many everyday matters have a published fixed fee, such as {single-will} including gst for a single will and {probate-application} including gst for a probate application in a straightforward estate, and our fees page lists each one with what it covers and what is charged separately",
+   "most settlements are reached by agreement and formalised as consent orders or a binding financial agreement, without a final hearing, and our fixed fee for consent orders for an agreed property settlement is {consent-orders-for-an-agreed-property-settlement} including gst",
+   "most settlements are reached by agreement and formalised as consent orders or a binding financial agreement, without a final hearing, and our fixed fee for consent orders for an agreed property settlement is {consent-orders-for-an-agreed-property-settlement} including gst",
+   "our fixed fee for a divorce application is {divorce-application-joint} including gst for a joint application and {divorce-application-sole} for a sole one, and our fees page sets out what each covers",
+   "our fixed fee for a divorce application is {divorce-application-joint} including gst for a joint application and {divorce-application-sole} for a sole one, and our fees page sets out what each covers",
+   "our fixed fee for a probate application in a straightforward estate is {probate-application} including gst, and our guide to how probate works in victoria sets out the steps.",
+   "our fixed fee for a probate application in a straightforward estate is {probate-application} including gst, and our guide to how probate works in victoria sets out the steps.",
+   "our fixed fee for a probate application in a straightforward estate is {probate-application} including gst, which includes publishing the notice of intention to apply and paying its fee, and our fees page sets out what counts as a straightforward estate",
+   "our fixed fee for a probate application in a straightforward estate is {probate-application} including gst, which includes publishing the notice of intention to apply and paying its fee, and our fees page sets out what counts as a straightforward estate",
+   "our fixed fee for consent orders for an agreed property settlement is {consent-orders-for-an-agreed-property-settlement} including gst, and our guides to property after separation and de facto separation explain the process.",
+   "our fixed fee for consent orders for an agreed property settlement is {consent-orders-for-an-agreed-property-settlement} including gst, and our guides to property after separation and de facto separation explain the process.",
+   "our fixed fee for one is {enduring-power-of-attorney} including gst, and our guide to enduring powers of attorney explains how to make one.",
+   "our fixed fee for one is {enduring-power-of-attorney} including gst, and our guide to enduring powers of attorney explains how to make one.",
+   "our guide to making a valid will in victoria sets out the rules in full, and our fixed fee for a single will is {single-will} including gst.",
+   "our guide to making a valid will in victoria sets out the rules in full, and our fixed fee for a single will is {single-will} including gst.",
+   "our guide to whether a trustee company or a lawyer should prepare your will compares the two in more detail, and our fixed fee for a single will is {single-will} including gst.",
+   "our guide to whether a trustee company or a lawyer should prepare your will compares the two in more detail, and our fixed fee for a single will is {single-will} including gst.",
+   "our minimum fee for any piece of work is $495 including gst",
+   "our minimum fee for any piece of work is $495 including gst",
+   "we can tell you quickly whether a grant is needed, and our fixed fee for a probate application in a straightforward estate is {probate-application} including gst, with the court's filing fee separate.",
+   "we can tell you quickly whether a grant is needed, and our fixed fee for a probate application in a straightforward estate is {probate-application} including gst, with the court's filing fee separate."
+  ],
+  "fees.html": [
+   "a single will is {single-will}, a straightforward probate application {probate-application}, a joint divorce application {divorce-application-joint} and consent orders for an agreed property settlement {consent-orders-for-an-agreed-property-settlement}",
+   "bought separately, a single will, an enduring power of attorney and an appointment of a medical treatment decision maker come to {estate-plan-one-separately}.",
+   "bought separately, wills for a couple and an enduring power of attorney and an appointment for each of you come to {estate-plan-couple-separately}.",
+   "fixed fees in box hill, melbourne: wills from {single-will}, probate applications {probate-application} and divorce from {divorce-application-joint}, all including gst",
+   "fixed fees in box hill, melbourne: wills from {single-will}, probate applications {probate-application} and divorce from {divorce-application-joint}, all including gst",
+   "fixed fees in box hill, melbourne: wills from {single-will}, probate applications {probate-application} and divorce from {divorce-application-joint}, all including gst",
+   "for a grant of probate or letters of administration, the supreme court's filing fee depends on the gross value of the estate's assets in victoria and is nil where that value is less than $250,000",
+   "for a straightforward estate with $800,000 of assets in victoria, for example, our probate fee and the supreme court's filing fee together come to {probate-example-total}.",
+   "no piece of work costs less than $495 including gst, which is an hour of a lawyer's time"
+  ],
+  "index.html": [
+   "a single will is {single-will} and a straightforward probate application is {probate-application} ."
+  ],
+  "insight-advance-care-directives-victoria.html": [
+   "our fixed fee for an appointment of a medical treatment decision maker is {appointment-of-a-medical-treatment-decision-maker} including gst",
+   "our fixed fee for an estate plan for one person , with a will, an enduring power of attorney and an appointment of a medical treatment decision maker, is {estate-plan-for-one-person} including gst, and for an appointment on its own it is {appointment-of-a-medical-treatment-decision-maker} per person including gst",
+   "we can prepare your will, enduring power of attorney and appointment of a medical treatment decision maker together as an estate plan for one person , for a fixed fee of {estate-plan-for-one-person} including gst"
+  ],
+  "insight-agreed-property-settlement.html": [
+   "a binding financial agreement is from {binding-financial-agreement} per party including gst, and our fees page sets out what it covers and what costs more.",
+   "how consent orders make it final, the time limit and our {consent-orders-for-an-agreed-property-settlement} fixed fee. <<in the paragraph>> agreed a property split? a private agreement does not stop a later court claim. how consent orders make it final, the time limit and our $# fixed fee.",
+   "how consent orders make it final, the time limit and our {consent-orders-for-an-agreed-property-settlement} fixed fee. <<in the paragraph>> agreed a property split? a private agreement does not stop a later court claim. how consent orders make it final, the time limit and our $# fixed fee.",
+   "how consent orders make it final, the time limit and our {consent-orders-for-an-agreed-property-settlement} fixed fee. <<in the paragraph>> agreed a property split? a private agreement does not stop a later court claim. how consent orders make it final, the time limit and our $# fixed fee.",
+   "how consent orders make it final, the time limit and our {consent-orders-for-an-agreed-property-settlement} fixed fee. <<in the paragraph>> agreed a property split? a private agreement does not stop a later court claim. how consent orders make it final, the time limit and our $# fixed fee.",
+   "if you have also agreed the parenting arrangements, one application for consent orders covering property and parenting together is {consent-orders-for-property-and-parenting} including gst",
+   "our fixed fee for consent orders for an agreed property settlement is {consent-orders-for-an-agreed-property-settlement} including gst",
+   "we prepare consent orders from the terms you have already settled, for a fixed fee of {consent-orders-for-an-agreed-property-settlement} including gst <<in the paragraph>> reached an agreement and ready to make it final? we prepare consent orders from the terms you have already settled, for a fixed fee of $# including gst. your first call is free, and you speak with a lawyer. call (03) 9125 8355 or send an enquiry .",
+   "where a binding financial agreement is the better fit, we draft it, or give you the independent advice the law requires on one the other party's lawyer has drafted, which is from {advice-on-a-binding-financial-agreement} including gst"
+  ],
+  "insight-binding-financial-agreements.html": [
+   "a binding financial agreement is from {binding-financial-agreement} per party including gst, and advice on an agreement the other party's lawyer has drafted is from {advice-on-a-binding-financial-agreement} including gst"
+  ],
+  "insight-business-structures.html": [
+   "our fixed fee for setting up a proprietary company with up to two directors and shareholders is {company-set-up} including gst , and the registration fee charged by the australian securities and investments commission is passed on at cost",
+   "we set up and restructure businesses alongside your accountant, and our fixed fee for setting up a proprietary company is {company-set-up} including gst , with asic's registration fee passed on at cost"
+  ],
+  "insight-buying-a-business-victoria.html": [
+   "a business is small for this purpose when the total price of its goodwill, plant, equipment and fittings, not counting stock, is currently $450,000 or less",
+   "a business is small for this purpose when the total price of its goodwill, plant, equipment and fittings, not counting stock, is currently $450,000 or less, and the requirement does not apply to a business that cannot lawfully trade without its liquor licence",
+   "a business is small for this purpose when the total price of its goodwill, plant, equipment and fittings, not counting stock, is currently $450,000 or less, and the requirement does not apply to a business that cannot lawfully trade without its liquor licence",
+   "our review of a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst , with a written report on the main risks and a call to go through it",
+   "our review of a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst, and our fees page sets out what it covers"
+  ],
+  "insight-contracts-for-business.html": [
+   "our fee for a lease review for a tenant is from {lease-review-for-a-tenant} including gst , our page on commercial leases explains how we act for tenants, and our retail leasing guide sets out what to check.",
+   "our fee for terms of trade is from {terms-of-trade} including gst , and our fees page sets out what that covers, while our commercial law page describes the rest of our work for businesses.",
+   "our guide to falling out with a business partner explains what happens next, and our fee for a shareholder agreement is from {shareholders-agreement} including gst .",
+   "under the australian consumer law, an unfair term in a standard form contract is void where the customer is an individual buying wholly or mainly for personal, domestic or household use or consumption, or where either party is a small business, meaning one employing fewer than 100 people or with turnover under $10 million in its last income year"
+  ],
+  "insight-de-facto-separation.html": [
+   "where you have already agreed how to divide your property, consent orders for an agreed property settlement are a fixed fee of {consent-orders-for-an-agreed-property-settlement} including gst , and our guide to making an agreed settlement final explains what that involves"
+  ],
+  "insight-debt-recovery-victoria.html": [
+   "a company owing $4,000 or more that it does not genuinely dispute can be served with a statutory demand, which gives it 21 days to pay, secure or compromise the debt or apply to set the demand aside, and if it does none of these, exposes it to a presumption of insolvency for three months.",
+   "in victoria, a debt claim of up to $100,000 is usually brought in the magistrates' court , whose website sets out its civil claim forms, fees and procedures, and larger claims go to the county court or the supreme court",
+   "once you hold a final judgment or order against the individual for $10,000 or more, made within the last six years, you can apply for a bankruptcy notice and serve it on them",
+   "our fixed fee for a letter of demand for an undisputed debt is {letter-of-demand} including gst",
+   "our fixed fee for a letter of demand for an undisputed debt is {letter-of-demand} including gst .",
+   "you can serve one when the debtor is a company and the debt is $4,000 or more, due and payable and not genuinely disputed"
+  ],
+  "insight-divorce-in-victoria.html": [
+   "our fixed fee is {divorce-application-joint} for a joint application and {divorce-application-sole} for a sole application , including gst, and our divorce page sets out what each covers"
+  ],
+  "insight-dying-without-a-will.html": [
+   "a properly drafted will avoids intestacy, and a single will is a fixed fee of {single-will} including gst",
+   "a single will is a fixed fee of {single-will} including gst, and wills for a couple are {wills-for-a-couple}, each with a signing appointment at which the will is signed and witnessed correctly",
+   "where the estate is straightforward, our fixed fee for letters of administration where there is no will is {letters-of-administration} including gst , which includes the fee for publishing the notice of intention to apply."
+  ],
+  "insight-enduring-powers-of-attorney.html": [
+   "our fixed fee for an enduring power of attorney is {enduring-power-of-attorney} per person, our fixed fee for an appointment of a medical treatment decision maker is {appointment-of-a-medical-treatment-decision-maker} per person, and an estate plan with a will and both of those documents is {estate-plan-for-one-person} for one person, each including gst"
+  ],
+  "insight-executor-duties.html": [
+   "for a straightforward estate, our fixed fee for a probate application is {probate-application}, and for letters of administration where there is no will it is {letters-of-administration}, each including gst and the fee for publishing the notice of intention to apply"
+  ],
+  "insight-fraudulent-calumny-victoria.html": [
+   "if you are updating your own will, our fixed fee for a single will is {single-will} including gst"
+  ],
+  "insight-guardianship-administration-orders.html": [
+   "our fixed fee for an enduring power of attorney is {enduring-power-of-attorney} including gst , and our guide to advance care directives in victoria explains the separate document for medical decisions."
+  ],
+  "insight-making-a-valid-will.html": [
+   "a will with a testamentary trust is from {will-with-a-testamentary-trust-for-one-person} including gst, and our guide to testamentary trusts explains when one is worth having",
+   "an estate plan for one person , with a will, an enduring power of attorney and an appointment of a medical treatment decision maker , is a fixed fee of {estate-plan-for-one-person} including gst, and our fees page sets out what each price covers",
+   "our fixed fee for a single will is {single-will} including gst, and wills for a couple cost {wills-for-a-couple}",
+   "our fixed fee for a single will is {single-will} including gst, for your first will or one that replaces an old will"
+  ],
+  "insight-parenting-arrangements.html": [
+   "if you have also agreed how to divide your property, one application for consent orders covering property and parenting together is {consent-orders-for-property-and-parenting} including gst",
+   "it is a paper application, and for agreed parenting arrangements our fixed fee is {consent-orders-for-agreed-parenting-arrangements} including gst.",
+   "it is a paper application, and for agreed parenting arrangements our fixed fee is {consent-orders-for-agreed-parenting-arrangements} including gst.",
+   "our fixed fee for consent orders for agreed parenting arrangements is {consent-orders-for-agreed-parenting-arrangements} including gst, and a parenting plan is from {parenting-plan} including gst"
+  ],
+  "insight-parenting-consent-orders.html": [
+   "a parenting plan built from arrangements you have already agreed is from {parenting-plan} including gst, with one round of changes, and further rounds cost more",
+   "how consent orders work, what a lawyer checks and our {consent-orders-for-agreed-parenting-arrangements} fixed fee. <<in the paragraph>> agreed parenting arrangements? a parenting plan cannot be enforced like court orders. how consent orders work, what a lawyer checks and our $# fixed fee.",
+   "how consent orders work, what a lawyer checks and our {consent-orders-for-agreed-parenting-arrangements} fixed fee. <<in the paragraph>> agreed parenting arrangements? a parenting plan cannot be enforced like court orders. how consent orders work, what a lawyer checks and our $# fixed fee.",
+   "how consent orders work, what a lawyer checks and our {consent-orders-for-agreed-parenting-arrangements} fixed fee. <<in the paragraph>> agreed parenting arrangements? a parenting plan cannot be enforced like court orders. how consent orders work, what a lawyer checks and our $# fixed fee.",
+   "how consent orders work, what a lawyer checks and our {consent-orders-for-agreed-parenting-arrangements} fixed fee. <<in the paragraph>> agreed parenting arrangements? a parenting plan cannot be enforced like court orders. how consent orders work, what a lawyer checks and our $# fixed fee.",
+   "our fixed fee for consent orders for agreed parenting arrangements is {consent-orders-for-agreed-parenting-arrangements} including gst"
+  ],
+  "insight-power-of-attorney-misuse.html": [
+   "our fixed fee for a new enduring power of attorney is {enduring-power-of-attorney} including gst , with advice on choosing the attorney and a signing appointment."
+  ],
+  "insight-probate-victoria.html": [
+   "for a straightforward estate with $800,000 of assets in victoria, our probate fee and the court's filing fee together come to {probate-example-total}",
+   "our fixed fee for a probate application in a straightforward estate is {probate-application}, and for letters of administration where there is no will it is {letters-of-administration}, each including gst and the fee for publishing the notice of intention to apply",
+   "since {charges-from} the supreme court has charged nothing where that value is less than $250,000, {probate-filing-250k} from $250,000, {probate-filing-500k} from $500,000 and {probate-filing-1m} from $1 million, and our fees page lists the higher bands <<in the paragraph>> there are two costs. the first is the court fee for filing the application, which is scaled to the gross value of the estate's assets in victoria, so modest estates pay little or nothing and large estates pay substantially more. since {charges-from} the supreme court has charged nothing where that value is less than $#, $# from $#, $# from $# and $# from $# million, and our fees page lists the higher bands. the second is professional fees . our fixed fee for a probate application in a straightforward estate is $#, and for letters of administration where there is no will it is $#, each including gst and the fee for publishing the notice of intention to apply. for a straightforward estate with $# of assets in victoria, our probate fee and the court's filing fee together come to $#. administering the estate after the grant is estimated in writing once the shape of the estate is known."
+  ],
+  "insight-property-after-separation.html": [
+   "our fixed fee for a single will is {single-will}, and for an estate plan for one person , with a will, an enduring power of attorney and an appointment of a medical treatment decision maker, it is {estate-plan-for-one-person}, both including gst.",
+   "our fixed fee for consent orders for an agreed property settlement is {consent-orders-for-an-agreed-property-settlement} including gst, and our fees page sets out what that covers"
+  ],
+  "insight-property-reforms-2025.html": [
+   "if you have already agreed, our fixed fee for consent orders for an agreed property settlement is {consent-orders-for-an-agreed-property-settlement} including gst, and our fees page sets out what that covers"
+  ],
+  "insight-retail-leases-victoria.html": [
+   "our fee for a lease review for a tenant is from {lease-review-for-a-tenant} including gst"
+  ],
+  "insight-safe-harbour-small-business-restructuring.html": [
+   "broadly, companies whose total debts and claims, not counting employee entitlements, do not exceed $1 million, although the employee entitlements which are due must be paid and tax lodgements brought up to date before a plan can go to creditors",
+   "broadly, companies whose total debts and claims, not counting employee entitlements, do not exceed $1 million, although the employee entitlements which are due must be paid and tax lodgements brought up to date before a plan can go to creditors",
+   "broadly, the company's total debts and claims, not counting employee entitlements, must not exceed $1 million on the day the process begins, and there are restrictions where the company or its directors have been through the process before"
+  ],
+  "insight-shareholder-agreements.html": [
+   "our fee for a shareholder agreement is from {shareholders-agreement} including gst , confirmed in writing before we start"
+  ],
+  "insight-superannuation-death-benefits.html": [
+   "we do this as part of every estate plan , which covers a will, an enduring power of attorney and an appointment of a medical treatment decision maker, and is a fixed fee of {estate-plan-for-one-person} including gst for one person or {estate-plan-for-a-couple} for a couple. <<in the paragraph>> find your latest statement and check whether your nomination is binding, whether it has lapsed and whether the people named are still the people you intend, and then have your will and nominations reviewed together. we do this as part of every estate plan , which covers a will, an enduring power of attorney and an appointment of a medical treatment decision maker, and is a fixed fee of $# including gst for one person or $# for a couple.",
+   "we review it with your will as part of every estate plan, which is a fixed fee of {estate-plan-for-one-person} including gst for one person"
+  ],
+  "insight-terms-and-conditions-template-or-lawyer.html": [
+   "a small business for this purpose includes one employing fewer than 100 people, or one whose turnover in its last income year was under $10 million, so the rules reach a great many businesses and their customers",
+   "our fee for terms of trade is from {terms-of-trade} including gst"
+  ],
+  "insight-testamentary-trusts.html": [
+   "a will with one starts from {will-with-a-testamentary-trust-for-one-person} including gst <<in the paragraph>> are you wondering whether a testamentary trust belongs in your will? a will with one starts from $# including gst . your first call is free, and you speak with a lawyer. call (03) 9125 8355 or send an enquiry .",
+   "if your estate is modest, your beneficiaries are financially stable adults and no one faces creditor or relationship risk, a well-drafted simple will may serve perfectly well, and a single will is a fixed fee of {single-will} including gst",
+   "it starts from {will-with-a-testamentary-trust-for-one-person} including gst for one person, and wills with testamentary trusts for a couple start from {wills-with-testamentary-trusts-for-a-couple} <<in the paragraph>> a will with a testamentary trust costs more to prepare than a simple will, because the drafting is more complex. it starts from $# including gst for one person, and wills with testamentary trusts for a couple start from $# . at the first meeting we advise whether a testamentary trust suits your family, and your fee is confirmed in writing after that meeting."
+  ],
+  "insight-trustee-company-or-lawyer-will.html": [
+   "our fixed fee for a probate application on a straightforward estate is {probate-application} including gst and the fee for publishing the notice of intention to apply",
+   "our fixed fee for a single will is {single-will} including gst, and covers a will leaving your estate to the people you name, with up to two specific gifts, your executors and a guardian for young children if you need one, one round of changes and a signing appointment at which it is signed and witnessed correctly",
+   "wills for a couple are {wills-for-a-couple}, and an estate plan with a will, an enduring power of attorney and an appointment of a medical treatment decision maker is {estate-plan-for-one-person} for one person, each including gst"
+  ],
+  "insights.html": [
+   "a private agreement about a property split does not stop a later court claim, but consent orders make it final, and our fixed fee for them is {consent-orders-for-an-agreed-property-settlement} including gst."
+  ],
+  "resource-executor-first-steps.html": [
+   "most of this checklist still applies while that is sorted out, and our fixed fee for letters of administration in a straightforward estate where there is no will is {letters-of-administration} including gst and the fee for publishing the notice of intention to apply",
+   "our fixed fee for a probate application in a straightforward estate is {probate-application} including gst and the fee for publishing the notice of intention to apply, and our fees page sets out what counts as straightforward"
+  ],
+  "resource-separation-first-30-days.html": [
+   "a joint divorce application is {divorce-application-joint} including gst",
+   "a new single will and an enduring power of attorney are each a fixed fee of {enduring-power-of-attorney|single-will} including gst",
+   "once you have agreed terms, our fixed fee for consent orders is {consent-orders-for-an-agreed-property-settlement} including gst for an agreed property settlement , {consent-orders-for-agreed-parenting-arrangements} for agreed parenting arrangements , and {consent-orders-for-property-and-parenting} including gst for both together"
+  ],
+  "service-binding-financial-agreements.html": [
+   "a binding financial agreement is from {binding-financial-agreement} per party including gst, covering the advice the law requires for the agreement to be binding, drafting from terms you have agreed, one round of changes with the other party's lawyer, the certificate of independent legal advice and signing",
+   "a binding financial agreement is from {binding-financial-agreement} per party including gst, for an agreement drafted from terms you have agreed",
+   "a binding financial agreement is from {binding-financial-agreement} per party including gst, for an agreement drafted from terms you have agreed",
+   "a binding financial agreement is from {binding-financial-agreement} per party including gst.",
+   "advice on an agreement drafted by the other party's lawyer is from {advice-on-a-binding-financial-agreement} including gst, and our fees page sets out what each covers and what costs more",
+   "advice on an agreement drafted by the other party's lawyer is from {advice-on-a-binding-financial-agreement} including gst, and our fees page sets out what each covers and what costs more",
+   "advice on an agreement drafted by the other party's lawyer is from {advice-on-a-binding-financial-agreement} including gst, covering a review of the agreement, the advice the law requires before you sign it, a meeting to go through it and the certificate",
+   "prenups and binding financial agreements drafted at our box hill office from {binding-financial-agreement} per party, or reviewed from {advice-on-a-binding-financial-agreement} before you sign, each including gst.",
+   "prenups and binding financial agreements drafted at our box hill office from {binding-financial-agreement} per party, or reviewed from {advice-on-a-binding-financial-agreement} before you sign, each including gst.",
+   "prenups and binding financial agreements drafted at our box hill office from {binding-financial-agreement} per party, or reviewed from {advice-on-a-binding-financial-agreement} before you sign, each including gst.",
+   "prenups and binding financial agreements drafted at our box hill office from {binding-financial-agreement} per party, or reviewed from {advice-on-a-binding-financial-agreement} before you sign, each including gst.",
+   "your first call is free, and you speak with a lawyer agreements from {binding-financial-agreement} per party including gst suite 10, 1 main street, box hill"
+  ],
+  "service-buying-or-selling-a-business.html": [
+   "our fee for reviewing a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst",
+   "our review of a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst",
+   "our review of a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst",
+   "our review of a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst",
+   "our review of a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst",
+   "our review of a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst",
+   "our review of a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst",
+   "your first call is free, and you speak with a lawyer contract review for buyers from {review-of-a-contract-to-buy-a-business} including gst suite 10, 1 main street, box hill"
+  ],
+  "service-commercial-leases.html": [
+   "a lease review for a tenant is from {lease-review-for-a-tenant} including gst, and your first call is free.",
+   "a lease review for a tenant is from {lease-review-for-a-tenant} including gst, and your first call is free.",
+   "a lease review for a tenant is from {lease-review-for-a-tenant} including gst, and your first call is free.",
+   "a lease review for a tenant is from {lease-review-for-a-tenant} including gst, and your first call is free.",
+   "our fee for reviewing a lease for a tenant is from {lease-review-for-a-tenant} including gst",
+   "your first call is free, and you speak with a lawyer tenant lease reviews from {lease-review-for-a-tenant} including gst suite 10, 1 main street, box hill"
+  ],
+  "service-debt-recovery.html": [
+   "a final judgment or order for at least $10,000, made within the last six years, can support a bankruptcy notice, and a debtor served in australia who neither complies within 21 days nor satisfies the court of a counter-claim, set-off or cross demand that meets the act's test commits an act of bankruptcy, which can found a creditor's petition",
+   "a final judgment or order for at least $10,000, made within the last six years, can support a bankruptcy notice, and a debtor served in australia who neither complies within 21 days nor satisfies the court of a counter-claim, set-off or cross demand that meets the act's test commits an act of bankruptcy, which can found a creditor's petition",
+   "a letter of demand for an undisputed debt is a fixed fee of {letter-of-demand} including gst",
+   "a letter of demand for an undisputed debt is a fixed fee of {letter-of-demand} including gst",
+   "a letter of demand is a fixed fee of {letter-of-demand} including gst.",
+   "a statutory demand can be served on a company for a debt that is due and payable and at least $4,000, and gives the company 21 days to respond.",
+   "a statutory demand suits a company debt that is due and payable, at least $4,000 and not genuinely disputed, because it puts the onus on the company to act within 21 days",
+   "a statutory demand suits a company debt that is due and payable, at least $4,000 and not genuinely disputed, because it puts the onus on the company to act within 21 days",
+   "against a company that owes an undisputed debt of at least $4,000, we can serve a statutory demand",
+   "for a company debtor, we prepare and serve a statutory demand where the debt is due and payable, at least $4,000 and not genuinely disputed",
+   "our fixed fee for a letter of demand to one debtor for an undisputed debt is {letter-of-demand} including gst",
+   "terms of trade , which decide much of what you can recover, are from {terms-of-trade} including gst.",
+   "the magistrates' court can hear a claim for a debt of up to $100,000, which covers most unpaid invoices, and larger claims are usually brought in the county court or the supreme court",
+   "your first call is free, and you speak with a lawyer letter of demand {letter-of-demand}, fixed fee suite 10, 1 main street, box hill"
+  ],
+  "service-divorce.html": [
+   "a joint divorce application is a fixed fee of {divorce-application-joint} and a sole one {divorce-application-sole}, each including gst, and your first call is free.",
+   "a joint divorce application is a fixed fee of {divorce-application-joint} and a sole one {divorce-application-sole}, each including gst, and your first call is free.",
+   "a joint divorce application is a fixed fee of {divorce-application-joint} and a sole one {divorce-application-sole}, each including gst, and your first call is free.",
+   "a joint divorce application is a fixed fee of {divorce-application-joint} and a sole one {divorce-application-sole}, each including gst, and your first call is free.",
+   "our fixed fee for a divorce application is {divorce-application-joint} for a joint application and {divorce-application-sole} for a sole one, including gst",
+   "our fixed fee is {divorce-application-joint} for a joint application and {divorce-application-sole} for a sole one, including gst, and our fees page sets out what each covers",
+   "our fixed fee is {divorce-application-joint} for a joint application and {divorce-application-sole} for a sole one, including gst, and our fees page sets out what each covers",
+   "the court's own filing fee is separate, and since {charges-from} it has been {divorce-filing}, or {divorce-filing-reduced} for people who qualify for the reduced fee <<in the paragraph>> these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day} , published by spencer alexander, principal, at spenceralexander.com.au/fees . our fixed fee for a divorce application is $# for a joint application and $# for a sole one, including gst. the joint fee covers checking that you can apply, preparing the application, helping you both sign it, filing it and dealing with the federal circuit and family court of australia until the order is made, and assumes at least 12 months of separation without living under one roof. the sole fee adds arranging service, the affidavit proving it and attending the hearing if the court requires it, and assumes your spouse can be served in australia and does not oppose the divorce. the court's own filing fee is separate, and since {charges-from} it has been $#, or $# for people who qualify for the reduced fee. where an assumption does not hold, or for anything our fees page does not list, such as a property or parenting dispute, we give you a written estimate before substantive work begins.",
+   "the federal circuit and family court of australia also charges a filing fee, {divorce-filing} since {charges-from}, and a reduced fee of {divorce-filing-reduced} is available to concession card holders and people in financial hardship, although for a joint application both of you must qualify <<in the paragraph>> our fixed fee is $# for a joint application and $# for a sole one, including gst, and our fees page sets out what each covers. the federal circuit and family court of australia also charges a filing fee, $# since {charges-from}, and a reduced fee of $# is available to concession card holders and people in financial hardship, although for a joint application both of you must qualify. these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day} , published by spencer alexander, principal, at spenceralexander.com.au/fees .",
+   "the federal circuit and family court of australia also charges a filing fee, {divorce-filing} since {charges-from}, and a reduced fee of {divorce-filing-reduced} is available to concession card holders and people in financial hardship, although for a joint application both of you must qualify <<in the paragraph>> our fixed fee is $# for a joint application and $# for a sole one, including gst, and our fees page sets out what each covers. the federal circuit and family court of australia also charges a filing fee, $# since {charges-from}, and a reduced fee of $# is available to concession card holders and people in financial hardship, although for a joint application both of you must qualify. these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day}, published by spencer alexander, principal, at spenceralexander.com.au/fees.",
+   "your first call is free, and you speak with a lawyer joint divorce application {divorce-application-joint}, sole {divorce-application-sole}, fixed fees suite 10, 1 main street, box hill"
+  ],
+  "service-parenting-arrangements.html": [
+   "a parenting plan drawn from arrangements you have already agreed is from {parenting-plan} including gst, with one round of changes, and further rounds cost more",
+   "anything our fees page does not list, such as a disputed matter or court proceedings, is estimated in writing before substantive work begins, and the court's filing fee for an application for consent orders, {consent-orders-filing} since {charges-from}, is paid to it directly. <<in the paragraph>> these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day} , published by spencer alexander, principal, at spenceralexander.com.au/fees . our fixed fee for consent orders for agreed parenting arrangements is $# including gst. it covers advice on what you have agreed, the application and proposed orders, filing and the sealed orders, where there are no family violence or child safety concerns for the court to look into. consent orders for property and parenting arrangements together are $# including gst , on the same assumptions as the two separate fees. a parenting plan drawn from arrangements you have already agreed is from $# including gst, with one round of changes, and further rounds cost more. anything our fees page does not list, such as a disputed matter or court proceedings, is estimated in writing before substantive work begins, and the court's filing fee for an application for consent orders, $# since {charges-from}, is paid to it directly.",
+   "consent orders for agreed arrangements are {consent-orders-for-agreed-parenting-arrangements} including gst, and your first call is free.",
+   "consent orders for agreed arrangements are {consent-orders-for-agreed-parenting-arrangements} including gst, and your first call is free.",
+   "consent orders for agreed arrangements are {consent-orders-for-agreed-parenting-arrangements} including gst, and your first call is free.",
+   "consent orders for agreed arrangements are {consent-orders-for-agreed-parenting-arrangements} including gst, and your first call is free.",
+   "consent orders for property and parenting arrangements together are {consent-orders-for-property-and-parenting} including gst , on the same assumptions as the two separate fees",
+   "our fixed fee for consent orders for agreed parenting arrangements is {consent-orders-for-agreed-parenting-arrangements} including gst",
+   "your first call is free, and you speak with a lawyer consent orders for agreed arrangements {consent-orders-for-agreed-parenting-arrangements}, fixed fee suite 10, 1 main street, box hill"
+  ],
+  "service-powers-of-attorney.html": [
+   "an appointment of a medical treatment decision maker is a fixed fee of {appointment-of-a-medical-treatment-decision-maker} including gst per person",
+   "an enduring power of attorney is a fixed fee of {enduring-power-of-attorney} including gst per person, and an appointment of a medical treatment decision maker is a fixed fee of {appointment-of-a-medical-treatment-decision-maker} including gst per person",
+   "an enduring power of attorney is a fixed fee of {enduring-power-of-attorney} including gst per person, and an appointment of a medical treatment decision maker is a fixed fee of {appointment-of-a-medical-treatment-decision-maker} including gst per person",
+   "an enduring power of attorney is a fixed fee of {enduring-power-of-attorney} including gst per person, covering advice on choosing your attorneys and when their power starts, the document for financial and personal matters, and a signing appointment at which it is signed and witnessed as the law requires",
+   "each document is a fixed fee of {appointment-of-a-medical-treatment-decision-maker|enduring-power-of-attorney} including gst. <<in the paragraph>> from our box hill office, our lawyers prepare enduring powers of attorney and appointments of medical treatment decision makers, and oversee their signing. an enduring power of attorney lets someone you trust make financial decisions, personal decisions or both for you, from the day it is made unless it says otherwise, and keeps working if you lose capacity. each document is a fixed fee of $# including gst.",
+   "each is {appointment-of-a-medical-treatment-decision-maker|enduring-power-of-attorney} including gst. <<in the paragraph>> enduring powers of attorney and medical treatment decision maker appointments, prepared and witnessed at our box hill office. each is $# including gst.",
+   "each is {appointment-of-a-medical-treatment-decision-maker|enduring-power-of-attorney} including gst. <<in the paragraph>> enduring powers of attorney and medical treatment decision maker appointments, prepared and witnessed at our box hill office. each is $# including gst.",
+   "each is {appointment-of-a-medical-treatment-decision-maker|enduring-power-of-attorney} including gst. <<in the paragraph>> enduring powers of attorney and medical treatment decision maker appointments, prepared and witnessed at our box hill office. each is $# including gst.",
+   "each is {appointment-of-a-medical-treatment-decision-maker|enduring-power-of-attorney} including gst. <<in the paragraph>> enduring powers of attorney and medical treatment decision maker appointments, prepared and witnessed at our box hill office. each is $# including gst.",
+   "with a will, the three documents together are a fixed fee of {estate-plan-for-one-person} for one person or {estate-plan-for-a-couple} for a couple, and our fees page sets out what each covers <<in the paragraph>> an enduring power of attorney is a fixed fee of $# including gst per person, and an appointment of a medical treatment decision maker is a fixed fee of $# including gst per person. with a will, the three documents together are a fixed fee of $# for one person or $# for a couple, and our fees page sets out what each covers. these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day} , published by spencer alexander, principal, at spenceralexander.com.au/fees .",
+   "with a will, the three documents together are a fixed fee of {estate-plan-for-one-person} for one person or {estate-plan-for-a-couple} for a couple, and our fees page sets out what each covers <<in the paragraph>> an enduring power of attorney is a fixed fee of $# including gst per person, and an appointment of a medical treatment decision maker is a fixed fee of $# including gst per person. with a will, the three documents together are a fixed fee of $# for one person or $# for a couple, and our fees page sets out what each covers. these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day}, published by spencer alexander, principal, at spenceralexander.com.au/fees.",
+   "with a will, the three documents together are an estate plan , a fixed fee of {estate-plan-for-one-person} for one person or {estate-plan-for-a-couple} for a couple <<in the paragraph>> these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day} , published by spencer alexander, principal, at spenceralexander.com.au/fees . an enduring power of attorney is a fixed fee of $# including gst per person, covering advice on choosing your attorneys and when their power starts, the document for financial and personal matters, and a signing appointment at which it is signed and witnessed as the law requires. an appointment of a medical treatment decision maker is a fixed fee of $# including gst per person. with a will, the three documents together are an estate plan , a fixed fee of $# for one person or $# for a couple. an advance care directive and any vcat application are not priced on our fees page, so each is estimated in writing before substantive work begins.",
+   "your first call is free, and you speak with a lawyer enduring power of attorney {enduring-power-of-attorney}, fixed fee suite 10, 1 main street, box hill"
+  ],
+  "service-probate.html": [
+   "a probate application for a straightforward estate is {probate-application} including gst, and your first call is free.",
+   "a probate application for a straightforward estate is {probate-application} including gst, and your first call is free.",
+   "a probate application for a straightforward estate is {probate-application} including gst, and your first call is free.",
+   "a probate application for a straightforward estate is {probate-application} including gst, and your first call is free.",
+   "for a straightforward estate with $800,000 of assets in victoria, our probate fee and the court's filing fee together come to {probate-example-total}",
+   "for a straightforward estate with $800,000 of assets in victoria, our probate fee and the court's filing fee together come to {probate-example-total}",
+   "our fixed fee for a probate application in a straightforward estate is {probate-application}, and for letters of administration where there is no will {letters-of-administration}, each including gst and the fee for publishing the notice of intention to apply",
+   "our fixed fee for a probate application in a straightforward estate is {probate-application}, and for letters of administration where there is no will {letters-of-administration}, each including gst and the fee for publishing the notice of intention to apply",
+   "our fixed fee for a probate application is {probate-application}, and for letters of administration where there is no will {letters-of-administration}, each including gst, for a straightforward estate as our fees page defines it",
+   "our fixed fee for a straightforward probate application is {probate-application}, and for letters of administration where there is no will {letters-of-administration}, each including gst.",
+   "since {charges-from} the supreme court of victoria has charged nothing where that is less than $250,000, {probate-filing-250k} from $250,000, {probate-filing-500k} from $500,000 and {probate-filing-1m} from $1 million, with higher fees from $2 million <<in the paragraph>> our fixed fee for a probate application in a straightforward estate is $#, and for letters of administration where there is no will $#, each including gst and the fee for publishing the notice of intention to apply. the court's filing fee is separate and depends on the gross value of the estate's assets in victoria. since {charges-from} the supreme court of victoria has charged nothing where that is less than $#, $# from $#, $# from $# and $# from $# million, with higher fees from $# million. for a straightforward estate with $# of assets in victoria, our probate fee and the court's filing fee together come to $#. the court's fees come out of the estate, and so ordinarily do the legal costs of administering it after the grant. a lawyer's charge for the ordinary work of obtaining the grant is different, because the supreme court's rules set a scale for how much of it can be paid from the estate, and any amount above that scale falls to the executor unless the beneficiaries whose shares would bear it agree in writing to the estate paying it. these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day} , published by spencer alexander, principal, at spenceralexander.com.au/fees .",
+   "since {charges-from} the supreme court of victoria has charged nothing where that is less than $250,000, {probate-filing-250k} from $250,000, {probate-filing-500k} from $500,000 and {probate-filing-1m} from $1 million, with higher fees from $2 million <<in the paragraph>> our fixed fee for a probate application in a straightforward estate is $#, and for letters of administration where there is no will $#, each including gst and the fee for publishing the notice of intention to apply. the court's filing fee is separate and depends on the gross value of the estate's assets in victoria. since {charges-from} the supreme court of victoria has charged nothing where that is less than $#, $# from $#, $# from $# and $# from $# million, with higher fees from $# million. for a straightforward estate with $# of assets in victoria, our probate fee and the court's filing fee together come to $#. the court's fees come out of the estate, and so ordinarily do the legal costs of administering it after the grant. a lawyer's charge for the ordinary work of obtaining the grant is different, because the supreme court's rules set a scale for how much of it can be paid from the estate, and any amount above that scale falls to the executor unless the beneficiaries whose shares would bear it agree in writing to the estate paying it. these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day}, published by spencer alexander, principal, at spenceralexander.com.au/fees.",
+   "the supreme court of victoria's filing fee is separate and depends on the gross value of the estate's assets in victoria: nothing where that is less than $250,000, {probate-filing-250k} from $250,000, {probate-filing-500k} from $500,000 and {probate-filing-1m} from $1 million, with higher fees from $2 million , as the court's fee list has stood since {charges-from} <<in the paragraph>> these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day} , published by spencer alexander, principal, at spenceralexander.com.au/fees . our fixed fee for a probate application is $#, and for letters of administration where there is no will $#, each including gst, for a straightforward estate as our fees page defines it. for probate that means a properly signed original will, executors able to apply, assets in victoria and no caveat or challenge, and for administration an applicant with the first right to apply, no dispute about who inherits and no surety guarantee required by the court. each covers preparing and filing the application, publishing the notice of intention to apply and paying its fee, answering the probate office's routine questions and the grant. the supreme court of victoria's filing fee is separate and depends on the gross value of the estate's assets in victoria: nothing where that is less than $#, $# from $#, $# from $# and $# from $# million, with higher fees from $# million , as the court's fee list has stood since {charges-from}. estate administration after the grant, disputes, litigation and anything else not on the fees page are estimated in writing before substantive work begins, and how our fee will be met is confirmed in writing before we begin.",
+   "your first call is free, and you speak with a lawyer straightforward probate application {probate-application}, fixed fee suite 10, 1 main street, box hill"
+  ],
+  "service-property-settlement.html": [
+   "advice on a binding financial agreement drafted by the other party, with the certificate of independent legal advice, is from {advice-on-a-binding-financial-agreement} including gst",
+   "consent orders for an agreed property settlement are a fixed fee of {consent-orders-for-an-agreed-property-settlement} including gst, and your first call is free.",
+   "consent orders for an agreed property settlement are a fixed fee of {consent-orders-for-an-agreed-property-settlement} including gst, and your first call is free.",
+   "consent orders for an agreed property settlement are a fixed fee of {consent-orders-for-an-agreed-property-settlement} including gst, and your first call is free.",
+   "consent orders for an agreed property settlement are a fixed fee of {consent-orders-for-an-agreed-property-settlement} including gst, and your first call is free.",
+   "consent orders for property and parenting arrangements together are {consent-orders-for-property-and-parenting} including gst , on the same assumptions as the two separate fees",
+   "for a binding financial agreement drafted from terms you have agreed, with the advice the law requires, our fee is from {binding-financial-agreement} including gst for the person we act for, and the other party needs a lawyer of their own",
+   "negotiation, a disputed settlement and court proceedings are estimated in writing before any substantive work begins, and the court's filing fee for an application for consent orders, {consent-orders-filing} since {charges-from}, is separate <<in the paragraph>> these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day} , published by spencer alexander, principal, at spenceralexander.com.au/fees . our fixed fee for consent orders for an agreed property settlement is $# including gst. it covers advice on your agreement, the application and proposed orders, including one super split and one property transfer, the notice to the super fund, filing and the sealed orders, and assumes full financial disclosure has been exchanged and no company, trust or business is involved. consent orders for property and parenting arrangements together are $# including gst , on the same assumptions as the two separate fees. for a binding financial agreement drafted from terms you have agreed, with the advice the law requires, our fee is from $# including gst for the person we act for, and the other party needs a lawyer of their own. advice on a binding financial agreement drafted by the other party, with the certificate of independent legal advice, is from $# including gst . negotiation, a disputed settlement and court proceedings are estimated in writing before any substantive work begins, and the court's filing fee for an application for consent orders, $# since {charges-from}, is separate. every price, and what costs more, is on our fees page .",
+   "our fixed fee for consent orders for an agreed property settlement is {consent-orders-for-an-agreed-property-settlement} including gst",
+   "your first call is free, and you speak with a lawyer consent orders for an agreed settlement {consent-orders-for-an-agreed-property-settlement}, fixed fee suite 10, 1 main street, box hill"
+  ],
+  "service-shareholder-agreements.html": [
+   "a shareholder agreement is from {shareholders-agreement} including gst for one private company with up to three shareholders who have agreed the commercial terms, and our fees page sets out what each covers",
+   "a shareholder agreement is from {shareholders-agreement} including gst for one private company with up to three shareholders who have agreed the commercial terms, and our fees page sets out what each covers",
+   "a shareholder agreement is from {shareholders-agreement} including gst, for one private company with up to three shareholders who have agreed the commercial terms, with one round of changes, and more shareholders, investors or employee shares cost more",
+   "asic's registration fee, {asic-company-registration} on asic's fee list since {charges-from}, is passed on at cost",
+   "company set up is {company-set-up} including gst, with asic's registration fee passed on at cost.",
+   "company set up is {company-set-up} including gst, with asic's registration fee passed on at cost.",
+   "company set up is {company-set-up} including gst, with asic's registration fee passed on at cost.",
+   "company set up is {company-set-up} including gst, with asic's registration fee passed on at cost.",
+   "setting up a company is a fixed fee of {company-set-up} including gst, and asic's registration fee, {asic-company-registration} on asic's fee list since {charges-from}, is passed on at cost",
+   "setting up a company is a fixed fee of {company-set-up} including gst, and asic's registration fee, {asic-company-registration} on asic's fee list since {charges-from}, is passed on at cost",
+   "setting up a company is a fixed fee of {company-set-up} including gst, for registering one proprietary company with up to two directors and shareholders, with its constitution, consents, register of members, share certificates and first resolutions, and an abn and gst registration if needed",
+   "setting up a company is a fixed fee of {company-set-up} including gst, with asic's registration fee passed on at cost, and a shareholder agreement is from {shareholders-agreement}.",
+   "your first call is free, and you speak with a lawyer shareholder agreement from {shareholders-agreement} suite 10, 1 main street, box hill"
+  ],
+  "service-wills-and-estate-planning.html": [
+   "a single will is {single-will} and an estate plan for one person {estate-plan-for-one-person}, each including gst, and your first call is free.",
+   "a single will is {single-will} and an estate plan for one person {estate-plan-for-one-person}, each including gst, and your first call is free.",
+   "a single will is {single-will} and an estate plan for one person {estate-plan-for-one-person}, each including gst, and your first call is free.",
+   "a single will is {single-will} and an estate plan for one person {estate-plan-for-one-person}, each including gst, and your first call is free.",
+   "a single will is {single-will}, mirror wills for a couple are {wills-for-a-couple}, an enduring power of attorney on its own is {enduring-power-of-attorney} per person, and an appointment of a medical treatment decision maker on its own is {appointment-of-a-medical-treatment-decision-maker} per person",
+   "a will with a testamentary trust is from {will-with-a-testamentary-trust-for-one-person}, or from {wills-with-testamentary-trusts-for-a-couple} for a couple, confirmed in writing after the first meeting <<in the paragraph>> these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day} , published by spencer alexander, principal, at spenceralexander.com.au/fees . our fixed fee for an estate plan for one person, with a will, an enduring power of attorney and a medical treatment decision maker appointment, is $# including gst, or $# for a couple, each with one advice meeting and one signing appointment. a single will is $#, mirror wills for a couple are $#, an enduring power of attorney on its own is $# per person, and an appointment of a medical treatment decision maker on its own is $# per person. a will with a testamentary trust is from $#, or from $# for a couple, confirmed in writing after the first meeting. our fees page sets out what each price covers and assumes, and anything it does not list, such as an advance care directive, is estimated in writing before substantive work begins.",
+   "an estate plan for one person, with a will, an enduring power of attorney and a medical treatment decision maker appointment, is {estate-plan-for-one-person}, and a will with a testamentary trust is from {will-with-a-testamentary-trust-for-one-person}",
+   "an estate plan for one person, with a will, an enduring power of attorney and a medical treatment decision maker appointment, is {estate-plan-for-one-person}, and a will with a testamentary trust is from {will-with-a-testamentary-trust-for-one-person}",
+   "our fixed fee for a single will is {single-will}, and for wills for a couple {wills-for-a-couple}",
+   "our fixed fee for a single will is {single-will}, and for wills for a couple {wills-for-a-couple}",
+   "our fixed fee for an estate plan for one person is {estate-plan-for-one-person} including gst.",
+   "our fixed fee for an estate plan for one person, with a will, an enduring power of attorney and a medical treatment decision maker appointment, is {estate-plan-for-one-person} including gst, or {estate-plan-for-a-couple} for a couple, each with one advice meeting and one signing appointment <<in the paragraph>> these are the fees of spencer alexander lawyers in box hill, victoria, in australian dollars, as at {day} , published by spencer alexander, principal, at spenceralexander.com.au/fees . our fixed fee for an estate plan for one person, with a will, an enduring power of attorney and a medical treatment decision maker appointment, is $# including gst, or $# for a couple, each with one advice meeting and one signing appointment. a single will is $#, mirror wills for a couple are $#, an enduring power of attorney on its own is $# per person, and an appointment of a medical treatment decision maker on its own is $# per person. a will with a testamentary trust is from $#, or from $# for a couple, confirmed in writing after the first meeting. our fees page sets out what each price covers and assumes, and anything it does not list, such as an advance care directive, is estimated in writing before substantive work begins.",
+   "your first call is free, and you speak with a lawyer estate plan for one person {estate-plan-for-one-person}, fixed fee suite 10, 1 main street, box hill"
+  ],
+  "wills-and-estates.html": [
+   "a probate application for a straightforward estate is a fixed fee of {probate-application} including gst and the fee for publishing the notice of intention to apply",
+   "a single will is a fixed fee of {single-will} and an estate plan for one person {estate-plan-for-one-person}, both including gst",
+   "a single will is a fixed fee of {single-will} including gst, wills for a couple are {wills-for-a-couple}, and a will, enduring power of attorney and medical treatment decision maker appointment together are {estate-plan-for-one-person} for one person, all confirmed in writing before we start",
+   "a single will is a fixed fee of {single-will} including gst, wills for a couple are {wills-for-a-couple}, and a will, enduring power of attorney and medical treatment decision maker appointment together are {estate-plan-for-one-person} for one person, all confirmed in writing before we start",
+   "a single will is {single-will} and a probate application for a straightforward estate {probate-application}, each including gst.",
+   "a single will is {single-will} and a probate application for a straightforward estate {probate-application}, each including gst.",
+   "a single will is {single-will} and a probate application for a straightforward estate {probate-application}, each including gst.",
+   "an enduring power of attorney and an appointment of a medical treatment decision maker are each a fixed fee of {appointment-of-a-medical-treatment-decision-maker|enduring-power-of-attorney} per person, including gst",
+   "single wills, powers of attorney and a straightforward probate application each have a fixed fee, such as {single-will} for a single will.",
+   "your first call is free, and you speak with a lawyer box hill and melbourne's east probate application {probate-application}, fixed fee"
+  ],
+  "llms.txt": [
+   "- [fees](https://www.spenceralexander.com.au/fees.html): fixed fees, each shown as the total including gst with the amount before gst beneath it, among them a single will {single-will}, which is {gst:single-will} plus gst, wills for a couple {wills-for-a-couple}, an estate plan for one person {estate-plan-for-one-person}, a probate application for a straightforward estate {probate-application}, a joint divorce application {divorce-application-joint} and consent orders for an agreed property settlement {consent-orders-for-an-agreed-property-settlement}, each with the work it covers; court and government filing fees are extra and paid at cost.",
+   "- [financial agreement lawyers in box hill, melbourne](https://www.spenceralexander.com.au/service-binding-financial-agreements.html): prenups and binding financial agreements drafted at our box hill office from {binding-financial-agreement} per party, or reviewed from {advice-on-a-binding-financial-agreement} before you sign, each including gst.",
+   "a joint divorce application is a fixed fee of {divorce-application-joint} and a sole one {divorce-application-sole}, each including gst, and your first call is free.",
+   "a lease review for a tenant is from {lease-review-for-a-tenant} including gst, and your first call is free.",
+   "a letter of demand is {letter-of-demand} including gst.",
+   "a probate application for a straightforward estate is {probate-application} including gst, and your first call is free.",
+   "a single will is {single-will} and an estate plan for one person {estate-plan-for-one-person}, each including gst, and your first call is free.",
+   "company set up is {company-set-up} including gst, with asic's registration fee passed on at cost.",
+   "consent orders for agreed arrangements are {consent-orders-for-agreed-parenting-arrangements} including gst, and your first call is free.",
+   "consent orders for an agreed property settlement are a fixed fee of {consent-orders-for-an-agreed-property-settlement} including gst, and your first call is free.",
+   "each is {appointment-of-a-medical-treatment-decision-maker|enduring-power-of-attorney} including gst. <<in the paragraph>> - [power of attorney lawyers in box hill, melbourne](https://www.spenceralexander.com.au/service-powers-of-attorney.html): enduring powers of attorney and medical treatment decision maker appointments, prepared and witnessed at our box hill office. each is $# including gst.",
+   "our review of a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst"
+  ],
+  "feed.xml": [
+   "how consent orders make it final, the time limit and our {consent-orders-for-an-agreed-property-settlement} fixed fee. <<in the paragraph>> agreed a property split? a private agreement does not stop a later court claim. how consent orders make it final, the time limit and our $# fixed fee.",
+   "how consent orders work, what a lawyer checks and our {consent-orders-for-agreed-parenting-arrangements} fixed fee. <<in the paragraph>> agreed parenting arrangements? a parenting plan cannot be enforced like court orders. how consent orders work, what a lawyer checks and our $# fixed fee."
+  ],
+  "playbooks/service-content/service-binding-financial-agreements.json": [
+   "a binding financial agreement is from {binding-financial-agreement} per party including gst, covering the advice the law requires for the agreement to be binding, drafting from terms you have agreed, one round of changes with the other party's lawyer, the certificate of independent legal advice and signing",
+   "a binding financial agreement is from {binding-financial-agreement} per party including gst, for an agreement drafted from terms you have agreed",
+   "a binding financial agreement is from {binding-financial-agreement} per party including gst.",
+   "advice on an agreement drafted by the other party's lawyer is from {advice-on-a-binding-financial-agreement} including gst, and our fees page sets out what each covers and what costs more.",
+   "advice on an agreement drafted by the other party's lawyer is from {advice-on-a-binding-financial-agreement} including gst, covering a review of the agreement, the advice the law requires before you sign it, a meeting to go through it and the certificate",
+   "agreements from {binding-financial-agreement} per party including gst",
+   "prenups and binding financial agreements drafted at our box hill office from {binding-financial-agreement} per party, or reviewed from {advice-on-a-binding-financial-agreement} before you sign, each including gst."
+  ],
+  "playbooks/service-content/service-buying-or-selling-a-business.json": [
+   "contract review for buyers from {review-of-a-contract-to-buy-a-business} including gst",
+   "our fee for reviewing a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst",
+   "our review of a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst",
+   "our review of a contract to buy a business is from {review-of-a-contract-to-buy-a-business} including gst"
+  ],
+  "playbooks/service-content/service-commercial-leases.json": [
+   "a lease review for a tenant is from {lease-review-for-a-tenant} including gst, and your first call is free.",
+   "our fee for reviewing a lease for a tenant is from {lease-review-for-a-tenant} including gst",
+   "tenant lease reviews from {lease-review-for-a-tenant} including gst"
+  ],
+  "playbooks/service-content/service-debt-recovery.json": [
+   "a final judgment or order for at least $10,000, made within the last six years, can support a bankruptcy notice, and a debtor served in australia who neither complies within 21 days nor satisfies the court of a counter-claim, set-off or cross demand that meets the act's test commits an act of bankruptcy, which can found a creditor's petition",
+   "a letter of demand for an undisputed debt is a fixed fee of {letter-of-demand} including gst",
+   "a letter of demand is a fixed fee of {letter-of-demand} including gst.",
+   "a statutory demand can be served on a company for a debt that is due and payable and at least $4,000, and gives the company 21 days to respond.",
+   "a statutory demand suits a company debt that is due and payable, at least $4,000 and not genuinely disputed, because it puts the onus on the company to act within 21 days",
+   "against a company that owes an undisputed debt of at least $4,000, we can serve a statutory demand",
+   "for a company debtor, we prepare and serve a statutory demand where the debt is due and payable, at least $4,000 and not genuinely disputed",
+   "letter of demand {letter-of-demand}, fixed fee",
+   "our fixed fee for a letter of demand to one debtor for an undisputed debt is {letter-of-demand} including gst",
+   "terms of trade , which decide much of what you can recover, are from {terms-of-trade} including gst.",
+   "the magistrates' court can hear a claim for a debt of up to $100,000, which covers most unpaid invoices, and larger claims are usually brought in the county court or the supreme court"
+  ],
+  "playbooks/service-content/service-divorce.json": [
+   "a joint divorce application is a fixed fee of {divorce-application-joint} and a sole one {divorce-application-sole}, each including gst, and your first call is free.",
+   "joint divorce application {divorce-application-joint}, sole {divorce-application-sole}, fixed fees",
+   "our fixed fee for a divorce application is {divorce-application-joint} for a joint application and {divorce-application-sole} for a sole one, including gst",
+   "our fixed fee is {divorce-application-joint} for a joint application and {divorce-application-sole} for a sole one, including gst, and our fees page sets out what each covers",
+   "the court's own filing fee is separate, and since {charges-from} it has been {divorce-filing}, or {divorce-filing-reduced} for people who qualify for the reduced fee <<in the paragraph>> our fixed fee for a divorce application is $# for a joint application and $# for a sole one, including gst. the joint fee covers checking that you can apply, preparing the application, helping you both sign it, filing it and dealing with the federal circuit and family court of australia until the order is made, and assumes at least 12 months of separation without living under one roof. the sole fee adds arranging service, the affidavit proving it and attending the hearing if the court requires it, and assumes your spouse can be served in australia and does not oppose the divorce. the court's own filing fee is separate, and since {charges-from} it has been $#, or $# for people who qualify for the reduced fee. where an assumption does not hold, or for anything our fees page does not list, such as a property or parenting dispute, we give you a written estimate before substantive work begins.",
+   "the federal circuit and family court of australia also charges a filing fee, {divorce-filing} since {charges-from}, and a reduced fee of {divorce-filing-reduced} is available to concession card holders and people in financial hardship, although for a joint application both of you must qualify. <<in the paragraph>> our fixed fee is $# for a joint application and $# for a sole one, including gst, and our fees page sets out what each covers. the federal circuit and family court of australia also charges a filing fee, $# since {charges-from}, and a reduced fee of $# is available to concession card holders and people in financial hardship, although for a joint application both of you must qualify."
+  ],
+  "playbooks/service-content/service-parenting-arrangements.json": [
+   "a parenting plan drawn from arrangements you have already agreed is from {parenting-plan} including gst, with one round of changes, and further rounds cost more",
+   "anything our fees page does not list, such as a disputed matter or court proceedings, is estimated in writing before substantive work begins, and the court's filing fee for an application for consent orders, {consent-orders-filing} since {charges-from}, is paid to it directly. <<in the paragraph>> our fixed fee for consent orders for agreed parenting arrangements is $# including gst. it covers advice on what you have agreed, the application and proposed orders, filing and the sealed orders, where there are no family violence or child safety concerns for the court to look into. consent orders for property and parenting arrangements together are $# including gst , on the same assumptions as the two separate fees. a parenting plan drawn from arrangements you have already agreed is from $# including gst, with one round of changes, and further rounds cost more. anything our fees page does not list, such as a disputed matter or court proceedings, is estimated in writing before substantive work begins, and the court's filing fee for an application for consent orders, $# since {charges-from}, is paid to it directly.",
+   "consent orders for agreed arrangements are {consent-orders-for-agreed-parenting-arrangements} including gst, and your first call is free.",
+   "consent orders for agreed arrangements {consent-orders-for-agreed-parenting-arrangements}, fixed fee",
+   "consent orders for property and parenting arrangements together are {consent-orders-for-property-and-parenting} including gst , on the same assumptions as the two separate fees",
+   "our fixed fee for consent orders for agreed parenting arrangements is {consent-orders-for-agreed-parenting-arrangements} including gst"
+  ],
+  "playbooks/service-content/service-powers-of-attorney.json": [
+   "an appointment of a medical treatment decision maker is a fixed fee of {appointment-of-a-medical-treatment-decision-maker} including gst per person",
+   "an enduring power of attorney is a fixed fee of {enduring-power-of-attorney} including gst per person, and an appointment of a medical treatment decision maker is a fixed fee of {appointment-of-a-medical-treatment-decision-maker} including gst per person",
+   "an enduring power of attorney is a fixed fee of {enduring-power-of-attorney} including gst per person, covering advice on choosing your attorneys and when their power starts, the document for financial and personal matters, and a signing appointment at which it is signed and witnessed as the law requires",
+   "each document is a fixed fee of {appointment-of-a-medical-treatment-decision-maker|enduring-power-of-attorney} including gst. <<in the paragraph>> from our box hill office, our lawyers prepare enduring powers of attorney and appointments of medical treatment decision makers, and oversee their signing. an enduring power of attorney lets someone you trust make financial decisions, personal decisions or both for you, from the day it is made unless it says otherwise, and keeps working if you lose capacity. each document is a fixed fee of $# including gst.",
+   "each is {appointment-of-a-medical-treatment-decision-maker|enduring-power-of-attorney} including gst. <<in the paragraph>> enduring powers of attorney and medical treatment decision maker appointments, prepared and witnessed at our box hill office. each is $# including gst.",
+   "enduring power of attorney {enduring-power-of-attorney}, fixed fee",
+   "with a will, the three documents together are a fixed fee of {estate-plan-for-one-person} for one person or {estate-plan-for-a-couple} for a couple, and our fees page sets out what each covers. <<in the paragraph>> an enduring power of attorney is a fixed fee of $# including gst per person, and an appointment of a medical treatment decision maker is a fixed fee of $# including gst per person. with a will, the three documents together are a fixed fee of $# for one person or $# for a couple, and our fees page sets out what each covers.",
+   "with a will, the three documents together are an estate plan , a fixed fee of {estate-plan-for-one-person} for one person or {estate-plan-for-a-couple} for a couple <<in the paragraph>> an enduring power of attorney is a fixed fee of $# including gst per person, covering advice on choosing your attorneys and when their power starts, the document for financial and personal matters, and a signing appointment at which it is signed and witnessed as the law requires. an appointment of a medical treatment decision maker is a fixed fee of $# including gst per person. with a will, the three documents together are an estate plan , a fixed fee of $# for one person or $# for a couple. an advance care directive and any vcat application are not priced on our fees page, so each is estimated in writing before substantive work begins."
+  ],
+  "playbooks/service-content/service-probate.json": [
+   "a probate application for a straightforward estate is {probate-application} including gst, and your first call is free.",
+   "for a straightforward estate with $800,000 of assets in victoria, our probate fee and the court's filing fee together come to {probate-example-total}",
+   "our fixed fee for a probate application in a straightforward estate is {probate-application}, and for letters of administration where there is no will {letters-of-administration}, each including gst and the fee for publishing the notice of intention to apply",
+   "our fixed fee for a probate application is {probate-application}, and for letters of administration where there is no will {letters-of-administration}, each including gst, for a straightforward estate as our fees page defines it",
+   "our fixed fee for a straightforward probate application is {probate-application}, and for letters of administration where there is no will {letters-of-administration}, each including gst.",
+   "since {charges-from} the supreme court of victoria has charged nothing where that is less than $250,000, {probate-filing-250k} from $250,000, {probate-filing-500k} from $500,000 and {probate-filing-1m} from $1 million, with higher fees from $2 million <<in the paragraph>> our fixed fee for a probate application in a straightforward estate is $#, and for letters of administration where there is no will $#, each including gst and the fee for publishing the notice of intention to apply. the court's filing fee is separate and depends on the gross value of the estate's assets in victoria. since {charges-from} the supreme court of victoria has charged nothing where that is less than $#, $# from $#, $# from $# and $# from $# million, with higher fees from $# million. for a straightforward estate with $# of assets in victoria, our probate fee and the court's filing fee together come to $#. the court's fees come out of the estate, and so ordinarily do the legal costs of administering it after the grant. a lawyer's charge for the ordinary work of obtaining the grant is different, because the supreme court's rules set a scale for how much of it can be paid from the estate, and any amount above that scale falls to the executor unless the beneficiaries whose shares would bear it agree in writing to the estate paying it.",
+   "straightforward probate application {probate-application}, fixed fee",
+   "the supreme court of victoria's filing fee is separate and depends on the gross value of the estate's assets in victoria: nothing where that is less than $250,000, {probate-filing-250k} from $250,000, {probate-filing-500k} from $500,000 and {probate-filing-1m} from $1 million, with higher fees from $2 million , as the court's fee list has stood since {charges-from} <<in the paragraph>> our fixed fee for a probate application is $#, and for letters of administration where there is no will $#, each including gst, for a straightforward estate as our fees page defines it. for probate that means a properly signed original will, executors able to apply, assets in victoria and no caveat or challenge, and for administration an applicant with the first right to apply, no dispute about who inherits and no surety guarantee required by the court. each covers preparing and filing the application, publishing the notice of intention to apply and paying its fee, answering the probate office's routine questions and the grant. the supreme court of victoria's filing fee is separate and depends on the gross value of the estate's assets in victoria: nothing where that is less than $#, $# from $#, $# from $# and $# from $# million, with higher fees from $# million , as the court's fee list has stood since {charges-from}. estate administration after the grant, disputes, litigation and anything else not on the fees page are estimated in writing before substantive work begins, and how our fee will be met is confirmed in writing before we begin."
+  ],
+  "playbooks/service-content/service-property-settlement.json": [
+   "advice on a binding financial agreement drafted by the other party, with the certificate of independent legal advice, is from {advice-on-a-binding-financial-agreement} including gst",
+   "consent orders for an agreed property settlement are a fixed fee of {consent-orders-for-an-agreed-property-settlement} including gst, and your first call is free.",
+   "consent orders for an agreed settlement {consent-orders-for-an-agreed-property-settlement}, fixed fee",
+   "consent orders for property and parenting arrangements together are {consent-orders-for-property-and-parenting} including gst , on the same assumptions as the two separate fees",
+   "for a binding financial agreement drafted from terms you have agreed, with the advice the law requires, our fee is from {binding-financial-agreement} including gst for the person we act for, and the other party needs a lawyer of their own",
+   "negotiation, a disputed settlement and court proceedings are estimated in writing before any substantive work begins, and the court's filing fee for an application for consent orders, {consent-orders-filing} since {charges-from}, is separate <<in the paragraph>> our fixed fee for consent orders for an agreed property settlement is $# including gst. it covers advice on your agreement, the application and proposed orders, including one super split and one property transfer, the notice to the super fund, filing and the sealed orders, and assumes full financial disclosure has been exchanged and no company, trust or business is involved. consent orders for property and parenting arrangements together are $# including gst , on the same assumptions as the two separate fees. for a binding financial agreement drafted from terms you have agreed, with the advice the law requires, our fee is from $# including gst for the person we act for, and the other party needs a lawyer of their own. advice on a binding financial agreement drafted by the other party, with the certificate of independent legal advice, is from $# including gst . negotiation, a disputed settlement and court proceedings are estimated in writing before any substantive work begins, and the court's filing fee for an application for consent orders, $# since {charges-from}, is separate. every price, and what costs more, is on our fees page .",
+   "our fixed fee for consent orders for an agreed property settlement is {consent-orders-for-an-agreed-property-settlement} including gst"
+  ],
+  "playbooks/service-content/service-shareholder-agreements.json": [
+   "a shareholder agreement is from {shareholders-agreement} including gst for one private company with up to three shareholders who have agreed the commercial terms, and our fees page sets out what each covers.",
+   "a shareholder agreement is from {shareholders-agreement} including gst, for one private company with up to three shareholders who have agreed the commercial terms, with one round of changes, and more shareholders, investors or employee shares cost more",
+   "asic's registration fee, {asic-company-registration} on asic's fee list since {charges-from}, is passed on at cost",
+   "company set up is {company-set-up} including gst, with asic's registration fee passed on at cost.",
+   "setting up a company is a fixed fee of {company-set-up} including gst, and asic's registration fee, {asic-company-registration} on asic's fee list since {charges-from}, is passed on at cost",
+   "setting up a company is a fixed fee of {company-set-up} including gst, for registering one proprietary company with up to two directors and shareholders, with its constitution, consents, register of members, share certificates and first resolutions, and an abn and gst registration if needed",
+   "setting up a company is a fixed fee of {company-set-up} including gst, with asic's registration fee passed on at cost, and a shareholder agreement is from {shareholders-agreement}.",
+   "shareholder agreement from {shareholders-agreement}"
+  ],
+  "playbooks/service-content/service-wills-and-estate-planning.json": [
+   "a single will is {single-will} and an estate plan for one person {estate-plan-for-one-person}, each including gst, and your first call is free.",
+   "a single will is {single-will}, mirror wills for a couple are {wills-for-a-couple}, an enduring power of attorney on its own is {enduring-power-of-attorney} per person, and an appointment of a medical treatment decision maker on its own is {appointment-of-a-medical-treatment-decision-maker} per person",
+   "a will with a testamentary trust is from {will-with-a-testamentary-trust-for-one-person}, or from {wills-with-testamentary-trusts-for-a-couple} for a couple, confirmed in writing after the first meeting <<in the paragraph>> our fixed fee for an estate plan for one person, with a will, an enduring power of attorney and a medical treatment decision maker appointment, is $# including gst, or $# for a couple, each with one advice meeting and one signing appointment. a single will is $#, mirror wills for a couple are $#, an enduring power of attorney on its own is $# per person, and an appointment of a medical treatment decision maker on its own is $# per person. a will with a testamentary trust is from $#, or from $# for a couple, confirmed in writing after the first meeting. our fees page sets out what each price covers and assumes, and anything it does not list, such as an advance care directive, is estimated in writing before substantive work begins.",
+   "an estate plan for one person, with a will, an enduring power of attorney and a medical treatment decision maker appointment, is {estate-plan-for-one-person}, and a will with a testamentary trust is from {will-with-a-testamentary-trust-for-one-person}",
+   "estate plan for one person {estate-plan-for-one-person}, fixed fee",
+   "our fixed fee for a single will is {single-will}, and for wills for a couple {wills-for-a-couple}",
+   "our fixed fee for an estate plan for one person is {estate-plan-for-one-person} including gst.",
+   "our fixed fee for an estate plan for one person, with a will, an enduring power of attorney and a medical treatment decision maker appointment, is {estate-plan-for-one-person} including gst, or {estate-plan-for-a-couple} for a couple, each with one advice meeting and one signing appointment <<in the paragraph>> our fixed fee for an estate plan for one person, with a will, an enduring power of attorney and a medical treatment decision maker appointment, is $# including gst, or $# for a couple, each with one advice meeting and one signing appointment. a single will is $#, mirror wills for a couple are $#, an enduring power of attorney on its own is $# per person, and an appointment of a medical treatment decision maker on its own is $# per person. a will with a testamentary trust is from $#, or from $# for a couple, confirmed in writing after the first meeting. our fees page sets out what each price covers and assumes, and anything it does not list, such as an advance care directive, is estimated in writing before substantive work begins."
+  ]
+ }
+}

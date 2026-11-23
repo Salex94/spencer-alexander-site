@@ -19,9 +19,11 @@
 .section--tight { padding-block: clamp(40px, 5vw, 72px); }
 .section--sunken { background: var(--surface-sunken); border-top: 1px solid var(--border-hairline); border-bottom: 1px solid var(--border-hairline); }
 .section--page { background: var(--surface-page); }
-.scroll-anchor { scroll-margin-top: 96px; }
 @media (prefers-reduced-motion: no-preference) { html:focus-within { scroll-behavior: smooth; } }
-[id], .field input, .field select, .field textarea { scroll-margin-top: 100px; }
+/* The page scrolls an anchor, or a control reached by keyboard in either direction, clear of the sticky header.
+   Until 23 Nov 2026 only elements with an id and form fields had a margin, so a link reached with Shift and Tab
+   could sit wholly under the header. */
+html { scroll-padding-top: 100px; }
 img { max-width: 100%; display: block; }
 picture { display: contents; }
 picture > source { display: none; }
@@ -46,7 +48,7 @@ picture > source { display: none; }
 .sa-logo__name { font-family: var(--font-display); font-weight: var(--weight-semibold); font-size: 22px; letter-spacing: 0.14em; margin-right: -0.14em; color: var(--wine-700); line-height: 1; white-space: nowrap; }
 .sa-logo__sub { display: flex; align-items: center; gap: 9px; margin-top: 6px; }
 .sa-logo__sub::before, .sa-logo__sub::after { content: ""; height: 1.5px; background: var(--brass-600); flex: 1; }
-.sa-logo__sub span { font-family: var(--font-sans); font-weight: var(--weight-semibold); font-size: 10px; letter-spacing: 0.36em; color: var(--brass-700); padding-left: 0.36em; }
+.sa-logo__sub span { font-family: var(--font-sans); font-weight: var(--weight-semibold); font-size: 10px; letter-spacing: 0.36em; color: var(--brass-800); padding-left: 0.36em; }
 .sa-logo--inverse .sa-logo__name { color: var(--paper-50); font-size: 24px; }
 .sa-logo--inverse .sa-logo__sub::before, .sa-logo--inverse .sa-logo__sub::after { background: var(--brass-500); }
 .sa-logo--inverse .sa-logo__sub span { color: var(--brass-300); }
@@ -257,6 +259,7 @@ picture > source { display: none; }
 .brief ul { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 9px; }
 .brief li { position: relative; padding-left: 20px; font-size: var(--text-base); line-height: 1.55; color: var(--text-body); }
 .brief li::before { content: ""; position: absolute; left: 2px; top: 10px; width: 6px; height: 6px; border-radius: 50%; background: var(--brass-600); }
+.brief .brief__by { font-family: var(--font-sans); font-size: var(--text-sm); line-height: 1.5; color: var(--text-muted); margin-top: 16px; }
 
 .prose { max-width: 66ch; }
 .prose p { font-size: var(--text-md); line-height: 1.72; color: var(--text-body); margin-top: 16px; }
@@ -266,7 +269,7 @@ picture > source { display: none; }
 /* ---- Services in detail ---------------------------------------------------- */
 .svc-head { margin-top: clamp(40px, 5vw, 64px); }
 .svc-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(32px, 4vw, 56px); }
-.svc { border-top: 1px solid var(--border-default); padding: 22px 0 26px; scroll-margin-top: 96px; }
+.svc { border-top: 1px solid var(--border-default); padding: 22px 0 26px; }
 .svc__title { font-family: var(--font-display); font-weight: var(--weight-medium); font-size: var(--text-lg); line-height: 1.25; color: var(--text-strong); }
 .svc p { font-size: var(--text-sm); line-height: 1.66; color: var(--text-body); margin-top: 10px; max-width: 56ch; }
 .svc p a { font-weight: var(--weight-semibold); }
@@ -335,7 +338,7 @@ picture > source { display: none; }
 
 /* ---- FAQ ----------------------------------------------------------------- */
 .faq-group + .faq-group { margin-top: clamp(40px, 5vw, 60px); }
-.faq-group__h { display: flex; align-items: center; gap: 13px; margin-bottom: 18px; scroll-margin-top: 96px; }
+.faq-group__h { display: flex; align-items: center; gap: 13px; margin-bottom: 18px; }
 .faq-group__h .icon-chip { flex: none; }
 .faq-group__h h2 { font-family: var(--font-display); font-weight: var(--weight-regular); font-size: var(--text-2xl); color: var(--text-strong); }
 .faq-grid { display: grid; gap: 10px; }
@@ -748,7 +751,7 @@ a.pill:focus-visible { outline: 3px solid var(--wine-700); outline-offset: 2px; 
 @media (max-width: 880px) {
   body > .quick-exit { position: sticky; top: 0; right: auto; bottom: auto; z-index: 60; display: flex; justify-content: center; align-items: center; width: 100%; min-height: 34px; padding: 8px max(16px, env(safe-area-inset-right, 0px)) 8px max(16px, env(safe-area-inset-left, 0px)); border: 0; border-radius: 0; box-shadow: none; font-size: var(--text-xs); line-height: 18px; letter-spacing: 0.08em; text-transform: uppercase; }
   body > .quick-exit ~ .site-header { top: 34px; }
-  body > .quick-exit ~ [id], body > .quick-exit ~ * [id] { scroll-margin-top: 134px; }
+  html:has(body > .quick-exit), html.has-quick-exit { scroll-padding-top: 134px; }
 }
 /* The wine glow on dark bands sits behind the content, so the brass call button keeps its contrast */
 /* The open menu scrolls within the screen, so its call button and hours can always be reached */
@@ -776,3 +779,94 @@ a.pill:focus-visible { outline: 3px solid var(--wine-700); outline-offset: 2px; 
 .print-only { display: none; }
 @media print { .resource-subscribe { display: none !important; } .print-only { display: block !important; margin-top: 18px; font-size: 11pt; } }
 
+/* ---- Audit round of 23 Nov 2026 ---- */
+/* The word Lawyers under the wordmark is brass 800 in place of brass 700, which lifts its contrast on paper from
+   4.49 to 1 to well above the 4.5 the standard asks; the inverse wordmark in the footer keeps its colour. */
+/* The header fits the narrowest phones. Below 400 pixels the wordmark scales with the screen, so the menu button
+   keeps its place inside the gutter; at 320 pixels it used to be cut off, and at 360 it sat hard against the edge. */
+@media (max-width: 400px) {
+  .sa-logo__name { font-size: min(19px, calc((100vw - 104px) / 13.9)); }
+  .site-header__inner .sa-logo { margin-right: 12px; }
+  /* the footer's wordmark scales the same way, where it used to be cut off at 320 pixels */
+  .sa-logo--inverse .sa-logo__name { font-size: min(24px, calc((100vw - 48px) / 13.9)); }
+}
+/* An email address wraps inside a narrow column rather than running past the edge. The footer's own column
+   holds the firm's address on one line at every width, so it keeps to one line there. */
+a[href^="mailto:"] { overflow-wrap: anywhere; }
+.site-footer a[href^="mailto:"] { overflow-wrap: normal; }
+/* The enquiry form's messages: a link inside one is underlined, so it is not told from its text by colour alone,
+   and the page does not jump when a message appears above the firm's details on a phone. */
+.form__error a { text-decoration: underline; text-underline-offset: 3px; }
+.contact-info { overflow-anchor: none; }
+/* On the narrowest phones the home page's long call label wraps inside its button, where it used to hang
+   outside it. No other button changes. */
+@media (max-width: 359px) {
+  .process-actions .btn { white-space: normal; height: auto; min-height: 46px; padding-block: 10px; text-align: center; }
+}
+/* Fees page: four prices in the hero, and every fee at a glance above the detail. Both are generated from
+   playbooks/fees.json by scripts/fees.py and must never be edited by hand. */
+.pagehero__prices { gap: 2px 22px; margin-top: 18px; }
+.pagehero__prices a { display: inline-block; padding-block: 4px; white-space: nowrap; }
+.pagehero__prices + .pagehero__actions { margin-top: 22px; }
+.fee-index-band { padding-block: clamp(36px, 4.5vw, 60px) 0; }
+.fee-index__title { font-family: var(--font-display); font-weight: var(--weight-medium); font-size: var(--text-xl); line-height: 1.25; color: var(--text-strong); margin: 0; }
+.fee-index__note { margin-top: 8px; font-size: var(--text-sm); color: var(--text-muted); }
+.fee-index { margin-top: 26px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px clamp(28px, 4vw, 56px); align-items: start; }
+.fee-index__h { margin: 0; padding-bottom: 10px; border-bottom: 1.5px solid var(--brass-600); font-family: var(--font-sans); font-weight: var(--weight-semibold); font-size: var(--text-xs); letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; line-height: 1.4; }
+.fee-index__h a { color: var(--brass-800); text-decoration: none; }
+.fee-index__h a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-index ul { list-style: none; margin: 0; padding: 0; }
+.fee-index li { border-bottom: 1px solid var(--border-hairline); }
+.fee-index li a { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 16px; padding: 11px 0; min-height: 44px; color: var(--text-body); text-decoration: none; font-size: var(--text-sm); line-height: 1.4; }
+.fee-index__price { font-family: var(--font-display); font-size: var(--text-md); color: var(--wine-700); font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
+.fee-index li a:hover .fee-index__name { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fees-detail { padding-top: clamp(40px, 5vw, 64px); }
+@media (max-width: 880px) { .fee-index { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px clamp(24px, 4vw, 40px); } }
+@media (max-width: 640px) { .fee-index { grid-template-columns: minmax(0, 1fr); } }
+@media print { .fee-index-band { display: none !important; } }
+/* Enquiry form: once a valid enquiry is on its way the button says so and a second press does nothing,
+   so a slow connection cannot send the same enquiry twice. */
+.form.is-sending button[type="submit"] { opacity: 0.72; cursor: progress; }
+/* Fees page: what the courts and ASIC charge, generated from playbooks/fees.json with the day it was read */
+.article__body h3#court-and-government-charges { margin-top: 34px; }
+.charges { width: 100%; margin-top: 18px; border-collapse: collapse; font-size: var(--text-sm); line-height: 1.5; }
+.charges caption { caption-side: top; text-align: left; padding-bottom: 10px; font-family: var(--font-sans); font-weight: var(--weight-semibold); font-size: var(--text-xs); letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--brass-800); border-bottom: 1.5px solid var(--brass-600); }
+.charges thead th { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.charges th, .charges td { padding: 11px 0; border-bottom: 1px solid var(--border-hairline); text-align: left; vertical-align: baseline; font-weight: var(--weight-regular); color: var(--text-body); }
+.charges td { text-align: right; padding-left: 20px; font-family: var(--font-display); font-size: var(--text-md); color: var(--wine-700); font-variant-numeric: lining-nums tabular-nums; }
+.charges .charges__group th { padding-top: 22px; font-family: var(--font-display); font-weight: var(--weight-medium); font-size: var(--text-md); color: var(--text-strong); }
+.article__body .charges__source { margin-top: 14px; font-size: var(--text-sm); color: var(--text-muted); }
+.charges__note { display: block; margin-top: 2px; font-size: var(--text-xs); color: var(--text-muted); }
+.charges td { white-space: nowrap; }
+@media (max-width: 520px) { .charges td { font-size: var(--text-base); } }
+/* Home hero: one line saying the fees are fixed and published, under the rating */
+.hero__fees { margin-top: 14px; font-size: var(--text-sm); line-height: 1.5; color: var(--wine-200); max-width: 46ch; }
+.hero__fees a { color: var(--wine-100); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(251,249,245,.4); }
+.hero__fees a:hover { color: var(--brass-300); text-decoration-color: currentColor; }
+/* On phones the paragraphs a reader decides by are 16 pixels, not 14: what each service is, what the fee
+   covers and the time limits on the home page. Notes, sources and captions stay at 14. */
+@media (max-width: 640px) { .svc p, .fee-note__d, .urgent__d { font-size: 1rem; line-height: 1.6; } }
+/* Home hero on tablets: text beside the portrait, as on a desktop, where the portrait used to stack beneath
+   the text with half the width left empty */
+@media (min-width: 768px) and (max-width: 900px) {
+  .hero__grid { grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 32px; align-items: center; }
+  .hero-portrait { margin-left: auto; max-width: 100%; }
+  .hero__title { font-size: clamp(2.1rem, 4.6vw, 2.55rem); }
+}
+
+/* Fees page: a note that belongs to the row above it, such as the Court's separate filing fee after the probate row */
+.article__body .fee-list__note { margin: -8px 0 18px; font-size: var(--text-sm); line-height: 1.5; color: var(--text-body); }
+/* On a desktop the running text of hubs and service pages keeps the measure the articles use. Lines used to run
+   73 to 97 characters at 18 pixels and past 100 at 14, against the 64 to 81 of an article. */
+@media (min-width: 1100px) {
+  .brief > p, .brief li, .prose > p, .prose li { max-width: 68ch; }
+  .fee-note__d, .article-sources, .page-close { max-width: 78ch; }
+}
+/* The phone call bar slides away while the hero's own call button is on screen, but its two controls stay in the
+   keyboard order, so a control that takes focus comes back into view */
+.cta-visible .mobile-call:focus-visible, .menu-open .mobile-call:focus-visible,
+.cta-visible .mobile-enquire:focus-visible, .menu-open .mobile-enquire:focus-visible { transform: none; }
+/* At a glance rows: a long name wraps inside its own space and the price keeps its place on the right. The price
+   drops to a line of its own only when text is enlarged so far that the two cannot share one. */
+.fee-index__name { flex: 1 1 9ch; min-width: 0; }
+.fee-index__price { flex: 0 0 auto; }

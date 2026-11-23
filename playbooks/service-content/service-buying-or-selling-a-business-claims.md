@@ -72,3 +72,22 @@ Read today on legislation.vic.gov.au, each the version marked In force:
 ## Fees
 
 Only fees.html's "Review of a contract to buy a business, from $1,210", with its scope and "A franchise or a purchase of shares costs more". It is never called a fixed fee. Settlement work, anything for a seller and any dispute are stated as estimated in writing before substantive work begins, matching fees.html's closing line for the commercial section. No offers in schema, because there is no single figure fee.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 rests on the Estate Agents Act 1980 (Vic). Bullet 2 rests on the Retail Leases
+Act 2003 (Vic). Bullet 3 rests on the Retail Leases Act 2003 (Vic).
+
+## Names added on 23 November 2026
+
+The urgent strip now opens Under section 52 of the Estate Agents Act 1980 (Vic) and ends the section gives no way to
+extend that time, where it said section 52 without naming the Act. The rows above already give section 52(3) as its
+authority, and the statement itself is unchanged.
+
+From 23 November 2026 the fee note opens, and each answer that quotes one of the firm's fees ends, with one sentence
+the page builder writes: whose fees they are, where, in Australian dollars, the day, who published them and where. It
+is a statement about the firm's own fees and not a statement of law.

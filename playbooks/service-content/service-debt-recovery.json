@@ -4,7 +4,7 @@
  "hub_label": "Commercial Law",
  "crumb": "Debt recovery",
  "service_name": "Debt recovery and statutory demands",
- "date": "2026-11-16",
+ "date": "2026-11-23",
  "title": "Debt Recovery Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Debt Recovery Lawyers in Box Hill, Melbourne",
  "description": "Box Hill debt recovery lawyers for businesses: letters of demand, court claims and statutory demands, and help when your company is served with a demand.",
@@ -16,9 +16,10 @@
  ],
  "urgent": {
   "strong": "Received a statutory demand?",
-  "text": "A company served with a statutory demand has 21 days to pay, secure or compromise the debt, or to apply to set the demand aside, and an application can only be made within those 21 days. Call us the day it arrives, or email a photo of it to <a href=\"mailto:contact@spenceralexander.com.au?subject=Statutory%20demand%20received\">contact@spenceralexander.com.au</a>."
+  "text": "A company served with a statutory demand under the Corporations Act 2001 (Cth) has 21 days to pay, secure or compromise the debt, or to apply to set the demand aside, and an application can only be made within those 21 days. Call us the day it arrives, or email a photo of it to <a href=\"mailto:contact@spenceralexander.com.au?subject=Statutory%20demand%20received\">contact@spenceralexander.com.au</a>."
  },
  "brief": {
+  "sources": ["Corporations Act 2001 (Cth)", "Corporations Regulations 2001 (Cth)", "Limitation of Actions Act 1958 (Vic)"],
   "entity": "Spencer Alexander Lawyers is a Box Hill, Melbourne law firm recovering unpaid debts for businesses and acting for companies served with statutory demands, with the principal overseeing every matter.",
   "bullets": [
    "A letter of demand is usually the first step, and for an undisputed debt it often resolves the matter or opens the way to a payment plan.",
@@ -63,7 +64,7 @@
    "h2": "The deadlines in debt recovery.",
    "paras": [
     "For a creditor, the main limit is six years to sue on a debt under an ordinary contract, counted from when the right to sue arose, usually when payment fell due. A written acknowledgment of the debt signed by the debtor, or a part payment, starts the six years again, so an older debt may still be recoverable.",
-    "A company served with a statutory demand has 21 days from service, and an application to set it aside, with its supporting affidavit, must be filed and served on the creditor within those 21 days. That deadline cannot be extended. If the company neither complies nor applies in time, a court hearing a winding up application made within the following three months, by that creditor or anyone else, must presume that the company is insolvent unless the contrary is proved. If a demand has arrived, call us on <a href=\"tel:+61391258355\">(03) 9125 8355</a> the same day."
+    "A company served with a statutory demand under the Corporations Act 2001 (Cth) has 21 days from service, and an application to set it aside, with its supporting affidavit, must be filed and served on the creditor within those 21 days. That deadline cannot be extended. If the company neither complies nor applies in time, a court hearing a winding up application made within the following three months, by that creditor or anyone else, must presume that the company is insolvent unless the contrary is proved. If a demand has arrived, call us on <a href=\"tel:+61391258355\">(03) 9125 8355</a> the same day."
    ]
   },
   {
@@ -122,7 +123,7 @@
  "faqs": [
   {
    "q": "What should a company do when it is served with a statutory demand?",
-   "a": "Act the same day you receive it. A company served with a statutory demand has 21 days to pay the debt, to secure it or reach a compromise to the creditor's reasonable satisfaction, or to apply to court to set the demand aside, and the application and its supporting affidavit must be both filed and served on the creditor within those 21 days. That deadline cannot be extended. If the company does none of these, and an application to wind it up is made within the following three months, by that creditor or anyone else, the court must presume the company is insolvent unless the contrary is proved. Call us on <a href=\"tel:+61391258355\">(03) 9125 8355</a> the day it arrives."
+   "a": "Act the same day you receive it. A company served with a statutory demand under the Corporations Act 2001 (Cth) has 21 days to pay the debt, to secure it or reach a compromise to the creditor's reasonable satisfaction, or to apply to court to set the demand aside, and the application and its supporting affidavit must be both filed and served on the creditor within those 21 days. That deadline cannot be extended. If the company does none of these, and an application to wind it up is made within the following three months, by that creditor or anyone else, the court must presume the company is insolvent unless the contrary is proved. Call us on <a href=\"tel:+61391258355\">(03) 9125 8355</a> the day it arrives."
   },
   {
    "q": "Should we serve a statutory demand or sue?",

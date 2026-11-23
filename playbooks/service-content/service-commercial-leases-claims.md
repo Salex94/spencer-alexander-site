@@ -77,3 +77,18 @@ It passes on all the page's prose. Its one failure is the "(Vic)" in the Sources
 1. **Audit item 24 is itself wrong.** The prescribed disclosure statement has a tenant signature block that acknowledges receipt, in Schedule 1 Part 10 and Schedule 2 Part 12 of the Regulations. So "the tenant does not sign it" is inaccurate, and the hub's "never sign blind" is defensible. If the hub is corrected, say what the signature does rather than that there is none.
 2. **"Fixed fee" for the lease review.** The hub's fee note says a lease review has a fixed fee, and its cost answer says such work is "usually quoted as a fixed fee". fees.html shows "from $1,089". This is the same risk as audit item 25.
 3. **The retail leases article, outside this page.** It says the landlord must give notice of the option date "but the risk of the calendar remains with you". That understates s 28(2), which moves the last date to three months after a late notice.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 rests on the Retail Leases Act 2003 (Vic). Bullet 2 rests on the Retail Leases
+Act 2003 (Vic). Bullet 3 rests on the Retail Leases Act 2003 (Vic).
+
+## Names added on 23 November 2026
+
+The urgent strip now opens Under the Retail Leases Act 2003 (Vic), the landlord of a retail lease must, and says the
+last date to exercise the option where it said the last date to exercise it. The rows above already give section
+28(1A) and (2)(a) as its authority, and the statement itself is unchanged.

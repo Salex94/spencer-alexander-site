@@ -67,11 +67,11 @@ These are copied in substance from fees.html as live on 28 Sep 2026:
 - Binding financial agreement from $3,025 per party including GST, written from 9 Nov 2026 as "for the person we act for". It is not called a fixed fee, and it is left out of the schema offers.
 - From 9 Nov 2026: consent orders for property and parenting together, $3,850 including GST, a single figure and in the schema offers; advice on a binding financial agreement drafted by the other party from $1,100 including GST, not called a fixed fee and left out of the offers.
 - A disputed settlement, negotiation and court proceedings are estimated in writing before substantive work.
-- The court's filing fee is separate, with no figure, no reduced rate and nothing on exemptions.
+- The court's filing fee is separate. From 23 Nov 2026 the page states it, $215 since 1 July 2026, from gazette notice C2026G00343 as recorded in `charges` in playbooks/fees.json, with no reduced rate and nothing on exemptions.
 
 ## Generalised or not stated
 
-- No filing fee figure, concession or waiver statement.
+- The filing fee figure is the one in `charges` in playbooks/fees.json. No concession or waiver statement.
 - No timeframes.
 - Nothing about hearings "on the papers".
 - No stamp duty or tax statement.
@@ -103,3 +103,12 @@ These are copied in substance from fees.html as live on 28 Sep 2026:
   - It says "After those windows close, you need the court's permission to apply".
   - It omits consent, s 44(3) and 44(5)(b).
   - This page links the checklist.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 rests on the Family Law Act 1975 (Cth). Bullet 2 rests on the Family Law Act 1975
+(Cth). Bullet 3 rests on the Family Law Act 1975 (Cth).

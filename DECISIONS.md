@@ -13,6 +13,92 @@ Newest entries first.
 
 ---
 
+## 2026-11-23: Audit round, a preview on the branch claude/affectionate-einstein-xytjjz, not yet released
+
+Spencer's request of Monday 23 November 2026: audit and improve the site for design, usability, search, AI answers,
+acquisition and conversion, and restore the fees that changed in the recent pricing release to the amounts published
+immediately before it. Later the same day he asked that everything the audit supports be implemented as well.
+Publishing stays with him, so everything below is on the branch, as one commit, and nothing is on main. The record is
+`playbooks/audit-2026-11-23/`, whose README gives the release steps. This repository is public, so the parts of the
+record that are about the business, and the report he reads, are kept privately.
+
+- **What the record shows about the fees.** The release of 16 Nov 2026 raised six fees, lowered fourteen and left four
+  alone. Restoring every changed fee would therefore raise fourteen prices. The preview restores the six that rose to
+  the amounts fees.html carried at 759a5e9, live from 9 Nov 2026 7:55am to 16 Nov 2026 10:53am Melbourne time: probate
+  application $1,980, letters of administration $2,178, wills for a couple $880, consent orders for an agreed property
+  settlement $3,025, consent orders for property and parenting together $3,850 and advice on a financial agreement the
+  other party drafted from $1,100. Each restored row is byte for byte the row deployed then. The fourteen that fell stay
+  at their current amounts for his decision, and the whole earlier schedule can be applied with one command.
+- **One fee source.** `playbooks/fees.json` and `scripts/fees.py`. It reproduced the live fees page byte for byte
+  before any price changed. A separate review then planted errors that the first version of its check let through,
+  chiefly a figure that was right for another fee named in the same sentence. So `playbooks/fees-renditions.json` now
+  records every sentence that quotes a fee or a charge with each figure tied to its fee, and the check fails any such
+  sentence that is new, changed or gone until it has been read and recorded with `python3 scripts/fees.py snapshot`.
+  A final pass found the tool worked each tie out again from the amounts, so it confused two fees once they shared
+  one, and the whole earlier schedule would not apply. The check, snapshot and apply now take each figure's tie from
+  that record, whatever the amounts become: the earlier schedule applies and returns with the gate passing each way.
+  apply stops before writing where a fee is under the $495 minimum, where the court charges' first day has not yet
+  come and where the pages and the record differ.
+- **What the courts and ASIC charge**, read on 23 Nov 2026 and published on the fees page and beside the fees they add
+  to: the Supreme Court's probate filing fee by the gross value of the assets in Victoria, nil under $250,000 then
+  $544, $1,088, $2,538.70, $5,077.40, $7,598.80, $12,693.40 and $17,770.80; the $38 notice fee; divorce $1,170 or $390
+  at the reduced fee and consent orders $215, from gazette notice C2026G00343; ASIC company registration $636. They
+  are set by regulation, they carry the last day they are current, and the gate gives notice three weeks before it.
+- **Every price carries its date**, because two answer engines were quoting a probate price the site had not carried
+  since 9 Nov 2026 and one gave a fee in American dollars. One sentence says whose fees they are, where, in what
+  currency, as at what day, who published them and where. It opens the fees page's lead and each service page's fee
+  note, and it ends each answer about cost on the service pages, the two hubs that have one and the FAQ page. The
+  last checker showed that the first version dated the fee notes but left the answers, which are the passages most
+  often lifted, with no date, no firm and no currency.
+- **Faults fixed**: the menu button was cut off at 320 pixels, and so was the footer wordmark; a second press on a slow
+  connection sent an enquiry twice, and the first fix for that could leave the form locked when a send stalled;
+  keyboard focus could land under the sticky header or on a block that had yet to fade in; the form's error was not
+  tied to its fields; the word Lawyers under the wordmark measured 4.49 to 1; sixteen high intent pages did not say
+  how soon a reply comes; and the fees page showed no price on the first screen of a short phone.
+- **Legal verification**: 113 statements on the twenty highest intent pages read against the authorised versions on
+  23 Nov 2026: 101 verified, none wrong, one imprecise and corrected, eleven resting on general law. The corrected
+  sentence is on the powers of attorney page: section 32 of the Powers of Attorney Act 2014 (Vic), version 007,
+  requires the prescribed form, and regulation 6(1) of the Powers of Attorney Regulations 2025 (Vic), version 001,
+  prescribes it. The sentence on who bears a grant fee above the scale in rule 9.01 remains the form settled on
+  9 Nov 2026 and is listed again for Spencer, because no provision states it. The sentences that gained the name of
+  an Act, a court or a State on 23 Nov 2026 were each read against that Act the same day.
+- **Left as it is**: every reference to lawyers in the plural, on Spencer's instruction of 9 Nov 2026. He asked on
+  23 Nov 2026 for those references to be checked against the fact that he is the only lawyer, so they are counted in
+  the report and the decision is his. Also left for him: the probate pages say the notice is posted at least 14 days
+  before applying, which is the rule's own wording, while the Supreme Court's guidance says to allow 15.
+- **Film captions.** The home page film carries a caption track that a visitor switches on in the player's own
+  controls, because speech in a film with no captions fails a level A accessibility rule and the brief asked for the
+  standard to be met. Spencer removed a caption track on 6 Sep 2026, when captions showed in the picture. This one
+  shows nothing unless it is switched on, and it is listed among the visible changes for him to keep or strike.
+- **Each fee has its own figure.** Four sentences on the powers of attorney page, the wills page and the powers of
+  attorney article said one fee was the same as another, and the wills hub's Each document took in the advance care
+  directive, which has no fixed fee. Each now names its fee beside its own figure.
+- **Each summary says who published it.** The In brief block on each of the twelve service pages ends with Published
+  by Spencer Alexander, Principal, the day the page was updated and, after the word Legislation, the Acts, Regulations
+  and Rules the block cites. The page
+  builder writes the line from the page's date and from `sources` under `brief` in the content file, which names only
+  instruments in the page's own Sources line, each taken from the page's claims register on 23 Nov 2026. A summary
+  quoted by itself named its Act and its court but not its author, date or source.
+- **Names added so a lifted passage stands alone.** Seven urgent strips on the service pages now open with the name of
+  their Act, each the Act its claims register already cites, and each answer on the divorce page names the Federal
+  Circuit and Family Court of Australia the first time it mentions the Court. No statement of law changed.
+- **The fee tool after the last checker.** A checker set to break the tool got a wrong price past it in four ways,
+  each now closed: a price typed into a fee's scope in the source, a sentence whose fee was named only by words two
+  fees share, a fee changed between a fixed price and a from price, and a minimum stated on the pages that differed
+  from the source's. It also found that a change to the day the court charges took effect wrote the pages and then
+  failed, which would have met the Tuesday routine unattended on 1 July 2027, and apply now moves that day in every
+  paragraph that quotes a charge. Totals are whole dollars from the minimum to a ceiling of $4,995, and a date never
+  moves backwards or into a month that has passed. One limit stands and is written into CLAUDE.md: the record of
+  sentences is never edited by hand. The gate has 112 checks where it had 106.
+- **Smaller faults fixed after the last pass**: the footer's email address broke across two lines between about 990
+  and 1200 pixels, the page jumped when the form's twenty second message appeared on a phone, the telephone link in
+  that message was told from its text by colour alone, and on phones under 360 pixels the home page's long call
+  button let its label hang outside it.
+- **What a visitor will see differently** is set out row by row in `playbooks/audit-2026-11-23/changes.md`, because his
+  rule of 26 Sep 2026 is that a change to how a page looks needs his approval. The release is where he gives it.
+
+---
+
 ## 2026-11-23: Weekly article, what it costs to contest a will and who pays, a Wills and Estates hire guide
 
 New article insight-cost-of-contesting-a-will.html, published Monday 23 November 2026 Melbourne time. Rotation: Wills

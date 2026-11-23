@@ -1,0 +1,29 @@
+{
+  "about": "The totals including GST of all 24 fees as fees.html carried them at commit 759a5e9, live from 9 to 16 November 2026. This is not the fee source. To put these amounts back, run python3 scripts/fees.py use playbooks/audit-2026-11-23/fees-full-earlier-schedule.json, which copies each total into playbooks/fees.json and applies it. To return one fee only, edit its total in playbooks/fees.json and run python3 scripts/fees.py apply.",
+  "totals": {
+    "estate-plan-for-one-person": 1089,
+    "estate-plan-for-a-couple": 1980,
+    "single-will": 495,
+    "wills-for-a-couple": 880,
+    "enduring-power-of-attorney": 495,
+    "appointment-of-a-medical-treatment-decision-maker": 495,
+    "will-with-a-testamentary-trust-for-one-person": 1650,
+    "wills-with-testamentary-trusts-for-a-couple": 3025,
+    "probate-application": 1980,
+    "letters-of-administration": 2178,
+    "divorce-application-joint": 1089,
+    "divorce-application-sole": 1452,
+    "consent-orders-for-an-agreed-property-settlement": 3025,
+    "consent-orders-for-agreed-parenting-arrangements": 3025,
+    "consent-orders-for-property-and-parenting": 3850,
+    "parenting-plan": 1452,
+    "binding-financial-agreement": 3025,
+    "advice-on-a-binding-financial-agreement": 1100,
+    "lease-review-for-a-tenant": 1089,
+    "company-set-up": 660,
+    "shareholders-agreement": 2420,
+    "terms-of-trade": 1815,
+    "review-of-a-contract-to-buy-a-business": 1210,
+    "letter-of-demand": 495
+  }
+}

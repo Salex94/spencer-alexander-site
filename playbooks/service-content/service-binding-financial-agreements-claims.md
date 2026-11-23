@@ -49,3 +49,21 @@ Copied from fees.html as the central pass of 9 November 2026 leaves it: binding 
 - Built with `scripts/build-service-page.py`: 1,933 visible words in `<main>`, including the hub's rail cards.
 - `scripts/check_style.py` on the page's visible text: PASS, with notes only for the hub's "!" urgent mark and paragraph shape.
 - `scripts/check-publish.py` in this branch: no failure of the page's own. It shares the expected failures from files outside this task, the page limit and the hub link, sitemap and llms.txt entries. In a test copy of the central branch with sitemap and llms.txt entries added, the service page checks pass for this page.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 rests on the Family Law Act 1975 (Cth). Bullet 2 rests on the Family Law Act 1975
+(Cth). Bullet 3 rests on the Family Law Act 1975 (Cth). Bullet 4 rests on the Family Law Act 1975 (Cth).
+
+## Names added on 23 November 2026
+
+The urgent strip now opens with the name of its Act, the Family Law Act 1975 (Cth), which the rows above already give
+as its authority. The statement itself is unchanged.
+
+From 23 November 2026 the fee note opens, and each answer that quotes one of the firm's fees ends, with one sentence
+the page builder writes: whose fees they are, where, in Australian dollars, the day, who published them and where. It
+is a statement about the firm's own fees and not a statement of law.

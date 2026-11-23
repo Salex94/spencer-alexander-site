@@ -4,7 +4,7 @@
  "hub_label": "Family Law",
  "crumb": "Parenting arrangements",
  "service_name": "Parenting arrangements",
- "date": "2026-11-16",
+ "date": "2026-11-23",
  "title": "Parenting Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Parenting Lawyers in Box Hill, Melbourne",
  "description": "Parenting lawyers in Box Hill for what many still call custody. Consent orders for agreed arrangements are $2,895 including GST, and your first call is free.",
@@ -16,9 +16,10 @@
  ],
  "urgent": {
   "strong": "Children kept from you, or about to be taken overseas?",
-  "text": "The court can order a child's return to a parent and make orders to stop a child being taken out of Australia, and it can excuse family dispute resolution where an application is urgent. If you are in immediate danger, call 000."
+  "text": "Under the Family Law Act 1975 (Cth), the court can order a child's return to a parent and make orders to stop a child being taken out of Australia, and it can excuse family dispute resolution where an application is urgent. If you are in immediate danger, call 000."
  },
  "brief": {
+  "sources": ["Family Law Act 1975 (Cth)", "Family Law Amendment Act 2023 (Cth)", "Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)"],
   "entity": "Spencer Alexander Lawyers is a Box Hill, Melbourne law firm acting for parents and grandparents in parenting plans, consent orders and court proceedings about children, with the principal overseeing every matter.",
   "bullets": [
    "A court making a parenting order treats the child's best interests as the paramount consideration, and there is no presumption of equal shared parental responsibility.",
@@ -87,7 +88,7 @@
  },
  "fee": {
   "t": "What agreed arrangements cost.",
-  "p": "Our fixed fee for consent orders for agreed parenting arrangements is $2,895 including GST. It covers advice on what you have agreed, the application and proposed orders, filing and the sealed orders, where there are no family violence or child safety concerns for the court to look into. Consent orders for property and parenting arrangements together are <a href=\"/fees#fee-consent-orders-for-property-and-parenting\">$4,495 including GST</a>, on the same assumptions as the two separate fees. A parenting plan drawn from arrangements you have already agreed is from $1,295 including GST, with one round of changes, and further rounds cost more. Anything our <a href=\"/fees#fee-consent-orders-for-agreed-parenting-arrangements\">fees page</a> does not list, such as a disputed matter or court proceedings, is estimated in writing before substantive work begins, and the court's filing fee is paid to it directly."
+  "p": "Our fixed fee for consent orders for agreed parenting arrangements is $2,895 including GST. It covers advice on what you have agreed, the application and proposed orders, filing and the sealed orders, where there are no family violence or child safety concerns for the court to look into. Consent orders for property and parenting arrangements together are <a href=\"/fees#fee-consent-orders-for-property-and-parenting\">$3,850 including GST</a>, on the same assumptions as the two separate fees. A parenting plan drawn from arrangements you have already agreed is from $1,295 including GST, with one round of changes, and further rounds cost more. Anything our <a href=\"/fees#fee-consent-orders-for-agreed-parenting-arrangements\">fees page</a> does not list, such as a disputed matter or court proceedings, is estimated in writing before substantive work begins, and the court's filing fee for an application for consent orders, $215 since 1 July 2026, is paid to it directly."
  },
  "related": [
   {
@@ -134,11 +135,11 @@
    "a": "If you are in immediate danger, call 000. Otherwise call us the day it happens. The court can order a child's return to a parent, deal with a breach of existing orders, and excuse family dispute resolution where an application is urgent."
   }
  ],
- "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>; <a href=\"https://www.legislation.gov.au/C2023A00087/latest\" rel=\"noopener\" target=\"_blank\">Family Law Amendment Act 2023 (Cth)</a>, Schedule 1, Part 2; <a href=\"https://www.legislation.gov.au/F2021L01197/latest\" rel=\"noopener\" target=\"_blank\">Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)</a>, rules 2.04, 4.01, 4.02, 10.04, 10.05 and 10.07, and Schedule 1, Part 2.",
+ "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>; <a href=\"https://www.legislation.gov.au/C2023A00087/latest\" rel=\"noopener\" target=\"_blank\">Family Law Amendment Act 2023 (Cth)</a>, Schedule 1, Part 2; <a href=\"https://www.legislation.gov.au/F2021L01197/latest\" rel=\"noopener\" target=\"_blank\">Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)</a>, rules 2.04, 4.01, 4.02, 10.04, 10.05 and 10.07, and Schedule 1, Part 2; <a href=\"https://www.legislation.gov.au/F2023L00022/latest\" rel=\"noopener\" target=\"_blank\">Family Law (Fees) Regulations 2022 (Cth)</a>, section 2.02 and Schedule 1, item 6.",
  "cta": {
   "eyebrow": "Talk to us early",
   "title": "Speak with a parenting lawyer.",
-  "lead": "Tell us how the children's time is shared now and what you want to change, and we will tell you plainly whether and how we can help and what the next step will cost."
+  "lead": "Tell us how the children's time is shared now and what you want to change, and we will tell you plainly whether and how we can help and what the next step will cost. If it is not safe for us to email you or leave a message, the enquiry form lets you say so, and we reply only in the way you tell us is safe."
  },
  "rail_quiet": {
   "t": "Free checklist: your first 30 days after separation.",
@@ -157,7 +158,7 @@
   },
   {
    "name": "Consent orders for property and parenting together",
-   "price": "4495"
+   "price": "3850"
   }
  ]
 }

@@ -1,0 +1,688 @@
+{
+  "about": "The one maintained source for every fee the site publishes. Edit a total here, then run python3 scripts/fees.py apply with the Melbourne date; never edit a price on a page by hand. Totals include GST. Only Spencer changes a price.",
+  "minimum": 495,
+  "maximum": 4995,
+  "minimum_terms": [
+    "costs less than",
+    "\\bminimum\\b",
+    "an hour of"
+  ],
+  "other_amounts": [
+    "$1",
+    "$2",
+    "$3",
+    "$5",
+    "$7",
+    "$10",
+    "$4,000",
+    "$10,000",
+    "$100,000",
+    "$250,000",
+    "$450,000",
+    "$500,000",
+    "$800,000",
+    "$1,000,000",
+    "$2,000,000",
+    "$3,000,000",
+    "$5,000,000",
+    "$7,000,000"
+  ],
+  "hero": [
+    "single-will",
+    "probate-application",
+    "divorce-application-joint",
+    "consent-orders-for-an-agreed-property-settlement"
+  ],
+  "groups": [
+    {
+      "id": "wills-and-estates",
+      "name": "Wills and estates"
+    },
+    {
+      "id": "family-law",
+      "name": "Family law"
+    },
+    {
+      "id": "commercial-law",
+      "name": "Commercial law"
+    }
+  ],
+  "fees": [
+    {
+      "id": "estate-plan-for-one-person",
+      "group": "wills-and-estates",
+      "name": "Estate plan for one person",
+      "link": "/service-wills-and-estate-planning",
+      "schema_url": "https://www.spenceralexander.com.au/service-wills-and-estate-planning.html",
+      "total": 995,
+      "from": false,
+      "scope": "A will, an enduring power of attorney and an appointment of a medical treatment decision maker, with one advice meeting, one round of changes and one signing appointment.",
+      "terms": [
+        "estate plans? for one person",
+        "estate plan for one\\b",
+        "estate plan(?! for a couple)",
+        "three documents together",
+        "together are",
+        "for one person"
+      ]
+    },
+    {
+      "id": "estate-plan-for-a-couple",
+      "group": "wills-and-estates",
+      "name": "Estate plan for a couple",
+      "link": "/service-wills-and-estate-planning",
+      "schema_url": "https://www.spenceralexander.com.au/service-wills-and-estate-planning.html",
+      "total": 1595,
+      "from": false,
+      "scope": "Wills that mirror each other, and an enduring power of attorney and medical treatment decision maker appointment for each of you, at one advice meeting and one signing appointment.",
+      "terms": [
+        "estate plans? for a couple",
+        "for a couple"
+      ]
+    },
+    {
+      "id": "single-will",
+      "group": "wills-and-estates",
+      "name": "Single will",
+      "link": "/service-wills-and-estate-planning",
+      "schema_url": "https://www.spenceralexander.com.au/service-wills-and-estate-planning.html",
+      "total": 495,
+      "from": false,
+      "scope": "A will leaving your estate to the people you name, with up to two specific gifts, your executors and a guardian for young children if you need one, one round of changes and a signing appointment at which it is signed and witnessed correctly.",
+      "terms": [
+        "single wills?",
+        "simple wills?",
+        "\\ba will\\b",
+        "wills from"
+      ],
+      "hero_label": "Single will"
+    },
+    {
+      "id": "wills-for-a-couple",
+      "group": "wills-and-estates",
+      "name": "Wills for a couple",
+      "link": "/service-wills-and-estate-planning",
+      "schema_url": "https://www.spenceralexander.com.au/service-wills-and-estate-planning.html",
+      "total": 880,
+      "from": false,
+      "scope": "Two wills that mirror each other, on the same terms as the single will, prepared together.",
+      "terms": [
+        "wills for a couple",
+        "mirror wills",
+        "for a couple",
+        "a couple"
+      ]
+    },
+    {
+      "id": "enduring-power-of-attorney",
+      "group": "wills-and-estates",
+      "name": "Enduring power of attorney",
+      "link": "/service-powers-of-attorney",
+      "schema_url": "https://www.spenceralexander.com.au/service-powers-of-attorney.html",
+      "total": 495,
+      "from": false,
+      "scope": "Per person. Advice on choosing your attorneys and when their power starts, the document for financial and personal matters, and a signing appointment at which it is signed and witnessed as the law requires.",
+      "terms": [
+        "enduring powers? of attorney",
+        "powers? of attorney",
+        "attorney"
+      ],
+      "offer_names": [
+        "Enduring power of attorney, per person"
+      ],
+      "short": "Enduring power of attorney, per person"
+    },
+    {
+      "id": "appointment-of-a-medical-treatment-decision-maker",
+      "group": "wills-and-estates",
+      "name": "Appointment of a medical treatment decision maker",
+      "link": "/service-powers-of-attorney",
+      "schema_url": "https://www.spenceralexander.com.au/service-powers-of-attorney.html",
+      "total": 495,
+      "from": false,
+      "scope": "Per person. Advice on choosing the person who will make medical decisions if you cannot, the appointment itself, and a signing appointment at which it is witnessed as the law requires.",
+      "terms": [
+        "medical treatment decision maker",
+        "medical decision maker",
+        "medical treatment appointments?",
+        "medical appointments?"
+      ],
+      "offer_names": [
+        "Appointment of a medical treatment decision maker, per person"
+      ],
+      "short": "Medical treatment decision maker appointment, per person"
+    },
+    {
+      "id": "will-with-a-testamentary-trust-for-one-person",
+      "group": "wills-and-estates",
+      "name": "Will with a testamentary trust for one person",
+      "link": "/service-wills-and-estate-planning",
+      "schema_url": "https://www.spenceralexander.com.au/service-wills-and-estate-planning.html",
+      "total": 1595,
+      "from": true,
+      "scope": "Advice on whether a testamentary trust suits you and a will that sets up one standard discretionary trust for your children or other beneficiaries. More than one trust, or a business, company or family trust to deal with, costs more, and your fee is confirmed in writing after the first meeting.",
+      "terms": [
+        "testamentary trusts?"
+      ],
+      "short": "Will with a testamentary trust, one person"
+    },
+    {
+      "id": "wills-with-testamentary-trusts-for-a-couple",
+      "group": "wills-and-estates",
+      "name": "Wills with testamentary trusts for a couple",
+      "link": "/service-wills-and-estate-planning",
+      "schema_url": "https://www.spenceralexander.com.au/service-wills-and-estate-planning.html",
+      "total": 2595,
+      "from": true,
+      "scope": "Two wills that mirror each other, each setting up one standard testamentary trust, at one advice meeting and one signing appointment, with the same things costing more as for one person.",
+      "terms": [
+        "testamentary trusts? for a couple",
+        "testamentary trusts?.{0,80}for a couple",
+        "for a couple"
+      ],
+      "short": "Wills with testamentary trusts, a couple"
+    },
+    {
+      "id": "probate-application",
+      "group": "wills-and-estates",
+      "name": "Probate application",
+      "link": "/service-probate",
+      "schema_url": "https://www.spenceralexander.com.au/service-probate.html",
+      "total": 1980,
+      "from": false,
+      "scope": "For a straightforward estate, meaning an original will that was properly signed, executors who are able to apply, assets in Victoria and no caveat or challenge. We prepare and file the application, publish the notice of intention to apply and pay its fee, answer the Probate Office's routine questions and send you the grant. The Court's rules set a scale for how much of a lawyer's charge for obtaining a grant can be paid from the estate, so how our fee will be met is confirmed in writing before we start.",
+      "terms": [
+        "probate application",
+        "application for probate",
+        "probate"
+      ],
+      "hero_label": "Probate application"
+    },
+    {
+      "id": "letters-of-administration",
+      "group": "wills-and-estates",
+      "name": "Letters of administration",
+      "link": "/service-probate",
+      "schema_url": "https://www.spenceralexander.com.au/service-probate.html",
+      "total": 2178,
+      "from": false,
+      "scope": "For a straightforward estate where there is no will, the person applying has the first right to do so and nobody disputes who inherits. Everything in the probate application, plus working out who is entitled and obtaining any consents needed. It assumes the Court does not ask for a surety guarantee, which it can require in some cases.",
+      "terms": [
+        "letters of administration",
+        "administration"
+      ],
+      "short": "Letters of administration, no will"
+    },
+    {
+      "id": "divorce-application-joint",
+      "group": "family-law",
+      "name": "Divorce application, joint",
+      "link": "/service-divorce",
+      "schema_url": "https://www.spenceralexander.com.au/service-divorce.html",
+      "total": 995,
+      "from": false,
+      "scope": "Checking that you can apply, preparing the joint application, helping you both sign it, filing it and dealing with the Court until the divorce order is made, where you have been separated for at least 12 months and did not live under the one roof in that time.",
+      "terms": [
+        "joint divorce application",
+        "joint application",
+        "divorce application, joint",
+        "\\bjoint\\b",
+        "divorce from"
+      ],
+      "hero_label": "Joint divorce"
+    },
+    {
+      "id": "divorce-application-sole",
+      "group": "family-law",
+      "name": "Divorce application, sole",
+      "link": "/service-divorce",
+      "schema_url": "https://www.spenceralexander.com.au/service-divorce.html",
+      "total": 1095,
+      "from": false,
+      "scope": "Everything in the joint application, plus arranging service on your spouse, the affidavit proving service and attending the hearing if the Court requires it, where your spouse can be served in Australia and does not oppose the divorce.",
+      "terms": [
+        "sole divorce application",
+        "sole application",
+        "divorce application, sole",
+        "\\bsole\\b"
+      ]
+    },
+    {
+      "id": "consent-orders-for-an-agreed-property-settlement",
+      "group": "family-law",
+      "name": "Consent orders for an agreed property settlement",
+      "link": "/service-property-settlement",
+      "schema_url": "https://www.spenceralexander.com.au/service-property-settlement.html",
+      "total": 3025,
+      "from": false,
+      "scope": "Advice on the agreement you have reached, the application for consent orders and the proposed orders, including splitting one superannuation interest and transferring one property, the notice the Court's rules require to the super fund, filing and the sealed orders. It assumes you have exchanged full financial disclosure and no company, trust or business is involved.",
+      "terms": [
+        "consent orders for an agreed property settlement",
+        "property settlement",
+        "property",
+        "agreed settlement",
+        "consent orders"
+      ],
+      "short": "Consent orders, property settlement",
+      "hero_label": "Property consent orders"
+    },
+    {
+      "id": "consent-orders-for-agreed-parenting-arrangements",
+      "group": "family-law",
+      "name": "Consent orders for agreed parenting arrangements",
+      "link": "/service-parenting-arrangements",
+      "schema_url": "https://www.spenceralexander.com.au/service-parenting-arrangements.html",
+      "total": 2895,
+      "from": false,
+      "scope": "Advice on the arrangements you have agreed, the application and the proposed parenting orders, filing and the sealed orders, where there are no family violence or child safety concerns for the Court to look into.",
+      "terms": [
+        "consent orders for agreed parenting arrangements",
+        "parenting consent orders",
+        "parenting",
+        "agreed arrangements",
+        "consent orders"
+      ],
+      "short": "Consent orders, parenting arrangements"
+    },
+    {
+      "id": "consent-orders-for-property-and-parenting",
+      "group": "family-law",
+      "name": "Consent orders for property and parenting together",
+      "link": "/service-property-settlement",
+      "schema_url": "https://www.spenceralexander.com.au/service-property-settlement.html",
+      "total": 3850,
+      "from": false,
+      "scope": "One application for consent orders covering both an agreed property settlement and agreed parenting arrangements, with everything the two prices above include and on the same assumptions as each.",
+      "terms": [
+        "property and parenting together",
+        "property and parenting",
+        "\\bboth\\b",
+        "\\btogether\\b",
+        "also cover"
+      ],
+      "short": "Consent orders, property and parenting together"
+    },
+    {
+      "id": "parenting-plan",
+      "group": "family-law",
+      "name": "Parenting plan",
+      "link": "/service-parenting-arrangements",
+      "schema_url": "https://www.spenceralexander.com.au/service-parenting-arrangements.html",
+      "total": 1295,
+      "from": true,
+      "scope": "A written plan built from arrangements you have already agreed, covering regular time, holidays and special days, changeovers and decisions, with advice on what a plan does and does not do, including that it cannot be enforced the way court orders can, and one round of changes. Further rounds of changes cost more.",
+      "terms": [
+        "parenting plans?"
+      ]
+    },
+    {
+      "id": "binding-financial-agreement",
+      "group": "family-law",
+      "name": "Binding financial agreement",
+      "link": "/service-binding-financial-agreements",
+      "schema_url": "https://www.spenceralexander.com.au/service-binding-financial-agreements.html",
+      "total": 2895,
+      "from": true,
+      "scope": "Per party. The advice the law requires for the agreement to be binding, drafting from terms you have agreed, one round of changes with the other party's lawyer, the certificate of independent legal advice and signing. A business, company or trust, more than two properties or negotiating the terms costs more.",
+      "terms": [
+        "binding financial agreements?",
+        "financial agreements?",
+        "prenup",
+        "drafted",
+        "agreements from",
+        "per party"
+      ],
+      "short": "Binding financial agreement, per party"
+    },
+    {
+      "id": "advice-on-a-binding-financial-agreement",
+      "group": "family-law",
+      "name": "Advice on a binding financial agreement drafted by the other party",
+      "link": "/service-binding-financial-agreements",
+      "schema_url": "https://www.spenceralexander.com.au/service-binding-financial-agreements.html",
+      "total": 1100,
+      "from": true,
+      "scope": "Per party. Reviewing an agreement the other party's lawyer has prepared, the advice the law requires before you sign it, a meeting to go through it and the certificate of independent legal advice. Negotiating changes, or an agreement involving a business, company or trust, costs more.",
+      "terms": [
+        "drafted by the other party",
+        "the other party",
+        "reviewed",
+        "review",
+        "advice"
+      ],
+      "short": "Advice on an agreement the other party drafted"
+    },
+    {
+      "id": "lease-review-for-a-tenant",
+      "group": "commercial-law",
+      "name": "Lease review for a tenant",
+      "link": "/service-commercial-leases",
+      "schema_url": "https://www.spenceralexander.com.au/service-commercial-leases.html",
+      "total": 795,
+      "from": true,
+      "scope": "A written summary of the terms that matter, including rent reviews, outgoings, options, fit out and make good, assignment and guarantees, with recommended changes and a call to go through it. For a retail lease it covers the landlord's disclosure statement. A non-standard lease or more than one premises costs more.",
+      "terms": [
+        "lease review",
+        "review of (?:a|your|the) lease",
+        "lease"
+      ]
+    },
+    {
+      "id": "company-set-up",
+      "group": "commercial-law",
+      "name": "Company set up",
+      "link": "/service-shareholder-agreements",
+      "schema_url": "https://www.spenceralexander.com.au/service-shareholder-agreements.html",
+      "total": 495,
+      "from": false,
+      "scope": "Registering one proprietary company with up to two directors and shareholders, with its constitution, consents, register of members, share certificates and first resolutions, and an ABN and GST registration if needed. ASIC's registration fee is passed on at cost and carries no GST.",
+      "terms": [
+        "company set up",
+        "setting up a company",
+        "registering (?:a|one) (?:proprietary )?company",
+        "setting up a (?:proprietary )?company",
+        "\\bcompany\\b"
+      ]
+    },
+    {
+      "id": "shareholders-agreement",
+      "group": "commercial-law",
+      "name": "Shareholders agreement",
+      "link": "/service-shareholder-agreements",
+      "schema_url": "https://www.spenceralexander.com.au/service-shareholder-agreements.html",
+      "total": 1095,
+      "from": true,
+      "scope": "For one private company with up to three shareholders who have agreed the commercial terms: decisions, share transfers, deadlock, exit and valuation, restraints and disputes, with one round of changes. More shareholders, investors or employee shares cost more.",
+      "terms": [
+        "shareholders? agreements?"
+      ]
+    },
+    {
+      "id": "terms-of-trade",
+      "group": "commercial-law",
+      "name": "Terms of trade",
+      "link": null,
+      "schema_url": null,
+      "total": 1195,
+      "from": true,
+      "scope": "One set of terms for a business selling goods or services, covering orders, payment and credit, delivery, retention of title and liability, drafted to work with the Australian Consumer Law, with one round of changes. Terms for more than one business, or an industry code to follow, cost more.",
+      "terms": [
+        "terms of trade",
+        "terms and conditions"
+      ]
+    },
+    {
+      "id": "review-of-a-contract-to-buy-a-business",
+      "group": "commercial-law",
+      "name": "Review of a contract to buy a business",
+      "link": "/service-buying-or-selling-a-business",
+      "schema_url": "https://www.spenceralexander.com.au/service-buying-or-selling-a-business.html",
+      "total": 895,
+      "from": true,
+      "scope": "A written report on the main risks in the contract and the vendor's disclosure, including price, stock and equipment, the vendor's restraint, employees, conditions and settlement, with a call to go through it. A franchise or a purchase of shares costs more.",
+      "terms": [
+        "contract to buy a business",
+        "business purchase",
+        "contract of sale",
+        "buy a business",
+        "buying a business",
+        "contract review"
+      ]
+    },
+    {
+      "id": "letter-of-demand",
+      "group": "commercial-law",
+      "name": "Letter of demand",
+      "link": "/service-debt-recovery",
+      "schema_url": "https://www.spenceralexander.com.au/service-debt-recovery.html",
+      "total": 495,
+      "from": false,
+      "scope": "A letter on the firm's letterhead to one debtor for an undisputed debt, setting out what is owed, any interest the contract allows and a deadline to pay.",
+      "terms": [
+        "letters? of demand"
+      ]
+    }
+  ],
+  "charges": {
+    "about": "What the courts and ASIC charge, as each body publishes it. These are not the firm's fees. Re-read each source before valid_to passes, change the amounts and the dates here, and run scripts/fees.py apply. The check fails once valid_to has passed.",
+    "valid_from": "2026-07-01",
+    "valid_to": "2027-06-30",
+    "read": "2026-11-23",
+    "sources": [
+      {
+        "label": "the Supreme Court's Probate Office fee list",
+        "url": "https://www.supremecourt.vic.gov.au/wills-and-probate/probate-office-fees"
+      },
+      {
+        "label": "the Commonwealth's notice of family law fees from 1 July 2026",
+        "url": "https://www.legislation.gov.au/C2026G00343/asmade/text"
+      },
+      {
+        "label": "ASIC's fee list",
+        "url": "https://www.asic.gov.au/for-business-and-companies/forms-and-fees/all-fees/fees-for-commonly-lodged-documents"
+      }
+    ],
+    "groups": [
+      {
+        "id": "probate",
+        "heading": "Supreme Court of Victoria: filing an application for probate or letters of administration, by the gross value of the assets in Victoria"
+      },
+      {
+        "id": "family",
+        "heading": "Federal Circuit and Family Court of Australia"
+      },
+      {
+        "id": "asic",
+        "heading": "Australian Securities and Investments Commission"
+      }
+    ],
+    "items": [
+      {
+        "id": "probate-filing-under-250k",
+        "group": "probate",
+        "label": "Less than $250,000",
+        "amount": "0",
+        "terms": [
+          "filing fee",
+          "court.s fee",
+          "court fee",
+          "supreme court",
+          "court has charged",
+          "the court charges"
+        ]
+      },
+      {
+        "id": "probate-filing-250k",
+        "group": "probate",
+        "label": "$250,000 or more but less than $500,000",
+        "amount": "544",
+        "terms": [
+          "filing fee",
+          "court.s fee",
+          "court fee",
+          "supreme court",
+          "court has charged",
+          "the court charges"
+        ]
+      },
+      {
+        "id": "probate-filing-500k",
+        "group": "probate",
+        "label": "$500,000 or more but less than $1 million",
+        "amount": "1088",
+        "terms": [
+          "filing fee",
+          "court.s fee",
+          "court fee",
+          "supreme court",
+          "court has charged",
+          "the court charges"
+        ]
+      },
+      {
+        "id": "probate-filing-1m",
+        "group": "probate",
+        "label": "$1 million or more but less than $2 million",
+        "amount": "2538.70",
+        "terms": [
+          "filing fee",
+          "court.s fee",
+          "court fee",
+          "supreme court",
+          "court has charged",
+          "the court charges"
+        ]
+      },
+      {
+        "id": "probate-filing-2m",
+        "group": "probate",
+        "label": "$2 million or more but less than $3 million",
+        "amount": "5077.40",
+        "terms": [
+          "filing fee",
+          "court.s fee",
+          "court fee",
+          "supreme court",
+          "court has charged",
+          "the court charges"
+        ]
+      },
+      {
+        "id": "probate-filing-3m",
+        "group": "probate",
+        "label": "$3 million or more but less than $5 million",
+        "amount": "7598.80",
+        "terms": [
+          "filing fee",
+          "court.s fee",
+          "court fee",
+          "supreme court",
+          "court has charged",
+          "the court charges"
+        ]
+      },
+      {
+        "id": "probate-filing-5m",
+        "group": "probate",
+        "label": "$5 million or more but less than $7 million",
+        "amount": "12693.40",
+        "terms": [
+          "filing fee",
+          "court.s fee",
+          "court fee",
+          "supreme court",
+          "court has charged",
+          "the court charges"
+        ]
+      },
+      {
+        "id": "probate-filing-7m",
+        "group": "probate",
+        "label": "$7 million or more",
+        "amount": "17770.80",
+        "terms": [
+          "filing fee",
+          "court.s fee",
+          "court fee",
+          "supreme court",
+          "court has charged",
+          "the court charges"
+        ]
+      },
+      {
+        "id": "probate-notice",
+        "group": "probate",
+        "label": "Posting the notice of intention to apply on the Court's online probate system",
+        "amount": "38",
+        "note": "included in our probate and administration fees",
+        "terms": [
+          "notice of intention",
+          "notice fee"
+        ]
+      },
+      {
+        "id": "divorce-filing",
+        "group": "family",
+        "label": "Divorce application",
+        "amount": "1170",
+        "terms": [
+          "filing fee",
+          "court.s own",
+          "court.s fee",
+          "divorce"
+        ]
+      },
+      {
+        "id": "divorce-filing-reduced",
+        "group": "family",
+        "label": "Divorce application, reduced fee for people who qualify",
+        "amount": "390",
+        "terms": [
+          "reduced fee",
+          "reduced"
+        ]
+      },
+      {
+        "id": "consent-orders-filing",
+        "group": "family",
+        "label": "Application for consent orders",
+        "amount": "215",
+        "terms": [
+          "filing fee",
+          "court.s fee",
+          "court.s own"
+        ]
+      },
+      {
+        "id": "asic-company-registration",
+        "group": "asic",
+        "label": "Registering a proprietary company",
+        "amount": "636",
+        "terms": [
+          "asic",
+          "registration fee"
+        ]
+      }
+    ]
+  },
+  "derived": [
+    {
+      "id": "probate-example-total",
+      "about": "The worked example on the probate page and article: our probate fee plus the Court's filing fee for assets in Victoria of $500,000 or more but less than $1 million.",
+      "parts": [
+        "probate-application",
+        "probate-filing-500k"
+      ],
+      "terms": [
+        "together come to",
+        "come to"
+      ]
+    },
+    {
+      "id": "estate-plan-one-separately",
+      "about": "What the three documents in an estate plan for one person come to when each is bought at its own published fee.",
+      "parts": [
+        "single-will",
+        "enduring-power-of-attorney",
+        "appointment-of-a-medical-treatment-decision-maker"
+      ],
+      "terms": [
+        "bought separately, a single will"
+      ]
+    },
+    {
+      "id": "estate-plan-couple-separately",
+      "about": "What the documents in an estate plan for a couple come to when each is bought at its own published fee: wills for a couple, and an enduring power of attorney and an appointment for each person.",
+      "parts": [
+        "wills-for-a-couple",
+        "enduring-power-of-attorney",
+        "enduring-power-of-attorney",
+        "appointment-of-a-medical-treatment-decision-maker",
+        "appointment-of-a-medical-treatment-decision-maker"
+      ],
+      "terms": [
+        "bought separately, wills for a couple"
+      ]
+    }
+  ]
+}

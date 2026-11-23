@@ -36,13 +36,28 @@ def attr(s):
     return html.escape(s, quote=True)
 
 
-def main(path):
+def main(path, outdir=None):
     c = json.load(open(path, encoding="utf-8"))
     hub = open(os.path.join(ROOT, c["hub"] + ".html"), encoding="utf-8").read()
     slug, url = c["slug"], SITE + c["slug"] + ".html"
     date = c["date"]
     y, m, d = (int(x) for x in date.split("-"))
     month = "%s %d" % (MONTHS[m - 1], y)
+    long_date = "%d %s %d" % (d, MONTHS[m - 1], y)
+    # A fee note that quotes a price opens by saying whose fees these are, where, in what currency and as at
+    # what day, so the paragraph can be quoted alone. It is written here and never in a content file.
+    fees_line = ('These are the fees of Spencer Alexander Lawyers in Box Hill, Victoria, in Australian dollars, as at '
+                 '<time class="fees-asat" datetime="%s">%s</time>, published by Spencer Alexander, Principal, at '
+                 '<a href="/fees">spenceralexander.com.au/fees</a>.' % (date, long_date))
+    if re.search(r"\$\d", c["fee"]["p"]):
+        c["fee"]["p"] = fees_line + " " + c["fee"]["p"]
+    # An answer that quotes one of the firm's fees ends with the same sentence, in the page and in its markup,
+    # because an answer is the passage most often lifted for a question about cost.
+    fee_totals = {"${:,}".format(f_["total"]) for f_ in
+                  json.load(open(os.path.join(ROOT, "playbooks", "fees.json"), encoding="utf-8"))["fees"]}
+    for q in c["faqs"]:
+        if set(re.findall(r"\$\d{1,3}(?:,\d{3})*", q["a"])) & fee_totals:
+            q["a"] = q["a"].rstrip() + " " + fees_line
 
     # ---- head: the hub's, with this page's own title, description and addresses
     head_end = hub.index('  <script type="application/ld+json">')
@@ -123,8 +138,23 @@ def main(path):
             <a href="tel:+61391258355">Call (03) 9125 8355 &rarr;</a>
           </div>
 ''' % (c["urgent"]["strong"], c["urgent"]["text"]))
-    body.append('          <div class="brief">\n            <span class="brief__k">In brief</span>\n            <p>%s</p>\n            <ul>\n%s            </ul>\n          </div>\n'
-                % (c["brief"]["entity"], "".join("              <li>%s</li>\n" % b for b in c["brief"]["bullets"])))
+    # The summary ends by saying who published it, when, and the legislation its statements rest on, so that
+    # it can be quoted alone. The names are the page's own Sources, and the line is written here from the page's
+    # date and "sources" under "brief" in the content file, each of which must be in the page's Sources line.
+    named = c["brief"].get("sources") or []
+    if not named:
+        raise SystemExit("%s: brief needs sources, the legislation behind the In brief block's statements, taken "
+                         "from the page's claims register" % path)
+    stray = [a for a in named if ">%s</a>" % a not in c.get("sources", "")]
+    if stray:
+        raise SystemExit("%s: brief sources not in the page's Sources line: %s" % (path, ", ".join(stray)))
+    # the year and the jurisdiction stay on the same line as the last word of the title
+    held = [re.sub(r" (\d{4}) \((Vic|Cth)\)$", r"&nbsp;\1&nbsp;(\2)", a) for a in named]
+    listed = held[0] if len(held) == 1 else ", ".join(held[:-1]) + " and " + held[-1]
+    by = ('Published by Spencer Alexander, Principal, and updated on <time datetime="%s">%s</time>. Legislation: %s.'
+          % (date, long_date, listed))
+    body.append('          <div class="brief">\n            <span class="brief__k">In brief</span>\n            <p>%s</p>\n            <ul>\n%s            </ul>\n            <p class="brief__by">%s</p>\n          </div>\n'
+                % (c["brief"]["entity"], "".join("              <li>%s</li>\n" % b for b in c["brief"]["bullets"]), by))
     for i, sec in enumerate(c["sections"]):
         body.append('''
           <div class="section-head svc-head"%s>
@@ -201,10 +231,10 @@ def main(path):
         <div class="faq-grid">
 %s        </div>
         <a class="faq-more" href="/faq">More questions answered on our FAQ page %s</a>
-%s        <p style="margin-top:28px;font-size:var(--text-sm);color:var(--text-subtle);">This page reflects the law applying in Victoria as at %s. It is general information only, not legal advice, and does not take your circumstances into account.</p>
+%s        <p class="page-close" style="margin-top:28px;font-size:var(--text-sm);color:var(--text-subtle);">Published by Spencer Alexander, Principal, and updated on <time datetime="%s">%s</time>. This page reflects the law applying in Victoria as at %s. It is general information only, not legal advice, and does not take your circumstances into account.</p>
       </div>
     </section>
-''' % (rel, c["faq_h2"], qs, ARROW, sources, month))
+''' % (rel, c["faq_h2"], qs, ARROW, sources, date, long_date, month))
 
     out.append('''
     <section class="field-wine cta">
@@ -226,10 +256,14 @@ def main(path):
 ''' % (c["cta"]["eyebrow"], c["cta"]["title"], c["cta"]["lead"], PHONE))
     out.append(tail)
     page = "".join(out)
-    open(os.path.join(ROOT, slug + ".html"), "w", encoding="utf-8").write(page)
+    open(os.path.join(outdir or ROOT, slug + ".html"), "w", encoding="utf-8").write(page)
     print("built %s.html, %d words visible" % (slug, len(text(re.search(r"<main.*?</main>", page, re.S).group(0)).split())))
 
 
 if __name__ == "__main__":
-    for p in sys.argv[1:]:
-        main(p)
+    args = sys.argv[1:]
+    out = None
+    if args and args[0] == "--out":        # build somewhere else, which is how the fee check compares a fresh build
+        out, args = args[1], args[2:]
+    for p in args:
+        main(p, out)

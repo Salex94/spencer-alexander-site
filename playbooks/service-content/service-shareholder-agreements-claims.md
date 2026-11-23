@@ -32,7 +32,7 @@ Both downloaded today from api.prod.legislation.gov.au, each listed by the Regis
 
 - Directors' duties, the sole director and sole shareholder company's special rules, share classes, employee share schemes and investor terms are not described.
 - Restraints are named only as a topic an agreement covers; whether a restraint is enforceable is general law that turns on its reasonableness, and nothing about it is stated.
-- ASIC's registration fee is not given as a figure, because it rises each 1 July; the page says it is passed on at cost. Whether it attracts GST is not stated.
+- From 23 Nov 2026 the page states ASIC's registration fee, $636 since 1 July 2026, read from ASIC's fee list on 23 Nov 2026 and recorded in `charges` in playbooks/fees.json, and says it is passed on at cost. Whether it attracts GST is not stated.
 - Practice statements, not law: when owners call, that equal owners need an agreement most, that a constitution is commonly a standard document, and that we work with your accountant, which is the hub's wording.
 - What to have with you names the constitution, an ASIC company extract, any owners' agreement, the latest financial statements, or for a new company the proposed directors, shareholders and shareholdings, all things owners plainly hold or know; it states no legal requirement and keeps the line that having little on paper is fine.
 - One spelling throughout: "shareholder agreement", as in the title the brief set, the h1, the hub's block and the article. The fees page names the row "Shareholders agreement"; the content review noted the two forms, and the page links that row by its id.
@@ -50,3 +50,24 @@ The page carries five, as `playbooks/service-pages.md` and the gate require. A s
 - Built with `scripts/build-service-page.py`: 1,771 visible words in `<main>`, including the hub's rail cards.
 - `scripts/check_style.py` on the page's visible text: PASS, with a note only for paragraph shape.
 - `scripts/check-publish.py` in this branch: "prices quoted elsewhere match fees.html" fails on $660 only because this branch's fees.html still shows the old $1,210; the central pass's fees.html carries $660 and the check passes there. The page shares the other expected failures from files outside this task, the page limit and the hub link, sitemap and llms.txt entries. In a test copy of the central branch with sitemap and llms.txt entries added, the service page checks pass for this page.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 rests on the Corporations Act 2001 (Cth). Bullet 2 rests on the Corporations Act
+2001 (Cth). Bullet 3 rests on the Corporations Act 2001 (Cth). Bullet 4 rests on the Corporations Act 2001 (Cth). Part
+of what the block says rests on general law or practice, as the rows for those statements record, so the line names
+legislation only, as the page's Sources line does.
+
+## Names added on 23 November 2026
+
+The fee note and the answer to question 5 now say ASIC's registration fee is $636 on ASIC's fee list since 1 July
+2026, the list recorded with its address under charges in playbooks/fees.json. In brief bullet 1 opens Under the
+Corporations Act 2001 (Cth), the Act its row cites. No statement of law changed.
+
+From 23 November 2026 the fee note opens, and each answer that quotes one of the firm's fees ends, with one sentence
+the page builder writes: whose fees they are, where, in Australian dollars, the day, who published them and where. It
+is a statement about the firm's own fees and not a statement of law.

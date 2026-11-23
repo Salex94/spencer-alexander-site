@@ -76,7 +76,7 @@ The Sources line names the Family Law Act alone, because the page relies on more
 | FAQ 5 | The court can deal with a breach of existing orders. | FLA Part VII, Division 13A |
 | FAQ 5 | The court can excuse family dispute resolution where an application is urgent. | FLA s 60I(9)(d) |
 | Fee paragraph | Consent orders for agreed parenting arrangements $3,025 including GST, consent orders for property and parenting together $3,850 including GST (added 9 Nov 2026), and a parenting plan from $1,452 including GST with one round of changes, with the scope and assumptions fees.html gives. | fees.html as at 28 Sep 2026 and the fee list approved 9 Nov 2026; only the single figure fees are in `offers` |
-| Fee paragraph | The court's filing fee is separate and paid to it directly. | Family Law (Fees) Regulations 2022 Sch 1 item 6; no figure stated |
+| Fee paragraph | The court's filing fee is separate and paid to it directly. | Family Law (Fees) Regulations 2022 Sch 1 item 6. From 23 Nov 2026 the page states the fee, $215 since 1 July 2026, from gazette notice C2026G00343 as recorded in `charges` in playbooks/fees.json |
 
 ## Advice and practice statements, not law
 
@@ -98,3 +98,18 @@ The Sources line names the Family Law Act alone, because the page relies on more
 
 - Whether any proclamation or amendment after 10 June 2025 affects Part VII. The API reported the Family Law Act compilation as current with no unincorporated amendments on 28 September 2026.
 - The Australian Solicitors' Conduct Rules were not read.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 rests on the Family Law Act 1975 (Cth) and the Family Law Amendment Act 2023
+(Cth). Bullet 2 rests on the Family Law Act 1975 (Cth). Bullet 3 rests on the Family Law Act 1975 (Cth) and the
+Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth).
+
+## Names added on 23 November 2026
+
+The urgent strip now opens with the name of its Act, the Family Law Act 1975 (Cth), which the rows above already give
+as its authority. The statement itself is unchanged.

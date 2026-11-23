@@ -21,7 +21,7 @@ Each Victorian Act was read in the authorised Word version linked from its legis
 | Brief bullet 4, process step 2 | Two adult witnesses, one a doctor or a person authorised to witness affidavits, who sign in front of the person and each other and certify that the person appeared to sign freely and to have capacity. | POA ss 33(1)(b), 35(1)(b), 35(2)(a), 36(1)(a); MTPD s 36(1)(a) to (c) and (2)(a), (b), with s 3, definition of authorised witness. "In front of" includes presence by audio visual link under the remote witnessing procedure, POA ss 5A and 33(4), which the page does not describe. |
 | Process step 2 | For a power of attorney, neither witness can be an attorney under it, the person's relative, a relative of an attorney, the person's care worker or accommodation provider, or a person signing at the person's direction; for a medical treatment appointment, neither can be a person it appoints. | POA s 35(2)(b) to (d); MTPD s 36(2)(d) and s 37(b). Every limb of s 35(2) is stated. Following the Act's words, the page says "an attorney under it" and does not extend the bar to an alternative attorney, which the accuracy routine settled on 27 October 2026. |
 | Process step 3 | Each attorney signs a witnessed acceptance before the power is effective for them; each medical treatment decision maker accepts in writing, witnessed by an adult, before the appointment comes into effect. | POA ss 37(1) and 38(1); MTPD ss 28(1)(g) and 29. |
-| EPA block | Attorneys can act together, alone or by majority; alternatives; when the power starts; conditions and instructions; the prescribed form; eligibility checked. | POA ss 24, 30(3), 31, 32 and 39. |
+| EPA block | Attorneys can act together, alone or by majority; alternatives; when the power starts; conditions and instructions; the prescribed form; eligibility checked. | POA ss 24, 30(3), 31, 32 and 39; Powers of Attorney Regulations 2025 (Vic) reg 6(1), which prescribes the form section 32 requires, read 23 Nov 2026 in version 001. |
 | FAQ 2 | Eligibility: an adult, not insolvent under administration, not the person's paid care worker, health provider or accommodation provider, and for financial matters a person convicted or found guilty of an offence involving dishonesty only if disclosed and recorded. | POA s 28(1)(a) to (d), with s 3, definitions of care worker and offence involving dishonesty. Every limb is stated. Trustee companies, s 28(2), are left out so no condition goes missing. |
 | Medical block | An appointed decision maker decides when the person lacks capacity, must make the decision they reasonably believe the person would have made, and more than one can be listed in order, the first reasonably available, willing and able acting. | MTPD ss 26, 28(1)(e), 28(2), 55(1), 58(1) and 61(1). |
 | Medical block | Advance care directives record instructions or values about treatment. | MTPD ss 6 and 12. Named only. |
@@ -64,3 +64,23 @@ The task brief asked for six FAQs. `playbooks/service-pages.md` and the gate's "
 
 - The rail call card, header menus and footer come from the hub when the page is built, so rebuilding after the hubs change brings in the settled rail wording.
 - The hub block, the fees rows and the OfferCatalog already link `/service-powers-of-attorney` on the central branch.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 rests on the Powers of Attorney Act 2014 (Vic). Bullet 2 rests on the Powers of
+Attorney Act 2014 (Vic). Bullet 3 rests on the Powers of Attorney Act 2014 (Vic) and the Medical Treatment Planning
+and Decisions Act 2016 (Vic). Bullet 4 rests on the Powers of Attorney Act 2014 (Vic) and the Medical Treatment
+Planning and Decisions Act 2016 (Vic).
+
+## Names added on 23 November 2026
+
+The urgent strip now opens with the name of its Act, the Powers of Attorney Act 2014 (Vic), which the rows above
+already give as its authority. The statement itself is unchanged.
+
+From 23 November 2026 the fee note opens, and each answer that quotes one of the firm's fees ends, with one sentence
+the page builder writes: whose fees they are, where, in Australian dollars, the day, who published them and where. It
+is a statement about the firm's own fees and not a statement of law.

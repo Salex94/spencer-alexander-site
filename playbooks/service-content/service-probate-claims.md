@@ -80,7 +80,7 @@ not re-read today, APA s 16 and Part IA among them, and were left word for word 
 | Process 2 | Affidavit exhibiting the will, a certified copy of the death certificate and, where the Registrar asks, an inventory | Rules 2.04(2)(d), (3), 4.04(2)(d), (3) |
 | Process 3 | The Registrar makes the grant when satisfied; a doubtful application, or one met by a caveat, goes to the court | APA s 12(1), (2) |
 | Fee note and FAQ 3 | $1,980 and, where there is no will, $2,178 including GST, what each covers and assumes, the fee for publishing the notice included in each price under ACL s 48(7)(a), and for administration no surety guarantee required (9 Nov 2026) | The fee list Spencer approved on 9 Nov 2026, matching the central pass's fees.html rows; notice fee Supreme Court (Fees) Regulations 2018 Sch 1 item 4.1(a); surety APA s 57(1) and Rules r 7.01 |
-| FAQ 3 | The court's filing fee is scaled to the estate's gross value and is nil where that value is less than $250,000 | Fees Regulations Sch 1 item 4.2(a) to (h); the threshold is a fixed dollar band, not indexed |
+| FAQ 3 | The court's filing fee depends on the gross value of the estate's assets in Victoria: nil where that is less than $250,000, then $544, $1,088 and $2,538.70 for the next three bands, with one worked total of $3,068 | Fees Regulations Sch 1 item 4.2(a) to (h), and the Court's Probate Office fee list effective 1 July 2026, read 23 Nov 2026. The amounts come from `charges` in playbooks/fees.json and move with it |
 | FAQ 3 | The court's fees come out of the estate, and so ordinarily do the legal costs of administering it after the grant (9 Nov 2026, replacing "Before any work begins, we confirm in writing how these costs will be paid", which had itself replaced "These costs are ordinarily paid from the estate" on 28 Sep 2026) | Trustee Act s 36(2) with s 3, trustee including a personal representative; APA s 39A(2); "ordinarily" kept. The wording is the rule 9.01 wording verified by three independent checks in playbooks/audit-2026-11-09/legal-corrections.md |
 | FAQ 3 | A lawyer's charge for the ordinary work of obtaining the grant is different: the Supreme Court's rules set a scale for how much of it can be paid from the estate, and any amount above that scale falls to the executor unless the beneficiaries whose shares would bear it agree in writing to the estate paying it | Rules r 9.01 and the Appendix, with r 9.03 allowing fees, charges and expenses and special or unusual work on top; the consequence is the general law position recorded in the audit's rule 9.01 analysis, used in the audit's verified words. The page never says the grant fee is paid from the estate |
 | FAQ 1 | Joint tenancy property passes to the survivor; a share held as tenants in common forms part of the estate | General law of survivorship, not statute; consistent with the probate article and checklist |
@@ -108,7 +108,7 @@ matters.
 - Section 99A(1), (2), (3)(b) and (4), which protect maintenance distributions, distributions made
   after written consent, and distributions after a notice of intended claim lapses at three months,
   are left out for length. The page states only the no notice limb, as a sufficient condition.
-- No court fee figure, and no indexed figure, appears. The $250,000 band is confirmed in item 4.2(a).
+- From 23 Nov 2026 the page states the Court's filing fee for the first four bands and one worked total, each dated since 1 July 2026 and drawn from `charges` in playbooks/fees.json, which the fee check reads. The $250,000 band is confirmed in item 4.2(a).
 
 ## Wrong in law elsewhere, for Spencer
 
@@ -124,3 +124,24 @@ matters.
 - faq.html, probate cost answer: "a smaller charge for publishing the notice" is not smaller for an
   estate under $250,000 gross, where the filing fee is nil and the notice fee under item 4.1(a) still
   applies. A minor imprecision.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 rests on the Administration and Probate Act 1958 (Vic) and the Supreme Court
+(Administration and Probate) Rules 2023 (Vic). Bullet 2 rests on the Administration and Probate Act 1958 (Vic). Bullet
+3 rests on the Administration and Probate Act 1958 (Vic). Part of what the block says rests on general law or
+practice, as the rows for those statements record, so the line names legislation only, as the page's Sources line
+does.
+
+## Names added on 23 November 2026
+
+The urgent strip now opens with the name of its Act, the Administration and Probate Act 1958 (Vic), which the rows
+above already give as its authority. The statement itself is unchanged.
+
+From 23 November 2026 the fee note opens, and each answer that quotes one of the firm's fees ends, with one sentence
+the page builder writes: whose fees they are, where, in Australian dollars, the day, who published them and where. It
+is a statement about the firm's own fees and not a statement of law.

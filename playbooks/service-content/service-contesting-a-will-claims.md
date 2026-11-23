@@ -89,3 +89,24 @@ A copy of the will if the caller has one, the grant if one has been made, letter
 - faq.html, "Is there a time limit to contest a will or make a family provision claim?" and "What is the difference between contesting a will and challenging its validity?": both state the six month limit without the extension rule in APA s 99(2) and (3).
 - insight-contesting-a-will.html, "How long do I have to make a claim?": "executors are effectively protected if they distribute after the window closes" omits the no notice condition in APA s 99A(3).
 - wills-and-estates.html urgent strip, "an estate can be distributed once that period passes", and "In brief", witnesses described as adults: already in today's legal audit, items 13 and 8.
+
+## The In brief line, 23 November 2026
+
+From 23 November 2026 the page builder ends the In brief block with one line: Published by Spencer Alexander,
+Principal, the day the page was updated, and the legislation behind the block's statements. The names are in `sources`
+under `brief` in the content file. They were taken from the rows of this register on 23 November 2026, statement by
+statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
+of law on the page changed. Bullet 1 rests on the Administration and Probate Act 1958 (Vic). Bullet 2 rests on the
+Administration and Probate Act 1958 (Vic). Bullet 3 rests on the Administration and Probate Act 1958 (Vic) and the
+Supreme Court (Administration and Probate) Rules 2023 (Vic). Part of what the block says rests on general law or
+practice, as the rows for those statements record, so the line names legislation only, as the page's Sources line
+does.
+
+## Names added on 23 November 2026
+
+The urgent strip now opens with the name of its Act, the Administration and Probate Act 1958 (Vic), which the rows
+above already give as its authority. The statement itself is unchanged. In brief bullet 3 ends or after it by an
+application to revoke the grant, which had no row. Its authority is rule 11.02 of the Supreme Court (Administration
+and Probate) Rules 2023 (Vic), under which revocation is sought by summons, read on 23 November 2026 in the legal
+verification of that day, and Order 11 is in the page's Sources line. That lack of capacity and undue influence are
+grounds of challenge is general law, as the rows above record.
