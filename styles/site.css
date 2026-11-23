@@ -294,7 +294,7 @@ picture > source { display: none; }
 .fee-note::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--brass-600); }
 .fee-note .icon-chip { flex: none; }
 .fee-note__t { font-family: var(--font-display); font-weight: var(--weight-medium); font-size: var(--text-lg); color: var(--text-strong); }
-.fee-note__d { font-size: var(--text-sm); line-height: 1.66; color: var(--text-body); margin-top: 8px; max-width: 78ch; }
+.fee-note__d { font-size: 1rem; line-height: 1.6; color: var(--text-body); margin-top: 8px; max-width: 40rem; }
 
 /* ---- Reach / notice strip -------------------------------------------------- */
 .reach { margin-top: var(--space-6); display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; background: var(--wine-50); border: 1px solid var(--border-hairline); border-left: 3px solid var(--brass-600); border-radius: var(--radius-lg); padding: 20px 24px; }
@@ -856,11 +856,12 @@ a[href^="mailto:"] { overflow-wrap: anywhere; }
 
 /* Fees page: a note that belongs to the row above it, such as the Court's separate filing fee after the probate row */
 .article__body .fee-list__note { margin: -8px 0 18px; font-size: var(--text-sm); line-height: 1.5; color: var(--text-body); }
-/* On a desktop the running text of hubs and service pages keeps the measure the articles use. Lines used to run
-   73 to 97 characters at 18 pixels and past 100 at 14, against the 64 to 81 of an article. */
+/* On a desktop the running text, the In brief summary and the answers of hubs, service pages and the FAQ page
+   keep to a measure of 40rem, about 62 to 84 characters a line, where the text ran to 92 and the answers to 123.
+   The measure is in rem: a first rule in ch was wider than the column in this typeface and did nothing. */
 @media (min-width: 1100px) {
-  .brief > p, .brief li, .prose > p, .prose li { max-width: 68ch; }
-  .fee-note__d, .article-sources, .page-close { max-width: 78ch; }
+  .brief > p, .brief li, .prose > p, .prose li, .faq-a p { max-width: 40rem; }
+  .article-sources, .page-close { max-width: 78ch; }
 }
 /* The phone call bar slides away while the hero's own call button is on screen, but its two controls stay in the
    keyboard order, so a control that takes focus comes back into view */

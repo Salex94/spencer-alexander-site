@@ -937,9 +937,16 @@ conventions.
   that have come to differ, so that sentence is reworded by hand, where the pages and the record of sentences differ,
   where a total is not a whole number of dollars from the $495 minimum to the $4,995 ceiling, which are `minimum` and
   `maximum` in the source, where a price has been typed into a scope, a note or a label in the source, and where the
-  charges' first day has not yet come. A fee that changes between a fixed price and a from price fails the check
-  until each sentence that quotes it has been reworded and recorded, and so does a page that states a minimum other
-  than the source's. Every price in a page's markup must be one of the firm's fees. A figure is written as $1,234
+  charges' first day has not yet come. No dollar sign is written in the source outside the label of a court charge's
+  band, which states the thresholds listed there. A from price is said with from, or starts at, right before its
+  figure. A fee that changes between a fixed price and a from price fails the check until each sentence that quotes
+  it the old way has been reworded, and snapshot then records the sentences and the change together. A new fee needs
+  its row added to fees.html by hand, as an empty `<div class="fee" id="fee-its-id"></div>`, before apply fills it.
+  To retire a fee, take out the sentences that quote it and run snapshot first, and only then take the fee and its
+  row out, because the check cannot read a record that names a fee the source no longer has.
+  A page that states a minimum other than the source's fails the check too, after apply has written the pages, so
+  the sentences that state it are reworded and recorded last. Every price in a page's markup must be the total of
+  the fee its Offer is named for, read as markup, whatever the order or spacing of its keys. A figure is written as $1,234
   and nowhere else: the check refuses one split by a tag, written with AUD or as a character reference, or placed in
   the script, the contact card or the film's caption file. It cannot read a figure written in words or with no
   dollar sign, so none is written that way. apply is for a change meant to stand: a price tried and changed back
@@ -953,10 +960,11 @@ conventions.
   sentence on record keeps the tie the record gives each of its figures, whatever the amounts become, so two fees that
   come to share an amount are never confused, the whole earlier schedule applies cleanly, and a change of price
   through apply needs no new snapshot. Where a sentence gives one figure for two fees, the record says so, and each
-  fee otherwise has its own figure: no sentence says one fee is the same as another. Unless a sentence names its fee
-  in words that are that fee's own, the record holds the paragraph around it too, so a change to that paragraph is
-  read again like a change to the sentence. A phrase two fees share, such as consent orders or for a couple, is not
-  a fee's own. The record is written by snapshot and never by hand, because a tie changed by hand between two fees
+  fee otherwise has its own figure: no sentence says one fee is the same as another. The words that tell a reader
+  which fee a figure belongs to are often outside its sentence, so the record holds every sentence with the paragraph
+  it stands in and the heading or question above it, amounts apart, and a change to any of the three is read again
+  like a change to the sentence. A change to a heading therefore reports every fee sentence under it, which is right.
+  The record is written by snapshot and never by hand, because a tie changed by hand between two fees
   at the same amount cannot be told from a true one. In a merge, take one side's record whole and run the check,
   which then reports each sentence that differs from the pages. The record is what catches two fees' figures swapped inside one sentence, a court charge that is right for another
   court, and a worked total that no longer adds up. A dollar figure that is no fee or charge, such as a statutory
@@ -990,21 +998,36 @@ conventions.
   Victoria, in Australian dollars, as at the day, published by Spencer Alexander, Principal, at
   spenceralexander.com.au/fees. It opens the lead of fees.html, where the at a glance band repeats the day, a WebPage
   node carries it as dateModified and the sitemap agrees. The page builder opens every service page's fee note that
-  quotes a price with it and ends every answer on a service page that quotes one of the firm's fees with it, in the
-  page and in its markup, with the page's own date. None of that is typed in a content file. On the hubs and the FAQ
-  page the answers to the questions about cost end with the same sentence, typed once as plain words with no link or
-  time element so that the page and its markup stay word for word the same, and stamp and apply move its day with the
-  page. The fee check fails a page whose fee sentences give different days or a day later than the page's own. The
+  quotes a price with it, and in every answer on a service page that quotes one of the firm's fees it puts the
+  sentence straight after the last of those fees, in the page and in its markup, with the page's own date. An answer
+  therefore gives the firm's fees first and any court or ASIC charge after them, and the builder stops where a charge
+  comes first, because the sentence must not be read as covering the charge. None of that is typed in a content
+  file. On the hubs and the FAQ page the answers to the questions about cost end with the same sentence, typed once
+  as plain words with no link or time element so that the page and its markup stay word for word the same, and stamp
+  and apply move its day with the page. Those answers are listed by page and question under `dated_answers` in the
+  fee source, so a question that is reworded takes the list with it in the same commit. The fee check fails a listed
+  answer that does not end with the sentence, a listed question that is no longer on its page, any other answer to a
+  question that begins How much and quotes a fee without it, a copy that is not word for word, and a page whose fee
+  sentences give different days or a day later than the page's own. Paragraphs in articles, on the hubs and elsewhere that mention
+  a fee in passing do not carry it. The
   reason is what the answer engines showed on 23 Nov 2026: two of them quoted a probate price the site had not
   carried since 9 Nov 2026, one gave a Victorian fee in American dollars, and nothing in the passage they lifted
   said whose price it was, in what currency or how current.
 - **Dates.** apply and stamp refuse a day that is not real, has not yet come or is in a month that has passed, and
-  stamp refuses a day earlier than a page's own, because a date never moves backwards. A page's currency line says when its
+  both refuse a day earlier than the latest a page carries, in its markup, its fee sentences or the sitemap, because
+  a date never moves backwards. A page's currency line says when its
   law was read, and the gate now ties it to dateModified on every article, checklist and service page, so apply and
   stamp refuse to date a page into a month other than the one its currency line names unless `--law-read` is given.
   Give it only when the law on those pages has been read again, and never give a day in an earlier month to get
   past it. So a change of price made in a later month than the pages that quote it were last read costs that reading
-  as well. `python3 scripts/fees.py stamp YYYY-MM-DD --since REF`
+  as well. A practice hub is the one exception, because the Monday article routine adds a link to a hub every week
+  without reading its law: a hub's closing line gives the day it was updated and the month its law was read as two
+  statements, stamp and apply move the day and leave the month, and the month moves only when the hub's law has been
+  read again and the hub is dated by name with stamp and `--law-read`. `--law-read` on apply, or on stamp with
+  `--since`, speaks only for the pages the stop named, which never include a hub. The gate holds the day in the closing line to the hub's FAQPage date and
+  the sitemap, and the month to no later than that day. The FAQ page's Last reviewed line moves with any change to
+  the page, as it always has. A stop that wrote nothing exits 2, and apply exits 1 when it wrote the pages and the
+  check that follows reports something left to do by hand. `python3 scripts/fees.py stamp YYYY-MM-DD --since REF`
   moves the dates of the pages whose own words changed since a git ref, and leaves alone a page that differs only in
   its header, footer, rail cards, version keys or dates.
 - **Service pages are what their content files build.** The fee check builds each one afresh and fails a page that
@@ -1055,10 +1078,17 @@ conventions.
 - **Phones.** The fixed call bar stays until the hero's call button is wholly on screen. The paragraphs a reader
   decides by, being the service blocks, the fee note and the time limit cards on the home page, are 16 pixels on
   phones; notes, sources and captions stay at 14.
-- **Desktops.** From 1100 pixels the running text of hubs and service pages keeps a measure of about 68 characters,
-  the articles' own, where lines used to run to 97.
+- **Desktops.** From 1100 pixels the running text, the In brief summary and the answers on hubs, service pages and the
+  FAQ page keep to a measure of 40rem, about 62 to 84 characters a line, where the text ran to 92 and the answers to
+  123. The measure is set in rem, because a first rule in ch was wider than the column and did nothing. The fee note
+  is 16 pixels at every size and keeps the same measure, where it was 14 pixels and ran to about 115 characters.
 - **Hubs.** Each practice hub ends its questions with a Sources line and a closing line that says who published the
-  page, when it was updated and the month its law was read, in the service pages' form.
+  page, when it was updated and the month its law was read, in the service pages' form. Each hub's In brief block
+  ends with the line the service pages' summaries end with, written in the page itself, and the legislation it
+  names is taken only from the hub's own Sources line and only for the statements in the block. stamp moves its day
+  with the page. The Monday article routine
+  never types a date on a hub: once its link is added it runs `python3 scripts/fees.py stamp` with the day and the
+  hub's file name, which moves the day and leaves the month, as Dates above sets out.
 - **Film captions.** The home page film carries a caption track, `assets/video/spencer-alexander-intro.en.vtt`, which a
   visitor switches on in the player's own controls. Nothing is burned into the picture and nothing shows unless it is
   switched on, so the film looks as it did. The words are the transcript in the page's schema, and the timings were

@@ -99,3 +99,7 @@ step of the process already named it. No statement of law changed, and each row 
 From 23 November 2026 the fee note opens, and each answer that quotes one of the firm's fees ends, with one sentence
 the page builder writes: whose fees they are, where, in Australian dollars, the day, who published them and where. It
 is a statement about the firm's own fees and not a statement of law.
+\n\nThe urgent strip now opens with the name of its Act, the Family Law Act 1975 (Cth), which the rows above already give
+as its authority. The statement itself is unchanged. The fee note and the answer about cost now say the Court's filing
+fee is the amount under the Commonwealth's notice of family law fees, the notice recorded with its address under
+charges in playbooks/fees.json.\n

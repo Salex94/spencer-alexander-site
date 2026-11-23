@@ -1,0 +1,63 @@
+Audit round of 23 Nov 2026: six fees restored from one fee source, and the improvements the audit supports
+
+Released as one commit so that it can be undone in one step with git revert.
+The record is playbooks/audit-2026-11-23, whose README gives the release
+steps, and changes.md there lists every change a visitor can see.
+
+Fees. The six fees that rose on 16 Nov 2026 are back at the amounts published
+from 9 to 16 Nov 2026: probate application $1,980, letters of administration
+$2,178, wills for a couple $880, consent orders for an agreed property
+settlement $3,025, consent orders for property and parenting together $3,850
+and advice on a binding financial agreement the other party drafted from
+$1,100. Each restored row is byte for byte the row deployed that week, and the
+other eighteen fees are unchanged.
+
+One fee source. playbooks/fees.json holds each fee once and scripts/fees.py
+keeps every rendition in step with it. playbooks/fees-renditions.json records
+every sentence that quotes a fee or a charge with each figure tied to its fee,
+the paragraph it stands in and the heading or question above it, and the gate
+fails a sentence that is new, changed or gone, or whose paragraph, heading or
+question has changed, until it has been read and recorded. Every passage that
+quotes the firm's fees says whose they are, where, in what currency, as at
+what day, who published them and where.
+
+Court and ASIC charges, read on 23 Nov 2026, are published on the fees page
+and beside the fees they add to, each dated and sourced, with the last day
+they are current.
+
+Pages. Every price at a glance and dated on the fees page, a fees line in the
+home hero, the reply time on every rail card, safe contact wording and
+emergency numbers that can be tapped on the family pages, the Quick exit on
+the contact page, Sources and closing lines on the three hubs, readable
+service text on phones, a narrower measure on desktops, a caption track on
+the film that a visitor switches on, passages that name their Act, court or
+State, a line under each service page's and each hub's summary saying who
+published it, when, and the legislation it rests on, and a fee note that reads
+at the size and measure of the text around it.
+
+Faults fixed. The menu button and footer wordmark cut off at 320 pixels, an
+enquiry sent twice on a slow connection, keyboard focus hidden under the
+header or on a block yet to fade in, the form's error not tied to its fields,
+the contrast of the word Lawyers under the wordmark, and a call button whose
+label hung outside it on the narrowest phones.
+
+Claims register. One statement of law was corrected: the powers of attorney
+page now says the regulations prescribe the form, from section 32 of the
+Powers of Attorney Act 2014 (Vic) and regulation 6(1) of the Powers of
+Attorney Regulations 2025 (Vic). The three hubs gained Sources lines, each
+provision read in its authorised version on 23 Nov 2026. Sentences that
+gained the name of an Act, a court or a State were each read against that
+Act the same day, apart from the seven urgent strips and the divorce
+answers, whose names were taken from the pages' claims registers. No other
+statement of law changed.
+
+Routines. A practice hub's closing line gives the day it was updated and the
+month its law was read as two statements, so the Monday article routine dates
+a hub with scripts/fees.py stamp after adding its link and the month stays
+where it is. playbooks/article.md, site-health.md and demand-scanner.md say
+what each routine does with the fee check, the record and the dates.
+
+Gate. 113 checks where there were 106, all passing.
+
+Co-Authored-By: Claude Fable 5.2 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01AG2N6HxPy3mBXSngXUfye4

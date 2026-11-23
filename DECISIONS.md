@@ -47,7 +47,8 @@ record that are about the business, and the report he reads, are kept privately.
 - **Every price carries its date**, because two answer engines were quoting a probate price the site had not carried
   since 9 Nov 2026 and one gave a fee in American dollars. One sentence says whose fees they are, where, in what
   currency, as at what day, who published them and where. It opens the fees page's lead and each service page's fee
-  note, and it ends each answer about cost on the service pages, the two hubs that have one and the FAQ page. The
+  note, and it follows the firm's own fees in each answer about cost on the service pages, the two hubs that have
+  one and the FAQ page, ahead of any court or ASIC charge. The
   last checker showed that the first version dated the fee notes but left the answers, which are the passages most
   often lifted, with no date, no firm and no currency.
 - **Faults fixed**: the menu button was cut off at 320 pixels, and so was the footer wordmark; a second press on a slow
@@ -89,7 +90,46 @@ record that are about the business, and the report he reads, are kept privately.
   failed, which would have met the Tuesday routine unattended on 1 July 2027, and apply now moves that day in every
   paragraph that quotes a charge. Totals are whole dollars from the minimum to a ceiling of $4,995, and a date never
   moves backwards or into a month that has passed. One limit stands and is written into CLAUDE.md: the record of
-  sentences is never edited by hand. The gate has 112 checks where it had 106.
+  sentences is never edited by hand. The gate has 113 checks where it had 106.
+- **What the closing check of the tool found, and what was done.** Two faults would have met a routine or a later
+  price change after release, and both are closed. First, each hub's new closing line gave the month its law was
+  read, the gate tied that month to the hub's date, and the Monday article routine moves a hub's date every week
+  when it adds a link, so from Monday 7 December 2026 the routine would have failed the gate or said the hub's law
+  was read in December. A hub's closing line now makes two statements, the day it was updated and the month its law
+  was read: `stamp` moves the day and leaves the month unless `--law-read` is given, the gate holds the day to the
+  hub's FAQPage date and the month to no later than it, and step 6 of `playbooks/article.md` tells the routine to
+  date the hub with `stamp`. A routine run was rehearsed with the clock at 7 and 14 December 2026 and 4 January 2027
+  and passed the gate each time. Second, a fee changed between a fixed price and a from price, or a new fee added as
+  a from price, could not be recorded, because the check and `snapshot` each waited for the other. The check now
+  names the sentences that still quote the fee the old way, a from price is read by the words right before its
+  figure, and `snapshot` records the reworded sentences and the change together. One flip each way and one new from
+  price were run through to a passing check. The smaller points are closed too: the record now holds every sentence
+  with its paragraph and the heading or question above it, after the checker changed the sentence before a fee
+  sentence, and the question above an answer, with the check passing; no dollar sign is accepted in the source
+  outside a court charge's band label; the answers about cost are listed under `dated_answers` in the fee source;
+  no date moves backwards through `apply` or through `stamp` on a page with no date in its markup; a price in a
+  page's markup is read as markup and held to the fee its Offer names; and a stop that wrote nothing exits 2. The
+  re-recording changed no tie: every one of the 368 sentences is tied to the same fees as before. Stated and left:
+  the FAQ page's Last reviewed line moves with any change to that page, as it did before this round; a change to the
+  minimum writes the pages and then names the sentences that state it; and a paragraph that quotes a court charge
+  holds no other date, because `apply` moves every date in it when the charges' first day changes.
+- **The last checks, 24 Nov 2026.** Two more checkers rehearsed the three weekly routines and the release with the
+  clock moved and tried again to break the tool. Every routine rehearsal ended with the gate passing, on 30 November,
+  7 and 14 December 2026 and 4 January 2027, and one `git revert` returned main's tree in all five release
+  rehearsals. They found that `--law-read` on a batch moved every hub's law month although the stop that asks for it
+  never names a hub, so a hub's month now moves only when the hub is dated by name; that the command in release step
+  6 failed in git, now corrected and tested; that two fees changing kind at once and reworded one at a time let
+  sentences that still said from be recorded, so the test of kind now runs on every sentence that quotes the fee;
+  and that the Friday routine had no true way to date an article after adding a question to it in a later month, so
+  its playbook now sends such a question to faq.html. Also closed: `stamp` stops on a name that is no page, a build
+  that cannot match an answer with the fee tool's reading stops, a from price is marked as a minimum in a service
+  page's markup, and in an answer about cost a court or ASIC charge never stands before the firm's dated sentence.
+- **Two last changes a visitor can see, 24 Nov 2026.** The fee note on hubs and service pages is 16 pixels at every
+  size and keeps the measure of the text around it, where on larger screens it was 14 pixels and ran to about 115
+  characters a line. Each hub's In brief block ends with its publisher, its date and the legislation the block rests
+  on, as the service pages' summaries do. Shortening the hero leads on phones was considered and left: each lead is
+  the passage that answers its page's question, and the fixed bar already keeps Call and Enquire on the first screen
+  until the hero's own call button is wholly in view.
 - **Smaller faults fixed after the last pass**: the footer's email address broke across two lines between about 990
   and 1200 pixels, the page jumped when the form's twenty second message appeared on a phone, the telephone link in
   that message was told from its text by colour alone, and on phones under 360 pixels the home page's long call

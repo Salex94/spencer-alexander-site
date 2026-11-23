@@ -38,10 +38,27 @@ STEP 4, VERIFY AND PUBLISH: python3 scripts/check-publish.py AND python3 scripts
 
 STEP 5, REPORT: final message, phone readable: the top 3 demand insights of the week, the hire marker line and whether it means Monday is due a hire guide or an ordinary article, what Monday's article should probably cover on that basis, the number of evidenced hire items in each practice area, and what FAQs were added. Never finish silently.
 
-From 23 November 2026 the answers on faq.html to its questions about cost end with one dated
-sentence about the firm's fees, in the page and in its markup. Whenever a run changes faq.html, move
+From 23 November 2026 the answers on faq.html to its questions about cost carry one dated
+sentence about the firm's fees, in the page and in its markup. Where an answer also gives a court
+or ASIC charge, the order is the firm's fees, then the dated sentence, then the charge, so the
+sentence is never read as covering the charge, and the fee check fails the other order. A question
+goes into an article's own FAQ block only in the month the article's closing line gives for its
+law. From the month after that, put the question on faq.html, because dating the article again
+would say its law was read that month: do that only when the run has read the whole article's law
+again, and then date it with `python3 scripts/fees.py stamp`, the day, the article and
+`--law-read`. Whenever a run changes faq.html, move
 the page's dates with `python3 scripts/fees.py stamp YYYY-MM-DD faq.html` and the Melbourne date,
 which moves the reviewed date, each dateModified, the sitemap date, the llms.txt date and the day
 those sentences give, all together. Never type one of those dates by hand, and never add a link or a
 time element inside one of those sentences, because the gate needs the page and its markup to read
-word for word the same.
+word for word the same. The questions whose answers end with that sentence are listed by page under
+`dated_answers` in `playbooks/fees.json`: a run that rewords one of them changes the list in the same
+commit, and a run that adds a question beginning How much whose answer quotes a fee ends the answer
+with the sentence and adds the question to the list. A reworded question above an answer that quotes
+a fee is reported by the fee check as a changed sentence, so read the answer against
+`playbooks/fees.json` and run `python3 scripts/fees.py snapshot`.
+
+A new answer on faq.html to a question that begins How much, if it quotes one of the firm's fees,
+ends with that sentence copied word for word from another answer about cost, in the page and in its
+markup, and the gate fails until it does. An answer gives the firm's fees before any court or
+government charge.

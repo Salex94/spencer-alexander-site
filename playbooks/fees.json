@@ -27,6 +27,19 @@
     "$5,000,000",
     "$7,000,000"
   ],
+  "dated_answers": {
+    "faq.html": [
+      "How much will it cost, and how do your fees work?",
+      "How much does a divorce cost?",
+      "How much does it cost to get a grant of probate in Victoria?"
+    ],
+    "family-law.html": [
+      "How much does a family lawyer cost?"
+    ],
+    "wills-and-estates.html": [
+      "How much does a will cost?"
+    ]
+  },
   "hero": [
     "single-will",
     "probate-application",

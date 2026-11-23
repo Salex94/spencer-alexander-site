@@ -35,13 +35,16 @@ Every price carries its date. The lead of fees.html says whose fees these are, w
 as at what day, and a WebPage node and the sitemap carry the same day; stamp and apply move all three together.
 The same sentence, which also says who published the fees and where, opens each service page's fee note that
 quotes a price and closes each answer on a service page that quotes one, written by the page builder with the
-page's own date. A hub or the FAQ page may carry it by hand at the end of an answer about cost, and stamp and apply
-move its day with the page. check fails when any of these is missing or disagrees.
+page's own date. A hub or the FAQ page carries it by hand at the end of each answer about cost, and stamp and apply
+move its day with the page. Those answers are listed by page and question under "dated_answers" in the source, and
+check fails when one is missing, when its question has been reworded without the list, or when the sentence is
+not word for word the firm's.
 
 Every sentence that quotes a figure is on record. playbooks/fees-renditions.json holds each such sentence with
-its figures replaced by the fee or charge each belongs to. check fails when a sentence that quotes a figure is new,
-has changed or has gone, and prints it with the fee each figure was tied to. Read each against playbooks/fees.json,
-then run snapshot. That is what catches two fees' figures swapped inside one sentence, a court charge that is right
+its figures replaced by the fee or charge each belongs to, then the paragraph it stands in and the heading or
+question above it, amounts apart. check fails when a sentence that quotes a figure is new, has changed or has gone,
+or when its paragraph, heading or question has changed, and prints it with the fee each figure was tied to. Read
+each against playbooks/fees.json, then run snapshot. That is what catches two fees' figures swapped inside one sentence, a court charge that is right
 for another court, and a worked total that no longer adds up, none of which the nearness rule below can see. A change
 of price through apply needs no new snapshot, because the record holds the fee and not the amount.
 
@@ -52,9 +55,18 @@ confused. A sentence that is not yet on record is tied by nearness: the script t
 sentence around the figure, then the paragraph, and looks for the phrases in "terms" of the
 fees and charges that carry that amount, and passes the figure only when one of them is
 named. check reports such a sentence until it has been read and recorded with snapshot.
-Where a figure's fee is named only in the paragraph around its sentence, as in "Each is $495
-including GST.", the record holds the paragraph with the sentence, amounts apart, so that a
-change to the paragraph is a change to the sentence and it is read again.
+The words that tell a reader which fee a figure belongs to are often outside its sentence, as
+in "Each is $495 including GST." or an answer under the question How much does a divorce
+cost?, so the record holds the paragraph and the heading or question with every sentence, and
+a change to either is a change to the sentence and it is read again.
+
+A from price is said with from, or starts at, right before its figure. A fee that changes
+between a fixed price and a from price fails check until each sentence that quotes it the old
+way has been reworded, and snapshot then records the sentences and the change together.
+
+Exit codes. check exits 1 when it reports anything. apply, stamp and use exit 2 when they stop
+before writing anything, and apply exits 1 when it wrote the pages and the check that follows
+reports something left to do by hand.
 apply rewrites only figures the record ties, read as the schedule stood before the edit, and
 stops, writing nothing, when the pages and the record differ or when one figure stands for
 two fees that have come to differ.
@@ -79,6 +91,7 @@ BLOCK_TAG = re.compile(r"</?(?:p|li|h[1-6]|div|section|ul|ol|td|tr|th|title|item
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
           "October", "November", "December"]
 NOTICES = []        # what the last check wants read soon, for the gate to show
+STILL = []           # (fee id, file, sentence) for each sentence a change of kind has left as it was
 
 
 def load():
@@ -113,18 +126,26 @@ def melbourne_today():
         return (datetime.utcnow() + timedelta(hours=10)).date()
 
 
+class Stop(SystemExit):
+    """A stop before anything was written: the message is shown and the exit code is 2."""
+
+    def __init__(self, message):
+        print(message, file=sys.stderr)
+        super().__init__(2)
+
+
 def real_date(text):
     """A day given on the command line, as YYYY-MM-DD: a real day, and not one that has yet to come."""
     try:
         day = datetime.strptime(text, "%Y-%m-%d").date()
     except (TypeError, ValueError):
-        raise SystemExit("%r is not a date. Write the day as YYYY-MM-DD, such as 2026-11-23." % (text,))
+        raise Stop("%r is not a date. Write the day as YYYY-MM-DD, such as 2026-11-23." % (text,))
     if day.strftime("%Y-%m-%d") != text:
-        raise SystemExit("%r is not written as YYYY-MM-DD." % (text,))
+        raise Stop("%r is not written as YYYY-MM-DD." % (text,))
     if day > melbourne_today():
-        raise SystemExit("%s has not come yet. Give the day the change is published, today in Melbourne at the latest." % text)
+        raise Stop("%s has not come yet. Give the day the change is published, today in Melbourne at the latest." % text)
     if (day.year, day.month) < (melbourne_today().year, melbourne_today().month):
-        raise SystemExit("%s is in a month that has passed. A page is dated the day it is published, so give today's "
+        raise Stop("%s is in a month that has passed. A page is dated the day it is published, so give today's "
                          "date in Melbourne." % text)
     return text
 
@@ -484,6 +505,13 @@ RENDITIONS = os.path.join(ROOT, "playbooks", "fees-renditions.json")
 
 
 TOKEN_RX = re.compile(r"\{((?:gst:)?[a-z0-9?|-]+)\}")
+FROM_RX = re.compile(r"(?:\bfrom|\bstarts? at|\bstarting (?:at|from)|\bat least|\bupwards of)\s+(?:about\s+|around\s+|just\s+|only\s+)?$")
+
+
+def says_from(sent, at):
+    """True where the words right before the figure at an offset say it is a starting price, as in from $1,095
+    or starts at $1,095. From anywhere else in the sentence does not count."""
+    return bool(FROM_RX.search(sent[:at]))
 
 
 def sentences(data, all_things, path, text):
@@ -491,15 +519,51 @@ def sentences(data, all_things, path, text):
     {(block start, sentence start): [sentence, [(offset of the figure in it, match, id, note)], paragraph]}.
     The id and note are scan's own reading, which is used only for a sentence that is not on record."""
     found = {}
+    heads = headings(path, text)
     for m, tid, note in scan(data, all_things, path, text):
         sent, at, block, block_at = context(path, text, m.start(), m.end())
         start = block_bounds(path, text, m.start(), m.end())[0]
         lead = len(sent) - len(sent.lstrip())
-        found.setdefault((start, block_at - at), [sent.strip(), [], block])[1].append((at - lead, m, tid, note))
+        above = heading_above(path, text, start, heads)
+        found.setdefault((start, block_at - at), [sent.strip(), [], block + (UNDER + above if above else "")])[1].append(
+            (at - lead, m, tid, note))
     return found
 
 
+HEAD_RX = re.compile(r"<(h[1-6]|summary)\b[^>]*>(.*?)</\1>", re.S | re.I)
+ANSWER_RX = re.compile(r'"name":\s*"((?:[^"\\]|\\.)*)",\s*"acceptedAnswer":\s*\{\s*"@type":\s*"Answer",\s*"text":\s*"$')
+KEYED_RX = re.compile(r'"(?:q|h2|t|title|h1|strong)":\s*"((?:[^"\\]|\\.)*)"')
+
+
+def headings(path, text):
+    """Where each heading or question in a file ends, with its words, for heading_above."""
+    if path.endswith(".json"):
+        return [(m.end(), plain(m.group(1)).strip().lower()) for m in KEYED_RX.finditer(text)]
+    if path.endswith(".html"):
+        return [(m.end(), plain(m.group(2)).strip().lower()) for m in HEAD_RX.finditer(text)]
+    if path.endswith(".xml"):
+        return [(m.end(), plain(m.group(1)).strip().lower()) for m in re.finditer(r"<title>(.*?)</title>", text, re.S)]
+    return [(m.end(), m.group(1).strip().lower()) for m in re.finditer(r"(?m)^#+ *(.+)$", text)]
+
+
+def heading_above(path, text, start, heads):
+    """The words a reader takes a paragraph to be about: the question an answer sits under, or the nearest
+    heading above the paragraph. A paragraph is recorded with them, so a change to either is read again."""
+    if path.endswith(".html") and in_json(path, text, start):
+        m = ANSWER_RX.search(text[max(0, start - 600):start])
+        return plain(m.group(1)).strip().lower() if m else ""
+    if path.endswith(".html") and text.rfind("<", 0, start) > text.rfind(">", 0, start):
+        return ""                                      # an attribute, such as a description in the head
+    above = ""
+    for end, words in heads:
+        if end > start:
+            break
+        above = words
+    return above
+
+
 PARA = " <<in the paragraph>> "
+UNDER = " <<under>> "
 
 
 def mask(block, since):
@@ -509,38 +573,13 @@ def mask(block, since):
     return block.replace(since.lower(), "{charges-from}") if since else block
 
 
-def named_alone(tid, sent, all_things):
-    """True where the sentence names this fee or charge in words that are its own: one of its phrases is found
-    where no other fee's or charge's phrase covers the same words or more. Consent orders alone names neither the
-    property fee nor the parenting fee, and consent orders for an agreed property settlement names the first."""
-    others = [(m.start(), m.end()) for other, th in all_things.items() if other != tid
-              for term in th["terms"] for m in re.finditer(term, sent)]
-    for term in all_things[tid]["terms"]:
-        for m in re.finditer(term, sent):
-            if not any(a <= m.start() and m.end() <= b for a, b in others):
-                return True
-    return False
-
-
-def rests_on_paragraph(template, sent, all_things):
-    """True where the fee a figure is tied to is not named in the sentence in words of its own, so the tie rests on
-    the paragraph around it. Such a sentence is recorded with its paragraph, and is read again when that changes."""
-    for m in TOKEN_RX.finditer(template.partition(PARA)[0]):
-        token = m.group(1)
-        if token in ("charges-from", "?", "gst:?"):
-            continue
-        ids = (token[4:] if token.startswith("gst:") else token).split("|")
-        if not any(named_alone(one, sent, all_things) for one in ids if one in all_things):
-            return True
-    return False
-
-
 def template_of(sent, marks, all_things, since, block=None):
     """A sentence with each figure replaced by what scan tied it to: {fee-id}, {a|b} where one figure stands for
     two fees, {gst:fee-id} for an amount before GST, {?} where nothing could be tied, and the figure itself
-    where it is no fee or charge at all. The day the charges took effect becomes {charges-from}. Where a
-    figure's fee is named only in the paragraph, the paragraph follows the sentence."""
-    charge, words = False, sent
+    where it is no fee or charge at all. The day the charges took effect becomes {charges-from}. The paragraph
+    the sentence stands in, and the heading or question above it, follow the sentence, because they are often
+    the only words that tell a reader which fee a figure belongs to."""
+    charge = False
     for at, m, tid, note in sorted(marks, key=lambda k: k[0], reverse=True):
         if note == "ok":
             token = "{%s}" % tid
@@ -556,7 +595,7 @@ def template_of(sent, marks, all_things, since, block=None):
         sent = sent[:at] + token + sent[at + len(plain(m.group(0))):]
     if since and charge:
         sent = sent.replace(since.lower(), "{charges-from}")
-    if block is not None and rests_on_paragraph(sent, words, all_things):
+    if block is not None:
         sent += PARA + mask(block, since)
     return sent
 
@@ -637,14 +676,14 @@ CLASH = ("", [], None)
 
 def take(pool, sent, marks, block, all_things, since):
     """The recorded (template, spans, paragraph) for a sentence as it stands on a page, or None where it is not
-    on record. A sentence whose tie rests on its paragraph is on record only with that paragraph, word for word.
-    CLASH where the same words stand more than once with different fees behind them and the nearness rule reads
-    none of the recorded ties, so no one can say which is which."""
+    on record. A sentence is on record only with its paragraph and the heading or question above it, word for
+    word. CLASH where the same words stand more than once with different fees behind them and the nearness rule
+    reads none of the recorded ties, so no one can say which is which."""
     held = pool.get(sent)
     if not held:
         return None
     here = mask(block, since)
-    fit = [e for e in held if e[2] == here or (e[2] is None and not rests_on_paragraph(e[0], sent, all_things))]
+    fit = [e for e in held if e[2] == here]
     if not fit:
         return None
     if len({e[0] for e in fit}) > 1:
@@ -673,6 +712,38 @@ def all_renditions(data, all_things=None, since=None, keep=None):
     return out
 
 
+def answer_kinds(content_path):
+    """For a service page's content file, one list for each of its answers, in order, giving what each dollar
+    figure in the answer is: "fee", "charge", "derived" for a total worked from a charge, or None. A sentence on
+    record gives the record's tie, so a court charge that comes to equal one of the firm's fees is still told
+    from it; a sentence that is not yet on record is read by nearness. The page builder places the dated fee
+    sentence by this."""
+    data = load()
+    all_things = things(data)
+    since = long_date(data["charges"]["valid_from"]) if data.get("charges") else None
+    text = open(content_path, encoding="utf-8").read()
+    index, _ = record_index(read_record(), all_things, since)
+    pool = {k: list(v) for k, v in index.get(rel(content_path), {}).items()}
+    kind_at = {}
+    for sent, marks, block in sentences(data, all_things, content_path, text).values():
+        entry = take(pool, sent, marks, block, all_things, since)
+        spans = entry[1] if entry and entry is not CLASH else None
+        for at, m, tid, note in marks:
+            if spans is not None:
+                tid, note = tie(spans, at)
+            if note == "ok":
+                kind_at[m.start()] = all_things[tid]["kind"]
+            elif note.startswith("shared:"):
+                kinds = {all_things[one]["kind"] for one in note[7:].split(",") if one in all_things}
+                kind_at[m.start()] = "fee" if kinds == {"fee"} else "charge"
+            elif note == "before-gst":
+                kind_at[m.start()] = "fee"
+    out = []
+    for m in re.finditer(r'"q":\s*"(?:[^"\\]|\\.)*",\s*"a":\s*"((?:[^"\\]|\\.)*)"', text):
+        out.append([kind_at.get(m.start(1) + f.start()) for f in AMOUNT.finditer(m.group(1))])
+    return out
+
+
 def show(template, all_things):
     """A recorded sentence with each figure put back beside the name of what it was tied to."""
     def one(m):
@@ -688,25 +759,36 @@ def show(template, all_things):
             parts.append("%s = %s%s" % (amount, tid, " before GST" if gst else ""))
         return "[" + ", ".join(parts) + "]"
     head, _, para = template.partition(PARA)
+    para, _, above = para.partition(UNDER)
     return re.sub(r"\{((?!charges-from\})(?:gst:)?[a-z0-9?|-]+)\}", one, head) + (
-        " (its fee is named only in its paragraph, so it is recorded with it: %s)" % para if para else "")
+        " (under the heading or question: %s)" % above if above else "") + (
+        " (in the paragraph: %s)" % para if para and para != mask(re.sub(r"\{[^}]*\}", "$0", head), None) else "")
 
 
 def snapshot():
     data = load()
-    problems = check(data, quiet=True, strict=False)
+    problems = check(data, quiet=True, strict=False, kinds=False)
     if problems:
         print("Not recorded. Fix these first:")
         for p_ in problems:
             print("  " + p_)
+        return 1
+    if STILL:
+        print("Not recorded. A fee has changed between a fixed price and a from price, and these sentences still "
+              "quote it as it was. Reword each one, in its page and in a service page's content file, run "
+              "scripts/fees.py apply to rebuild the service pages, and run this again:")
+        for one, name, sent in STILL:
+            print("  %s, in %s: %s" % (one, name, sent))
         return 1
     all_things = things(data)
     since = long_date(data["charges"]["valid_from"]) if data.get("charges") else None
     index, unreadable = record_index(read_record(), all_things, since)
     now = all_renditions(data, all_things, since, keep=index)
     json.dump({"about": "Every sentence on the site that quotes a fee or charge, with each figure replaced by the "
-                        "fee or charge it belongs to. Written by scripts/fees.py snapshot and never by hand. "
-                        "scripts/fees.py check fails when a sentence here is new, has changed or has gone.",
+                        "fee or charge it belongs to, then the paragraph it stands in and the heading or question "
+                        "above it. Written by scripts/fees.py snapshot and never by hand. scripts/fees.py check "
+                        "fails when a sentence here is new, has changed or has gone, or when its paragraph, heading "
+                        "or question has changed.",
                "from_prices": sorted(f["id"] for f in data["fees"] if f["from"]),
                "renditions": now}, open(RENDITIONS, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     open(RENDITIONS, "a", encoding="utf-8").write("\n")
@@ -818,8 +900,10 @@ def says(text):
 
 def changed_since(ref):
     """The pages whose own words differ from the same page at a git ref, and pages that are new."""
-    names = subprocess.run(["git", "-C", ROOT, "diff", "--name-only", ref], capture_output=True, text=True,
-                           check=True).stdout.split()
+    listed = subprocess.run(["git", "-C", ROOT, "diff", "--name-only", ref], capture_output=True, text=True)
+    if listed.returncode != 0:
+        raise Stop("STOPPED, nothing written. %r is not a git ref this repository knows." % ref)
+    names = listed.stdout.split()
     out = []
     for name in names:
         if not name.endswith(".html") or os.path.basename(name).startswith("_") or not os.path.exists(os.path.join(ROOT, name)):
@@ -842,6 +926,65 @@ def offer_fee(data, name):
     return None
 
 
+PRICE_KEYS = ("price", "minPrice", "maxPrice", "lowPrice", "highPrice")
+
+
+def priced(node, name=None):
+    """(the name a price stands under, its key, its value) for every price in a parsed block of markup. An Offer
+    is named by its own name or by the name of what it offers, and a price specification inside it takes that
+    name."""
+    if isinstance(node, dict):
+        own = node.get("name") if isinstance(node.get("name"), str) else None
+        item = node.get("itemOffered")
+        if own is None and isinstance(item, dict) and isinstance(item.get("name"), str):
+            own = item["name"]
+        here = own or name
+        kind = str(node.get("@type", ""))
+        for k, v in node.items():
+            if isinstance(v, (str, int, float)) and not isinstance(v, bool) and (
+                    k in PRICE_KEYS or (k == "value" and ("PriceSpecification" in kind or "MonetaryAmount" in kind))):
+                yield here, k, v
+            else:
+                yield from priced(v, here)
+    elif isinstance(node, list):
+        for v in node:
+            yield from priced(v, name)
+
+
+def markup_prices(data):
+    """Every price in a page's markup, and in a service page's content file, is the total of the fee it is named
+    for, whatever order its keys come in and however they are spaced."""
+    out = []
+    for path in files():
+        text = open(path, encoding="utf-8").read()
+        blocks = []
+        if path.endswith(".html"):
+            blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', text, re.S)
+        elif path.endswith(".json") and "service-content" in path:
+            blocks = [text]
+        for raw in blocks:
+            try:
+                node = json.loads(raw)
+            except ValueError:
+                continue                               # the gate reports markup that is not valid JSON
+            if path.endswith(".json"):
+                node = node.get("offers", []) if isinstance(node, dict) else []
+            for name, key, value in priced(node):
+                fee = offer_fee(data, name) if name else None
+                try:
+                    amount = Decimal(str(value))
+                except Exception:
+                    out.append("%s: the markup gives a %s of %r, which is not a number" % (rel(path), key, value))
+                    continue
+                if fee is None:
+                    out.append("%s: the markup gives a %s of %s under %s, which names no fee in the source"
+                               % (rel(path), key, value, repr(name) if name else "no name"))
+                elif amount != fee["total"]:
+                    out.append("%s: the markup gives %r a %s of %s, and the source says %s"
+                               % (rel(path), name, key, value, fee["total"]))
+    return out
+
+
 # ---------------------------------------------------------------- check
 
 def bad_totals(data):
@@ -861,14 +1004,30 @@ def bad_totals(data):
 
 
 def typed_prices(data):
-    """A dollar figure typed into a scope, a note or a label in the source, other than a threshold listed there."""
+    """A dollar figure typed into a scope, a note or a label in the source. The one place a dollar sign belongs
+    there is the label of a court charge's band, which states the thresholds listed under other_amounts."""
     out = []
+    bands = {"label of %s" % it["id"] for it in data.get("charges", {}).get("items", [])}
+    listed = set(data.get("other_amounts", []))
     for where, value in source_wording(data):
-        for m in AMOUNT.finditer(value):
-            if m.group(0) not in data.get("other_amounts", []) and strip00(m.group(0)) not in data.get("other_amounts", []):
-                out.append("playbooks/fees.json: the %s %r holds %s. A price is never typed into a scope, a note or a "
-                           "label there, because it would reach the fees page unread. Say it in a sentence on the page, "
-                           "where the check ties it to its fee and records it" % (where, value[:60], m.group(0)))
+        why = None
+        if where in bands:
+            if "<" in value or DISGUISED.search(value):
+                why = "holds a tag or a figure the check cannot read"
+            else:
+                rest = value
+                for m in AMOUNT.finditer(value):
+                    if m.group(0) not in listed and strip00(m.group(0)) not in listed:
+                        why = "holds %s, which is not a threshold listed under other_amounts" % m.group(0)
+                    rest = rest.replace(m.group(0), "", 1)
+                if why is None and "$" in rest:
+                    why = "holds a dollar sign that begins no figure"
+        elif "$" in value or DISGUISED.search(value) or re.search(r"\b(?:AUD|USD)\b", value):
+            why = "holds a dollar figure"
+        if why:
+            out.append("playbooks/fees.json: the %s %r %s. A price is never typed into a scope, a note or a label "
+                       "there, because it would reach the fees page unread. Say it in a sentence on the page, where "
+                       "the check ties it to its fee and records it" % (where, value[:60], why))
     return out
 
 
@@ -878,7 +1037,7 @@ def source_wording(data):
         if isinstance(node, dict):
             for k, v in node.items():
                 if k in ("about", "terms", "minimum_terms", "other_amounts", "url", "id", "parts", "read",
-                         "valid_from", "valid_to", "hero"):
+                         "valid_from", "valid_to", "hero", "dated_answers"):
                     continue
                 yield from walk(v, "%s of %s" % (k, node.get("id") or node.get("name") or where))
         elif isinstance(node, list):
@@ -889,14 +1048,32 @@ def source_wording(data):
     return walk(data, "source")
 
 
-def check(data=None, quiet=False, with_renditions=True, strict=True):
+def charge_before(answer, data):
+    """The first court or ASIC charge that stands before the firm's dated sentence in an answer, or None. A figure
+    that is also one of the firm's fees is taken to be the fee."""
+    m = DATED_PLAIN_RX.search(answer)
+    if not m:
+        return None
+    ours = {money(f["total"]) for f in data["fees"]}
+    theirs = {amount_text(it["amount"]) for it in data.get("charges", {}).get("items", []) if Decimal(str(it["amount"]))}
+    for fig in AMOUNT.finditer(answer[:m.start()]):
+        if strip00(fig.group(0)) in theirs and strip00(fig.group(0)) not in ours:
+            return fig.group(0)
+    return None
+
+
+def check(data=None, quiet=False, with_renditions=True, strict=True, kinds=True):
     """Every problem found, as a list. with_renditions reads the record for each sentence's ties. strict also
     reports a sentence that is new, has changed or has gone, which snapshot leaves out because recording them
-    is its job."""
+    is its job. kinds reports a fee that has changed between a fixed price and a from price since the record was
+    made, which snapshot also leaves out, because it reads STILL below and records the change itself."""
     data = data or load()
     all_things = things(data)
     by_id = {f["id"]: f for f in data["fees"]}
     problems, notices, count = [], [], 0
+    was_from = recorded_from() if with_renditions else None
+    flipped = {f["id"] for f in data["fees"] if f["from"] != (f["id"] in was_from)} if was_from is not None else set()
+    still = []
     # 1. fees.html is exactly what the source generates
     ft = fees_page()
     try:
@@ -932,6 +1109,44 @@ def check(data=None, quiet=False, with_renditions=True, strict=True):
         page = open(path, encoding="utf-8").read()
         tagged = [(m.group(2), m.group(4)) for m in ASAT_RX.finditer(page)]
         plain_days = [m.group(2) for m in DATED_PLAIN_RX.finditer(page)]
+        opened = len(re.findall(r"These are the fees of Spencer Alexander Lawyers", page))
+        phrase = len(re.findall(r"in Australian dollars, as at", page))
+        if opened != len(plain_days) or phrase != len(plain_days) + len(tagged):
+            problems.append("%s: a sentence that begins These are the fees of Spencer Alexander Lawyers, or that says "
+                            "in Australian dollars, as at, is not word for word the firm's dated sentence, with no "
+                            "link or time element in it. Copy it from another answer and run scripts/fees.py stamp "
+                            "with the day and the page" % base)
+        short = sorted({d_ for d_ in plain_days if d_.split(" ")[1] not in MONTHS})
+        if short:
+            problems.append("%s: a fee sentence gives its day as %s. Write the month in full, as in 23 November 2026"
+                            % (base, ", ".join(short)))
+            continue
+        answers = dict(re.findall(r'"name":\s*"((?:[^"\\]|\\.)*)",\s*"acceptedAnswer":\s*\{\s*"@type":\s*"Answer",'
+                                  r'\s*"text":\s*"((?:[^"\\]|\\.)*)"', page))
+        for q_ in data.get("dated_answers", {}).get(base, []):
+            a_ = answers.get(q_)
+            if a_ is None:
+                problems.append("%s: playbooks/fees.json lists %r under dated_answers as an answer about cost that "
+                                "ends with the firm's dated sentence, and no question on the page reads so. If the "
+                                "question was reworded, change the list in the same commit" % (base, q_))
+            elif DATED_PLAIN_RX.search(a_) and charge_before(a_, data):
+                problems.append("%s: in the answer to %r a court or ASIC charge (%s) stands before the firm's dated "
+                                "sentence, which then reads as if it covered the charge. Give the firm's fees first, "
+                                "then the dated sentence, then the charge" % (base, q_, charge_before(a_, data)))
+            elif not DATED_PLAIN_RX.search(a_):
+                problems.append("%s: the answer to %r is listed under dated_answers in playbooks/fees.json and does "
+                                "not carry the firm's dated sentence. Copy it from another answer about cost, word "
+                                "for word, straight after the last of the firm's own fees in the answer and before "
+                                "any court or ASIC charge, in the page and in its markup, and run scripts/fees.py "
+                                "stamp with the day and the page" % (base, q_))
+        if base in ("faq.html", "family-law.html", "wills-and-estates.html", "commercial-law.html"):
+            fee_amounts = {money(f_["total"]) for f_ in data["fees"]}
+            for q_, a_ in re.findall(r'"name":\s*"(How much[^"]*)",\s*"acceptedAnswer":\s*\{\s*"@type":\s*"Answer",\s*"text":\s*"((?:[^"\\]|\\.)*)"', page):
+                if set(AMOUNT.findall(a_)) & fee_amounts and not DATED_PLAIN_RX.search(a_):
+                    problems.append("%s: the answer to %r quotes one of the firm's fees and does not carry the firm's "
+                                    "dated sentence. Copy it from another answer about cost, word for word, at the end "
+                                    "of the answer in the page and in its markup, and run scripts/fees.py stamp with "
+                                    "the day and the page" % (base, q_))
         if not tagged and not plain_days:
             continue
         days = {long_date(iso) for iso, _ in tagged} | set(plain_days)
@@ -952,17 +1167,8 @@ def check(data=None, quiet=False, with_renditions=True, strict=True):
             problems.append("%s has no terms to identify it by" % f["id"])
     # 2a. no price is typed into the source's own wording, where no sentence would be read and recorded
     problems += typed_prices(data)
-    # 2b. a fee that has changed between a fixed price and a from price since the record was made
-    was_from = recorded_from()
-    if with_renditions and was_from is not None:
-        for f in data["fees"]:
-            if f["from"] != (f["id"] in was_from):
-                held = sorted({name for name, ts in read_record().items() for t in ts
-                               if re.search(r"\{(?:gst:)?(?:[a-z0-9-]+\|)*%s(?:\|[a-z0-9-]+)*\}" % re.escape(f["id"]), t)})
-                problems.append("%s is now %s, and the record was made when it was %s. Reword each sentence that quotes "
-                                "it, in %s, and run scripts/fees.py snapshot"
-                                % (f["id"], "a from price" if f["from"] else "a fixed price",
-                                   "a fixed price" if f["from"] else "a from price", ", ".join(held) or "no file"))
+    # 2b. a fee that has changed between a fixed price and a from price since the record was made is reported
+    #     after part 4, which finds the sentences that quote it and still read as they did
     # 3. the court and government charges are still inside the period they were read for
     ch = data.get("charges")
     if ch:
@@ -1010,6 +1216,17 @@ def check(data=None, quiet=False, with_renditions=True, strict=True):
             spans = entry[1] if entry else None
             if spans is None and with_renditions:
                 fresh.append((rel(path), template_of(sent, marks, all_things, since_now, block)))
+            if flipped:
+                # the words before a figure must suit its fee's new kind, from for a from price and no from for a
+                # fixed price, in every sentence that quotes the fee, whether or not the sentence is on record
+                for at, m, tid, note in marks:
+                    if spans is not None:
+                        tid, note = tie(spans, at)
+                    ids = note[7:].split(",") if note.startswith("shared:") else ([tid] if note == "ok" else [])
+                    for one in ids:
+                        if (one in flipped and by_id[one]["from"] != says_from(sent, at)
+                                and (one, rel(path), sent) not in still):
+                            still.append((one, rel(path), sent))
             states_minimum = any(re.search(t, sent) for t in data.get("minimum_terms", []))
             for at, m, tid, note in marks:
                 if spans is not None:
@@ -1029,10 +1246,11 @@ def check(data=None, quiet=False, with_renditions=True, strict=True):
                 elif note != "ok":
                     problems.append("%s:%d %s: %s" % (rel(path), line, m.group(0), note))
                 elif all_things[tid]["kind"] == "fee" and all_things[tid]["from"]:
-                    # a "from" price must not be quoted as a flat fixed fee
-                    if "from" not in sent and "start" not in sent:
-                        problems.append("%s:%d %s is a from price for %s but the sentence does not say from"
-                                        % (rel(path), line, m.group(0), tid))
+                    # a "from" price must not be quoted as a flat fixed fee: the words right before the figure
+                    # say from, or starts at, and from elsewhere in the sentence does not count
+                    if not says_from(sent, at):
+                        problems.append("%s:%d %s is a from price for %s, and the words right before the figure do "
+                                        "not say from" % (rel(path), line, m.group(0), tid))
         gone += [(rel(path), e[0]) for lst in pool.values() for e in lst]
         # 5. Offer prices in service pages and their content files
         if os.path.basename(path) != "fees.html":
@@ -1056,6 +1274,7 @@ def check(data=None, quiet=False, with_renditions=True, strict=True):
             if m.group(2) not in totals:
                 problems.append("%s:%d the markup gives a %s of %s, which is no fee in the source"
                                 % (rel(path), text.count("\n", 0, m.start()) + 1, m.group(1), m.group(2)))
+    problems += markup_prices(data)
     # 5b. a sentence that quotes a court or ASIC charge and dates it gives the day the charges took effect
     if ch:
         since = long_date(ch["valid_from"]).lower()
@@ -1084,6 +1303,28 @@ def check(data=None, quiet=False, with_renditions=True, strict=True):
         if fresh or gone:
             problems.append("Read each sentence above against playbooks/fees.json, each figure beside the fee it was "
                             "tied to, and when every one is right run: python3 scripts/fees.py snapshot")
+    # 2b. a sentence written for a fixed price is wrong for a from price, and the other way about, so every
+    #     sentence that quotes a fee whose kind has changed is reworded before the change can be recorded
+    STILL[:] = still
+    if kinds:
+        on_record = {one for ts in recorded.values() for t_ in ts for token in TOKEN_RX.findall(t_.partition(PARA)[0])
+                     for one in (token[4:] if token.startswith("gst:") else token).split("|")}
+        for tid in sorted(flipped):
+            now_, was_ = ("a from price", "a fixed price") if by_id[tid]["from"] else ("a fixed price", "a from price")
+            left = [(name, sent) for one, name, sent in still if one == tid]
+            if left:
+                problems.append("%s is now %s, and %d sentences still quote it as %s. Reword each one, in its "
+                                "page and in a service page's content file, run scripts/fees.py apply to rebuild the "
+                                "service pages, and then run scripts/fees.py snapshot:"
+                                % (tid, now_, len(left), was_))
+                problems += ["  %s: %s" % x for x in left]
+            elif tid not in on_record:
+                problems.append("%s is %s, the record's list says otherwise, and no sentence on record quotes it. Run "
+                                "scripts/fees.py snapshot, which brings the list up to date" % (tid, now_))
+            else:
+                problems.append("%s is now %s, and no sentence on record still quotes it as %s. Read the "
+                                "sentences that quote it, and when each is right run scripts/fees.py snapshot, "
+                                "which records them and the change" % (tid, now_, was_))
     NOTICES[:] = notices
     if not quiet:
         print("fees: %d renditions read across %d files, %d problems" % (count, len(files()), len(problems)))
@@ -1094,8 +1335,14 @@ def check(data=None, quiet=False, with_renditions=True, strict=True):
 
 # ---------------------------------------------------------------- dates
 
-def stamp(path, text, date):
-    """Move a changed page's own dates to the day of the change."""
+HUBS = ("family-law.html", "wills-and-estates.html", "commercial-law.html")
+
+
+def stamp(path, text, date, law_read=False):
+    """Move a changed page's own dates to the day of the change. A practice hub keeps the month its law was read
+    unless law_read is given for that hub by name, because the weekly article routine adds a link to a hub and
+    moves its date without reading its law again; every other page's month moves with its date, and
+    refuse_new_month guards that."""
     y, mo, d = (int(x) for x in date.split("-"))
     short = "%d %s %d" % (d, MONTHS[mo - 1][:3], y)
     base = os.path.basename(path)
@@ -1108,7 +1355,8 @@ def stamp(path, text, date):
     text = re.sub(r'([Uu]pdated <time datetime=")\d{4}-\d{2}-\d{2}(">)[^<]*(</time>)', r"\g<1>%s\g<2>%s\3" % (date, short), text)
     if base == "faq.html":
         text = re.sub(r"(<span>Last reviewed )[^<]*(</span>)", r"\g<1>%s\2" % long_date(date), text)
-    text = CURRENCY_RX.sub(lambda m: m.group(1) + month_of(date), text)
+    if base not in HUBS or law_read:
+        text = CURRENCY_RX.sub(lambda m: m.group(1) + month_of(date), text)
     # a hub's closing line, written in the page itself: "updated on" and the long form of the day
     text = re.sub(r'(updated on <time datetime=")\d{4}-\d{2}-\d{2}(">)[^<]*(</time>)',
                   lambda m: m.group(1) + date + m.group(2) + long_date(date) + m.group(3), text)
@@ -1128,16 +1376,42 @@ def set_lastmod(sitemap, page, date):
     return sitemap[:j + 9] + date + sitemap[k:]
 
 
+class BuildFailed(Exception):
+    """The page builder stopped. The message is the builder's own."""
+
+
+def service_pages():
+    return [os.path.join(ROOT, os.path.basename(cf)[:-5] + ".html")
+            for cf in sorted(glob.glob(os.path.join(ROOT, "playbooks", "service-content", "service-*.json")))]
+
+
 def rebuild_service_pages():
     built = []
     for cf in sorted(glob.glob(os.path.join(ROOT, "playbooks", "service-content", "service-*.json"))):
         page = os.path.join(ROOT, os.path.basename(cf)[:-5] + ".html")
         before = open(page, encoding="utf-8").read() if os.path.exists(page) else ""
-        subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "build-service-page.py"), cf],
-                       check=True, stdout=subprocess.DEVNULL)
+        run = subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "build-service-page.py"), cf],
+                             capture_output=True, text=True)
+        if run.returncode != 0:
+            raise BuildFailed((run.stderr.strip().splitlines() or ["the page builder stopped with no message"])[-1])
         if open(page, encoding="utf-8").read() != before:
             built.append(page)
     return built
+
+
+def write_and_build(texts):
+    """Write {path: text} and rebuild the service pages. If the page builder stops, every file is put back as it
+    was, so that a stop never leaves the pages half written. Returns the service pages that changed."""
+    kept = {p_: open(p_, encoding="utf-8").read() for p_ in list(texts) + service_pages() if os.path.exists(p_)}
+    for path, text in texts.items():
+        open(path, "w", encoding="utf-8").write(text)
+    try:
+        return rebuild_service_pages()
+    except BuildFailed as e:
+        for path, text in kept.items():
+            open(path, "w", encoding="utf-8").write(text)
+        raise Stop("STOPPED, and every file is as it was. The page builder could not build a service page from "
+                   "its content file:\n  %s" % e)
 
 
 def move_listing_dates(pages, date):
@@ -1151,7 +1425,8 @@ def move_listing_dates(pages, date):
         return
     lp = os.path.join(ROOT, "llms.txt")
     lt = open(lp, encoding="utf-8").read()
-    lt2 = re.sub(r"(?m)^Last updated: .*$", "Last updated: %s." % long_date(date), lt)
+    newest = max(re.findall(r"<lastmod>(\d{4}-\d{2}-\d{2})</lastmod>", sm) or [date])   # the gate's own rule
+    lt2 = re.sub(r"(?m)^Last updated: .*$", "Last updated: %s." % long_date(newest), lt)
     if lt2 != lt:
         open(lp, "w", encoding="utf-8").write(lt2)
 
@@ -1170,7 +1445,7 @@ def law_months(paths, date):
         page = path
         if path.endswith(".json"):
             page = os.path.join(ROOT, os.path.basename(path)[:-5] + ".html")
-        if os.path.exists(page):
+        if os.path.exists(page) and os.path.basename(page) not in HUBS:
             m = CURRENCY_RX.search(open(page, encoding="utf-8").read())
             if m and m.group(2) != month_of(date):
                 out.append("%s, %s" % (os.path.basename(page), m.group(2)))
@@ -1179,20 +1454,65 @@ def law_months(paths, date):
 
 def refuse_new_month(paths, date, law_read):
     """A page's currency line says when its law was read, and the gate ties it to the page's date. Moving a date
-    into another month therefore moves that statement, which is true only if the law was read again."""
+    into another month therefore moves that statement, which is true only if the law was read again. A practice
+    hub is the exception: its closing line gives the day it was updated and the month its law was read as two
+    statements, so its date moves and its month stays unless law_read is given."""
     behind = law_months(paths, date)
     if behind and not law_read:
-        raise SystemExit("STOPPED, nothing written. %d pages say their law was read in an earlier month:\n  %s\n"
+        raise Stop("STOPPED, nothing written. %d pages say their law was read in an earlier month:\n  %s\n"
                          "Dating them %s would move that line to %s, which is true only once the law on those "
                          "pages has been read again. Read it, then add --law-read to the command."
-                         % (len(behind), "\n  ".join(behind[:12]) + ("\n  and %d more" % (len(behind) - 12) if len(behind) > 12 else ""),
-                            date, month_of(date)))
+                         % (len(behind), "\n  ".join(behind), date, month_of(date)))
 
 
-def stamp_files(date, names, law_read=False):
-    """Move the dates of the named pages, and of the service pages built from named content files."""
+def latest_day(page):
+    """The latest day a page carries: its dateModified values, the day its fee sentences give and its date in
+    the sitemap."""
+    days = []
+    path = os.path.join(ROOT, page)
+    if os.path.exists(path):
+        text = open(path, encoding="utf-8").read()
+        days += re.findall(r'"dateModified":\s*"(\d{4}-\d{2}-\d{2})"', text)
+        days += [m.group(2) for m in ASAT_RX.finditer(text)]
+        for m in DATED_PLAIN_RX.finditer(text):
+            d_, mo_, y_ = m.group(2).split(" ")
+            if mo_ in MONTHS:
+                days.append("%s-%02d-%02d" % (y_, MONTHS.index(mo_) + 1, int(d_)))
+    smap = open(os.path.join(ROOT, "sitemap.xml"), encoding="utf-8").read()
+    loc = "<loc>%s%s</loc>" % (SITE, "" if page == "index.html" else page)
+    m = re.search(re.escape(loc) + r"\s*<lastmod>(\d{4}-\d{2}-\d{2})</lastmod>", smap)
+    if m:
+        days.append(m.group(1))
+    return max(days) if days else None
+
+
+def refuse_backwards(paths, date):
+    """A page's date never moves backwards, whichever of its dates is the latest."""
+    later = []
+    for path in paths:
+        base = os.path.basename(path)
+        page = base[:-5] + ".html" if path.endswith(".json") else base
+        if not page.endswith(".html"):
+            continue
+        last = latest_day(page)
+        if last and last > date:
+            later.append("%s, %s" % (page, last))
+    if later:
+        raise Stop("STOPPED, nothing written. A page's date never moves backwards, and these are already dated later "
+                   "than %s:\n  %s" % (date, "\n  ".join(sorted(set(later))[:12])))
+
+
+def stamp_files(date, names, law_read=False, named=True):
+    """Move the dates of the named pages, and of the service pages built from named content files. named is False
+    where the pages were found by --since and not written on the command line: --law-read then says nothing about
+    a hub, whose month moves only when the hub itself is named."""
     real_date(date)
     targets = []
+    if named:
+        unknown = [n for n in names if not (n.endswith(".html") and os.path.exists(os.path.join(ROOT, n)))]
+        if unknown or not names:
+            raise Stop("STOPPED, nothing written. Give each page by its file name, such as family-law.html. "
+                       "No such page: %s" % (", ".join(unknown) or "none was given"))
     for name in names:
         base = os.path.basename(name)
         path = os.path.join(ROOT, name)
@@ -1200,17 +1520,9 @@ def stamp_files(date, names, law_read=False):
             path = os.path.join(ROOT, "playbooks", "service-content", base[:-5] + ".json")
         if os.path.exists(path) and not base.startswith("_"):
             targets.append(path)
-    later = []
-    for path in targets:
-        t_ = open(path, encoding="utf-8").read()
-        days = re.findall(r'"date":\s*"(\d{4}-\d{2}-\d{2})"', t_)[:1] if path.endswith(".json") else re.findall(r'"dateModified":\s*"(\d{4}-\d{2}-\d{2})"', t_)
-        if days and max(days) > date:
-            later.append("%s, %s" % (os.path.basename(path), max(days)))
-    if later:
-        raise SystemExit("STOPPED, nothing written. A page's date never moves backwards, and these are already dated "
-                         "later than %s:\n  %s" % (date, "\n  ".join(later[:12])))
+    refuse_backwards(targets, date)
     refuse_new_month(targets, date, law_read)
-    pages = []
+    pages, texts = [], {}
     for name in names:
         base = os.path.basename(name)
         path = os.path.join(ROOT, name)
@@ -1224,11 +1536,11 @@ def stamp_files(date, names, law_read=False):
                                            and not base.endswith("-claims.md"))):
             continue
         text = open(path, encoding="utf-8").read()
-        new = stamp(path, text, date)
+        new = stamp(path, text, date, law_read and (named or base not in HUBS))
         if new != text:
-            open(path, "w", encoding="utf-8").write(new)
+            texts[path] = new
         pages.append(os.path.basename(path)[:-5] + ".html" if path.endswith(".json") else base)
-    rebuild_service_pages()
+    write_and_build(texts)
     pages = sorted(set(pages))
     move_listing_dates(pages, date)
     print("dates moved to %s on %d pages" % (date, len(pages)))
@@ -1322,7 +1634,11 @@ def apply(date=None, law_read=False):
         if base != "fees.html":
             new_text = OFFER_SPEC_RX.sub(offer_sub, OFFER_RX.sub(offer_sub, new_text))
         else:
-            new_text = render_fees_page(data, new_text)
+            try:
+                new_text = render_fees_page(data, new_text)
+            except SystemExit as e:
+                print("STOPPED, nothing written. %s" % e)
+                return 2
         if new_text != text:
             pending[path] = new_text
     # The pages must be the pages on record before any figure is rewritten. Where no amount and no date of the
@@ -1368,11 +1684,14 @@ def apply(date=None, law_read=False):
         date = day
         print("No date was given, so the pages that change are dated today in Melbourne, %s." % date)
     if pending:
+        refuse_backwards(list(pending), date)
         refuse_new_month(list(pending), date, law_read)
-    for path, new_text in pending.items():
-        open(path, "w", encoding="utf-8").write(stamp(path, new_text, date))
-    built = rebuild_service_pages()
-    pages = sorted(set([rel(p_) for p_ in pending if p_.endswith(".html")] + [rel(p_) for p_ in built]))
+    # --law-read speaks for the pages apply named when it stopped, which never include a hub, so a hub keeps
+    # the month its law was read; that month moves only with stamp, the hub's own name and --law-read
+    built = write_and_build({path: stamp(path, new_text, date, law_read and os.path.basename(path) not in HUBS)
+                             for path, new_text in pending.items()})
+    dated = {os.path.basename(p_)[:-5] + ".html" for p_ in pending if p_.endswith(".json") and "service-content" in p_}
+    pages = sorted(set([rel(p_) for p_ in pending if p_.endswith(".html")] + [rel(p_) for p_ in built if rel(p_) in dated]))
     if date and pages:
         move_listing_dates(pages, date)
     print("fees applied: %d amounts changed (%s); %d files rewritten, %d service pages rebuilt"
@@ -1434,9 +1753,12 @@ if __name__ == "__main__":
         sys.exit(apply(args[0] if args else None, law_read="--law-read" in sys.argv))
     elif cmd == "stamp" and len(sys.argv) > 3:
         names = [a for a in sys.argv[3:] if a != "--law-read"]
+        named = True
         if names and names[0] == "--since":
-            names = changed_since(names[1])
-        sys.exit(stamp_files(sys.argv[2], names, law_read="--law-read" in sys.argv))
+            if len(names) < 2:
+                raise Stop("STOPPED, nothing written. Give the git ref after --since, such as --since origin/main.")
+            names, named = changed_since(names[1]), False
+        sys.exit(stamp_files(sys.argv[2], names, law_read="--law-read" in sys.argv, named=named))
     elif cmd == "snapshot":
         sys.exit(snapshot())
     elif cmd == "use" and len(sys.argv) > 2:
@@ -1444,16 +1766,18 @@ if __name__ == "__main__":
         try:
             wanted = json.load(open(sys.argv[2], encoding="utf-8"))["totals"]
         except (OSError, ValueError, KeyError, TypeError):
-            raise SystemExit('STOPPED, nothing written. %s is not a list of totals: {"totals": {"fee id": 1980}}' % sys.argv[2])
+            wanted = None
+        if not isinstance(wanted, dict):
+            raise Stop('STOPPED, nothing written. %s is not a list of totals: {"totals": {"fee id": 1980}}' % sys.argv[2])
         wrong = sorted(k for k, v in wanted.items() if isinstance(v, bool) or not isinstance(v, int))
-        if not isinstance(wanted, dict) or wrong:
-            raise SystemExit("STOPPED, nothing written. A total is a whole number of dollars including GST, written as "
-                             "a number such as 1980. Not so: %s" % ", ".join(wrong))
+        if wrong:
+            raise Stop("STOPPED, nothing written. A total is a whole number of dollars including GST, written as "
+                       "a number such as 1980. Not so: %s" % ", ".join(wrong))
         source = load()
         known = {f["id"] for f in source["fees"]}
         strangers = sorted(set(wanted) - known)
         if strangers:
-            raise SystemExit("These are not fees in playbooks/fees.json: %s" % ", ".join(strangers))
+            raise Stop("STOPPED, nothing written. These are not fees in playbooks/fees.json: %s" % ", ".join(strangers))
         for f in source["fees"]:
             if f["id"] in wanted:
                 f["total"] = wanted[f["id"]]

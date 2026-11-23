@@ -25,13 +25,14 @@ Spencer's rule of 26 September 2026 is that those need his approval, and the rel
 | Fees page | A table of court and ASIC charges, and one worked total | An executor could not total the cost of probate from any page |
 | Fees page | A note under the probate row naming the Court's separate filing fee, and a note under each estate plan giving what its documents come to bought separately | The reviewer's executor stalled at the probate row. The comparison is the page's own prices added up |
 | Fees page | The lead opens with one sentence: whose fees these are, where, in Australian dollars, as at what day, who published them and where | Two answer engines quoted a price from before 9 November, and one gave a fee in American dollars |
-| Service pages | Each fee note opens with the same sentence and the page's date, each answer that quotes one of the firm's fees ends with it, and each page closes with who published it and when | The same. An answer is the passage most often lifted for a question about cost |
+| Service pages | Each fee note opens with the same sentence and the page's date, each answer that quotes one of the firm's fees carries it straight after those fees, and each page closes with who published it and when | The same. An answer is the passage most often lifted for a question about cost |
 | Family hub, wills hub and the FAQ page | The five answers to questions about cost end with the same sentence | The same |
 | Hubs | Each ends its questions with a Sources line and a closing line, in the service pages' form | The hubs stated law with no source and no date |
+| Hubs | The In brief block ends with one line: Published by Spencer Alexander, Principal, the day the page was updated and, after the word Legislation, the Acts the block rests on | A summary quoted by itself named no publisher, date or source, and the service pages' summaries already end this way |
 | Home page | One line under the rating: fixed fees are published in full, with two of them | The first screen said nothing of the firm's clearest difference |
 | Home page, tablets | From 768 to 900 pixels the hero sets its text beside the portrait | The portrait stacked beneath the text with half the width empty |
 | Hubs and service pages, phones | Service descriptions, the fee note and the time limit cards are 16 pixels in place of 14 | Four of five local firms set this text at 16 to 18 |
-| Hubs and service pages, desktops | Running text keeps a measure of about 68 characters | Lines ran to 97 characters |
+| Hubs, service pages and the FAQ page, desktops | Running text, the In brief summary and the answers keep to about 62 to 84 characters a line. The fee note is 16 pixels at every size and keeps the same measure, where it was 14 pixels and ran to about 115 characters | Lines ran to 92 characters in the text and 123 in the answers |
 | Every page, phones | The call bar stays until the hero's call button is wholly on screen | On two pages a cut off button showed with no bar |
 | Every page, narrow phones | The header and footer wordmarks scale below 400 pixels | The menu button was cut off at 320 pixels, and so was the footer wordmark |
 | Every page | The word Lawyers under the wordmark is brass 800 | It measured 4.49 to 1 against the 4.5 the standard asks |
@@ -47,6 +48,8 @@ Spencer's rule of 26 September 2026 is that those need his approval, and the rel
 | Probate article | Two sentences on how long a grant and an estate take are reworded so the two periods cannot be merged, and the article shows it was updated on the day | An engine merged them into one figure the firm never gave |
 | Seven service pages | The urgent strip opens with the name of its Act, such as Under the Administration and Probate Act 1958 (Vic) | A time limit lifted by itself did not say whose law it was, and these limits differ between States |
 | Divorce page | The fee note and four answers name the Federal Circuit and Family Court of Australia where they said the Court | An answer lifted by itself did not say which court |
+| Divorce, parenting and property pages | The Court's filing fee is given as the amount under the Commonwealth's notice of family law fees | The passage gave the figure without saying where it is published |
+| Shareholder agreements page | The answer about cost gives the firm's two fees first and ASIC's fee after them | The sentence that dates the firm's fees must not be read as covering ASIC's |
 | Shareholder agreements page | The line under the hero buttons gives the shareholder agreement fee, from $1,095, where it gave the company set up fee | The page is about shareholder agreements, and the line gave another service's fee |
 | Home page and contact page | The step about fees adds that the fees page says what each fee covers and what costs more | The step sent a reader to the fees page without saying what is there |
 | Commercial hub | Its search description opens Commercial and small business lawyers, and no longer lists disputes | Small business is how owners search for this work, and the description must fit in 160 characters |
@@ -61,8 +64,9 @@ Spencer's rule of 26 September 2026 is that those need his approval, and the rel
   control that takes focus comes back into view.
 - The powers of attorney page says the regulations prescribe the form, which is what the law says.
 - The contact page's schema carries the ABN. Four Article nodes carry a correct word count.
-- The gate has 112 checks where it had 106: the fee check, the notice on the yearly charges, the currency line on
-  every page, the word count, the stylesheet and script keys on every page, and the rail card's closing line.
+- The gate has 113 checks where it had 106: the fee check, the notice on the yearly charges, the currency line on
+  every page, the word count, the stylesheet and script keys on every page, the rail card's closing line, and each
+  hub's closing line, whose day follows the page's date and whose month for its law is no later.
 
 ## How it was checked
 

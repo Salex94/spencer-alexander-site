@@ -113,3 +113,5 @@ Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth).
 
 The urgent strip now opens with the name of its Act, the Family Law Act 1975 (Cth), which the rows above already give
 as its authority. The statement itself is unchanged.
+\n\nThe fee note now says the Court's filing fee for consent orders is the amount under the Commonwealth's notice of
+family law fees, the notice recorded with its address under charges in playbooks/fees.json.\n

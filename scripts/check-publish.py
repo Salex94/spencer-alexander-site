@@ -535,14 +535,35 @@ def main():
     months = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
               "October", "November", "December"]
     cur_all = []
-    for f in sorted(glob.glob("insight-*.html") + glob.glob("resource-*.html") + glob.glob("service-*.html")
-                    + ["family-law.html", "wills-and-estates.html", "commercial-law.html"]):
+    for f in sorted(glob.glob("insight-*.html") + glob.glob("resource-*.html") + glob.glob("service-*.html")):
         h = read(f)
         cm = re.search(r"reflects the law applying in Victoria as at ([A-Z][a-z]+ \d{4})", h)
         dms = {"%s %s" % (months[int(mo) - 1], y) for y, mo in re.findall(r'"dateModified":\s*"(\d{4})-(\d{2})-\d{2}"', h)}
         if cm and dms and dms != {cm.group(1)}:
             cur_all.append("%s: line %s, dates %s" % (f, cm.group(1), ", ".join(sorted(dms))))
     check("currency line month matches dateModified on every page", not cur_all, "; ".join(cur_all[:3]))
+
+    # A practice hub's closing line makes two statements: the day the page was updated and the month its law
+    # was read. The weekly article routine adds a link to a hub and moves its date without reading its law
+    # again, so the day follows the page's date and the month only has to be no later than it. The month moves
+    # when the hub's law is read again and the page is dated with --law-read.
+    hub_close = []
+    for f in ("family-law.html", "wills-and-estates.html", "commercial-law.html"):
+        h = read(f)
+        fp = next((b for b in jsonld(h) if isinstance(b, dict) and b.get("@type") == "FAQPage"), {})
+        day = fp.get("dateModified", "")
+        shown = re.findall(r'updated on <time datetime="(\d{4}-\d{2}-\d{2})">([^<]*)</time>', h)
+        cm = re.findall(r"reflects the law applying in Victoria as at ([A-Z][a-z]+) (\d{4})", h)
+        fix = "run python3 scripts/fees.py stamp with today's date in Melbourne and %s" % f
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", day) or not shown or len(cm) != 1 or cm[0][0] not in months:
+            hub_close.append("%s: needs one closing line with its updated day and the month its law was read" % f)
+        elif any(s != (day, "%d %s %s" % (int(day[8:10]), months[int(day[5:7]) - 1], day[:4])) for s in shown):
+            hub_close.append("%s: the page says updated on %s, and its date is %s: %s"
+                             % (f, ", ".join(sorted({s[1] for s in shown})), day, fix))
+        elif (int(cm[0][1]), months.index(cm[0][0]) + 1) > (int(day[:4]), int(day[5:7])):
+            hub_close.append("%s: law read in %s %s, after the page's date %s" % (f, cm[0][0], cm[0][1], day))
+    check("hub closing line gives the page's date, and a month for its law no later", not hub_close,
+          "; ".join(hub_close[:3]))
 
     # An Article's wordCount is the gate's own count of its body (added 23 Nov 2026)
     wc_bad = []

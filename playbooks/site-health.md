@@ -62,7 +62,13 @@ with each figure beside the fee it was tied to, and when each is right run
 threshold, is added to `other_amounts` in `playbooks/fees.json` in the same commit. A date moved
 into a new month also moves a page's currency line, which says when its law was read, so
 `apply` and `stamp` refuse it unless `--law-read` is given: give it only when the law on those
-pages has been read again in that run. Queued from the audit of 23 November 2026, for a run with
+pages has been read again in that run. A practice hub keeps the month its law was read when its date
+moves, so the only time a hub's month changes is when a run has read the hub's law again and dates
+it by name, with `python3 scripts/fees.py stamp`, the day, the hub's file name and `--law-read`.
+`--law-read` on `apply`, or on `stamp` with `--since`, speaks only for the pages the stop named and
+never moves a hub's month. The record holds each fee sentence with its paragraph and the heading or
+question above it, so a correction to any of those is reported as a changed sentence: read it and
+run snapshot as above. Queued from the audit of 23 November 2026, for a run with
 room: give faq.html a Sources line in the articles' form, reading each provision its answers rely
 on in the authorised version first, and naming an Act alone where more than eight of its
 provisions are relied on. Each week, check that every article dated from 28 September 2026 carries its Sources

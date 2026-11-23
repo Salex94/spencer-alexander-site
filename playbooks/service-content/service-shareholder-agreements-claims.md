@@ -71,3 +71,5 @@ Corporations Act 2001 (Cth), the Act its row cites. No statement of law changed.
 From 23 November 2026 the fee note opens, and each answer that quotes one of the firm's fees ends, with one sentence
 the page builder writes: whose fees they are, where, in Australian dollars, the day, who published them and where. It
 is a statement about the firm's own fees and not a statement of law.
+\n\nThe answer about cost now gives the firm's two fees first and ASIC's registration fee after them, so that the sentence
+dating the firm's fees cannot be read as covering ASIC's.\n

@@ -28,7 +28,7 @@ Read today on the Federal Register of Legislation through `api.prod.legislation.
 ## Sources read today
 
 - **Family Law Act 1975 (Cth)**: Compilation No. 101, compilation date 10 June 2025, register ID C2025C00341. Both Word volumes were downloaded from api.prod.legislation.gov.au on 28 Sep 2026. The Register lists it as current and latest, with no unincorporated amendments. The endnotes show s 79 amended by Act No. 118, 2024.
-- **Federal Circuit and Family Court of Australia (Family Law) Rules 2021**: Compilation No. 4, compilation date 10 June 2025, register ID F2025C00594, rectification version 1. It was downloaded from the same API. It is the latest version, with no unincorporated amendments. The page describes procedure only through these Rules. It does not name them in the Sources line, because their title carries brackets the brief does not allow.
+- **Federal Circuit and Family Court of Australia (Family Law) Rules 2021**: Compilation No. 4, compilation date 10 June 2025, register ID F2025C00594, rectification version 1. It was downloaded from the same API. It is the latest version, with no unincorporated amendments. The page describes procedure only through these Rules. The Sources line now names them, with rules 4.01, 10.04, 10.06 and 10.07 and Schedule 1, Part 1.
 
 ## Legal statements on the page
 
@@ -112,3 +112,6 @@ under `brief` in the content file. They were taken from the rows of this registe
 statement, and each is in the page's own Sources line. No provision was read again for this purpose and no statement
 of law on the page changed. Bullet 1 rests on the Family Law Act 1975 (Cth). Bullet 2 rests on the Family Law Act 1975
 (Cth). Bullet 3 rests on the Family Law Act 1975 (Cth).
+\n\n## Names added on 23 November 2026\n\nThe urgent strip now opens with the name of its Act, the Family Law Act 1975 (Cth), which the rows above already give
+as its authority. The statement itself is unchanged. The fee note now says the Court's filing fee for consent orders
+is the amount under the Commonwealth's notice of family law fees.\n

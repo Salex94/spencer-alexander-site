@@ -53,11 +53,31 @@ def main(path, outdir=None):
         c["fee"]["p"] = fees_line + " " + c["fee"]["p"]
     # An answer that quotes one of the firm's fees ends with the same sentence, in the page and in its markup,
     # because an answer is the passage most often lifted for a question about cost.
-    fee_totals = {"${:,}".format(f_["total"]) for f_ in
-                  json.load(open(os.path.join(ROOT, "playbooks", "fees.json"), encoding="utf-8"))["fees"]}
-    for q in c["faqs"]:
-        if set(re.findall(r"\$\d{1,3}(?:,\d{3})*", q["a"])) & fee_totals:
-            q["a"] = q["a"].rstrip() + " " + fees_line
+    # What each figure in an answer is comes from the fee tool, which reads the record of sentences, so a court
+    # charge that comes to equal one of the firm's fees is still told from it.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import fees as fee_tool
+    kinds = fee_tool.answer_kinds(path)
+    for n, q in enumerate(c["faqs"]):
+        a = q["a"].rstrip()
+        figures = list(re.finditer(r"\$\d{1,3}(?:,\d{3})*(?:\.\d\d)?", a))
+        if n >= len(kinds) or len(kinds[n]) != len(figures):
+            raise SystemExit("%s: the fee tool could not match the answer to %r with its reading of the content file. "
+                             "Write each question as q and then a, with nothing between them, so that the dated fee "
+                             "sentence is never left out of an answer" % (path, q["q"]))
+        kind = kinds[n]
+        ours = [m for m, k in zip(figures, kind) if k == "fee"]
+        if not ours:
+            continue
+        # the sentence goes straight after the last sentence that quotes one of the firm's own fees
+        stop = a.find(". ", ours[-1].end())
+        at = len(a) if stop < 0 else stop + 1
+        early = [m.group(0) for m, k in zip(figures, kind) if m.start() < at and k in ("charge", "derived")]
+        if early:
+            raise SystemExit("%s: the answer to %r quotes a court or ASIC charge (%s) before the last of the firm's own "
+                             "fees. Put the firm's fees first, so that the sentence that dates them cannot be read as "
+                             "covering the charge" % (path, q["q"], ", ".join(early)))
+        q["a"] = a[:at] + " " + fees_line + a[at:]
 
     # ---- head: the hub's, with this page's own title, description and addresses
     head_end = hub.index('  <script type="application/ld+json">')
@@ -81,9 +101,15 @@ def main(path, outdir=None):
                "name": c["service_name"], "serviceType": c["service_name"], "provider": hub_service["provider"],
                "areaServed": hub_service["areaServed"], "description": desc}
     if c.get("offers"):
+        # a from price is marked as a minimum, as the fees page marks it, and never as a flat price
+        fee_source = fee_tool.load()
+
+        def spec(o):
+            fee = fee_tool.offer_fee(fee_source, o["name"])
+            key = "minPrice" if fee and fee["from"] else "price"
+            return {"@type": "PriceSpecification", key: o["price"], "priceCurrency": "AUD", "valueAddedTaxIncluded": True}
         service["offers"] = [{"@type": "Offer", "name": o["name"], "price": o["price"], "priceCurrency": "AUD",
-                              "url": SITE + "fees.html", "priceSpecification": {"@type": "PriceSpecification", "price": o["price"],
-                              "priceCurrency": "AUD", "valueAddedTaxIncluded": True}} for o in c["offers"]]
+                              "url": SITE + "fees.html", "priceSpecification": spec(o)} for o in c["offers"]]
     crumbs = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE},
         {"@type": "ListItem", "position": 2, "name": text(c["hub_label"]), "item": SITE + c["hub"] + ".html"},

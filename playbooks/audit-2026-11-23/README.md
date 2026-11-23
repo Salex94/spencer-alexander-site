@@ -15,6 +15,7 @@ released. The report he reads is a private page, and its address is kept with th
 - fees-full-earlier-schedule.json: the totals of all 24 fees as published from 9 to 16 November 2026.
   `python3 scripts/fees.py use playbooks/audit-2026-11-23/fees-full-earlier-schedule.json` puts them all back.
 - changes.md: what the preview changes, with every change a visitor can see set out for Spencer's approval.
+- release-message.txt: the commit message for the release, which step 5 below uses.
 - article-proposals.md: the eight article topics now in the backlog, why they were chosen, and one service page the
   evidence supports that waits for his approval because the cap is twelve.
 
@@ -42,11 +43,13 @@ One release, as a single commit on main, on Spencer's word.
 4. Commit whatever the merge and the stamp changed on the branch, so the working tree is clean. With main unmoved
    and the day still 23 November 2026 there is nothing to commit.
 5. Publish as one commit: `git checkout -B main origin/main`, `git merge --squash claude/affectionate-einstein-xytjjz`
-   and commit. Run `python3 scripts/check-publish.py` again on main, and only when every check passes
+   and `git commit -F playbooks/audit-2026-11-23/release-message.txt`, which is the message for the release.
+   Run `python3 scripts/check-publish.py` again on main, and only when every check passes
    `git push origin HEAD:main`.
 6. Run `python3 scripts/indexnow.py` with the .html path of every page that changed, which
-   `git diff --name-only HEAD~1 HEAD -- '*.html'` lists on main after the release commit, and ask Google to index
-   the fees page and the probate page in Search Console.
+   `git diff --name-only HEAD~1 HEAD -- '*.html' ':(exclude)_*' ':(exclude)404.html' ':(exclude)thank-you*.html'` lists on main after the
+   release commit, leaving out the template and the pages that are not indexed, and ask Google to index the fees
+   page and the probate page in Search Console.
 7. The same day, through Chrome on the Mac mini: on the Business Profile set probate and letters of administration to
    From $1,980 and property settlement to From $3,025, and read each priced service's description for a total that
    has changed, being letters of administration $2,178, wills for a couple $880, property and parenting together
@@ -70,3 +73,9 @@ fortnight after release carries that cost.
 apply is for a change meant to stand. A price tried and then changed back through apply returns every figure but
 leaves each page that quotes it dated the day of the trial, so a trial that was never published is dropped with
 `git checkout`.
+
+After release the three weekly routines run against the new gate. The Monday routine dates a hub with
+`python3 scripts/fees.py stamp` and the hub's file name once it has added its link, which moves the hub's day and
+leaves the month its law was read, and that was rehearsed with the clock at 7 and 14 December 2026 and 4 January 2027.
+A new article that quotes a fee is reported by the fee check until its sentence has been read and recorded with
+`python3 scripts/fees.py snapshot`, and so is any fee sentence whose paragraph, heading or question a routine changes.
