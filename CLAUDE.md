@@ -1102,6 +1102,54 @@ conventions.
   repository.
 - Keys after this round: site.css v25, styles.css v9, site.js v19.
 
+## Review of 24 Nov 2026, after the release
+
+On 24 Nov 2026 Spencer said the core of the brief is that every criterion is at the highest standard it can reach, and
+then implemented. Four assessors looked at the live site itself for design, conversion, search and answer engines, and
+the writing, each returning specific changes with evidence. What stood up was built, tested and published the same day
+as one commit. These are the conventions that came out of it.
+
+- **The side rail on laptops.** On a window too short to hold both rail cards, the call card alone rides beneath the
+  header and the second card rests at the foot of the column, so nothing that rides is cut by the fold. The rules turn
+  on the window's height, in `styles/site.css` under Review of 24 Nov 2026, and a few lines at the end of
+  `scripts/site.js` set the space kept under the call card. Windows tall enough for both cards keep them together.
+- **Page headings keep Box Hill together.** The h1 of each hub, each service page and the contact page wraps the two
+  words in `<span class="nowrap">`. The hubs and the contact page carry it in the page, and the page builder adds it
+  to a service page's h1, so the content files stay as they are. On phones the page heading is 2.2rem.
+- **The eyebrow that repeats the breadcrumb** carries the class `eyebrow-light--repeat` and is left out on phones, on
+  the hubs, the service pages, the fees page, the contact page and the insights page. An eyebrow that says something
+  the breadcrumb does not keeps the plain class.
+- **Closing bands say how soon an enquiry is answered.** Under the two buttons, in `cta__meta`: Enquiries are answered
+  within one business day, with the free first call before it where the band's own lead does not say so. It is in
+  `_article-template.html`, in the page builder and in the pages. It is the same on every page, like the rail card,
+  so the page reader in `scripts/fees.py` skips it and it never moves a page's date.
+- **The paragraphs a reader decides by are 16 pixels at every width**: service descriptions, the steps on the hubs,
+  the fee note and the time limit cards. Question rows on hubs and service pages keep the FAQ page's width of 812
+  pixels and answer to the pointer, and a related list with an odd number of links ends on one full row.
+- **The enquiry form.** Its opening line says a lawyer replies within one business day, in the way the visitor says
+  is safe, and gives the number to tap. The Enter key moves to the next field and never sends the form, a phone number
+  that is too short gets one plain sentence, and on the contact page the bar's Enquire button steps aside while the
+  form is on screen. These join the three behaviours of 23 Nov 2026, the sending label, the lock against a second
+  press and the lasting error, and all are kept when the form changes. Both thank you pages carry the Quick exit.
+- **Emergency numbers can be tapped wherever a family page names them**, and the two urgent strips on family pages
+  say that urgent calls are taken after hours, which is one of the three service promises and no new one.
+- **Referrals.** The referrals page hero offers Email a referral, which opens an email with the details to give
+  already set out, and Call. It still quotes no price and says nothing about payment for referrals.
+- **Titles and names.** A service page's title may lead with the word clients search under while the h1 keeps the
+  service's own, as the parenting page does with custody and the financial agreements page with prenup. The habit of
+  23 Nov 2026 of naming the Act, the court or the State inside a sentence likely to be lifted now reaches the home
+  page's time limit cards and the answers on the FAQ page, the hubs and the service pages. Each name added is one the
+  page's own Sources line or the matching page already carries, and no statement of law was added.
+- **New articles are linked from the pages that discuss their subject**, by the Monday routine, wrapping words those
+  pages already carry. `playbooks/article.md` has the step.
+- **The fee is named Shareholder agreement** everywhere, with its id unchanged.
+- **Left for Spencer**, because each is his wording, a fee's terms or a statement of law: the scope of wills with
+  testamentary trusts for a couple, which says the same things cost more as for one person; when an enduring power of
+  attorney starts, which the wills hub says two ways; the FAQ sentence that a straightforward estate is commonly
+  finalised within six to 12 months; and the About page's sentence on his years in law. The FAQ page's Sources line
+  stays queued for the Tuesday routine, which reads each answer against its Act first.
+- Keys after this review: site.css v26, styles.css v9, site.js v20.
+
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 
 The owner has asked that runs never require their input. Two facts every run

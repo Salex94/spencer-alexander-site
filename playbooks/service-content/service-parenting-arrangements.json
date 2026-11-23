@@ -5,7 +5,7 @@
  "crumb": "Parenting arrangements",
  "service_name": "Parenting arrangements",
  "date": "2026-11-24",
- "title": "Parenting Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
+ "title": "Parenting and Custody Lawyers Box Hill | Spencer Alexander Lawyers",
  "h1": "Parenting Lawyers in Box Hill, Melbourne",
  "description": "Parenting lawyers in Box Hill for what many still call custody. Consent orders for agreed arrangements are $2,895 including GST, and your first call is free.",
  "lead": "From our Box Hill office, our lawyers help separated parents settle where the children live, their time with each parent and how major decisions are made, then record it in a parenting plan or consent orders. Where agreement is not possible, we put your case to the court. An application for parenting orders generally needs a family dispute resolution certificate, unless the court grants an exemption.",
@@ -16,7 +16,7 @@
  ],
  "urgent": {
   "strong": "Children kept from you, or about to be taken overseas?",
-  "text": "Under the Family Law Act 1975 (Cth), the court can order a child's return to a parent and make orders to stop a child being taken out of Australia, and it can excuse family dispute resolution where an application is urgent. If you are in immediate danger, call 000."
+  "text": "Under the Family Law Act 1975 (Cth), the court can order a child's return to a parent and make orders to stop a child being taken out of Australia, and it can excuse family dispute resolution where an application is urgent. If you are in immediate danger, call <a href=\"tel:000\">000</a>. Otherwise call us now, including after hours, and tell us it is urgent."
  },
  "brief": {
   "sources": ["Family Law Act 1975 (Cth)", "Family Law Amendment Act 2023 (Cth)", "Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)"],
@@ -55,7 +55,7 @@
     },
     {
      "t": "Court and urgent orders",
-     "p": "Where agreement is not possible, we apply for or respond to interim and final parenting orders, changes to final orders, recovery orders and orders to stop a child being taken out of Australia. If you are in immediate danger, call 000."
+     "p": "Where agreement is not possible, we apply for or respond to interim and final parenting orders, changes to final orders, recovery orders and orders to stop a child being taken out of Australia. If you are in immediate danger, call <a href=\"tel:000\">000</a>."
     }
    ]
   },
@@ -96,6 +96,10 @@
    "label": "Parenting arrangements after separation: how the law decides what is best"
   },
   {
+   "href": "/insight-parenting-consent-orders",
+   "label": "We agree on the children. Do we need a lawyer for consent orders?"
+  },
+  {
    "href": "/insight-grandparents-rights-victoria",
    "label": "Grandparents' rights in Victoria: can you apply to see your grandchildren?"
   },
@@ -120,7 +124,7 @@
   },
   {
    "q": "Do we have to try mediation before going to court?",
-   "a": "Usually. Unless the court grants an exemption, an application for parenting orders needs a family dispute resolution certificate, which a practitioner can also give if the other parent refuses or fails to attend. Exemptions are available for urgent applications and applications made by consent, among others. The court can also grant one where it is satisfied there are reasonable grounds to believe that a party has committed family violence or abused the child, that there is a risk of family violence by a party, or that the child would be at risk of abuse if the application were delayed. If you are in immediate danger, call 000."
+   "a": "Usually. Under the Family Law Act 1975 (Cth), unless the court grants an exemption, an application for parenting orders needs a family dispute resolution certificate, which a practitioner can also give if the other parent refuses or fails to attend. Exemptions are available for urgent applications and applications made by consent, among others. The court can also grant one where it is satisfied there are reasonable grounds to believe that a party has committed family violence or abused the child, that there is a risk of family violence by a party, or that the child would be at risk of abuse if the application were delayed. If you are in immediate danger, call 000."
   },
   {
    "q": "Is there a time limit for parenting orders?",
@@ -128,11 +132,11 @@
   },
   {
    "q": "Can I move away with the children?",
-   "a": "You should not, without the other parent's agreement or a court order, if the move would make it significantly harder for the children to spend time with that parent. The Act treats that as a major long-term issue. Where it is safe, parents are encouraged to consult each other about it, and where a parenting order provides for joint decision-making, they must consult and genuinely try to decide together. Moving first and asking later can seriously damage your case."
+   "a": "You should not, without the other parent's agreement or a court order, if the move would make it significantly harder for the children to spend time with that parent. The Family Law Act 1975 (Cth) treats that as a major long-term issue. Where it is safe, parents are encouraged to consult each other about it, and where a parenting order provides for joint decision-making, they must consult and genuinely try to decide together. Moving first and asking later can seriously damage your case."
   },
   {
    "q": "What if the other parent is keeping the children from me?",
-   "a": "If you are in immediate danger, call 000. Otherwise call us the day it happens. The court can order a child's return to a parent, deal with a breach of existing orders, and excuse family dispute resolution where an application is urgent."
+   "a": "If you are in immediate danger, call <a href=\"tel:000\">000</a>. Otherwise call us the day it happens. Under the Family Law Act 1975 (Cth), the court can order a child's return to a parent, deal with a breach of existing orders, and excuse family dispute resolution where an application is urgent."
   }
  ],
  "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>; <a href=\"https://www.legislation.gov.au/C2023A00087/latest\" rel=\"noopener\" target=\"_blank\">Family Law Amendment Act 2023 (Cth)</a>, Schedule 1, Part 2; <a href=\"https://www.legislation.gov.au/F2021L01197/latest\" rel=\"noopener\" target=\"_blank\">Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)</a>, rules 2.04, 4.01, 4.02, 10.04, 10.05 and 10.07, and Schedule 1, Part 2; <a href=\"https://www.legislation.gov.au/F2023L00022/latest\" rel=\"noopener\" target=\"_blank\">Family Law (Fees) Regulations 2022 (Cth)</a>, section 2.02 and Schedule 1, item 6.",

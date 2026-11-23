@@ -289,6 +289,27 @@
   var phone = form.querySelector("#phone");
   var email = form.querySelector("#email");
   if (!phone || !email) return;
+  // The keyboard's Enter key moves to the next field. It used to send the enquiry from the phone or email field,
+  // before the safety question and the message, and to raise the error from the name field.
+  var fields = Array.prototype.slice.call(form.querySelectorAll('input:not([type="hidden"]):not([name="_honey"]), select, textarea'));
+  form.addEventListener("keydown", function (e) {
+    if (e.key !== "Enter" || e.isComposing || !e.target || e.target.tagName !== "INPUT") return;
+    e.preventDefault();
+    var next = fields[fields.indexOf(e.target) + 1];
+    if (next) next.focus();
+  });
+  // A short phone number gets one plain sentence in every browser
+  phone.addEventListener("input", function () { phone.setCustomValidity(""); });
+  phone.addEventListener("invalid", function () {
+    if (phone.validity.patternMismatch) phone.setCustomValidity("Please check the phone number. It needs at least eight digits.");
+  });
+  // The bar's Enquire button steps aside while the form is on screen
+  var card = form.closest(".form-card") || form;
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (entries) {
+      document.body.classList.toggle("form-in-view", entries[0].isIntersecting);
+    }).observe(card);
+  }
   var msg = document.createElement("p");
   msg.className = "form__error";
   msg.id = "contact-needs";
@@ -385,4 +406,14 @@
   }
   openFromHash();
   window.addEventListener("hashchange", openFromHash);
+})();
+
+// The rail's call card stops above the second card: the space kept beneath it is that card's height and the gap
+(function () {
+  var rail = document.querySelector(".rail");
+  if (!rail || rail.children.length < 2) return;
+  function rest() { rail.style.setProperty("--rail-rest", (rail.lastElementChild.offsetHeight + 18) + "px"); }
+  rest();
+  window.addEventListener("load", rest);
+  window.addEventListener("resize", rest);
 })();

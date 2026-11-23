@@ -7,8 +7,8 @@
  "date": "2026-11-24",
  "title": "Will Dispute Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers",
  "h1": "Will Dispute Lawyers in Box Hill, Melbourne",
- "description": "Will dispute lawyers in Box Hill. A family provision claim must generally be made within six months of the grant, and your costs are estimated in writing first.",
- "lead": "From our Box Hill office, we act for people contesting a will because they were left out, left short or doubt the will is valid, and for executors and beneficiaries defending one, through negotiation, mediation and any hearing. A family provision claim must generally be made within six months of the grant of probate or administration.",
+ "description": "Will dispute lawyers in Box Hill for contesting or defending a will. A family provision claim must generally be made within six months of the grant.",
+ "lead": "From our Box Hill office, we act for people contesting a will because they were left out or left short, or because they doubt the will is valid, and for executors and beneficiaries defending one, through negotiation, mediation and any hearing. A family provision claim must generally be made within six months of the grant of probate or administration.",
  "meta": [
   "Your first call is free, and you speak with a lawyer",
   "For claimants, executors and beneficiaries",
@@ -95,12 +95,16 @@
  },
  "fee": {
   "t": "Costs, estimated in writing.",
-  "p": "An estate dispute is charged on a written estimate rather than a fixed fee, as our <a href=\"/fees#when-a-fixed-fee-does-not-fit\">fees page</a> explains. After we understand what you need, we provide an engagement letter and costs agreement setting out a clear fee estimate before any substantive work begins. Who pays the costs of the dispute itself is for the court to decide or the parties to agree."
+  "p": "An estate dispute is charged on a written estimate rather than a fixed fee, as our <a href=\"/fees#when-a-fixed-fee-does-not-fit\">fees page</a> explains. After we understand what you need, we provide an engagement letter and costs agreement setting out a clear fee estimate before any substantive work begins. <a href=\"/insight-cost-of-contesting-a-will\">Who pays the costs of the dispute itself</a> is for the court to decide or the parties to agree."
  },
  "related": [
   {
    "href": "/insight-contesting-a-will",
    "label": "Contesting a will in Victoria: your rights and the time limits"
+  },
+  {
+   "href": "/insight-cost-of-contesting-a-will",
+   "label": "What does it cost to contest a will in Victoria, and who pays?"
   },
   {
    "href": "/insight-fraudulent-calumny-victoria",
@@ -123,19 +127,19 @@
  "faqs": [
   {
    "q": "Is it too late to contest a will once probate has been granted?",
-   "a": "Not necessarily. A family provision claim can be made within six months of the grant, or later if the court extends the time on an application made before the estate is finally distributed, though a late claim cannot disturb what has already been distributed. A challenge to the will's validity is usually raised before the grant, but can still be made after it by applying to the court to revoke the grant, so call us promptly."
+   "a": "Not necessarily. In Victoria, a family provision claim can be made within six months of the grant, or later if the court extends the time on an application made before the estate is finally distributed, though a late claim cannot disturb what has already been distributed. A challenge to the will's validity is usually raised before the grant, but can still be made after it by applying to the court to revoke the grant, so call us promptly."
   },
   {
    "q": "Can a grandchild, a sibling or a carer make a claim?",
-   "a": "A grandchild can, and so can a member of the deceased's household or a registered caring partner, but the court can make an order for them only if they were wholly or partly dependent on the deceased. A sibling or a carer who fits none of the Act's categories of eligible person cannot make a family provision claim."
+   "a": "In Victoria, a grandchild can, and so can a member of the deceased's household or a registered caring partner, but the court can make an order for them only if they were wholly or partly dependent on the deceased. A sibling or a carer who fits none of the categories of eligible person in the Administration and Probate Act 1958 (Vic) cannot make a family provision claim."
   },
   {
    "q": "Can I distribute the estate if a claim has been threatened?",
-   "a": "Not before you have taken advice. An executor who properly distributes after six months from the grant, without notice of a claim, is generally protected, but a distribution made earlier, or after notice of a claim, can fall outside that protection and leave you personally liable."
+   "a": "Not before you have taken advice. In Victoria, an executor who properly distributes after six months from the grant, without notice of a claim, is generally protected, but a distribution made earlier, or after notice of a claim, can fall outside that protection and leave you personally liable."
   },
   {
    "q": "Who pays the legal costs of a will dispute?",
-   "a": "The court generally decides who pays the costs of a proceeding and how much, and it can order a party to pay costs personally, although a settlement can deal with costs by agreement. It cannot be assumed that the estate pays everyone's costs."
+   "a": "In a will dispute in Victoria, the court generally decides who pays the costs of a proceeding and how much, and it can order a party to pay costs personally, although a settlement can deal with costs by agreement. It cannot be assumed that the estate pays everyone's costs."
   },
   {
    "q": "Can a will be challenged if it was not signed and witnessed properly?",
@@ -144,7 +148,7 @@
  ],
  "sources": "<a href=\"https://www.legislation.vic.gov.au/in-force/acts/administration-and-probate-act-1958\" rel=\"noopener\" target=\"_blank\">Administration and Probate Act 1958 (Vic)</a>, sections 12 and 58 and Part IV; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/wills-act-1997\" rel=\"noopener\" target=\"_blank\">Wills Act 1997 (Vic)</a>, sections 7 and 9; <a href=\"https://www.legislation.vic.gov.au/in-force/statutory-rules/supreme-court-administration-and-probate-rules-2023\" rel=\"noopener\" target=\"_blank\">Supreme Court (Administration and Probate) Rules 2023 (Vic)</a>, Orders 8 and 11; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/civil-procedure-act-2010\" rel=\"noopener\" target=\"_blank\">Civil Procedure Act 2010 (Vic)</a>, section 66; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/supreme-court-act-1986\" rel=\"noopener\" target=\"_blank\">Supreme Court Act 1986 (Vic)</a>, section 24; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/county-court-act-1958\" rel=\"noopener\" target=\"_blank\">County Court Act 1958 (Vic)</a>, section 78A.",
  "cta": {
-  "eyebrow": "Before the time runs",
+  "eyebrow": "Before time runs out",
   "title": "Speak with a will dispute lawyer.",
   "lead": "Tell us what has happened and, if you know it, when probate was granted, and we will tell you plainly whether and how we can help and which time limit applies."
  }

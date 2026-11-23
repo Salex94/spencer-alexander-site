@@ -165,7 +165,9 @@ stylesheet links and their versions, fonts and Open Graph tags follow the hub ex
 - **Title:** `<Title name> Lawyers Box Hill, Melbourne | Spencer Alexander Lawyers`, dropping
   ", Melbourne" wherever the title would pass about 70 characters, as in "Property Settlement
   Lawyers Box Hill | Spencer Alexander Lawyers" at 64. If it is still too long, the approved
-  title name is too long; report it and stop.
+  title name is too long; report it and stop. Where clients search for a service under another
+  name, the title may lead with that name while the h1 keeps the service's own, as the parenting
+  and financial agreements pages do.
 - **h1:** `<Title name> Lawyers in Box Hill, Melbourne`. The title and the h1 must both differ from
   the matching article's.
 - **Meta description:** 120 to 160 characters, identical in the meta tag, og:description and the
