@@ -698,8 +698,8 @@ h2, h3, .faq-q, .post-card__title, .featured__title, .rail-card__t, .svc__title,
 
 /* Preview for Spencer's approval, 28 Sep 2026: design refinements from the audits */
 /* Links inside running text carry a fine underline, so they read as links without relying on colour (WCAG 1.4.1) */
-.article__body p a, .article__body li a, .article-callout a, .article-sources a, .prose a, .svc p a, .faq-a p a, .brief a, .form__note a, .fee-note__d a, .about-archive__lead a, .fees-body a, .step__d a, .info-block__sub a, .contact-next a, .bio__body p a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(110,31,46,.42); }
-.article__body p a:hover, .article__body li a:hover, .article-callout a:hover, .prose a:hover, .svc p a:hover, .faq-a p a:hover, .brief a:hover, .fee-note__d a:hover, .step__d a:hover, .info-block__sub a:hover, .contact-next a:hover, .bio__body p a:hover { text-decoration-color: currentColor; }
+.article__body p a, .article__body li a, .article-callout a, .article-sources a, .prose a, .svc p a, .faq-a p a, .brief a, .form__note a, .form-card__d a, .fee-note__d a, .about-archive__lead a, .fees-body a, .step__d a, .info-block__sub a, .contact-next a, .bio__body p a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(110,31,46,.42); }
+.article__body p a:hover, .article__body li a:hover, .article-callout a:hover, .prose a:hover, .svc p a:hover, .faq-a p a:hover, .brief a:hover, .fee-note__d a:hover, .form-card__d a:hover, .step__d a:hover, .info-block__sub a:hover, .contact-next a:hover, .bio__body p a:hover { text-decoration-color: currentColor; }
 /* The home hero keeps its call button above the fold on common laptops */
 @media (min-width: 901px) { .hero__grid { padding-block: clamp(24px, 2.4vw, 40px) clamp(40px, 5vw, 72px); } .hero__title { font-size: clamp(2.7rem, 4.4vw, 3.75rem); margin-top: 12px; } .hero__lead { margin-top: 18px; } .hero__actions { margin-top: 26px; } }
 /* One portrait, one look: the home hero overlay is lighter so it matches About */
@@ -843,9 +843,10 @@ a[href^="mailto:"] { overflow-wrap: anywhere; }
 .hero__fees { margin-top: 14px; font-size: var(--text-sm); line-height: 1.5; color: var(--wine-200); max-width: 46ch; }
 .hero__fees a { color: var(--wine-100); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(251,249,245,.4); }
 .hero__fees a:hover { color: var(--brass-300); text-decoration-color: currentColor; }
-/* On phones the paragraphs a reader decides by are 16 pixels, not 14: what each service is, what the fee
-   covers and the time limits on the home page. Notes, sources and captions stay at 14. */
-@media (max-width: 640px) { .svc p, .fee-note__d, .urgent__d { font-size: 1rem; line-height: 1.6; } }
+/* The paragraphs a reader decides by are 16 pixels at every width, not 14: what each service is, each step of
+   a matter on the hubs, what the fee covers and the time limits on the home page. Notes, sources and captions
+   stay at 14. */
+.svc p, .urgent__d, .process .step__d { font-size: 1rem; line-height: 1.6; }
 /* Home hero on tablets: text beside the portrait, as on a desktop, where the portrait used to stack beneath
    the text with half the width left empty */
 @media (min-width: 768px) and (max-width: 900px) {
@@ -871,3 +872,56 @@ a[href^="mailto:"] { overflow-wrap: anywhere; }
    drops to a line of its own only when text is enlarged so far that the two cannot share one. */
 .fee-index__name { flex: 1 1 9ch; min-width: 0; }
 .fee-index__price { flex: 0 0 auto; }
+
+/* ---------------------------------------------------------------- Review of 24 Nov 2026 */
+/* On a screen too short to hold the whole rail, the call card alone rides with the page, whole, and the second
+   card rests at the foot of the column. Screens tall enough for both cards keep them riding together. */
+@media (min-width: 1101px) and (max-height: 939px) {
+  .rail { position: static; align-self: stretch; display: flex; flex-direction: column; gap: 0; }
+  .rail > .rail-card:first-child { position: sticky; top: 96px; margin-bottom: var(--rail-rest, 320px); }
+  .rail > .rail-card:only-child { margin-bottom: 0; }
+  .rail > .rail-card + .rail-card { margin-top: auto; }
+}
+@media (min-width: 1101px) and (min-height: 940px) and (max-height: 999px) {
+  .article-rail { position: static; align-self: stretch; display: flex; flex-direction: column; gap: 0; }
+  .article-rail > .rail-card:first-child { position: sticky; top: 96px; margin-bottom: var(--rail-rest, 320px); }
+  .article-rail > .rail-card:only-child { margin-bottom: 0; }
+  .article-rail > .rail-card + .rail-card { margin-top: auto; }
+}
+/* On a short laptop screen the call card tightens so that it still fits beneath the header */
+@media (min-width: 1101px) and (max-height: 779px) {
+  .rail > .rail-card:first-child { top: 88px; padding: 20px 24px 16px; }
+  .rail > .rail-card:first-child .btn { margin-top: 12px; }
+  .rail > .rail-card:first-child .btn + .btn { margin-top: 8px; }
+  .rail > .rail-card:first-child .rail-list { gap: 6px; margin-top: 10px; }
+  .rail > .rail-card:first-child .rail-card__meta { margin-top: 10px; }
+}
+/* Below these heights the card cannot fit, or would sit under the Quick exit button, so it scrolls with the page */
+@media (min-width: 1101px) and (max-height: 639px) {
+  .rail > .rail-card:first-child { position: static; }
+}
+@media (min-width: 1101px) and (max-width: 1479px) and (max-height: 699px) {
+  html.has-quick-exit .rail > .rail-card:first-child { position: static; }
+}
+/* Where the script has not run, the Quick exit rule still applies */
+@media (min-width: 1101px) and (max-width: 1479px) and (max-height: 699px) {
+  html:has(body > .quick-exit) .rail > .rail-card:first-child { position: static; }
+}
+/* Page headings on phones: one step smaller, so that keeping Box Hill on one line never adds a line */
+@media (max-width: 640px) { .pagehero__title { font-size: 2.2rem; } }
+@media (max-width: 340px) { .pagehero__title { font-size: 2rem; } }
+/* Question rows keep the FAQ page's own width on hubs and service pages, and answer to the pointer */
+.faq-grid { max-width: 812px; }
+.faq-item:hover { border-color: var(--border-default); }
+.faq-item:not([open]) .faq-q:hover .faq-q__ic { background: var(--wine-50); border-color: var(--wine-400); }
+/* On phones an eyebrow that only repeats the breadcrumb above it is left out */
+@media (max-width: 640px) { .eyebrow-light--repeat { display: none; } }
+/* A related reading list with an odd number of links ends on one full row, not on a row with an empty half */
+@media (min-width: 861px) { .related__links > :last-child:nth-child(odd) { grid-column: 1 / -1; } }
+/* The home hero's fee line breaks between its two fees, so no word of a link is left alone at a line end */
+.hero__fees { text-wrap: balance; }
+/* On the contact page the bar's Enquire button steps aside while the form itself is on screen, where it only
+   scrolled back to the top of the form */
+.form-in-view .mobile-enquire { transform: translateY(110%); }
+.form-in-view .mobile-enquire:focus-visible { transform: none; }
+@media (max-width: 880px) { .form-in-view .mobile-bar .mobile-call { right: 0; } }

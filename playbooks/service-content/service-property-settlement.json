@@ -16,7 +16,7 @@
  ],
  "urgent": {
   "strong": "Divorced, or separated from a de facto partner?",
-  "text": "Under the Family Law Act 1975 (Cth), a property application must generally be made within 12 months of the divorce order taking effect, or two years after a de facto relationship ends, and after that it needs both people's consent or the court's leave."
+  "text": "Under the Family Law Act 1975 (Cth), a property application must generally be made within 12 months of the divorce order taking effect, or two years after a de facto relationship ends, and after that it needs both people's consent or the court's permission."
  },
  "brief": {
   "sources": ["Family Law Act 1975 (Cth)"],
@@ -62,7 +62,7 @@
    "h2": "The deadlines for a property claim.",
    "paras": [
     "For a married couple the 12 months runs from the date the divorce order takes effect, not from separation, so a couple long separated but never divorced are not out of time. For de facto partners the two years runs from the end of the relationship, a date that can itself be disputed, as our guide to <a href=\"/insight-de-facto-separation\">de facto separation</a> explains.",
-    "After that, a claim needs both people's consent or the court's leave. The court grants leave for a property claim only if it is satisfied that hardship would otherwise be caused, to either spouse or a child after a marriage, or to the person applying or a child after a de facto relationship. Filing before the deadline means you need neither. If your divorce has taken effect or your de facto relationship has ended, and nothing has been filed or formalised, call us now."
+    "After that, a claim needs both people's consent or the court's permission. The court gives permission for a property claim only if it is satisfied that hardship would otherwise be caused, to either spouse or a child after a marriage, or to the person applying or a child after a de facto relationship. Filing before the deadline means you need neither. If your divorce has taken effect or your de facto relationship has ended, and nothing has been filed or formalised, call us now."
    ]
   },
   {
@@ -106,6 +106,10 @@
    "label": "We have agreed how to split everything: do we still need lawyers?"
   },
   {
+   "href": "/insight-enforcing-property-orders",
+   "label": "My ex will not comply with our property orders. What can I do?"
+  },
+  {
    "href": "/resource-separation-first-30-days",
    "label": "Checklist: separation in Victoria, your first 30 days"
   },
@@ -118,11 +122,11 @@
  "faqs": [
   {
    "q": "Do we have to be divorced before we settle property?",
-   "a": "No. Married couples can settle property before or without a divorce, and de facto partners once the relationship has ended. The <a href=\"/service-divorce\">divorce</a> still matters, because a married couple's 12 month limit runs from the date the divorce order takes effect."
+   "a": "No. Under the Family Law Act 1975 (Cth), married couples can settle property before or without a divorce, and de facto partners once the relationship has ended. The <a href=\"/service-divorce\">divorce</a> still matters, because a married couple's 12 month limit runs from the date the divorce order takes effect."
   },
   {
    "q": "Is there a time limit on a property settlement?",
-   "a": "Yes. Married couples generally have 12 months from the date the divorce order takes effect, and de facto couples two years from separation. After that you can apply only with both people's consent or the court's permission, and permission is not guaranteed."
+   "a": "Yes. Under the Family Law Act 1975 (Cth), married couples generally have 12 months from the date the divorce order takes effect, and de facto couples two years from separation. After that you can apply only with both people's consent or the court's permission, and permission is not guaranteed."
   },
   {
    "q": "Is superannuation part of a property settlement?",
@@ -134,7 +138,7 @@
   },
   {
    "q": "Can one lawyer act for both of us?",
-   "a": "For a binding financial agreement, no. Each of you needs independent legal advice before signing, one of the steps the Act sets for the agreement to be binding. For consent orders the law requires no lawyer, and we act for one of you alone."
+   "a": "For a binding financial agreement, no. Each of you needs independent legal advice before signing, one of the steps the Family Law Act 1975 (Cth) sets for the agreement to be binding. For consent orders the law requires no lawyer, and we act for one of you alone."
   }
  ],
  "sources": "<a href=\"https://www.legislation.gov.au/C2004A00275/latest\" rel=\"noopener\" target=\"_blank\">Family Law Act 1975 (Cth)</a>; <a href=\"https://www.legislation.gov.au/F2021L01197/latest\" rel=\"noopener\" target=\"_blank\">Federal Circuit and Family Court of Australia (Family Law) Rules 2021 (Cth)</a>, rules 4.01, 10.04, 10.06 and 10.07, and Schedule 1, Part 1; <a href=\"https://www.legislation.gov.au/F2023L00022/latest\" rel=\"noopener\" target=\"_blank\">Family Law (Fees) Regulations 2022 (Cth)</a>, section 2.02 and Schedule 1, item 6.",

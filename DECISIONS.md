@@ -13,6 +13,49 @@ Newest entries first.
 
 ---
 
+## 2026-11-24: Review of the live site after the release, built and published the same day
+
+Spencer's words of Tuesday 24 November 2026, after the audit round went live: the core is that every criterion is at
+the highest standard it can reach, and then implemented. The fresh assessments that had been cut short were finished
+by four assessors, on design, conversion, search and answer engines, and the writing. Thirty five specific changes
+came back, each with evidence. All but a handful were built and published that day as one commit on top of the
+release, after the gate passed with 113 checks and the browser tests passed.
+
+- **Design.** On laptop screens the rail's call card rides whole and the second card rests at the foot of the column,
+  where the rail used to be cut by the fold on 48 of 56 pages. Page headings keep Box Hill on one line. On phones the
+  eyebrow that repeated the breadcrumb is left out, which with a slightly smaller heading brings the hero's own call
+  button onto the first screen on more pages. Service descriptions, hub steps and time limits are 16 pixels at every
+  width. Question rows on hubs and service pages keep the FAQ page's width and answer to the pointer. A related list
+  with an odd number of links ends on a full row, the home hero's fee line breaks between its two fees, and the fees
+  page's long lead is two sentences followed by an ordinary paragraph.
+- **Conversion.** The enquiry form opens by saying when and how a lawyer replies and gives the number to tap. Enter
+  moves to the next field and no longer sends a half finished enquiry. On the contact page the bar's Enquire button
+  steps aside while the form is on screen. Every closing band says how soon an enquiry is answered. The wills page
+  shows the single will fee on its first screen, as its description promises. The referrals page hero offers Email a
+  referral and Call. Emergency numbers can be tapped wherever a family page names them, the two urgent strips say
+  urgent calls are taken after hours, and both thank you pages carry the Quick exit.
+- **Search and answer engines.** The parenting page's title leads with Parenting and Custody and the financial
+  agreements page's with Prenup, with each h1 unchanged, and two descriptions carry the phrase people search. The
+  home page's time limit cards, fourteen answers on the FAQ page and the hubs, and twenty six answers on the service
+  pages name their Act, court or State. Seven article leads name Australia. The FAQ page gained one question, Who
+  gets custody of the children after separation, made only of sentences the site already publishes. The four newest
+  guides are linked from the pages that discuss their subject, and `playbooks/article.md` makes that a standing step.
+- **Writing.** Twelve small faults were corrected, among them two statutory demand sentences where it stood for the
+  wrong noun, the appointment of a medical treatment decision maker given its own name everywhere, the court's leave
+  said as the court's permission, the directors' duties guide named correctly, and one name, Shareholder agreement,
+  for that fee.
+- **Checked.** The fee check reported 49 fee sentences whose paragraph or heading had changed, each was read against
+  the fee source with every figure beside its fee, and all were recorded. Enquiry form tests 28 of 28, with the new
+  behaviours tested as well. The rail at seven window sizes on ten pages. Box Hill unbroken in sixteen headings at
+  two phone sizes. 36 accessibility scans with no violation and no sideways scroll on 90 loads.
+- **Left for Spencer**: the scope wording of wills with testamentary trusts for a couple, when an enduring power of
+  attorney starts as the wills hub says it two ways, the FAQ sentence on how long an estate takes, and the About
+  page's sentence on his years in law. The FAQ page's Sources line stays queued for the Tuesday routine.
+- **Undo.** To undo this review alone, revert its commit. To undo everything since 23 November, revert it first and
+  then 973d836 and 7766814.
+
+---
+
 ## 2026-11-23: Audit round, released on 24 Nov 2026 as commit 7766814
 
 **Released.** Spencer approved publishing on Tuesday 24 November 2026, and the round went to main that morning as one

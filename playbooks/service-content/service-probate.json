@@ -94,7 +94,7 @@
  },
  "fee": {
   "t": "Fixed fees for a straightforward grant.",
-  "p": "Our fixed fee for a probate application is $1,980, and for letters of administration where there is no will $2,178, each including GST, for a straightforward estate as our <a href=\"/fees#fee-probate-application\">fees page</a> defines it. For probate that means a properly signed original will, executors able to apply, assets in Victoria and no caveat or challenge, and for administration an applicant with the first right to apply, no dispute about who inherits and no surety guarantee required by the court. Each covers preparing and filing the application, publishing the notice of intention to apply and paying its fee, answering the Probate Office's routine questions and the grant. The Supreme Court of Victoria's filing fee is separate and depends on the gross value of the estate's assets in Victoria: nothing where that is less than $250,000, $544 from $250,000, $1,088 from $500,000 and $2,538.70 from $1 million, with <a href=\"/fees#court-and-government-charges\">higher fees from $2 million</a>, as the Court's fee list has stood since 1 July 2026. Estate administration after the grant, disputes, litigation and anything else not on the fees page are estimated in writing before substantive work begins, and how our fee will be met is confirmed in writing before we begin."
+  "p": "Our fixed fee for a probate application is $1,980, and for letters of administration where there is no will $2,178, each including GST, for a straightforward estate as our <a href=\"/fees#fee-probate-application\">fees page</a> defines it. For probate that means a properly signed original will, executors able to apply, assets in Victoria and no caveat or challenge, and for administration an applicant with the first right to apply, no dispute about who inherits and no surety guarantee required by the court. Each covers preparing and filing the application, publishing the notice of intention to apply and paying its fee, answering the Probate Office's routine questions and sending you the grant. The Supreme Court of Victoria's filing fee is separate and depends on the gross value of the estate's assets in Victoria: nothing where that is less than $250,000, $544 from $250,000, $1,088 from $500,000 and $2,538.70 from $1 million, with <a href=\"/fees#court-and-government-charges\">higher fees from $2 million</a>, as the Court's fee list has stood since 1 July 2026. Estate administration after the grant, disputes, litigation and anything else not on the fees page are estimated in writing before substantive work begins, and how our fee will be met is confirmed in writing before we begin."
  },
  "related": [
   {
@@ -122,7 +122,7 @@
  "faqs": [
   {
    "q": "Do I need probate if everything was jointly owned?",
-   "a": "Often not. Property owned as joint tenants passes to the surviving owner, generally without a grant. A share owned as tenants in common is different: it forms part of the estate, and the executor generally needs a grant to deal with it."
+   "a": "Often not. In Victoria, property owned as joint tenants passes to the surviving owner, generally without a grant. A share owned as tenants in common is different: it forms part of the estate, and the executor generally needs a grant to deal with it."
   },
   {
    "q": "What if there is no will?",
@@ -134,11 +134,11 @@
   },
   {
    "q": "Do I have to act as executor?",
-   "a": "No. An executor can renounce, and their rights as executor then end as if they had never been appointed. Renouncing is generally straightforward only until you start dealing with the estate, so take advice first."
+   "a": "No. In Victoria, an executor can renounce, and their rights as executor then end as if they had never been appointed. Renouncing is generally straightforward only until you start dealing with the estate, so take advice first."
   },
   {
    "q": "Can I apply for probate myself?",
-   "a": "Yes, the court's rules allow an executor to apply without a lawyer. Help is most worthwhile when the will is missing, damaged or not properly signed, when executors disagree or a claim is in view, and in the decisions after the grant about debts, tax and when to distribute."
+   "a": "Yes, the Supreme Court of Victoria's rules allow an executor to apply without a lawyer. Help is most worthwhile when the will is missing, damaged or not properly signed, when executors disagree or a claim is in view, and in the decisions after the grant about debts, tax and when to distribute."
   }
  ],
  "sources": "<a href=\"https://www.legislation.vic.gov.au/in-force/acts/administration-and-probate-act-1958\" rel=\"noopener\" target=\"_blank\">Administration and Probate Act 1958 (Vic)</a>; <a href=\"https://www.legislation.vic.gov.au/in-force/statutory-rules/supreme-court-administration-and-probate-rules-2023\" rel=\"noopener\" target=\"_blank\">Supreme Court (Administration and Probate) Rules 2023 (Vic)</a>; <a href=\"https://www.legislation.vic.gov.au/in-force/statutory-rules/supreme-court-fees-regulations-2018\" rel=\"noopener\" target=\"_blank\">Supreme Court (Fees) Regulations 2018 (Vic)</a>, Schedule 1, items 4.1 and 4.2; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/trustee-act-1958\" rel=\"noopener\" target=\"_blank\">Trustee Act 1958 (Vic)</a>, sections 33 and 36.",

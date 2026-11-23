@@ -72,7 +72,7 @@
    "eyebrow": "Your first call",
    "h2": "What to have with you when you call.",
    "paras": [
-    "Whatever you have to hand: any power of attorney or medical treatment appointment you have signed before, your current will, the names of the people you are thinking of appointing, and your questions. If you are calling about a parent or partner, a note of any recent diagnosis or change helps. If you have little on paper, that is fine too. The first conversation is about understanding your situation, not testing your paperwork. We can speak by phone or video, or meet at Suite 10, 1 Main Street, Box Hill, a short walk from Box Hill station, with parking at Box Hill Central."
+    "Whatever you have to hand: any power of attorney or appointment of a medical treatment decision maker you have signed before, your current will, the names of the people you are thinking of appointing, and your questions. If you are calling about a parent or partner, a note of any recent diagnosis or change helps. If you have little on paper, that is fine too. The first conversation is about understanding your situation, not testing your paperwork. We can speak by phone or video, or meet at Suite 10, 1 Main Street, Box Hill, a short walk from Box Hill station, with parking at Box Hill Central."
    ]
   }
  ],
@@ -86,7 +86,7 @@
    },
    {
     "t": "Signed and witnessed as the law requires",
-    "d": "You sign in front of two adult witnesses, one a doctor or a person authorised to witness affidavits, who sign in front of you and each other and certify that you appeared to sign freely and to have capacity. For a power of attorney, neither witness can be an attorney under it, your relative, a relative of an attorney, your care worker or accommodation provider, or a person signing for you at your direction, and for a medical treatment appointment, neither can be a person it appoints."
+    "d": "You sign in front of two adult witnesses, one a doctor or a person authorised to witness affidavits, who sign in front of you and each other and certify that you appeared to sign freely and to have capacity. For a power of attorney, neither witness can be an attorney under it, your relative, a relative of an attorney, your care worker or accommodation provider, or a person signing for you at your direction, and for an appointment of a medical treatment decision maker, neither can be a person it appoints."
    },
    {
     "t": "Accepted before it takes effect",
@@ -124,11 +124,11 @@
  "faqs": [
   {
    "q": "When does an enduring power of attorney start?",
-   "a": "On the day it is made, unless the document says otherwise. You can choose a later time, circumstance or occasion instead, such as when you no longer have capacity for the matter, and if you lose capacity before then, your attorney can act anyway. The power is effective for each attorney only once they have signed a witnessed acceptance, and making it does not take away your own power to decide."
+   "a": "In Victoria, an enduring power of attorney starts on the day it is made, unless the document says otherwise. You can choose a later time, circumstance or occasion instead, such as when you no longer have capacity for the matter, and if you lose capacity before then, your attorney can act anyway. The power is effective for each attorney only once they have signed a witnessed acceptance, and making it does not take away your own power to decide."
   },
   {
    "q": "Who can I appoint as my attorney?",
-   "a": "An adult who is not bankrupt or otherwise insolvent under administration and is not your paid care worker, your health provider or your accommodation provider. For financial matters, a person convicted or found guilty of an offence involving dishonesty can act only if they have told you and the document records it. You can appoint more than one attorney, decide whether they act together or alone, and name alternatives in case your first choice cannot act."
+   "a": "In Victoria, an adult who is not bankrupt or otherwise insolvent under administration and is not your paid care worker, your health provider or your accommodation provider. For financial matters, a person convicted or found guilty of an offence involving dishonesty can act only if they have told you and the document records it. You can appoint more than one attorney, decide whether they act together or alone, and name alternatives in case your first choice cannot act."
   },
   {
    "q": "Is it too late if a parent has been diagnosed with dementia?",

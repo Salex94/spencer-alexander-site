@@ -140,7 +140,7 @@ def main(path, outdir=None):
           %s
           <span>%s</span>
         </nav>
-        <span class="eyebrow-light">%s</span>
+        <span class="eyebrow-light eyebrow-light--repeat">%s</span>
         <h1 class="pagehero__title">%s</h1>
         <p class="pagehero__lead">%s</p>
         <div class="pagehero__actions">
@@ -153,7 +153,8 @@ def main(path, outdir=None):
         <div class="pagehero__meta">%s</div>
       </div>
     </section>
-''' % (CHEVRON, c["hub"], c["hub_label"], CHEVRON, c["crumb"], c["hub_label"], c["h1"], c["lead"], PHONE, meta))
+''' % (CHEVRON, c["hub"], c["hub_label"], CHEVRON, c["crumb"], c["hub_label"],
+       c["h1"].replace("Box Hill", '<span class="nowrap">Box Hill</span>'), c["lead"], PHONE, meta))
 
     # main column
     body = ['    <section class="section section--page">\n      <div class="container hub">\n        <div class="hub__main">\n']
@@ -262,6 +263,10 @@ def main(path, outdir=None):
     </section>
 ''' % (rel, c["faq_h2"], qs, ARROW, sources, date, long_date, month))
 
+    # the closing band says how soon an enquiry is answered, and that the first call is free where its lead does not
+    promise = "Enquiries are answered within one business day."
+    if "first call is free" not in c["cta"]["lead"]:
+        promise = "Your first call is free, and you speak with a lawyer. " + promise
     out.append('''
     <section class="field-wine cta">
       <div class="container container--lg">
@@ -275,11 +280,12 @@ def main(path, outdir=None):
           </a>
           <a class="btn btn--ghost btn--lg" href="/contact#enquiry">Send an enquiry</a>
         </div>
+        <div class="cta__meta">%s</div>
       </div>
     </section>
   </main>
 
-''' % (c["cta"]["eyebrow"], c["cta"]["title"], c["cta"]["lead"], PHONE))
+''' % (c["cta"]["eyebrow"], c["cta"]["title"], c["cta"]["lead"], PHONE, promise))
     out.append(tail)
     page = "".join(out)
     open(os.path.join(outdir or ROOT, slug + ".html"), "w", encoding="utf-8").write(page)

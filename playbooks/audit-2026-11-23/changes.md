@@ -80,3 +80,27 @@ would not apply, that the release steps failed as written, and that next year's 
 early. The tool now takes each figure's tie from the record of sentences, and records a sentence with its paragraph
 where the fee is named only there. The earlier schedule applies and returns with the gate passing each way, and the
 steps were corrected. What the checks could not settle is in the report.
+
+## After the release: the review of 24 November 2026
+
+Published the same day as one commit on top of the release. What a visitor can see differently:
+
+| Where | Change | Why |
+|---|---|---|
+| Hubs, service pages, articles and checklists, laptop screens | The call card in the side rail rides whole beside the page, and the second card rests at the foot of the column | On 48 of 56 pages the rail was cut by the bottom of the screen for the whole scroll |
+| Hubs, service pages and the contact page | The page heading keeps Box Hill on one line, and on phones the heading is a step smaller | The name broke across two lines on 11 of 16 pages on a phone |
+| Hubs, service pages, fees, contact and insights pages, phones | The eyebrow that repeated the breadcrumb is left out | The same words appeared twice within 62 pixels, and the buttons sit 41 pixels higher without it |
+| Hubs, service pages and the home page | Service descriptions, hub steps and time limits are 16 pixels on larger screens too | A desktop reader had smaller type than a phone reader for the paragraphs that carry the fees |
+| Hubs and service pages, larger screens | Question rows keep the FAQ page's width and change when pointed at | Rows were 1,232 pixels wide with the opener far from its question |
+| Every page with related reading | A list with an odd number of links ends on one full row | The last row held one link and an empty half |
+| Home page | The fee line under the rating breaks between its two fees | A single underlined letter was left at the end of the first line |
+| Fees page | The paragraph under the at a glance band is a lead of two sentences and then an ordinary paragraph | It was 130 words of display type, a whole phone screen |
+| Contact page | The form opens with when and how a lawyer replies and a number to tap, Enter moves to the next field, and the bar's Enquire button steps aside while the form is on screen | A press of Enter sent a half finished enquiry, and the bar's button only scrolled back to the top of the form |
+| Articles, checklists, hubs, service pages, FAQ, insights and resources | One line under the closing buttons: Enquiries are answered within one business day | On phones and tablets an article never showed the reply time |
+| Wills page | The first screen gives the single will fee beside the estate plan fee | Its search description promised the single will fee and the page showed only the higher one |
+| Referrals page | Two buttons in the hero: Email a referral and Call | An adviser had no way to act from the first screen |
+| Family pages, the separation checklist and the thank you pages | Emergency numbers can be tapped, the urgent strips say urgent calls are taken after hours, and the thank you pages carry the Quick exit | The numbers were plain text in seven places |
+| Parenting and financial agreements pages | Titles lead with Parenting and Custody and with Prenup, with each heading unchanged | Custody and prenup are the words clients search, and no title carried them |
+| FAQ page | One new question, Who gets custody of the children after separation, made of sentences the site already publishes | No question anywhere used the word |
+| Home page, FAQ page, hubs, service pages and seven articles | Sentences that state a rule name their Act, court, State or country | A passage quoted by itself did not say whose law it was |
+| Several pages | Twelve small corrections to wording, and one name for the Shareholder agreement fee | Each was a sentence that could be misread or a term used two ways |
