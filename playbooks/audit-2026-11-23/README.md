@@ -24,7 +24,8 @@ development repository at `audits/2026-11-23/`, with the research files.
 
 ## Release
 
-One release, as a single commit on main, on Spencer's word.
+One release, as a single commit on main, on Spencer's word. It was made on 24 November 2026, as commit 7766814, and
+the steps below are kept as the record of how.
 
 1. Bring main into the branch: `git fetch origin main`, then `git merge origin/main` on the branch. If main has not
    moved since 23 November 2026 there is nothing to merge. If a routine has run, keep the later date wherever both
@@ -59,7 +60,8 @@ One release, as a single commit on main, on Spencer's word.
 9. Spencer sends one enquiry through the live form with his own details and confirms one notification arrives. No
    session can make that check.
 
-To undo the whole release, run `git revert` on the release commit and push. To undo the six fees alone, set their
+To undo the whole release, revert the commit that recorded it and then 7766814, with `git revert --no-edit` given
+both in that order, and push. To undo the six fees alone, set their
 totals back in `playbooks/fees.json` and run `python3 scripts/fees.py apply`. From 1 December 2026 apply stops until
 the law on the pages that quote those fees has been read again and `--law-read` is given, because a page's date and
 the month its law was read move together.
