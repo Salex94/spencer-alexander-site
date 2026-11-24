@@ -872,7 +872,7 @@ class _Says(HTMLParser):
         if tag == "main":
             self.in_main = True
         cls = (a.get("class") or "").split()
-        if self.skip_at is None and (tag in ("script", "style", "time", "svg", "aside") or "rail-card" in cls or "cta__meta" in cls):
+        if self.skip_at is None and (tag in ("script", "style", "time", "svg", "aside") or "rail-card" in cls or "cta__meta" in cls or "pagehero__who" in cls):
             self.skip_at = self.depth
 
     def handle_endtag(self, tag):

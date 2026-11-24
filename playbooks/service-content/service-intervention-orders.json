@@ -1,0 +1,160 @@
+{
+ "slug": "service-intervention-orders",
+ "hub": "family-law",
+ "hub_label": "Family Law",
+ "crumb": "Intervention orders",
+ "service_name": "Family violence and intervention orders",
+ "date": "2026-11-24",
+ "title": "Intervention Order Lawyers Box Hill | Spencer Alexander Lawyers",
+ "h1": "Intervention Order Lawyers in Box Hill, Melbourne",
+ "description": "Intervention order lawyers in Box Hill for people who need protection and for people served with an application. Your first call is free.",
+ "lead": "From our Box Hill office, our lawyers act for people who need the protection of a family violence intervention order and for people served with an application for one. The court can make an interim order whether or not the respondent has been served or is present, and breaching an order is a criminal offence once it has been served or explained by the court.",
+ "meta": [
+  "Your first call is free, and you speak with a lawyer",
+  "For people who need protection and people who must respond",
+  "Suite 10, 1 Main Street, Box Hill"
+ ],
+ "urgent": {
+  "strong": "In danger, or served with an interim order?",
+  "text": "Under the Family Violence Protection Act 2008 (Vic), a respondent to an interim order made when they were not present must generally seek the court's leave to have it varied or revoked within 21 days after it was served on them, a time the court can extend only in exceptional circumstances. If you are in immediate danger, call <a href=\"tel:000\">000</a>. Otherwise call us now, including after hours, and tell us it is urgent. For confidential family violence counselling at any time, call <strong>1800RESPECT</strong> on <a href=\"tel:1800737732\">1800 737 732</a>."
+ },
+ "brief": {
+  "sources": [
+   "Family Violence Protection Act 2008 (Vic)"
+  ],
+  "entity": "Spencer Alexander Lawyers is a Box Hill, Melbourne law firm acting for people who apply for family violence intervention orders and for people who respond to them, with the principal overseeing every matter.",
+  "bullets": [
+   "A family violence intervention order is a civil order of the Magistrates' Court of Victoria or the Children's Court of Victoria that protects a family member through conditions, such as a ban on contact.",
+   "The court can make a final order if it is satisfied, on the balance of probabilities, that the respondent has committed family violence against the family member and is likely to continue to do so or do so again.",
+   "Breaching an order is a criminal offence once the respondent has been served with it or had it explained by the court, punishable by a fine, imprisonment or both."
+  ]
+ },
+ "sections": [
+  {
+   "eyebrow": "Who we act for",
+   "h2": "When people call us about an intervention order.",
+   "paras": [
+    "Some people call because they need protection from a partner, a former partner or a relative, and want to know whether to go through the police or apply to the court themselves. Others have been served with an application or an interim order and have a court date within days. We act for both, and we explain plainly what each condition of an order would mean for home, children and work.",
+    "The Family Violence Protection Act 2008 (Vic) defines family violence broadly. It covers behaviour towards a family member that is physically or sexually abusive, emotionally or psychologically abusive, economically abusive, threatening or coercive, and behaviour that in any other way controls or dominates a family member and causes them to fear for their own or another person's safety or wellbeing. Behaviour that causes a child to hear, witness or otherwise be exposed to the effects of that behaviour is itself family violence.",
+    "A family member includes a spouse or domestic partner, a former partner, a person with whom there is or has been an intimate personal relationship, a relative, and a child who normally or regularly lives with the person. For conflict outside the family, such as with a neighbour, the parallel order is a personal safety intervention order, which the court can make only where the two people are not family members."
+   ]
+  },
+  {
+   "eyebrow": "How we help",
+   "h2": "What we do in intervention order matters.",
+   "items": [
+    {
+     "t": "Applying for protection",
+     "p": "We advise whether to go through the police or apply to the Magistrates' Court of Victoria yourself, prepare your application and your evidence, and appear with you at court. An adult who needs protection can apply for themselves, and another person can generally apply for them only with their written consent. For a child, a parent can apply, or another person with a parent's written consent or the court's leave."
+    },
+    {
+     "t": "Responding to an application",
+     "p": "We explain what the application alleges and what each proposed condition would mean, then act for you in the course you choose: consenting without admissions, negotiating the conditions, offering an undertaking where appropriate, or contesting the application at a final hearing. The court can make a final order by consent whether or not the respondent admits any of what is alleged. From 10 November 2026 it must also consider, as far as practicable, whether the wrong person has been named as the respondent, and it can refuse to make a final order by consent if it believes that has happened."
+    },
+    {
+     "t": "Interim orders made in your absence",
+     "p": "The court can make an interim order whether or not the respondent has been served with the application or is present. If that has happened to you, the court can give you leave to apply to have the order varied or revoked where that is in the interests of justice, having regard to why you were not there. You must generally seek that leave within 21 days after the order was served on you, and the court can extend the time only in exceptional circumstances."
+    },
+    {
+     "t": "Children, parenting and the rest of your matter",
+     "p": "An order can protect children alongside a parent, and from 10 November 2026 it continues to protect a child who turns 18 while it is in force. Intervention orders and parenting orders are made in different courts about the same family, so we advise on both together, because a step taken in one court can affect your position in the other. Read more about <a href=\"/service-parenting-arrangements\">how we help with parenting arrangements</a>."
+    }
+   ]
+  },
+  {
+   "eyebrow": "Your first call",
+   "h2": "What to have with you when you call.",
+   "paras": [
+    "Whatever you have to hand: the application and any interim order, a note of the key incidents with their dates, relevant messages or photographs, and any court dates you have been given. If you have little on paper, that is fine too. The first conversation is about understanding your situation, not testing your paperwork.",
+    "Our office is at Suite 10, 1 Main Street, Box Hill, a short walk from Box Hill station, with parking at Box Hill Central."
+   ]
+  }
+ ],
+ "process": {
+  "eyebrow": "What to expect",
+  "h2": "How an intervention order matter moves forward.",
+  "steps": [
+   {
+    "t": "The application",
+    "d": "A matter starts with a family violence safety notice issued by the police, which is taken to be an application to the court, or with an application made to the court by the police, by the person who needs protection or by someone the Act allows to apply for them."
+   },
+   {
+    "t": "The first court date",
+    "d": "The court can make an interim order at any time before the application is finally decided, including where it is satisfied on the balance of probabilities that one is necessary to ensure the family member's safety, and whether or not the respondent is present."
+   },
+   {
+    "t": "Agreement or a hearing",
+    "d": "The application is resolved by an order made by consent, which the court can make whether or not the respondent admits what is alleged, by an undertaking where that is appropriate, or at a final hearing where the court decides on the evidence."
+   }
+  ]
+ },
+ "fee": {
+  "t": "Costs, estimated in writing.",
+  "p": "Intervention order work is charged on a written estimate rather than a fixed fee, as our <a href=\"/fees#when-a-fixed-fee-does-not-fit\">fees page</a> explains. After we understand what you need, we provide an engagement letter and costs agreement setting out a clear fee estimate before any substantive work begins."
+ },
+ "related": [
+  {
+   "href": "/insight-intervention-orders",
+   "label": "Intervention orders in Victoria: protection, process and your options"
+  },
+  {
+   "href": "/insight-parenting-arrangements",
+   "label": "Parenting arrangements after separation: how the law decides what is best"
+  },
+  {
+   "href": "/insight-divorce-in-victoria",
+   "label": "Getting divorced in Victoria: the process, the 12-month rule and what happens next"
+  },
+  {
+   "href": "/insight-property-reforms-2025",
+   "label": "The 2025 family law property reforms: what separating couples need to know"
+  },
+  {
+   "href": "/insight-de-facto-separation",
+   "label": "De facto separation in Victoria: your property and parenting rights"
+  },
+  {
+   "href": "/family-law",
+   "label": "All family law services"
+  }
+ ],
+ "faq_h2": "Common questions about intervention orders.",
+ "faqs": [
+  {
+   "q": "How quickly can an intervention order be made?",
+   "a": "If you are in immediate danger, call <a href=\"tel:000\">000</a>. Under the Family Violence Protection Act 2008 (Vic), the Magistrates' Court of Victoria can make an interim order at any time after an application is made and before it is finally decided, whether or not the respondent has been served or is present. Police who attend an incident can also apply for a family violence safety notice, which is issued by a sergeant or more senior officer and is taken to be an application to the court."
+  },
+  {
+   "q": "I have been served with an intervention order application. What should I do?",
+   "a": "Being served with an application does not make you guilty of anything, but what you do next matters. Where an interim order is in place, comply with every condition and do not contact the protected person about the case, because under the Family Violence Protection Act 2008 (Vic) breaching an order is a criminal offence once it has been served on you or explained to you by the court. Take advice before the first court date, where your options are generally to consent without admissions, negotiate the conditions, offer an undertaking where appropriate, or contest the application at a final hearing."
+  },
+  {
+   "q": "Will an intervention order give me a criminal record?",
+   "a": "No. A family violence intervention order made under the Family Violence Protection Act 2008 (Vic) is a civil order, so the order itself brings no conviction and no criminal record, although breaching it is a criminal offence. An order can still have lasting consequences. A final order can cancel a firearms authority and an interim order can suspend one, which is one reason to take advice on the conditions before you agree to them."
+  },
+  {
+   "q": "How long does an intervention order last?",
+   "a": "Under the Family Violence Protection Act 2008 (Vic), a final order made on or after 10 November 2026 that states no period lasts 24 months, unless a court revokes it or it is set aside on appeal first. The court can set a different period, which can be shorter, longer or indefinite. A final order against a respondent under 18 must state its period, which can be no more than 12 months unless there are exceptional circumstances. A final order made before that date without a stated period stays in force until a court revokes it or it is set aside on appeal."
+  },
+  {
+   "q": "Can an intervention order be changed or cancelled?",
+   "a": "Yes, but not on equal terms. Under the Family Violence Protection Act 2008 (Vic), the protected person or the police can apply to vary, extend or revoke an order. A respondent must first obtain the court's leave, which is generally granted only where there has been a change in circumstances since the order was made that may justify changing it. Where an interim order was made in the respondent's absence, the court can instead grant leave if that is in the interests of justice, provided the respondent seeks it within 21 days after the order was served on them, a time the court can extend only in exceptional circumstances. If an order no longer fits the family's circumstances, the answer is to ask the court to change it, because a respondent who ignores it can be charged."
+  }
+ ],
+ "sources": "<a href=\"https://www.legislation.vic.gov.au/in-force/acts/family-violence-protection-act-2008\" rel=\"noopener\" target=\"_blank\">Family Violence Protection Act 2008 (Vic)</a>; <a href=\"https://www.legislation.vic.gov.au/in-force/acts/personal-safety-intervention-orders-act-2010\" rel=\"noopener\" target=\"_blank\">Personal Safety Intervention Orders Act 2010 (Vic)</a>, section 61.",
+ "cta": {
+  "eyebrow": "Talk to us early",
+  "title": "Speak with an intervention order lawyer.",
+  "lead": "Tell us what has happened and any court date you have been given, and we will tell you plainly whether and how we can help and what the next step will cost. If it is not safe for us to email you or leave a message, the enquiry form lets you say so, and we reply only in the way you tell us is safe."
+ },
+ "rail_quiet": {
+  "t": "Free checklist: your first 30 days after separation.",
+  "d": "Safety, finances, the children, your will, and the deadlines to diarise, in one printable guide.",
+  "links": [
+   {
+    "href": "/resource-separation-first-30-days",
+    "label": "Get the checklist"
+   }
+  ]
+ }
+}

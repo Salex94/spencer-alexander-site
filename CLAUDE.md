@@ -881,10 +881,11 @@ audit, with every change implemented if it made the key aspects of the site bett
 - **Referrals page.** `referrals.html`, cloned from the privacy page, explains to accountants, planners and
   other advisers how to refer a client. The footer's Firm column links it as "For referrers". It quotes no
   price, and says nothing about payment for referrals.
-- **Service pages.** The cap is twelve, raised from eight on Spencer's approval; the four added on 9 Nov 2026
-  are powers of attorney, binding financial agreements, debt recovery and shareholder agreements.
+- **Service pages.** The cap was twelve, raised from eight on Spencer's approval; the four added on 9 Nov 2026
+  are powers of attorney, binding financial agreements, debt recovery and shareholder agreements. It is thirteen
+  from 24 Nov 2026, as the section on that day's remaining recommendations sets out.
 - **The footer** is now copied from index.html by `scripts/propagate-chrome.py` along with the header.
-- **Gate.** The currency phrase check is case insensitive, the service page cap is twelve, fees.html,
+- **Gate.** The currency phrase check is case insensitive, the service page cap was twelve and is now thirteen, fees.html,
   referrals.html and thank-you-subscribe.html are core pages for the dash and specialist checks, and only the
   template's photograph placeholder is exempt from the WebP check.
 - Keys after this round: site.css v24, styles.css v9, site.js v18.
@@ -1149,6 +1150,39 @@ as one commit. These are the conventions that came out of it.
   finalised within six to 12 months; and the About page's sentence on his years in law. The FAQ page's Sources line
   stays queued for the Tuesday routine, which reads each answer against its Act first.
 - Keys after this review: site.css v26, styles.css v9, site.js v20.
+
+## Remaining recommendations of 24 Nov 2026, built on Spencer's word
+
+The review of that morning left four points of wording for Spencer and named what sat above it: his portrait on the
+service pages, a thirteenth service page, a booking link, the Business Profile, reviews and three months of counts.
+That afternoon he said: "can you implement every single change you recommended within your ability", apart from the
+Business Profile, which needs his Mac mini. What was within a session's ability was built and published the same day.
+These are the conventions that came out of it.
+
+- **The principal beside the buttons on service pages.** Every service page's hero carries, after its two buttons,
+  his small portrait with the words Spencer Alexander and Principal, overseeing every matter. The page builder writes
+  it, so no content file carries it, and it is the same on every page, so the page reader in `scripts/fees.py` skips
+  it and it never moves a page's date. On phones it sits on a line of its own under the buttons. This is the say so
+  the rule of 26 Sep 2026 asked for, and it reaches the service pages only: the hubs, the articles and the rail cards
+  stay as they were, and no other portrait, proof block or rating strip is added without his word.
+- **Thirteen service pages.** `service-intervention-orders.html` is the page for the family hub's block on family
+  violence and intervention orders, so every family service except child support and spousal maintenance has one.
+  The cap is thirteen, and only Spencer raises it. The page quotes no fee, because that work is charged on a written
+  estimate, and its statements of law follow the Family Violence Protection Act 2008 (Vic) as read that day in
+  version 071, which carries the changes of 10 November 2026. The intervention orders article links it, as do the
+  hub's block, its OfferCatalog and the practice menu on every page.
+- **How long an estate takes.** The site says a straightforward or typical estate takes nine to 12 months, which is
+  the range State Trustees publishes for Victoria and the only public figure that could be read. It was six to 12
+  months, which nothing supported. It is a statement of practice, no Act sets it, and no page promises it.
+- **When an enduring power of attorney starts** is said one way everywhere: from the day it is made unless the
+  document says otherwise, effective for each attorney only once they have signed a witnessed acceptance, with a later
+  time, circumstance or occasion open to the person making it.
+- **Experience wording** on the About page now uses the one form the rest of the site uses, more than ten years of
+  legal experience.
+- **A booking link is still Spencer's.** The Firm Register's Settings row for it was blank on 24 Nov 2026, so there is
+  nothing to link. When he creates one and says so, it goes beside the enquiry button and the privacy page says where
+  it leads.
+- Keys after this round: site.css v27, styles.css v9, site.js v20.
 
 ## Permission prompts (owner wants zero — see DECISIONS.md 2026-08-06)
 

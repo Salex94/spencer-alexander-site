@@ -104,3 +104,18 @@ Published the same day as one commit on top of the release. What a visitor can s
 | FAQ page | One new question, Who gets custody of the children after separation, made of sentences the site already publishes | No question anywhere used the word |
 | Home page, FAQ page, hubs, service pages and seven articles | Sentences that state a rule name their Act, court, State or country | A passage quoted by itself did not say whose law it was |
 | Several pages | Twelve small corrections to wording, and one name for the Shareholder agreement fee | Each was a sentence that could be misread or a term used two ways |
+
+## After the review: the remaining recommendations of 24 November 2026
+
+Built and published the same afternoon, on Spencer's instruction to implement every change the review had recommended.
+
+- Every service page's first screen now shows the principal's small portrait and name beside the two buttons.
+- A new page, Intervention Order Lawyers in Box Hill, Melbourne, linked from the family law page, the Family Law menu
+  on every page and the intervention orders guide.
+- The About page says more than ten years of legal experience, as the rest of the site does.
+- The wills page gives one account of when an enduring power of attorney starts.
+- The fees page's row for wills with testamentary trusts for a couple says in a sentence of its own what costs more.
+- Two FAQ answers and the probate guide say a typical estate takes nine to 12 months, where they said six to 12.
+
+No price changed. DECISIONS.md has the detail under 24 November 2026.
+
