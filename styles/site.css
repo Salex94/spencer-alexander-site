@@ -925,3 +925,10 @@ a[href^="mailto:"] { overflow-wrap: anywhere; }
 .form-in-view .mobile-enquire { transform: translateY(110%); }
 .form-in-view .mobile-enquire:focus-visible { transform: none; }
 @media (max-width: 880px) { .form-in-view .mobile-bar .mobile-call { right: 0; } }
+/* Service pages, 24 Nov 2026: the principal's portrait and name sit beside the two hero buttons, and on phones on
+   a line of their own beneath them */
+.pagehero__who { display: flex; align-items: center; gap: 12px; font-size: var(--text-sm); line-height: 1.4; color: var(--wine-200); }
+.pagehero__who img { display: block; flex: none; width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(251, 249, 245, .32); }
+.pagehero__who strong { display: block; font-weight: var(--weight-semibold); color: var(--paper-50); }
+@media (min-width: 861px) { .pagehero__who { margin-left: 8px; } }
+@media (max-width: 640px) { .pagehero__who { flex: 1 0 100%; margin-top: 4px; } }

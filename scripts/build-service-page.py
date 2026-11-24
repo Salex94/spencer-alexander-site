@@ -149,6 +149,10 @@ def main(path, outdir=None):
             Call (03) 9125 8355
           </a>
           <a class="btn btn--ghost btn--lg" href="/contact#enquiry">Send an enquiry</a>
+          <div class="pagehero__who">
+            <picture><source type="image/webp" srcset="assets/principal-portrait-240.webp"><img src="assets/principal-portrait-240.jpg" alt="Spencer Alexander" width="52" height="52"></picture>
+            <span><strong>Spencer Alexander</strong> Principal, overseeing every matter</span>
+          </div>
         </div>
         <div class="pagehero__meta">%s</div>
       </div>

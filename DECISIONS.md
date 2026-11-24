@@ -13,6 +13,52 @@ Newest entries first.
 
 ---
 
+## 2026-11-24: The remaining recommendations, built and published on Spencer's word
+
+After the review of that morning Spencer said: "can you implement every single change you recommended within your
+ability", apart from the Business Profile, and "I do want the site to be the very best it can be for every metric we
+have discussed." The review had left four points of wording for him and had named his portrait on the service pages, a
+thirteenth service page and a booking link as his to decide. What a session could do was built, tested and published
+the same day as one commit.
+
+- **About.** "Over more than ten years in law he has worked across" became "In more than ten years of legal
+  experience he has worked across", the form the rest of the site uses.
+- **Wills hub.** The answer on the difference between a power of attorney and a medical treatment decision maker said
+  an enduring power starts as soon as it is signed and accepted, while the hub's own service block said from the day
+  it is made unless it says otherwise. The answer now uses the words of the powers of attorney page, whose claims
+  register records sections 37 and 39 of the Powers of Attorney Act 2014 (Vic) as read on 23 Nov 2026: it starts on
+  the day it is made unless the document says otherwise, it is effective for each attorney only once they have signed
+  a witnessed acceptance, and a later time, circumstance or occasion can be chosen.
+- **Fee source.** The scope of wills with testamentary trusts for a couple ended "with the same things costing more
+  as for one person". It now ends with a sentence of its own, saying what costs more and that the fee is confirmed in
+  writing after the first meeting, as the row for one person says. No amount changed. `scripts/fees.py apply` wrote
+  fees.html, and the Firm Register's Fees tab has the new words.
+- **How long an estate takes.** Two FAQ answers and the probate article said six to 12 months, which no source read
+  could support. State Trustees says on its page How long does it take to settle an estate, read on 24 Nov 2026: "It
+  usually takes an executor from nine months to one year to administer an estate." The three statements now say nine
+  to 12 months. It is a statement of practice and no Act sets it.
+- **Portrait.** Every service page's hero now carries his small portrait, his name and Principal, overseeing every
+  matter, after the two buttons. The builder writes it. The rule of 26 Sep 2026 kept a portrait for his say so, which
+  this instruction gave. Hubs, articles and rail cards are unchanged.
+- **Thirteenth service page.** `service-intervention-orders.html`, for the family hub's sixth block. The cap went
+  from twelve to thirteen on his instruction. Read that day in the authorised versions: the Family Violence Protection
+  Act 2008 (Vic), version 071, incorporating amendments as at 10 November 2026, sections 5, 8, 24, 31, 45, 45A, 53,
+  54, 57, 60, 60G, 74, 76A, 78, 81, 95, 96, 96B, 96C, 99, 108, 109, 123, 125, 146 and 242, and the Personal Safety
+  Intervention Orders Act 2010 (Vic), version 037, sections 1 and 61. The claims register beside its content file has
+  each statement and its section. The page quotes no fee. The article's sentence on security licences and working
+  with children checks was not repeated, because no provision for it was read.
+- **Wiring.** The hub's block gained one sentence linking the page, its OfferCatalog item the page's address, and the
+  practice menu on every page now links the page. The sitemap, llms.txt, the accuracy ledger and the article's
+  closing link carry it.
+- **Not done, and why.** A booking link, because the Firm Register's Settings row for one is blank and only Spencer
+  can create it. The Business Profile, which needs Chrome on his Mac mini. Reviews and counts, which take time.
+- **Checks.** The gate passed with 113 checks and the fee check with no problems. The side rail test passed at every
+  window size, the enquiry form passed 28 of 28, and 32 scans of the changed pages at four widths found no WCAG
+  violation and no sideways scroll.
+- Keys: site.css v27. To undo this round alone, revert its commit on main.
+
+---
+
 ## 2026-11-24: Site accuracy and health, five pages verified, one sentence corrected
 
 The Tuesday routine under `playbooks/site-health.md`. The cost of contesting a will article of 23 Nov 2026 joined the

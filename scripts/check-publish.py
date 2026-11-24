@@ -880,7 +880,7 @@ def main():
     # ---- service pages (added 28 Sep 2026, playbooks/service-pages.md "Gate") ----
     svc_pages = sorted(glob.glob("service-*.html"))
     # cap raised from eight to twelve on Spencer's approval of the 9 Nov 2026 audit
-    check("at most twelve service pages", len(svc_pages) <= 12, "%d found" % len(svc_pages))
+    check("at most thirteen service pages", len(svc_pages) <= 13, "%d found" % len(svc_pages))
     idx_firm = re.search(r'"areaServed":\s*\[(.*?)\]\s*,\s*"', read("index.html"), re.S)
     places = [p for p in re.findall(r'"name":\s*"([^"]+)"', idx_firm.group(1) if idx_firm else "") if p not in ("Melbourne", "Box Hill", "Victoria")]
     sm_text, llms_text = read("sitemap.xml"), read("llms.txt")
