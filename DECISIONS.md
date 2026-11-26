@@ -13,6 +13,10 @@ Newest entries first.
 
 ---
 
+## 2026-11-27: Demand scan, one FAQ entry added to faq.html, on what to do when an ex will not return the children, read against the headings of sections 67Q to 67V of the Family Law Act 1975 (Cth) on legislation.gov.au; faq.html's reviewed date, FAQPage dateModified, sitemap lastmod and the llms.txt Last updated line moved to 27 November 2026 with scripts/fees.py stamp.
+
+---
+
 ## 2026-11-24: The remaining recommendations, built and published on Spencer's word
 
 After the review of that morning Spencer said: "can you implement every single change you recommended within your
